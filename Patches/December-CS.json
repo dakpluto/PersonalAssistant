@@ -1,0 +1,16 @@
+{
+  "patch_name": "December - Collective Soul",
+  "patch_vol": 50,
+  "bpm": 120,
+  "modules": {
+    "NR": { "model": "Gate", "always_on": true, "settings": { "THRE": 35 } },
+    "PRE": { "model": "COMP4", "always_on": true, "settings": { "Sustain": 40, "Attack": 60, "VOL": 100, "Clip": 50 } },
+    "DST": { "model": "La Charger", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": { "Gain": 55, "Tone": 60, "VOL": 75 } },
+    "AMP": { "model": "UK 45", "always_on": true, "settings": { "Gain": 35, "PRES": 55, "VOL": 80, "Bass": 55, "Middle": 60, "Treble": 65 } },
+    "CAB": { "model": "UK GRN 4x12", "always_on": true, "settings": { "VOL": 90 } },
+    "EQ": { "model": "Guitar EQ 2", "always_on": true, "settings": { "100Hz": 5, "500Hz": -5, "1kHz": 8, "3kHz": 10, "6kHz": 5, "VOL": 60 } },
+    "MOD": { "model": "M-Vibe", "ctl": true, "ctl_off_state": "on", "ctl_on_state": "off", "settings": { "Depth": 25, "Rate": 0.6 } },
+    "DLY": { "model": "Analog", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": { "Mix": 30, "Time": 320, "Feedback": 25, "Trail": true } },
+    "RVB": { "model": "Room", "always_on": true, "settings": { "Mix": 25, "Decay": 35, "Trail": true } }
+  }
+}

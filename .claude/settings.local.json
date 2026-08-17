@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(xxd app/tests/fixtures/gp5/65-Puppy.prst)",
+      "Bash(xxd app/tests/fixtures/gp5/67-OerdriveM.prst)",
+      "Read(//c/Users/dakpl/AppData/Local/Programs/Python/**)",
+      "Bash(where.exe python *)",
+      "Bash(where.exe node *)",
+      "Bash(/c/Users/dakpl/AppData/Local/Programs/Python/Python313/python -c ' *)",
+      "Bash(\"/c/Users/dakpl/AppData/Local/Programs/Python/Python313/python\" Tools/gp5_prst_encoder.py Patches/December-CS.prst)",
+      "Bash(/c/Users/dakpl/AppData/Local/Programs/Python/Python313/python -c *)",
+      "Bash(curl *)",
+      "mcp__node_repl__js",
+      "Bash(python Tools/gp5_prst_encoder.py Patches/December-CS.json Patches/December-CS-fromjson.prst)",
+      "Bash(python -)"
+    ]
+  }
+}

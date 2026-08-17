@@ -1,0 +1,16 @@
+{
+  "patch_name": "KissMeSNTR",
+  "patch_vol": 50,
+  "bpm": 145,
+  "modules": {
+    "NR": { "model": "Gate", "always_on": true, "settings": { "THRE": 15 } },
+    "PRE": { "model": "COMP4", "always_on": true, "settings": { "Sustain": 30, "Attack": 70, "VOL": 55, "Clip": 20 } },
+    "DST": { "model": "Yellow OD", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": { "Gain": 20, "VOL": 65 } },
+    "AMP": { "model": "Dark Twin", "always_on": true, "settings": { "Gain": 30, "VOL": 60, "Bass": 45, "Middle": 45, "Treble": 65, "Bright": true } },
+    "CAB": { "model": "Dark Twin 2x12", "always_on": true, "settings": { "VOL": 55 } },
+    "EQ": { "model": "Guitar EQ 1", "always_on": true, "settings": { "125Hz": -5, "400Hz": -8, "800Hz": -3, "1.6kHz": 8, "4kHz": 10, "VOL": 55 } },
+    "MOD": { "model": "A-Chorus", "always_on": true, "settings": { "Depth": 18, "Rate": 1.0, "Tone": 55 } },
+    "DLY": { "model": "Slapback", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": { "Mix": 22, "Time": 110, "F.Back": 15, "Trail": true } },
+    "RVB": { "model": "Room", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": { "Mix": 28, "Decay": 40, "Trail": true } }
+  }
+}
