@@ -1,0 +1,22 @@
+{
+  "patch_name": "Lion - Elevation Worship",
+  "patch_vol": 55,
+  "bpm": 72,
+  "ir": { "name": "American Twin 2x12 Medium Mix" },
+  "modules": {
+    "NR": { "model": "Gate", "always_on": true, "settings": { "THRE": 20 } },
+    "PRE": { "model": "Boost", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
+             "settings": { "Gain": 60, "+3dB": true, "Bright": true } },
+    "DST": { "model": "Green OD", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
+             "settings": { "Gain": 40, "Tone": 60, "VOL": 65 } },
+    "AMP": { "model": "Dark Twin", "always_on": true,
+             "settings": { "Gain": 35, "VOL": 65, "Bass": 50, "Middle": 60, "Treble": 55, "Bright": false } },
+    "CAB": { "model": null },
+    "EQ": { "model": "Guitar EQ 2", "always_on": true,
+            "settings": { "100Hz": -3, "500Hz": -2, "1kHz": 0, "3kHz": 4, "6kHz": 5, "VOL": 50 } },
+    "MOD": { "model": "A-Chorus", "always_on": true, "settings": { "Depth": 55, "Rate": 0.6, "Tone": 60 } },
+    "DLY": { "model": "Tape", "always_on": true, "settings": { "Mix": 35, "Time": 450, "F.Back": 35, "Trail": true } },
+    "RVB": { "model": "Sweet Space", "always_on": true,
+             "settings": { "Mix": 40, "Decay": 70, "Damp": 40, "Mod": 35, "Trail": true } }
+  }
+}

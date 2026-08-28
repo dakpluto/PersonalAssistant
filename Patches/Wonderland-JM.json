@@ -1,0 +1,21 @@
+{
+  "patch_name": "Wonderland - John Mayer",
+  "patch_vol": 55,
+  "bpm": 82,
+  "nam": { "name": "Two-Rock John Mayer Signature Prototype Signature #83 + CAB Dumble Steel String Singer",
+           "settings": { "Gain": 35, "VOL": 60, "Bass": 50, "Middle": 55, "Treble": 60 } },
+  "modules": {
+    "NR": { "model": "Gate", "always_on": true, "settings": { "THRE": 20 } },
+    "PRE": { "model": "COMP", "always_on": true, "settings": { "Sustain": 35, "VOL": 55 } },
+    "DST": { "model": "Green OD", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
+             "settings": { "Gain": 25, "Tone": 55, "VOL": 60 } },
+    "AMP": { "model": null },
+    "CAB": { "model": null },
+    "EQ": { "model": "Guitar EQ 2", "always_on": true,
+            "settings": { "100Hz": 0, "500Hz": 2, "1kHz": 1, "3kHz": 3, "6kHz": 2, "VOL": 50 } },
+    "MOD": { "model": "A-Chorus", "always_on": true, "settings": { "Depth": 30, "Rate": 1.0, "Tone": 55 } },
+    "DLY": { "model": null },
+    "RVB": { "model": "Room", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
+             "settings": { "Mix": 30, "Decay": 40, "Trail": true } }
+  }
+}

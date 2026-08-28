@@ -1,0 +1,20 @@
+{
+  "patch_name": "Yes-Squire",
+  "patch_vol": 55,
+  "bpm": 120,
+  "modules": {
+    "NR": { "model": "Gate", "always_on": true, "settings": { "THRE": 25 } },
+    "PRE": { "model": "B-Boost", "ctl": true, "ctl_off_state": "on", "ctl_on_state": "off",
+             "settings": { "Gain": 60, "VOL": 55, "Bass": 55, "Treble": 65 } },
+    "DST": { "model": "Bass OD", "ctl": true, "ctl_off_state": "on", "ctl_on_state": "off",
+             "settings": { "Gain": 65, "Blend": 60, "VOL": 60, "Bass": 55, "Treble": 70 } },
+    "AMP": { "model": "Foxy Bass", "always_on": true, "settings": { "VOL": 60, "Bass": 55, "Treble": 70 } },
+    "CAB": { "model": "AMPG 4x10", "always_on": true, "settings": { "VOL": 55 } },
+    "EQ": { "model": "Bass EQ 1", "always_on": true,
+            "settings": { "33Hz": 8, "150Hz": -5, "600Hz": 8, "2kHz": 12, "8kHz": 15, "VOL": 50 } },
+    "MOD": { "model": "B-Chorus", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
+             "settings": { "Depth": 20, "Rate": 0.8, "VOL": 50 } },
+    "DLY": { "model": null },
+    "RVB": { "model": null }
+  }
+}
