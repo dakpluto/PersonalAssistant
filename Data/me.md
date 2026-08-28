@@ -7,21 +7,13 @@
 
 ## Context
 
-Michael works full-time as a Systems Administrator:
-- Works at Lockheed Martin
-- Works on the C2BMC Program
-- Systems Administrator for the Regional Apps Team
+Michael is a serious hobbyist musician, playing both guitar and bass.
 
 Interests & Focus:
-- Space and Space Companies
-- Missile Defense
-- Computer Programing and Administration
-- Music
+- Music — playing, gear, and tone
 
 Goals:
-- Learn AI to grow in career field
-- Learn AI to create new music tools
-- Learn AI to make space tools
+- Learn AI to build new music tools
 - Have Fun
 - Build Projects
 

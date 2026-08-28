@@ -1,0 +1,208 @@
+{
+  "name": "Valeton GP-5",
+  "children": [
+    {
+      "name": "Hardware & Specifications",
+      "children": [
+        {
+          "name": "Compact Size & Weight (237g)"
+        },
+        {
+          "name": "Single Multi-function Foot Switch"
+        },
+        {
+          "name": "Connectivity: USB-C & 9V DC Power"
+        },
+        {
+          "name": "Audio Interface: 16-bit / 44.1kHz"
+        },
+        {
+          "name": "Bluetooth 5.0 Dual Mode"
+        },
+        {
+          "name": "Color LCD Screen"
+        }
+      ]
+    },
+    {
+      "name": "Core Features",
+      "children": [
+        {
+          "name": "Amp & Cab Modeling",
+          "children": [
+            {
+              "name": "32 Amp Models (Electric, Bass, Acoustic)"
+            },
+            {
+              "name": "20 Cabinet Emulations"
+            },
+            {
+              "name": "20 User IR Slots"
+            }
+          ]
+        },
+        {
+          "name": "Snap Tone Technology",
+          "children": [
+            {
+              "name": "NAM (Neural Amp Modeler) Support"
+            },
+            {
+              "name": "80 Profile Storage Slots"
+            },
+            {
+              "name": "Proprietary Format Conversion"
+            }
+          ]
+        },
+        {
+          "name": "Effects Engine",
+          "children": [
+            {
+              "name": "60+ Total Effects"
+            },
+            {
+              "name": "10 Signal Chain Blocks"
+            },
+            {
+              "name": "Noise Gate, Pre-Block, EQ, Modulation"
+            },
+            {
+              "name": "10 Delays & 10 Reverbs"
+            }
+          ]
+        },
+        {
+          "name": "Practice Tools",
+          "children": [
+            {
+              "name": "100 Drum Machine Patterns"
+            },
+            {
+              "name": "Built-in Chromatic Tuner"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Artist & Style Presets",
+      "children": [
+        {
+          "name": "Eric Clapton Tone",
+          "children": [
+            {
+              "name": "Wonderful Tonight (Dark Twin Reverb)"
+            },
+            {
+              "name": "Layla Live (Marshall 800)"
+            }
+          ]
+        },
+        {
+          "name": "Eric Johnson Tone",
+          "children": [
+            {
+              "name": "Clean (Ross Compressor & Chorus)"
+            },
+            {
+              "name": "Lead Tone (UK 50 Amp)"
+            }
+          ]
+        },
+        {
+          "name": "Gary Moore Tone",
+          "children": [
+            {
+              "name": "JCM 800 / JTM 45 Amps"
+            },
+            {
+              "name": "UK Greenback 4x12 Cabs"
+            },
+            {
+              "name": "Exotic BB Preamp Boost"
+            }
+          ]
+        },
+        {
+          "name": "Factory Presets",
+          "children": [
+            {
+              "name": "Blues Man & Neo Soul"
+            },
+            {
+              "name": "Metal Leica (Metallica Style)"
+            },
+            {
+              "name": "70s Britain & US Lead"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Software & Control",
+      "children": [
+        {
+          "name": "Mobile App (Mandatory for deep editing)"
+        },
+        {
+          "name": "Desktop App (Firmware & IR Management)"
+        },
+        {
+          "name": "Foot Switch Modes",
+          "children": [
+            {
+              "name": "Patch/Song List Cycle"
+            },
+            {
+              "name": "Single Effect Toggle"
+            },
+            {
+              "name": "Tuner/Bypass"
+            }
+          ]
+        },
+        {
+          "name": "External MIDI (M-VAVE Chocolate compatibility)"
+        }
+      ]
+    },
+    {
+      "name": "Pros & Cons",
+      "children": [
+        {
+          "name": "Advantages",
+          "children": [
+            {
+              "name": "High Portability"
+            },
+            {
+              "name": "Affordable Price Point"
+            },
+            {
+              "name": "NAM Profile Capability"
+            }
+          ]
+        },
+        {
+          "name": "Limitations",
+          "children": [
+            {
+              "name": "Lower Audio Resolution (16-bit)"
+            },
+            {
+              "name": "High-gain Noise Floor"
+            },
+            {
+              "name": "Reported Firmware Freezing Issues"
+            },
+            {
+              "name": "Limited Physical Knob Control"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

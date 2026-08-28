@@ -1,0 +1,16 @@
+{
+  "patch_name": "Sister Christian - Night Ranger",
+  "patch_vol": 55,
+  "bpm": 101,
+  "modules": {
+    "NR": { "model": "Gate", "always_on": true, "settings": { "THRE": 30 } },
+    "PRE": { "model": "COMP4", "always_on": true, "settings": { "Sustain": 45, "Attack": 55, "VOL": 100, "Clip": 40 } },
+    "DST": { "model": "La Charger", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": { "Gain": 60, "Tone": 65, "VOL": 80 } },
+    "AMP": { "model": "UK 45", "always_on": true, "settings": { "Gain": 40, "PRES": 55, "VOL": 75, "Bass": 55, "Middle": 60, "Treble": 62 } },
+    "CAB": { "model": "UK GRN 4x12", "always_on": true, "settings": { "VOL": 90 } },
+    "EQ": { "model": "Guitar EQ 2", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": { "100Hz": 0, "500Hz": 5, "1kHz": 10, "3kHz": 12, "6kHz": 5, "VOL": 65 } },
+    "MOD": { "model": null },
+    "DLY": { "model": "Analog", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": { "Mix": 25, "Time": 380, "Feedback": 20, "Trail": true } },
+    "RVB": { "model": "Room", "always_on": true, "settings": { "Mix": 22, "Decay": 35, "Trail": true } }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "patch_name": "Creep - Radiohead",
+  "patch_vol": 50,
+  "bpm": 92,
+  "modules": {
+    "NR": { "model": "Gate", "always_on": true, "settings": { "THRE": 25 } },
+    "PRE": { "model": "Boost", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": { "Gain": 55, "+3dB": true, "Bright": true } },
+    "DST": { "model": "SM Dist", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": { "Gain": 65, "Tone": 55, "VOL": 80 } },
+    "AMP": { "model": "Foxy 30N", "always_on": true, "settings": { "Gain": 45, "Tone Cut": 40, "VOL": 78, "Bright": true } },
+    "CAB": { "model": "Foxy 2x12", "always_on": true, "settings": { "VOL": 88 } },
+    "EQ": { "model": "Guitar EQ 1", "always_on": true, "settings": { "125Hz": 0, "400Hz": -3, "800Hz": 0, "1.6kHz": 6, "4kHz": 10, "VOL": 60 } },
+    "MOD": { "model": null },
+    "DLY": { "model": null },
+    "RVB": { "model": "Room", "always_on": true, "settings": { "Mix": 18, "Decay": 30, "Trail": true } }
+  }
+}
