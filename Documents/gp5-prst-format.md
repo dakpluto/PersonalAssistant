@@ -275,7 +275,7 @@ state (open question, not yet investigated here).
 Not part of the encoder, but worth fixing since the encoder will consult these
 files as its human-facing reference:
 
-- `Modules/DST.md`: "Greed OD" should be **"Green OD"** (catalog name; likely a typo).
+- `Modules/DST.md`: "Greed OD" should be **"Green OD"** (catalog name; likely a typo). Fixed.
 - `Modules/DLY.md`: all delay models list Time range as "20ms - 1000ms"; the real
   catalog range is **20ms – 4000ms** for every DLY model checked.
 - `Modules/PRE.md`: missing the **"Detune"** pitch-shift model (catalog has

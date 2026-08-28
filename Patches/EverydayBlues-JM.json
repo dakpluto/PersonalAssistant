@@ -1,0 +1,16 @@
+{
+  "patch_name": "Everyday I Have the Blues - Mayer",
+  "patch_vol": 55,
+  "bpm": 104,
+  "modules": {
+    "NR": { "model": "Gate", "always_on": true, "settings": { "THRE": 28 } },
+    "PRE": { "model": "COMP4", "always_on": true, "settings": { "Sustain": 30, "Attack": 60, "VOL": 55, "Clip": 50 } },
+    "DST": { "model": "Green OD", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": { "Gain": 45, "Tone": 55, "VOL": 65 } },
+    "AMP": { "model": "L-Star CL", "always_on": true, "settings": { "Gain": 55, "PRES": 60, "VOL": 70, "Bass": 55, "Middle": 65, "Treble": 60 } },
+    "CAB": { "model": "SUP Star 2x12", "always_on": true, "settings": { "VOL": 60 } },
+    "EQ": { "model": "Guitar EQ 2", "always_on": true, "settings": { "100Hz": -2, "500Hz": 3, "1kHz": 2, "3kHz": 0, "6kHz": -3, "VOL": 50 } },
+    "MOD": { "model": null },
+    "DLY": { "model": "Slapback", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": { "Mix": 30, "Time": 320, "F.Back": 20, "Trail": true } },
+    "RVB": { "model": "Spring", "always_on": true, "settings": { "Mix": 20, "Decay": 30, "Trail": true } }
+  }
+}

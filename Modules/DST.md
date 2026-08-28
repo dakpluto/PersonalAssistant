@@ -1,6 +1,6 @@
 # DST Module - Overdrive, distortion, and fuzz effects
 
-## Greed OD - Based on the legendary Ibanez TS-808 Tube Screamer pedal
+## Green OD - Based on the legendary Ibanez TS-808 Tube Screamer pedal
 - Gain: control the overdrive amount (1-100)
 - Tone: Controls the effect tone (1-100)
 - VOL: Controls the effect output (1-100)
