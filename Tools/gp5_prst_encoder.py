@@ -156,6 +156,47 @@ class CatalogError(ValueError):
     pass
 
 
+class ValidationError(ValueError):
+    pass
+
+
+MAX_CTL_MODULES = 3  # Prompts/gp5_prompt.md hard constraint: one CTL footswitch, up to 3 modules
+
+
+def validate_patch_json(patch_json: dict) -> None:
+    """Pre-flight checks for the prompt-level constraints the catalog lookup
+    can't catch: the ≤3-module CTL limit and NAM/IR mutual exclusion with
+    AMP/CAB. Raises ValidationError with a message naming the violation."""
+    modules = patch_json.get("modules", {})
+
+    ctl_blocks = [b for b in MODULE_BLOCK_NAMES if (modules.get(b) or {}).get("ctl")]
+    if len(ctl_blocks) > MAX_CTL_MODULES:
+        raise ValidationError(
+            f"CTL footswitch can toggle at most {MAX_CTL_MODULES} modules; "
+            f"{len(ctl_blocks)} are marked ctl:true: {ctl_blocks}"
+        )
+
+    has_nam = "nam" in patch_json
+    has_ir = "ir" in patch_json
+    if has_nam and has_ir:
+        raise ValidationError(
+            "patch specifies both 'nam' and 'ir' — pick one AMP/CAB substitute, not both"
+        )
+
+    amp_model = (modules.get("AMP") or {}).get("model")
+    cab_model = (modules.get("CAB") or {}).get("model")
+    if has_nam and (amp_model or cab_model):
+        raise ValidationError(
+            "patch specifies 'nam' but AMP/CAB model is not null — a NAM capture "
+            "replaces both AMP and CAB (set both to model: null)"
+        )
+    if has_ir and cab_model:
+        raise ValidationError(
+            "patch specifies 'ir' but CAB model is not null — an IR capture "
+            "replaces CAB only (set CAB to model: null)"
+        )
+
+
 def load_catalog(path: Path = CATALOG_PATH) -> dict:
     with open(path, "r", encoding="utf-8") as f:
         raw = json.load(f)
@@ -188,6 +229,7 @@ def _default_off_entry(catalog: dict, block: str) -> dict:
 
 
 def build_patch_spec(patch_json: dict, catalog: dict) -> PatchSpec:
+    validate_patch_json(patch_json)
     modules_in = patch_json.get("modules", {})
     blocks = {}
 
