@@ -1,0 +1,16 @@
+{
+  "patch_name": "EganFretls",
+  "patch_vol": 55,
+  "bpm": 92,
+  "modules": {
+    "NR":  { "model": "Gate", "always_on": true, "settings": { "THRE": 28 } },
+    "PRE": { "model": "COMP4", "always_on": true, "settings": { "Sustain": 65, "Attack": 45, "Clip": 50, "VOL": 60 } },
+    "DST": { "model": null },
+    "AMP": { "model": "Mess Bass", "always_on": true, "settings": { "Gain": 45, "VOL": 70, "Bass": 55, "Middle": 55, "Treble": 68 } },
+    "CAB": { "model": "AMPG 4x10", "always_on": true, "settings": { "VOL": 80 } },
+    "EQ":  { "model": "Bass EQ 1", "always_on": true, "settings": { "33Hz": 6, "150Hz": 0, "600Hz": -8, "2kHz": 5, "8kHz": 10, "VOL": 58 } },
+    "MOD": { "model": "B-Chorus", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": { "Depth": 70, "Rate": 0.6, "VOL": 100 } },
+    "DLY": { "model": "Analog", "always_on": true, "settings": { "Mix": 18, "Time": 450, "Feedback": 12, "Trail": true } },
+    "RVB": { "model": "Hall", "always_on": true, "settings": { "Mix": 25, "Decay": 45, "Trail": true } }
+  }
+}
