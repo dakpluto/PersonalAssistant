@@ -1,0 +1,28 @@
+# List of some popular guitar pedals
+- IK Multimedia ToneX One
+- Hologram Electronics Chroma Console
+- EQD Dirt Transmitter Fuzz Driver Legacy Reissue
+- EQD Blumes Low Signal Shredder
+- Keeley Muse Drive Andy Timmons Overdrive
+- MXR RR104 Randy Rhoads Distortion+
+- JHS Hard Drive
+- MXR M309 Joshua Ambient Echo
+- Strymon BigSky MX Reverb
+- Wampler Ego 76 Compressor
+- EQD/DBA Time Shadows II
+- Wampler Germanium Tumnus Deluxe
+- Walrus Audio Fundamental Ambient Reverb
+- EHX Lizard King Bass Octave Fuzz
+- Warm Audio Warm Bender / Fender Hello Kitty Fuzz
+- J. Rockett Airchild Six Sixty
+- Friedman IR-D Dual Tube Preamp
+- Warm Audio RingerBringer
+- Keeley Blues Disorder
+- Origin Effects Cali76 FET Compressor
+- Diamond Vibrato V2
+- MXR M307 Layers
+- Keeley Octa Psi Transfigurating Fuzz
+- Boss VE-22 Vocal Perfromer
+- Benson Amps Germanium Preamp
+- Source Audio Artifakt Lo-Fi Elements
+- Electronic Audio Experiments Prismatic Wall
