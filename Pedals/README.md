@@ -9,10 +9,12 @@ Pedals/
   EarthQuaker-Devices/ Full current EarthQuaker Devices catalog
   Chase-Bliss/         Full current Chase Bliss Audio catalog
   Summer-School/       Full current Summer School Electronics catalog
+  Strymon/             Full current Strymon catalog
+  JHS/                 Full current JHS Pedals catalog (incl. the budget 3 Series line)
   Other/               Everything else — one-off boutique pedals by various brands
 ```
 
-Within `Boss/`, `EarthQuaker-Devices/`, `Chase-Bliss/`, and `Summer-School/`, filenames drop the redundant brand prefix (the folder already says it) — e.g. `Boss/DS1-Distortion.md`, not `Boss/Boss-DS1-Distortion.md`. `Fixed-Board/` and `Other/` keep full brand-model names since they aren't single-brand folders.
+Within `Boss/`, `EarthQuaker-Devices/`, `Chase-Bliss/`, `Summer-School/`, `Strymon/`, and `JHS/`, filenames drop the redundant brand prefix (the folder already says it) — e.g. `Boss/DS1-Distortion.md`, not `Boss/Boss-DS1-Distortion.md`. `Fixed-Board/` and `Other/` keep full brand-model names since they aren't single-brand folders.
 
 ## Fixed-Board/
 
@@ -145,6 +147,102 @@ Not on Michael's board — reference material for optional gear and the project'
 | `Spring-Break-Reverb.md` | Spring reverb + tail-only delay, self-oscillates |
 | `Trash-Panda.md` | High-gain soft-clipping OD/distortion, country to hard-rock |
 
+### Strymon/
+
+| File | What it is |
+|---|---|
+| `BigSky-MX.md` | Flagship 12-algorithm reverb workstation, dual simultaneous engines |
+| `BigSky.md` | Original multi-algorithm reverb workstation, 12 reverb machines, dedicated Infinite/freeze footswitch |
+| `TimeLine-MX.md` | Dual-engine multi-delay workstation, 12 delay machines runnable two at once, 5-min looper |
+| `TimeLine.md` | Original multi-delay workstation, 12 delay machines, 30-sec looper, 200 presets |
+| `Mobius.md` | Multi-modulation workstation, 12 machines (chorus/flanger/rotary/phaser/formant/etc.), Pre/Post routing |
+| `Canoga.md` | Minimalist two-knob vintage silicon fuzz, unbuffered in/high-Z out for authentic pickup interaction |
+| `Cloudburst.md` | Ambient reverb with built-in orchestral ensemble (chorus/vibrato) layer, compact format |
+| `Fairfax.md` | Class A power-amp-style drive with a Sag control for tube-sag/gating character |
+| `Olivera.md` | Vintage oil-can echo emulation, dark modulated repeats, selectable playback-head config |
+| `EC-1.md` | Single-head dTape echo with a saturating Rec Level switch for driven tape-style repeats |
+| `Iridium.md` | 3-amp modeler (Deluxe/AC30/Plexi) with 9 swappable cab IRs and adjustable room ambience |
+| `UltraViolet.md` | Vintage pitch-vibrato/uni-vibe with switchable chorus/blend/vibrato voicing |
+| `Brig.md` | dBucket analog-voiced delay, 3 selectable voicings from gritty short to dreamy/dual-line |
+| `Compadre.md` | Dual-voice compressor + independently footswitchable boost, parallel-comp dry blend |
+| `NightSky.md` | Experimental/generative reverb with a regenerating core, Infinite freeze, and 8-step pitch/reverb Sequence mode |
+| `Volante.md` | Magnetic tape delay modeling Drum/Tape/Studio echo machines across 4 independently leveled/fed-back/panned playback heads plus built-in spring reverb |
+| `Zelzah.md` | Dual-engine phaser — independent 4-stage (phaser/vibrato) and 6-stage (phaser-to-flanger-to-chorus) circuits, each with its own footswitch |
+| `Sunset.md` | Dual-channel overdrive with two independently voiced, 3-way-selectable drive circuits, stackable in series or parallel |
+| `Riverside.md` | Single-channel drive-to-distortion pedal with a continuously variable, self-retuning gain circuit and active 3-band EQ |
+| `BlueSky-V2.md` | Compact stereo reverb — Plate/Room/Spring types with an optional Off/Light/Deep shimmer-modulation layer |
+| `Deco-V2.md` | Tape saturation stage plus an independent doubletracker delay effect, each footswitchable on its own |
+| `DIG-V2.md` | Dual digital delay with three era voicings (ADM/12-bit/24-96) and two mix-independent, tempo-related delay lines |
+| `El-Capistan-V2.md` | Tape echo with three selectable head configurations (Fixed/Multi/Single), each with its own Mode options, plus spring reverb |
+| `Flint-V2.md` | Tremolo (3 vintage circuits) and spring/plate/hall reverb (3 eras) in one pedal, independently footswitchable |
+| `Lex-V2.md` | Rotary speaker (Leslie-style) sim with horn/woofer mic-position and bi-amp controls, footswitchable Slow/Fast ramp |
+
+Note: `Iridium HD` does not exist as a separate current Strymon product — only the base `Iridium.md` is sold.
+
+### JHS/
+
+#### Flagship / original catalog
+
+| File | What it is |
+|---|---|
+| `AT-Mini.md` | Compact fixed-voicing version of the AT+ (Andy Timmons) British-style overdrive/distortion |
+| `AT-Plus.md` | Andy Timmons signature drive with a footswitchable boost stage and a 25/50/100W amp-feel toggle |
+| `Notadumble-V2.md` | Dual-channel Dumble-style overdrive plus a separate clean-boost channel with its own effects loop and order switch |
+| `Fumble.md` | JFET clean-boost/buffer pedal from a 1970s Barcus-Berry acoustic preamp circuit |
+| `Coyote.md` | Octave fuzz with a single sweep control spanning gated swell, Tone Bender-style fuzz, and octave-up fuzz |
+| `Double-Dragon.md` | Fully analog monophonic octave-down/octave-up pedal with a footswitch-gated OCT+ (upper octave + grit) circuit |
+| `424-Gain-Stage.md` | TASCAM 424-inspired two-stage preamp/overdrive/distortion with active EQ and a balanced XLR direct-out |
+| `Morning-Glory-Clean.md` | Low-gain Morning Glory variant with a parallel clean-blend circuit, doubling as a clean volume boost |
+| `Morning-Glory.md` | Flagship transparent overdrive (V4), with a toggle/remote-switchable higher-gain boost mode |
+| `Colour-Box-10.md` | Studio-grade multi-instrument preamp/shifting-EQ/distortion utility with combo XLR/1/4" input and phantom power |
+| `Colour-Box-V2.md` | Studio-grade tube preamp/EQ/DI utility with balanced XLR out and Hi/Lo headroom switch; predecessor to Colour Box 10 |
+| `Troika.md` | JHS x Third Man Hardware studio delay (mic-preamp-equipped) — Repeats/Volume/Distance/Mic Gain |
+| `Big-Muff-2.md` | EHX x JHS dual-op-amp Big Muff variant, more cutting/aggressive than the standard Big Muff Pi |
+| `Kilt-10.md` | Two-in-one dirt box/boost with dual clipping toggles spanning overdrive to gated fuzz, plus Red Remote jack |
+| `Notaklon.md` | Klon Centaur-style transparent overdrive with a Shamrock mod switch for extra gain/clipping; also sold in Splatter/Pink colorways |
+| `Hard-Drive.md` | High-gain '90s-style distortion with a sweepable-midrange 3-band EQ and hard-limiting clipping stage |
+| `Flight-Delay.md` | Analog-voiced delay with switchable Analog/Reverse/Digital modes, tap tempo, and built-in chorus/vibrato modulation |
+| `The-Violet.md` | Lari Basilio signature distortion/overdrive with pre-distortion midrange shaping ahead of a post-gain Bass/Treble EQ |
+| `Kodiak.md` | Tap-tempo tremolo with four waveforms, subdivisions, and tap/expression jack |
+| `PackRat.md` | Nine-in-one ProCo RAT-style distortion, rotary-selecting between historical RAT circuit variants; also sold in a White colorway |
+| `Bonsai.md` | Nine-in-one Tube Screamer-family overdrive selecting between historical Screamer circuits from OD-1 through Keeley Mod Plus |
+| `Muffuletta.md` | Six-in-one Big Muff Pi-style fuzz selecting between Triangle, Rams Head, Pi, Civil War, Russian, and JHS-original circuit eras |
+| `Artificial-Blonde.md` | Madison Cunningham signature true pitch-vibrato pedal with dual switchable presets and stereo output |
+| `Pulp-N-Peel-V4.md` | Compressor/preamp/DI box with parallel blend, active EQ, and a Dirt toggle for mild grit; balanced XLR DI out |
+| `Clover.md` | FET preamp/boost based on the 1984 Boss FA-1, with 3-band active EQ and a Full-EQ/No-Mid/No-EQ mode switch |
+| `Haunting-Mids.md` | Dedicated sweepable-mids EQ preamp (400Hz–7.5kHz, ±15dB) with a Lo/Hi "Q" toggle |
+| `PG-14.md` | Paul Gilbert signature FET distortion with an active mid-freq preamp stage and a Push/Drive gain-staging pair |
+| `Charlie-Brown-V4.md` | Mid-gain overdrive modeled on a Marshall Bluesbreaker/JTM45-style circuit, with 3-band active EQ |
+| `Angry-Charlie-V3.md` | High-gain distortion modeled on a Marshall JCM800-style circuit, with 3-band active EQ |
+| `Crayon.md` | Simplified Colour Box-style preamp/drive/fuzz with a Pre-Vol gain stage, Tilt EQ, and switchable Hi-Pass filter |
+| `Cheese-Ball.md` | Faithful recreation of the Lovetone Big Cheese fuzz, with a 4-position mode selector |
+| `Moonshine-V2.md` | Heavily modified Tube Screamer-derived overdrive with an internal 18V charge pump and a Proof gain-voicing toggle |
+| `Milkman.md` | Slap-delay + clean boost combo (JHS x Milkman Sound) with independent footswitches for each side |
+
+#### 3 Series — budget single-circuit line ($99 each)
+
+| File | What it is |
+|---|---|
+| `3-Series-Bit-Crusher.md` | Compact bit/sample-rate crusher with switchable low-pass/high-pass filter voicing |
+| `3-Series-Chorus.md` | Simple Rate/Depth/Volume chorus with a toggle for dry-free true vibrato |
+| `3-Series-Compressor.md` | Attack/Sustain/Volume compressor with a Bright-EQ toggle |
+| `3-Series-Delay.md` | 80–800ms digital delay switchable between clean digital and dark analog/bucket-brigade voicing |
+| `3-Series-Distortion.md` | Volume/Filter/Distort distortion with saturated-vs-crunchy gain toggle |
+| `3-Series-Flanger.md` | Blend/Rate/Intensity analog-style flanger with a hardware-tape-flange toggle |
+| `3-Series-Fuzz.md` | Bias/Fuzz/Volume fuzz with a Fat (bass boost) toggle |
+| `3-Series-Glitch-Delay.md` | DL4-inspired stuttering/glitching delay with randomized repeat artifacts |
+| `3-Series-Hall-Reverb.md` | Cathedral/hall-style reverb with a Dampen tone control and modulated-decay toggle |
+| `3-Series-Harmonic-Trem.md` | Dual-mode tremolo switching between standard amp trem and Fender-style harmonic trem |
+| `3-Series-Octave-Reverb.md` | Eno-style shimmer reverb blending an octave layer (up or down) into the reverb tail |
+| `3-Series-Oil-Can-Delay.md` | Warbly electrostatic-delay emulation based on vintage 1959 oil-can delay tech |
+| `3-Series-Overdrive.md` | Volume/Body/Drive overdrive with saturated-vs-crunchy gain toggle |
+| `3-Series-Phaser.md` | Six-stage 1970s-style phaser with a Blend control and resonance-adding Feedback toggle |
+| `3-Series-Reverb.md` | General-purpose Verb/EQ/Decay reverb with a Pre-Delay toggle |
+| `3-Series-Ring-Modulator.md` | Dual-mode ring mod: Way Huge Ringworm-style vs. Green Ringer octave-up-style |
+| `3-Series-Rotary-Chorus.md` | Leslie/rotary-speaker emulation with a toggle that adds room reverb |
+| `3-Series-Screamer.md` | Tube Screamer-style overdrive based on JHS's own Strong Mod, switchable symmetrical/asymmetrical clipping |
+| `3-Series-Tape-Delay.md` | 15–950ms tape-echo emulation (RE-201-inspired) with a Flutter/warble toggle |
+
 ### Other/ — one-off boutique pedals, by category
 
 #### Compression
@@ -158,6 +256,8 @@ Not on Michael's board — reference material for optional gear and the project'
 #### Drive / overdrive / distortion / fuzz
 | File | What it is |
 |---|---|
+| `Analogman-King-of-Tone.md` | Hand-built dual overdrive with a long waitlist, real circuit behind the Joyo King of Kings clone |
+| `Electro-Harmonix-Big-Muff-Pi.md` | Classic wooly fuzz/sustainer, current standard-production 3-knob unit |
 | `Fender-Hello-Kitty-Fuzz.md` | Op-amp fuzz, mild grit to full fuzz |
 | `Ibanez-Tube-Screamer-TS9.md` | Classic mid-boosting overdrive (TS9, representative of the TS9/TS808 line) |
 | `JHS-Hard-Drive.md` | Original high-gain '90s-style distortion |
@@ -166,8 +266,13 @@ Not on Michael's board — reference material for optional gear and the project'
 | `Klon-Centaur.md` | Legendary transparent OD, original/discontinued — reference only |
 | `Klon-KTR.md` | Current-production Klon reissue, transparent OD |
 | `MXR-RR104-Distortion-Plus.md` | Randy Rhoads signature MXR Distortion+ |
+| `ProCo-Rat.md` | Raw op-amp distortion (RAT2), inverted Filter control |
+| `Sola-Sound-Tone-Bender-MKII.md` | Vintage 1966 3-transistor germanium fuzz, made famous by Jimmy Page/Jeff Beck — reference only |
+| `Timmy-Overdrive.md` | Hand-built (Paul Cochrane) transparent low/medium-gain overdrive with reversed cut-style EQ |
 | `Wampler-Germanium-Tumnus-Deluxe.md` | Klon-style transparent OD, germanium diodes + 3-band EQ |
 | `Warm-Audio-Warm-Bender.md` | 3-circuit Tone Bender-style fuzz with SAG control |
+| `Zvex-Fuzz-Factory.md` | Deep 5-knob silicon fuzz, tunable from vintage fuzz to self-oscillating noise |
+| `Zvex-Woolly-Mammoth.md` | Bass-friendly fuzz with a signature smooth-gating "Pinch" control |
 
 #### Octave / pitch
 | File | What it is |
@@ -191,8 +296,9 @@ Not on Michael's board — reference material for optional gear and the project'
 |---|---|
 | `Electronic-Audio-Experiments-Prismatic-Wall.md` | Karplus-Strong string-resonance reverb/synth hybrid |
 | `MXR-M307-Layers.md` | Stereo harmonic-sustain layer builder |
-| `Strymon-BigSky-MX.md` | Flagship 12-algorithm reverb, dual simultaneous engines |
 | `Walrus-Audio-Fundamental-Ambient-Reverb.md` | Budget-tier 3-algorithm ambient reverb |
+
+Note: Strymon's reverb pedals (including BigSky/BigSky MX) now live in `Pedals/Strymon/`, Strymon's full current catalog.
 
 #### Experimental / multi-mode
 | File | What it is |
@@ -207,6 +313,12 @@ Not on Michael's board — reference material for optional gear and the project'
 #### Modeling / multi-effects workstations
 | File | What it is |
 |---|---|
+| `Eventide-H9.md` | Compact multi-effect algorithm workstation (Gen 2), 74+ algorithms, H90's little sibling |
 | `Hologram-Chroma-Console.md` | Stereo 20-algorithm workstation, 4 reorderable effect modules |
 | `IK-Multimedia-ToneX-One.md` | AI amp/cab/effects capture player |
 | `Source-Audio-Artifakt-Lo-Fi-Elements.md` | 7-engine lo-fi/degradation multi-effects |
+
+#### Synth
+| File | What it is |
+|---|---|
+| `Panda-Audio-Future-Impact.md` | Multi-engine bass/guitar synth pedal (V3) with 5 instrument modes and 99 presets |
