@@ -16,7 +16,7 @@ write-ups already look like:
     anything else          -> body paragraph
 
 Usage:
-    python Tools/gp5_patch_pdf.py Patches/<PatchName>.md Patches/<PatchName>.pdf
+    python Tools/gp5_patch_pdf.py Patches/<Guitar|Bass>/<Type>/<PatchName>.md Patches/<Guitar|Bass>/<Type>/<PatchName>.pdf
 """
 
 from __future__ import annotations
