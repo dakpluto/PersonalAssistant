@@ -1,0 +1,20 @@
+{
+  "patch_name": "UnstopGod",
+  "patch_vol": 55,
+  "bpm": 132,
+  "modules": {
+    "NR":  { "model": "Gate", "always_on": true, "settings": { "THRE": 25 } },
+    "PRE": { "model": "Boost", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
+             "settings": { "Gain": 55, "+3dB": true, "Bright": false } },
+    "DST": { "model": "Bass OD", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
+             "settings": { "Gain": 50, "Blend": 45, "VOL": 58, "Bass": 55, "Treble": 60 } },
+    "AMP": { "model": "Classic Bass", "always_on": true,
+             "settings": { "Gain": 55, "Bass": 58, "Middle": 55, "MidFreq": 2, "Treble": 60, "VOL": 65 } },
+    "CAB": { "model": "AMPG 4x10", "always_on": true, "settings": { "VOL": 60 } },
+    "EQ":  { "model": "Bass EQ 2", "always_on": true,
+             "settings": { "50Hz": 6, "120Hz": 2, "400Hz": -4, "800Hz": 4, "4.5kHz": 6, "VOL": 52 } },
+    "MOD": { "model": null },
+    "DLY": { "model": null },
+    "RVB": { "model": null }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "patch_name": "GivingAll",
+  "patch_vol": 52,
+  "bpm": 100,
+  "modules": {
+    "NR":  { "model": "Gate", "always_on": true, "settings": { "THRE": 20 } },
+    "PRE": { "model": "COMP", "always_on": true, "settings": { "Sustain": 45, "VOL": 55 } },
+    "DST": { "model": null },
+    "AMP": { "model": "Mess Bass", "always_on": true,
+             "settings": { "Gain": 35, "VOL": 62, "Bass": 55, "Middle": 50, "Treble": 50 } },
+    "CAB": { "model": "AMPG 4x10", "always_on": true, "settings": { "VOL": 55 } },
+    "EQ":  { "model": "Bass EQ 1", "always_on": true,
+             "settings": { "33Hz": 4, "150Hz": 2, "600Hz": 0, "2kHz": -2, "8kHz": -3, "VOL": 52 } },
+    "MOD": { "model": "A-Chorus", "always_on": true, "settings": { "Depth": 15, "Rate": 0.5, "Tone": 40 } },
+    "DLY": { "model": null },
+    "RVB": { "model": "Room", "always_on": true, "settings": { "Mix": 12, "Decay": 30, "Trail": true } }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "patch_name": "Click Click Boom - Saliva",
+  "patch_vol": 55,
+  "bpm": 100,
+  "ir": { "name": "British Checkerboard 4x12 Medium Mix" },
+  "modules": {
+    "NR": { "model": "Gate", "always_on": true, "settings": { "THRE": 38 } },
+    "PRE": { "model": null },
+    "DST": { "model": "Super OD", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
+             "settings": { "Gain": 50, "Tone": 62, "VOL": 68 } },
+    "AMP": { "model": "UK 800", "always_on": true, "settings": { "Gain": 62, "PRES": 55, "VOL": 68, "Bass": 55, "Middle": 68, "Treble": 62 } },
+    "CAB": { "model": null },
+    "EQ":  { "model": "Guitar EQ 2", "always_on": true, "settings": { "100Hz": 0, "500Hz": 5, "1kHz": 8, "3kHz": 3, "6kHz": -6, "VOL": 52 } },
+    "MOD": { "model": null },
+    "DLY": { "model": "Analog", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
+             "settings": { "Mix": 28, "Time": 300, "Feedback": 22, "Trail": true } },
+    "RVB": { "model": "Room", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
+             "settings": { "Mix": 25, "Decay": 35, "Trail": true } }
+  }
+}

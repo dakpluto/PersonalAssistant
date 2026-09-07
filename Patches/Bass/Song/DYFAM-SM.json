@@ -1,0 +1,19 @@
+{
+  "patch_name": "DYFAM-SM",
+  "patch_vol": 55,
+  "bpm": 114,
+  "modules": {
+    "NR": { "model": "Gate", "always_on": true, "settings": { "THRE": 20 } },
+    "PRE": { "model": "Boost", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
+             "settings": { "Gain": 65, "+3dB": true, "Bright": true } },
+    "DST": { "model": null },
+    "AMP": { "model": "Classic Bass", "always_on": true,
+             "settings": { "Gain": 40, "Bass": 60, "Middle": 65, "MidFreq": 2, "Treble": 55, "VOL": 75 } },
+    "CAB": { "model": "AMPG 4x10", "always_on": true, "settings": { "VOL": 70 } },
+    "EQ": { "model": "Bass EQ 1", "always_on": true,
+            "settings": { "33Hz": 6, "150Hz": 2, "600Hz": -6, "2kHz": 8, "8kHz": 5, "VOL": 55 } },
+    "MOD": { "model": null },
+    "DLY": { "model": null },
+    "RVB": { "model": null }
+  }
+}

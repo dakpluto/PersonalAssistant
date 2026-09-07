@@ -252,6 +252,8 @@ Note: `Iridium HD` does not exist as a separate current Strymon product — only
 | `J-Rockett-Airchild-660.md` | Fairchild 660-style studio compressor |
 | `Origin-Effects-Cali76-FET-Compressor.md` | 1176-style FET compressor with gain-reduction meter |
 | `Wampler-Ego-76-Compressor.md` | 1176-style FET compressor, console-style Attack/Release/Blend |
+| `Keeley-Compressor-Plus.md` | Studio-style compressor, Sustain/Attack/Level/Blend/Tone + coil-type switch |
+| `MXR-Dyna-Comp.md` | Classic 2-knob (Output/Sensitivity) optical-style compressor |
 
 #### Drive / overdrive / distortion / fuzz
 | File | What it is |
@@ -273,23 +275,73 @@ Note: `Iridium HD` does not exist as a separate current Strymon product — only
 | `Warm-Audio-Warm-Bender.md` | 3-circuit Tone Bender-style fuzz with SAG control |
 | `Zvex-Fuzz-Factory.md` | Deep 5-knob silicon fuzz, tunable from vintage fuzz to self-oscillating noise |
 | `Zvex-Woolly-Mammoth.md` | Bass-friendly fuzz with a signature smooth-gating "Pinch" control |
+| `Electro-Harmonix-Soul-Food.md` | Klon-derived transparent overdrive, Drive/Treble/Volume |
+| `Ibanez-Tube-Screamer-TS808.md` | Original 1979 Tube Screamer, asymmetric-clipping "brown mod" vs. the TS9 |
+| `Way-Huge-Green-Rhino-MkIV.md` | Tube Screamer-derived OD w/ added EQ shelves + Classic (vintage 3-knob) mode |
+| `Way-Huge-Swollen-Pickle-MkIIS.md` | Big Muff-derived high-gain fuzz, Filter/Scoop/Crunch + internal Voice/Clip trims |
+| `Fulltone-OCD.md` | Amp-like drive, HP/LP voicing switch — manufacturing status uncertain post-2020/2024 relaunch |
+| `Fulltone-Full-Drive2-v2.md` | Dual-channel drive, two 3-position clipping toggles + boost footswitch — same Fulltone status caveat |
+| `Dunlop-Jimi-Hendrix-Fuzz-Face.md` | Silicon (BC108) 2-knob (Fuzz/Volume) signature Fuzz Face |
+| `Death-By-Audio-Fuzz-War.md` | High-gain gated Big Muff-derived fuzz, Volume/Fuzz/Tone |
+| `Vemuram-Jan-Ray.md` | Blackface Fender-voiced transparent low/medium-gain OD |
+| `Suhr-Riot.md` | Amp-like high-gain distortion, DIST/LEVEL/TONE + 3-way voicing (current production is the original 2009 circuit) |
+| `Friedman-BE-OD-Deluxe.md` | Dual-channel high-gain OD/distortion modeled on the BE-100 "Brown Eye" amp |
+| `Horizon-Devices-Precision-Drive.md` | Misha Mansoor (Periphery) tightening/saturation drive w/ built-in gate |
+| `Maestro-Fuzz-Tone-FZ-M.md` | Gibson/Maestro reissue of the 1962 FZ-1, Attack/Tone/Level + Classic/Modern switch |
+| `Foxx-Tone-Machine.md` | 1970s octave fuzz — discontinued, reference only (see file for current-alternative pointers) |
+| `Beetronics-Royal-Jelly.md` | Dual OD/fuzz blender, Queen/King footswitch-selectable voicings |
+| `Nobels-ODR-1.md` | Transparent overdrive, Drive/Spectrum/Level, buffered bypass |
+| `Walrus-Audio-Voyager.md` | Klon-style preamp/OD (MKII), Gain/Volume/Tone/Mid/Freq + 5-way clipping switch |
+| `Wampler-Pinnacle-Deluxe-V2.md` | Classic-rock OD/distortion, 3-band EQ + footswitchable mid-boost |
+| `Wampler-Plexi-Drive-Deluxe-V2.md` | British/Marshall-voiced OD, 3-band EQ + footswitchable pre-gain boost |
+| `Catalinbread-Karma-Suture.md` | Harmonic Percolator-derived OD (Ge) / fuzz (Si) — discontinued/legacy |
+
+#### Boost / clean preamp
+| File | What it is |
+|---|---|
+| `Xotic-EP-Booster.md` | Discrete-FET clean boost (+20dB), Echoplex EP-3 preamp-inspired |
+| `Xotic-BB-Preamp.md` | Tube Screamer-derived preamp/OD, active Bass/Treble EQ |
+| `Keeley-Katana-Clean-Boost.md` | Dual-FET Class A boost, push/pull Volume (clean boost / ~+30dB overdriven) |
+| `MXR-Micro-Amp.md` | Single-knob clean boost, up to +26dB |
+| `Greer-Amps-Lightspeed.md` | Low-gain clean-boost/organic overdrive, Drive/Loudness/Freq, true bypass |
+
+#### Envelope filter / auto-wah
+| File | What it is |
+|---|---|
+| `Electro-Harmonix-Nano-Q-Tron.md` | Envelope filter, Vol/Drive/Q + LP/BP/HP and Up/Down sweep switches |
+| `MXR-Bass-Envelope-Filter.md` | 5-knob analog envelope filter/auto-wah (bass-friendly, not a foot-wah) |
 
 #### Octave / pitch
 | File | What it is |
 |---|---|
 | `Electro-Harmonix-Lizard-King.md` | Bass octave fuzz, blendable sub-octave |
 | `Keeley-Octa-Psi-Transfigurating-Fuzz.md` | Fuzz + polyphonic pitch-shifter/octave, independently footswitchable |
+| `Electro-Harmonix-POG2.md` | Polyphonic octave generator, full slider/preset control set |
 
 #### Modulation
 | File | What it is |
 |---|---|
 | `Diamond-Vibrato-V2.md` | MN3007 analog pitch vibrato, footswitch doubler |
 | `MXR-Phase-90.md` | Single-knob analog phaser (M101), the classic orange stompbox |
+| `Electro-Harmonix-Small-Stone-Nano.md` | Compact 4-stage OTA phaser reissue, Rate + Color feedback switch |
+| `Electro-Harmonix-Deluxe-Electric-Mistress-XO.md` | Analog BBD flanger w/ Filter Matrix mode — current-production status ambiguous, see file |
+| `MXR-Phase-95.md` | Mini phaser, 45/90 mode switch + vintage-voicing Script switch |
+| `Old-Blood-Noise-Endeavors-Dweller-Phase-Repeater.md` | Phaser/delay hybrid — allpass filtering through inter-stage delay lines |
+| `Walrus-Audio-Julia.md` | Analog BBD chorus/vibrato (V2), Rate/Depth/Lag/D-C-V blend |
 
 #### Delay / echo
 | File | What it is |
 |---|---|
 | `MXR-M309-Joshua-Ambient-Echo.md` | Edge-style dotted-eighth/multi-voice ambient delay |
+| `Electro-Harmonix-Deluxe-Memory-Man.md` | Full-size analog BBD delay/chorus/vibrato (MEMXO) |
+| `Ibanez-AD9-Analog-Delay.md` | MN3205 BBD-based analog delay, 10-300ms, dual dry/effect outs |
+| `MXR-Carbon-Copy.md` | Analog bucket-brigade delay, standard 3-knob version |
+| `TC-Electronic-Flashback-2.md` | Digital delay w/ built-in looper, 8 delay types + MASH footswitch |
+| `Line6-DL4-MkII.md` | Delay + looper, 30 delay models, current-production successor to the original DL4 |
+| `Catalinbread-Belle-Epoch-Deluxe.md` | EP-3 tape-echo emulation, 6-mode Echo Program engine |
+| `Meris-Polymoon.md` | Cascaded modulated delay w/ synced phaser and dynamic flanger |
+| `Red-Panda-Particle-2.md` | Granular delay/pitch-shift, current V2 |
+| `Walrus-Audio-Mako-Series-D1.md` | MKII High-Fidelity Delay, 6 algorithms, stereo I/O + MIDI + expression |
 
 #### Reverb / ambient
 | File | What it is |
@@ -297,6 +349,10 @@ Note: `Iridium HD` does not exist as a separate current Strymon product — only
 | `Electronic-Audio-Experiments-Prismatic-Wall.md` | Karplus-Strong string-resonance reverb/synth hybrid |
 | `MXR-M307-Layers.md` | Stereo harmonic-sustain layer builder |
 | `Walrus-Audio-Fundamental-Ambient-Reverb.md` | Budget-tier 3-algorithm ambient reverb |
+| `Electro-Harmonix-Holy-Grail-Nano.md` | Single-knob Spring/Hall/Flerb digital reverb |
+| `TC-Electronic-Hall-of-Fame-2.md` | 8-algorithm digital reverb + Shimmer, MASH footswitch dynamics |
+| `Meris-Mercury7.md` | Algorithmic ambient reverb (Ultraplate/Cathedra), Lexicon 224-inspired |
+| `Walrus-Audio-Slo-Multi-Texture-Reverb.md` | Mono ambient/texture reverb, 3 algorithms + sustain-hold footswitch |
 
 Note: Strymon's reverb pedals (including BigSky/BigSky MX) now live in `Pedals/Strymon/`, Strymon's full current catalog.
 
@@ -304,11 +360,17 @@ Note: Strymon's reverb pedals (including BigSky/BigSky MX) now live in `Pedals/S
 | File | What it is |
 |---|---|
 | `Warm-Audio-RingerBringer.md` | Analog ring modulator with drive stage + CV/expression |
+| `Electro-Harmonix-Freeze.md` | Sound-retainer/freeze pedal, Fast/Slow/Latch modes, dual dry/freeze outs |
 
 #### Preamp / amp-in-a-box / DI
 | File | What it is |
 |---|---|
 | `Friedman-IR-D.md` | Dual real-tube preamp + onboard IR/cab sim, stand-alone amp replacement |
+
+#### Bass preamp / DI
+| File | What it is |
+|---|---|
+| `Darkglass-B7K-Ultra.md` | Bass preamp/OD/DI, 4-band EQ + Grunt/Attack switches (bass-specific, unlike most of this library) |
 
 #### Modeling / multi-effects workstations
 | File | What it is |

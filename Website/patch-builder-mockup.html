@@ -1,0 +1,796 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GP Patch Builder — UI Sketch</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:wght@700;800&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  /* ============ TOKENS ============
+     Design concept: the page as a patch bay — dark anodized-aluminum
+     panels, a teal "wire" for signal-flow, an amber-red LED accent for
+     anything engaged/active. Light mode = the same rig under work light,
+     not a swap to a different identity. */
+  :root{
+    --bg:#e4e1d9;
+    --panel:#f7f5f0;
+    --panel-border:#cac5b6;
+    --ink:#211e19;
+    --ink-dim:#6c675b;
+    --accent:#c1441f;
+    --accent-ink:#fff8f3;
+    --wire:#2f7a68;
+    --field-bg:#fbfaf6;
+    --field-border:#d7d2c3;
+    --chip-bg:#ece8de;
+    --ok:#3f7d55;
+    --radius:9px;
+    --font-display:"Big Shoulders Stencil", sans-serif;
+    --font-body:"IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    --font-mono:"IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#14181a; --panel:#1d2225; --panel-border:#343b3e;
+      --ink:#eef1ef; --ink-dim:#8d9498;
+      --accent:#ff6a3d; --accent-ink:#1a1008;
+      --wire:#4a9a83;
+      --field-bg:#191d1f; --field-border:#343b3e; --chip-bg:#242a2c;
+      --ok:#5cae7a;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#14181a; --panel:#1d2225; --panel-border:#343b3e;
+    --ink:#eef1ef; --ink-dim:#8d9498;
+    --accent:#ff6a3d; --accent-ink:#1a1008;
+    --wire:#4a9a83;
+    --field-bg:#191d1f; --field-border:#343b3e; --chip-bg:#242a2c;
+    --ok:#5cae7a;
+  }
+
+  *{box-sizing:border-box;}
+  @media (prefers-reduced-motion: reduce){
+    *{transition:none !important; animation:none !important;}
+  }
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:var(--font-body);
+    padding:36px 20px 90px;
+    transition:background-color .15s, color .15s;
+  }
+  button:focus-visible, input:focus-visible, select:focus-visible{
+    outline:2px solid var(--accent); outline-offset:2px;
+  }
+  .wrap{max-width:1000px;margin:0 auto;}
+
+  /* ---- header ---- */
+  header.page{margin-bottom:30px;}
+  .header-top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:16px;flex-wrap:wrap;}
+  .badge{
+    display:inline-flex;align-items:center;gap:6px;background:var(--chip-bg);color:var(--ink-dim);
+    font-family:var(--font-mono);font-size:0.7rem;font-weight:500;text-transform:uppercase;letter-spacing:.06em;
+    padding:4px 10px;border-radius:999px;
+  }
+  .badge .dot{width:6px;height:6px;border-radius:50%;background:var(--accent);box-shadow:0 0 5px var(--accent);}
+  header.page h1{
+    font-family:var(--font-display);
+    font-weight:800;
+    font-size:2.6rem;
+    margin:0;
+    letter-spacing:.01em;
+    text-transform:uppercase;
+    line-height:1;
+  }
+  header.page p{margin:10px 0 0;color:var(--ink-dim);font-size:0.92rem;max-width:62ch;line-height:1.5;}
+  .header-cable{height:2px;background:var(--wire);margin-top:16px;width:130px;position:relative;opacity:.6;}
+  .header-cable::after{
+    content:"";position:absolute;right:-4px;top:50%;transform:translateY(-50%);
+    width:9px;height:9px;border-radius:50%;background:var(--wire);
+  }
+
+  /* ---- layout ---- */
+  .grid{display:grid;grid-template-columns:1fr;gap:18px;}
+  @media (min-width:860px){ .grid.two-col{grid-template-columns:1fr 1fr;} }
+
+  section.card{
+    background:var(--panel);
+    border:1px solid var(--panel-border);
+    border-top:3px solid var(--wire);
+    border-radius:var(--radius);
+    padding:22px 22px 20px;
+    position:relative;
+  }
+  section.card::before, section.card::after{
+    content:"";position:absolute;top:10px;width:5px;height:5px;border-radius:50%;
+    background:var(--panel-border);
+  }
+  section.card::before{left:11px;}
+  section.card::after{right:11px;}
+  section.card.hero{border-top-color:var(--accent);}
+
+  section.card h2{
+    font-family:var(--font-body);
+    font-weight:700;
+    font-size:0.82rem;
+    margin:0 0 4px;
+    text-transform:uppercase;
+    letter-spacing:.08em;
+  }
+  section.card .sub{color:var(--ink-dim);font-size:0.83rem;margin:0 0 18px;line-height:1.4;}
+
+  .field{margin-bottom:14px;}
+  .field:last-child{margin-bottom:0;}
+  label.field-label{
+    display:block;font-family:var(--font-mono);font-size:0.72rem;font-weight:500;color:var(--ink-dim);
+    margin-bottom:6px;text-transform:uppercase;letter-spacing:.05em;
+  }
+  select, input[type="text"]{
+    width:100%;
+    background:var(--field-bg);
+    border:1px solid var(--field-border);
+    color:var(--ink);
+    border-radius:7px;
+    padding:9px 11px;
+    font-size:0.92rem;
+    font-family:var(--font-body);
+  }
+  .row2{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+  @media (max-width:520px){.row2{grid-template-columns:1fr;}}
+
+  /* ---- rocker-style segmented control ---- */
+  .segmented{display:inline-flex;border:1px solid var(--field-border);border-radius:7px;overflow:hidden;background:var(--field-bg);}
+  .segmented button{
+    border:none;background:transparent;color:var(--ink-dim);
+    padding:7px 16px;font-size:0.78rem;font-weight:600;cursor:pointer;font-family:var(--font-mono);
+    text-transform:uppercase;letter-spacing:.04em;
+  }
+  .segmented button + button{border-left:1px solid var(--field-border);}
+  .segmented button.active{
+    background:var(--accent);color:var(--accent-ink);
+    box-shadow:inset 0 1px 3px rgba(0,0,0,.25);
+  }
+  .theme-toggle button{padding:6px 12px;font-size:0.7rem;}
+
+  .checkbox-row{display:flex;align-items:flex-start;gap:9px;margin-bottom:10px;}
+  .checkbox-row:last-child{margin-bottom:0;}
+  .checkbox-row input[type="checkbox"]{margin-top:3px;width:16px;height:16px;accent-color:var(--accent);}
+  .checkbox-row .ctext strong{display:block;font-size:0.9rem;}
+  .checkbox-row .ctext span{display:block;font-size:0.8rem;color:var(--ink-dim);margin-top:1px;}
+
+  /* ---- play-mode cards with LED state indicator ---- */
+  .radio-group{display:flex;flex-direction:column;gap:8px;}
+  .radio-option{
+    display:flex;align-items:flex-start;gap:9px;border:1px solid var(--field-border);
+    border-radius:8px;padding:11px 34px 11px 12px;background:var(--field-bg);cursor:pointer;position:relative;
+  }
+  .radio-option input{margin-top:3px;accent-color:var(--accent);}
+  .radio-option strong{display:block;font-size:0.88rem;}
+  .radio-option span span{display:block;font-size:0.8rem;color:var(--ink-dim);margin-top:2px;line-height:1.4;}
+  .radio-option.selected{border-color:var(--accent);}
+  .led{
+    position:absolute;top:12px;right:12px;width:8px;height:8px;border-radius:50%;
+    background:var(--ink-dim);opacity:.4;
+  }
+  .radio-option[data-ctl="on"] .led{background:var(--accent);box-shadow:0 0 6px var(--accent);opacity:1;}
+
+  .toggle-row{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 0;}
+  .toggle-row .tlabel strong{display:block;font-size:0.9rem;}
+  .toggle-row .tlabel span{display:block;font-size:0.8rem;color:var(--ink-dim);}
+  .switch{position:relative;width:42px;height:24px;flex:none;}
+  .switch input{opacity:0;width:0;height:0;}
+  .slider{position:absolute;inset:0;background:var(--field-border);border-radius:999px;cursor:pointer;transition:.15s;}
+  .slider:before{content:"";position:absolute;width:18px;height:18px;left:3px;top:3px;background:var(--panel);border-radius:50%;transition:.15s;}
+  .switch input:checked + .slider{background:var(--accent);}
+  .switch input:checked + .slider:before{transform:translateX(18px);box-shadow:0 0 6px var(--accent);}
+
+  .hint{font-size:0.78rem;color:var(--ink-dim);margin-top:10px;line-height:1.45;}
+  .hint strong{color:var(--accent);}
+
+  .pedal-groups{display:flex;flex-direction:column;gap:14px;max-height:420px;overflow-y:auto;padding-right:4px;}
+  .pedal-group h3{
+    font-family:var(--font-mono);font-size:0.72rem;text-transform:uppercase;letter-spacing:.06em;
+    color:var(--ink-dim);margin:0 0 8px;
+  }
+  .pedal-item{display:flex;align-items:center;gap:8px;padding:6px 0;font-size:0.87rem;}
+  .pedal-item input{accent-color:var(--accent);width:15px;height:15px;}
+  .pedal-item .src{
+    font-family:var(--font-mono);font-size:0.68rem;color:var(--ink-dim);margin-left:auto;
+    background:var(--chip-bg);padding:2px 7px;border-radius:999px;
+  }
+
+  /* ---- signal chain: vertical jack strip, the signature element ---- */
+  .chain-track{position:relative;padding:2px 0;}
+  .chain-track::before{
+    content:"";position:absolute;left:23px;top:24px;bottom:24px;width:2px;
+    background:var(--wire);opacity:.4;
+  }
+  .chain-list{list-style:none;margin:0;padding:2px 0;display:flex;flex-direction:column;position:relative;min-height:44px;}
+  .chain-item{display:flex;align-items:center;gap:12px;padding:7px 6px;position:relative;z-index:1;border-radius:8px;}
+  .chain-item:hover{background:var(--field-bg);}
+  .jack{
+    width:38px;height:38px;border-radius:50%;flex:none;
+    background:var(--panel);border:2px solid var(--wire);
+    display:flex;align-items:center;justify-content:center;
+  }
+  .jack-num{font-family:var(--font-mono);font-size:0.68rem;font-weight:600;color:var(--wire);}
+  .chain-item.core .jack{background:color-mix(in srgb, var(--accent) 18%, var(--panel));border-color:var(--accent);}
+  .chain-item.core .jack-num{color:var(--accent);}
+  .chain-item .name{flex:1;font-size:0.89rem;}
+  .chain-item.core .name{font-weight:700;}
+
+  /* start/end bookends — not reorderable, mark where the signal actually enters/leaves the board */
+  .chain-endpoint{display:flex;align-items:center;gap:12px;padding:8px 6px;position:relative;z-index:1;}
+  .chain-endpoint .jack{
+    border-style:dashed;border-color:var(--ink-dim);background:transparent;
+  }
+  .chain-endpoint .jack-num{font-size:0.6rem;color:var(--ink-dim);letter-spacing:.03em;}
+  .chain-endpoint .name{font-size:0.86rem;font-weight:700;color:var(--ink-dim);text-transform:uppercase;letter-spacing:.03em;}
+  .chain-endpoint .sub{
+    display:block;font-size:0.78rem;font-weight:400;text-transform:none;letter-spacing:0;
+    color:var(--ink-dim);margin-top:1px;
+  }
+  .chain-endpoint.end{margin-top:-2px;}
+  .core-tag{
+    font-family:var(--font-mono);font-size:0.62rem;font-weight:600;text-transform:uppercase;letter-spacing:.04em;
+    color:var(--accent);border:1px solid var(--accent);border-radius:999px;
+    padding:1px 7px;margin-left:6px;vertical-align:middle;
+  }
+  .chain-btns{display:flex;gap:1px;flex:none;}
+  .chain-item button{
+    border:none;background:transparent;color:var(--ink-dim);cursor:pointer;
+    font-size:0.85rem;padding:4px 6px;line-height:1;border-radius:5px;
+  }
+  .chain-item button:hover{color:var(--accent);background:var(--chip-bg);}
+  .chain-item button:disabled{opacity:.25;cursor:default;background:none;}
+
+  .inline-form{display:flex;gap:8px;margin-top:6px;}
+  .inline-form input{flex:1;}
+  button.primary{
+    background:var(--accent);color:var(--accent-ink);border:none;
+    border-radius:7px;padding:10px 18px;font-size:0.85rem;font-weight:700;cursor:pointer;
+    font-family:var(--font-mono);text-transform:uppercase;letter-spacing:.04em;white-space:nowrap;
+    box-shadow:0 3px 0 color-mix(in srgb, var(--accent) 55%, black);
+    transition:transform .08s, box-shadow .08s;
+  }
+  button.primary:active{transform:translateY(3px);box-shadow:0 0 0 color-mix(in srgb, var(--accent) 55%, black);}
+  button.ghost{
+    background:transparent;color:var(--ink);border:1px solid var(--field-border);
+    border-radius:7px;padding:9px 16px;font-size:0.85rem;cursor:pointer;font-family:var(--font-body);
+  }
+  button.ghost:hover{border-color:var(--wire);color:var(--wire);}
+  .status-msg{font-size:0.8rem;color:var(--ok);margin-top:8px;min-height:1em;}
+
+  .generate-bar{
+    position:sticky;bottom:16px;margin-top:22px;
+    background:var(--panel);border:1px solid var(--panel-border);border-top:3px solid var(--accent);
+    border-radius:var(--radius);
+    padding:16px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px;
+    box-shadow:0 10px 26px -12px rgba(0,0,0,.35);
+  }
+  .generate-bar strong{font-size:0.92rem;}
+  .generate-bar .summary{font-family:var(--font-mono);font-size:0.76rem;color:var(--ink-dim);margin-top:3px;}
+  #genStatus{font-size:0.78rem;color:var(--ink-dim);margin-top:6px;text-align:right;}
+
+  [hidden]{display:none !important;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="page">
+    <div class="header-top">
+      <span class="badge"><span class="dot"></span>Prototype — signal not live</span>
+      <div class="segmented theme-toggle" id="themeToggle">
+        <button type="button" data-theme-choice="system">System</button>
+        <button type="button" data-theme-choice="light">Light</button>
+        <button type="button" data-theme-choice="dark">Dark</button>
+      </div>
+    </div>
+    <h1>GP Patch Builder</h1>
+    <p>Sketching the public GP-5 patch builder. Dropdowns pull real data from this repo and the controls are interactive, but nothing here talks to the actual build pipeline yet.</p>
+    <div class="header-cable" aria-hidden="true"></div>
+  </header>
+
+  <div class="grid">
+
+    <!-- INSTRUMENT -->
+    <section class="card">
+      <h2>Instrument</h2>
+      <p class="sub">Body/pickup style, plus modifiers that apply independently of style.</p>
+
+      <div class="field">
+        <label class="field-label">Instrument Type</label>
+        <div class="segmented" id="instrumentTypeToggle">
+          <button type="button" class="active" data-type="guitar">Guitar</button>
+          <button type="button" data-type="bass">Bass</button>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="field-label" for="bodyStyle">Body / Pickup Style</label>
+        <select id="bodyStyle"></select>
+      </div>
+
+      <!-- guitar modifiers -->
+      <div id="guitarModifiers">
+        <div class="row2">
+          <div class="field">
+            <label class="field-label" for="guitarStrings">String Count</label>
+            <select id="guitarStrings">
+              <option value="6">6-string (standard)</option>
+              <option value="7">7-string</option>
+              <option value="8">8-string</option>
+              <option value="12">12-string</option>
+            </select>
+          </div>
+          <div class="field">
+            <label class="field-label" for="guitarScale">Scale</label>
+            <select id="guitarScale">
+              <option value="standard">Standard</option>
+              <option value="baritone">Baritone</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- bass modifiers -->
+      <div id="bassModifiers" hidden>
+        <div class="row2">
+          <div class="field">
+            <label class="field-label" for="bassStrings">String Count</label>
+            <select id="bassStrings">
+              <option value="4">4-string (standard)</option>
+              <option value="5">5-string</option>
+              <option value="6">6-string</option>
+            </select>
+          </div>
+          <div class="field">
+            <label class="field-label" for="bassScale">Scale</label>
+            <select id="bassScale">
+              <option value="standard">Standard</option>
+              <option value="short">Short</option>
+            </select>
+          </div>
+        </div>
+        <div class="checkbox-row" style="margin-top:4px;">
+          <input type="checkbox" id="bassFretless">
+          <div class="ctext">
+            <strong>Fretless</strong>
+            <span>Applies to any bass style above — not a style of its own.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PATCH CONTEXT -->
+    <section class="card">
+      <h2>Patch Context</h2>
+      <p class="sub">What the patch is trying to capture.</p>
+
+      <div class="row2">
+        <div class="field">
+          <label class="field-label" for="patchType">Type</label>
+          <select id="patchType">
+            <option value="song">Song</option>
+            <option value="artist">Artist</option>
+            <option value="album">Album</option>
+            <option value="style">Style</option>
+          </select>
+        </div>
+        <div class="field" id="patchNameField">
+          <label class="field-label" id="patchNameLabel" for="patchName">Song Name</label>
+          <input type="text" id="patchName" placeholder="e.g. Cherub Rock">
+        </div>
+      </div>
+
+      <div class="field" id="styleField" hidden>
+        <label class="field-label" for="styleSelect">Style / Genre</label>
+        <select id="styleSelect"></select>
+      </div>
+    </section>
+
+    <!-- PLAYING MODE / CTL -->
+    <section class="card">
+      <h2>Footswitch &amp; Playing Mode</h2>
+      <p class="sub">How the CTL footswitch (if any) is used in this patch. The dot on each option shows whether CTL ends up engaged.</p>
+
+      <!-- guitar: play mode drives CTL -->
+      <div id="guitarPlayMode">
+        <div class="radio-group" id="playModeGroup">
+          <label class="radio-option selected" data-ctl="off">
+            <input type="radio" name="playMode" value="rhythm" checked>
+            <span class="led" aria-hidden="true"></span>
+            <span>
+              <strong>Rhythm Only</strong>
+              <span>Single static sound. CTL footswitch not used.</span>
+            </span>
+          </label>
+          <label class="radio-option" data-ctl="off">
+            <input type="radio" name="playMode" value="lead">
+            <span class="led" aria-hidden="true"></span>
+            <span>
+              <strong>Lead Only</strong>
+              <span>Single static sound tuned for lead/solo tone. CTL footswitch not used.</span>
+            </span>
+          </label>
+          <label class="radio-option" data-ctl="on">
+            <input type="radio" name="playMode" value="ctl">
+            <span class="led" aria-hidden="true"></span>
+            <span>
+              <strong>Rhythm + CTL Lead Boost</strong>
+              <span>CTL off = rhythm baseline. CTL on layers in a lead boost (up to 3 of PRE / DST / EQ toggled on together) — it can't swap settings on one module, only add modules on top.</span>
+            </span>
+          </label>
+        </div>
+      </div>
+
+      <!-- bass: simple optional CTL toggle -->
+      <div id="bassPlayMode" hidden>
+        <div class="toggle-row">
+          <div class="tlabel">
+            <strong>Enable CTL Footswitch</strong>
+            <span>Optional for bass — only builds a second sound if it actually fits the Type (e.g. a song with a distinct chorus tone).</span>
+          </div>
+          <label class="switch">
+            <input type="checkbox" id="bassCtlToggle">
+            <span class="slider"></span>
+          </label>
+        </div>
+      </div>
+    </section>
+
+    <!-- AMP / CAB HANDLING -->
+    <section class="card">
+      <h2>Amp &amp; Cab Handling</h2>
+      <p class="sub">If you're using your own NAM capture or IR instead of the GP-5's built-in AMP/CAB.</p>
+
+      <div class="checkbox-row">
+        <input type="checkbox" id="ownAmp">
+        <div class="ctext">
+          <strong>I'll handle my own amp (NAM or other)</strong>
+          <span>Skips the GP-5's AMP block in the build. Pick the closest built-in model below just so the build knows what it's working around.</span>
+        </div>
+      </div>
+      <div class="field" id="ownAmpField" hidden style="margin-left:25px;">
+        <label class="field-label" for="ampRepresents">My capture most represents…</label>
+        <select id="ampRepresents"></select>
+      </div>
+
+      <div class="checkbox-row">
+        <input type="checkbox" id="ownCab">
+        <div class="ctext">
+          <strong>I'll handle my own cab (IR or other)</strong>
+          <span>Skips the GP-5's CAB block in the build.</span>
+        </div>
+      </div>
+      <div class="field" id="ownCabField" hidden style="margin-left:25px;">
+        <label class="field-label" for="cabRepresents">My IR most represents…</label>
+        <select id="cabRepresents"></select>
+      </div>
+
+      <p class="hint" id="ownAmpCabHint" hidden>Note: if your amp capture is <strong>amp-only</strong> (no cab baked in) and you haven't also got an external cab solution, you'll get a harsh/unfiltered tone — this build won't add a GP-5 cab behind it for you.</p>
+    </section>
+
+  </div>
+
+  <!-- BOARD -->
+  <div class="grid two-col" style="margin-top:18px;">
+    <section class="card">
+      <h2>Pedalboard</h2>
+      <p class="sub">Check what's on your board. Order lives in the Signal Path panel on the right.</p>
+      <div class="pedal-groups" id="pedalGroups"></div>
+
+      <div class="inline-form">
+        <input type="text" id="requestPedalInput" placeholder="Don't see your pedal? Name + brand…">
+        <button class="ghost" id="requestPedalBtn" type="button">Request</button>
+      </div>
+      <div class="status-msg" id="requestStatus"></div>
+    </section>
+
+    <section class="card hero">
+      <h2>Signal Path</h2>
+      <p class="sub">Your GP-5 is always in the chain — use the arrows to place it wherever it actually sits among your pedals.</p>
+      <ul class="chain-list" id="chainList"></ul>
+    </section>
+  </div>
+
+  <div class="generate-bar">
+    <div>
+      <strong>Ready to sketch a patch?</strong>
+      <div class="summary" id="genSummary">GUITAR · STRATOCASTER · RHYTHM ONLY</div>
+      <div id="genStatus"></div>
+    </div>
+    <button class="primary" id="generateBtn" type="button">Generate Patch</button>
+  </div>
+
+</div>
+
+<script>
+// ---------- theme ----------
+const THEME_KEY = "gp5-mockup-theme"; // "system" | "light" | "dark"
+function applyTheme(choice){
+  if(choice === "light" || choice === "dark"){
+    document.documentElement.setAttribute("data-theme", choice);
+  } else {
+    document.documentElement.removeAttribute("data-theme");
+  }
+  document.querySelectorAll("#themeToggle button").forEach(b=>{
+    b.classList.toggle("active", b.dataset.themeChoice === choice);
+  });
+}
+let savedTheme = "system";
+try{ savedTheme = localStorage.getItem(THEME_KEY) || "system"; }catch(e){}
+applyTheme(savedTheme);
+document.querySelectorAll("#themeToggle button").forEach(btn=>{
+  btn.addEventListener("click", ()=>{
+    const choice = btn.dataset.themeChoice;
+    applyTheme(choice);
+    try{ localStorage.setItem(THEME_KEY, choice); }catch(e){}
+  });
+});
+
+// ---------- data ----------
+const GUITAR_STYLES = [
+  "Stratocaster","Telecaster","Les Paul","SG","Superstrat (HH/HSH)","PRS-style",
+  "Semi-hollow (ES-335 style)","Explorer/Flying V","Offset (Jazzmaster/Jaguar)","Firebird",
+  "Dreadnought Acoustic","Parlor/Small-body Acoustic","Nylon-string Classical"
+];
+const BASS_STYLES = [
+  "Precision (P)","Jazz (J)","P/J","Music Man StingRay-style (single humbucker)",
+  "Dual-humbucker (e.g. MM Bongo, Ken Smith)","Short-scale/Hollow (Mustang/Höfner-style)",
+  "Rickenbacker 4003-style"
+];
+
+const STYLE_GENRES = {
+  "Blues": ["Delta Blues","Chicago Blues","Texas Blues","Blues Rock"],
+  "Rock": ["Classic Rock","Hard Rock","Arena Rock","Southern Rock","Yacht Rock","Glam Rock"],
+  "Metal": ["Heavy Metal","Thrash Metal","Death Metal","Black Metal","Doom/Sludge Metal","Power Metal","Progressive Metal","Nu Metal","Metalcore/Djent"],
+  "Punk / Alternative": ["Punk Rock","Hardcore Punk","Pop Punk","Post-Punk","Grunge","Alternative Rock","Indie Rock","Emo"],
+  "Funk / Soul / R&B": ["Funk","Soul","Motown","R&B","Neo-Soul"],
+  "Jazz": ["Traditional/Swing Jazz","Jazz Fusion","Smooth Jazz"],
+  "Country / Americana": ["Classic Country","Outlaw Country","Country Rock","Bluegrass","Americana","Folk"],
+  "Reggae / Ska": ["Reggae","Dub","Ska"],
+  "Progressive / Experimental": ["Progressive Rock","Math Rock","Post-Rock","Ambient","Shoegaze","Dream Pop"],
+  "Surf / Retro": ["Surf Rock","Rockabilly","Psychobilly"],
+  "Pop": ["Pop","Pop Rock","Synth Pop"],
+  "Latin / World": ["Latin Rock","Bossa Nova / Latin Jazz","Celtic/Folk"]
+};
+
+// Real GP-5 AMP models, from Modules/AMP.md
+const AMP_MODELS = {
+  "Clean": ["Tweedy (Fender Tweed Deluxe)","Bellman 59N (Fender 59 Bassman Normal)","Dark Twin (Fender 65 Twin Reverb)","Foxy 30N (Vox AC30HW Normal)","J-120 CL (Jazz Chorus Solid State)","Match CL (Matchless Chieftain 212, clean)","L-Star CL (Mesa Lone Star Ch.1)"],
+  "Drive": ["UK 45 (Marshall JTM45 Normal)","UK 50JP (Marshall JMP50 Jump)","UK 800 (Marshall JCM800)","Bellman 59B (Fender 59 Bassman Bright)","Foxy 30TB (Vox AC30HW Top Boost)","SUPDual OD (Supro Dual-Tone, dirty)","Solo100 OD (Soldano SLO100 Crunch)","Z38 OD (Dr. Z Maz 38 Sr, hi input)","Bad-KT OD (Bad Cat Hot Cat 30, OD)"],
+  "Hi Gain": ["Juice R100 (Orange Rockerverb 100)","Dizz VH (Diezel VH4 Ch.3)","Dizz VH+ (Diezel VH4 Ch.4)","Eagle 120 (ENGL Savage 120)","EV 51 (Peavey 5150 Lead)","Solo100 LD (Soldano SLO100 OD)","Mess DualV (Mesa Dual Rectifier, Vintage)","Mess DualM (Mesa Dual Rectifier, Modern)","Power LD (ENGL Powerball II Ch.4)","Flagman+ (Friedman BE-100 HBE)","Bog RedV (Bogner XTC Red)"],
+  "Bass": ["Classic Bass (Ampeg SVT)","Foxy Bass (Vox AC-100)","Mess Bass (Mesa Bass 400)"],
+  "Acoustic": ["AC Pre1 (AER Colourizer 2, Ch.1)","AC Pre2 (AER Colourizer 2, Ch.2)"]
+};
+// Real GP-5 CAB models, from Modules/CAB.md
+const CAB_MODELS = [
+  "TWD CP 1x8 (Fender Champ)","Dark VIT 1x12 (Fender Vibrolux)","Foxy 1x12 (Vox AC15)","L-Star 1x12 (Mesa Lonestar)",
+  "Dark CS 2x12 (Custom Fender)","Dark Twin 2x12 (Fender 65 Twin Reverb)","SUP Star 2x12 (Mesa Lonestar)","J-120 2x12 (Jazz Chorus)",
+  "Foxy 2x12 (Vox AC30)","UK GRN 2x12 (Marshall 2550)","UK GRN 4x12 (Marshall, Greenbacks)","Bog 4x12 (Bogner)",
+  "Dizz 4x12 (Diezel)","EV 4x12 (Peavey 6505)","Solo 4x12 (Soldano)","Mess 4x12 (Mesa Rectifier)",
+  "Eagle 4x12 (ENGL)","Juice 4x12 (Orange PPC412)","Bellman 2x12 (Fender Piggyback Bassman)","AMPG 4x10 (Ampeg SVT-410HE)"
+];
+
+// Representative pedal sample (mix of Fixed-Board + general library — real names from this repo)
+const PEDAL_GROUPS = {
+  "Compression": [
+    ["Donner Ultimate Comp","Fixed-Board"],["MXR Dyna Comp","Other"],["Keeley Compressor Plus","Other"],["Origin Effects Cali76 FET Compressor","Other"]
+  ],
+  "Drive / Overdrive / Fuzz": [
+    ["Joyo King of Kings","Fixed-Board"],["Donner Stylish Fuzz","Fixed-Board"],["Klon KTR","Other"],
+    ["Ibanez TS808","Other"],["ProCo Rat","Other"],["Way Huge Green Rhino MkIV","Other"],
+    ["EHX Big Muff Pi","Other"],["Timmy Overdrive","Other"]
+  ],
+  "Boost": [ ["Xotic EP Booster","Other"],["MXR Micro Amp","Other"] ],
+  "Modulation": [
+    ["Joyo Narcissus (Chorus)","Fixed-Board"],["MXR Phase 90","Other"],["Walrus Audio Julia","Other"],["EHX Small Stone Nano","Other"]
+  ],
+  "Envelope Filter": [ ["EHX Nano Q-Tron","Other"],["MXR Bass Envelope Filter","Other"] ],
+  "Octave / Pitch": [ ["Flamma FS08 Octave","Fixed-Board"],["EHX POG2","Other"],["EHX Lizard King","Other"] ],
+  "Delay": [ ["MXR Carbon Copy","Other"],["Strymon TimeLine","Other"],["EHX Deluxe Memory Man","Other"] ],
+  "Reverb": [ ["Strymon BigSky","Other"],["TC Electronic Hall of Fame 2","Other"],["EHX Holy Grail Nano","Other"] ],
+  "Bass-specific": [ ["Joyo Tidal Wave","Fixed-Board"],["Darkglass B7K Ultra","Other"] ]
+};
+
+// ---------- state ----------
+let instrumentType = "guitar";
+// The multi-FX unit itself is always in the chain — reorderable but not removable.
+// TODO: once other Valeton GP models are supported, replace this hardcoded entry
+// with a "Which GP are you using?" dropdown that sets { uid, name } here instead.
+let chain = [ { uid: "core-gp5", name: "Valeton GP-5", core: true } ];
+
+// ---------- instrument ----------
+const bodyStyleSelect = document.getElementById("bodyStyle");
+function fillBodyStyles(){
+  const list = instrumentType === "guitar" ? GUITAR_STYLES : BASS_STYLES;
+  bodyStyleSelect.innerHTML = list.map(s => `<option>${s}</option>`).join("");
+}
+document.querySelectorAll("#instrumentTypeToggle button").forEach(btn=>{
+  btn.addEventListener("click", ()=>{
+    document.querySelectorAll("#instrumentTypeToggle button").forEach(b=>b.classList.remove("active"));
+    btn.classList.add("active");
+    instrumentType = btn.dataset.type;
+    fillBodyStyles();
+    document.getElementById("guitarModifiers").hidden = instrumentType !== "guitar";
+    document.getElementById("bassModifiers").hidden = instrumentType !== "bass";
+    document.getElementById("guitarPlayMode").hidden = instrumentType !== "guitar";
+    document.getElementById("bassPlayMode").hidden = instrumentType !== "bass";
+    updateSummary();
+  });
+});
+fillBodyStyles();
+
+// ---------- patch context ----------
+const patchType = document.getElementById("patchType");
+const patchNameLabel = document.getElementById("patchNameLabel");
+const patchNameField = document.getElementById("patchNameField");
+const styleField = document.getElementById("styleField");
+const styleSelect = document.getElementById("styleSelect");
+
+function fillStyleSelect(){
+  styleSelect.innerHTML = Object.entries(STYLE_GENRES).map(([group, items])=>
+    `<optgroup label="${group}">${items.map(i=>`<option>${i}</option>`).join("")}</optgroup>`
+  ).join("");
+}
+fillStyleSelect();
+
+patchType.addEventListener("change", ()=>{
+  const v = patchType.value;
+  const isStyle = v === "style";
+  styleField.hidden = !isStyle;
+  patchNameField.hidden = isStyle;
+  const labels = {song:"Song Name", artist:"Artist Name", album:"Album Name"};
+  patchNameLabel.textContent = labels[v] || "Name";
+  updateSummary();
+});
+
+// ---------- play mode (guitar) ----------
+document.querySelectorAll('input[name="playMode"]').forEach(r=>{
+  r.addEventListener("change", ()=>{
+    document.querySelectorAll(".radio-option").forEach(o=>o.classList.remove("selected"));
+    r.closest(".radio-option").classList.add("selected");
+    updateSummary();
+  });
+});
+
+// ---------- amp/cab handling ----------
+function fillAmpSelect(){
+  const sel = document.getElementById("ampRepresents");
+  sel.innerHTML = Object.entries(AMP_MODELS).map(([group, items])=>
+    `<optgroup label="${group}">${items.map(i=>`<option>${i}</option>`).join("")}</optgroup>`
+  ).join("");
+}
+function fillCabSelect(){
+  const sel = document.getElementById("cabRepresents");
+  sel.innerHTML = CAB_MODELS.map(i=>`<option>${i}</option>`).join("");
+}
+fillAmpSelect(); fillCabSelect();
+
+const ownAmp = document.getElementById("ownAmp");
+const ownCab = document.getElementById("ownCab");
+function syncOwnAmpCab(){
+  document.getElementById("ownAmpField").hidden = !ownAmp.checked;
+  document.getElementById("ownCabField").hidden = !ownCab.checked;
+  document.getElementById("ownAmpCabHint").hidden = !ownAmp.checked;
+}
+ownAmp.addEventListener("change", syncOwnAmpCab);
+ownCab.addEventListener("change", syncOwnAmpCab);
+
+// ---------- pedal board ----------
+const pedalGroupsEl = document.getElementById("pedalGroups");
+let pedalUid = 0;
+const pedalIndex = {}; // uid -> {name}
+
+function renderPedalGroups(){
+  pedalGroupsEl.innerHTML = "";
+  Object.entries(PEDAL_GROUPS).forEach(([group, items])=>{
+    const wrap = document.createElement("div");
+    wrap.className = "pedal-group";
+    wrap.innerHTML = `<h3>${group}</h3>`;
+    items.forEach(([name, src])=>{
+      const uid = "p" + (pedalUid++);
+      const row = document.createElement("label");
+      row.className = "pedal-item";
+      row.innerHTML = `<input type="checkbox" data-uid="${uid}"><span>${name}</span><span class="src">${src}</span>`;
+      wrap.appendChild(row);
+      pedalIndex[uid] = { name };
+    });
+    pedalGroupsEl.appendChild(wrap);
+  });
+  pedalGroupsEl.querySelectorAll('input[type="checkbox"]').forEach(cb=>{
+    cb.addEventListener("change", ()=>{
+      const uid = cb.dataset.uid;
+      if(cb.checked){
+        chain.push({ uid, name: pedalIndex[uid].name });
+      } else {
+        chain = chain.filter(c=>c.uid !== uid);
+      }
+      renderChain();
+    });
+  });
+}
+renderPedalGroups();
+
+const chainListEl = document.getElementById("chainList");
+function renderChain(){
+  chainListEl.innerHTML = chain.map((c,i)=>`
+    <li class="chain-item ${c.core?'core':''}" data-uid="${c.uid}">
+      <span class="jack"><span class="jack-num">${String(i+1).padStart(2,"0")}</span></span>
+      <span class="name">${c.name}${c.core?' <span class="core-tag">Core Unit</span>':''}</span>
+      <span class="chain-btns">
+        <button data-act="up" ${i===0?"disabled":""} title="Move up">&#8593;</button>
+        <button data-act="down" ${i===chain.length-1?"disabled":""} title="Move down">&#8595;</button>
+        ${c.core ? '' : '<button data-act="remove" title="Remove">&times;</button>'}
+      </span>
+    </li>
+  `).join("");
+  chainListEl.querySelectorAll("button").forEach(btn=>{
+    btn.addEventListener("click", ()=>{
+      const li = btn.closest(".chain-item");
+      const uid = li.dataset.uid;
+      const idx = chain.findIndex(c=>c.uid===uid);
+      if(btn.dataset.act === "up" && idx > 0){
+        [chain[idx-1], chain[idx]] = [chain[idx], chain[idx-1]];
+      } else if(btn.dataset.act === "down" && idx < chain.length-1){
+        [chain[idx+1], chain[idx]] = [chain[idx], chain[idx+1]];
+      } else if(btn.dataset.act === "remove"){
+        chain = chain.filter(c=>c.uid!==uid);
+        const cb = pedalGroupsEl.querySelector(`input[data-uid="${uid}"]`);
+        if(cb) cb.checked = false;
+      }
+      renderChain();
+    });
+  });
+  updateSummary();
+}
+renderChain();
+
+// ---------- request pedal ----------
+document.getElementById("requestPedalBtn").addEventListener("click", ()=>{
+  const input = document.getElementById("requestPedalInput");
+  const status = document.getElementById("requestStatus");
+  if(!input.value.trim()){
+    status.style.color = "var(--accent)";
+    status.textContent = "Type a pedal name first.";
+    return;
+  }
+  status.style.color = "var(--ok)";
+  status.textContent = `Noted: "${input.value.trim()}" — request queue isn't wired up yet.`;
+  input.value = "";
+});
+
+// ---------- generate (mock) ----------
+document.getElementById("generateBtn").addEventListener("click", ()=>{
+  const s = document.getElementById("genStatus");
+  s.textContent = "This is a UI mockup — patch generation isn't connected yet.";
+  setTimeout(()=>{ s.textContent = ""; }, 4000);
+});
+
+// ---------- summary ----------
+function updateSummary(){
+  const type = instrumentType === "guitar" ? "Guitar" : "Bass";
+  const style = bodyStyleSelect.value || "";
+  let modeText = "";
+  if(instrumentType === "guitar"){
+    const checked = document.querySelector('input[name="playMode"]:checked');
+    const labels = {rhythm:"Rhythm Only", lead:"Lead Only", ctl:"Rhythm + CTL Lead Boost"};
+    modeText = checked ? labels[checked.value] : "";
+  } else {
+    modeText = document.getElementById("bassCtlToggle").checked ? "CTL enabled" : "CTL off";
+  }
+  const pedalCount = chain.filter(c=>!c.core).length;
+  document.getElementById("genSummary").textContent =
+    `${type.toUpperCase()} · ${style.toUpperCase()} · ${modeText.toUpperCase()} · GP-5 + ${pedalCount} PEDAL${pedalCount===1?"":"S"}`;
+}
+bodyStyleSelect.addEventListener("change", updateSummary);
+document.getElementById("bassCtlToggle").addEventListener("change", updateSummary);
+updateSummary();
+</script>
+</body>
+</html>

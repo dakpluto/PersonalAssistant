@@ -10,6 +10,7 @@ Patches are split first by Instrument Type (`Patches/Guitar/`, `Patches/Bass/`),
 
 | File | Song / Reference | Instrument | Full Board | AMP/CAB substitute | Notes |
 |---|---|---|---|---|---|
+| `ClickClickBoom-Sal` | Click Click Boom — Saliva (100 BPM) | Strat | Yes | IR: British Checkerboard 4x12 Medium Mix | CTL on DST + DLY + RVB: tight verse riff vs. boosted/wet solo lead |
 | `Creep-RH` | Creep — Radiohead | Strat | Yes | — | Clean/dirty split, CTL on PRE boost + DST |
 | `December-CS` | December — Collective Soul | Strat | No | — | CTL on DST + MOD (inverted) + DLY: clean vibe intro vs. driven riff |
 | `EverydayBlues-JM` | Everyday I Have the Blues — John Mayer (*Where the Light Is*) | Strat | Yes | — | Full pedalboard chain |
@@ -24,6 +25,20 @@ Patches are split first by Instrument Type (`Patches/Guitar/`, `Patches/Bass/`),
 | `Lion-EW` | *Lion* — Elevation Worship (CCM / modern worship, whole-album build) | Strat | Yes | IR: American Twin 2x12 Medium Mix | CAB null, real AMP (Dark Twin) |
 
 ## Bass/
+
+### Song/
+
+Set of 5 for one worship set — full board (Flamma octave, Donner comp, Donner fuzz, Joyo Tidal Wave, Joyo Narcissus) is identical/fixed across all 5; only the GP-5 patch changes song to song. See any patch's "Full Pedalboard" section for the shared board config.
+
+| File | Song / Reference | Instrument | Full Board | AMP/CAB substitute | Notes |
+|---|---|---|---|---|---|
+| `UnstopGod-EW` | Unstoppable God — Elevation Worship (132 BPM, B) | P/J | Yes | — | CTL on PRE Boost + DST: verse vs. driven chorus/bridge |
+| `GivingAll-MG` | Giving It All to You — Michael Gungor (100 BPM, C) | P/J | Yes | — | No CTL — warm, one-sound indie-folk tone throughout |
+| `YourLove-UP` | Your Love Changes Everything — United Pursuit (71 BPM, A) | P/J | Yes | — | CTL on PRE Micro Boost + RVB Hall: intimate verse vs. chorus swell |
+| `BreadBroken-JD` | The Bread Has Been Broken — Jeff Deyo (~72 BPM, E) | P/J | Yes | — | No CTL — dark, minimal communion tone throughout |
+| `Thrive-CC` | Thrive — Casting Crowns (115 BPM, F#) | P/J | Yes | — | CTL on DST: punchy verse vs. driven chorus |
+| `DYFAM-SM` | Don't You Forget About Me — Simple Minds (114 BPM) | P/J | Yes | — | Clean 80s pulse; CTL on PRE Boost (+FS-08 octave): verse/chorus vs. outro hook |
+| `LoveShack-B52` | Love Shack — The B-52's (134 BPM) | P/J | Yes | — | Bouncy dance-punk groove; CTL on PRE Boost + Bass OD: verse vs. chorus hook |
 
 ### Artist/
 

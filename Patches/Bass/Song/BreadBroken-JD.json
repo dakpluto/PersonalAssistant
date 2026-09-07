@@ -1,0 +1,18 @@
+{
+  "patch_name": "BreadBrkn",
+  "patch_vol": 48,
+  "bpm": 72,
+  "modules": {
+    "NR":  { "model": "Gate", "always_on": true, "settings": { "THRE": 18 } },
+    "PRE": { "model": "COMP", "always_on": true, "settings": { "Sustain": 35, "VOL": 52 } },
+    "DST": { "model": null },
+    "AMP": { "model": "Mess Bass", "always_on": true,
+             "settings": { "Gain": 25, "VOL": 58, "Bass": 58, "Middle": 45, "Treble": 42 } },
+    "CAB": { "model": "AMPG 4x10", "always_on": true, "settings": { "VOL": 50 } },
+    "EQ":  { "model": "Bass EQ 2", "always_on": true,
+             "settings": { "50Hz": 5, "120Hz": 2, "400Hz": -3, "800Hz": -3, "4.5kHz": -5, "VOL": 48 } },
+    "MOD": { "model": null },
+    "DLY": { "model": null },
+    "RVB": { "model": "Church", "always_on": true, "settings": { "Mix": 20, "Decay": 60, "Trail": true } }
+  }
+}

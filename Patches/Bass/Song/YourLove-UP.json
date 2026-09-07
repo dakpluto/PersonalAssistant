@@ -1,0 +1,19 @@
+{
+  "patch_name": "YourLove",
+  "patch_vol": 50,
+  "bpm": 71,
+  "modules": {
+    "NR":  { "model": "Gate", "always_on": true, "settings": { "THRE": 22 } },
+    "PRE": { "model": "Micro Boost", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
+             "settings": { "Gain": 50 } },
+    "DST": { "model": null },
+    "AMP": { "model": "Foxy Bass", "always_on": true, "settings": { "VOL": 60, "Bass": 55, "Treble": 55 } },
+    "CAB": { "model": "AMPG 4x10", "always_on": true, "settings": { "VOL": 55 } },
+    "EQ":  { "model": "Bass EQ 1", "always_on": true,
+             "settings": { "33Hz": 5, "150Hz": 0, "600Hz": -2, "2kHz": 2, "8kHz": 2, "VOL": 50 } },
+    "MOD": { "model": "B-Chorus", "always_on": true, "settings": { "Depth": 15, "Rate": 0.4, "VOL": 50 } },
+    "DLY": { "model": null },
+    "RVB": { "model": "Hall", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
+             "settings": { "Mix": 30, "Decay": 55, "Trail": true } }
+  }
+}

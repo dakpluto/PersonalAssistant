@@ -1,0 +1,20 @@
+{
+  "patch_name": "LoveShack-B52",
+  "patch_vol": 55,
+  "bpm": 134,
+  "modules": {
+    "NR": { "model": "Gate", "always_on": true, "settings": { "THRE": 15 } },
+    "PRE": { "model": "Boost", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
+             "settings": { "Gain": 60, "+3dB": true, "Bright": true } },
+    "DST": { "model": "Bass OD", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
+             "settings": { "Gain": 45, "Blend": 40, "VOL": 70, "Bass": 55, "Treble": 65 } },
+    "AMP": { "model": "Classic Bass", "always_on": true,
+             "settings": { "Gain": 45, "Bass": 62, "Middle": 60, "MidFreq": 3, "Treble": 60, "VOL": 78 } },
+    "CAB": { "model": "AMPG 4x10", "always_on": true, "settings": { "VOL": 70 } },
+    "EQ": { "model": "Bass EQ 2", "always_on": true,
+            "settings": { "50Hz": 4, "120Hz": 2, "400Hz": -5, "800Hz": 6, "4.5kHz": 6, "VOL": 55 } },
+    "MOD": { "model": null },
+    "DLY": { "model": null },
+    "RVB": { "model": null }
+  }
+}

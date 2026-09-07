@@ -1,0 +1,19 @@
+{
+  "patch_name": "Thrive",
+  "patch_vol": 55,
+  "bpm": 115,
+  "modules": {
+    "NR":  { "model": "Gate", "always_on": true, "settings": { "THRE": 25 } },
+    "PRE": { "model": "COMP4", "always_on": true, "settings": { "Sustain": 50, "Attack": 35, "VOL": 58, "Clip": 30 } },
+    "DST": { "model": "Bass OD", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
+             "settings": { "Gain": 55, "Blend": 50, "VOL": 60, "Bass": 55, "Treble": 62 } },
+    "AMP": { "model": "Classic Bass", "always_on": true,
+             "settings": { "Gain": 50, "Bass": 55, "Middle": 58, "MidFreq": 2, "Treble": 58, "VOL": 65 } },
+    "CAB": { "model": "AMPG 4x10", "always_on": true, "settings": { "VOL": 58 } },
+    "EQ":  { "model": "Bass EQ 2", "always_on": true,
+             "settings": { "50Hz": 4, "120Hz": 0, "400Hz": -3, "800Hz": 5, "4.5kHz": 5, "VOL": 52 } },
+    "MOD": { "model": null },
+    "DLY": { "model": null },
+    "RVB": { "model": null }
+  }
+}
