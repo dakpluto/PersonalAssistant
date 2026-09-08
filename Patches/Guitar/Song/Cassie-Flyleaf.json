@@ -1,0 +1,21 @@
+{
+  "patch_name": "Cassie - Flyleaf",
+  "patch_vol": 55,
+  "bpm": 138,
+  "ir": { "name": "American Twin 2x12 Medium Mix" },
+  "modules": {
+    "NR": { "model": "Gate", "always_on": true, "settings": { "THRE": 32 } },
+    "PRE": { "model": null },
+    "DST": { "model": "La Charger", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
+             "settings": { "Gain": 78, "Tone": 58, "VOL": 78 } },
+    "AMP": { "model": "Dark Twin", "always_on": true,
+             "settings": { "Gain": 30, "VOL": 72, "Bass": 55, "Middle": 55, "Treble": 62, "Bright": true } },
+    "CAB": { "model": null },
+    "EQ": { "model": "Guitar EQ 2", "always_on": true,
+            "settings": { "100Hz": 2, "500Hz": -6, "1kHz": 5, "3kHz": 8, "6kHz": 3, "VOL": 55 } },
+    "MOD": { "model": null },
+    "DLY": { "model": "Analog", "ctl": true, "ctl_off_state": "on", "ctl_on_state": "off",
+             "settings": { "Mix": 32, "Time": 380, "Feedback": 28, "Trail": true } },
+    "RVB": { "model": "Hall", "always_on": true, "settings": { "Mix": 30, "Decay": 45, "Trail": true } }
+  }
+}

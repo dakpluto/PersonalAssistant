@@ -10,6 +10,7 @@ Patches are split first by Instrument Type (`Patches/Guitar/`, `Patches/Bass/`),
 
 | File | Song / Reference | Instrument | Full Board | AMP/CAB substitute | Notes |
 |---|---|---|---|---|---|
+| `Cassie-Flyleaf` | Cassie — Flyleaf (original studio version) | Strat | Yes | IR: American Twin 2x12 Medium Mix | CTL on DST + DLY (inverted): clean ambient verse vs. heavy chorus wall |
 | `ClickClickBoom-Sal` | Click Click Boom — Saliva (100 BPM) | Strat | Yes | IR: British Checkerboard 4x12 Medium Mix | CTL on DST + DLY + RVB: tight verse riff vs. boosted/wet solo lead |
 | `Creep-RH` | Creep — Radiohead | Strat | Yes | — | Clean/dirty split, CTL on PRE boost + DST |
 | `December-CS` | December — Collective Soul | Strat | No | — | CTL on DST + MOD (inverted) + DLY: clean vibe intro vs. driven riff |
