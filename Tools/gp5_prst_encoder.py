@@ -17,6 +17,8 @@ Patch JSON shape:
   "patch_name": "December - Collective Soul",
   "patch_vol": 50,                     // optional, default 50
   "bpm": 120,                          // optional, default 120
+  "nam": {"name": "...", "slot": 12,   // optional; "slot" is the 1-80 Tone
+          "settings": {"Gain": 45, "VOL": 60, "Bass": 55, "Middle": 60, "Treble": 65}},
   "modules": {
     "NR":  {"model": "Gate", "always_on": true, "settings": {"THRE": 35}},
     "DST": {"model": "La Charger", "ctl": true, "ctl_off_state": "off",
@@ -24,6 +26,13 @@ Patch JSON shape:
     "MOD": {"model": null}             // or omit the key -> module unused/off
   }
 }
+
+The top-level "nam" field documents a NAM/SnapTone capture used in place of
+AMP+CAB. Without "slot", it's informational only (N->S stays inactive in the
+.prst, same as always). With "slot" (the Tone Catch N slot number the capture
+is actually loaded into on the device -- see NAMs/nams.md), the encoder emits
+a real, active N->S block referencing that slot, using "settings" as the
+actual param values (Gain/VOL/Bass/Middle/Treble), not just documentation.
 
 For a `ctl`-assigned module, `ctl_off_state` ("on"/"off") sets the saved
 bypass bit (the resting state the patch loads into — see the bypass-bit
@@ -202,10 +211,20 @@ def load_catalog(path: Path = CATALOG_PATH) -> dict:
         raw = json.load(f)
     # index by (module, trimmed model name) for lookup, keep fxid ints as keys too
     by_module_name = {}
+    # N->S (SnapTone) catalog entries all share name=="Empty" (80 slots, "Tone
+    # Catch 1".."Tone Catch 80" in fxtitle) -- by_module_name can't tell them
+    # apart, so index those separately by slot number instead.
+    by_nam_slot = {}
     for fxid_str, entry in raw.items():
         key = (entry["module"], entry["name"].strip())
         by_module_name[key] = {**entry, "fxid": int(fxid_str)}
-    return {"by_id": raw, "by_module_name": by_module_name}
+        if entry["module"] in ("N->S", "N→S"):
+            try:
+                slot_num = int(entry["fxtitle"].rsplit(" ", 1)[-1])
+            except ValueError:
+                continue
+            by_nam_slot[slot_num] = {**entry, "fxid": int(fxid_str)}
+    return {"by_id": raw, "by_module_name": by_module_name, "by_nam_slot": by_nam_slot}
 
 
 def _resolve_model(catalog: dict, block: str, model_name: str) -> dict:
@@ -217,6 +236,32 @@ def _resolve_model(catalog: dict, block: str, model_name: str) -> dict:
             f"Check the exact name against Modules/{block}.md / the catalog."
         )
     return entry
+
+
+def _resolve_nam_slot(catalog: dict, slot: int) -> dict:
+    entry = catalog["by_nam_slot"].get(slot)
+    if entry is None:
+        valid = sorted(catalog["by_nam_slot"].keys())
+        raise CatalogError(
+            f"No N->S (SnapTone) catalog entry for slot {slot}. "
+            f"Valid slots: {valid[0]}-{valid[-1]}" if valid else "catalog has no N->S entries"
+        )
+    return entry
+
+
+def _settings_to_params(block: str, model_name: str, entry: dict, settings: dict) -> dict:
+    param_by_name = {p["name"].strip(): p for p in entry["params"]}
+    params = {}
+    for setting_name, value in settings.items():
+        p = param_by_name.get(setting_name.strip())
+        if p is None:
+            raise CatalogError(
+                f"{block}/{model_name} has no param {setting_name!r}. "
+                f"Valid params: {[p['name'].strip() for p in entry['params']]}"
+            )
+        v = 1.0 if value is True else 0.0 if value is False else float(value)
+        params[p["algId"]] = v
+    return params
 
 
 def _default_off_entry(catalog: dict, block: str) -> dict:
@@ -243,18 +288,7 @@ def build_patch_spec(patch_json: dict, catalog: dict) -> PatchSpec:
             continue
 
         entry = _resolve_model(catalog, block, model_name)
-        param_by_name = {p["name"].strip(): p for p in entry["params"]}
-
-        params = {}
-        for setting_name, value in (mod.get("settings") or {}).items():
-            p = param_by_name.get(setting_name.strip())
-            if p is None:
-                raise CatalogError(
-                    f"{block}/{model_name} has no param {setting_name!r}. "
-                    f"Valid params: {[p['name'].strip() for p in entry['params']]}"
-                )
-            v = 1.0 if value is True else 0.0 if value is False else float(value)
-            params[p["algId"]] = v
+        params = _settings_to_params(block, model_name, entry, mod.get("settings") or {})
 
         always_on = bool(mod.get("always_on"))
         is_ctl = bool(mod.get("ctl"))
@@ -270,6 +304,19 @@ def build_patch_spec(patch_json: dict, catalog: dict) -> PatchSpec:
         blocks[block] = BlockSpec(
             fxid=entry["fxid"], active=active, params=params, ctl=is_ctl
         )
+
+    # Optional real N->S (SnapTone) encoding: only when the 'nam' field names
+    # a specific slot (1-80) the capture is actually loaded into on the
+    # device. Without 'slot', 'nam' stays informational-only (as before) and
+    # N->S is left inactive/idx-0 by build_prst's own default.
+    nam_spec = patch_json.get("nam")
+    if isinstance(nam_spec, dict) and nam_spec.get("slot") is not None:
+        slot = int(nam_spec["slot"])
+        entry = _resolve_nam_slot(catalog, slot)
+        params = _settings_to_params(
+            "N->S", f"Tone Catch {slot}", entry, nam_spec.get("settings") or {}
+        )
+        blocks["N->S"] = BlockSpec(fxid=entry["fxid"], active=True, params=params)
 
     return PatchSpec(
         name=patch_json.get("patch_name", "Patch"),

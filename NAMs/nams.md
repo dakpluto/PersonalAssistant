@@ -4,6 +4,8 @@
 
 # Weighting (updated 2026-09-08): bass NAMs and lower-gain/edge-of-breakup guitar NAMs now get strong preference — the GP-5's NAM (N->S) model conversion has proven out well for both. High-gain guitar amps keep the older, more conservative weighting: lean towards the GP-5's own Amp/Cab modules unless a specific NAM is a genuinely more accurate pick than the GP-5 modules for that patch.
 
+# Slot (added 2026-09-08): the GP-5 has 80 numbered on-device SnapTone slots ("Tone Catch 1".."Tone Catch 80" internally), the N->S equivalent of the 20 User IR slots. When a capture below is actually loaded onto one of my 80 slots, it gets a "Slot: N" tag — put that same number in the patch JSON's `"nam": {"slot": N, ...}` field (see Prompts/gp5_prompt.md) and the encoder writes a real, active N->S reference into the .prst instead of leaving it inactive/documentation-only. No "Slot:" tag = not loaded onto the device yet (or I haven't confirmed which slot) — treat as informational only, same as before. This is personal device state, private to me — the website's NAM/IR handling is untouched by this.
+
 ## NAM list
 - Marshall Zakk Wylde JCM800 2203ZW: The Marshall JCM800 2203ZW is a highly collectible, limited-edition 100-watt signature amplifier head released in 2002. Only 600 units were ever manufactured globally, making it an incredibly rare piece of rock history. It captures the exact raw, aggressive tone Zakk Wylde used with Ozzy Osbourne and Black Label Society. High Sensitivity - Gain 5. MESA V30 Oversized Cab
 - 5150 Stealth 100w Mesa OS Full Rig (Blue Channel): EVH 5150 III Stealth 100w, Blue channel unboosted.  Mesa Boogie Oversized (Mesa V30), blend of SM57 and VR2 through a Behringer Eurorack UB80. 

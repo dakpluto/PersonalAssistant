@@ -89,13 +89,34 @@ index: 0    1    2    3    4    5    6    7    8    9
 block: NR   PRE  DST  AMP  CAB  EQ   MOD  DLY  RVB  N->S
 ```
 
-**`N->S` (index 9, category `0x0F`) is the SnapTone-capture slot — a 10th block our
-internal representation and `Prompts/gp5_prompt.md` don't model at all.** It's not
+**`N->S` (index 9, category `0x0F`) is the SnapTone-capture slot.** It's not
 optional storage-wise: every `.prst` has this 10th model record and this 10th
 bypass bit, whether or not a SnapTone is in use. `idx=0` in that record means "no
-SnapTone" (confirmed: both real fixtures have `N->S` inactive with idx 0). Our
-encoder must always emit `N->S` as inactive/idx-0, but it must still be *present*
-and correctly *positioned* — see chain order below.
+SnapTone" (confirmed: both real fixtures have `N->S` inactive with idx 0). The
+encoder always emits `N->S` as inactive/idx-0 by default, but it must still be
+*present* and correctly *positioned* — see chain order below.
+
+**Update 2026-09-08 — the 80 storage slots are real and now used.** The vendored
+catalog (`Tools/fxid_ring_gp5.json`) has 80 `N->S`-category entries, `fxtitle`
+"Tone Catch 1".."Tone Catch 80" (`fxid = 0x0F000000 | (slot-1)`, i.e. slot 12 →
+fxlow `11`) — the on-device SnapTone equivalent of the 20 `User IR` slots. Every
+one of these catalog entries shares the literal `name: "Empty"` (a static factory
+dump, no visibility into what a specific device actually has loaded into each
+slot) — `by_module_name`'s normal `(module, name)` lookup can't tell them apart,
+so the encoder indexes them separately by slot number (`by_nam_slot`, keyed off
+the `fxtitle` suffix) instead. `Tools/gp5_prst_encoder.py`'s `build_patch_spec`
+now populates a real, active `N->S` block (bypass bit set, correct fxid, real
+Gain/VOL/Bass/Middle/Treble param floats) whenever the patch JSON's `"nam"` field
+includes `"slot": <1-80>` — see that file's module docstring and
+`Prompts/gp5_prompt.md`'s "NAM Captures" section. Without `slot`, behavior is
+unchanged (informational-only, `N->S` stays inactive) — verified byte-identical
+against every previously-committed patch that has no `slot` field.
+**Not yet verified against real hardware/Valeton Suite** — this is confirmed
+correct against the catalog's own data and the file-format math (bypass bit,
+model record, param floats all land exactly where expected), but no one has
+yet loaded a `.prst` built this way onto a real GP-5 and confirmed the pedal's
+screen shows the right capture. Treat the first real-world test as the actual
+confirmation, not this doc.
 
 **Bypass mask** (`01 30 04 00` + u32): bit `k` = block index `k` is active/on. Bits
 are independent of chain-order position. `N->S`'s bit (bit 9) should always be 0

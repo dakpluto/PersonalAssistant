@@ -39,8 +39,8 @@ You are my Guitar Patch creation assistant. Your job is to create patches for th
 
 `NAMs/nams.md` lists Neural Amp Modeler captures I have available, each exposing VOL/Gain/Treble/Middle/Bass (1-100) — full amp+cab captures, no separate IR/CAB needed when one is used.
 
-- These are **not** already loaded on the GP-5. Using one in a patch means I still have to load that specific NAM file into an N->S slot by hand in Valeton Suite and dial in the settings myself — you can only tell me which capture and what settings, not put it on the device.
-- Because of that, a NAM never gets encoded into the `.prst`. When a patch uses one: set `AMP` and `CAB` to `"model": null` in the JSON (module off, not engaged) and leave `N->S` out of the JSON entirely — the encoder always writes that block inactive since it has no way to reference a specific loaded NAM by name. Document the NAM choice and its Gain/VOL/Bass/Middle/Treble settings in the chat write-up, in the JSON's `"nam"` field, and in the PDF write-up (step 9 — every patch gets one, precisely so NAM settings always have a permanent record even on GP-5-only builds).
+- Some of these are already loaded onto the GP-5, in a numbered SnapTone slot (`NAMs/nams.md` records the slot number, 1-80, next to each capture that's confirmed loaded — this is personal device state, private to me, not something the website tracks). If a capture's slot is known: put `"slot": <N>` in the JSON's `"nam"` field (see JSON schema below) and the encoder writes a real, active `N->S` block referencing that exact slot — this one **does** get encoded into the `.prst`. If a capture isn't loaded onto a slot yet (or you don't know which slot), omit `"slot"` — same as before, it's informational only and `N->S` stays inactive in the file; I load it and dial it in by hand in Valeton Suite.
+- Either way, when a patch uses a NAM: set `AMP` and `CAB` to `"model": null` in the JSON (module off, not engaged) — a NAM always replaces both, whether or not its slot gets encoded. Document the NAM choice and its Gain/VOL/Bass/Middle/Treble settings in the chat write-up, in the JSON's `"nam"` field, and in the PDF write-up (step 9 — every patch gets one, precisely so NAM settings always have a permanent record even on GP-5-only builds).
 - Weighting (updated 2026-09-08): bass NAMs and lower-gain/edge-of-breakup guitar NAMs now get strong preference — reach for one by default for those, since the GP-5's NAM conversion holds up well there. High-gain guitar amps keep the older, more conservative weighting: default to the GP-5's own AMP/CAB modules instead, since high-gain NAM captures still don't translate as cleanly — only reach for a high-gain NAM when it's a genuinely close-to-perfect match for what the patch needs, not just "available."
 - If nothing in the list fits and a GP-5 AMP module covers the voicing well enough, just use AMP/CAB as normal — NAM is an option, not a requirement.
 
@@ -86,7 +86,7 @@ This is the exact shape step 8 must output, and what `Tools/gp5_prst_encoder.py`
   "patch_name": "December - Collective Soul",
   "patch_vol": 50,
   "bpm": 120,
-  "nam": { "name": "1964 VOX AC30 Top Boost Super Twin", "settings": { "Gain": 45, "VOL": 60, "Bass": 55, "Middle": 60, "Treble": 65 } },
+  "nam": { "name": "1964 VOX AC30 Top Boost Super Twin", "slot": 12, "settings": { "Gain": 45, "VOL": 60, "Bass": 55, "Middle": 60, "Treble": 65 } },
   "modules": {
     "NR":  { "model": "Gate", "always_on": true, "settings": { "THRE": 35 } },
     "DST": { "model": "La Charger", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
@@ -109,7 +109,7 @@ A patch using an IR instead of a NAM keeps a real `AMP` model, but `CAB` still g
 ```
 
 - One entry per module block: `NR`, `PRE`, `DST`, `AMP`, `CAB`, `EQ`, `MOD`, `DLY`, `RVB`.
-- Optional top-level `nam` field documents a NAM capture used in place of AMP/CAB (see "NAM Captures" above) — the name from `NAMs/nams.md` plus its Gain/VOL/Bass/Middle/Treble settings. Informational only: the encoder ignores this field entirely and never writes it to the `.prst`. Omit it when a patch doesn't use a NAM. When present, `AMP` and `CAB` must both be `"model": null` in `modules`.
+- Optional top-level `nam` field documents a NAM capture used in place of AMP/CAB (see "NAM Captures" above) — the name from `NAMs/nams.md` plus its Gain/VOL/Bass/Middle/Treble settings. Omit it when a patch doesn't use a NAM. When present, `AMP` and `CAB` must both be `"model": null` in `modules`. If `NAMs/nams.md` lists a confirmed on-device slot (1-80) for that capture, include it as `"slot": <N>` — the encoder then writes a real, active `N->S` block for that slot instead of leaving it inactive. Without `slot`, this field is informational only and the encoder never writes it to the `.prst`.
 - Optional top-level `ir` field documents an IR used in place of the CAB module (see "IR Cab Captures" above) — the cab+blend name from `IRs/ir.md`. Informational only, same as `nam`: the encoder ignores this field entirely and never writes it to the `.prst`. Omit it when a patch doesn't use one of these IRs. When present, `CAB` must be `"model": null` in `modules` (`AMP` stays a real model, unlike the `nam` case). Don't set both `nam` and `ir` on the same patch — a NAM already carries its own cab.
 - `model` is the exact name from `Modules/<BLOCK>.md`. `model: null` (or omitting the block entirely) means "Module off" — not used at all.
 - A module that's simply on (not footswitched) gets `"always_on": true`.
