@@ -199,10 +199,11 @@ def validate_patch_json(patch_json: dict) -> None:
             "patch specifies 'nam' but AMP/CAB model is not null — a NAM capture "
             "replaces both AMP and CAB (set both to model: null)"
         )
-    if has_ir and cab_model:
+    if has_ir and cab_model and not cab_model.strip().startswith("User IR "):
         raise ValidationError(
-            "patch specifies 'ir' but CAB model is not null — an IR capture "
-            "replaces CAB only (set CAB to model: null)"
+            "patch specifies 'ir' but CAB model is a built-in cab, not null/User "
+            "IR — an IR capture replaces CAB only (set CAB to model: null, or to "
+            "'User IR <N>' if the cab's slot is confirmed in IRs/ir.md)"
         )
 
 
