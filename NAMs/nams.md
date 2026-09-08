@@ -8,9 +8,9 @@
 
 ## NAM list
 - Marshall Zakk Wylde JCM800 2203ZW: The Marshall JCM800 2203ZW is a highly collectible, limited-edition 100-watt signature amplifier head released in 2002. Only 600 units were ever manufactured globally, making it an incredibly rare piece of rock history. It captures the exact raw, aggressive tone Zakk Wylde used with Ozzy Osbourne and Black Label Society. High Sensitivity - Gain 5. MESA V30 Oversized Cab. **Slot: 53** (on-device name "Marshall Z")
-- 5150 Stealth 100w Mesa OS Full Rig (Blue Channel): EVH 5150 III Stealth 100w, Blue channel unboosted.  Mesa Boogie Oversized (Mesa V30), blend of SM57 and VR2 through a Behringer Eurorack UB80. 
-- 5150 Stealth 100w Mesa OS Full Rig (Red Channel): EVH 5150 III Stealth 100w, Red channel unboosted.  Mesa Boogie Oversized (Mesa V30), blend of SM57 and VR2 through a Behringer Eurorack UB80.
-- 5150 Stealth 100w Mesa OS Full Rig (Green Channel): EVH 5150 III Stealth 100w, Green channel boosted with Boss SD-1.  Mesa Boogie Oversized (Mesa V30), blend of SM57 and VR2 through a Behringer Eurorack UB80.
+- 5150 Stealth 100w Mesa OS Full Rig (Blue Channel): EVH 5150 III Stealth 100w, Blue channel unboosted.  Mesa Boogie Oversized (Mesa V30), blend of SM57 and VR2 through a Behringer Eurorack UB80. **Slot: 65** (on-device name "5150Blue")
+- 5150 Stealth 100w Mesa OS Full Rig (Red Channel): EVH 5150 III Stealth 100w, Red channel unboosted.  Mesa Boogie Oversized (Mesa V30), blend of SM57 and VR2 through a Behringer Eurorack UB80. **Slot: 67** (on-device name "5150Red")
+- 5150 Stealth 100w Mesa OS Full Rig (Green Channel): EVH 5150 III Stealth 100w, Green channel boosted with Boss SD-1.  Mesa Boogie Oversized (Mesa V30), blend of SM57 and VR2 through a Behringer Eurorack UB80. **Slot: 66** (on-device name "5150Green")
 - Two-Rock John Mayer Signature Prototype Signature #83 + CAB Dumble Steel String Singer + BOOST. **Slot: 58** (on-device name "2RJMS+Bst")
 - Two-Rock John Mayer Signature Prototype Signature #83 + CAB Dumble Steel String Singer + Tubescreamer. **Slot: 56** (on-device name "2RJSM+TS")
 - Two-Rock John Mayer Signature Prototype Signature #83 + CAB Dumble Steel String Singer + Tubescreamer + BOOST. **Slot: 57** (on-device name "2RJSM+TsBt")
