@@ -111,12 +111,9 @@ includes `"slot": <1-80>` — see that file's module docstring and
 `Prompts/gp5_prompt.md`'s "NAM Captures" section. Without `slot`, behavior is
 unchanged (informational-only, `N->S` stays inactive) — verified byte-identical
 against every previously-committed patch that has no `slot` field.
-**Not yet verified against real hardware/Valeton Suite** — this is confirmed
-correct against the catalog's own data and the file-format math (bypass bit,
-model record, param floats all land exactly where expected), but no one has
-yet loaded a `.prst` built this way onto a real GP-5 and confirmed the pedal's
-screen shows the right capture. Treat the first real-world test as the actual
-confirmation, not this doc.
+**Confirmed against real hardware 2026-09-08** — a `.prst` built with `nam.slot`
+(Darkglass B7K Ultra, slot 64) loaded onto Michael's actual GP-5 with no issues.
+No longer a theoretical/catalog-math-only claim.
 
 **Update 2026-09-08 — `User IR` slots (CAB category `0x0A`) need no equivalent
 special-casing.** Unlike the 80 `N->S` entries, the 20 `User IR` catalog entries
@@ -127,7 +124,9 @@ zero encoder changes. Confirmed by direct test: encoding a CAB block with
 `"model": "User IR 5"` produces the right fxid, an active bypass bit, and the
 right `VOL` float, all via code that predates this note. See
 `Prompts/gp5_prompt.md`'s "IR Cab Captures" section and `IRs/ir.md`'s slot-tagged
-entries for how this gets used in practice.
+entries for how this gets used in practice. **Confirmed against real hardware
+2026-09-08** — a `.prst` built with `CAB: "User IR 4"` (EBS410) loaded onto
+Michael's actual GP-5 with no issues.
 
 **Bypass mask** (`01 30 04 00` + u32): bit `k` = block index `k` is active/on. Bits
 are independent of chain-order position. `N->S`'s bit (bit 9) should always be 0
