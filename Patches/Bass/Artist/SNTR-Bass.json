@@ -1,0 +1,36 @@
+{
+  "patch_name": "SNTR-Bass",
+  "patch_vol": 55,
+  "bpm": 172,
+  "modules": {
+    "NR": { "model": "Gate", "always_on": true, "settings": { "THRE": 20 } },
+    "PRE": { "model": null },
+    "DST": { "model": null },
+    "AMP": {
+      "model": "Classic Bass",
+      "always_on": true,
+      "settings": { "Gain": 35, "Bass": 60, "Middle": 50, "MidFreq": 2, "Treble": 55, "VOL": 70 }
+    },
+    "CAB": { "model": "AMPG 4x10", "always_on": true, "settings": { "VOL": 70 } },
+    "EQ": {
+      "model": "Bass EQ 2",
+      "always_on": true,
+      "settings": { "50Hz": 2, "120Hz": 4, "400Hz": -3, "800Hz": 2, "4.5kHz": 3, "VOL": 55 }
+    },
+    "MOD": {
+      "model": "B-Chorus",
+      "ctl": true,
+      "ctl_off_state": "off",
+      "ctl_on_state": "on",
+      "settings": { "Depth": 40, "Rate": 2.5, "VOL": 55 }
+    },
+    "DLY": { "model": null },
+    "RVB": {
+      "model": "Air",
+      "ctl": true,
+      "ctl_off_state": "off",
+      "ctl_on_state": "on",
+      "settings": { "Mix": 35, "Decay": 45, "Damp": 40, "Trail": true }
+    }
+  }
+}

@@ -46,3 +46,10 @@ Set of 5 for one worship set — full board (Flamma octave, Donner comp, Donner 
 |---|---|---|---|---|---|
 | `Egan-Fretless` | Mark Egan signature style | Sire fretless | Yes | — | Chorus + always-on delay for fretless glide |
 | `Yes-Squire` | Chris Squire signature style (Yes) | P/J | Yes | — | CTL on PRE boost + DST (inverted: on by default, CTL kills them) |
+| `SNTR-Bass` | Sixpence None the Richer signature style | P/J | Yes | — | CTL on MOD (B-Chorus) + RVB: dry pop-bounce vs. chorus/reverb dream-pop |
+
+### Style/
+
+| File | Song / Reference | Instrument | Full Board | AMP/CAB substitute | Notes |
+|---|---|---|---|---|---|
+| `RammGrind` | Industrial metal (Rammstein — Ollie Riedel) | P/J | Yes | — | Fuzz + Bass OD stacked grind; CTL on PRE Micro Boost: base grind vs. pushed chorus/breakdown |
