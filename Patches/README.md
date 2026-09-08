@@ -54,4 +54,4 @@ Set of 5 for one worship set — full board (Flamma octave, Donner comp, Donner 
 
 | File | Song / Reference | Instrument | Full Board | AMP/CAB substitute | Notes |
 |---|---|---|---|---|---|
-| `RammGrind` | Industrial metal (Rammstein — Ollie Riedel) | P/J | Yes | — | Fuzz + Bass OD stacked grind; CTL on PRE Micro Boost: base grind vs. pushed chorus/breakdown |
+| `RammGrind` | Industrial metal (Rammstein — Ollie Riedel) | P/J | Yes | NAM: Darkglass Alpha Omega (Distortion), Slot 62 | Fuzz + Tidal Wave feed the NAM's own distortion; CTL on PRE Micro Boost: base grind vs. pushed chorus/breakdown |
