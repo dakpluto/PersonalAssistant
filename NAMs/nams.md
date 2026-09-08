@@ -11,10 +11,11 @@
 - 5150 Stealth 100w Mesa OS Full Rig (Blue Channel): EVH 5150 III Stealth 100w, Blue channel unboosted.  Mesa Boogie Oversized (Mesa V30), blend of SM57 and VR2 through a Behringer Eurorack UB80. 
 - 5150 Stealth 100w Mesa OS Full Rig (Red Channel): EVH 5150 III Stealth 100w, Red channel unboosted.  Mesa Boogie Oversized (Mesa V30), blend of SM57 and VR2 through a Behringer Eurorack UB80.
 - 5150 Stealth 100w Mesa OS Full Rig (Green Channel): EVH 5150 III Stealth 100w, Green channel boosted with Boss SD-1.  Mesa Boogie Oversized (Mesa V30), blend of SM57 and VR2 through a Behringer Eurorack UB80.
-- Two-Rock John Mayer Signature Prototype Signature #83 + CAB Dumble Steel String Singer + BOOST
-- Two-Rock John Mayer Signature Prototype Signature #83 + CAB Dumble Steel String Singer + Tubescreamer
+- Two-Rock John Mayer Signature Prototype Signature #83 + CAB Dumble Steel String Singer + BOOST. **Slot: 58** (on-device name "2RJMS+Bst")
+- Two-Rock John Mayer Signature Prototype Signature #83 + CAB Dumble Steel String Singer + Tubescreamer. **Slot: 56** (on-device name "2RJSM+TS")
+- Two-Rock John Mayer Signature Prototype Signature #83 + CAB Dumble Steel String Singer + Tubescreamer + BOOST. **Slot: 57** (on-device name "2RJSM+TsBt")
 - Two-Rock John Mayer Signature Prototype Signature #83 + CAB Dumble Steel String Singer. **Slot: 59** (on-device name "2RJMS+SSS")
-- Two-Rock John Mayer Signature Prototype Signature #83
+- Two-Rock John Mayer Signature Prototype Signature #83. **Slot: 55** (on-device name "2RJSM")
 - 1964 VOX AC30 Top Boost Super Twin: AMP SETTINGS: V2 T7.5 B8.7 C8 CAB: VOX 2X12 with vintage Alnico Silver speakers and original cones. MICS: R121, R160, U87 DESCRIPTION: This is a capture of the goldylocks version of the iconic JMI era AC30 Top Boost amp - an in-panel Top Boost Copper panel Super Twin (separate head and  2X12 CAB, which gives it moore oomph than the open back combo version) with Albion transformers taht are legendary for their chime and clarity. 
 - Darkglass Harmonic Booster: Darkglass Harmonic Booster -> Aguilar DB 751 amplifier -> Darkglass DG412ES cabinet -> Shure SM7B microphone. **Slot: 60** (on-device name "DrkGlsHarm" — confirmed; "DrkGlsCln" was this same preset before Michael renamed it on-device for clarity)
 - Darkglass Vintage Deluxe: Darkglass Vintage Deluxe  -> Aguilar DB 751 amplifier -> Darkglass DG412ES cabinet -> Shure SM7B microphone. **Slot: 61** (on-device name "DrkGlsVDlx")
