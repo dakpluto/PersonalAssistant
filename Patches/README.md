@@ -40,6 +40,7 @@ Set of 5 for one worship set — full board (Flamma octave, Donner comp, Donner 
 | `Thrive-CC` | Thrive — Casting Crowns (115 BPM, F#) | P/J | Yes | — | CTL on DST: punchy verse vs. driven chorus |
 | `DYFAM-SM` | Don't You Forget About Me — Simple Minds (114 BPM) | P/J | Yes | — | Clean 80s pulse; CTL on PRE Boost (+FS-08 octave): verse/chorus vs. outro hook |
 | `LoveShack-B52` | Love Shack — The B-52's (134 BPM) | P/J | Yes | — | Bouncy dance-punk groove; CTL on PRE Boost + Bass OD: verse vs. chorus hook |
+| `YourWaysBetter-FF` | Your Ways Better — Forrest Frank (~92 BPM, est.) | P/J | Yes | — | Chill lo-fi worship-pop; CTL on DST (Bass OD) + RVB: subtle verse-to-chorus lift, deliberately understated |
 
 ### Artist/
 

@@ -1,0 +1,20 @@
+{
+  "patch_name": "Your Ways Better - Forrest Frank",
+  "patch_vol": 52,
+  "bpm": 92,
+  "modules": {
+    "NR":  { "model": "Gate", "always_on": true, "settings": { "THRE": 20 } },
+    "PRE": { "model": "COMP4", "always_on": true, "settings": { "Sustain": 55, "Attack": 55, "VOL": 100, "Clip": 30 } },
+    "DST": { "model": "Bass OD", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
+             "settings": { "Gain": 22, "Blend": 22, "VOL": 55, "Bass": 55, "Treble": 45 } },
+    "AMP": { "model": "Classic Bass", "always_on": true,
+             "settings": { "Gain": 28, "Bass": 60, "Middle": 50, "MidFreq": 0, "Treble": 42, "VOL": 65 } },
+    "CAB": { "model": "AMPG 4x10", "always_on": true, "settings": { "VOL": 55 } },
+    "EQ":  { "model": "Bass EQ 2", "always_on": true,
+             "settings": { "50Hz": 4, "120Hz": 2, "400Hz": -3, "800Hz": -2, "4.5kHz": 0, "VOL": 52 } },
+    "MOD": { "model": "B-Chorus", "always_on": true, "settings": { "Depth": 12, "Rate": 0.4, "VOL": 50 } },
+    "DLY": { "model": null },
+    "RVB": { "model": "Room", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
+             "settings": { "Mix": 18, "Decay": 30, "Trail": true } }
+  }
+}
