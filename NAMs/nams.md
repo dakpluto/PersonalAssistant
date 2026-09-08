@@ -16,9 +16,9 @@
 - Two-Rock John Mayer Signature Prototype Signature #83 + CAB Dumble Steel String Singer
 - Two-Rock John Mayer Signature Prototype Signature #83
 - 1964 VOX AC30 Top Boost Super Twin: AMP SETTINGS: V2 T7.5 B8.7 C8 CAB: VOX 2X12 with vintage Alnico Silver speakers and original cones. MICS: R121, R160, U87 DESCRIPTION: This is a capture of the goldylocks version of the iconic JMI era AC30 Top Boost amp - an in-panel Top Boost Copper panel Super Twin (separate head and  2X12 CAB, which gives it moore oomph than the open back combo version) with Albion transformers taht are legendary for their chime and clarity. 
-- Darkglass Harmonic Booster: Darkglass Harmonic Booster -> Aguilar DB 751 amplifier -> Darkglass DG412ES cabinet -> Shure SM7B microphone
-- Darkglass Vintage Deluxe: Darkglass Vintage Deluxe  -> Aguilar DB 751 amplifier -> Darkglass DG412ES cabinet -> Shure SM7B microphone
-- Darkglass Alpha Omega (Distortion): Darkglass Alpha Omega (Alpha Side) -> Aguilar DB 751 amplifier -> Darkglass DG412ES cabinet -> Shure SM7B microphone
-- Darkglass Alpha Omega (Fuzz): Darkglass Alpha Omega (Omega Side) -> Aguilar DB 751 amplifier -> Darkglass DG412ES cabinet -> Shure SM7B microphone
-- Darkglass B7K Ultra: Microtubes B7K Ultra -> Aguilar DB 751 amplifier -> Darkglass DG412ES cabinet -> Shure SM7B microphone
+- Darkglass Harmonic Booster: Darkglass Harmonic Booster -> Aguilar DB 751 amplifier -> Darkglass DG412ES cabinet -> Shure SM7B microphone. **Slot: 60** (on-device name "DrkGlsHarm" — unverified against the actual file: a decoded test export named "DrkGlsCln" also pointed at slot 60, so double-check this one before trusting it for a real patch)
+- Darkglass Vintage Deluxe: Darkglass Vintage Deluxe  -> Aguilar DB 751 amplifier -> Darkglass DG412ES cabinet -> Shure SM7B microphone. **Slot: 61** (on-device name "DrkGlsVDlx")
+- Darkglass Alpha Omega (Distortion): Darkglass Alpha Omega (Alpha Side) -> Aguilar DB 751 amplifier -> Darkglass DG412ES cabinet -> Shure SM7B microphone. **Slot: 62** (on-device name "DrkGlsDist")
+- Darkglass Alpha Omega (Fuzz): Darkglass Alpha Omega (Omega Side) -> Aguilar DB 751 amplifier -> Darkglass DG412ES cabinet -> Shure SM7B microphone. **Slot: 63** (on-device name "DrkGlsFuzz")
+- Darkglass B7K Ultra: Microtubes B7K Ultra -> Aguilar DB 751 amplifier -> Darkglass DG412ES cabinet -> Shure SM7B microphone. **Slot: 64** (on-device name "DrkGlsB7K")
 
