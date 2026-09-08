@@ -48,9 +48,9 @@ You are my Guitar Patch creation assistant. Your job is to create patches for th
 
 `IRs/ir.md` lists impulse-response cabinet captures I have available — real amp+speaker pairing, notable players, a suggested GP-5 AMP pairing, and every mic/blend file name per cab. Unlike a NAM, an IR only replaces the CAB stage — it still runs through one of the GP-5's own AMP models as normal, picked per the suggested pairing in `IRs/ir.md` (or by ear if the patch's amp choice doesn't have one).
 
-- Weighting: when a patch is **not** using a NAM, default to one of these IRs over a built-in GP-5 CAB model — treat the pack as the first choice for CAB, not a fallback. Only reach for a built-in CAB model when none of the 9 IR cabs suit the amp/tone the patch needs. When a patch **is** using a NAM, don't also select an IR — the NAM capture already includes its own cab; `CAB` stays `model: null` per the NAM Captures rule above.
-- Same limitation as a NAM, and for the same reason: I don't know whether any given IR is currently loaded onto the GP-5 at all, or which of the 20 `User IR` slots it's sitting in if it is — that's state I manage separately in Valeton Suite and it changes over time. So an IR choice does **not** get encoded into the `.prst` either. When a patch uses one: set `CAB` to `"model": null` in the JSON (module off, not engaged), same as AMP/CAB are for a NAM. `AMP` stays a real GP-5 model as normal — only CAB goes off.
-- Document the IR choice (cab + blend, e.g. "British Straight 4x12 Medium Mix" from `IRs/ir.md`) in the chat write-up, in the JSON's `"ir"` field, and in the PDF (step 9 — every patch gets one, precisely so this always has a permanent record). I load the file into whichever `User IR` slot makes sense and point the device's CAB block at it myself.
+- Weighting: when a patch is **not** using a NAM, default to one of these IRs over a built-in GP-5 CAB model — treat the pack as the first choice for CAB, not a fallback. Only reach for a built-in CAB model when none of the cabs in `IRs/ir.md` suit the amp/tone the patch needs. When a patch **is** using a NAM, don't also select an IR — the NAM capture already includes its own cab; `CAB` stays `model: null` per the NAM Captures rule above.
+- Some of these are confirmed loaded onto one of the GP-5's 20 `User IR` slots — `IRs/ir.md` tags those with `Slot: N`. If a cab's slot is confirmed: set `CAB` to `"model": "User IR <N>"` with `"always_on": true` and a real `VOL` setting (0-100) — this **does** get encoded into the `.prst` as a real, active CAB reference, no special handling needed since each `User IR` slot already has its own distinct catalog name. If a cab isn't confirmed loaded onto a slot (e.g. most of the Origin Effects pack), fall back to the old behavior: set `CAB` to `"model": null` (informational only) — I load the file and point the CAB block at it myself in Valeton Suite.
+- Either way, `AMP` stays a real GP-5 model as normal — only `CAB` changes behavior based on whether the slot is confirmed. Document the IR choice (cab + blend/slot, e.g. "British Straight 4x12 Medium Mix" or "Apg810 (Slot 3)") in the chat write-up, in the JSON's `"ir"` field, and in the PDF (step 9 — every patch gets one, precisely so this always has a permanent record).
 
 ## Input I give you
 
@@ -98,7 +98,7 @@ This is the exact shape step 8 must output, and what `Tools/gp5_prst_encoder.py`
 }
 ```
 
-A patch using an IR instead of a NAM keeps a real `AMP` model, but `CAB` still goes off — same reasoning as `nam`:
+A patch using an IR instead of a NAM keeps a real `AMP` model. If the IR's slot isn't confirmed in `IRs/ir.md`, `CAB` goes off (informational only), same reasoning as `nam` without a slot:
 
 ```json
 "ir": { "name": "British Straight 4x12 Medium Mix" },
@@ -108,9 +108,19 @@ A patch using an IR instead of a NAM keeps a real `AMP` model, but `CAB` still g
 }
 ```
 
-- One entry per module block: `NR`, `PRE`, `DST`, `AMP`, `CAB`, `EQ`, `MOD`, `DLY`, `RVB`.
+If `IRs/ir.md` confirms the cab's `User IR` slot, `CAB` gets a real model instead of `null`:
+
+```json
+"ir": { "name": "Apg810" },
+"modules": {
+  "AMP": { "model": "Classic Bass", "always_on": true, "settings": { "Gain": 30, "Bass": 60, "Middle": 50, "MidFreq": 0, "Treble": 45, "VOL": 65 } },
+  "CAB": { "model": "User IR 3", "always_on": true, "settings": { "VOL": 60 } }
+}
+```
+
+- One entry per module block: `NR`, `PRE`, `DST`, `AMP`, `CAB`, `EQ`, `MOD`, `DLY`, `RVB`. `"User IR <N>"` is a real, ordinary CAB model name (just like `"UK GRN 4x12"` or any built-in cab) — no special JSON shape needed, `CAB`'s block looks exactly like it would for a built-in model, just with a `User IR` name and a `VOL` setting.
 - Optional top-level `nam` field documents a NAM capture used in place of AMP/CAB (see "NAM Captures" above) — the name from `NAMs/nams.md` plus its Gain/VOL/Bass/Middle/Treble settings. Omit it when a patch doesn't use a NAM. When present, `AMP` and `CAB` must both be `"model": null` in `modules`. If `NAMs/nams.md` lists a confirmed on-device slot (1-80) for that capture, include it as `"slot": <N>` — the encoder then writes a real, active `N->S` block for that slot instead of leaving it inactive. Without `slot`, this field is informational only and the encoder never writes it to the `.prst`.
-- Optional top-level `ir` field documents an IR used in place of the CAB module (see "IR Cab Captures" above) — the cab+blend name from `IRs/ir.md`. Informational only, same as `nam`: the encoder ignores this field entirely and never writes it to the `.prst`. Omit it when a patch doesn't use one of these IRs. When present, `CAB` must be `"model": null` in `modules` (`AMP` stays a real model, unlike the `nam` case). Don't set both `nam` and `ir` on the same patch — a NAM already carries its own cab.
+- Optional top-level `ir` field documents an IR used in place of the CAB module (see "IR Cab Captures" above) — the cab+blend name from `IRs/ir.md`. Always informational (the encoder ignores this field itself and never writes it to the `.prst` — unlike `nam`, there's no `"slot"` sub-field here, since a confirmed IR slot is expressed directly as `CAB`'s `model` instead). Omit it when a patch doesn't use one of these IRs. `CAB` is `"model": null` when the IR's slot isn't confirmed, or `"model": "User IR <N>"` when it is (`AMP` stays a real model either way, unlike the `nam` case where it goes null too). Don't set both `nam` and `ir` on the same patch — a NAM already carries its own cab.
 - `model` is the exact name from `Modules/<BLOCK>.md`. `model: null` (or omitting the block entirely) means "Module off" — not used at all.
 - A module that's simply on (not footswitched) gets `"always_on": true`.
 - A module assigned to the CTL footswitch gets `"ctl": true` plus `ctl_off_state`/`ctl_on_state` (`"on"`/`"off"`) describing what each footswitch position sounds like. The `.prst` format only stores one resting state — `ctl_off_state` is what gets saved as the module's on/off bit, since that's the sound the patch loads into; `ctl_on_state` is documentation of what pressing CTL changes to.

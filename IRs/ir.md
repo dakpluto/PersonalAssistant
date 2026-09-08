@@ -8,7 +8,22 @@
 
 # "Suggested GP-5 AMP pairing" below is our own mapping (not from Origin Effects) — the GP-5 AMP model whose real-amp counterpart most closely matches the amp this cab was captured with, for patches that use one of these IRs for CAB instead of a GP-5 CAB model.
 
-## IR list
+## Bass/Guitar Cab IR Library (loaded on device — User IR slots 1-20)
+
+Unlike the Origin Effects pack below (reference material, not confirmed loaded), these are actually loaded onto the GP-5's 20 `User IR` slots right now. The catalog has a distinct entry per slot (`"User IR 1"` .. `"User IR 20"`, each with its own real name — unlike the NAM/SnapTone slots, which all collide on `name: "Empty"`), so a confirmed slot here encodes directly: set `CAB` to `"model": "User IR <N>"` with `always_on: true` and a real `VOL` setting — no `model: null` placeholder needed, no encoder change needed either. `AMP` still picks a real GP-5 model as normal, same as any IR use.
+
+- Apg115 (Ampeg Heritage B-15, 1x15", ceramic Eminence driver designed specifically for it): prominent peak at 100Hz, adds girth. **Slot: 1**. Suggested AMP pairing: Classic Bass (Ampeg SVT) — same brand family.
+- Apg115410 (summed Ampeg Heritage B-15 + HLF 410): flat response, thunderous. **Slot: 2**. Suggested AMP pairing: Classic Bass.
+- Apg810 (Ampeg SVT-810E, custom-designed Eminence speakers): the classic SVT stack. **Slot: 3**. Suggested AMP pairing: Classic Bass — the most direct real-world pairing of this set.
+- EBS410 (EBS ProLine 410, 2" tweeter): accentuated high-mids with a characterful boost at 2-3kHz — sits well in a mix, particularly on clean tones. **Slot: 4**. No EBS-family AMP model in the GP-5 catalog; pick by ear, favors clean/lower-gain bass patches given the hi-mid clarity.
+- EVM112 (Electro-Voice EVM12L speaker): works equally well for guitar or bass. **Slot: 5**. Pick the AMP model per the patch's actual instrument — no bass/guitar-specific pairing implied by the cab itself.
+- Hartke410 (Hartke XL410, aluminum cones): bright, aggressive. **Slot: 6**. No direct AMP match in the catalog; pairs well with a grittier/driven bass tone (e.g. alongside Bass OD or a fuzz pedal).
+- Mesa215 (Mesa Boogie Road Ready 2x15, bright tweeter): modern, crushing tone. **Slot: 7**. Suggested AMP pairing: Mess Bass (Mesa/Boogie Bass 400) — same brand family.
+- Sunn215 (Sunn 200S 2x15): one-of-a-kind fat sound, works great with distortion/fuzz. **Slot: 8**. No Sunn-family AMP model in the catalog; reach for this one specifically on driven/fuzz bass patches.
+- TC410 (TC Electronic BC 410, custom-designed Eminence speakers): simple, rather flat response with a mild 100Hz boost. **Slot: 9**. No TC-family AMP model; the flat/neutral response makes it a safe general-purpose pairing with any GP-5 bass AMP.
+- V30112 (Celestion V30 guitar cab speaker in an isolation cabinet, sub mic blended in for low-end): the only guitar cab in this set, not bass. **Slot: 10**. Suggested AMP pairing: a modern high-gain guitar model (e.g. Bog RedV, Eagle 120, Mess DualV) — same V30 character as the "Modern Boutique" cab in the Origin Effects pack below.
+
+## Origin Effects IR list
 
 ### British Straight — Marshall 1960B, 4x12" Celestion G12H 55Hz (1970)
 Beefier low end from the 1960B straight cab, articulate-yet-warm voice from the G12H 55Hz speakers, complementing the bright and aggressive tone of vintage Marshall amps — thundering riffs and singing leads alike. Notable users: Jimi Hendrix, Jimmy Page, Tony Iommi, Richie Blackmore.

@@ -118,6 +118,17 @@ yet loaded a `.prst` built this way onto a real GP-5 and confirmed the pedal's
 screen shows the right capture. Treat the first real-world test as the actual
 confirmation, not this doc.
 
+**Update 2026-09-08 — `User IR` slots (CAB category `0x0A`) need no equivalent
+special-casing.** Unlike the 80 `N->S` entries, the 20 `User IR` catalog entries
+(`CAB` module) each have their own real, distinct `name` ("User IR 1".."User IR
+20") — no shared-name collision, so the existing generic `_resolve_model`
+`(module, name)` lookup already resolves `"model": "User IR 5"` correctly with
+zero encoder changes. Confirmed by direct test: encoding a CAB block with
+`"model": "User IR 5"` produces the right fxid, an active bypass bit, and the
+right `VOL` float, all via code that predates this note. See
+`Prompts/gp5_prompt.md`'s "IR Cab Captures" section and `IRs/ir.md`'s slot-tagged
+entries for how this gets used in practice.
+
 **Bypass mask** (`01 30 04 00` + u32): bit `k` = block index `k` is active/on. Bits
 are independent of chain-order position. `N->S`'s bit (bit 9) should always be 0
 for us.
