@@ -5,7 +5,7 @@ Bass: Harley Benton P/J, 5-string, passive. Full board.
 
 ## Why a NAM here
 
-Darkglass B7K Ultra (Slot 64), dialed low-gain rather than driven. The other four Darkglass captures in the library (Harmonic Booster, Vintage Deluxe, Alpha Omega Distortion/Fuzz) are all voiced for aggressive/distorted tones — wrong genre entirely for this song. B7K Ultra is the one genuinely versatile capture in the set; at low Gain it's just a warm, present, hi-fi DI/preamp tone with no drive character, which is exactly what an 80s power-ballad bass wants. Per the current NAM weighting (bass NAMs get strong preference), this beats reaching for a built-in AMP/CAB or one of the new bass cab IRs for this patch.
+Darkglass B7K Ultra (Slot 64), dialed low-gain rather than driven. Three of the other four Darkglass captures in the library (Vintage Deluxe, Alpha Omega Distortion/Fuzz) are voiced for aggressive/distorted tones — wrong genre entirely for this song. The Harmonic Booster capture (Slot 60) is actually clean-voiced too (a harmonic-enhancer boost, not a drive pedal — see `NAMs/nams.md`) and would be a reasonable alternative pick here; B7K Ultra was chosen instead for its more flexible tone-shaping (Gain/Bass/Middle/Treble all independently dialed), which gave more direct control over the warm, present target tone than a pure boost pedal capture would. Per the current NAM weighting (bass NAMs get strong preference), either beats reaching for a built-in AMP/CAB or one of the new bass cab IRs for this patch.
 
 ## GP-5 Settings
 
