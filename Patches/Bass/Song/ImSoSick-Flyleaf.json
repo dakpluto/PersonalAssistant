@@ -1,0 +1,20 @@
+{
+  "patch_name": "ImSoSick - Flyleaf",
+  "patch_vol": 56,
+  "bpm": 102,
+  "nam": { "name": "Darkglass Alpha Omega (Fuzz)", "slot": 63, "settings": { "Gain": 75, "VOL": 62, "Bass": 42, "Middle": 68, "Treble": 62 } },
+  "modules": {
+    "NR":  { "model": "Gate", "always_on": true, "settings": { "THRE": 40 } },
+    "PRE": { "model": "Micro Boost", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
+             "settings": { "Gain": 60 } },
+    "DST": { "model": null },
+    "AMP": { "model": null },
+    "CAB": { "model": null },
+    "EQ":  { "model": "Bass EQ 1", "always_on": true,
+             "settings": { "33Hz": -4, "150Hz": -3, "600Hz": 6, "2kHz": 8, "8kHz": 3, "VOL": 55 } },
+    "MOD": { "model": null },
+    "DLY": { "model": null },
+    "RVB": { "model": "Room", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
+             "settings": { "Mix": 20, "Decay": 35, "Trail": true } }
+  }
+}
