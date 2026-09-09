@@ -42,6 +42,7 @@ Set of 5 for one worship set — full board (Flamma octave, Donner comp, Donner 
 | `LoveShack-B52` | Love Shack — The B-52's (134 BPM) | P/J | Yes | — | Bouncy dance-punk groove; CTL on PRE Boost + Bass OD: verse vs. chorus hook |
 | `YourWaysBetter-FF` | Your Ways Better — Forrest Frank (~92 BPM, est.) | P/J | Yes | — | Chill lo-fi worship-pop; CTL on DST (Bass OD) + RVB: subtle verse-to-chorus lift, deliberately understated |
 | `IWantToKnow-Foreigner` | I Want to Know What Love Is — Foreigner (~67 BPM, est.) | P/J | Yes | NAM: Darkglass B7K Ultra (clean), Slot 64 | CTL on PRE Micro Boost + RVB Hall: intimate verse vs. big choir/chorus swell |
+| `CrashIntoMe-DMB` | Crash Into Me — Dave Matthews Band (~70 BPM, est.) | P/J | Yes | NAM: Darkglass Harmonic Booster (clean), Slot 60 | CTL on RVB Room only: understated verse vs. small hook lift, no big swell |
 
 ### Artist/
 
