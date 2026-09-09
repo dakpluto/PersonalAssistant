@@ -1,0 +1,20 @@
+{
+  "patch_name": "Parallels - Yes",
+  "patch_vol": 58,
+  "bpm": 132,
+  "ir": { "name": "Sunn215" },
+  "modules": {
+    "NR":  { "model": "Gate", "always_on": true, "settings": { "THRE": 35 } },
+    "PRE": { "model": null },
+    "DST": { "model": "Bass OD", "always_on": true,
+             "settings": { "Gain": 75, "Blend": 70, "VOL": 60, "Bass": 45, "Treble": 65 } },
+    "AMP": { "model": "Classic Bass", "always_on": true,
+             "settings": { "Gain": 65, "Bass": 55, "Middle": 70, "MidFreq": 2, "Treble": 60, "VOL": 75 } },
+    "CAB": { "model": "User IR 8", "always_on": true, "settings": { "VOL": 65 } },
+    "EQ":  { "model": "Bass EQ 1", "always_on": true,
+             "settings": { "33Hz": 4, "150Hz": 2, "600Hz": -2, "2kHz": 8, "8kHz": 4, "VOL": 55 } },
+    "MOD": { "model": "V-Roto", "always_on": true, "settings": { "Depth": 55, "Rate": 1.0 } },
+    "DLY": { "model": null },
+    "RVB": { "model": "Hall", "always_on": true, "settings": { "Mix": 20, "Decay": 40, "Trail": true } }
+  }
+}

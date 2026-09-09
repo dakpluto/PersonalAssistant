@@ -43,6 +43,7 @@ Set of 5 for one worship set — full board (Flamma octave, Donner comp, Donner 
 | `YourWaysBetter-FF` | Your Ways Better — Forrest Frank (~92 BPM, est.) | P/J | Yes | — | Chill lo-fi worship-pop; CTL on DST (Bass OD) + RVB: subtle verse-to-chorus lift, deliberately understated |
 | `IWantToKnow-Foreigner` | I Want to Know What Love Is — Foreigner (~67 BPM, est.) | P/J | Yes | NAM: Darkglass B7K Ultra (clean), Slot 64 | CTL on PRE Micro Boost + RVB Hall: intimate verse vs. big choir/chorus swell |
 | `CrashIntoMe-DMB` | Crash Into Me — Dave Matthews Band (~70 BPM, est.) | P/J | Yes | NAM: Darkglass Harmonic Booster (clean), Slot 60 | CTL on RVB Room only: understated verse vs. small hook lift, no big swell |
+| `Parallels-Yes` | Parallels — Yes (~132 BPM, est.) | P/J | Yes | IR: Sunn215, Slot 8 | No CTL — massive, driven "bass through a church organ amp" tone throughout; V-Roto vibrato for the swirl |
 
 ### Artist/
 
