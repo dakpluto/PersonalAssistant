@@ -1,0 +1,20 @@
+{
+  "patch_name": "You - Candlebox",
+  "patch_vol": 54,
+  "bpm": 78,
+  "nam": { "name": "Darkglass Vintage Deluxe", "slot": 61, "settings": { "Gain": 45, "VOL": 65, "Bass": 55, "Middle": 58, "Treble": 55 } },
+  "modules": {
+    "NR":  { "model": "Gate", "always_on": true, "settings": { "THRE": 24 } },
+    "PRE": { "model": "Micro Boost", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
+             "settings": { "Gain": 55 } },
+    "DST": { "model": null },
+    "AMP": { "model": null },
+    "CAB": { "model": null },
+    "EQ":  { "model": "Bass EQ 1", "always_on": true,
+             "settings": { "33Hz": 2, "150Hz": 1, "600Hz": -3, "2kHz": 6, "8kHz": 2, "VOL": 54 } },
+    "MOD": { "model": "B-Chorus", "always_on": true, "settings": { "Depth": 12, "Rate": 0.4, "VOL": 50 } },
+    "DLY": { "model": null },
+    "RVB": { "model": "Hall", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
+             "settings": { "Mix": 28, "Decay": 45, "Trail": true } }
+  }
+}
