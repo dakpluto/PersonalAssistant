@@ -1,0 +1,21 @@
+{
+  "patch_name": "AllForYou",
+  "patch_vol": 54,
+  "bpm": 100,
+  "ir": { "name": "Apg115410" },
+  "modules": {
+    "NR":  { "model": "Gate", "always_on": true, "settings": { "THRE": 12 } },
+    "PRE": { "model": "Micro Boost", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
+             "settings": { "Gain": 45 } },
+    "DST": { "model": null },
+    "AMP": { "model": "Match CL", "always_on": true,
+             "settings": { "Gain": 32, "PRES": 55, "VOL": 65, "Bass": 56, "Middle": 54, "Treble": 54 } },
+    "CAB": { "model": "User IR 2", "always_on": true, "settings": { "VOL": 58 } },
+    "EQ":  { "model": "Bass EQ 2", "always_on": true,
+             "settings": { "50Hz": 3, "120Hz": 1, "400Hz": 0, "800Hz": 2, "4.5kHz": 2, "VOL": 55 } },
+    "MOD": { "model": null },
+    "DLY": { "model": null },
+    "RVB": { "model": "Room", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
+             "settings": { "Mix": 18, "Decay": 28, "Trail": true } }
+  }
+}

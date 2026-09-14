@@ -1,0 +1,21 @@
+{
+  "patch_name": "DayLife-Beatles",
+  "patch_vol": 54,
+  "bpm": 85,
+  "ir": { "name": "EBS410" },
+  "modules": {
+    "NR":  { "model": "Gate", "always_on": true, "settings": { "THRE": 18 } },
+    "PRE": { "model": "Micro Boost", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
+             "settings": { "Gain": 55 } },
+    "DST": { "model": null },
+    "AMP": { "model": "Classic Bass", "always_on": true,
+             "settings": { "Gain": 32, "Bass": 50, "Middle": 62, "MidFreq": 4, "Treble": 62, "VOL": 65 } },
+    "CAB": { "model": "User IR 4", "always_on": true, "settings": { "VOL": 62 } },
+    "EQ":  { "model": "Bass EQ 1", "always_on": true,
+             "settings": { "33Hz": 3, "150Hz": 2, "600Hz": -3, "2kHz": 5, "8kHz": 3, "VOL": 55 } },
+    "MOD": { "model": null },
+    "DLY": { "model": null },
+    "RVB": { "model": "Room", "ctl": true, "ctl_off_state": "on", "ctl_on_state": "off",
+             "settings": { "Mix": 18, "Decay": 32, "Trail": true } }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "patch_name": "ProudMary",
+  "patch_vol": 55,
+  "bpm": 117,
+  "ir": { "name": "Apg115" },
+  "modules": {
+    "NR":  { "model": "Gate", "always_on": true, "settings": { "THRE": 15 } },
+    "PRE": { "model": "Micro Boost", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
+             "settings": { "Gain": 50 } },
+    "DST": { "model": null },
+    "AMP": { "model": "Classic Bass", "always_on": true,
+             "settings": { "Gain": 35, "Bass": 58, "Middle": 58, "MidFreq": 2, "Treble": 54, "VOL": 66 } },
+    "CAB": { "model": "User IR 1", "always_on": true, "settings": { "VOL": 60 } },
+    "EQ":  { "model": "Bass EQ 1", "always_on": true,
+             "settings": { "33Hz": 3, "150Hz": 0, "600Hz": 2, "2kHz": 4, "8kHz": 2, "VOL": 55 } },
+    "MOD": { "model": null },
+    "DLY": { "model": null },
+    "RVB": { "model": "Room", "ctl": true, "ctl_off_state": "on", "ctl_on_state": "off",
+             "settings": { "Mix": 20, "Decay": 30, "Trail": true } }
+  }
+}

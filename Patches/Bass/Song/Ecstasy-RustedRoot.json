@@ -1,0 +1,22 @@
+{
+  "patch_name": "Ecstasy-RR",
+  "patch_vol": 55,
+  "bpm": 102,
+  "ir": { "name": "Hartke410" },
+  "modules": {
+    "NR":  { "model": "Gate", "always_on": true, "settings": { "THRE": 20 } },
+    "PRE": { "model": "Micro Boost", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
+             "settings": { "Gain": 52 } },
+    "DST": { "model": "Green OD", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
+             "settings": { "Gain": 60, "Tone": 55, "VOL": 62 } },
+    "AMP": { "model": "Bellman 59B", "always_on": true,
+             "settings": { "Gain": 38, "PRES": 55, "VOL": 65, "Bass": 56, "Middle": 55, "Treble": 55 } },
+    "CAB": { "model": "User IR 6", "always_on": true, "settings": { "VOL": 60 } },
+    "EQ":  { "model": "Bass EQ 1", "always_on": true,
+             "settings": { "33Hz": 3, "150Hz": -1, "600Hz": 2, "2kHz": 4, "8kHz": 2, "VOL": 55 } },
+    "MOD": { "model": null },
+    "DLY": { "model": null },
+    "RVB": { "model": "Hall", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
+             "settings": { "Mix": 25, "Decay": 38, "Trail": true } }
+  }
+}

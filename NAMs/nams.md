@@ -22,4 +22,6 @@
 - Darkglass Alpha Omega (Distortion): Darkglass Alpha Omega (Alpha Side) -> Aguilar DB 751 amplifier -> Darkglass DG412ES cabinet -> Shure SM7B microphone. **Slot: 62** (on-device name "DrkGlsDist")
 - Darkglass Alpha Omega (Fuzz): Darkglass Alpha Omega (Omega Side) -> Aguilar DB 751 amplifier -> Darkglass DG412ES cabinet -> Shure SM7B microphone. **Slot: 63** (on-device name "DrkGlsFuzz")
 - Darkglass B7K Ultra: Microtubes B7K Ultra -> Aguilar DB 751 amplifier -> Darkglass DG412ES cabinet -> Shure SM7B microphone. **Slot: 64** (on-device name "DrkGlsB7K")
+- Ampeg V4B -> Ampeg 8x10 cabinet -> Beyerdynamic M88 microphone. **Slot: 68** (on-device name "ApgV4BApg8")
+- Mesa M-Pulse Big Block 750 Bass Head (2004), Clean Channel -> Peavey 215 Enclosure (1986). MICS: SM7B, B52A. AMP SETTINGS: Gain 3, Bass 5, Mid 5, Treble 5, Active Mid 1, Active Mid Freq 7 (400-500Hz). **Slot: 70** (on-device name "Mesa750Pvy")
 

@@ -1,0 +1,20 @@
+{
+  "patch_name": "Cliffs of Dover",
+  "patch_vol": 55,
+  "bpm": 133,
+  "nam": { "name": "Darkglass Harmonic Booster", "slot": 60, "settings": { "Gain": 40, "VOL": 65, "Bass": 55, "Middle": 60, "Treble": 65 } },
+  "modules": {
+    "NR":  { "model": "Gate", "always_on": true, "settings": { "THRE": 15 } },
+    "PRE": { "model": null },
+    "DST": { "model": null },
+    "AMP": { "model": null },
+    "CAB": { "model": null },
+    "EQ":  { "model": "Bass EQ 2", "always_on": true,
+             "settings": { "50Hz": 2, "120Hz": 0, "400Hz": -3, "800Hz": 3, "4.5kHz": 4, "VOL": 55 } },
+    "MOD": { "model": "B-Chorus", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
+             "settings": { "Depth": 25, "Rate": 0.4, "VOL": 55 } },
+    "DLY": { "model": null },
+    "RVB": { "model": "Room", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
+             "settings": { "Mix": 25, "Decay": 35, "Trail": true } }
+  }
+}

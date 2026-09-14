@@ -1,0 +1,21 @@
+{
+  "patch_name": "MFN-DireStr",
+  "patch_vol": 55,
+  "bpm": 120,
+  "ir": { "name": "EBS410" },
+  "modules": {
+    "NR":  { "model": "Gate", "always_on": true, "settings": { "THRE": 15 } },
+    "PRE": { "model": "Micro Boost", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
+             "settings": { "Gain": 50 } },
+    "DST": { "model": null },
+    "AMP": { "model": "Foxy Bass", "always_on": true,
+             "settings": { "VOL": 68, "Bass": 58, "Treble": 58 } },
+    "CAB": { "model": "User IR 4", "always_on": true, "settings": { "VOL": 58 } },
+    "EQ":  { "model": "Bass EQ 2", "always_on": true,
+             "settings": { "50Hz": 2, "120Hz": 1, "400Hz": -2, "800Hz": 3, "4.5kHz": 3, "VOL": 55 } },
+    "MOD": { "model": "B-Chorus", "always_on": true, "settings": { "Depth": 20, "Rate": 0.3, "VOL": 55 } },
+    "DLY": { "model": null },
+    "RVB": { "model": "Room", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
+             "settings": { "Mix": 20, "Decay": 30, "Trail": true } }
+  }
+}

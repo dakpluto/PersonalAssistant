@@ -1,0 +1,20 @@
+{
+  "patch_name": "HeyJealousy-GB",
+  "patch_vol": 54,
+  "bpm": 116,
+  "nam": { "name": "Darkglass Vintage Deluxe", "slot": 61, "settings": { "Gain": 45, "VOL": 62, "Bass": 52, "Middle": 58, "Treble": 60 } },
+  "modules": {
+    "NR":  { "model": "Gate", "always_on": true, "settings": { "THRE": 18 } },
+    "PRE": { "model": "Micro Boost", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
+             "settings": { "Gain": 55 } },
+    "DST": { "model": null },
+    "AMP": { "model": null },
+    "CAB": { "model": null },
+    "EQ":  { "model": "Bass EQ 1", "always_on": true,
+             "settings": { "33Hz": 2, "150Hz": 1, "600Hz": -2, "2kHz": 5, "8kHz": 2, "VOL": 55 } },
+    "MOD": { "model": null },
+    "DLY": { "model": null },
+    "RVB": { "model": "Room", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
+             "settings": { "Mix": 20, "Decay": 35, "Trail": true } }
+  }
+}

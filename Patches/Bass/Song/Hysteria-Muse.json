@@ -1,0 +1,22 @@
+{
+  "patch_name": "Hysteria-Muse",
+  "patch_vol": 56,
+  "bpm": 129,
+  "ir": { "name": "Mesa215" },
+  "modules": {
+    "NR":  { "model": "Gate", "always_on": true, "settings": { "THRE": 30 } },
+    "PRE": { "model": "Micro Boost", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
+             "settings": { "Gain": 55 } },
+    "DST": { "model": "Bass OD", "always_on": true,
+             "settings": { "Gain": 70, "Blend": 75, "VOL": 62, "Bass": 62, "Treble": 55 } },
+    "AMP": { "model": "Mess DualV", "always_on": true,
+             "settings": { "Gain": 65, "PRES": 55, "VOL": 65, "Bass": 58, "Middle": 58, "Treble": 55 } },
+    "CAB": { "model": "User IR 7", "always_on": true, "settings": { "VOL": 62 } },
+    "EQ":  { "model": "Bass EQ 1", "always_on": true,
+             "settings": { "33Hz": 4, "150Hz": -1, "600Hz": 4, "2kHz": 4, "8kHz": 1, "VOL": 55 } },
+    "MOD": { "model": null },
+    "DLY": { "model": null },
+    "RVB": { "model": "Room", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
+             "settings": { "Mix": 20, "Decay": 32, "Trail": true } }
+  }
+}

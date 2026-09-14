@@ -1,0 +1,22 @@
+{
+  "patch_name": "My Girl - Jet",
+  "patch_vol": 55,
+  "bpm": 137,
+  "ir": { "name": "Hartke410" },
+  "modules": {
+    "NR":  { "model": "Gate", "always_on": true, "settings": { "THRE": 25 } },
+    "PRE": { "model": "Micro Boost", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
+             "settings": { "Gain": 55 } },
+    "DST": { "model": "Bass OD", "always_on": true,
+             "settings": { "Gain": 50, "Blend": 70, "VOL": 60, "Bass": 58, "Treble": 55 } },
+    "AMP": { "model": "UK 800", "always_on": true,
+             "settings": { "Gain": 50, "PRES": 55, "VOL": 65, "Bass": 55, "Middle": 60, "Treble": 55 } },
+    "CAB": { "model": "User IR 6", "always_on": true, "settings": { "VOL": 60 } },
+    "EQ":  { "model": "Bass EQ 1", "always_on": true,
+             "settings": { "33Hz": 3, "150Hz": -2, "600Hz": 2, "2kHz": 5, "8kHz": 3, "VOL": 55 } },
+    "MOD": { "model": null },
+    "DLY": { "model": null },
+    "RVB": { "model": "Room", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
+             "settings": { "Mix": 20, "Decay": 30, "Trail": true } }
+  }
+}

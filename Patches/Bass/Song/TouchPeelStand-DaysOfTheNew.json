@@ -1,0 +1,19 @@
+{
+  "patch_name": "TouchPeel",
+  "patch_vol": 55,
+  "bpm": 83,
+  "nam": { "name": "Darkglass Alpha Omega (Fuzz)", "slot": 63, "settings": { "Gain": 62, "VOL": 63, "Bass": 60, "Middle": 55, "Treble": 52 } },
+  "modules": {
+    "NR":  { "model": "Gate", "always_on": true, "settings": { "THRE": 26 } },
+    "PRE": { "model": "Micro Boost", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
+             "settings": { "Gain": 55 } },
+    "DST": { "model": null },
+    "AMP": { "model": null },
+    "CAB": { "model": null },
+    "EQ":  { "model": "Bass EQ 1", "always_on": true,
+             "settings": { "33Hz": 4, "150Hz": 1, "600Hz": -1, "2kHz": 3, "8kHz": 1, "VOL": 55 } },
+    "MOD": { "model": null },
+    "DLY": { "model": null },
+    "RVB": { "model": "Room", "always_on": true, "settings": { "Mix": 18, "Decay": 32, "Trail": true } }
+  }
+}

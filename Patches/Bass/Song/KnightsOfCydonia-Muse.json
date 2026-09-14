@@ -1,0 +1,20 @@
+{
+  "patch_name": "Cydonia-Muse",
+  "patch_vol": 56,
+  "bpm": 137,
+  "nam": { "name": "Darkglass Alpha Omega (Distortion)", "slot": 62, "settings": { "Gain": 65, "VOL": 65, "Bass": 58, "Middle": 60, "Treble": 60 } },
+  "modules": {
+    "NR":  { "model": "Gate", "always_on": true, "settings": { "THRE": 28 } },
+    "PRE": { "model": "Micro Boost", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
+             "settings": { "Gain": 55 } },
+    "DST": { "model": null },
+    "AMP": { "model": null },
+    "CAB": { "model": null },
+    "EQ":  { "model": "Bass EQ 1", "always_on": true,
+             "settings": { "33Hz": 3, "150Hz": -1, "600Hz": 3, "2kHz": 4, "8kHz": 2, "VOL": 55 } },
+    "MOD": { "model": null },
+    "DLY": { "model": null },
+    "RVB": { "model": "Hall", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
+             "settings": { "Mix": 28, "Decay": 45, "Trail": true } }
+  }
+}

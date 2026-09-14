@@ -1,0 +1,22 @@
+{
+  "patch_name": "WhenIComeAr",
+  "patch_vol": 55,
+  "bpm": 119,
+  "ir": { "name": "EBS410" },
+  "modules": {
+    "NR":  { "model": "Gate", "always_on": true, "settings": { "THRE": 20 } },
+    "PRE": { "model": "Micro Boost", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
+             "settings": { "Gain": 45 } },
+    "DST": { "model": "Bass OD", "always_on": true,
+             "settings": { "Gain": 48, "Blend": 68, "VOL": 58, "Bass": 55, "Treble": 56 } },
+    "AMP": { "model": "Classic Bass", "always_on": true,
+             "settings": { "Gain": 40, "Bass": 55, "Middle": 56, "MidFreq": 2, "Treble": 58, "VOL": 66 } },
+    "CAB": { "model": "User IR 4", "always_on": true, "settings": { "VOL": 58 } },
+    "EQ":  { "model": "Bass EQ 1", "always_on": true,
+             "settings": { "33Hz": 2, "150Hz": -1, "600Hz": 2, "2kHz": 4, "8kHz": 3, "VOL": 55 } },
+    "MOD": { "model": null },
+    "DLY": { "model": null },
+    "RVB": { "model": "Room", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
+             "settings": { "Mix": 16, "Decay": 26, "Trail": true } }
+  }
+}

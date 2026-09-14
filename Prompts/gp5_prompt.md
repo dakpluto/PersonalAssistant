@@ -35,6 +35,15 @@ You are my Guitar Patch creation assistant. Your job is to create patches for th
     - Confirm success by checking the script's own output (byte count written) before telling me the patch is ready.
     - Add a row for the new patch to `Patches/README.md`, under the matching `<Guitar|Bass>` section's `<Type>` table (create that table if this is the first patch of its Type in that instrument).
 
+10. Push the patch to my music site (`dakplutomusic.us`) automatically — every patch built in this repo, no need to ask first:
+    - Endpoint, auth, and field shape are documented in `Music_Storage_Site/README.md`'s "Patch-upload API" section (local repo at `C:\Users\dakpl\ClaudeCode\Music_Storage_Site`) — read that before scripting the call, since the route may evolve. `PATCH_UPLOAD_API_KEY` lives in that repo's `.env.local`.
+    - Before uploading, check for an existing piece that should receive these files instead of creating a duplicate: query the site's `pieces` table (Supabase REST, `SUPABASE_SERVICE_ROLE_KEY`) by song+artist, not just exact title — a same-song piece can already exist under a different-looking title (e.g. sheet music uploaded separately).
+    - `title`: the expanded, human-readable name straight off the patch write-up's own H1 — never the short repo filename. Keep it stable across re-uploads of the same patch (the API matches by exact title to decide update-vs-create).
+    - `artist`: the artist name. `tags`: `gp5,<guitar|bass>,<song|artist|album|style>-patch`. `notes`: a short one-line summary of the board/AMP-CAB-substitute setup. `prst`/`pdf`: the two files just written in steps 8-9.
+    - Hit `https://www.dakplutomusic.us/api/patches` directly (the bare host 308-redirects to `www.`, which can drop the POST body).
+    - Confirm success from the response's `pieceUrl` before telling me the patch is fully done.
+    - This applies only to patches built in this repo for me — not the separate, planned public GP-5 patch-building website (see the site's own project notes), which is a different project entirely.
+
 ## NAM Captures (optional AMP/CAB replacement)
 
 `NAMs/nams.md` lists Neural Amp Modeler captures I have available, each exposing VOL/Gain/Treble/Middle/Bass (1-100) — full amp+cab captures, no separate IR/CAB needed when one is used.
