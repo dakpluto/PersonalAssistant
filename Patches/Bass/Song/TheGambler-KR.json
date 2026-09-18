@@ -1,0 +1,17 @@
+{
+  "patch_name": "The Gambler - Kenny Rogers",
+  "patch_vol": 50,
+  "bpm": 104,
+  "ir": { "name": "TC410" },
+  "modules": {
+    "NR": { "model": "Gate", "always_on": true, "settings": { "THRE": 20 } },
+    "PRE": { "model": "Micro Boost", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": { "Gain": 35 } },
+    "DST": { "model": null },
+    "AMP": { "model": "Foxy Bass", "always_on": true, "settings": { "VOL": 65, "Bass": 60, "Treble": 45 } },
+    "CAB": { "model": "User IR 9", "always_on": true, "settings": { "VOL": 60 } },
+    "EQ": { "model": "Bass EQ 1", "always_on": true, "settings": { "33Hz": 3, "150Hz": 4, "600Hz": -2, "2kHz": -3, "8kHz": 2, "VOL": 50 } },
+    "MOD": { "model": null },
+    "DLY": { "model": null },
+    "RVB": { "model": "Room", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": { "Mix": 20, "Decay": 35, "Trail": true } }
+  }
+}

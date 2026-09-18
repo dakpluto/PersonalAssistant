@@ -1,0 +1,24 @@
+{
+  "patch_name": "Pull Me Under - Dream Theater",
+  "patch_vol": 55,
+  "bpm": 116,
+  "nam": {
+    "name": "Mesa M-Pulse Big Block 750 Bass Head (2004), Clean Channel",
+    "slot": 70,
+    "settings": { "Gain": 40, "VOL": 72, "Bass": 65, "Middle": 55, "Treble": 52 }
+  },
+  "modules": {
+    "NR": { "model": "Gate", "always_on": true, "settings": { "THRE": 30 } },
+    "PRE": { "model": null },
+    "DST": { "model": "Bass OD", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
+             "settings": { "Gain": 55, "Blend": 70, "VOL": 65, "Bass": 60, "Treble": 50 } },
+    "AMP": { "model": null },
+    "CAB": { "model": null },
+    "EQ":  { "model": "Bass EQ 2", "always_on": true,
+             "settings": { "50Hz": 3, "120Hz": 2, "400Hz": -3, "800Hz": -2, "4.5kHz": 4, "VOL": 55 } },
+    "MOD": { "model": null },
+    "DLY": { "model": null },
+    "RVB": { "model": "Room", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
+             "settings": { "Mix": 22, "Decay": 35, "Trail": true } }
+  }
+}

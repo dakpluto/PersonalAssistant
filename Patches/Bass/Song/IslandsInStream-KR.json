@@ -1,0 +1,21 @@
+{
+  "patch_name": "Islands in the Stream - Kenny Rogers",
+  "patch_vol": 50,
+  "bpm": 104,
+  "ir": { "name": "EBS410" },
+  "modules": {
+    "NR": { "model": "Gate", "always_on": true, "settings": { "THRE": 22 } },
+    "PRE": { "model": "Micro Boost", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
+             "settings": { "Gain": 35 } },
+    "DST": { "model": null },
+    "AMP": { "model": "Classic Bass", "always_on": true,
+             "settings": { "Gain": 35, "Bass": 55, "Middle": 60, "MidFreq": 1, "Treble": 55, "VOL": 70 } },
+    "CAB": { "model": "User IR 4", "always_on": true, "settings": { "VOL": 65 } },
+    "EQ": { "model": "Bass EQ 2", "always_on": true,
+            "settings": { "50Hz": 2, "120Hz": 1, "400Hz": -2, "800Hz": 1, "4.5kHz": 3, "VOL": 55 } },
+    "MOD": { "model": "B-Chorus", "always_on": true, "settings": { "Depth": 15, "Rate": 0.6, "VOL": 55 } },
+    "DLY": { "model": null },
+    "RVB": { "model": "Room", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
+             "settings": { "Mix": 28, "Decay": 40, "Trail": true } }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "patch_name": "The Anthem - Good Charlotte",
+  "patch_vol": 52,
+  "bpm": 176,
+  "nam": { "name": "Ampeg V4B", "slot": 68, "settings": { "Gain": 55, "VOL": 70, "Bass": 62, "Middle": 55, "Treble": 55 } },
+  "modules": {
+    "NR":  { "model": "Gate", "always_on": true, "settings": { "THRE": 25 } },
+    "PRE": { "model": null },
+    "DST": { "model": "Bass OD", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
+             "settings": { "Gain": 45, "Blend": 60, "VOL": 60, "Bass": 55, "Treble": 55 } },
+    "AMP": { "model": null },
+    "CAB": { "model": null },
+    "EQ":  { "model": "Bass EQ 2", "always_on": true,
+             "settings": { "50Hz": 3, "120Hz": 2, "400Hz": -3, "800Hz": 0, "4.5kHz": 6, "VOL": 55 } },
+    "MOD": { "model": null },
+    "DLY": { "model": null },
+    "RVB": { "model": "Room", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
+             "settings": { "Mix": 20, "Decay": 30, "Trail": true } }
+  }
+}

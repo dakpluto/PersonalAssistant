@@ -1,0 +1,20 @@
+{
+  "patch_name": "Lucille - Kenny Rogers",
+  "patch_vol": 50,
+  "bpm": 100,
+  "ir": { "name": "Apg115410" },
+  "modules": {
+    "NR": { "model": "Gate", "always_on": true, "settings": { "THRE": 30 } },
+    "PRE": { "model": "Micro Boost", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
+             "settings": { "Gain": 30 } },
+    "DST": { "model": null },
+    "AMP": { "model": "Classic Bass", "always_on": true,
+             "settings": { "Gain": 35, "Bass": 60, "Middle": 55, "MidFreq": 1, "Treble": 45, "VOL": 65 } },
+    "CAB": { "model": "User IR 2", "always_on": true, "settings": { "VOL": 60 } },
+    "EQ": { "model": null },
+    "MOD": { "model": null },
+    "DLY": { "model": null },
+    "RVB": { "model": "Room", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
+             "settings": { "Mix": 25, "Decay": 30, "Trail": false } }
+  }
+}

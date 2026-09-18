@@ -1,0 +1,21 @@
+{
+  "patch_name": "Homegrown - Zac Brown Band",
+  "patch_vol": 54,
+  "bpm": 100,
+  "ir": { "name": "Hartke410" },
+  "modules": {
+    "NR":  { "model": "Gate", "always_on": true, "settings": { "THRE": 30 } },
+    "PRE": { "model": "Micro Boost", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
+             "settings": { "Gain": 35 } },
+    "DST": { "model": null },
+    "AMP": { "model": "Classic Bass", "always_on": true,
+             "settings": { "Gain": 55, "Bass": 55, "Middle": 60, "MidFreq": 2, "Treble": 65, "VOL": 72 } },
+    "CAB": { "model": "User IR 6", "always_on": true, "settings": { "VOL": 65 } },
+    "EQ":  { "model": "Bass EQ 1", "always_on": true,
+             "settings": { "33Hz": 2, "150Hz": 1, "600Hz": -2, "2kHz": 4, "8kHz": 3, "VOL": 55 } },
+    "MOD": { "model": null },
+    "DLY": { "model": null },
+    "RVB": { "model": "Room", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
+             "settings": { "Mix": 20, "Decay": 35, "Trail": true } }
+  }
+}

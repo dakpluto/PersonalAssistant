@@ -1,0 +1,20 @@
+{
+  "patch_name": "Machinehead-Bush",
+  "patch_vol": 52,
+  "bpm": 147,
+  "nam": { "name": "Ampeg V4B", "slot": 68, "settings": { "Gain": 58, "VOL": 68, "Bass": 60, "Middle": 58, "Treble": 42 } },
+  "modules": {
+    "NR":  { "model": "Gate", "always_on": true, "settings": { "THRE": 28 } },
+    "PRE": { "model": "Micro Boost", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
+             "settings": { "Gain": 38 } },
+    "DST": { "model": null },
+    "AMP": { "model": null },
+    "CAB": { "model": null },
+    "EQ":  { "model": "Bass EQ 2", "always_on": true,
+             "settings": { "50Hz": 4, "120Hz": 2, "400Hz": -4, "800Hz": -2, "4.5kHz": 5, "VOL": 55 } },
+    "MOD": { "model": null },
+    "DLY": { "model": null },
+    "RVB": { "model": "Room", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
+             "settings": { "Mix": 24, "Decay": 38, "Trail": true } }
+  }
+}

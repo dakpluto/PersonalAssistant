@@ -1,0 +1,19 @@
+{
+  "patch_name": "Knee Deep - Zac Brown Band",
+  "patch_vol": 50,
+  "bpm": 82,
+  "ir": { "name": "TC410" },
+  "modules": {
+    "NR": { "model": "Gate", "always_on": true, "settings": { "THRE": 25 } },
+    "PRE": { "model": "Micro Boost", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
+             "settings": { "Gain": 35 } },
+    "DST": { "model": null },
+    "AMP": { "model": "Foxy Bass", "always_on": true, "settings": { "VOL": 75, "Bass": 60, "Treble": 40 } },
+    "CAB": { "model": "User IR 9", "always_on": true, "settings": { "VOL": 60 } },
+    "EQ":  { "model": null },
+    "MOD": { "model": "B-Chorus", "always_on": true, "settings": { "Depth": 20, "Rate": 0.8, "VOL": 100 } },
+    "DLY": { "model": null },
+    "RVB": { "model": "Room", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
+             "settings": { "Mix": 30, "Decay": 45, "Trail": true } }
+  }
+}

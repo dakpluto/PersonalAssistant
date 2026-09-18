@@ -1,0 +1,17 @@
+{
+  "patch_name": "Independence Day - Martina McBride",
+  "patch_vol": 50,
+  "bpm": 120,
+  "ir": { "name": "Hartke410" },
+  "modules": {
+    "NR": { "model": "Gate", "always_on": true, "settings": { "THRE": 35 } },
+    "PRE": { "model": "Micro Boost", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": { "Gain": 55 } },
+    "DST": { "model": null },
+    "AMP": { "model": "Classic Bass", "always_on": true, "settings": { "Gain": 45, "Bass": 62, "Middle": 55, "MidFreq": 2, "Treble": 58, "VOL": 70 } },
+    "CAB": { "model": "User IR 6", "always_on": true, "settings": { "VOL": 65 } },
+    "EQ": { "model": null },
+    "MOD": { "model": null },
+    "DLY": { "model": null },
+    "RVB": { "model": "Room", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": { "Mix": 22, "Decay": 40, "Trail": false } }
+  }
+}
