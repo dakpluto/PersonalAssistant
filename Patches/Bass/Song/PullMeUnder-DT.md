@@ -4,17 +4,16 @@
 DT's biggest radio hit — driving verse groove, big anthemic chorus, and a heavier mid-song instrumental break before the final chorus. John Myung's part underneath all of it is full, modern, and precise — not a vintage tone.
 GP-5 only, P/J bass, no pedalboard.
 
-## NAM: Mesa M-Pulse Big Block 750
+## AMP: Mess Bass (Mesa/Boogie Bass 400) + CAB: Mesa215 IR (User IR 7)
 
-Mesa M-Pulse Big Block 750 Bass Head (2004), Clean Channel -> Peavey 215 Enclosure (1986). Slot 70.
-This capture gives a modern, full-range clean bass tone with real headroom — exactly what a part this precise needs. It stays composed under the driving verse and still has room to take a push in the instrumental section without breaking up on its own; that push comes from DST instead (see below), not from overdriving the amp.
-AMP and CAB are off — the NAM replaces both.
+Rebuilt 2026-09-18 off the GP-5's own AMP + a loaded IR — NAMs are off for now (Valeton N->S volume issue, device-side). The old NAM was a Mesa M-Pulse Big Block 750 clean channel into a Peavey 2x15 — a modern, full-range clean bass tone with real headroom. Mess Bass is the GP-5's own Mesa/Boogie bass sim, and Mesa215 (Mesa Boogie Road Ready 2x15) keeps the same 2x15 footprint and modern character as the original Peavey 215 cab, just in-family with the amp this time. It stays composed under the driving verse and still has room to take a push in the instrumental section without breaking up on its own; that push comes from DST instead (see below), not from overdriving the amp.
 
-- Gain: 40 — clean and controlled, not edge-of-breakup. This amp isn't the drive source in this patch.
-- VOL: 72
-- Bass: 65 — full low end to anchor the driving 8th-note verse groove.
+- Gain: 42 — clean and controlled, not edge-of-breakup. This amp isn't the drive source in this patch.
+- VOL: 68
+- Bass: 62 — full low end to anchor the driving 8th-note verse groove.
 - Middle: 55 — enough to cut through the guitar layers without honking.
-- Treble: 52 — present pick/finger attack, not brittle.
+- Treble: 50 — present pick/finger attack, not brittle.
+- CAB VOL: 62.
 
 ## Module chain
 
@@ -28,7 +27,9 @@ No boost stage. The Mesa capture already has the headroom this patch needs; a bo
 Gain: 55, Blend: 70, VOL: 65, Bass: 60, Treble: 50 when engaged.
 Off for the main verse/chorus groove. On for the heavier instrumental section — adds real grit and push without needing to touch the NAM's own gain staging, and blends back to keep the note fundamental intact under the grind.
 
-**AMP / CAB — off.** Replaced by the NAM.
+**AMP — Mess Bass**, always on. Gain 42, VOL 68, Bass 62, Middle 55, Treble 50.
+
+**CAB — User IR 7 (Mesa215)**, always on. VOL 62.
 
 **EQ — Bass EQ 2**, always on.
 50Hz: +3, 120Hz: +2, 400Hz: -3, 800Hz: -2, 4.5kHz: +4, VOL: 55.

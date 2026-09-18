@@ -4,17 +4,12 @@ Sixteen Stone, 1994. ~92 BPM, est.
 Darker and moodier than "Machinehead" off the same record — verse sits low and murky, chorus opens up into a heavier, fuzzed-out push. This is a different Bush tone than the other patch in this repo: Machinehead is dry and driving throughout, this one has real light/dark contrast built into the CTL.
 GP-5 only, P/J bass, no pedalboard.
 
-## NAM: Darkglass Alpha Omega (Fuzz)
+## AMP: Classic Bass (Ampeg SVT) + DST: Bass OD + CAB: Sunn215 IR (User IR 8)
 
-Darkglass Alpha Omega (Omega Side) -> Aguilar DB 751 amplifier -> Darkglass DG412ES cabinet -> Shure SM7B microphone. Slot 63.
-The Omega side is the fuzz voicing, not the cleaner Alpha distortion — picked specifically for the thicker, grungier texture this song's chorus wants, distinct from Machinehead's straighter V4B grit.
-AMP and CAB are off — the NAM replaces both.
+Rebuilt 2026-09-18 off the GP-5's own AMP/DST + a loaded IR — NAMs are off for now (Valeton N->S volume issue, device-side). The old NAM was the Darkglass Alpha Omega's Omega (fuzz) side into an Aguilar DB751/Darkglass cab — thicker and grungier than Machinehead's straighter V4B grit. Standing that in with real modules: Classic Bass for the amp foundation, Bass OD always-on and pushed hard for the fuzz breakup itself, and Sunn215 for CAB — ir.md calls that cab out by name for "driven/fuzz bass patches," a direct match for what this song wants.
 
-- Gain: 62 — pushed harder than Machinehead's NAM, real fuzz breakup, not just amp grind.
-- VOL: 68
-- Bass: 55 — solid low end without getting flabby under the fuzz.
-- Middle: 45 — slightly scooped, keeps this moodier/darker than Machinehead's pushed mids.
-- Treble: 38 — dark, matches the murky verse tone.
+- AMP Gain: 40, Bass: 55, Middle: 45, MidFreq: 800Hz, Treble: 38, VOL: 62 — dark, matches the murky verse tone, slightly scooped mids to stay moodier/darker than Machinehead.
+- DST (Bass OD) Gain: 65, Blend: 75, VOL: 62, Bass: 55, Treble: 40 — pushed harder than Machinehead's amp-only grit, real fuzz-like breakup, not just amp grind. Always on — this is the patch's baseline texture, not a footswitched extra.
 
 ## Module chain
 
@@ -25,9 +20,11 @@ THRE: 30. Fuzz at this gain picks up real noise between notes — a firmer gate 
 Gain: 42 when engaged.
 Off for the dark, restrained verse. On for the chorus — shoves the fuzz harder into breakup for the heavier hit, on top of the NAM's own gain.
 
-**DST — off.** The NAM's own fuzz carries the grit — stacking a pedal on top would just be mud.
+**DST — Bass OD**, always on. Gain 65, Blend 75, VOL 62, Bass 55, Treble 40. This is the always-on fuzz layer — the CTL'd boost stacks on top of it, it doesn't switch it in.
 
-**AMP / CAB — off.** Replaced by the NAM.
+**AMP — Classic Bass**, always on. Gain 40, Bass 55, Middle 45, MidFreq 800Hz, Treble 38, VOL 62.
+
+**CAB — User IR 8 (Sunn215)**, always on. VOL 60.
 
 **EQ — Bass EQ 2**, always on.
 50Hz: +3, 120Hz: +1, 400Hz: -5, 800Hz: -1, 4.5kHz: +4, VOL: 55.

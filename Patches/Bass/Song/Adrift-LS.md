@@ -7,16 +7,16 @@ GP-5 only, Sire fretless, no pedalboard.
 
 Active electronics for this one. The patch leans on chorus/delay/reverb to build atmosphere, and active output gives cleaner headroom feeding into that chain instead of the passive pickup's softer top end getting buried under the effects.
 
-## NAM: Darkglass Harmonic Booster
+## AMP: Mess Bass (Mesa/Boogie Bass 400) + CAB: EBS410 IR (User IR 4)
 
-Darkglass Harmonic Booster -> Aguilar DB 751 -> Darkglass DG412ES -> Shure SM7B. Slot 60.
-This is the clean-voiced capture in the Darkglass set — no grind, just a warm, present low end to build the atmosphere on top of. AMP and CAB are off; the NAM replaces both.
+Rebuilt 2026-09-18 off the GP-5's own AMP + a loaded IR — NAMs are off for now (Valeton N->S volume issue, device-side). Mess Bass gives the same low-gain, hi-fi clean headroom the Darkglass Harmonic Booster capture was standing in for; EBS410's accentuated hi-mids are the ir.md-recommended pairing for clean bass tones, which fits this patch's atmosphere-not-attack brief.
 
 - Gain: 30 — low, just enough to feel the amp, not push it.
 - VOL: 65
 - Bass: 60 — full low end, this needs to feel like it's under everything.
 - Middle: 45 — kept out of the way so the fretless glide reads clearly.
 - Treble: 50 — present but not clanky.
+- CAB VOL: 60.
 
 ## Module chain
 
@@ -27,7 +27,9 @@ THRE: 20. Low threshold — clean, low-gain tone doesn't need much gating, just 
 
 **DST — off.** No drive anywhere in this one.
 
-**AMP / CAB — off.** Replaced by the NAM.
+**AMP — Mess Bass**, always on. Gain 30, VOL 65, Bass 60, Middle 45, Treble 50.
+
+**CAB — User IR 4 (EBS410)**, always on. VOL 60.
 
 **EQ — Bass EQ 2**, always on.
 50Hz: +3, 120Hz: +2, 400Hz: -3, 800Hz: -2, 4.5kHz: +2, VOL: 52.

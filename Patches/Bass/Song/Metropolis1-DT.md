@@ -4,17 +4,12 @@ Images and Words, 1992. Est. ~130 BPM.
 John Myung's bass here is aggressive and technical — locked tight to the double-kick riff, present enough to cut through two guitars and keyboards without turning to mush. That's a different problem than a pocket groove: this part needs bite and definition first, low end second.
 GP-5 only, P/J bass, no pedalboard.
 
-## NAM: Darkglass Alpha Omega (Distortion side)
+## AMP: Classic Bass (Ampeg SVT) + DST: Bass OD + CAB: Hartke410 IR (User IR 6)
 
-Darkglass Alpha Omega (Alpha Side) -> Aguilar DB 751 amplifier -> Darkglass DG412ES cabinet -> Shure SM7B microphone. Slot 62.
-The Alpha side is the more controlled, saturated distortion voicing of the Alpha Omega — modern metal bass grind without the fuzz side's wooliness. That's exactly the character this riff needs: aggressive but still articulate.
-AMP and CAB are off — the NAM replaces both.
+Rebuilt 2026-09-18 off the GP-5's own AMP/DST + a loaded IR — NAMs are off for now (Valeton N->S volume issue, device-side). The old NAM was the Darkglass Alpha Omega's controlled, saturated Alpha (distortion) side — modern metal bass grind without the fuzz side's wooliness, aggressive but articulate. Standing that in: Classic Bass for the amp foundation, Bass OD always-on and pushed hard for the distortion character, and Hartke410 for CAB — ir.md calls that cab's bright, aggressive aluminum-cone voicing out by name as pairing well with a driven bass tone "alongside Bass OD," which is exactly the setup here.
 
-- Gain: 70 — real distortion, not edge-of-breakup. This riff is meant to hit hard.
-- VOL: 75
-- Bass: 60 — enough low end to matter, not so much it swallows the attack.
-- Middle: 55 — kept present so the part reads as a note under the guitars, not just rumble.
-- Treble: 65 — pushed for pick/finger definition on the fast unison passages.
+- AMP Gain: 50, Bass: 60, Middle: 55, MidFreq: 1.6kHz, Treble: 60, VOL: 70 — enough low end to matter without swallowing the attack, mids kept present so the part reads as a note under the guitars.
+- DST (Bass OD) Gain: 68, Blend: 75, VOL: 65, Bass: 58, Treble: 55 — real distortion, not edge-of-breakup, this riff is meant to hit hard. Always on — the baseline texture, not a footswitched extra.
 
 ## Module chain
 
@@ -25,10 +20,11 @@ THRE: 30. High-gain NAM at this setting picks up noise between hits — tightens
 Gain: 45 when engaged.
 Off for the quieter intro/interlude passages, on for the driving main riff and instrumental unison sections — same amp tone throughout, just pushed harder up front when the song calls for it.
 
-**DST — off.**
-The Alpha Omega capture already carries the drive. A second gain stage would just compress the attack instead of adding character.
+**DST — Bass OD**, always on. Gain 68, Blend 75, VOL 65, Bass 58, Treble 55. Baseline distortion layer, independent of the PRE boost's CTL toggle.
 
-**AMP / CAB — off.** Replaced by the NAM.
+**AMP — Classic Bass**, always on. Gain 50, Bass 60, Middle 55, MidFreq 1.6kHz, Treble 60, VOL 70.
+
+**CAB — User IR 6 (Hartke410)**, always on. VOL 65.
 
 **EQ — Bass EQ 2**, always on.
 50Hz: 0, 120Hz: -3, 400Hz: -6, 800Hz: +8, 4.5kHz: +10.

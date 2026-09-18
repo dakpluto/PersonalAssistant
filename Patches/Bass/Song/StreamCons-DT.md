@@ -4,17 +4,16 @@ Train of Thought, 2003. Instrumental. ~160 BPM, est. (double-time and meter shif
 John Myung's part here is dense, fast, and technical — this is the instrumental centerpiece of the album, built around a long dynamic arc from a moody, restrained intro/mid-section into full-band unison blast sections.
 GP-5 only, P/J bass, no pedalboard.
 
-## NAM: Darkglass B7K Ultra
+## AMP: Classic Bass (Ampeg SVT) + CAB: Apg810 IR (User IR 3)
 
-Microtubes B7K Ultra -> Aguilar DB 751 amplifier -> Darkglass DG412ES cabinet -> Shure SM7B microphone. Slot 64.
-Modern, aggressive, high-mid-forward — this is the tone for cutting through a dense unison riff without getting swallowed by two guitars.
-AMP and CAB are off — the NAM replaces both.
+Rebuilt 2026-09-18 off the GP-5's own AMP + a loaded IR — NAMs are off for now (Valeton N->S volume issue, device-side). The old NAM (Darkglass B7K Ultra into an Aguilar/Darkglass rig) was modern, aggressive, and high-mid-forward — the tone for cutting through a dense unison riff without getting swallowed by two guitars. Classic Bass pushed and mid-forward, paired with Apg810 (the most direct SVT-family cab pairing in the loaded IR set), covers the same job; the CTL'd Bass OD below (unchanged from the original design) supplies the extra front-end push for the blast sections, same as it stacked on top of the NAM before.
 
-- Gain: 60 — real front-end push, not fizz. Needed for the growl on the fast picked passages.
-- VOL: 65
+- Gain: 45 — real front-end push, not fizz. Needed for the growl on the fast picked passages.
 - Bass: 55 — enough low end to anchor the riff without getting flabby at speed.
-- Middle: 62 — pushed hard. This is what lets the part cut through a wall of guitar.
+- Middle: 62, MidFreq: 800Hz — pushed hard. This is what lets the part cut through a wall of guitar.
 - Treble: 55 — present enough for pick/finger attack to read clearly on fast runs.
+- VOL: 62.
+- CAB VOL: 60.
 
 ## Module chain
 
@@ -27,9 +26,11 @@ Off for the intro/moody passages, on for the full-band blast sections — pushes
 
 **DST — Bass OD**, on CTL (same footswitch as PRE and RVB).
 Gain: 45, Blend: 60, VOL: 60, Bass: 55, Treble: 50.
-Off at rest. Stacked with the Micro Boost for the blast sections — adds real grind on top of the NAM's own breakup, so the loud sections hit noticeably harder than just "louder," not just a volume bump.
+Off at rest. Stacked with the Micro Boost for the blast sections — adds real grind on top of the amp's own breakup, so the loud sections hit noticeably harder than just "louder," not just a volume bump.
 
-**AMP / CAB — off.** Replaced by the NAM.
+**AMP — Classic Bass**, always on. Gain 45, Bass 55, Middle 62, MidFreq 800Hz, Treble 55, VOL 62.
+
+**CAB — User IR 3 (Apg810)**, always on. VOL 60.
 
 **EQ — Bass EQ 2**, always on.
 50Hz: +3, 120Hz: +2, 400Hz: -3, 800Hz: 0, 4.5kHz: +5, VOL: 55.

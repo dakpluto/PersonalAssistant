@@ -4,17 +4,16 @@ Sixteen Stone, 1994. 147 BPM, est.
 Dave Parsons' bass sits low, dark, and driving — this is the grunge/alt-rock era, not a bright modern rock tone.
 GP-5 only, P/J bass, no pedalboard.
 
-## NAM: Ampeg V4B
+## AMP: Classic Bass (Ampeg SVT) + CAB: Apg810 IR (User IR 3)
 
-Ampeg V4B -> Ampeg 8x10 cabinet -> Beyerdynamic M88 microphone. Slot 68.
-This is the tone. A V4B pushed into its tube breakup is the classic mid-90s alt/grunge bass amp move — raw, a little gritty, not hi-fi.
-AMP and CAB are off — the NAM replaces both.
+Rebuilt 2026-09-18 off the GP-5's own AMP + a loaded IR — NAMs are off for now (Valeton N->S volume issue, device-side). Same target as before: a tube-breakup Ampeg push is the classic mid-90s alt/grunge bass amp move, raw and a little gritty, not hi-fi. Classic Bass is the GP-5's own Ampeg SVT sim, and Apg810 (Ampeg SVT-810E) is a direct real-world match for the discontinued V4B capture's own "Ampeg 8x10" cab.
 
-- Gain: 58 — enough to get real amp grit, not fizz. This is where the "dirty without being distorted" character comes from.
-- VOL: 68
+- Gain: 48 — enough to get real amp grit, not fizz; the "dirty without being distorted" character. Classic Bass's gain structure runs hotter than the old NAM's 58, so this is dialed a touch lower for the same feel.
 - Bass: 60 — the low end that carries the riff.
-- Middle: 58 — pushed for grind and to cut through the guitars, not scooped.
+- Middle: 58, MidFreq: 800Hz — pushed for grind and to cut through the guitars, not scooped.
 - Treble: 42 — kept dark on purpose. Bush's mix isn't a bright, clanky bass tone.
+- VOL: 65.
+- CAB VOL: 62.
 
 ## Module chain
 
@@ -26,9 +25,11 @@ Gain: 38 when engaged.
 Off for the verse groove, on for the chorus. Same amp tone throughout, just louder and a bit more shoved into the front end for the hook.
 
 **DST — off.**
-The V4B capture already carries the grit. Stacking a drive pedal on top would just mud out the riff instead of adding character.
+The amp's own grind carries the grit. Stacking a drive pedal on top would just mud out the riff instead of adding character.
 
-**AMP / CAB — off.** Replaced by the NAM.
+**AMP — Classic Bass**, always on. Gain 48, Bass 60, Middle 58, MidFreq 800Hz, Treble 42, VOL 65.
+
+**CAB — User IR 3 (Apg810)**, always on. VOL 62.
 
 **EQ — Bass EQ 2**, always on.
 50Hz: +4, 120Hz: +2, 400Hz: -4, 800Hz: -2, 4.5kHz: +5, VOL: 55.

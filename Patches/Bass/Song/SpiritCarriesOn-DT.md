@@ -4,16 +4,16 @@ Metropolis Pt. 2: Scenes from a Memory, 1999. ~76 BPM, est.
 This is DT's ballad, not the prog-metal aggression — restrained verses that build into a huge, gospel-choir-backed climax at the end. The bass part sits warm and supportive, not technical.
 GP-5 only, Sire fretless (Active), no pedalboard.
 
-## NAM: Darkglass Harmonic Booster
+## AMP: Mess Bass (Mesa/Boogie Bass 400) + CAB: EBS410 IR (User IR 4)
 
-Darkglass Harmonic Booster -> Aguilar DB 751 amplifier -> Darkglass DG412ES cabinet -> Shure SM7B microphone. Slot 60.
-This capture is the clean-voiced one of the Darkglass set — a harmonic-enhancer boost, not a drive pedal — which is exactly what a warm, emotional fretless ballad tone needs. AMP and CAB are off — the NAM replaces both.
+Rebuilt 2026-09-18 off the GP-5's own AMP + a loaded IR — NAMs are off for now (Valeton N->S volume issue, device-side). Mess Bass at low gain gives the same clean, no-grind lift the Harmonic Booster capture provided; EBS410 is ir.md's own recommendation for clean bass tones, which suits a warm, emotional fretless ballad.
 
-- Gain: 30 — kept low. This isn't a grind tone, it's a clean harmonic lift.
+- Gain: 30 — kept low. This isn't a grind tone, it's a clean lift.
 - VOL: 62
 - Bass: 55 — solid low end without getting flabby, lets the fretless glide sit underneath the vocal.
 - Middle: 50 — flat, neutral, doesn't fight the piano/vocal in the mix.
 - Treble: 48 — soft top end so fret-noise and string squeak from the fretless don't poke through.
+- CAB VOL: 58.
 
 ## Module chain
 
@@ -27,7 +27,9 @@ Off for the restrained verses. On for the climax — a clean volume/harmonic pus
 **DST — off.**
 No drive anywhere in this patch. The song's power comes from dynamics and arrangement, not distortion.
 
-**AMP / CAB — off.** Replaced by the NAM.
+**AMP — Mess Bass**, always on. Gain 30, VOL 62, Bass 55, Middle 50, Treble 48.
+
+**CAB — User IR 4 (EBS410)**, always on. VOL 58.
 
 **EQ — Bass EQ 2**, always on.
 50Hz: +3, 120Hz: +2, 400Hz: -3, 800Hz: -1, 4.5kHz: +3, VOL: 55.

@@ -4,17 +4,16 @@
 Pop-punk bass — tight low end, upfront pick attack, driving eighth notes under the verse riff, bigger and more open for the "I don't wanna be" hook.
 GP-5 only, P/J bass, no pedalboard.
 
-## NAM: Ampeg V4B
+## AMP: Classic Bass (Ampeg SVT) + CAB: Apg810 IR (User IR 3)
 
-Ampeg V4B -> Ampeg 8x10 cabinet -> Beyerdynamic M88 microphone. Slot 68.
-Same V4B capture as the Bush patch, but dialed brighter and cleaner — this is early-2000s pop-punk, not grunge. Needs pick clarity, not amp breakup.
-AMP and CAB are off — the NAM replaces both.
+Rebuilt 2026-09-18 off the GP-5's own AMP + a loaded IR — NAMs are off for now (Valeton N->S volume issue, device-side). Same Ampeg-family target as the discontinued V4B capture, dialed brighter and cleaner than the Bush patch below — this is early-2000s pop-punk, not grunge, needs pick clarity over amp breakup. Apg810 is a direct real-world match for the SVT-family AMP model (same "Ampeg 8x10" cab the original NAM capture used).
 
-- Gain: 55 — enough amp character to feel like a real rig, not clean-DI flat.
-- VOL: 70
+- Gain: 45 — enough amp character to feel like a real rig, not clean-DI flat; lower than a NAM-equivalent 55 since Classic Bass's own gain structure runs hotter for the same feel.
 - Bass: 62 — full low end to anchor the palm-muted verse riff.
-- Middle: 55 — present, not scooped, so the bass cuts through two guitars.
+- Middle: 55, MidFreq: 800Hz — present, not scooped, so the bass cuts through two guitars.
 - Treble: 55 — brighter than a grunge dial-in. Pick attack needs to read clearly at this tempo.
+- VOL: 68.
+- CAB VOL: 62.
 
 ## Module chain
 
@@ -28,7 +27,9 @@ Gain: 45, Blend: 60, VOL: 60, Bass: 55, Treble: 55.
 Off for the verse — clean punchy V4B tone, all pick and low end.
 On for the chorus — Bass OD stacked on top adds grit and push without burying the note, blended at 60% so it thickens rather than fuzzes out.
 
-**AMP / CAB — off.** Replaced by the NAM.
+**AMP — Classic Bass**, always on. Gain 45, Bass 62, Middle 55, MidFreq 800Hz, Treble 55, VOL 68.
+
+**CAB — User IR 3 (Apg810)**, always on. VOL 62.
 
 **EQ — Bass EQ 2**, always on.
 50Hz: +3, 120Hz: +2, 400Hz: -3, 800Hz: 0, 4.5kHz: +6, VOL: 55.

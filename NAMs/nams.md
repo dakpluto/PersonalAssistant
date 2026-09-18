@@ -1,3 +1,5 @@
+# DISABLED as of 2026-09-18: do not use NAMs in new patches — Michael is hitting a volume issue with the N->S slot on the Valeton device itself (device-side bug, not a tooling problem). Default to a real GP-5 AMP model + an IRs/ir.md capture instead until this is lifted. This list and the slot data below stay in place for when NAMs come back.
+
 # This is a list of NAM files available to use in the N/S slot on the GP-5.  If the N/S slot is used then you cannot use the AMP & CAB slots
 
 # All NAM files have VOL (1-100), Gain (1-100), Treble (1-100), Middle (1-100), Bass (1-100) options. These are all full captures of Amp + Cab since we cannot use an IR with them. 
