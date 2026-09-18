@@ -24,11 +24,11 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 - Verse stays laid-back and unforced. Chorus gets a clean push so the bass sits forward with the hook instead of getting buried under the guitars.
 
 **DST — Off**
-- Not used. The NAM below already carries the drive character this song needs — stacking another gain stage would just get muddy.
+- Not used. The amp's own gain carries the drive character this song needs — stacking a pedal on top would just get muddy.
 
-**AMP — Off (null)**
-**CAB — Off (null)**
-- Both replaced by the NAM below.
+**AMP — Classic Bass**, always on. Gain 40, Bass 52, Middle 58, MidFreq 450Hz, Treble 60, VOL 65.
+
+**CAB — User IR 1 (Apg115)**, always on. VOL 60.
 
 **EQ — Bass EQ 1**
 - 33Hz: +2
@@ -51,15 +51,15 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 - CTL off: bypassed (verse). CTL on: engaged (chorus).
 - Verse stays tight and dry. Chorus gets a touch of room to swell with the hook — same "lift together" logic as the PRE boost, both kick in on the same footswitch press.
 
-## NAM — Darkglass Vintage Deluxe (Slot 61)
+## AMP: Classic Bass (Ampeg SVT) + CAB: Apg115 IR (User IR 1)
 
-- Gain: 45
-- VOL: 62
-- Bass: 52
-- Middle: 58
-- Treble: 60
-- Replaces AMP + CAB entirely (both null in the module chain above).
-- Vintage Deluxe is a lower-gain, vintage-voiced bass drive — warmth and harmonic girth without turning into an overdrive pedal. That's exactly the push this song's bass needs: present and a little gritty on pick attack, not clean-hi-fi and not distorted. Fits the early-90s alt-rock production better than a fully clean capture would.
+Rebuilt 2026-09-18 off the GP-5's own AMP + a loaded IR — NAMs are off for now (Valeton N->S volume issue, device-side). The old NAM was the Darkglass Vintage Deluxe — a lower-gain, vintage-voiced bass drive giving warmth and harmonic girth without turning into an overdrive pedal, present and a little gritty on pick attack, not clean-hi-fi and not distorted. Classic Bass dialed moderate (not maxed) covers the same territory; Apg115 (Ampeg Heritage B-15, the vintage 1x15 with a girth-adding 100Hz peak) is the vintage-flavored counterpart in the loaded IR set, a better fit for this early-90s alt-rock production than the more modern SVT-810 stack.
+
+- Gain: 40 — moderate, enough natural amp breakup for the vintage push, not clean, not maxed-aggressive.
+- Bass: 52, Middle: 58, MidFreq: 450Hz — a lower-mid-leaning frequency for the vintage character, rather than the more aggressive 800Hz used elsewhere in this set.
+- Treble: 60.
+- VOL: 65.
+- CAB VOL: 60.
 
 ## CTL summary
 

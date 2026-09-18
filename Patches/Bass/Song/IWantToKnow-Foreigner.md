@@ -3,9 +3,9 @@
 Bass: Harley Benton P/J, 5-string, passive. Full board.
 1984 AOR power ballad (*Agent Provocateur*). ~67 BPM (estimate — no hard chart reference, tempo isn't load-bearing for the tone choices below). Textbook quiet-verse-to-massive-choir-chorus structure — piano and vocal carry the verses almost alone, and the chorus detonates into full band plus gospel choir. The bass job is to stay warm, simple, and out of the way in the verses, then lean in for the chorus lift without ever getting aggressive — this is a ballad, not a rock song, even at its biggest.
 
-## Why a NAM here
+## AMP: Mess Bass (Mesa/Boogie Bass 400) + CAB: EBS410 IR (User IR 4)
 
-Darkglass B7K Ultra (Slot 64), dialed low-gain rather than driven. Three of the other four Darkglass captures in the library (Vintage Deluxe, Alpha Omega Distortion/Fuzz) are voiced for aggressive/distorted tones — wrong genre entirely for this song. The Harmonic Booster capture (Slot 60) is actually clean-voiced too (a harmonic-enhancer boost, not a drive pedal — see `NAMs/nams.md`) and would be a reasonable alternative pick here; B7K Ultra was chosen instead for its more flexible tone-shaping (Gain/Bass/Middle/Treble all independently dialed), which gave more direct control over the warm, present target tone than a pure boost pedal capture would. Per the current NAM weighting (bass NAMs get strong preference), either beats reaching for a built-in AMP/CAB or one of the new bass cab IRs for this patch.
+Rebuilt 2026-09-18 off the GP-5's own AMP + a loaded IR — NAMs are off for now (Valeton N->S volume issue, device-side). The old NAM was a Darkglass B7K Ultra dialed low-gain rather than driven, chosen at the time for its flexible independent Gain/Bass/Middle/Treble tone-shaping. Mess Bass at the same low gain gives the same warm, present clean target; EBS410 is ir.md's own pick for clean bass tones.
 
 ## GP-5 Settings
 
@@ -21,13 +21,15 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB
 - Same mechanism as the site's other verse/chorus worship-ballad patches: a simple, clean volume/presence lift, no tone coloring. Off (verse) stays intimate, sitting under the piano. On (chorus) pushes the part forward enough to sit with the choir and full band, without turning into a different tone.
 
 **DST — Off**
-Not used. No drive anywhere in this tone — the NAM stays clean regardless of CTL state.
+Not used. No drive anywhere in this tone — the amp stays clean regardless of CTL state.
 
-**AMP / CAB — Off (NAM in use)**
-- **NAM: Darkglass B7K Ultra, Slot 64.**
-- Settings: Gain 28, VOL 65, Bass 58, Middle 55, Treble 55.
-- Gain kept low — this is a clean tone, not a driven one, despite the capture's usual reputation as a metal-bass tool. Bass pushed to 58 for the warmth and low-end weight this song's big chorus wants. Middle and Treble both moderate — present without being aggressive or scooped.
-- `AMP` and `CAB` both `model: null` — a NAM always replaces both.
+**AMP — Mess Bass**, always on.
+- Gain: 28 — kept low, a clean tone, not a driven one.
+- VOL: 65
+- Bass: 58 — warmth and low-end weight this song's big chorus wants.
+- Middle: 55, Treble: 55 — both moderate, present without being aggressive or scooped.
+
+**CAB — User IR 4 (EBS410)**, always on. VOL 58.
 
 **EQ — Bass EQ 1**
 - 33Hz: +4, 150Hz: +1, 600Hz: -2, 2kHz: +3, 8kHz: +1, VOL: 52

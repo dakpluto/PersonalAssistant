@@ -19,10 +19,10 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 - CTL off: bypassed (verse). CTL on: engaged (chorus).
 - Verse stays restrained and moody. Chorus gets a push to match the heavier, more driven hook.
 
-**DST — Off**
-**AMP — Off (null)**
-**CAB — Off (null)**
-- Replaced entirely by the NAM below. No separate DST stage — this song's darker, heavier drive character comes from one deep gain source, not a stack.
+**DST — Bass OD**, always on. Gain 62, Blend 75, VOL 60, Bass 58, Treble 42.
+**AMP — Classic Bass**, always on. Gain 40, Bass 60, Middle 55, MidFreq 800Hz, Treble 45, VOL 62.
+**CAB — User IR 8 (Sunn215)**, always on. VOL 60.
+- This song's darker, heavier drive character comes from the Bass OD + Classic Bass pairing, kept dark (low Treble on both stages) rather than bright.
 
 **EQ — Bass EQ 1**
 - 33Hz: +4, 150Hz: +1, 600Hz: -1, 2kHz: +3, 8kHz: +1, VOL: 55
@@ -40,11 +40,9 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 - Always on, same for both CTL states.
 - Unlike most of the "quiet verse/big chorus" patches in this set, the reverb doesn't grow for the chorus here — it's a constant, moderate atmosphere that matches the acoustic-driven verses' natural sense of space, and the chorus gets heavier through the boost instead of getting washier through more reverb.
 
-## NAM — Darkglass Alpha Omega (Fuzz) (Slot 63)
+## AMP + DST: Classic Bass + Bass OD, CAB: Sunn215 IR (User IR 8)
 
-- Gain: 62, VOL: 63, Bass: 60, Middle: 55, Treble: 52
-- Replaces AMP + CAB entirely (both null in the module chain above).
-- The Omega/fuzz side of the Alpha Omega gives a darker, murkier gain character than the Alpha/distortion side — a better match for this song's moody, doomy alt-metal weight than a brighter, more aggressive distortion voicing. Treble kept modest to stay dark rather than cutting.
+Rebuilt 2026-09-18 off the GP-5's own AMP/DST + a loaded IR — NAMs are off for now (Valeton N->S volume issue, device-side). The old NAM was the Omega/fuzz side of the Darkglass Alpha Omega — darker, murkier gain character than the Alpha/distortion side, a better match for this song's moody, doomy alt-metal weight than a brighter distortion voicing. Classic Bass + always-on Bass OD (both dialed with Treble held back to stay dark) reproduce that; Sunn215 is ir.md's own named pick for driven/fuzz bass tones.
 
 ## CTL summary
 

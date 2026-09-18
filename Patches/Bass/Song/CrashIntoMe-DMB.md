@@ -3,9 +3,9 @@
 Bass: Harley Benton P/J, 5-string, passive. Full board.
 1996 acoustic-driven ballad (*Crash*). ~70 BPM (estimate — no hard chart reference, tempo isn't load-bearing for the tone choices below). Stefan Lessard's part here is melodic and understated, not a rhythm-section anchor — mostly warm, supportive fingerstyle lines with harmonics and higher-register melodic fills, especially into the outro. The song doesn't have a big rock dynamic swing; it stays intimate almost throughout, with only a modest lift into the "you come crash into me" hook. The patch reflects that restraint — one steady tone, one small swell, nothing more.
 
-## Why a NAM here
+## AMP: Mess Bass (Mesa/Boogie Bass 400) + CAB: EBS410 IR (User IR 4)
 
-Darkglass Harmonic Booster (Slot 60), dialed as a genuine clean tone. Per the correction Michael gave (2026-09-08, see `NAMs/nams.md`), this capture is quite clean-voiced — a harmonic-enhancer boost, not a drive/distortion pedal like the other Darkglass captures. That subtle harmonic richness fits this song's woody, slightly shimmering fingerstyle character better than a flatter clean tone would, without adding any audible grit. Per the current NAM weighting (bass NAMs get strong preference), this beats reaching for a built-in AMP/CAB or one of the bass cab IRs here.
+Rebuilt 2026-09-18 off the GP-5's own AMP + a loaded IR — NAMs are off for now (Valeton N->S volume issue, device-side). The old NAM was the clean-voiced Darkglass Harmonic Booster — a harmonic-enhancer boost, not a drive/distortion pedal, subtle richness without any audible grit. Mess Bass at low gain gives the same clean character; EBS410 is ir.md's own recommendation for clean bass tones, a fit for this song's woody, slightly shimmering fingerstyle part.
 
 ## GP-5 Settings
 
@@ -22,11 +22,14 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB
 **DST — Off**
 Not used. No drive anywhere in this tone.
 
-**AMP / CAB — Off (NAM in use)**
-- **NAM: Darkglass Harmonic Booster, Slot 60.**
-- Settings: Gain 30, VOL 65, Bass 58, Middle 55, Treble 52.
-- Gain kept low — this is a clean tone using the capture's harmonic character, not its potential as a boost/drive stage. Bass pushed to 58 for warmth and foundation. Treble held back a touch (52) to keep the tone woody rather than bright/glassy.
-- `AMP` and `CAB` both `model: null` — a NAM always replaces both.
+**AMP — Mess Bass**, always on.
+- Gain: 30 — kept low, clean and warm, not pushed toward breakup.
+- VOL: 65
+- Bass: 58 — warmth and foundation.
+- Middle: 55
+- Treble: 52 — held back a touch to keep the tone woody rather than bright/glassy.
+
+**CAB — User IR 4 (EBS410)**, always on. VOL 58.
 
 **EQ — Bass EQ 1**
 - 33Hz: +3, 150Hz: +1, 600Hz: -2, 2kHz: +2, 8kHz: 0, VOL: 52

@@ -18,9 +18,9 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 - Compression duties are handled by the Donner Ultimate Comp on the board (see below).
 
 **DST — Off**
-**AMP — Off (null)**
-**CAB — Off (null)**
-- Replaced entirely by the NAM below. No separate drive stage — this tune calls for clarity and note definition, not grit, and stacking a second gain stage would just work against that.
+**AMP — Mess Bass**, always on. Gain 40, VOL 65, Bass 55, Middle 60, Treble 65.
+**CAB — User IR 4 (EBS410)**, always on. VOL 60.
+- No separate drive stage — this tune calls for clarity and note definition, not grit, and stacking a gain stage would just work against that.
 
 **EQ — Bass EQ 2**
 - 50Hz: +2, 120Hz: 0, 400Hz: -3, 800Hz: +3, 4.5kHz: +4, VOL: 55
@@ -40,16 +40,16 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 - CTL off: bypassed (main groove — tight and dry, right in the pocket with the drums). CTL on: engaged (interlude).
 - Opens the space up for the interlude's more atmospheric feel, then closes right back down as the tune ramps back to full energy.
 
-## NAM — Darkglass Harmonic Booster (Slot 60)
+## AMP: Mess Bass (Mesa/Boogie Bass 400) + CAB: EBS410 IR (User IR 4)
+
+Rebuilt 2026-09-18 off the GP-5's own AMP + a loaded IR — NAMs are off for now (Valeton N->S volume issue, device-side). The old NAM was the clean-voiced Darkglass Harmonic Booster into an Aguilar DB 751 — no grit, just a warm, hi-fi boost. Mess Bass at the same low gain gives the same clean, articulate character; EBS410 is ir.md's own recommendation for clean bass tones, which suits a part that has to stay present without ever competing with Eric Johnson's guitar for space.
 
 - Gain: 40
 - VOL: 65
 - Bass: 55
 - Middle: 60
 - Treble: 65
-- Replaces AMP + CAB entirely (both null in the module chain above).
-- The Harmonic Booster is the clean-voiced one of the Darkglass captures — a harmonic-enhancer boost into an Aguilar DB 751, not a drive/distortion pedal. That clean, modern, hi-fi character is exactly what this tune wants: present and articulate without any grit, so it never competes with the guitar for space.
-- Encoded directly into the `.prst` as a real, active N->S (SnapTone) reference — no manual loading needed for this one.
+- CAB VOL: 60.
 
 ## CTL summary
 

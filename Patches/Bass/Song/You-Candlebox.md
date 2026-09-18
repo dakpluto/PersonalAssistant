@@ -5,11 +5,11 @@ Bass: Harley Benton P/J, 5-string, passive. Full board.
 
 CTL Off = verse. CTL On = chorus.
 
-## Why a NAM here
+## AMP: Classic Bass (Ampeg SVT) + CAB: Apg115 IR (User IR 1)
 
-Darkglass Vintage Deluxe (Slot 61) — the warmer, more vintage-tube-flavored of the Darkglass drive captures, a better fit for a 90s alt-rock/grunge tone than the more modern, precise Alpha Omega captures or the flatter clean voicing of Harmonic Booster/B7K Ultra (both already used elsewhere in this set). Dialed at a moderate Gain rather than clean or maxed — a bit of natural warmth and looseness baked in at rest fits this song's era and character better than a pristine clean tone would. Per the current NAM weighting (bass NAMs get strong preference), this beats a built-in AMP/CAB or one of the bass cab IRs for this patch.
+Rebuilt 2026-09-18 off the GP-5's own AMP + a loaded IR — NAMs are off for now (Valeton N->S volume issue, device-side). The old NAM was the Darkglass Vintage Deluxe, the warmer, more vintage-tube-flavored of the Darkglass captures, dialed at a moderate gain for natural warmth and looseness rather than a pristine clean tone. Classic Bass at the same moderate gain covers that territory; Apg115 (the vintage Ampeg Heritage B-15 1x15, girth-adding 100Hz peak) is the vintage-flavored pick in the loaded IR set, fitting the same 90s grunge character the NAM was chosen for.
 
-A NAM can't be footswitched mid-patch (one capture per preset), so the verse-to-chorus dynamic comes from the same mechanism used elsewhere in this set: a CTL-assigned boost and reverb around a constant NAM voice, not a change in the amp/drive character itself.
+The verse-to-chorus dynamic still comes from the same mechanism used elsewhere in this set: a CTL-assigned boost and reverb around a constant amp voice, not a change in the amp/drive character itself.
 
 ## GP-5 Settings
 
@@ -25,13 +25,15 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB
 - Off (verse) keeps the part warm and restrained, sitting under the clean guitars. On (chorus) pushes it forward to match the big, driven payoff — a clean lift, not a tone change.
 
 **DST — Off**
-Not used. The Vintage Deluxe NAM already carries this patch's drive character — a second GP-5 drive stage on top would just muddy it.
+Not used. The amp's own moderate gain carries this patch's drive character — a separate drive pedal on top would just muddy it.
 
-**AMP / CAB — Off (NAM in use)**
-- **NAM: Darkglass Vintage Deluxe, Slot 61.**
-- Settings: Gain 45, VOL 65, Bass 55, Middle 58, Treble 55.
-- Gain at 45 — enough natural warmth/looseness for a grunge-era tone, not clean, not maxed-aggressive. Middle nudged up slightly for presence under the chorus's wall of guitars.
-- `AMP` and `CAB` both `model: null` — a NAM always replaces both.
+**AMP — Classic Bass**, always on.
+- Gain: 40 — enough natural warmth/looseness for a grunge-era tone, not clean, not maxed-aggressive.
+- Bass: 55, Middle: 58, MidFreq: 450Hz — Middle nudged up slightly for presence under the chorus's wall of guitars.
+- Treble: 55.
+- VOL: 65.
+
+**CAB — User IR 1 (Apg115)**, always on. VOL 62.
 
 **EQ — Bass EQ 1**
 - 33Hz: +2, 150Hz: +1, 600Hz: -3, 2kHz: +6, 8kHz: +2, VOL: 54

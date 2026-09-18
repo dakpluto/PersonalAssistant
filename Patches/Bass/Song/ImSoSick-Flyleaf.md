@@ -5,11 +5,11 @@ Bass: Harley Benton P/J, 5-string, passive. Full board.
 
 CTL Off = verse (driven, controlled). CTL On = chorus (bigger, thicker wall).
 
-## Why a NAM here
+## AMP + DST: Classic Bass + Bass OD, CAB: Sunn215 IR (User IR 8)
 
-Darkglass Alpha Omega (Fuzz) — the Omega side, Slot 63. Unlike the precise, tight, buzzsaw-industrial Alpha (Distortion) side already used for RammGrind, the Fuzz/Omega side has a thicker, looser, more organic gated-fuzz character — a better match for Flyleaf's alt-metal/nu-metal-adjacent heaviness than the industrial precision Rammstein's tone wants. Per the current NAM weighting (bass NAMs get strong preference), this beats a built-in AMP/CAB or an IR for this patch.
+Rebuilt 2026-09-18 off the GP-5's own AMP/DST + a loaded IR — NAMs are off for now (Valeton N->S volume issue, device-side). The old NAM was the Darkglass Alpha Omega's Omega (fuzz) side — thicker, looser, more organic gated-fuzz character than the Alpha (distortion) side used for RammGrind, a better match for Flyleaf's alt-metal/nu-metal-adjacent heaviness. Classic Bass + an always-on, hard-pushed Bass OD reproduces that; Sunn215 is ir.md's own named pick for "driven/fuzz bass patches."
 
-A NAM can't be footswitched mid-patch (one capture per preset), so the verse-to-chorus dynamic comes from the same mechanism used across this set: a CTL-assigned boost and reverb around a constant NAM voice.
+The verse-to-chorus dynamic still comes from the same mechanism used across this set: a CTL-assigned boost and reverb around a constant amp voice.
 
 ## GP-5 Settings
 
@@ -24,14 +24,16 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB
 - **CTL switch.** Off = bypassed, On = engaged.
 - Off (verse) keeps the riff driven but controlled. On (chorus) pushes it into the bigger, thicker wall the payoff needs — a clean lift, not a tone change.
 
-**DST — Off**
-Not used. The Alpha Omega Fuzz NAM already carries this patch's entire distortion character — a second GP-5 drive stage on top would just turn it to mush.
+**DST — Bass OD**, always on.
+- Gain: 72, Blend: 78, VOL: 65, Bass: 45, Treble: 60 — pushed hard for real aggression, blended nearly-wet.
 
-**AMP / CAB — Off (NAM in use)**
-- **NAM: Darkglass Alpha Omega (Fuzz), Slot 63.**
-- Settings: Gain 75, VOL 62, Bass 42, Middle 68, Treble 62.
-- Gain pushed hard for real aggression. Bass rolled back to 42 — low end comes from the note and the mix, not amp boom, keeping the tone tight instead of woolly. Middle at 68 for the mid-forward growl that lets the bass reinforce the riff instead of hiding under it. Treble at 62 for buzz/edge on top.
-- `AMP` and `CAB` both `model: null` — a NAM always replaces both.
+**AMP — Classic Bass**, always on.
+- Gain: 50, Bass: 42 — rolled back, low end comes from the note and the mix, not amp boom, keeping the tone tight instead of woolly.
+- Middle: 68, MidFreq: 800Hz — mid-forward growl that lets the bass reinforce the riff instead of hiding under it.
+- Treble: 62 — buzz/edge on top.
+- VOL: 68.
+
+**CAB — User IR 8 (Sunn215)**, always on. VOL 62.
 
 **EQ — Bass EQ 1**
 - 33Hz: -4, 150Hz: -3, 600Hz: +6, 2kHz: +8, 8kHz: +3, VOL: 55

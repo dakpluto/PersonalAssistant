@@ -19,10 +19,10 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 - CTL off: bypassed (verse). CTL on: engaged (chorus/outro).
 - Verse riff is already driving hard on its own. Chorus and outro get a clean push to match the song's escalating scale.
 
-**DST — Off**
-**AMP — Off (null)**
-**CAB — Off (null)**
-- Replaced entirely by the NAM below. This song wants one big, thick drive source, not several stacked gain stages fighting each other.
+**DST — Bass OD**, always on. Gain 65, Blend 75, VOL 65, Bass 55, Treble 58.
+**AMP — Classic Bass**, always on. Gain 48, Bass 58, Middle 60, MidFreq 1.6kHz, Treble 60, VOL 68.
+**CAB — User IR 6 (Hartke410)**, always on. VOL 65.
+- Bass OD carries the drive, Classic Bass the amp foundation — one thick, unified voice, not several stacked gain stages fighting each other.
 
 **EQ — Bass EQ 1**
 - 33Hz: +3, 150Hz: -1, 600Hz: +3, 2kHz: +4, 8kHz: +2, VOL: 55
@@ -40,15 +40,9 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 - CTL off: bypassed (verse — tight and dry). CTL on: engaged (chorus/outro).
 - Hall over Room here — this song is going for genuine scale on the hook and outro, and a bigger, longer decay matches that "epic space-rock" reach better than a tighter room ambience would.
 
-## NAM — Darkglass Alpha Omega (Distortion) (Slot 62)
+## AMP + DST: Classic Bass + Bass OD, CAB: Hartke410 IR (User IR 6)
 
-- Gain: 65
-- VOL: 65
-- Bass: 58
-- Middle: 60
-- Treble: 60
-- Replaces AMP + CAB entirely (both null in the module chain above).
-- The Alpha side of the Alpha Omega is the more aggressive distortion voicing — exactly the thick, driven wall this riff needs. Gain pushed hard for real grind; Middle and Treble both up so the riff carries its own presence instead of getting buried under the guitar.
+Rebuilt 2026-09-18 off the GP-5's own AMP/DST + a loaded IR — NAMs are off for now (Valeton N->S volume issue, device-side). The old NAM was the Alpha side of the Darkglass Alpha Omega — the more aggressive distortion voicing, exactly the thick, driven wall this riff needs. Classic Bass + a hard-pushed always-on Bass OD reproduce that; Hartke410's bright, aggressive aluminum-cone voicing is ir.md's own recommended pairing for a driven bass tone running Bass OD. Middle and Treble kept up on both stages so the riff carries its own presence instead of getting buried under the guitar.
 
 ## CTL summary
 

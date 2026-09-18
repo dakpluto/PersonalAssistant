@@ -19,10 +19,10 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 - CTL off: bypassed (verse). CTL on: engaged (chorus).
 - Verse riff doesn't need help — it's already driving and tight, sitting in the pocket with the guitar. Chorus gets a clean push so the bass matches the song's own explosion in energy.
 
-**DST — Off**
-**AMP — Off (null)**
-**CAB — Off (null)**
-- AMP/CAB replaced by the NAM below. No separate DST stage — the NAM already carries all the grit this part needs; stacking another gain stage would just get mushy on a fast, syncopated line like this.
+**DST — Bass OD**, always on. Gain 65, Blend 75, VOL 62, Bass 55, Treble 60.
+**AMP — Classic Bass**, always on. Gain 45, Bass 55, Middle 62, MidFreq 800Hz, Treble 62, VOL 65.
+**CAB — User IR 3 (Apg810)**, always on. VOL 62.
+- Real distortion, not edge-of-breakup — this part needs to hit as hard as the old NAM did. Bass OD supplies the grind, Classic Bass the foundation.
 
 **EQ — Bass EQ 1**
 - 33Hz: +3, 150Hz: +1, 600Hz: -3, 2kHz: +6, 8kHz: +3, VOL: 56
@@ -40,15 +40,9 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 - CTL off: bypassed (verse). CTL on: engaged (chorus).
 - Verse stays tight and dry, right in the pocket with the drums. Chorus opens up with a touch of room to match the bigger, more anthemic space that section lives in.
 
-## NAM — Darkglass B7K Ultra (Slot 64)
+## AMP + DST: Classic Bass + Bass OD, CAB: Apg810 IR (User IR 3)
 
-- Gain: 62
-- VOL: 65
-- Bass: 55
-- Middle: 62
-- Treble: 62
-- Replaces AMP + CAB entirely (both null in the module chain above).
-- The B7K Ultra is a modern, punchy bass drive/preamp — exactly the territory this song lives in. Gain pushed fairly hard for real grind and presence, Middle and Treble both up to keep the part cutting through the guitars instead of getting buried under them.
+Rebuilt 2026-09-18 off the GP-5's own AMP/DST + a loaded IR — NAMs are off for now (Valeton N->S volume issue, device-side). The old NAM was a Darkglass B7K Ultra pushed fairly hard (Gain 62) — a modern, punchy bass drive/preamp, exactly the territory this song lives in. Classic Bass for the amp foundation plus an always-on Bass OD reproduces that grind; Apg810 is the direct real-world SVT-family cab pairing for Classic Bass. Middle and Treble both kept up on both stages to keep the part cutting through the guitars instead of getting buried under them.
 
 ## CTL summary
 

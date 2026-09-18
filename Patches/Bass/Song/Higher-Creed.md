@@ -2,7 +2,7 @@
 
 Bass: Harley Benton P/J, 5-string, passive. Full board.
 From *Human Clay* (1999), ~85 BPM.
-Brian Marshall's part here follows the classic late-90s post-grunge shape — moody, restrained verses building into a huge, driven "can you take me higher" chorus. Structurally this is close cousins with "Everlong" (same quiet-verse/huge-chorus alt-rock DNA), so this patch leans on the same NAM that build used, rather than reinventing the wheel for a genuinely similar job.
+Brian Marshall's part here follows the classic late-90s post-grunge shape — moody, restrained verses building into a huge, driven "can you take me higher" chorus. Structurally this is close cousins with "Everlong" (same quiet-verse/huge-chorus alt-rock DNA), so this patch leans on the same AMP/DST/CAB recipe that build uses, rather than reinventing the wheel for a genuinely similar job.
 
 CTL off = the restrained verse. CTL on = the big chorus.
 
@@ -19,10 +19,10 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 - CTL off: bypassed (verse). CTL on: engaged (chorus).
 - Verse stays restrained on its own. Chorus gets a clean push to match the song's own explosion in energy.
 
-**DST — Off**
-**AMP — Off (null)**
-**CAB — Off (null)**
-- AMP/CAB replaced by the NAM below. No separate DST stage — the NAM already carries all the grit this part needs.
+**DST — Bass OD**, always on. Gain 63, Blend 75, VOL 62, Bass 55, Treble 58.
+**AMP — Classic Bass**, always on. Gain 45, Bass 55, Middle 60, MidFreq 800Hz, Treble 60, VOL 65.
+**CAB — User IR 3 (Apg810)**, always on. VOL 62.
+- Bass OD plus Classic Bass together reproduce the grit this part needs.
 
 **EQ — Bass EQ 1**
 - 33Hz: +3, 150Hz: 0, 600Hz: -2, 2kHz: +5, 8kHz: +3, VOL: 56
@@ -40,11 +40,9 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 - CTL off: bypassed (verse). CTL on: engaged (chorus).
 - Verse stays tight and close. Chorus opens up with a touch of room to match the bigger, more anthemic space that section lives in.
 
-## NAM — Darkglass B7K Ultra (Slot 64)
+## AMP + DST: Classic Bass + Bass OD, CAB: Apg810 IR (User IR 3)
 
-- Gain: 60, VOL: 65, Bass: 55, Middle: 60, Treble: 60
-- Replaces AMP + CAB entirely (both null in the module chain above).
-- The B7K Ultra's modern, punchy drive/preamp character is exactly the territory late-90s post-grunge choruses live in — the same reasoning that made it the right call for "Everlong." Gain pushed for real grind and presence, Middle and Treble both up to keep the part cutting through the guitars.
+Rebuilt 2026-09-18 off the GP-5's own AMP/DST + a loaded IR — NAMs are off for now (Valeton N->S volume issue, device-side). The old NAM was a Darkglass B7K Ultra (Gain 60) — modern, punchy drive/preamp character, exactly the territory late-90s post-grunge choruses live in, same reasoning that made it the right call for "Everlong." Classic Bass + an always-on Bass OD reproduce that grind; Apg810 is the direct SVT-family cab pairing. Middle and Treble kept up on both stages to keep the part cutting through the guitars.
 
 ## CTL summary
 
