@@ -1,0 +1,91 @@
+{
+  "patch_name": "Higher-Creed-Gtr",
+  "patch_vol": 50,
+  "bpm": 85,
+  "ir": {
+    "name": "V30112"
+  },
+  "modules": {
+    "NR": {
+      "model": "Gate",
+      "always_on": true,
+      "settings": {
+        "THRE": 25
+      }
+    },
+    "PRE": {
+      "model": "Boost",
+      "ctl": true,
+      "ctl_off_state": "off",
+      "ctl_on_state": "on",
+      "settings": {
+        "Gain": 45,
+        "+3dB": true,
+        "Bright": false
+      }
+    },
+    "DST": {
+      "model": "La Charger",
+      "ctl": true,
+      "ctl_off_state": "off",
+      "ctl_on_state": "on",
+      "settings": {
+        "Gain": 55,
+        "Tone": 55,
+        "VOL": 62
+      }
+    },
+    "AMP": {
+      "model": "Match CL",
+      "always_on": true,
+      "settings": {
+        "Gain": 30,
+        "PRES": 50,
+        "VOL": 62,
+        "Bass": 50,
+        "Middle": 52,
+        "Treble": 50
+      }
+    },
+    "CAB": {
+      "model": "User IR 10",
+      "always_on": true,
+      "settings": {
+        "VOL": 60
+      }
+    },
+    "EQ": {
+      "model": "Guitar EQ 2",
+      "always_on": true,
+      "settings": {
+        "100Hz": -2,
+        "500Hz": 0,
+        "1kHz": 1,
+        "3kHz": 1,
+        "6kHz": -1,
+        "VOL": 50
+      }
+    },
+    "MOD": {
+      "model": "A-Chorus",
+      "always_on": true,
+      "settings": {
+        "Depth": 15,
+        "Rate": 0.5,
+        "Tone": 50
+      }
+    },
+    "DLY": {
+      "model": null
+    },
+    "RVB": {
+      "model": "Hall",
+      "always_on": true,
+      "settings": {
+        "Mix": 14,
+        "Decay": 35,
+        "Trail": false
+      }
+    }
+  }
+}

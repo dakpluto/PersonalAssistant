@@ -1,0 +1,91 @@
+{
+  "patch_name": "BrightSizeLife-Metheny-Gtr",
+  "patch_vol": 50,
+  "bpm": 170,
+  "ir": {
+    "name": "EVM112"
+  },
+  "modules": {
+    "NR": {
+      "model": "Gate",
+      "always_on": true,
+      "settings": {
+        "THRE": 10
+      }
+    },
+    "PRE": {
+      "model": "COMP",
+      "always_on": true,
+      "settings": {
+        "Sustain": 30,
+        "VOL": 55
+      }
+    },
+    "DST": {
+      "model": "Green OD",
+      "ctl": true,
+      "ctl_off_state": "off",
+      "ctl_on_state": "on",
+      "settings": {
+        "Gain": 12,
+        "Tone": 40,
+        "VOL": 65
+      }
+    },
+    "AMP": {
+      "model": "Dark Twin",
+      "always_on": true,
+      "settings": {
+        "Gain": 25,
+        "VOL": 60,
+        "Bass": 55,
+        "Middle": 50,
+        "Treble": 35,
+        "Bright": false
+      }
+    },
+    "CAB": {
+      "model": "User IR 5",
+      "always_on": true,
+      "settings": {
+        "VOL": 60
+      }
+    },
+    "EQ": {
+      "model": "Guitar EQ 1",
+      "always_on": true,
+      "settings": {
+        "125Hz": 0,
+        "400Hz": 2,
+        "800Hz": 0,
+        "1.6kHz": -2,
+        "4kHz": -5,
+        "VOL": 50
+      }
+    },
+    "MOD": {
+      "model": null
+    },
+    "DLY": {
+      "model": "Tape",
+      "ctl": true,
+      "ctl_off_state": "off",
+      "ctl_on_state": "on",
+      "settings": {
+        "Mix": 14,
+        "Time": 320,
+        "F.Back": 22,
+        "Trail": true
+      }
+    },
+    "RVB": {
+      "model": "Room",
+      "always_on": true,
+      "settings": {
+        "Mix": 12,
+        "Decay": 25,
+        "Trail": false
+      }
+    }
+  }
+}

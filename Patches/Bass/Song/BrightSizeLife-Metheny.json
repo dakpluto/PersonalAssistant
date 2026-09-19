@@ -1,0 +1,86 @@
+{
+  "patch_name": "BrightSizeLife-Metheny",
+  "patch_vol": 50,
+  "bpm": 170,
+  "ir": {
+    "name": "EBS410"
+  },
+  "modules": {
+    "NR": {
+      "model": "Gate",
+      "always_on": true,
+      "settings": {
+        "THRE": 8
+      }
+    },
+    "PRE": {
+      "model": "COMP",
+      "always_on": true,
+      "settings": {
+        "Sustain": 35,
+        "VOL": 58
+      }
+    },
+    "DST": {
+      "model": "Bass OD",
+      "ctl": true,
+      "ctl_off_state": "off",
+      "ctl_on_state": "on",
+      "settings": {
+        "Gain": 15,
+        "Blend": 28,
+        "VOL": 60,
+        "Bass": 45,
+        "Treble": 55
+      }
+    },
+    "AMP": {
+      "model": "Classic Bass",
+      "always_on": true,
+      "settings": {
+        "Gain": 18,
+        "Bass": 50,
+        "Middle": 58,
+        "MidFreq": 2,
+        "Treble": 58,
+        "VOL": 64
+      }
+    },
+    "CAB": {
+      "model": "User IR 4",
+      "always_on": true,
+      "settings": {
+        "VOL": 60
+      }
+    },
+    "EQ": {
+      "model": "Bass EQ 2",
+      "ctl": true,
+      "ctl_off_state": "off",
+      "ctl_on_state": "on",
+      "settings": {
+        "50Hz": 0,
+        "120Hz": 0,
+        "400Hz": 0,
+        "800Hz": 5,
+        "4.5kHz": 2,
+        "VOL": 52
+      }
+    },
+    "MOD": {
+      "model": null
+    },
+    "DLY": {
+      "model": null
+    },
+    "RVB": {
+      "model": "Room",
+      "always_on": true,
+      "settings": {
+        "Mix": 8,
+        "Decay": 20,
+        "Trail": false
+      }
+    }
+  }
+}

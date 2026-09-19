@@ -1,0 +1,80 @@
+{
+  "patch_name": "DawnOfVictory-Rhapsody",
+  "patch_vol": 50,
+  "bpm": 170,
+  "ir": {
+    "name": "Hartke410"
+  },
+  "modules": {
+    "NR": {
+      "model": "Gate",
+      "always_on": true,
+      "settings": {
+        "THRE": 25
+      }
+    },
+    "PRE": {
+      "model": "COMP4",
+      "always_on": true,
+      "settings": {
+        "Sustain": 55,
+        "Attack": 45,
+        "Clip": 50,
+        "VOL": 58
+      }
+    },
+    "DST": {
+      "model": "Bass OD",
+      "ctl": true,
+      "ctl_off_state": "off",
+      "ctl_on_state": "on",
+      "settings": {
+        "Gain": 30,
+        "Blend": 40,
+        "VOL": 60,
+        "Bass": 45,
+        "Treble": 55
+      }
+    },
+    "AMP": {
+      "model": "Classic Bass",
+      "always_on": true,
+      "settings": {
+        "Gain": 35,
+        "Bass": 50,
+        "Middle": 55,
+        "MidFreq": 2,
+        "Treble": 55,
+        "VOL": 62
+      }
+    },
+    "CAB": {
+      "model": "User IR 6",
+      "always_on": true,
+      "settings": {
+        "VOL": 60
+      }
+    },
+    "EQ": {
+      "model": "Bass EQ 2",
+      "always_on": true,
+      "settings": {
+        "50Hz": 1,
+        "120Hz": 1,
+        "400Hz": -3,
+        "800Hz": 3,
+        "4.5kHz": 3,
+        "VOL": 50
+      }
+    },
+    "MOD": {
+      "model": null
+    },
+    "DLY": {
+      "model": null
+    },
+    "RVB": {
+      "model": null
+    }
+  }
+}

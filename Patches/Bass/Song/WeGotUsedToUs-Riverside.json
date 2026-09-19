@@ -1,0 +1,93 @@
+{
+  "patch_name": "WeGotUsedToUs-Riverside",
+  "patch_vol": 50,
+  "bpm": 90,
+  "ir": {
+    "name": "Apg115"
+  },
+  "modules": {
+    "NR": {
+      "model": "Gate",
+      "always_on": true,
+      "settings": {
+        "THRE": 12
+      }
+    },
+    "PRE": {
+      "model": "COMP",
+      "always_on": true,
+      "settings": {
+        "Sustain": 42,
+        "VOL": 58
+      }
+    },
+    "DST": {
+      "model": "Bass OD",
+      "ctl": true,
+      "ctl_off_state": "off",
+      "ctl_on_state": "on",
+      "settings": {
+        "Gain": 25,
+        "Blend": 32,
+        "VOL": 60,
+        "Bass": 50,
+        "Treble": 42
+      }
+    },
+    "AMP": {
+      "model": "Classic Bass",
+      "always_on": true,
+      "settings": {
+        "Gain": 24,
+        "Bass": 60,
+        "Middle": 48,
+        "MidFreq": 1,
+        "Treble": 38,
+        "VOL": 64
+      }
+    },
+    "CAB": {
+      "model": "User IR 1",
+      "always_on": true,
+      "settings": {
+        "VOL": 60
+      }
+    },
+    "EQ": {
+      "model": "Bass EQ 2",
+      "always_on": true,
+      "settings": {
+        "50Hz": 3,
+        "120Hz": 2,
+        "400Hz": 1,
+        "800Hz": -2,
+        "4.5kHz": -3,
+        "VOL": 50
+      }
+    },
+    "MOD": {
+      "model": "B-Chorus",
+      "always_on": true,
+      "settings": {
+        "Depth": 12,
+        "Rate": 0.5,
+        "VOL": 50
+      }
+    },
+    "DLY": {
+      "model": null
+    },
+    "RVB": {
+      "model": "Plate",
+      "ctl": true,
+      "ctl_off_state": "off",
+      "ctl_on_state": "on",
+      "settings": {
+        "Mix": 14,
+        "Decay": 30,
+        "Damp": 50,
+        "Trail": false
+      }
+    }
+  }
+}

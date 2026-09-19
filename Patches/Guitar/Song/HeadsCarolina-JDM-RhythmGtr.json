@@ -1,0 +1,89 @@
+{
+  "patch_name": "HeadsCarolina-JDM-RhythmGtr",
+  "patch_vol": 50,
+  "bpm": 118,
+  "ir": {
+    "name": "EVM112"
+  },
+  "modules": {
+    "NR": {
+      "model": "Gate",
+      "always_on": true,
+      "settings": {
+        "THRE": 15
+      }
+    },
+    "PRE": {
+      "model": "COMP",
+      "always_on": true,
+      "settings": {
+        "Sustain": 40,
+        "VOL": 55
+      }
+    },
+    "DST": {
+      "model": "Green OD",
+      "ctl": true,
+      "ctl_off_state": "off",
+      "ctl_on_state": "on",
+      "settings": {
+        "Gain": 30,
+        "Tone": 60,
+        "VOL": 62
+      }
+    },
+    "AMP": {
+      "model": "Bellman 59B",
+      "always_on": true,
+      "settings": {
+        "Gain": 35,
+        "PRES": 55,
+        "VOL": 62,
+        "Bass": 45,
+        "Middle": 55,
+        "Treble": 58
+      }
+    },
+    "CAB": {
+      "model": "User IR 5",
+      "always_on": true,
+      "settings": {
+        "VOL": 60
+      }
+    },
+    "EQ": {
+      "model": "Guitar EQ 1",
+      "always_on": true,
+      "settings": {
+        "125Hz": -1,
+        "400Hz": -1,
+        "800Hz": 0,
+        "1.6kHz": 2,
+        "4kHz": 2,
+        "VOL": 50
+      }
+    },
+    "MOD": {
+      "model": null
+    },
+    "DLY": {
+      "model": "Slapback",
+      "always_on": true,
+      "settings": {
+        "Mix": 12,
+        "Time": 110,
+        "F.Back": 8,
+        "Trail": false
+      }
+    },
+    "RVB": {
+      "model": "Spring",
+      "always_on": true,
+      "settings": {
+        "Mix": 15,
+        "Decay": 25,
+        "Trail": false
+      }
+    }
+  }
+}

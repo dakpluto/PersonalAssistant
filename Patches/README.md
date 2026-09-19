@@ -18,6 +18,12 @@ Patches are split first by Instrument Type (`Patches/Guitar/`, `Patches/Bass/`),
 | `KissMeSNTR` | Kiss Me — Sixpence None the Richer | Strat | No | — | CTL on DST + DLY + RVB: dry verse strum vs. lifted hook/bridge |
 | `SisterChristian-NR` | Sister Christian — Night Ranger | Strat | Yes | — | CTL on DST + EQ + DLY (3-module max) |
 | `Wonderland-JM` | Your Body is a Wonderland — John Mayer (*Room for Squares*) | Strat | No | NAM: Two-Rock JM Sig #83 + Dumble SSS cab | AMP + CAB both null |
+| `BrightSizeLife-Metheny-Gtr` | Bright Size Life — Pat Metheny, guitar (~170 BPM, est.) | Strat | No (GP-5 only) | AMP: Dark Twin + IR: EVM112, Slot 5 | Warm, dark hollowbody-style clean; CTL on DST (Green OD, mild push) + DLY Tape: comping vs. head/solo |
+| `InTwoMinds-Riverside-LeadGtr` | In Two Minds, lead guitar — Riverside (~100 BPM, est.) | Strat | No (GP-5 only) | AMP: Bog RedV + IR: V30112, Slot 10 | Singing modern-prog lead, always-on Green OD; CTL on PRE Boost + DLY Analog: base lead vs. solo lift |
+| `WeGotUsedToUs-Riverside-LeadGtr` | We Got Used to Us, lead guitar — Riverside (~90 BPM, est.) | Strat | No (GP-5 only) | AMP: Z38 OD + IR: EVM112, Slot 5 | Smooth, vocal lead; CTL on DST (Green OD) + DLY Tape: base lead vs. expressive solo |
+| `Found-Riverside-RhythmGtr` | Found (The Unexpected Flaw of Searching), rhythm guitar — Riverside (~100 BPM, est.) | Strat | No (GP-5 only) | AMP: Dark Twin + IR: EVM112, Slot 5 | Clean chorused arpeggios; CTL on DST (Green OD) + RVB Hall: verse vs. chorus |
+| `HeadsCarolina-JDM-RhythmGtr` | Heads Carolina, Tails California, rhythm guitar — Jo Dee Messina (~118 BPM, est.) | Strat | No (GP-5 only) | AMP: Bellman 59B + IR: EVM112, Slot 5 | Bright country-rock strum, slapback + spring; CTL on DST (Green OD): verse vs. chorus |
+| `Higher-Creed-Gtr` | Higher, rhythm guitar — Creed (~85 BPM, est.) | Strat | No (GP-5 only) | AMP: Match CL + IR: V30112, Slot 10 | CTL off = clean (light chorus, hall); CTL on = driven (PRE Boost + DST La Charger stack) |
 
 ### Album/
 
@@ -95,6 +101,19 @@ Set of 5 for one worship set — full board (Flamma octave, Donner comp, Donner 
 | `IslandsInStream-KR` | Islands in the Stream — Kenny Rogers (duet w/ Dolly Parton, ~104 BPM, est.) | Sire fretless (Active) | No (GP-5 only) | IR: EBS410, Slot 4 | Smooth, polished pop-country, light always-on B-Chorus sheen; CTL on PRE Micro Boost + RVB Room: dry verse vs. lifted chorus hook |
 | `Lady-KR` | Lady — Kenny Rogers (~68 BPM) | Sire fretless (Active) | No (GP-5 only) | AMP: Mess Bass + IR: EBS410, Slot 4 | Silky Lionel Richie-penned soul ballad; CTL on RVB Hall only: dry close verse vs. subtle bridge/final-chorus swell |
 | `Comedown-Bush` | Comedown — Bush (~92 BPM, est.) | P/J | No (GP-5 only) | AMP: Classic Bass + always-on DST Bass OD + IR: Sunn215, Slot 8 | Darker/moodier sibling to Machinehead; CTL on PRE Micro Boost + RVB Room: murky restrained verse vs. heavier fuzzed chorus |
+| `Fire-OP` | Fire — Ohio Players (~116 BPM, est.) | P/J | No (GP-5 only) | AMP: Classic Bass + IR: Apg810, Slot 3 | Punchy 70s funk tone; CTL on DST (Bass OD) + RVB Room: clean verse groove vs. pushed chorus/horn-stab hits |
+| `LowRider-War` | Low Rider — War (~106 BPM, est.) | P/J | No (GP-5 only) | AMP: Classic Bass + IR: Apg115, Slot 1 | Warm, dark, laid-back muted tone; CTL on DST (Bass OD) + RVB Room: main riff groove vs. instrumental hook/outro lift |
+| `InTwoMinds-Riverside` | In Two Minds — Riverside (~100 BPM, est.) | P/J | No (GP-5 only) | AMP: Mess Bass + IR: Mesa215, Slot 7 | Gritty, mid-forward prog-metal tone; CTL on DST (Bass OD): riffs/verses vs. heavy sections |
+| `WeGotUsedToUs-Riverside` | We Got Used to Us — Riverside (~90 BPM, est.) | P/J | No (GP-5 only) | AMP: Classic Bass + IR: Apg115, Slot 1 | Warm, moody, light always-on chorus; CTL on DST (Bass OD) + RVB Plate: quiet verse vs. build |
+| `RiverDownBelow-Riverside` | River Down Below — Riverside (~100 BPM, est.) | P/J | No (GP-5 only) | AMP: Mess Bass + IR: Apg115410, Slot 2 | Deep, full, dynamic; CTL on DST (Bass OD) + RVB Hall: build-up vs. big swells |
+| `Found-Riverside` | Found (The Unexpected Flaw of Searching) — Riverside (~100 BPM, est.) | P/J | No (GP-5 only) | AMP: Classic Bass + IR: EBS410, Slot 4 | Clear, open, light always-on chorus; CTL on DST (Bass OD) + RVB Hall: verse vs. chorus lift |
+| `ConceivingYou-Riverside` | Conceiving You — Riverside (~95 BPM, est.) | P/J | No (GP-5 only) | AMP: Classic Bass + IR: Sunn215, Slot 8 | Dark, fat, snarling; CTL on DST (Bass OD) + RVB Room: moody parts vs. heavy riffs |
+| `DawnOfVictory-Rhapsody` | Dawn of Victory — Rhapsody (~170 BPM, est.) | P/J | No (GP-5 only) | AMP: Classic Bass + IR: Hartke410, Slot 6 | Tight, bright, compressed (COMP4) to sit against double kick; CTL on DST (Bass OD): verse vs. chorus edge |
+| `StormCorrosion-StormCorrosion` | Storm Corrosion — Storm Corrosion (~65 BPM, est.) | P/J | No (GP-5 only) | AMP: Classic Bass + IR: Apg115410, Slot 2 | Dark, deep, sparse; CTL on DST (Bass OD) + RVB Deepsea: dry anchor vs. cavernous climax |
+| `Hoedown-ELP` | Hoedown — Emerson, Lake & Palmer (~165 BPM, est.) | P/J | No (GP-5 only) | AMP: Mess Bass + IR: Hartke410, Slot 6 | Bright, driven (always-on Bass OD); CTL on EQ mid boost: solo/unison cut-through |
+| `CreekMarysBlood-Nightwish` | Creek Mary's Blood — Nightwish (~90 BPM, est.) | P/J | No (GP-5 only) | AMP: Classic Bass + IR: Apg810, Slot 3 | Thick, growly SVT; CTL on DST (Bass OD) + RVB Hall: tribal build vs. heavy payoff |
+| `Dryad-PainOfSalvation` | Dryad of the Woods — Pain of Salvation (~100 BPM, est.) | P/J | No (GP-5 only) | AMP: Foxy Bass + IR: EVM112, Slot 5 | Warm, nimble, dynamic (COMP4); CTL on DST (Bass OD) + RVB Plate: delicate vs. heavy |
+| `BrightSizeLife-Metheny` | Bright Size Life — Pat Metheny (~170 BPM, est.) | Sire fretless (Active) | No (GP-5 only) | AMP: Classic Bass + IR: EBS410, Slot 4 | Jaco-style clean, bridge-forward mwah; CTL on DST (Bass OD, very light) + EQ 800Hz mid boost: walking/head vs. melodic/solo |
 
 ### Artist/
 
