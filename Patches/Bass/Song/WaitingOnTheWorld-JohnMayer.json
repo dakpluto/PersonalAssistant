@@ -29,10 +29,10 @@
       "always_on": true,
       "settings": {
         "Gain": 20,
-        "Bass": 60,
+        "Bass": 58,
         "Middle": 52,
         "MidFreq": 0,
-        "Treble": 28,
+        "Treble": 35,
         "VOL": 66
       }
     },
@@ -48,10 +48,10 @@
       "always_on": true,
       "settings": {
         "50Hz": 0,
-        "120Hz": 3,
+        "120Hz": 2,
         "400Hz": 1,
-        "800Hz": -1,
-        "4.5kHz": -6,
+        "800Hz": 0,
+        "4.5kHz": -3,
         "VOL": 52
       }
     },
