@@ -1,0 +1,21 @@
+{
+  "patch_name": "Stairway-LZ",
+  "patch_vol": 54,
+  "bpm": 72,
+  "ir": { "name": "Apg810" },
+  "modules": {
+    "NR":  { "model": "Gate", "always_on": true, "settings": { "THRE": 15 } },
+    "PRE": { "model": "Micro Boost", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
+             "settings": { "Gain": 45 } },
+    "DST": { "model": "Bass OD", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
+             "settings": { "Gain": 35, "Blend": 40, "VOL": 60, "Bass": 52, "Treble": 52 } },
+    "AMP": { "model": "Classic Bass", "always_on": true,
+             "settings": { "Gain": 32, "Bass": 60, "Middle": 55, "MidFreq": 1, "Treble": 50, "VOL": 65 } },
+    "CAB": { "model": "User IR 3", "always_on": true, "settings": { "VOL": 60 } },
+    "EQ":  { "model": "Bass EQ 1", "always_on": true,
+             "settings": { "33Hz": 2, "150Hz": 2, "600Hz": 1, "2kHz": 2, "8kHz": -1, "VOL": 54 } },
+    "MOD": { "model": null },
+    "DLY": { "model": null },
+    "RVB": { "model": "Room", "always_on": true, "settings": { "Mix": 12, "Decay": 25, "Trail": true } }
+  }
+}

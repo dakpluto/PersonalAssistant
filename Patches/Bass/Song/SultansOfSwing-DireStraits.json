@@ -1,0 +1,21 @@
+{
+  "patch_name": "Sultans-DS",
+  "patch_vol": 52,
+  "bpm": 148,
+  "ir": { "name": "TC410" },
+  "modules": {
+    "NR":  { "model": "Gate", "always_on": true, "settings": { "THRE": 12 } },
+    "PRE": { "model": "Micro Boost", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
+             "settings": { "Gain": 50 } },
+    "DST": { "model": null },
+    "AMP": { "model": "Foxy Bass", "always_on": true,
+             "settings": { "VOL": 66, "Bass": 55, "Treble": 55 } },
+    "CAB": { "model": "User IR 9", "always_on": true, "settings": { "VOL": 60 } },
+    "EQ":  { "model": "Bass EQ 2", "always_on": true,
+             "settings": { "50Hz": 1, "120Hz": 2, "400Hz": 0, "800Hz": 2, "4.5kHz": 1, "VOL": 55 } },
+    "MOD": { "model": null },
+    "DLY": { "model": null },
+    "RVB": { "model": "Room", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
+             "settings": { "Mix": 15, "Decay": 25, "Trail": true } }
+  }
+}
