@@ -119,6 +119,7 @@ Set of 5 for one worship set — full board (Flamma octave, Donner comp, Donner 
 | `SweetChild-GNR` | Sweet Child O' Mine — Guns N' Roses (~125 BPM) | P/J | No (GP-5 only) | AMP: Classic Bass + IR: Hartke410, Slot 6 | Bright picked Duff tone, COMP4; CTL on DST (Bass OD): main song vs. "Where do we go now" outro |
 | `Stairway-LedZeppelin` | Stairway to Heaven — Led Zeppelin (~72 BPM, accelerates) | P/J | No (GP-5 only) | AMP: Classic Bass + IR: Apg810, Slot 3 | Warm build, always-on Room; CTL on PRE Micro Boost + DST (Bass OD): build vs. solo/hard-rock ending |
 | `HotelCalifornia-Eagles` | Hotel California — Eagles (~74 BPM) | P/J | No (GP-5 only) | AMP: Classic Bass + IR: Apg115, Slot 1 | Warm B-15 groove; CTL on DST (Bass OD, light) + RVB Plate: verse vs. dual-guitar outro |
+| `AfterTheLove-EWF` | After the Love Has Gone — Earth, Wind & Fire (~66 BPM, est.) | P/J | No (GP-5 only) | AMP: Mess Bass + IR: TC410, Slot 9 | Warm, round R&B ballad (replaces EWF-Funk on this song's site page); CTL on RVB Plate: dry verse vs. chorus bloom |
 
 ### Artist/
 
