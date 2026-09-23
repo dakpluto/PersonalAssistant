@@ -1,0 +1,88 @@
+{
+  "patch_name": "HardWork-Gtr",
+  "patch_vol": 50,
+  "bpm": 150,
+  "ir": {
+    "name": "EVM112"
+  },
+  "modules": {
+    "NR": {
+      "model": "Gate",
+      "always_on": true,
+      "settings": {
+        "THRE": 22
+      }
+    },
+    "PRE": {
+      "model": "COMP4",
+      "always_on": true,
+      "settings": {
+        "Sustain": 50,
+        "Attack": 45,
+        "Clip": 40,
+        "VOL": 58
+      }
+    },
+    "DST": {
+      "model": "Super OD",
+      "ctl": true,
+      "ctl_off_state": "off",
+      "ctl_on_state": "on",
+      "settings": {
+        "Gain": 38,
+        "Tone": 58,
+        "VOL": 68
+      }
+    },
+    "AMP": {
+      "model": "Tweedy",
+      "always_on": true,
+      "settings": {
+        "Gain": 36,
+        "Tone": 60,
+        "VOL": 62
+      }
+    },
+    "CAB": {
+      "model": "User IR 5",
+      "always_on": true,
+      "settings": {
+        "VOL": 60
+      }
+    },
+    "EQ": {
+      "model": "Guitar EQ 2",
+      "always_on": true,
+      "settings": {
+        "100Hz": -3,
+        "500Hz": -1,
+        "1kHz": 1,
+        "3kHz": 2,
+        "6kHz": -1,
+        "VOL": 50
+      }
+    },
+    "MOD": {
+      "model": null
+    },
+    "DLY": {
+      "model": "Slapback",
+      "always_on": true,
+      "settings": {
+        "Mix": 18,
+        "Time": 95,
+        "F.Back": 6,
+        "Trail": true
+      }
+    },
+    "RVB": {
+      "model": "Spring",
+      "always_on": true,
+      "settings": {
+        "Mix": 12,
+        "Decay": 30,
+        "Trail": true
+      }
+    }
+  }
+}

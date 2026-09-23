@@ -1,0 +1,86 @@
+{
+  "patch_name": "OnlyInAm-Gtr",
+  "patch_vol": 50,
+  "bpm": 120,
+  "ir": {
+    "name": "V30112"
+  },
+  "modules": {
+    "NR": {
+      "model": "Gate",
+      "always_on": true,
+      "settings": {
+        "THRE": 28
+      }
+    },
+    "PRE": {
+      "model": "Boost",
+      "ctl": true,
+      "ctl_off_state": "off",
+      "ctl_on_state": "on",
+      "settings": {
+        "Gain": 45,
+        "+3dB": true,
+        "Bright": false
+      }
+    },
+    "DST": {
+      "model": null
+    },
+    "AMP": {
+      "model": "UK 45",
+      "always_on": true,
+      "settings": {
+        "Gain": 48,
+        "PRES": 55,
+        "VOL": 60,
+        "Bass": 50,
+        "Middle": 58,
+        "Treble": 56
+      }
+    },
+    "CAB": {
+      "model": "User IR 10",
+      "always_on": true,
+      "settings": {
+        "VOL": 60
+      }
+    },
+    "EQ": {
+      "model": "Guitar EQ 2",
+      "always_on": true,
+      "settings": {
+        "100Hz": -3,
+        "500Hz": 0,
+        "1kHz": 1,
+        "3kHz": 1,
+        "6kHz": -2,
+        "VOL": 50
+      }
+    },
+    "MOD": {
+      "model": null
+    },
+    "DLY": {
+      "model": "Analog",
+      "ctl": true,
+      "ctl_off_state": "off",
+      "ctl_on_state": "on",
+      "settings": {
+        "Mix": 15,
+        "Time": 375,
+        "Feedback": 22,
+        "Trail": true
+      }
+    },
+    "RVB": {
+      "model": "Hall",
+      "always_on": true,
+      "settings": {
+        "Mix": 14,
+        "Decay": 35,
+        "Trail": true
+      }
+    }
+  }
+}

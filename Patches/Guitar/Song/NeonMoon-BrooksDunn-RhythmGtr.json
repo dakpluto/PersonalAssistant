@@ -1,0 +1,91 @@
+{
+  "patch_name": "NeonMoon-Gtr",
+  "patch_vol": 50,
+  "bpm": 100,
+  "ir": {
+    "name": "EVM112"
+  },
+  "modules": {
+    "NR": {
+      "model": "Gate",
+      "always_on": true,
+      "settings": {
+        "THRE": 12
+      }
+    },
+    "PRE": {
+      "model": "COMP",
+      "always_on": true,
+      "settings": {
+        "Sustain": 32,
+        "VOL": 55
+      }
+    },
+    "DST": {
+      "model": "Green OD",
+      "ctl": true,
+      "ctl_off_state": "off",
+      "ctl_on_state": "on",
+      "settings": {
+        "Gain": 20,
+        "Tone": 55,
+        "VOL": 68
+      }
+    },
+    "AMP": {
+      "model": "Dark Twin",
+      "always_on": true,
+      "settings": {
+        "Gain": 28,
+        "VOL": 62,
+        "Bass": 46,
+        "Middle": 46,
+        "Treble": 55,
+        "Bright": true
+      }
+    },
+    "CAB": {
+      "model": "User IR 5",
+      "always_on": true,
+      "settings": {
+        "VOL": 60
+      }
+    },
+    "EQ": {
+      "model": "Guitar EQ 2",
+      "always_on": true,
+      "settings": {
+        "100Hz": -2,
+        "500Hz": 0,
+        "1kHz": 0,
+        "3kHz": 1,
+        "6kHz": -2,
+        "VOL": 50
+      }
+    },
+    "MOD": {
+      "model": null
+    },
+    "DLY": {
+      "model": "Analog",
+      "ctl": true,
+      "ctl_off_state": "off",
+      "ctl_on_state": "on",
+      "settings": {
+        "Mix": 18,
+        "Time": 450,
+        "Feedback": 22,
+        "Trail": true
+      }
+    },
+    "RVB": {
+      "model": "Spring",
+      "always_on": true,
+      "settings": {
+        "Mix": 22,
+        "Decay": 42,
+        "Trail": true
+      }
+    }
+  }
+}
