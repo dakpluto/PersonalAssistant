@@ -1,0 +1,74 @@
+{
+  "patch_name": "Puff",
+  "patch_vol": 52,
+  "bpm": 110,
+  "ir": {
+    "name": "Apg115"
+  },
+  "modules": {
+    "NR": {
+      "model": "Gate",
+      "always_on": true,
+      "settings": {
+        "THRE": 18
+      }
+    },
+    "PRE": {
+      "model": "COMP",
+      "always_on": true,
+      "settings": {
+        "Sustain": 28,
+        "VOL": 58
+      }
+    },
+    "DST": {
+      "model": null
+    },
+    "AMP": {
+      "model": "Classic Bass",
+      "always_on": true,
+      "settings": {
+        "Gain": 18,
+        "Bass": 58,
+        "Middle": 55,
+        "MidFreq": 0,
+        "Treble": 22,
+        "VOL": 66
+      }
+    },
+    "CAB": {
+      "model": "User IR 1",
+      "always_on": true,
+      "settings": {
+        "VOL": 60
+      }
+    },
+    "EQ": {
+      "model": "Bass EQ 2",
+      "always_on": true,
+      "settings": {
+        "50Hz": -2,
+        "120Hz": 2,
+        "400Hz": 3,
+        "800Hz": -1,
+        "4.5kHz": -8,
+        "VOL": 52
+      }
+    },
+    "MOD": {
+      "model": null
+    },
+    "DLY": {
+      "model": null
+    },
+    "RVB": {
+      "model": "Room",
+      "always_on": true,
+      "settings": {
+        "Mix": 12,
+        "Decay": 22,
+        "Trail": true
+      }
+    }
+  }
+}

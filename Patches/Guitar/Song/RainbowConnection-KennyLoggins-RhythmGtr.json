@@ -1,0 +1,97 @@
+{
+  "patch_name": "Rainbow-Gtr",
+  "patch_vol": 50,
+  "bpm": 72,
+  "ir": {
+    "name": "EVM112"
+  },
+  "modules": {
+    "NR": {
+      "model": "Gate",
+      "always_on": true,
+      "settings": {
+        "THRE": 10
+      }
+    },
+    "PRE": {
+      "model": "COMP",
+      "always_on": true,
+      "settings": {
+        "Sustain": 42,
+        "VOL": 55
+      }
+    },
+    "DST": {
+      "model": "Green OD",
+      "ctl": true,
+      "ctl_off_state": "off",
+      "ctl_on_state": "on",
+      "settings": {
+        "Gain": 12,
+        "Tone": 50,
+        "VOL": 68
+      }
+    },
+    "AMP": {
+      "model": "Dark Twin",
+      "always_on": true,
+      "settings": {
+        "Gain": 25,
+        "VOL": 62,
+        "Bass": 50,
+        "Middle": 45,
+        "Treble": 52,
+        "Bright": true
+      }
+    },
+    "CAB": {
+      "model": "User IR 5",
+      "always_on": true,
+      "settings": {
+        "VOL": 60
+      }
+    },
+    "EQ": {
+      "model": "Guitar EQ 2",
+      "always_on": true,
+      "settings": {
+        "100Hz": -1,
+        "500Hz": -2,
+        "1kHz": 0,
+        "3kHz": 2,
+        "6kHz": 1,
+        "VOL": 50
+      }
+    },
+    "MOD": {
+      "model": "A-Chorus",
+      "always_on": true,
+      "settings": {
+        "Depth": 14,
+        "Rate": 0.5,
+        "Tone": 55
+      }
+    },
+    "DLY": {
+      "model": "Tape",
+      "ctl": true,
+      "ctl_off_state": "off",
+      "ctl_on_state": "on",
+      "settings": {
+        "Mix": 16,
+        "Time": 420,
+        "F.Back": 22,
+        "Trail": true
+      }
+    },
+    "RVB": {
+      "model": "Hall",
+      "always_on": true,
+      "settings": {
+        "Mix": 24,
+        "Decay": 50,
+        "Trail": true
+      }
+    }
+  }
+}

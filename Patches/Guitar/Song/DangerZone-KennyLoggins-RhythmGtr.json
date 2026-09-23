@@ -1,0 +1,93 @@
+{
+  "patch_name": "DangerZn-Gtr",
+  "patch_vol": 50,
+  "bpm": 158,
+  "ir": {
+    "name": "V30112"
+  },
+  "modules": {
+    "NR": {
+      "model": "Gate",
+      "always_on": true,
+      "settings": {
+        "THRE": 38
+      }
+    },
+    "PRE": {
+      "model": "Boost",
+      "ctl": true,
+      "ctl_off_state": "off",
+      "ctl_on_state": "on",
+      "settings": {
+        "Gain": 50,
+        "+3dB": true,
+        "Bright": false
+      }
+    },
+    "DST": {
+      "model": null
+    },
+    "AMP": {
+      "model": "Solo100 OD",
+      "always_on": true,
+      "settings": {
+        "Gain": 58,
+        "PRES": 55,
+        "VOL": 60,
+        "Bass": 50,
+        "Middle": 58,
+        "Treble": 58
+      }
+    },
+    "CAB": {
+      "model": "User IR 10",
+      "always_on": true,
+      "settings": {
+        "VOL": 60
+      }
+    },
+    "EQ": {
+      "model": "Guitar EQ 2",
+      "always_on": true,
+      "settings": {
+        "100Hz": -2,
+        "500Hz": 0,
+        "1kHz": 1,
+        "3kHz": 1,
+        "6kHz": -2,
+        "VOL": 50
+      }
+    },
+    "MOD": {
+      "model": "A-Chorus",
+      "always_on": true,
+      "settings": {
+        "Depth": 15,
+        "Rate": 0.6,
+        "Tone": 50
+      }
+    },
+    "DLY": {
+      "model": "Analog",
+      "ctl": true,
+      "ctl_off_state": "off",
+      "ctl_on_state": "on",
+      "settings": {
+        "Mix": 22,
+        "Time": 380,
+        "Feedback": 30,
+        "Trail": true
+      }
+    },
+    "RVB": {
+      "model": "Plate",
+      "always_on": true,
+      "settings": {
+        "Mix": 14,
+        "Decay": 35,
+        "Damp": 50,
+        "Trail": true
+      }
+    }
+  }
+}

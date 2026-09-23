@@ -1,0 +1,77 @@
+{
+  "patch_name": "Neon",
+  "patch_vol": 52,
+  "bpm": 104,
+  "ir": {
+    "name": "EBS410"
+  },
+  "modules": {
+    "NR": {
+      "model": "Gate",
+      "always_on": true,
+      "settings": {
+        "THRE": 12
+      }
+    },
+    "PRE": {
+      "model": "COMP4",
+      "always_on": true,
+      "settings": {
+        "Sustain": 45,
+        "Attack": 50,
+        "Clip": 40,
+        "VOL": 58
+      }
+    },
+    "DST": {
+      "model": null
+    },
+    "AMP": {
+      "model": "Mess Bass",
+      "always_on": true,
+      "settings": {
+        "Gain": 22,
+        "VOL": 65,
+        "Bass": 55,
+        "Middle": 52,
+        "Treble": 55
+      }
+    },
+    "CAB": {
+      "model": "User IR 4",
+      "always_on": true,
+      "settings": {
+        "VOL": 60
+      }
+    },
+    "EQ": {
+      "model": "Bass EQ 2",
+      "always_on": true,
+      "settings": {
+        "50Hz": 0,
+        "120Hz": 2,
+        "400Hz": -2,
+        "800Hz": 2,
+        "4.5kHz": 0,
+        "VOL": 52
+      }
+    },
+    "MOD": {
+      "model": null
+    },
+    "DLY": {
+      "model": null
+    },
+    "RVB": {
+      "model": "Room",
+      "ctl": true,
+      "ctl_off_state": "off",
+      "ctl_on_state": "on",
+      "settings": {
+        "Mix": 10,
+        "Decay": 25,
+        "Trail": true
+      }
+    }
+  }
+}

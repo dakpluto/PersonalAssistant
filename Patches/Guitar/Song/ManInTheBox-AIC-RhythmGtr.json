@@ -1,0 +1,94 @@
+{
+  "patch_name": "ManInBox-Gtr",
+  "patch_vol": 50,
+  "bpm": 108,
+  "ir": {
+    "name": "V30112"
+  },
+  "modules": {
+    "NR": {
+      "model": "Gate",
+      "always_on": true,
+      "settings": {
+        "THRE": 45
+      }
+    },
+    "PRE": {
+      "model": "Toucher",
+      "ctl": true,
+      "ctl_off_state": "off",
+      "ctl_on_state": "on",
+      "settings": {
+        "Sense": 60,
+        "Range": 55,
+        "Q": 65,
+        "Mix": 70,
+        "Mode": 0
+      }
+    },
+    "DST": {
+      "model": "Green OD",
+      "always_on": true,
+      "settings": {
+        "Gain": 20,
+        "Tone": 45,
+        "VOL": 70
+      }
+    },
+    "AMP": {
+      "model": "UK 800",
+      "always_on": true,
+      "settings": {
+        "Gain": 68,
+        "PRES": 50,
+        "VOL": 58,
+        "Bass": 55,
+        "Middle": 62,
+        "Treble": 52
+      }
+    },
+    "CAB": {
+      "model": "User IR 10",
+      "always_on": true,
+      "settings": {
+        "VOL": 60
+      }
+    },
+    "EQ": {
+      "model": "Guitar EQ 2",
+      "always_on": true,
+      "settings": {
+        "100Hz": 0,
+        "500Hz": 1,
+        "1kHz": 1,
+        "3kHz": 0,
+        "6kHz": -3,
+        "VOL": 50
+      }
+    },
+    "MOD": {
+      "model": null
+    },
+    "DLY": {
+      "model": "Analog",
+      "ctl": true,
+      "ctl_off_state": "off",
+      "ctl_on_state": "on",
+      "settings": {
+        "Mix": 14,
+        "Time": 330,
+        "Feedback": 20,
+        "Trail": true
+      }
+    },
+    "RVB": {
+      "model": "Room",
+      "always_on": true,
+      "settings": {
+        "Mix": 10,
+        "Decay": 25,
+        "Trail": true
+      }
+    }
+  }
+}

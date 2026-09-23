@@ -1,0 +1,76 @@
+{
+  "patch_name": "Rainbow",
+  "patch_vol": 52,
+  "bpm": 72,
+  "ir": {
+    "name": "Apg115"
+  },
+  "modules": {
+    "NR": {
+      "model": "Gate",
+      "always_on": true,
+      "settings": {
+        "THRE": 8
+      }
+    },
+    "PRE": {
+      "model": "COMP",
+      "always_on": true,
+      "settings": {
+        "Sustain": 32,
+        "VOL": 58
+      }
+    },
+    "DST": {
+      "model": null
+    },
+    "AMP": {
+      "model": "Classic Bass",
+      "always_on": true,
+      "settings": {
+        "Gain": 18,
+        "Bass": 58,
+        "Middle": 50,
+        "MidFreq": 0,
+        "Treble": 30,
+        "VOL": 66
+      }
+    },
+    "CAB": {
+      "model": "User IR 1",
+      "always_on": true,
+      "settings": {
+        "VOL": 60
+      }
+    },
+    "EQ": {
+      "model": "Bass EQ 2",
+      "always_on": true,
+      "settings": {
+        "50Hz": 0,
+        "120Hz": 2,
+        "400Hz": 1,
+        "800Hz": -1,
+        "4.5kHz": -5,
+        "VOL": 52
+      }
+    },
+    "MOD": {
+      "model": null
+    },
+    "DLY": {
+      "model": null
+    },
+    "RVB": {
+      "model": "Hall",
+      "ctl": true,
+      "ctl_off_state": "off",
+      "ctl_on_state": "on",
+      "settings": {
+        "Mix": 14,
+        "Decay": 40,
+        "Trail": true
+      }
+    }
+  }
+}

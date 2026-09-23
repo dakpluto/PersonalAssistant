@@ -1,0 +1,86 @@
+{
+  "patch_name": "Werewolf-Gtr",
+  "patch_vol": 50,
+  "bpm": 104,
+  "ir": {
+    "name": "EVM112"
+  },
+  "modules": {
+    "NR": {
+      "model": "Gate",
+      "always_on": true,
+      "settings": {
+        "THRE": 18
+      }
+    },
+    "PRE": {
+      "model": null
+    },
+    "DST": {
+      "model": "Green OD",
+      "ctl": true,
+      "ctl_off_state": "off",
+      "ctl_on_state": "on",
+      "settings": {
+        "Gain": 38,
+        "Tone": 55,
+        "VOL": 68
+      }
+    },
+    "AMP": {
+      "model": "Bellman 59N",
+      "always_on": true,
+      "settings": {
+        "Gain": 42,
+        "PRES": 50,
+        "VOL": 62,
+        "Bass": 45,
+        "Middle": 58,
+        "Treble": 52
+      }
+    },
+    "CAB": {
+      "model": "User IR 5",
+      "always_on": true,
+      "settings": {
+        "VOL": 60
+      }
+    },
+    "EQ": {
+      "model": "Guitar EQ 2",
+      "always_on": true,
+      "settings": {
+        "100Hz": -3,
+        "500Hz": 0,
+        "1kHz": 1,
+        "3kHz": 0,
+        "6kHz": -2,
+        "VOL": 50
+      }
+    },
+    "MOD": {
+      "model": null
+    },
+    "DLY": {
+      "model": "Analog",
+      "ctl": true,
+      "ctl_off_state": "off",
+      "ctl_on_state": "on",
+      "settings": {
+        "Mix": 14,
+        "Time": 290,
+        "Feedback": 18,
+        "Trail": true
+      }
+    },
+    "RVB": {
+      "model": "Room",
+      "always_on": true,
+      "settings": {
+        "Mix": 14,
+        "Decay": 30,
+        "Trail": true
+      }
+    }
+  }
+}
