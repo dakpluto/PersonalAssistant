@@ -1,0 +1,76 @@
+{
+  "patch_name": "IWALY-Dolly",
+  "patch_vol": 52,
+  "bpm": 66,
+  "ir": {
+    "name": "Apg115"
+  },
+  "modules": {
+    "NR": {
+      "model": "Gate",
+      "always_on": true,
+      "settings": {
+        "THRE": 10
+      }
+    },
+    "PRE": {
+      "model": "COMP",
+      "always_on": true,
+      "settings": {
+        "Sustain": 35,
+        "VOL": 58
+      }
+    },
+    "DST": {
+      "model": null
+    },
+    "AMP": {
+      "model": "Classic Bass",
+      "always_on": true,
+      "settings": {
+        "Gain": 20,
+        "Bass": 60,
+        "Middle": 48,
+        "MidFreq": 1,
+        "Treble": 38,
+        "VOL": 65
+      }
+    },
+    "CAB": {
+      "model": "User IR 1",
+      "always_on": true,
+      "settings": {
+        "VOL": 60
+      }
+    },
+    "EQ": {
+      "model": "Bass EQ 2",
+      "always_on": true,
+      "settings": {
+        "50Hz": 1,
+        "120Hz": 2,
+        "400Hz": 0,
+        "800Hz": 0,
+        "4.5kHz": -4,
+        "VOL": 52
+      }
+    },
+    "MOD": {
+      "model": null
+    },
+    "DLY": {
+      "model": null
+    },
+    "RVB": {
+      "model": "Room",
+      "ctl": true,
+      "ctl_off_state": "off",
+      "ctl_on_state": "on",
+      "settings": {
+        "Mix": 16,
+        "Decay": 30,
+        "Trail": true
+      }
+    }
+  }
+}

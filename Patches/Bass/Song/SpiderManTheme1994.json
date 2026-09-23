@@ -1,0 +1,80 @@
+{
+  "patch_name": "SpiderMan94",
+  "patch_vol": 52,
+  "bpm": 140,
+  "ir": {
+    "name": "Hartke410"
+  },
+  "modules": {
+    "NR": {
+      "model": "Gate",
+      "always_on": true,
+      "settings": {
+        "THRE": 20
+      }
+    },
+    "PRE": {
+      "model": "COMP4",
+      "always_on": true,
+      "settings": {
+        "Sustain": 45,
+        "Attack": 50,
+        "Clip": 40,
+        "VOL": 58
+      }
+    },
+    "DST": {
+      "model": "Bass OD",
+      "ctl": true,
+      "ctl_off_state": "off",
+      "ctl_on_state": "on",
+      "settings": {
+        "Gain": 40,
+        "Blend": 40,
+        "VOL": 55,
+        "Bass": 50,
+        "Treble": 55
+      }
+    },
+    "AMP": {
+      "model": "Classic Bass",
+      "always_on": true,
+      "settings": {
+        "Gain": 40,
+        "Bass": 55,
+        "Middle": 58,
+        "MidFreq": 2,
+        "Treble": 55,
+        "VOL": 64
+      }
+    },
+    "CAB": {
+      "model": "User IR 6",
+      "always_on": true,
+      "settings": {
+        "VOL": 60
+      }
+    },
+    "EQ": {
+      "model": "Bass EQ 2",
+      "always_on": true,
+      "settings": {
+        "50Hz": 0,
+        "120Hz": 2,
+        "400Hz": -2,
+        "800Hz": 2,
+        "4.5kHz": 1,
+        "VOL": 52
+      }
+    },
+    "MOD": {
+      "model": null
+    },
+    "DLY": {
+      "model": null
+    },
+    "RVB": {
+      "model": null
+    }
+  }
+}

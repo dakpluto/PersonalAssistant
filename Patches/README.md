@@ -24,6 +24,11 @@ Patches are split first by Instrument Type (`Patches/Guitar/`, `Patches/Bass/`),
 | `Found-Riverside-RhythmGtr` | Found (The Unexpected Flaw of Searching), rhythm guitar — Riverside (~100 BPM, est.) | Strat | No (GP-5 only) | AMP: Dark Twin + IR: EVM112, Slot 5 | Clean chorused arpeggios; CTL on DST (Green OD) + RVB Hall: verse vs. chorus |
 | `HeadsCarolina-JDM-RhythmGtr` | Heads Carolina, Tails California, rhythm guitar — Jo Dee Messina (~118 BPM, est.) | Strat | No (GP-5 only) | AMP: Bellman 59B + IR: EVM112, Slot 5 | Bright country-rock strum, slapback + spring; CTL on DST (Green OD): verse vs. chorus |
 | `Higher-Creed-Gtr` | Higher, rhythm guitar — Creed (~85 BPM, est.) | Strat | No (GP-5 only) | AMP: Match CL + IR: V30112, Slot 10 | CTL off = clean (light chorus, hall); CTL on = driven (PRE Boost + DST La Charger stack) |
+| `IWillAlwaysLoveYou-Dolly-RhythmGtr` | I Will Always Love You, rhythm guitar — Dolly Parton (~66 BPM, est.) | Strat | No (GP-5 only) | AMP: Dark Twin + IR: EVM112, Slot 5 | Soft Nashville clean, Ross comp + spring; CTL on DST (Green OD, light) + DLY Analog: rhythm vs. lead fills |
+| `MaryJanesLastDance-TomPetty-RhythmGtr` | Mary Jane's Last Dance, rhythm guitar — Tom Petty and the Heartbreakers (~84 BPM, est.) | Strat | No (GP-5 only) | AMP: Foxy 30TB + IR: EVM112, Slot 5 | AC30 edge crunch for the Am riff, small room; CTL on DST (Green OD) + DLY Analog: riff vs. solo/outro lead |
+| `WhenWindMeetsFire-EW-RhythmGtr` | When Wind Meets Fire, rhythm guitar — Elevation Worship (~72 BPM, est.) | Strat | No (GP-5 only) | AMP: Match CL + IR: V30112, Slot 10 | Modern worship ambient: always-on dotted-8th Tape + Sweet Space; CTL on PRE Boost + DST (Green OD): swells/verse vs. driven chorus/bridge lead |
+| `SpiderManTheme1994-RhythmGtr` | Spider-Man: The Animated Series theme (1994), rhythm guitar — Joe Perry (driving hard-rock tempo, est.) | Strat | No (GP-5 only) | AMP: UK 800 + IR: V30112, Slot 10 | 90s Aerosmith-style Marshall crunch; CTL on PRE Boost + DLY Analog: riff vs. lead melody |
+| `SpiderManTheme1967-RhythmGtr` | Spider-Man Theme (1967 cartoon), rhythm guitar — Bob Harris & Paul Francis Webster (fast swing, est.) | Strat | No (GP-5 only) | AMP: Dark Twin + IR: EVM112, Slot 5 | 60s TV-theme twang: always-on slapback + spring; CTL on DST (Super OD): comping/riff vs. driven melody lead |
 
 ### Album/
 
@@ -120,6 +125,11 @@ Set of 5 for one worship set — full board (Flamma octave, Donner comp, Donner 
 | `Stairway-LedZeppelin` | Stairway to Heaven — Led Zeppelin (~72 BPM, accelerates) | P/J | No (GP-5 only) | AMP: Classic Bass + IR: Apg810, Slot 3 | Warm build, always-on Room; CTL on PRE Micro Boost + DST (Bass OD): build vs. solo/hard-rock ending |
 | `HotelCalifornia-Eagles` | Hotel California — Eagles (~74 BPM) | P/J | No (GP-5 only) | AMP: Classic Bass + IR: Apg115, Slot 1 | Warm B-15 groove; CTL on DST (Bass OD, light) + RVB Plate: verse vs. dual-guitar outro |
 | `AfterTheLove-EWF` | After the Love Has Gone — Earth, Wind & Fire (~66 BPM, est.) | P/J | No (GP-5 only) | AMP: Mess Bass + IR: TC410, Slot 9 | Warm, round R&B ballad (replaces EWF-Funk on this song's site page); CTL on RVB Plate: dry verse vs. chorus bloom |
+| `IWillAlwaysLoveYou-Dolly` | I Will Always Love You — Dolly Parton (~66 BPM, est.) | P/J | No (GP-5 only) | AMP: Classic Bass + IR: Apg115, Slot 1 | Warm, round Nashville ballad, B-15 thump, Ross comp; CTL on RVB Room: dry verse vs. chorus bloom |
+| `MaryJanesLastDance-TomPetty` | Mary Jane's Last Dance — Tom Petty and the Heartbreakers (~84 BPM, est.) | P/J | No (GP-5 only) | AMP: Classic Bass + IR: Apg810, Slot 3 | Punchy, mid-forward SVT rock tone; CTL on DST (Bass OD, light): verse vs. chorus/outro push |
+| `WhenWindMeetsFire-EW` | When Wind Meets Fire — Elevation Worship (~72 BPM, est.) | P/J | No (GP-5 only) | AMP: Classic Bass + IR: Apg115410, Slot 2 | Deep, sub-heavy modern worship, COMP4; CTL on DST (Bass OD) + RVB Hall: verse vs. driven chorus/bridge |
+| `SpiderManTheme1994` | Spider-Man: The Animated Series theme (1994) — Joe Perry (driving hard-rock tempo, est.) | P/J | No (GP-5 only) | AMP: Classic Bass + IR: Hartke410, Slot 6 | Bright, picked, gritty SVT, COMP4; CTL on DST (Bass OD): riff vs. lead-melody push |
+| `SpiderManTheme1967` | Spider-Man Theme (1967 cartoon) — Bob Harris & Paul Francis Webster (fast swing, est.) | P/J | No (GP-5 only) | AMP: Classic Bass + IR: Apg115, Slot 1 | Dark, thumpy 60s B-15, small room; CTL on DST (Bass OD): 1967 swing vs. rock-cover push |
 
 ### Artist/
 

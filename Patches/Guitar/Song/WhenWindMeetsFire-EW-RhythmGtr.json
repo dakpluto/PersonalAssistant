@@ -1,0 +1,94 @@
+{
+  "patch_name": "WWMF-EW-Gtr",
+  "patch_vol": 50,
+  "bpm": 72,
+  "ir": {
+    "name": "V30112"
+  },
+  "modules": {
+    "NR": {
+      "model": "Gate",
+      "always_on": true,
+      "settings": {
+        "THRE": 18
+      }
+    },
+    "PRE": {
+      "model": "Boost",
+      "ctl": true,
+      "ctl_off_state": "off",
+      "ctl_on_state": "on",
+      "settings": {
+        "Gain": 45,
+        "+3dB": true,
+        "Bright": false
+      }
+    },
+    "DST": {
+      "model": "Green OD",
+      "ctl": true,
+      "ctl_off_state": "off",
+      "ctl_on_state": "on",
+      "settings": {
+        "Gain": 38,
+        "Tone": 58,
+        "VOL": 64
+      }
+    },
+    "AMP": {
+      "model": "Match CL",
+      "always_on": true,
+      "settings": {
+        "Gain": 35,
+        "PRES": 55,
+        "VOL": 62,
+        "Bass": 48,
+        "Middle": 55,
+        "Treble": 55
+      }
+    },
+    "CAB": {
+      "model": "User IR 10",
+      "always_on": true,
+      "settings": {
+        "VOL": 60
+      }
+    },
+    "EQ": {
+      "model": "Guitar EQ 2",
+      "always_on": true,
+      "settings": {
+        "100Hz": -3,
+        "500Hz": -1,
+        "1kHz": 0,
+        "3kHz": 2,
+        "6kHz": 1,
+        "VOL": 50
+      }
+    },
+    "MOD": {
+      "model": null
+    },
+    "DLY": {
+      "model": "Tape",
+      "always_on": true,
+      "settings": {
+        "Mix": 22,
+        "Time": 625,
+        "F.Back": 30,
+        "Trail": true
+      }
+    },
+    "RVB": {
+      "model": "Sweet Space",
+      "always_on": true,
+      "settings": {
+        "Mix": 30,
+        "Decay": 60,
+        "Damp": 45,
+        "Mod": 25,
+        "Trail": true
+      }
+    }
+  }
+}
