@@ -6,7 +6,7 @@ GP-5 only, P/J bass, no pedalboard.
 
 ## AMP: Mess Bass (Mesa/Boogie Bass 400) + CAB: Mesa215 IR (User IR 7)
 
-Rebuilt 2026-09-18 off the GP-5's own AMP + a loaded IR — NAMs are off for now (Valeton N->S volume issue, device-side). The old NAM was a Mesa M-Pulse Big Block 750 clean channel into a Peavey 2x15 — a modern, full-range clean bass tone with real headroom. Mess Bass is the GP-5's own Mesa/Boogie bass sim, and Mesa215 (Mesa Boogie Road Ready 2x15) keeps the same 2x15 footprint and modern character as the original Peavey 215 cab, just in-family with the amp this time. It stays composed under the driving verse and still has room to take a push in the instrumental section without breaking up on its own; that push comes from DST instead (see below), not from overdriving the amp.
+Rebuilt 2026-09-18 on the GP-5's own AMP + a loaded IR. Kept that way in the 2026-09-25 snaptone pass: Mess Bass is a direct model of the Mesa bass rig Myung used, and the ProgSVT snaptone is only an SVT stand-in. The old NAM was a Mesa M-Pulse Big Block 750 clean channel into a Peavey 2x15 — a modern, full-range clean bass tone with real headroom. Mess Bass is the GP-5's own Mesa/Boogie bass sim, and Mesa215 (Mesa Boogie Road Ready 2x15) keeps the same 2x15 footprint and modern character as the original Peavey 215 cab, just in-family with the amp this time. It stays composed under the driving verse and still has room to take a push in the instrumental section without breaking up on its own; that push comes from DST instead (see below), not from overdriving the amp.
 
 - Gain: 42 — clean and controlled, not edge-of-breakup. This amp isn't the drive source in this patch.
 - VOL: 68
@@ -25,7 +25,7 @@ No boost stage. The Mesa capture already has the headroom this patch needs; a bo
 
 **DST — Bass OD**, on CTL.
 Gain: 55, Blend: 70, VOL: 65, Bass: 60, Treble: 50 when engaged.
-Off for the main verse/chorus groove. On for the heavier instrumental section — adds real grit and push without needing to touch the NAM's own gain staging, and blends back to keep the note fundamental intact under the grind.
+Off for the main verse/chorus groove. On for the heavier instrumental section — adds real grit and push without needing to touch the amp's own gain staging, and blends back to keep the note fundamental intact under the grind.
 
 **AMP — Mess Bass**, always on. Gain 42, VOL 68, Bass 62, Middle 55, Treble 50.
 

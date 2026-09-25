@@ -8,10 +8,6 @@ Passive, not Active. Pino's sound is a vintage passive thump. The passive tone k
 Neck pickup soloed or strongly favored. Passive tone knob around 35%. Fingers over the neck, with light palm-muting for short notes.
 Fretless mwah should stay subtle. Plucking over the neck keeps it down. An occasional slide into a note is a nice, vocal soul touch. Watch intonation on the sustained roots.
 
-## AMP: Classic Bass (Ampeg SVT) + CAB: Apg115 IR (User IR 1)
-
-A B-15 with a dark top is the classic soul thump, the studio amp behind decades of this sound. With real flats, it only needs a gentle top trim, not a hard cut.
-
 ## Module chain
 
 **NR — Gate**, always on.
@@ -24,12 +20,17 @@ Even, thumpy notes. It also evens out level jumps from fretless slides.
 
 **DST — off.** No grit.
 
-**AMP — Classic Bass**, always on.
-Gain: 20, Bass: 58, Middle: 52, MidFreq: 220Hz, Treble: 35, VOL: 66.
-Dark and thumpy. Treble 35 is higher than a roundwound version would need, because the flats already roll off the top.
-
-**CAB — User IR 1 (Apg115)**, always on.
-VOL: 60.
+**AMP/CAB — NAM SnapTone, slot 54: FullB15** (always on)
+- Built from the `Ampeg B18 - Head DI - Bass Chan - Vol 5 (B-18N)` NAM and the Apg115410 IR, combined into one snaptone.
+- Real Ampeg B-18N at volume 5, warmer and fuller than the clean capture, into the Apg115410 (1x15 + 4x10) IR.
+- Pino Palladino-style warmth. The fuller B-15 is the closest thing to his vintage-P sound here.
+- Gain: 47, VOL: 50, Bass: 58, Middle: 52, Treble: 35
+- Gain 47: a little under default. This part wants less push than the other FullB15 patches.
+- Bass 58: more low end.
+- Middle 52: a touch more midrange.
+- Treble 35: top end pulled back noticeably.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 54 directly.
 
 **EQ — Bass EQ 2**, always on.
 50Hz: 0, 120Hz: +2, 400Hz: +1, 800Hz: 0, 4.5kHz: -3, VOL: 52.

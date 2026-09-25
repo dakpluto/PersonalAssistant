@@ -2,21 +2,16 @@
   "patch_name": "Metropolis Pt. 1 - Dream Theater",
   "patch_vol": 55,
   "bpm": 130,
-  "ir": { "name": "Hartke410" },
+  "nam": {"name": "ProgSVT (slot 56): SVT CLEAN PUSHED (SVT-CL) + Mesa215", "slot": 56, "settings": {"Gain": 54, "VOL": 50, "Bass": 60, "Middle": 55, "Treble": 60}},
   "modules": {
-    "NR": { "model": "Gate", "always_on": true, "settings": { "THRE": 30 } },
-    "PRE": { "model": "Micro Boost", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
-             "settings": { "Gain": 45 } },
-    "DST": { "model": "Bass OD", "always_on": true,
-             "settings": { "Gain": 68, "Blend": 75, "VOL": 65, "Bass": 58, "Treble": 55 } },
-    "AMP": { "model": "Classic Bass", "always_on": true,
-             "settings": { "Gain": 50, "Bass": 60, "Middle": 55, "MidFreq": 3, "Treble": 60, "VOL": 70 } },
-    "CAB": { "model": "User IR 6", "always_on": true, "settings": { "VOL": 65 } },
-    "EQ":  { "model": "Bass EQ 2", "always_on": true,
-             "settings": { "50Hz": 0, "120Hz": -3, "400Hz": -6, "800Hz": 8, "4.5kHz": 10 } },
-    "MOD": { "model": null },
-    "DLY": { "model": null },
-    "RVB": { "model": "Room", "ctl": true, "ctl_off_state": "on", "ctl_on_state": "off",
-             "settings": { "Mix": 35, "Decay": 45, "Trail": true } }
+    "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 30}},
+    "PRE": {"model": "Micro Boost", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Gain": 45}},
+    "DST": {"model": "Bass OD", "always_on": true, "settings": {"Gain": 68, "Blend": 75, "VOL": 65, "Bass": 58, "Treble": 55}},
+    "AMP": {"model": null},
+    "CAB": {"model": null},
+    "EQ": {"model": "Bass EQ 2", "always_on": true, "settings": {"50Hz": 0, "120Hz": -3, "400Hz": -6, "800Hz": 8, "4.5kHz": 10}},
+    "MOD": {"model": null},
+    "DLY": {"model": null},
+    "RVB": {"model": "Room", "ctl": true, "ctl_off_state": "on", "ctl_on_state": "off", "settings": {"Mix": 35, "Decay": 45, "Trail": true}}
   }
 }

@@ -20,9 +20,17 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 - Verse riff doesn't need help — it's already driving and tight, sitting in the pocket with the guitar. Chorus gets a clean push so the bass matches the song's own explosion in energy.
 
 **DST — Bass OD**, always on. Gain 65, Blend 75, VOL 62, Bass 55, Treble 60.
-**AMP — Classic Bass**, always on. Gain 45, Bass 55, Middle 62, MidFreq 800Hz, Treble 62, VOL 65.
-**CAB — User IR 3 (Apg810)**, always on. VOL 62.
-- Real distortion, not edge-of-breakup — this part needs to hit as hard as the old NAM did. Bass OD supplies the grind, Classic Bass the foundation.
+**AMP/CAB — NAM SnapTone, slot 57: GrittySVT** (always on)
+- Built from the `SVT PUSHED (SVT-CL)` NAM and the Apg810 IR, combined into one snaptone.
+- Real Ampeg SVT-CL pushed into grit, into the Apg810 8x10 IR.
+- Big, gritty rock bass under a wall of guitar. Pushed SVT into an 8x10.
+- Gain: 50, VOL: 50, Bass: 55, Middle: 62, Treble: 62
+- Gain 50: the capture as built.
+- Bass 55: a touch more low end.
+- Middle 62: more midrange.
+- Treble 62: more top end.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 57 directly.
 
 **EQ — Bass EQ 1**
 - 33Hz: +3, 150Hz: +1, 600Hz: -3, 2kHz: +6, 8kHz: +3, VOL: 56
@@ -39,10 +47,6 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 - Mix: 22, Decay: 38, Trail: On
 - CTL off: bypassed (verse). CTL on: engaged (chorus).
 - Verse stays tight and dry, right in the pocket with the drums. Chorus opens up with a touch of room to match the bigger, more anthemic space that section lives in.
-
-## AMP + DST: Classic Bass + Bass OD, CAB: Apg810 IR (User IR 3)
-
-Rebuilt 2026-09-18 off the GP-5's own AMP/DST + a loaded IR — NAMs are off for now (Valeton N->S volume issue, device-side). The old NAM was a Darkglass B7K Ultra pushed fairly hard (Gain 62) — a modern, punchy bass drive/preamp, exactly the territory this song lives in. Classic Bass for the amp foundation plus an always-on Bass OD reproduces that grind; Apg810 is the direct real-world SVT-family cab pairing for Classic Bass. Middle and Treble both kept up on both stages to keep the part cutting through the guitars instead of getting buried under them.
 
 ## CTL summary
 

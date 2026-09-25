@@ -8,7 +8,7 @@ Two identifiable modes cover the catalog:
 - **Bouncy pop-rock mode** — "Kiss Me," most of the up-tempo *Sixpence None the Richer* (1997) material. Tight, dry, present. The bass drives the bounce, doesn't wash into anything.
 - **Dream-pop mode** — "There She Goes" (their *I Am Sam* cover), "Breathe Your Name," the more atmospheric side of the catalog. Same clean fundamental, but the whole mix opens up — chorus shimmer, reverb wash.
 
-This patch builds both into one GP-5 preset, split on CTL. Model: a real Ampeg SVT (Classic Bass) into a 4x10 — the era-appropriate clean bass rig underneath whichever mode is active. No dirt anywhere in this build — the real bassist never touched an overdrive on these records, and pushing gain here just muddies the fundamental Nash's vocal needs to sit on top of.
+This patch builds both into one GP-5 preset, split on CTL. Model: a real Ampeg SVT (the CleanSVT snaptone) into an 8x10 — the era-appropriate clean bass rig underneath whichever mode is active. No dirt anywhere in this build — the real bassist never touched an overdrive on these records, and pushing gain here just muddies the fundamental Nash's vocal needs to sit on top of.
 
 ## GP-5 settings
 
@@ -23,11 +23,17 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB
 - **DST**: Off.
   No drive anywhere in this build. Sixpence's bass tone is clean, full stop.
 
-- **AMP — Classic Bass** (Ampeg SVT): Gain 35, Bass 60, Middle 50, MidFreq 800Hz, Treble 55, VOL 70. Always on.
-  SVT is the right clean-bass foundation for late-90s pop-rock — warm and full without being scooped. Gain kept low since this amp only needs to be clean, not driven. MidFreq at 800Hz keeps some presence so the bass doesn't disappear under the jangly guitars.
-
-- **CAB — AMPG 4x10** (Ampeg SVT-410HE): VOL 70. Always on.
-  Real bass cab pairing for the SVT model — no IR substitute here since the IR library on hand is all guitar-cab captures (Marshall/Fender/Vox voicings). The GP-5's own Ampeg 4x10 is a better and more accurate fit than forcing a guitar cab onto a bass amp.
+**AMP/CAB — NAM SnapTone, slot 53: CleanSVT** (always on)
+- Built from the `SVT CLEAN (SVT-CL)` NAM and the Apg810 IR, combined into one snaptone.
+- Real Ampeg SVT-CL preamp on its clean setting, into the Apg810 8x10 IR.
+- Clean SVT into an 8x10: the era-correct clean rock rig under both modes.
+- Gain: 52, VOL: 50, Bass: 60, Middle: 50, Treble: 55
+- Gain 52: a little over default. This part wants more push than the other CleanSVT patches.
+- Bass 60: more low end.
+- Middle 50: flat.
+- Treble 55: a touch more top end.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 53 directly.
 
 - **EQ — Bass EQ 2**: 50Hz +2, 120Hz +4, 400Hz -3, 800Hz +2, 4.5kHz +3, VOL 55. Always on.
   120Hz boost adds body without getting boomy. 400Hz cut clears out the mud zone that fights with rhythm guitar. Small lifts at 800Hz and 4.5kHz keep finger attack and note definition audible — this band's mixes are bright and clear, the bass needs to match that clarity, not just be "low end."

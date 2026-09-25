@@ -5,10 +5,6 @@ Bass: Harley Benton P/J, 5-string, passive. GP-5 only.
 The low end on the record is punchy late-80s pop. I'm not sure how much of it is synth bass and how much is electric. Either way the target is bright, tight, and punchy, with a polished chorus lift.
 Fingers or pick. Both pickups up, J forward. Tone knob around 70%.
 
-## AMP: Mess Bass (Mesa Bass 400) + CAB: EBS410 IR (User IR 4)
-
-A full-range Bass 400 clean into EBS410's 2-3kHz clarity bump. That's a polished, modern-for-1987 pop bass that cuts through dense keys.
-
 ## Module chain
 
 **NR — Gate**, always on.
@@ -21,12 +17,17 @@ Sustain: 50, Attack: 45, Clip: 40, VOL: 58.
 
 **DST — off.** No drive. It's a clean pop tone.
 
-**AMP — Mess Bass**, always on.
-Gain: 22, VOL: 65, Bass: 55, Middle: 50, Treble: 58.
-Bright, full clean.
-
-**CAB — User IR 4 (EBS410)**, always on.
-VOL: 60.
+**AMP/CAB — NAM SnapTone, slot 52: AvalonAD2022** (always on)
+- Built from the `Avalon - 38 dB - Chan 1 (Avalon AD2022)` NAM and no cab IR (straight DI), combined into one snaptone.
+- Avalon AD2022 Class A preamp at 38 dB. A studio DI, not an amp: no speaker coloration.
+- 1987 soundtrack pop. Clean, polished DI bass.
+- Gain: 46, VOL: 50, Bass: 55, Middle: 50, Treble: 58
+- Gain 46: a little under default. This part wants less push than the other AvalonAD2022 patches.
+- Bass 55: a touch more low end.
+- Middle 50: flat.
+- Treble 58: more top end.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 52 directly.
 
 **EQ — Bass EQ 1**, always on.
 33Hz: +1, 150Hz: +1, 600Hz: -2, 2kHz: +2, 8kHz: +1, VOL: 52.

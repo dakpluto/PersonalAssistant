@@ -1,29 +1,24 @@
-# DISABLED as of 2026-09-18: do not use NAMs in new patches — Michael is hitting a volume issue with the N->S slot on the Valeton device itself (device-side bug, not a tooling problem). Default to a real GP-5 AMP model + an IRs/ir.md capture instead until this is lifted. This list and the slot data below stay in place for when NAMs come back.
+# NAM library index
 
-# This is a list of NAM files available to use in the N/S slot on the GP-5.  If the N/S slot is used then you cannot use the AMP & CAB slots
+**In use for patches again as of 2026-09-25**, but only as the 30 NAM+IR snaptones in `snaptone_combos.md` (Michael re-enabled them once the snaptone set was loaded). The pack files below are the source library. A NAM that isn't part of a loaded combo isn't on the device and can't go in a patch.
 
-# All NAM files have VOL (1-100), Gain (1-100), Treble (1-100), Middle (1-100), Bass (1-100) options. These are all full captures of Amp + Cab since we cannot use an IR with them. 
+Rebuilt from scratch 2026-09-25; the old single-list library (full-rig captures, slots 53-70) was retired. New workflow: an amp-only NAM gets combined with an IR into a single snaptone on an outside builder site, and that snaptone is what goes onto the GP-5. So amp-only captures are expected and fine, and a snaptone's cab comes from whichever IR it was built with (`IRs/`), not from the NAM.
 
-# Weighting (updated 2026-09-08): bass NAMs and lower-gain/edge-of-breakup guitar NAMs now get strong preference — the GP-5's NAM (N->S) model conversion has proven out well for both. High-gain guitar amps keep the older, more conservative weighting: lean towards the GP-5's own Amp/Cab modules unless a specific NAM is a genuinely more accurate pick than the GP-5 modules for that patch.
+One file per Tone3000 pack in this folder, scraped with `Tools/t3k_scrape.py` and following the layout of `slamminmofo-VOX-AC30-CH.md`: pack header (creator, source, amp-only vs full rig, signal chain, calibration, license), a naming-scheme decode, and a table of every model with decoded settings, ESRs and a Slot column. Once the library is assembled, a fixed set of guitar and bass NAM+IR combos gets picked from the existing patches and loaded onto the GP-5's SnapTone slots (1-80). Slots are recorded per combo in `snaptone_combos.md` (the same NAM can sit in two slots paired with different IRs, e.g. `SVT CLEAN PUSHED` in B6 and B9), not in the pack files' Slot columns. Bass B1-B10 are in slots 51-60 and guitar G1-G20 in slots 61-80 as of 2026-09-25.
 
-# Slot (added 2026-09-08): the GP-5 has 80 numbered on-device SnapTone slots ("Tone Catch 1".."Tone Catch 80" internally), the N->S equivalent of the 20 User IR slots. When a capture below is actually loaded onto one of my 80 slots, it gets a "Slot: N" tag — put that same number in the patch JSON's `"nam": {"slot": N, ...}` field (see Prompts/gp5_prompt.md) and the encoder writes a real, active N->S reference into the .prst instead of leaving it inactive/documentation-only. No "Slot:" tag = not loaded onto the device yet (or I haven't confirmed which slot) — treat as informational only, same as before. This is personal device state, private to me — the website's NAM/IR handling is untouched by this.
+## Combo plan
 
-## NAM list
-- Marshall Zakk Wylde JCM800 2203ZW: The Marshall JCM800 2203ZW is a highly collectible, limited-edition 100-watt signature amplifier head released in 2002. Only 600 units were ever manufactured globally, making it an incredibly rare piece of rock history. It captures the exact raw, aggressive tone Zakk Wylde used with Ozzy Osbourne and Black Label Society. High Sensitivity - Gain 5. MESA V30 Oversized Cab. **Slot: 53** (on-device name "Marshall Z")
-- 5150 Stealth 100w Mesa OS Full Rig (Blue Channel): EVH 5150 III Stealth 100w, Blue channel unboosted.  Mesa Boogie Oversized (Mesa V30), blend of SM57 and VR2 through a Behringer Eurorack UB80. **Slot: 65** (on-device name "5150Blue")
-- 5150 Stealth 100w Mesa OS Full Rig (Red Channel): EVH 5150 III Stealth 100w, Red channel unboosted.  Mesa Boogie Oversized (Mesa V30), blend of SM57 and VR2 through a Behringer Eurorack UB80. **Slot: 67** (on-device name "5150Red")
-- 5150 Stealth 100w Mesa OS Full Rig (Green Channel): EVH 5150 III Stealth 100w, Green channel boosted with Boss SD-1.  Mesa Boogie Oversized (Mesa V30), blend of SM57 and VR2 through a Behringer Eurorack UB80. **Slot: 66** (on-device name "5150Green")
-- Two-Rock John Mayer Signature Prototype Signature #83 + CAB Dumble Steel String Singer + BOOST. **Slot: 58** (on-device name "2RJMS+Bst")
-- Two-Rock John Mayer Signature Prototype Signature #83 + CAB Dumble Steel String Singer + Tubescreamer. **Slot: 56** (on-device name "2RJSM+TS")
-- Two-Rock John Mayer Signature Prototype Signature #83 + CAB Dumble Steel String Singer + Tubescreamer + BOOST. **Slot: 57** (on-device name "2RJSM+TsBt")
-- Two-Rock John Mayer Signature Prototype Signature #83 + CAB Dumble Steel String Singer. **Slot: 59** (on-device name "2RJMS+SSS")
-- Two-Rock John Mayer Signature Prototype Signature #83. **Slot: 55** (on-device name "2RJSM")
-- 1964 VOX AC30 Top Boost Super Twin: AMP SETTINGS: V2 T7.5 B8.7 C8 CAB: VOX 2X12 with vintage Alnico Silver speakers and original cones. MICS: R121, R160, U87 DESCRIPTION: This is a capture of the goldylocks version of the iconic JMI era AC30 Top Boost amp - an in-panel Top Boost Copper panel Super Twin (separate head and  2X12 CAB, which gives it moore oomph than the open back combo version) with Albion transformers taht are legendary for their chime and clarity. **Slot: 54** (on-device name "VoxAC30Top")
-- Darkglass Harmonic Booster: Darkglass Harmonic Booster -> Aguilar DB 751 amplifier -> Darkglass DG412ES cabinet -> Shure SM7B microphone. **Quite clean-voiced** (per Michael 2026-09-08) — a harmonic-enhancer boost, not a drive/distortion pedal like the other four Darkglass captures below; good candidate for clean/warm bass tones, not just aggressive ones. Matches the original pre-rename on-device name "DrkGlsCln". **Slot: 60** (on-device name "DrkGlsHarm")
-- Darkglass Vintage Deluxe: Darkglass Vintage Deluxe  -> Aguilar DB 751 amplifier -> Darkglass DG412ES cabinet -> Shure SM7B microphone. **Slot: 61** (on-device name "DrkGlsVDlx")
-- Darkglass Alpha Omega (Distortion): Darkglass Alpha Omega (Alpha Side) -> Aguilar DB 751 amplifier -> Darkglass DG412ES cabinet -> Shure SM7B microphone. **Slot: 62** (on-device name "DrkGlsDist")
-- Darkglass Alpha Omega (Fuzz): Darkglass Alpha Omega (Omega Side) -> Aguilar DB 751 amplifier -> Darkglass DG412ES cabinet -> Shure SM7B microphone. **Slot: 63** (on-device name "DrkGlsFuzz")
-- Darkglass B7K Ultra: Microtubes B7K Ultra -> Aguilar DB 751 amplifier -> Darkglass DG412ES cabinet -> Shure SM7B microphone. **Slot: 64** (on-device name "DrkGlsB7K")
-- Ampeg V4B -> Ampeg 8x10 cabinet -> Beyerdynamic M88 microphone. **Slot: 68** (on-device name "ApgV4BApg8")
-- Mesa M-Pulse Big Block 750 Bass Head (2004), Clean Channel -> Peavey 215 Enclosure (1986). MICS: SM7B, B52A. AMP SETTINGS: Gain 3, Bass 5, Mid 5, Treble 5, Active Mid 1, Active Mid Freq 7 (400-500Hz). **Slot: 70** (on-device name "Mesa750Pvy")
+- [Snaptone combo plan](snaptone_combos.md) — 10 bass + 20 guitar NAM+IR combos mapped to every existing patch (2026-09-25)
 
+## Pack files
+
+- [VOX AC30 CH [Hyper Accuracy+] — slamminmofo](slamminmofo-VOX-AC30-CH.md) — amp only, 96 settings (Normal + Top Boost, some with a Rangemaster-style booster)
+- [Fender Twin Reverb - Breakup — timr](timr-Fender-Twin-Reverb-Breakup.md) — amp only, 7 settings (2 clean, 5 breakup at volume 4-8, Bright on)
+- [Fender Deluxe Reverb 1965 [Hyper Accuracy] — augctor](augctor-Fender-Deluxe-Reverb-1965.md) — amp only, 11 settings from cleanest to hot, two with a Klon-style pedal in front
+- [Marshall JCM 800 2203 — arthm (Alexander Ribakov)](arthm-Marshall-JCM800-2203.md) — amp only, 30 settings: flat EQ, Gain 1-10 at Master 5/6/7
+- [MESA DUAL RECTIFIER 2025 — deathblossomaudio](deathblossomaudio-Mesa-Dual-Rectifier-2025.md) — **preamp only** (no power amp), 5 Modern-channel rhythm presets incl. one TS808-boosted
+- [Marshall JTM45 I Crunch BAL DI — amalgamaudio](amalgamaudio-Marshall-JTM45-Crunch.md) — amp only, 1 crunch setting from an original 1966 JTM45
+- [AMPEG SVT-CL BASS HEAD — deathblossomaudio](deathblossomaudio-Ampeg-SVT-CL.md) — **bass, preamp only**, 12 files: clean to dirty SVT plus SansAmp/Darkglass-driven variants (one failed capture flagged)
+- [Ampeg B-18N Portaflex Fliptop — tone3000](tone3000-Ampeg-B18N-Portaflex.md) — **bass, amp only**, 1964 B-18N (B-15 preamp circuit) at volume 2.5 / 5 / 7.5, clean to driven
+- [Avalon AD2022 Preamp — tone3000](tone3000-Avalon-AD2022.md) — **bass studio DI/preamp** (outboard, no cab), Class A mic pre at 22-54 dB input gain, both channels
+- [Dumble ODS #102 Ford [Hyper Accuracy+] — slamminmofo](slamminmofo-Dumble-ODS-102-Ford.md) — amp only, 66 captures of an ODS #102 (Robben Ford) clone: clean and overdrive channels, PAB and master-volume variants

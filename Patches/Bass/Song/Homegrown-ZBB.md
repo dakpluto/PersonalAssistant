@@ -4,18 +4,6 @@ Jekyll + Hyde, 2015. ~100 BPM, est.
 Bright, punchy country-rock groove — no drive, no clutter, just a clean tight pocket that drives the song.
 GP-5 only, P/J bass, no pedalboard.
 
-## IR: Hartke410
-
-Hartke XL410, aluminum cones — bright and aggressive. Loaded on User IR slot 6, paired with the GP-5's Classic Bass (Ampeg SVT) AMP model.
-The aluminum-cone brightness is the whole point here — this needs to cut clean through acoustic/electric guitars and banjo without any grit.
-
-- AMP Gain: 55 — clean headroom, no breakup.
-- Bass: 55 — enough low end for the groove without getting boomy.
-- Middle: 60 — present midrange so the line doesn't disappear under the guitars.
-- MidFreq: 800Hz — sits in the same pocket as pick attack, keeps the note readable.
-- Treble: 65 — bright on purpose, matches the Hartke cab's character.
-- AMP VOL: 72. CAB VOL: 65.
-
 ## Module chain
 
 **NR — Gate**, always on.
@@ -28,9 +16,17 @@ Off for the verse groove, on for the chorus — same clean tone, just pushed har
 **DST — off.**
 No drive anywhere in this patch. Country-rock brightness comes from the cab and EQ, not grit.
 
-**AMP — Classic Bass**, always on. See settings above.
-
-**CAB — User IR 6 (Hartke410)**, always on. VOL: 65.
+**AMP/CAB — NAM SnapTone, slot 51: CleanB15** (always on)
+- Built from the `Ampeg B18 - Head DI - Bass Chan - Vol 2.5 (B-18N)` NAM and the Apg115 IR, combined into one snaptone.
+- Real Ampeg B-18N fliptop (the B-15 preamp circuit), captured clean at volume 2.5, into the Apg115 B-15 cab IR.
+- Modern country with a vintage lean. A clean B-15 keeps the groove warm instead of hi-fi.
+- Gain: 60, VOL: 50, Bass: 55, Middle: 60, Treble: 65
+- Gain 60: noticeably over default. This part wants more push than the other CleanB15 patches.
+- Bass 55: Enough low end for the groove without getting boomy.
+- Middle 60: Present midrange so the line doesn't disappear under the guitars.
+- Treble 65: Bright on purpose, matches the Hartke cab's character.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 51 directly.
 
 **EQ — Bass EQ 1**, always on.
 33Hz: +2, 150Hz: +1, 600Hz: -2, 2kHz: +4, 8kHz: +3, VOL: 55.

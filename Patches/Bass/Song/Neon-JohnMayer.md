@@ -6,10 +6,6 @@ A syncopated, funky pocket that locks with the guitar's thumb-slapped bass notes
 Built from the song's overall sound. I haven't verified the exact bass rig on the record.
 Fingers, J-forward blend for articulation. Tone knob around 60%.
 
-## AMP: Mess Bass (Mesa Bass 400) + CAB: EBS410 IR (User IR 4)
-
-A full-range Bass 400 clean with EBS410's 2-3kHz clarity. Syncopated ghost notes and articulation read clearly.
-
 ## Module chain
 
 **NR — Gate**, always on.
@@ -22,12 +18,17 @@ Even, punchy.
 
 **DST — off.** No grit.
 
-**AMP — Mess Bass**, always on.
-Gain: 22, VOL: 65, Bass: 55, Middle: 52, Treble: 55.
-Clean and articulate.
-
-**CAB — User IR 4 (EBS410)**, always on.
-VOL: 60.
+**AMP/CAB — NAM SnapTone, slot 54: FullB15** (always on)
+- Built from the `Ampeg B18 - Head DI - Bass Chan - Vol 5 (B-18N)` NAM and the Apg115410 IR, combined into one snaptone.
+- Real Ampeg B-18N at volume 5, warmer and fuller than the clean capture, into the Apg115410 (1x15 + 4x10) IR.
+- Mayer-trio style bass: warm and round, a little tube bloom.
+- Gain: 48, VOL: 50, Bass: 55, Middle: 52, Treble: 55
+- Gain 48: a little under default. This part wants less push than the other FullB15 patches.
+- Bass 55: a touch more low end.
+- Middle 52: a touch more midrange.
+- Treble 55: a touch more top end.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 54 directly.
 
 **EQ — Bass EQ 2**, always on.
 50Hz: 0, 120Hz: +2, 400Hz: -2, 800Hz: +2, 4.5kHz: 0, VOL: 52.

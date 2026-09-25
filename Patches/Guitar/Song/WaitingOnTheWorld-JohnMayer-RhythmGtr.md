@@ -2,14 +2,9 @@
 
 From *Continuum* (2006). About 88 BPM, est.
 A Curtis Mayfield-style soul groove: clean, warm Strat double-stops and chord fragments with a relaxed feel, and a vocal-like lead.
-Mayer's Continuum-era clean is usually described as Dumble or Two-Rock territory. There's no Dumble model on the GP-5, so this patch gets close with a warm, mid-rich clean.
+Mayer's Continuum-era clean is usually described as Dumble or Two-Rock territory. The MayerDumble snaptone is a real Dumble ODS clean capture, so this patch goes straight at it.
 Instrument: Stratocaster (HSS). Position 4 (neck+middle) for the double-stops. Neck pickup for the lead.
 GP-5 only, Stratocaster (HSS), no pedalboard.
-
-## AMP: Match CL + CAB: EVM112 IR (User IR 5)
-
-The Matchless clean has the thick, touch-sensitive, mid-rich clean that's the nearest GP-5 cousin to a Dumble or Two-Rock. The Twin is too scooped for this.
-EVM112 is the loaded guitar cab with a flat, hi-fi response. It keeps Nashville clean tones honest and doesn't add V30 honk.
 
 ## Module chain
 
@@ -25,12 +20,17 @@ Light compression gives the soul double-stops an even, glassy pop.
 Gain: 28, Tone: 50, VOL: 66.
 A TS for the lead, which is Mayer's go-to. Gain 28 keeps it vocal and touch-sensitive rather than saturated.
 
-**AMP — Match CL**, always on.
-Gain: 34, PRES: 48, VOL: 62, Bass: 50, Middle: 58, Treble: 52.
-Gain 34 is a thick, warm clean that just blooms. Middle 58 for the Dumble-ish mid richness.
-
-**CAB — User IR 5 (EVM112)**, always on.
-VOL: 60.
+**AMP/CAB — NAM SnapTone, slot 66: MayerDumble** (always on)
+- Built from the `SLAMMIN_DUMBLE_FORD_CLN_BALANCED_S (Dumble ODS #102)` NAM and the Bogner 2x12 EVM12L - SM57 1 - Cap Edge IR, combined into one snaptone.
+- Dumble ODS #102 (the Robben Ford amp) clean channel, into a Bogner 2x12 with EVM12L speakers.
+- Mayer's Continuum-era clean: Dumble clean into EVM12Ls.
+- Gain: 45, VOL: 50, Bass: 50, Middle: 58, Treble: 52
+- Gain 45: noticeably under default. This part wants less push than the other MayerDumble patches.
+- Bass 50: flat.
+- Middle 58: more midrange.
+- Treble 52: a touch more top end.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 66 directly.
 
 **EQ — Guitar EQ 2**, always on.
 100Hz: -2, 500Hz: +1, 1kHz: +1, 3kHz: 0, 6kHz: -2, VOL: 50.

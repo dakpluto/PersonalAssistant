@@ -2,20 +2,16 @@
   "patch_name": "Fire-OP",
   "patch_vol": 52,
   "bpm": 116,
-  "ir": { "name": "Apg810" },
+  "nam": {"name": "CleanSVT (slot 53): SVT CLEAN (SVT-CL) + Apg810", "slot": 53, "settings": {"Gain": 55, "VOL": 50, "Bass": 60, "Middle": 62, "Treble": 55}},
   "modules": {
-    "NR":  { "model": "Gate", "always_on": true, "settings": { "THRE": 20 } },
-    "PRE": { "model": "COMP", "always_on": true, "settings": { "Sustain": 55, "VOL": 65 } },
-    "DST": { "model": "Bass OD", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
-             "settings": { "Gain": 30, "Blend": 55, "VOL": 68, "Bass": 55, "Treble": 52 } },
-    "AMP": { "model": "Classic Bass", "always_on": true,
-             "settings": { "Gain": 42, "Bass": 60, "Middle": 62, "MidFreq": 2, "Treble": 55, "VOL": 70 } },
-    "CAB": { "model": "User IR 3", "always_on": true, "settings": { "VOL": 62 } },
-    "EQ":  { "model": "Bass EQ 1", "always_on": true,
-             "settings": { "33Hz": 5, "150Hz": -3, "600Hz": 4, "2kHz": 5, "8kHz": 3, "VOL": 52 } },
-    "MOD": { "model": null },
-    "DLY": { "model": null },
-    "RVB": { "model": "Room", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
-             "settings": { "Mix": 18, "Decay": 25, "Trail": false } }
+    "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 20}},
+    "PRE": {"model": "COMP", "always_on": true, "settings": {"Sustain": 55, "VOL": 65}},
+    "DST": {"model": "Bass OD", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Gain": 30, "Blend": 55, "VOL": 68, "Bass": 55, "Treble": 52}},
+    "AMP": {"model": null},
+    "CAB": {"model": null},
+    "EQ": {"model": "Bass EQ 1", "always_on": true, "settings": {"33Hz": 5, "150Hz": -3, "600Hz": 4, "2kHz": 5, "8kHz": 3, "VOL": 52}},
+    "MOD": {"model": null},
+    "DLY": {"model": null},
+    "RVB": {"model": "Room", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Mix": 18, "Decay": 25, "Trail": false}}
   }
 }

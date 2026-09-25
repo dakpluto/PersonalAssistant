@@ -4,10 +4,6 @@ Riverside. BPM est. Moody, melodic, slow. The lead guitar is smooth and vocal: l
 Instrument: Stratocaster (HSS). Use the neck or middle pickup for the softer lead lines, bridge humbucker for the peaks.
 GP-5 only, Stratocaster (HSS), no pedalboard.
 
-## AMP: Z38 OD + CAB: EVM112 IR (User IR 5)
-
-EVM112 (Electro-Voice EVM12L) — open and full-range, works for guitar or bass. Keeps the lead smooth and vocal, without a V30 bite.
-
 ## Module chain
 
 **NR — Gate**, always on.
@@ -22,13 +18,17 @@ Ross-style leveling and sustain. 35 smooths the pick attack for a vocal lead lin
 Gain: 35, Tone: 50, VOL: 65.
 On CTL. A warm push for solo sustain. Gain 35 adds harmonics without going to full distortion.
 
-**AMP — Z38 OD**, always on.
-Gain: 38, Tone Cut: 45, VOL: 62, Bass: 50, Middle: 55, Treble: 50.
-Dr. Z Maz 38 hi input. Rich, dynamic mids that respond to picking. Gain 38 is edge of breakup with plenty of headroom left for the OD.
-
-**CAB — User IR 5 (EVM112)**, always on.
-VOL: 60.
-EVM112 IR.
+**AMP/CAB — NAM SnapTone, slot 73: ProgDumble** (always on)
+- Built from the `SLAMMIN_DUMBLE_FORD_OD_SMOOTH_S (Dumble ODS #102)` NAM and the V30 UR 4FB 4x12 SM57 1.00in 0.0in 7603 (Mesa V30) IR, combined into one snaptone.
+- Dumble ODS #102 overdrive channel, smooth setting, into a Mesa 4x12 with V30s.
+- Smooth, singing ballad lead. Dumble overdrive.
+- Gain: 47, VOL: 50, Bass: 50, Middle: 55, Treble: 50
+- Gain 47: a little under default. This part wants less push than the other ProgDumble patches.
+- Bass 50: flat.
+- Middle 55: a touch more midrange.
+- Treble 50: flat.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 73 directly.
 
 **EQ — Guitar EQ 1**, always on.
 125Hz: -1, 400Hz: 0, 800Hz: +2, 1.6kHz: +1, 4kHz: -2, VOL: +50.

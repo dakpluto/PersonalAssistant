@@ -7,11 +7,6 @@ The standard worship guitar recipe: an edge-of-breakup boutique amp, a Tube Scre
 Instrument: Stratocaster (HSS). Neck or position 2 for swells and verse parts. Bridge humbucker for the driven chorus and lead lines.
 GP-5 only, Stratocaster (HSS), no pedalboard.
 
-## AMP: Match CL + CAB: V30112 IR (User IR 10)
-
-A Matchless-style clean has the chime and touch sensitivity worship players get from boutique EL84 amps. At gain 35 it's just at the edge.
-V30112 is the loaded cab with enough upper-mid bark for the driven chorus. EVM112 would stay cleaner but thins out once the drive stacks on.
-
 ## Module chain
 
 **NR — Gate**, always on.
@@ -26,12 +21,17 @@ Hits the Green OD harder and adds level for the chorus and lead lines. Bright of
 Gain: 38, Tone: 58, VOL: 64.
 The main worship drive. Mid-forward, with the chords still clear. Tone 58 helps it cut through pads and keys.
 
-**AMP — Match CL**, always on.
-Gain: 35, PRES: 55, VOL: 62, Bass: 48, Middle: 55, Treble: 55.
-Edge-of-breakup clean. Chords bloom when you strum hard. Bass 48 leaves room for the synth bass and kick.
-
-**CAB — User IR 10 (V30112)**, always on.
-VOL: 60.
+**AMP/CAB — NAM SnapTone, slot 67: WorshipAC30** (always on)
+- Built from the `SLAMMIN_VOX_AC30_TB_V3_TC0_B4_T7_BRIGHT_S` NAM and the Origin Effects British Alnico 2x12 Medium Mix IR, combined into one snaptone.
+- Real Vox AC30 Top Boost, Bright, into the Origin Effects British Alnico 2x12.
+- Chimey AC30 Top Boost for modern worship.
+- Gain: 50, VOL: 50, Bass: 48, Middle: 55, Treble: 55
+- Gain 50: the capture as built.
+- Bass 48: low end pulled back a little.
+- Middle 55: a touch more midrange.
+- Treble 55: a touch more top end.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 67 directly.
 
 **EQ — Guitar EQ 2**, always on.
 100Hz: -3, 500Hz: -1, 1kHz: 0, 3kHz: +2, 6kHz: +1, VOL: 50.

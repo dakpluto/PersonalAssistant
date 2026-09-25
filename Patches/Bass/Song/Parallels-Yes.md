@@ -5,10 +5,6 @@ Bass: Harley Benton P/J, 5-string, passive. Full board.
 
 No CTL on this one — the whole song sits at this level of size and drive.
 
-## Why an IR (not a NAM) here
-
-None of the current Darkglass NAM captures approximate this song's specific character — they're voiced for modern metal-bass distortion or (Harmonic Booster/B7K clean) a hi-fi DI tone, not a huge, driven, organ-amp-through-a-cabinet quality. This is a case where the "prefer NAM for bass" weighting doesn't apply — nothing in the library is a genuine match, so a real GP-5 AMP model plus one of the newer bass cab IRs does the job better. Sunn215 (Slot 8) specifically: its own description flags it as working "great with distortion and fuzz," which is exactly the pairing this patch needs — a fat, one-of-a-kind, driven-friendly low end instead of a hi-fi, clean-optimized cab.
-
 ## GP-5 Settings
 
 Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB
@@ -22,14 +18,19 @@ Not used. No boost stage needed — this patch is already at full size and drive
 
 **DST — Bass OD** (Boss ODB-3)
 - Gain: 75, Blend: 70, VOL: 60, Bass: 45, Treble: 65
-- Always on. This is the core of the driven, huge-amp character — high Gain for real grit, Blend at 70 keeps it mostly wet without fully drowning the fundamental (note definition survives under the drive). Bass rolled back to 45 on the pedal itself — low end comes from the AMP/CAB stage and the note, not a flabby DST signal.
+- Always on. This is the core of the driven, huge-amp character — high Gain for real grit, Blend at 70 keeps it mostly wet without fully drowning the fundamental (note definition survives under the drive). Bass rolled back to 45 on the pedal itself — low end comes from the snaptone and the note, not a flabby DST signal.
 
-**AMP — Classic Bass** (Ampeg SVT)
-- Gain: 65, Bass: 55, Middle: 70, MidFreq: 800Hz, Treble: 60, VOL: 75
-- Always on. SVT pushed hot — present, aggressive, not scooped. Middle at 70 with MidFreq at 800Hz is the growl-and-cut zone that lets this huge bass tone punch through Steve Howe's driving guitar and a genuinely busy Yes arrangement instead of just adding mud underneath it.
-
-**CAB — off, using IR instead**
-See "IR Cab Captures" below.
+**AMP/CAB — NAM SnapTone, slot 55: BrightSVT** (always on)
+- Built from the `SVT SANS BRIGHT DRIVE (SVT-CL)` NAM and the Hartke410 IR, combined into one snaptone.
+- Real Ampeg SVT-CL with the bright drive setting, into the aluminum-cone Hartke410 IR.
+- Squire's driven Rickenbacker tone. Bright SVT drive plus aluminum cones.
+- Gain: 60, VOL: 50, Bass: 55, Middle: 70, Treble: 60
+- Gain 60: noticeably over default. This part wants more push than the other BrightSVT patches.
+- Bass 55: a touch more low end.
+- Middle 70: more midrange.
+- Treble 60: more top end.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 55 directly.
 
 **EQ — Bass EQ 1**
 - 33Hz: +4, 150Hz: +2, 600Hz: -2, 2kHz: +8, 8kHz: +4, VOL: 55

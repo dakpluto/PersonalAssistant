@@ -2,75 +2,16 @@
   "patch_name": "WaitWorld",
   "patch_vol": 52,
   "bpm": 88,
-  "ir": {
-    "name": "Apg115"
-  },
+  "nam": {"name": "FullB15 (slot 54): Ampeg B18 - Head DI - Bass Chan - Vol 5 (B-18N) + Apg115410", "slot": 54, "settings": {"Gain": 47, "VOL": 50, "Bass": 58, "Middle": 52, "Treble": 35}},
   "modules": {
-    "NR": {
-      "model": "Gate",
-      "always_on": true,
-      "settings": {
-        "THRE": 10
-      }
-    },
-    "PRE": {
-      "model": "COMP",
-      "always_on": true,
-      "settings": {
-        "Sustain": 38,
-        "VOL": 58
-      }
-    },
-    "DST": {
-      "model": null
-    },
-    "AMP": {
-      "model": "Classic Bass",
-      "always_on": true,
-      "settings": {
-        "Gain": 20,
-        "Bass": 58,
-        "Middle": 52,
-        "MidFreq": 0,
-        "Treble": 35,
-        "VOL": 66
-      }
-    },
-    "CAB": {
-      "model": "User IR 1",
-      "always_on": true,
-      "settings": {
-        "VOL": 60
-      }
-    },
-    "EQ": {
-      "model": "Bass EQ 2",
-      "always_on": true,
-      "settings": {
-        "50Hz": 0,
-        "120Hz": 2,
-        "400Hz": 1,
-        "800Hz": 0,
-        "4.5kHz": -3,
-        "VOL": 52
-      }
-    },
-    "MOD": {
-      "model": null
-    },
-    "DLY": {
-      "model": null
-    },
-    "RVB": {
-      "model": "Room",
-      "ctl": true,
-      "ctl_off_state": "off",
-      "ctl_on_state": "on",
-      "settings": {
-        "Mix": 10,
-        "Decay": 25,
-        "Trail": true
-      }
-    }
+    "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 10}},
+    "PRE": {"model": "COMP", "always_on": true, "settings": {"Sustain": 38, "VOL": 58}},
+    "DST": {"model": null},
+    "AMP": {"model": null},
+    "CAB": {"model": null},
+    "EQ": {"model": "Bass EQ 2", "always_on": true, "settings": {"50Hz": 0, "120Hz": 2, "400Hz": 1, "800Hz": 0, "4.5kHz": -3, "VOL": 52}},
+    "MOD": {"model": null},
+    "DLY": {"model": null},
+    "RVB": {"model": "Room", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Mix": 10, "Decay": 25, "Trail": true}}
   }
 }

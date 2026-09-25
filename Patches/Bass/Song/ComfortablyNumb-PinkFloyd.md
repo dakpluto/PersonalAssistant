@@ -6,18 +6,6 @@ The bass part is slow, long, sustained notes under an orchestral verse and Gilmo
 It has to be deep, round, and smooth, and fill the floor under the whole arrangement without ever getting busy or bright.
 Verses sit in B minor with strings. The "I have become comfortably numb" choruses and both solos open up in D major.
 
-## AMP: Mess Bass (Mesa/Boogie Bass 400) + CAB: Apg115410 IR (User IR 2)
-
-This isn't a period-correct pick. It's a tonal one.
-Bass 400 gives a smooth, full-range, hi-fi low end that fits the big, polished production on this record.
-Apg115410 is a summed B-15 + 410: flat and thunderous. That's what whole-note roots under an orchestra need.
-
-- Gain: 25. Clean.
-- Bass: 62. Deep. This part lives on the low end.
-- Middle: 48. Slightly pulled back so the strings and vocal have space.
-- Treble: 40. Round and dark. No finger clack.
-- VOL: 65. CAB VOL: 60.
-
 ## Module chain
 
 **NR — Gate**, always on.
@@ -32,9 +20,17 @@ Gain: 15, Blend: 30, VOL: 60, Bass: 55, Treble: 45.
 Very light. It doesn't really read as overdrive.
 It adds some harmonic density so the bass holds its ground under the chorus and the final solo wall.
 
-**AMP — Mess Bass**, always on. Gain 25, Bass 62, Middle 48, Treble 40, VOL 65.
-
-**CAB — User IR 2 (Apg115410)**, always on. VOL 60.
+**AMP/CAB — NAM SnapTone, slot 53: CleanSVT** (always on)
+- Built from the `SVT CLEAN (SVT-CL)` NAM and the Apg810 IR, combined into one snaptone.
+- Real Ampeg SVT-CL preamp on its clean setting, into the Apg810 8x10 IR.
+- Waters' tone here is clean and round. No Hiwatt capture on hand, and a clean SVT gets closer than anything else here.
+- Gain: 46, VOL: 50, Bass: 62, Middle: 48, Treble: 40
+- Gain 46: a little under default. This part wants less push than the other CleanSVT patches.
+- Bass 62: more low end.
+- Middle 48: midrange pulled back a little.
+- Treble 40: top end pulled back noticeably.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 53 directly.
 
 **EQ — Bass EQ 1**, always on.
 33Hz: +3, 150Hz: +2, 600Hz: -2, 2kHz: 0, 8kHz: -3, VOL: 52.

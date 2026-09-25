@@ -6,11 +6,6 @@ Bass: Harley Benton P/J, 5-string, passive. GP-5 only.
 The bass locks to the riff and the kick: driving eighths with the guitar hits stabbed in unison. The target is a 90s hard-rock tone: picked, bright, and a little growly, so it reads through a loud Marshall guitar.
 Use a pick. Blend both pickups with the J slightly forward for bite. Tone knob fully open.
 
-## AMP: Classic Bass (Ampeg SVT) + CAB: Hartke410 IR (User IR 6)
-
-An SVT with some grit is the hard-rock default.
-Hartke410's aluminum cones are bright and aggressive. The loaded-IR notes pair it with a driven bass tone, and that's exactly the job here: the pick attack cuts through the guitar wall.
-
 ## Module chain
 
 **NR — Gate**, always on.
@@ -24,11 +19,17 @@ Evens out picked eighths. Attack 50 lets the pick transient through so the riff 
 Gain: 40, Blend: 40, VOL: 55, Bass: 50, Treble: 55.
 Extra growl under the lead melody sections. Blend 40 keeps the clean low end solid.
 
-**AMP — Classic Bass**, always on.
-Gain: 40, Bass: 55, Middle: 58, MidFreq: 800Hz, Treble: 55, VOL: 64.
-Gain 40 gives SVT hair on the base tone. The 800Hz mid push adds the bark that cuts through.
-
-**CAB — User IR 6 (Hartke410)**, always on. VOL: 60.
+**AMP/CAB — NAM SnapTone, slot 55: BrightSVT** (always on)
+- Built from the `SVT SANS BRIGHT DRIVE (SVT-CL)` NAM and the Hartke410 IR, combined into one snaptone.
+- Real Ampeg SVT-CL with the bright drive setting, into the aluminum-cone Hartke410 IR.
+- 90s hard-rock TV theme. Bright, driven bass that cuts.
+- Gain: 48, VOL: 50, Bass: 55, Middle: 58, Treble: 55
+- Gain 48: a little under default. This part wants less push than the other BrightSVT patches.
+- Bass 55: a touch more low end.
+- Middle 58: more midrange.
+- Treble 55: a touch more top end.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 55 directly.
 
 **EQ — Bass EQ 2**, always on.
 50Hz: 0, 120Hz: +2, 400Hz: -2, 800Hz: +2, 4.5kHz: +1, VOL: 52.

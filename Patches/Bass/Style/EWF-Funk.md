@@ -10,17 +10,6 @@ The tone is bright, punchy, and tightly compressed, with clear note definition. 
 Other players in the same lane: Louis Johnson (Brothers Johnson), Rocco Prestia (Tower of Power), and Larry Graham (Graham Central Station) on the slap side.
 This patch gives you two sounds: Verdine's fingerstyle pocket in the base state, and a scooped Louis Johnson-style thumb-and-pop tone on CTL.
 
-## AMP: Classic Bass (Ampeg SVT) + CAB: EBS410 IR (User IR 4)
-
-SVT is the default 70s R&B studio/live bass amp. It's clean here, with the mids pointed at 800Hz for finger attack.
-EBS410's 2-3kHz hi-mid push is built for clean tones that have to sit in a dense mix.
-
-- Gain: 25. Clean with headroom, so funk dynamics stay intact.
-- Bass: 55. Enough bottom without muddying the kick.
-- Middle: 55, MidFreq: 800Hz. Finger attack and note definition.
-- Treble: 60. Bright on purpose, because this is a roundwound funk sound.
-- VOL: 65. CAB VOL: 58.
-
 ## Module chain
 
 **NR — Gate**, always on.
@@ -33,9 +22,17 @@ Attack at 45 lets the initial transient through first, so notes still pop.
 
 **DST — off.** Funk bass stays clean. No grit.
 
-**AMP — Classic Bass**, always on. Gain 25, Bass 55, Middle 55, MidFreq 800Hz, Treble 60, VOL 65.
-
-**CAB — User IR 4 (EBS410)**, always on. VOL 58.
+**AMP/CAB — NAM SnapTone, slot 52: AvalonAD2022** (always on)
+- Built from the `Avalon - 38 dB - Chan 1 (Avalon AD2022)` NAM and no cab IR (straight DI), combined into one snaptone.
+- Avalon AD2022 Class A preamp at 38 dB. A studio DI, not an amp: no speaker coloration.
+- Verdine White's tone is snappy and hi-fi. A DI keeps it that way, with no cab coloration.
+- Gain: 48, VOL: 50, Bass: 55, Middle: 55, Treble: 60
+- Gain 48: a little under default. This part wants less push than the other AvalonAD2022 patches.
+- Bass 55: a touch more low end.
+- Middle 55: a touch more midrange.
+- Treble 60: more top end.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 52 directly.
 
 **EQ — Bass EQ 2**, on CTL.
 50Hz: +4, 120Hz: +1, 400Hz: -5, 800Hz: -1, 4.5kHz: +5, VOL: 58.

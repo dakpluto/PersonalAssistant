@@ -24,15 +24,17 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 - Always on, same for both CTL states.
 - This is the "blended dirty" layer Dirnt's tone is known for — Blend at 65 keeps enough clean fundamental mixed in that the tone stays punchy and defined rather than turning into a wash, while Treble pushed to 60 keeps real edge and bite on top.
 
-**AMP — Classic Bass (Ampeg SVT)**
-- Gain: 45, Bass: 55, Middle: 58, MidFreq: 800Hz, Treble: 62, VOL: 68
-- Always on, same for both CTL states.
-- SVT is a genuine punk-rock bass amp choice, not just a metal/rock default — plenty of 90s punk and pop-punk bassists lean on that big, bright Ampeg push. Treble pushed hard here for the bright, present character this whole genre wants.
-
-**CAB — User IR 6 (Hartke410)**
-- VOL: 60
-- Always on, same for both CTL states.
-- Bright, aggressive aluminum-cone voicing — `IRs/ir.md` calls this one out specifically for a grittier, driven bass tone, which is exactly the job here. Keeps this cutting through fast, palm-muted punk guitars instead of getting buried.
+**AMP/CAB — NAM SnapTone, slot 55: BrightSVT** (always on)
+- Built from the `SVT SANS BRIGHT DRIVE (SVT-CL)` NAM and the Hartke410 IR, combined into one snaptone.
+- Real Ampeg SVT-CL with the bright drive setting, into the aluminum-cone Hartke410 IR.
+- Mike Dirnt's tone is bright, picked, and driven. Bright SVT drive into aluminum cones nails the clank.
+- Gain: 50, VOL: 50, Bass: 55, Middle: 58, Treble: 62
+- Gain 50: the capture as built.
+- Bass 55: a touch more low end.
+- Middle 58: more midrange.
+- Treble 62: more top end.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 55 directly.
 
 **EQ — Bass EQ 1**
 - 33Hz: +2, 150Hz: -2, 600Hz: +2, 2kHz: +5, 8kHz: +4, VOL: 55
@@ -49,11 +51,6 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 - Mix: 18, Decay: 28, Trail: On
 - CTL off: bypassed (verse — tight and dry). CTL on: engaged (chorus).
 - A light touch of room for the chorus, matching the slightly bigger, more anthemic feel of the vocal harmonies — kept subtle since 90s pop-punk production stays fairly dry overall.
-
-## CAB IR — Hartke410 (Slot 6)
-
-- Hartke XL410 with aluminum cones, confirmed loaded on User IR slot 6. Bright, aggressive voicing suited to a driven bass tone.
-- Encoded directly into the `.prst` as a real, active CAB reference (`User IR 6`) — no manual loading needed for this one.
 
 ## CTL summary
 

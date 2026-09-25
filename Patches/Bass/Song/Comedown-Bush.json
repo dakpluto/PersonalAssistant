@@ -2,21 +2,16 @@
   "patch_name": "Comedown - Bush",
   "patch_vol": 50,
   "bpm": 92,
-  "ir": { "name": "Sunn215" },
+  "nam": {"name": "HairySVT (slot 58): SVT SANS HAIRY DRIVE (SVT-CL) + Sunn215", "slot": 58, "settings": {"Gain": 46, "VOL": 50, "Bass": 55, "Middle": 45, "Treble": 38}},
   "modules": {
-    "NR": { "model": "Gate", "always_on": true, "settings": { "THRE": 30 } },
-    "PRE": { "model": "Micro Boost", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
-             "settings": { "Gain": 42 } },
-    "DST": { "model": "Bass OD", "always_on": true,
-             "settings": { "Gain": 65, "Blend": 75, "VOL": 62, "Bass": 55, "Treble": 40 } },
-    "AMP": { "model": "Classic Bass", "always_on": true,
-             "settings": { "Gain": 40, "Bass": 55, "Middle": 45, "MidFreq": 2, "Treble": 38, "VOL": 62 } },
-    "CAB": { "model": "User IR 8", "always_on": true, "settings": { "VOL": 60 } },
-    "EQ": { "model": "Bass EQ 2", "always_on": true,
-            "settings": { "50Hz": 3, "120Hz": 1, "400Hz": -5, "800Hz": -1, "4.5kHz": 4, "VOL": 55 } },
-    "MOD": { "model": null },
-    "DLY": { "model": null },
-    "RVB": { "model": "Room", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
-             "settings": { "Mix": 20, "Decay": 35, "Trail": true } }
+    "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 30}},
+    "PRE": {"model": "Micro Boost", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Gain": 42}},
+    "DST": {"model": "Bass OD", "always_on": true, "settings": {"Gain": 65, "Blend": 75, "VOL": 62, "Bass": 55, "Treble": 40}},
+    "AMP": {"model": null},
+    "CAB": {"model": null},
+    "EQ": {"model": "Bass EQ 2", "always_on": true, "settings": {"50Hz": 3, "120Hz": 1, "400Hz": -5, "800Hz": -1, "4.5kHz": 4, "VOL": 55}},
+    "MOD": {"model": null},
+    "DLY": {"model": null},
+    "RVB": {"model": "Room", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Mix": 20, "Decay": 35, "Trail": true}}
   }
 }

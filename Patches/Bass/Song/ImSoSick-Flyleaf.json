@@ -2,21 +2,16 @@
   "patch_name": "ImSoSick - Flyleaf",
   "patch_vol": 56,
   "bpm": 102,
-  "ir": { "name": "Sunn215" },
+  "nam": {"name": "HairySVT (slot 58): SVT SANS HAIRY DRIVE (SVT-CL) + Sunn215", "slot": 58, "settings": {"Gain": 51, "VOL": 50, "Bass": 42, "Middle": 68, "Treble": 62}},
   "modules": {
-    "NR":  { "model": "Gate", "always_on": true, "settings": { "THRE": 40 } },
-    "PRE": { "model": "Micro Boost", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
-             "settings": { "Gain": 60 } },
-    "DST": { "model": "Bass OD", "always_on": true,
-             "settings": { "Gain": 72, "Blend": 78, "VOL": 65, "Bass": 45, "Treble": 60 } },
-    "AMP": { "model": "Classic Bass", "always_on": true,
-             "settings": { "Gain": 50, "Bass": 42, "Middle": 68, "MidFreq": 2, "Treble": 62, "VOL": 68 } },
-    "CAB": { "model": "User IR 8", "always_on": true, "settings": { "VOL": 62 } },
-    "EQ":  { "model": "Bass EQ 1", "always_on": true,
-             "settings": { "33Hz": -4, "150Hz": -3, "600Hz": 6, "2kHz": 8, "8kHz": 3, "VOL": 55 } },
-    "MOD": { "model": null },
-    "DLY": { "model": null },
-    "RVB": { "model": "Room", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
-             "settings": { "Mix": 20, "Decay": 35, "Trail": true } }
+    "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 40}},
+    "PRE": {"model": "Micro Boost", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Gain": 60}},
+    "DST": {"model": "Bass OD", "always_on": true, "settings": {"Gain": 72, "Blend": 78, "VOL": 65, "Bass": 45, "Treble": 60}},
+    "AMP": {"model": null},
+    "CAB": {"model": null},
+    "EQ": {"model": "Bass EQ 1", "always_on": true, "settings": {"33Hz": -4, "150Hz": -3, "600Hz": 6, "2kHz": 8, "8kHz": 3, "VOL": 55}},
+    "MOD": {"model": null},
+    "DLY": {"model": null},
+    "RVB": {"model": "Room", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Mix": 20, "Decay": 35, "Trail": true}}
   }
 }

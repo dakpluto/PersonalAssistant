@@ -22,20 +22,22 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 - CTL off: bypassed (main groove). CTL on: engaged (solo/outro).
 - Blend keeps 35% of the clean signal in the mix even with the OD engaged, so the fundamental doesn't disappear when this kicks in. This is the extra grind for when Gibbons opens up on the solo — the main groove doesn't need it, it already has enough bite from the amp and the Tidal Wave up front.
 
-**AMP — Classic Bass (Ampeg SVT)**
-- Gain: 55, Bass: 60, Middle: 58, MidFreq: 800Hz, Treble: 50, VOL: 68
-- Always on, same for both CTL states.
-- SVT is the era-correct choice for early-70s Texas blues rock — this is the amp that defined that sound. Gain sits at 55 for a bit of natural push, not full breakup. MidFreq at 800Hz gives the boxy upper-mid growl that lets the bass cut through a fuzzed-out guitar without turning shrill.
-
-**CAB — User IR 3 (Apg810)**
-- VOL: 65
-- Always on, same for both CTL states.
-- Ampeg SVT-810E capture — the direct real-world pairing for the Classic Bass AMP model above. This is the classic "wall of Ampeg" stack this song was built on.
+**AMP/CAB — NAM SnapTone, slot 57: GrittySVT** (always on)
+- Built from the `SVT PUSHED (SVT-CL)` NAM and the Apg810 IR, combined into one snaptone.
+- Real Ampeg SVT-CL pushed into grit, into the Apg810 8x10 IR.
+- Dusty Hill's boogie growl. Pushed SVT gives the edge-of-breakup grit.
+- Gain: 55, VOL: 50, Bass: 60, Middle: 58, Treble: 50
+- Gain 55: noticeably over default. This part wants more push than the other GrittySVT patches.
+- Bass 60: more low end.
+- Middle 58: more midrange.
+- Treble 50: flat.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 57 directly.
 
 **EQ — Bass EQ 1**
 - 33Hz: +4, 150Hz: -2, 600Hz: +3, 2kHz: +4, 8kHz: +2, VOL: 55
 - Always on, same for both CTL states.
-- +4 at 33Hz keeps real low-end weight under the shuffle. -2 at 150Hz trims the boxiness that stacks with the AMP's own MidFreq boost. +3 at 600Hz and +4 at 2kHz add the pick/finger attack and midrange snarl that lets this cut alongside a fuzz guitar without getting swallowed by it.
+- +4 at 33Hz keeps real low-end weight under the shuffle. -2 at 150Hz trims the boxiness a pushed SVT stacks up there. +3 at 600Hz and +4 at 2kHz add the pick/finger attack and midrange snarl that lets this cut alongside a fuzz guitar without getting swallowed by it.
 
 **MOD — Off**
 - No modulation. This is a straight, dry blues-rock groove — nothing here calls for chorus or vibrato.
@@ -45,11 +47,6 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 
 **RVB — Off**
 - Not used, for the same reason as DLY. Keeping this bone-dry matches the original record's tight, close-mic'd production.
-
-## CAB IR — Apg810 (Slot 3)
-
-- Ampeg SVT-810E capture, confirmed loaded on User IR slot 3.
-- Encoded directly into the `.prst` as a real, active CAB reference (`User IR 3`) — no manual loading needed for this one.
 
 ## CTL summary
 

@@ -22,15 +22,17 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 **DST — Off**
 - No drive. Country bass stays clean — the twang and drive come from the guitars and steel, not the low end.
 
-**AMP — Foxy Bass (Vox AC-100)**
-- VOL: 68, Bass: 58, Treble: 56
-- Always on, same for both CTL states.
-- A simple, direct bass voicing rather than a modern high-headroom design — fits the straightforward, unfussy character of country bass tone well.
-
-**CAB — User IR 6 (Hartke410)**
-- VOL: 60
-- Always on, same for both CTL states.
-- Bright, aggressive aluminum-cone voicing — keeps this cutting through a fast, driving mix of twangy guitars and steel without adding its own grit.
+**AMP/CAB — NAM SnapTone, slot 51: CleanB15** (always on)
+- Built from the `Ampeg B18 - Head DI - Bass Chan - Vol 2.5 (B-18N)` NAM and the Apg115 IR, combined into one snaptone.
+- Real Ampeg B-18N fliptop (the B-15 preamp circuit), captured clean at volume 2.5, into the Apg115 B-15 cab IR.
+- 90s Nashville session bass is a clean B-15 or a DI. This is the B-15 half of that.
+- Gain: 50, VOL: 50, Bass: 58, Middle: 50, Treble: 56
+- Gain 50: the capture as built.
+- Bass 58: more low end.
+- Middle 50: flat.
+- Treble 56: more top end.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 51 directly.
 
 **EQ — Bass EQ 1**
 - 33Hz: +2, 150Hz: -1, 600Hz: +2, 2kHz: +4, 8kHz: +3, VOL: 55
@@ -47,11 +49,6 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 - Mix: 16, Decay: 26, Trail: On
 - CTL off: bypassed (verse — tight and dry). CTL on: engaged (chorus).
 - A light touch of room for the chorus, kept subtle to match this genre's generally dry, direct production.
-
-## CAB IR — Hartke410 (Slot 6)
-
-- Hartke XL410 with aluminum cones, confirmed loaded on User IR slot 6. Bright, aggressive voicing suited to a driven, present bass tone.
-- Encoded directly into the `.prst` as a real, active CAB reference (`User IR 6`) — no manual loading needed for this one.
 
 ## CTL summary
 

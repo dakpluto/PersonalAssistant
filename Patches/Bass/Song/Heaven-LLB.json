@@ -2,20 +2,16 @@
   "patch_name": "Heaven - Los Lonely Boys",
   "patch_vol": 50,
   "bpm": 76,
-  "ir": { "name": "Apg115" },
+  "nam": {"name": "SoulB18 (slot 60): Ampeg B18 - Head DI - Bass Chan - Vol 7.5 (B-18N) + Apg115", "slot": 60, "settings": {"Gain": 50, "VOL": 50, "Bass": 65, "Middle": 55, "Treble": 45}},
   "modules": {
-    "NR":  { "model": "Gate", "always_on": true, "settings": { "THRE": 20 } },
-    "PRE": { "model": "Micro Boost", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
-             "settings": { "Gain": 35 } },
-    "DST": { "model": null },
-    "AMP": { "model": "Classic Bass", "always_on": true,
-             "settings": { "Gain": 35, "Bass": 65, "Middle": 55, "MidFreq": 1, "Treble": 45, "VOL": 70 } },
-    "CAB": { "model": "User IR 1", "always_on": true, "settings": { "VOL": 65 } },
-    "EQ":  { "model": "Bass EQ 2", "always_on": true,
-             "settings": { "50Hz": 3, "120Hz": 2, "400Hz": -2, "800Hz": 0, "4.5kHz": 2, "VOL": 55 } },
-    "MOD": { "model": null },
-    "DLY": { "model": null },
-    "RVB": { "model": "Hall", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
-             "settings": { "Mix": 30, "Decay": 45, "Trail": true } }
+    "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 20}},
+    "PRE": {"model": "Micro Boost", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Gain": 35}},
+    "DST": {"model": null},
+    "AMP": {"model": null},
+    "CAB": {"model": null},
+    "EQ": {"model": "Bass EQ 2", "always_on": true, "settings": {"50Hz": 3, "120Hz": 2, "400Hz": -2, "800Hz": 0, "4.5kHz": 2, "VOL": 55}},
+    "MOD": {"model": null},
+    "DLY": {"model": null},
+    "RVB": {"model": "Hall", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Mix": 30, "Decay": 45, "Trail": true}}
   }
 }

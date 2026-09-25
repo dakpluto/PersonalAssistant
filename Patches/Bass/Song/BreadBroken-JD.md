@@ -20,13 +20,17 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB
 **DST — Off**
 Not used.
 
-**AMP — Mess Bass** (Mesa/Boogie Bass 400+)
-- Gain: 25, VOL: 58, Bass: 58, Middle: 45, Treble: 42
-- Always on. Low gain, dark voicing — Bass pushed, Middle and Treble both pulled back. This should sit under the mix, not in front of it.
-
-**CAB — AMPG 4x10** (Ampeg SVT-410HE)
-- VOL: 50
-- Always on.
+**AMP/CAB — NAM SnapTone, slot 59: WorshipSVT** (always on)
+- Built from the `SVT CLEAN PUSHED (SVT-CL)` NAM and the Ampeg SVT Bright Beta52 IR, combined into one snaptone.
+- Real Ampeg SVT-CL on the clean-pushed setting, into a bright, Beta 52-miked SVT 4x10 IR.
+- Modern worship bass: full, slightly pushed, clear top from a bright 4x10.
+- Gain: 50, VOL: 50, Bass: 58, Middle: 45, Treble: 42
+- Gain 50: the capture as built.
+- Bass 58: more low end.
+- Middle 45: midrange pulled back a little.
+- Treble 42: top end pulled back noticeably.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 59 directly.
 
 **EQ — Bass EQ 2**
 - 50Hz: +5, 120Hz: +2, 400Hz: -3, 800Hz: -3, 4.5kHz: -5, VOL: 48

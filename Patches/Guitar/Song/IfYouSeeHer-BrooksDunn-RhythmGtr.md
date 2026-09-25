@@ -6,11 +6,6 @@ Built from the song's overall sound. I haven't verified the exact guitars and am
 Instrument: Stratocaster (HSS). Position 4 (neck+middle) for the arpeggios. Neck or bridge for the lead.
 GP-5 only, Stratocaster (HSS), no pedalboard.
 
-## AMP: J-120 CL (Jazz Chorus) + CAB: EVM112 IR (User IR 5)
-
-A solid-state Jazz Chorus clean is pristine and hi-fi. That's the polished late-90s Nashville ballad clean, and it pairs naturally with a light chorus.
-EVM112 is the loaded guitar cab with a flat, hi-fi response. It keeps Nashville clean tones honest and doesn't add V30 honk.
-
 ## Module chain
 
 **NR — Gate**, always on.
@@ -25,12 +20,17 @@ Light leveling so the arpeggios stay even.
 Gain: 30, Tone: 55, VOL: 70.
 The lead push. Gain 30 into a solid-state clean gives a smooth, polished lead. VOL 70 lifts it over the vocal.
 
-**AMP — J-120 CL**, always on.
-VOL: 60, Bass: 46, Middle: 50, Treble: 55, Bright: off.
-Pristine clean. Bright off, since the chorus and 3kHz lift give enough sparkle.
-
-**CAB — User IR 5 (EVM112)**, always on.
-VOL: 60.
+**AMP/CAB — NAM SnapTone, slot 62: NashClean** (always on)
+- Built from the `CLEANEST - Fender Deluxe Reverb 1965 [Hyper Accuracy]` NAM and the Origin Effects Brown Deluxe 1x12 Medium Mix IR, combined into one snaptone.
+- Real 1965 Fender Deluxe Reverb at its cleanest setting, into the Origin Effects Brown Deluxe 1x12.
+- Clean, sparkly country ballad. Cleanest Deluxe Reverb.
+- Gain: 50, VOL: 50, Bass: 46, Middle: 50, Treble: 55
+- Gain 50: the capture as built.
+- Bass 46: low end pulled back a little.
+- Middle 50: flat.
+- Treble 55: a touch more top end.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 62 directly.
 
 **EQ — Guitar EQ 2**, always on.
 100Hz: -3, 500Hz: 0, 1kHz: 0, 3kHz: +1, 6kHz: -1, VOL: 50.

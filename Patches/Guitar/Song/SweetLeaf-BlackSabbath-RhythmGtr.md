@@ -7,12 +7,6 @@ Iommi's early-70s rig is widely described as a Laney stack with a Dallas Rangema
 Instrument: Stratocaster (HSS). Bridge humbucker throughout. Heavier strings help with the down-tuning.
 GP-5 only, Stratocaster (HSS), no pedalboard.
 
-## AMP: UK 50JP (Marshall JMP50) + CAB: V30112 IR (User IR 10)
-
-There's no Laney model on the GP-5. A JMP50 is the nearest early-70s British plexi-style voicing: loud, raw, mid-heavy, and loose.
-The treble-booster trick is the always-on EP Boost with Bright on. It hits the front of a cranked amp with extra top and gain, which is exactly what a Rangemaster did.
-V30112 is the loaded guitar cab with enough upper-mid bark for a crunch tone. EVM112 would thin out once the amp breaks up.
-
 ## Module chain
 
 **NR — Gate**, always on.
@@ -27,12 +21,17 @@ The Rangemaster stand-in. Bright on plus Gain 60 slams the amp with treble-heavy
 Fuzz: 55, VOL: 62.
 A germanium Tone Bender-style fuzz for the solo jam. It adds hairy sustain on top of the boosted amp. Fuzz 55 keeps notes defined.
 
-**AMP — UK 50JP**, always on.
-Gain 1: 65, Gain 2: 60, PRES: 50, VOL: 58, Bass: 55, Middle: 62, Treble: 50.
-Both gain stages high for a raw, woolly early-70s crunch. Middle 62, because this sound lives in the mids. Down-tuned, it isn't scooped.
-
-**CAB — User IR 10 (V30112)**, always on.
-VOL: 60.
+**AMP/CAB — NAM SnapTone, slot 69: BritishCrunch** (always on)
+- Built from the `Marshall JTM45 I Crunch BAL DI` NAM and the Origin Effects British Straight 4x12 Medium Mix IR, combined into one snaptone.
+- Real Marshall JTM45 crunch, into the Origin Effects British Straight 4x12.
+- No Laney capture on hand. The JTM45 is the closest British crunch, with fuzz and boost on top.
+- Gain: 55, VOL: 50, Bass: 55, Middle: 62, Treble: 50
+- Gain 55: noticeably over default. This part wants more push than the other BritishCrunch patches.
+- Bass 55: a touch more low end.
+- Middle 62: more midrange.
+- Treble 50: flat.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 69 directly.
 
 **EQ — Guitar EQ 2**, always on.
 100Hz: +1, 500Hz: +2, 1kHz: +1, 3kHz: -1, 6kHz: -3, VOL: 50.

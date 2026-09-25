@@ -22,15 +22,17 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 **DST — Off**
 - No drive. This tone stays clean and hazy from top to bottom.
 
-**AMP — Mess Bass (Mesa/Boogie Bass 400+)**
-- Gain: 35, VOL: 65, Bass: 56, Middle: 50, Treble: 58
-- Always on, same for both CTL states.
-- A hi-fi, headroom-first voicing gives this the clarity to sit inside a dense, textured mix without getting swallowed. Treble pushed a bit for presence against all the shimmering guitar layers.
-
-**CAB — User IR 4 (EBS410)**
-- VOL: 58
-- Always on, same for both CTL states.
-- Accentuated high-mids that sit well in a mix, particularly on clean tones — exactly what this part needs to stay present against a wash of guitars and synths without adding its own aggressive character.
+**AMP/CAB — NAM SnapTone, slot 53: CleanSVT** (always on)
+- Built from the `SVT CLEAN (SVT-CL)` NAM and the Apg810 IR, combined into one snaptone.
+- Real Ampeg SVT-CL preamp on its clean setting, into the Apg810 8x10 IR.
+- D'arcy's part is a clean, pulsing eighth-note line. Clean SVT keeps it solid under the loops.
+- Gain: 52, VOL: 50, Bass: 56, Middle: 50, Treble: 58
+- Gain 52: a little over default. This part wants more push than the other CleanSVT patches.
+- Bass 56: more low end.
+- Middle 50: flat.
+- Treble 58: more top end.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 53 directly.
 
 **EQ — Bass EQ 2**
 - 50Hz: +3, 120Hz: +1, 400Hz: -1, 800Hz: +1, 4.5kHz: +3, VOL: 55
@@ -51,11 +53,6 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 - Mix: 22, Decay: 35, Trail: On
 - CTL off: bypassed (verse). CTL on: engaged (hook).
 - A touch more openness for the hook, layering on top of the always-on chorus and delay for a slightly bigger moment without breaking the song's hazy, consistent mood.
-
-## CAB IR — EBS410 (Slot 4)
-
-- EBS ProLine 410 with a 2" tweeter, confirmed loaded on User IR slot 4. Accentuated high-mids that sit well in a mix, particularly on clean tones.
-- Encoded directly into the `.prst` as a real, active CAB reference (`User IR 4`) — no manual loading needed for this one.
 
 ## CTL summary
 

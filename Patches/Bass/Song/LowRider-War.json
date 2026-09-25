@@ -2,20 +2,16 @@
   "patch_name": "LowRider-War",
   "patch_vol": 50,
   "bpm": 106,
-  "ir": { "name": "Apg115" },
+  "nam": {"name": "SoulB18 (slot 60): Ampeg B18 - Head DI - Bass Chan - Vol 7.5 (B-18N) + Apg115", "slot": 60, "settings": {"Gain": 48, "VOL": 50, "Bass": 65, "Middle": 45, "Treble": 35}},
   "modules": {
-    "NR":  { "model": "Gate", "always_on": true, "settings": { "THRE": 15 } },
-    "PRE": { "model": "COMP", "always_on": true, "settings": { "Sustain": 45, "VOL": 60 } },
-    "DST": { "model": "Bass OD", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
-             "settings": { "Gain": 22, "Blend": 45, "VOL": 62, "Bass": 50, "Treble": 45 } },
-    "AMP": { "model": "Classic Bass", "always_on": true,
-             "settings": { "Gain": 30, "Bass": 65, "Middle": 45, "MidFreq": 1, "Treble": 35, "VOL": 65 } },
-    "CAB": { "model": "User IR 1", "always_on": true, "settings": { "VOL": 60 } },
-    "EQ":  { "model": "Bass EQ 2", "always_on": true,
-             "settings": { "50Hz": 4, "120Hz": 3, "400Hz": 2, "800Hz": -3, "4.5kHz": -4, "VOL": 50 } },
-    "MOD": { "model": null },
-    "DLY": { "model": null },
-    "RVB": { "model": "Room", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
-             "settings": { "Mix": 15, "Decay": 22, "Trail": false } }
+    "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 15}},
+    "PRE": {"model": "COMP", "always_on": true, "settings": {"Sustain": 45, "VOL": 60}},
+    "DST": {"model": "Bass OD", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Gain": 22, "Blend": 45, "VOL": 62, "Bass": 50, "Treble": 45}},
+    "AMP": {"model": null},
+    "CAB": {"model": null},
+    "EQ": {"model": "Bass EQ 2", "always_on": true, "settings": {"50Hz": 4, "120Hz": 3, "400Hz": 2, "800Hz": -3, "4.5kHz": -4, "VOL": 50}},
+    "MOD": {"model": null},
+    "DLY": {"model": null},
+    "RVB": {"model": "Room", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Mix": 15, "Decay": 22, "Trail": false}}
   }
 }

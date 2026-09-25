@@ -24,15 +24,17 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 - CTL off: bypassed (intro/verse — amp alone, some natural grit but not distorted). CTL on: engaged (climax).
 - The Rat's raw, slightly fuzzy, mid-forward character is a better fit here than a cleaner, more polished distortion — this song's intensity is rootsy and unhinged, not slick.
 
-**AMP — Classic Bass (Ampeg SVT)**
-- Gain: 32, Bass: 58, Middle: 55, MidFreq: 800Hz, Treble: 52, VOL: 65
-- Always on, same for both CTL states.
-- SVT is a genuine blues-rock workhorse amp — gives real body and a bit of natural edge even at a moderate Gain, which fits the slightly-raw character this song has even in its quieter moments. The Darktale module is what pushes it into full aggression for the climax, not the AMP itself.
-
-**CAB — User IR 3 (Apg810)**
-- VOL: 62
-- Always on, same for both CTL states.
-- Ampeg SVT-810E — the direct real-world pairing for the Classic Bass AMP model above, giving this the weight to carry both the restrained intro and the driving climax.
+**AMP/CAB — NAM SnapTone, slot 53: CleanSVT** (always on)
+- Built from the `SVT CLEAN (SVT-CL)` NAM and the Apg810 IR, combined into one snaptone.
+- Real Ampeg SVT-CL preamp on its clean setting, into the Apg810 8x10 IR.
+- Driving 80s rock, but the bass stays clean. The DST stage adds any bite.
+- Gain: 50, VOL: 50, Bass: 58, Middle: 55, Treble: 52
+- Gain 50: the capture as built.
+- Bass 58: more low end.
+- Middle 55: a touch more midrange.
+- Treble 52: a touch more top end.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 53 directly.
 
 **EQ — Bass EQ 1**
 - 33Hz: +3, 150Hz: 0, 600Hz: +3, 2kHz: +3, 8kHz: +1, VOL: 55
@@ -49,11 +51,6 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 - Mix: 20, Decay: 30, Trail: On
 - CTL off: engaged (intro/verse). CTL on: bypassed (climax).
 - Inverted on purpose — the moody intro gets a touch of room for atmosphere, but the climax needs to stay dry and in-your-face. This isn't a symphonic, reverb-washed payoff like "November Rain" or "Purple Rain" — it's raw and visceral, so the reverb drops out right when the intensity peaks.
-
-## CAB IR — Apg810 (Slot 3)
-
-- Ampeg SVT-810E, confirmed loaded on User IR slot 3 — the classic "wall of Ampeg" bass stack.
-- Encoded directly into the `.prst` as a real, active CAB reference (`User IR 3`) — no manual loading needed for this one.
 
 ## CTL summary
 

@@ -6,11 +6,6 @@ Built from the song's overall sound. I haven't verified the exact guitars and am
 Instrument: Stratocaster (HSS). Position 4 (neck+middle) for the strum. Bridge humbucker for the lead lines.
 GP-5 only, Stratocaster (HSS), no pedalboard.
 
-## AMP: Foxy 30N (AC30 Normal) + CAB: EVM112 IR (User IR 5)
-
-An AC30 normal channel is warm, chimey, and just shy of breakup. That fits a dry, organic mid-90s record.
-EVM112 is the loaded guitar cab with a flat, hi-fi response. It keeps Nashville clean tones honest and doesn't add V30 honk.
-
 ## Module chain
 
 **NR — Gate**, always on.
@@ -23,12 +18,17 @@ Light.
 Gain: 30, Tone: 52, VOL: 68.
 A mild push for the lead lines and the solo. It's warm, not hot.
 
-**AMP — Foxy 30N**, always on.
-Gain: 42, Tone Cut: 50, VOL: 62, Bright: off.
-Gain 42 is warm and chimey, breaking up only when you dig in. Tone Cut 50 keeps it round.
-
-**CAB — User IR 5 (EVM112)**, always on.
-VOL: 60.
+**AMP/CAB — NAM SnapTone, slot 70: GlassyAC30** (always on)
+- Built from the `SLAMMIN_VOX_AC30_N_V3_TC0_S` NAM and the Origin Effects British Alnico 2x12 Medium Mix IR, combined into one snaptone.
+- Real AC30 Normal channel at volume 3, glassy and clean, into the British Alnico 2x12.
+- Petty's jangly clean: glassy AC30 Normal channel.
+- Gain: 49, VOL: 50, Bass: 50, Middle: 50, Treble: 50
+- Gain 49: a little under default. This part wants less push than the other GlassyAC30 patches.
+- Bass 50: flat.
+- Middle 50: flat.
+- Treble 50: flat.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 70 directly.
 
 **EQ — Guitar EQ 2**, always on.
 100Hz: -2, 500Hz: 0, 1kHz: +1, 3kHz: 0, 6kHz: -2, VOL: 50.

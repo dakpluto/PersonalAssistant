@@ -6,10 +6,6 @@ This is the GP-5-only version of `AintNothinBoutYou-BrooksDunn`, which is the Fu
 The Full Board build gets its compression from the Donner comp. Here COMP4 does that job inside the GP-5, so PRE can't be the CTL lift anymore. The lift moves to EQ instead.
 Pick or fingers. Both pickups up. Tone knob around 65%.
 
-## AMP: Foxy Bass (Vox AC-100) + CAB: Hartke410 IR (User IR 6)
-
-Same amp and cab as the Full Board build. Hartke410's aluminum cones give the bright, cutting clean this song wants.
-
 ## Module chain
 
 **NR — Gate**, always on.
@@ -22,12 +18,17 @@ Replaces the board's Donner comp. Even, punchy notes.
 
 **DST — off.** No drive, same as the Full Board build.
 
-**AMP — Foxy Bass**, always on.
-VOL: 66, Bass: 58, Treble: 54.
-Punchy vintage clean.
-
-**CAB — User IR 6 (Hartke410)**, always on.
-VOL: 60.
+**AMP/CAB — NAM SnapTone, slot 51: CleanB15** (always on)
+- Built from the `Ampeg B18 - Head DI - Bass Chan - Vol 2.5 (B-18N)` NAM and the Apg115 IR, combined into one snaptone.
+- Real Ampeg B-18N fliptop (the B-15 preamp circuit), captured clean at volume 2.5, into the Apg115 B-15 cab IR.
+- 90s Nashville session bass is a clean B-15 or a DI. This is the B-15 half of that.
+- Gain: 50, VOL: 50, Bass: 58, Middle: 50, Treble: 54
+- Gain 50: the capture as built.
+- Bass 58: more low end.
+- Middle 50: flat.
+- Treble 54: a touch more top end.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 51 directly.
 
 **EQ — Bass EQ 1**, on CTL.
 33Hz: +2, 150Hz: -1, 600Hz: +2, 2kHz: +3, 8kHz: +2, VOL: 56.

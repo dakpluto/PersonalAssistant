@@ -6,10 +6,6 @@ A loping, locked groove that follows the piano's D-C-G. Warm 70s tone, round and
 The rhythm section is widely credited to Mick Fleetwood and John McVie. This patch aims at a warm 70s rock tone, not a specific rig.
 Fingers over the neck. P pickup soloed or dominant. Tone knob around 45%.
 
-## AMP: Classic Bass (Ampeg SVT) + CAB: Apg810 IR (User IR 3)
-
-An SVT at low gain into an 8x10 is fat, warm 70s rock bass. It has body without the B-15's softness.
-
 ## Module chain
 
 **NR — Gate**, always on.
@@ -24,12 +20,17 @@ Light leveling.
 Gain: 20, Blend: 22, VOL: 55, Bass: 52, Treble: 48.
 A hint of hair for the solo section and the outro.
 
-**AMP — Classic Bass**, always on.
-Gain: 26, Bass: 58, Middle: 52, MidFreq: 450Hz, Treble: 42, VOL: 65.
-Warm, fat, clean.
-
-**CAB — User IR 3 (Apg810)**, always on.
-VOL: 60.
+**AMP/CAB — NAM SnapTone, slot 52: AvalonAD2022** (always on)
+- Built from the `Avalon - 38 dB - Chan 1 (Avalon AD2022)` NAM and no cab IR (straight DI), combined into one snaptone.
+- Avalon AD2022 Class A preamp at 38 dB. A studio DI, not an amp: no speaker coloration.
+- 70s LA session sound: a clean, tight bass that doubles the piano riff.
+- Gain: 48, VOL: 50, Bass: 58, Middle: 52, Treble: 42
+- Gain 48: a little under default. This part wants less push than the other AvalonAD2022 patches.
+- Bass 58: more low end.
+- Middle 52: a touch more midrange.
+- Treble 42: top end pulled back noticeably.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 52 directly.
 
 **EQ — Bass EQ 2**, always on.
 50Hz: +1, 120Hz: +2, 400Hz: 0, 800Hz: +1, 4.5kHz: -3, VOL: 52.

@@ -4,16 +4,6 @@ I'm Alright, 1996. ~118 BPM, est.
 Bright, bouncy 90s country-pop — road-trip energy, no edge to the tone anywhere. The bass just needs to sit clean and punchy under the groove, not compete for attention.
 GP-5 only, P/J bass, no pedalboard.
 
-## IR: TC410 (Slot 9)
-
-TC Electronic BC 410 — flat, neutral response with a mild 100Hz boost. No TC-family AMP model in the catalog, so it pairs by ear with a real amp instead of a suggested match.
-Paired with the GP-5's **Classic Bass** (Ampeg SVT) model — a workhorse clean bass amp voicing that gets out of the way and lets the TC410's flat response do its job.
-
-- Gain: 45 — clean headroom, no breakup.
-- Bass: 55, Middle: 55, MidFreq: 450Hz, Treble: 65 — treble pushed for the bright, present pick attack this style wants.
-- VOL: 70.
-- CAB: User IR 9, VOL: 60 — real active reference to the TC410 cab.
-
 ## Module chain
 
 **NR — Gate**, always on.
@@ -25,9 +15,17 @@ Off for the verse, on for the chorus — same clean tone throughout, just pushed
 
 **DST — off.** No drive anywhere in this one — the whole point is a clean, bright country-pop bass.
 
-**AMP — Classic Bass**, always on (settings above).
-
-**CAB — User IR 9 (TC410)**, always on, VOL 60.
+**AMP/CAB — NAM SnapTone, slot 51: CleanB15** (always on)
+- Built from the `Ampeg B18 - Head DI - Bass Chan - Vol 2.5 (B-18N)` NAM and the Apg115 IR, combined into one snaptone.
+- Real Ampeg B-18N fliptop (the B-15 preamp circuit), captured clean at volume 2.5, into the Apg115 B-15 cab IR.
+- Mid-90s country radio bass: clean, round, locked to the kick. Clean B-15 is the right voice.
+- Gain: 60, VOL: 50, Bass: 55, Middle: 55, Treble: 65
+- Gain 60: noticeably over default. This part wants more push than the other CleanB15 patches.
+- Bass 55: a touch more low end.
+- Middle 55: a touch more midrange.
+- Treble 65: more top end.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 51 directly.
 
 **EQ — Bass EQ 2**, always on.
 50Hz: +2, 120Hz: +3, 400Hz: -3, 800Hz: 0, 4.5kHz: +6, VOL: 55.

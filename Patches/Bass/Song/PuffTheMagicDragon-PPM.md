@@ -6,10 +6,6 @@ The record has an upright-style acoustic bass under the guitars, as far as I can
 Technique does half of it. Pluck with the side of your thumb over the neck. Palm-mute lightly at the bridge. Tone knob around 20%.
 No CTL. An upright plays one tone all song. Adding a second sound would be decoration, not a better part.
 
-## AMP: Classic Bass (Ampeg SVT) + CAB: Apg115 IR (User IR 1)
-
-The B-15, famous as the go-to studio amp in the 60s, with the treble nearly off. That's the darkest, woodiest low end available.
-
 ## Module chain
 
 **NR — Gate**, always on.
@@ -22,12 +18,17 @@ Light. The thump should stay dynamic.
 
 **DST — off.** No grit.
 
-**AMP — Classic Bass**, always on.
-Gain: 18, Bass: 58, Middle: 55, MidFreq: 220Hz, Treble: 22, VOL: 66.
-Very dark. MidFreq 220Hz for the woody body.
-
-**CAB — User IR 1 (Apg115)**, always on.
-VOL: 60.
+**AMP/CAB — NAM SnapTone, slot 51: CleanB15** (always on)
+- Built from the `Ampeg B18 - Head DI - Bass Chan - Vol 2.5 (B-18N)` NAM and the Apg115 IR, combined into one snaptone.
+- Real Ampeg B-18N fliptop (the B-15 preamp circuit), captured clean at volume 2.5, into the Apg115 B-15 cab IR.
+- 1963 folk-pop. A clean B-15 is period-correct and never gets in the vocals' way.
+- Gain: 47, VOL: 50, Bass: 58, Middle: 55, Treble: 22
+- Gain 47: a little under default. This part wants less push than the other CleanB15 patches.
+- Bass 58: more low end.
+- Middle 55: a touch more midrange.
+- Treble 22: top end pulled back noticeably.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 51 directly.
 
 **EQ — Bass EQ 2**, always on.
 50Hz: -2, 120Hz: +2, 400Hz: +3, 800Hz: -1, 4.5kHz: -8, VOL: 52.

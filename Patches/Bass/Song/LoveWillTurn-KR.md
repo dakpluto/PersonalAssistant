@@ -4,12 +4,6 @@
 Uptempo, bright pop-country — this is Kenny in danceable, radio-single mode, not the storyteller-ballad register.
 GP-5 only, P/J bass, no pedalboard.
 
-## IR: EVM112 (Slot 5)
-
-Electro-Voice EVM12L — a cab that works equally well for guitar or bass, no genre lean baked into the capture itself.
-Paired with the GP-5's own **Classic Bass** (Ampeg SVT) AMP model — a clean, punchy foundation with real headroom, right for an uptempo pop tune that needs to stay bright and never mud out.
-CAB = `User IR 5`, a real active reference — no built-in cab needed.
-
 ## Module chain
 
 **NR — Gate**, always on.
@@ -22,12 +16,17 @@ Off for the verse groove, on for the chorus — same clean amp tone throughout, 
 **DST — off.**
 No drive anywhere. This tone stays clean start to finish; grit would fight the bright, bouncy character of the song.
 
-**AMP — Classic Bass (Ampeg SVT)**, always on.
-Gain: 30, Bass: 55, Middle: 50, MidFreq: 450Hz, Treble: 58, VOL: 68.
-Moderate gain for headroom, treble pushed a bit above center to keep the line present against the up-tempo band mix.
-
-**CAB — User IR 5 (EVM112)**, always on.
-VOL: 62.
+**AMP/CAB — NAM SnapTone, slot 52: AvalonAD2022** (always on)
+- Built from the `Avalon - 38 dB - Chan 1 (Avalon AD2022)` NAM and no cab IR (straight DI), combined into one snaptone.
+- Avalon AD2022 Class A preamp at 38 dB. A studio DI, not an amp: no speaker coloration.
+- Early-80s adult contemporary. Clean, polished DI bass.
+- Gain: 50, VOL: 50, Bass: 55, Middle: 50, Treble: 58
+- Gain 50: the capture as built.
+- Bass 55: a touch more low end.
+- Middle 50: flat.
+- Treble 58: more top end.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 52 directly.
 
 **EQ — Bass EQ 2**, always on.
 50Hz: +3, 120Hz: +2, 400Hz: -2, 800Hz: 0, 4.5kHz: +4, VOL: 52.

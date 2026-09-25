@@ -6,10 +6,6 @@ The record is acoustic-guitar driven. On a Strat, CTL off is a bright acoustic-i
 Instrument: Stratocaster (HSS). Position 4 (neck+middle) for the strum. Bridge for the pushed voice.
 GP-5 only, Stratocaster (HSS), no pedalboard.
 
-## AMP: Bellman 59N (Bassman Normal) + CAB: EVM112 IR (User IR 5)
-
-A '59 Bassman normal is warm, full, and clean until pushed. It works as an acoustic-ish strum clean and takes a light drive for the fills.
-
 ## Module chain
 
 **NR — Gate**, always on.
@@ -24,12 +20,17 @@ Even, acoustic-like strum.
 Gain: 26, Tone: 55, VOL: 66.
 A light push for fills and melody doubling in the later, bigger choruses.
 
-**AMP — Bellman 59N**, always on.
-Gain: 30, PRES: 50, VOL: 62, Bass: 48, Middle: 45, Treble: 56.
-Clean and warm. Middle 45 for less electric honk.
-
-**CAB — User IR 5 (EVM112)**, always on.
-VOL: 60.
+**AMP/CAB — NAM SnapTone, slot 63: EdgyTwang** (always on)
+- Built from the `EDGY - Fender Deluxe Reverb 1965 [Hyper Accuracy]` NAM and the Origin Effects Brown Deluxe 1x12 Medium Mix IR, combined into one snaptone.
+- Real 1965 Deluxe Reverb at the "edgy" setting, just starting to break up, into the Brown Deluxe 1x12.
+- Early-70s electric with a little grit. Edgy Deluxe.
+- Gain: 48, VOL: 50, Bass: 48, Middle: 45, Treble: 56
+- Gain 48: a little under default. This part wants less push than the other EdgyTwang patches.
+- Bass 48: low end pulled back a little.
+- Middle 45: midrange pulled back a little.
+- Treble 56: more top end.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 63 directly.
 
 **EQ — Guitar EQ 2**, always on.
 100Hz: -1, 500Hz: -2, 1kHz: 0, 3kHz: +2, 6kHz: +1, VOL: 50.

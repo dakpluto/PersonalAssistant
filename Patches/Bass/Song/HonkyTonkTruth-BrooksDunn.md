@@ -6,11 +6,6 @@ A fast dancehall two-beat. The bass is clean, bright, and articulate so the root
 Built from the song's overall sound. I haven't verified the session bassist's exact rig.
 Pick or fingers near the bridge. J forward for definition. Tone knob around 65%.
 
-## AMP: Mess Bass (Mesa Bass 400) + CAB: EBS410 IR (User IR 4)
-
-The Bass 400 is a smooth, full-range clean. EBS410's 2-3kHz bump gives the note definition a fast country line needs, on a clean tone.
-Brighter than the Hard Workin' Man bass on purpose. This one is faster.
-
 ## Module chain
 
 **NR — Gate**, always on.
@@ -25,12 +20,17 @@ Even, punchy notes at speed.
 Gain: 18, Blend: 22, VOL: 55, Bass: 50, Treble: 52.
 Just a hint of hair under the solos and the last chorus. Blend 22 keeps it essentially clean.
 
-**AMP — Mess Bass**, always on.
-Gain: 22, VOL: 65, Bass: 55, Middle: 52, Treble: 55.
-Clean and full-range.
-
-**CAB — User IR 4 (EBS410)**, always on.
-VOL: 60.
+**AMP/CAB — NAM SnapTone, slot 51: CleanB15** (always on)
+- Built from the `Ampeg B18 - Head DI - Bass Chan - Vol 2.5 (B-18N)` NAM and the Apg115 IR, combined into one snaptone.
+- Real Ampeg B-18N fliptop (the B-15 preamp circuit), captured clean at volume 2.5, into the Apg115 B-15 cab IR.
+- Honky-tonk two-beat bass wants a clean, round thump. Classic B-15 territory.
+- Gain: 49, VOL: 50, Bass: 55, Middle: 52, Treble: 55
+- Gain 49: a little under default. This part wants less push than the other CleanB15 patches.
+- Bass 55: a touch more low end.
+- Middle 52: a touch more midrange.
+- Treble 55: a touch more top end.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 51 directly.
 
 **EQ — Bass EQ 2**, always on.
 50Hz: 0, 120Hz: +2, 400Hz: -2, 800Hz: +1, 4.5kHz: 0, VOL: 52.

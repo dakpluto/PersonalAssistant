@@ -1,0 +1,17 @@
+{
+  "patch_name": "SurfinUSA-Gtr",
+  "patch_vol": 52,
+  "bpm": 158,
+  "nam": {"name": "TwinClean (slot 61): Tim R Fender TwinVerb Norm Bright (Twin Reverb) + TWIN REVERB __ CLEAN (vulturized Twin)", "slot": 61, "settings": {"Gain": 51, "VOL": 50, "Bass": 45, "Middle": 50, "Treble": 66}},
+  "modules": {
+    "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 18}},
+    "PRE": {"model": null},
+    "DST": {"model": "Green OD", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Gain": 18, "Tone": 60, "VOL": 68}},
+    "AMP": {"model": null},
+    "CAB": {"model": null},
+    "EQ": {"model": "Guitar EQ 1", "always_on": true, "settings": {"125Hz": -3, "400Hz": -2, "800Hz": 1, "1.6kHz": 3, "4kHz": 3, "VOL": 50}},
+    "MOD": {"model": null},
+    "DLY": {"model": "Slapback", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Mix": 20, "Time": 110, "F.Back": 8, "Trail": true}},
+    "RVB": {"model": "Spring", "always_on": true, "settings": {"Mix": 26, "Decay": 40, "Trail": true}}
+  }
+}

@@ -20,9 +20,17 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 - Verse stays restrained and moody. Chorus gets a push to match the heavier, more driven hook.
 
 **DST — Bass OD**, always on. Gain 62, Blend 75, VOL 60, Bass 58, Treble 42.
-**AMP — Classic Bass**, always on. Gain 40, Bass 60, Middle 55, MidFreq 800Hz, Treble 45, VOL 62.
-**CAB — User IR 8 (Sunn215)**, always on. VOL 60.
-- This song's darker, heavier drive character comes from the Bass OD + Classic Bass pairing, kept dark (low Treble on both stages) rather than bright.
+**AMP/CAB — NAM SnapTone, slot 58: HairySVT** (always on)
+- Built from the `SVT SANS HAIRY DRIVE (SVT-CL)` NAM and the Sunn215 IR, combined into one snaptone.
+- Real Ampeg SVT-CL with the hairy drive setting, into the Sunn215 2x15 IR.
+- Dark, gritty post-grunge. Hairy SVT drive into the Sunn 2x15.
+- Gain: 46, VOL: 50, Bass: 60, Middle: 55, Treble: 45
+- Gain 46: a little under default. This part wants less push than the other HairySVT patches.
+- Bass 60: more low end.
+- Middle 55: a touch more midrange.
+- Treble 45: top end pulled back a little.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 58 directly.
 
 **EQ — Bass EQ 1**
 - 33Hz: +4, 150Hz: +1, 600Hz: -1, 2kHz: +3, 8kHz: +1, VOL: 55
@@ -39,10 +47,6 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 - Mix: 18, Decay: 32, Trail: On
 - Always on, same for both CTL states.
 - Unlike most of the "quiet verse/big chorus" patches in this set, the reverb doesn't grow for the chorus here — it's a constant, moderate atmosphere that matches the acoustic-driven verses' natural sense of space, and the chorus gets heavier through the boost instead of getting washier through more reverb.
-
-## AMP + DST: Classic Bass + Bass OD, CAB: Sunn215 IR (User IR 8)
-
-Rebuilt 2026-09-18 off the GP-5's own AMP/DST + a loaded IR — NAMs are off for now (Valeton N->S volume issue, device-side). The old NAM was the Omega/fuzz side of the Darkglass Alpha Omega — darker, murkier gain character than the Alpha/distortion side, a better match for this song's moody, doomy alt-metal weight than a brighter distortion voicing. Classic Bass + always-on Bass OD (both dialed with Treble held back to stay dark) reproduce that; Sunn215 is ir.md's own named pick for driven/fuzz bass tones.
 
 ## CTL summary
 

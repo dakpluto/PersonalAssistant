@@ -24,15 +24,17 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 - CTL off: bypassed (verse/intro — amp alone, clean-to-edge). CTL on: engaged (outro).
 - This is the module doing the heavy lifting for the transformation. DS-1's hard clipping gives a tight, aggressive edge rather than a loose fuzz wall — important for staying articulate through the fast tremolo-picked riff instead of turning to noise.
 
-**AMP — UK 800 (Marshall JCM800)**
-- Gain: 30, PRES: 55, VOL: 65, Bass: 55, Middle: 55, Treble: 50
-- Always on, same for both CTL states.
-- Marshall JCM800 is genuinely period-correct here — this is exactly the era and amp family thrash metal was built on. Gain kept moderate since this same AMP setting has to serve the clean intro too; the SM Dist module above is what pushes it into full aggression for the outro, not the AMP itself.
-
-**CAB — User IR 10 (V30112)**
-- VOL: 60
-- Always on, same for both CTL states.
-- The one guitar cab in the IR library — a Celestion V30 in an isolation cab with a sub mic blended in for low end, which is exactly why it works for bass here too. V30s are the quintessential modern metal speaker; running the bass through a guitar cab voicing is a deliberate call for a tone that needs to sit alongside (and cut through) a wall of guitars.
+**AMP/CAB — NAM SnapTone, slot 57: GrittySVT** (always on)
+- Built from the `SVT PUSHED (SVT-CL)` NAM and the Apg810 IR, combined into one snaptone.
+- Real Ampeg SVT-CL pushed into grit, into the Apg810 8x10 IR.
+- Late-80s thrash bass wants grit. A pushed SVT gets there on a real bass amp.
+- Gain: 42, VOL: 50, Bass: 55, Middle: 55, Treble: 50
+- Gain 42: noticeably under default. This part wants less push than the other GrittySVT patches.
+- Bass 55: a touch more low end.
+- Middle 55: a touch more midrange.
+- Treble 50: flat.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 57 directly.
 
 **EQ — Bass EQ 1**
 - 33Hz: +3, 150Hz: 0, 600Hz: +2, 2kHz: +3, 8kHz: +1, VOL: 55
@@ -49,11 +51,6 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 - Mix: 20, Decay: 35, Trail: On
 - CTL off: engaged (verse/intro). CTL on: bypassed (outro).
 - Inverted on purpose — the clean intro and verses have some natural ambience to them, so a touch of room fits there. The machine-gun outro needs to stay completely tight and dry, right in the pocket with the drums, so the reverb drops out the instant CTL engages.
-
-## CAB IR — V30112 (Slot 10)
-
-- Celestion V30 guitar speaker, isolation cab with a sub mic blend for low end, confirmed loaded on User IR slot 10 — the only guitar-voiced cab in the library, and it was captured with that sub-mic blend specifically so it holds up for bass use too.
-- Encoded directly into the `.prst` as a real, active CAB reference (`User IR 10`) — no manual loading needed for this one.
 
 ## CTL summary
 

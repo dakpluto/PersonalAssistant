@@ -2,90 +2,16 @@
   "patch_name": "MyMaria-Gtr",
   "patch_vol": 50,
   "bpm": 96,
-  "ir": {
-    "name": "EVM112"
-  },
+  "nam": {"name": "NashClean (slot 62): CLEANEST - Fender Deluxe Reverb 1965 [Hyper Accuracy] + Origin Effects Brown Deluxe 1x12 Medium Mix", "slot": 62, "settings": {"Gain": 54, "VOL": 50, "Bass": 48, "Middle": 52, "Treble": 58}},
   "modules": {
-    "NR": {
-      "model": "Gate",
-      "always_on": true,
-      "settings": {
-        "THRE": 18
-      }
-    },
-    "PRE": {
-      "model": "COMP",
-      "always_on": true,
-      "settings": {
-        "Sustain": 35,
-        "VOL": 55
-      }
-    },
-    "DST": {
-      "model": "Green OD",
-      "ctl": true,
-      "ctl_off_state": "off",
-      "ctl_on_state": "on",
-      "settings": {
-        "Gain": 32,
-        "Tone": 58,
-        "VOL": 68
-      }
-    },
-    "AMP": {
-      "model": "Dark Twin",
-      "always_on": true,
-      "settings": {
-        "Gain": 38,
-        "VOL": 62,
-        "Bass": 48,
-        "Middle": 52,
-        "Treble": 58,
-        "Bright": false
-      }
-    },
-    "CAB": {
-      "model": "User IR 5",
-      "always_on": true,
-      "settings": {
-        "VOL": 60
-      }
-    },
-    "EQ": {
-      "model": "Guitar EQ 2",
-      "always_on": true,
-      "settings": {
-        "100Hz": -2,
-        "500Hz": 0,
-        "1kHz": 1,
-        "3kHz": 1,
-        "6kHz": -2,
-        "VOL": 50
-      }
-    },
-    "MOD": {
-      "model": null
-    },
-    "DLY": {
-      "model": "Analog",
-      "ctl": true,
-      "ctl_off_state": "off",
-      "ctl_on_state": "on",
-      "settings": {
-        "Mix": 15,
-        "Time": 340,
-        "Feedback": 18,
-        "Trail": true
-      }
-    },
-    "RVB": {
-      "model": "Spring",
-      "always_on": true,
-      "settings": {
-        "Mix": 16,
-        "Decay": 35,
-        "Trail": true
-      }
-    }
+    "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 18}},
+    "PRE": {"model": "COMP", "always_on": true, "settings": {"Sustain": 35, "VOL": 55}},
+    "DST": {"model": "Green OD", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Gain": 32, "Tone": 58, "VOL": 68}},
+    "AMP": {"model": null},
+    "CAB": {"model": null},
+    "EQ": {"model": "Guitar EQ 2", "always_on": true, "settings": {"100Hz": -2, "500Hz": 0, "1kHz": 1, "3kHz": 1, "6kHz": -2, "VOL": 50}},
+    "MOD": {"model": null},
+    "DLY": {"model": "Analog", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Mix": 15, "Time": 340, "Feedback": 18, "Trail": true}},
+    "RVB": {"model": "Spring", "always_on": true, "settings": {"Mix": 16, "Decay": 35, "Trail": true}}
   }
 }

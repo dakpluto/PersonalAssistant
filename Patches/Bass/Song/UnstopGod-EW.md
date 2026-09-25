@@ -23,13 +23,17 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB
 - **CTL switch.** Off = bypassed, On = engaged.
 - Blend at 45 keeps the fundamental intact — this needs to still sound like a bass, not a fuzz pedal, even at full push. Treble at 60 gives it the edge to cut through a big arena-rock mix in the chorus. Off = clean verse. On = driven chorus/bridge, stacked with the Boost above for a real dynamic lift.
 
-**AMP — Classic Bass** (Ampeg SVT)
-- Gain: 55, Bass: 58, Middle: 55, MidFreq: 800Hz, Treble: 60, VOL: 65
-- Always on, both CTL states. SVT is the standard "big worship rock" bass voicing — present and punchy, not scooped. MidFreq at 800Hz pushes the upper-mid growl that cuts through electric guitars and pads instead of hiding under them.
-
-**CAB — AMPG 4x10** (Ampeg SVT-410HE)
-- VOL: 60
-- Always on. Only real bass cab in the catalog — gives the SVT sim proper low-end weight.
+**AMP/CAB — NAM SnapTone, slot 59: WorshipSVT** (always on)
+- Built from the `SVT CLEAN PUSHED (SVT-CL)` NAM and the Ampeg SVT Bright Beta52 IR, combined into one snaptone.
+- Real Ampeg SVT-CL on the clean-pushed setting, into a bright, Beta 52-miked SVT 4x10 IR.
+- Big modern worship. Pushed SVT with a bright 4x10 top end.
+- Gain: 60, VOL: 50, Bass: 58, Middle: 55, Treble: 60
+- Gain 60: noticeably over default. This part wants more push than the other WorshipSVT patches.
+- Bass 58: more low end.
+- Middle 55: a touch more midrange.
+- Treble 60: more top end.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 59 directly.
 
 **EQ — Bass EQ 2**
 - 50Hz: +6, 120Hz: +2, 400Hz: -4, 800Hz: +4, 4.5kHz: +6, VOL: 52

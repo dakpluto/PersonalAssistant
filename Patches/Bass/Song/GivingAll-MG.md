@@ -20,13 +20,17 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB
 **DST — Off**
 Not used. No drive anywhere in this tone.
 
-**AMP — Mess Bass** (Mesa/Boogie Bass 400+)
-- Gain: 35, VOL: 62, Bass: 55, Middle: 50, Treble: 50
-- Always on. Low gain, flat-ish EQ — warm and rounded rather than hi-fi or scooped. Matches the organic, unforced character of early Gungor Band recordings.
-
-**CAB — AMPG 4x10** (Ampeg SVT-410HE)
-- VOL: 55
-- Always on.
+**AMP/CAB — NAM SnapTone, slot 54: FullB15** (always on)
+- Built from the `Ampeg B18 - Head DI - Bass Chan - Vol 5 (B-18N)` NAM and the Apg115410 IR, combined into one snaptone.
+- Real Ampeg B-18N at volume 5, warmer and fuller than the clean capture, into the Apg115410 (1x15 + 4x10) IR.
+- Warm, organic worship-folk. The fuller B-15 gives body without grit.
+- Gain: 54, VOL: 50, Bass: 55, Middle: 50, Treble: 50
+- Gain 54: a little over default. This part wants more push than the other FullB15 patches.
+- Bass 55: a touch more low end.
+- Middle 50: flat.
+- Treble 50: flat.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 54 directly.
 
 **EQ — Bass EQ 1**
 - 33Hz: +4, 150Hz: +2, 600Hz: 0, 2kHz: -2, 8kHz: -3, VOL: 52

@@ -2,21 +2,16 @@
   "patch_name": "BasketCase",
   "patch_vol": 55,
   "bpm": 171,
-  "ir": { "name": "Hartke410" },
+  "nam": {"name": "BrightSVT (slot 55): SVT SANS BRIGHT DRIVE (SVT-CL) + Hartke410", "slot": 55, "settings": {"Gain": 50, "VOL": 50, "Bass": 55, "Middle": 58, "Treble": 62}},
   "modules": {
-    "NR":  { "model": "Gate", "always_on": true, "settings": { "THRE": 22 } },
-    "PRE": { "model": "Micro Boost", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
-             "settings": { "Gain": 50 } },
-    "DST": { "model": "Bass OD", "always_on": true,
-             "settings": { "Gain": 55, "Blend": 65, "VOL": 60, "Bass": 55, "Treble": 60 } },
-    "AMP": { "model": "Classic Bass", "always_on": true,
-             "settings": { "Gain": 45, "Bass": 55, "Middle": 58, "MidFreq": 2, "Treble": 62, "VOL": 68 } },
-    "CAB": { "model": "User IR 6", "always_on": true, "settings": { "VOL": 60 } },
-    "EQ":  { "model": "Bass EQ 1", "always_on": true,
-             "settings": { "33Hz": 2, "150Hz": -2, "600Hz": 2, "2kHz": 5, "8kHz": 4, "VOL": 55 } },
-    "MOD": { "model": null },
-    "DLY": { "model": null },
-    "RVB": { "model": "Room", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
-             "settings": { "Mix": 18, "Decay": 28, "Trail": true } }
+    "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 22}},
+    "PRE": {"model": "Micro Boost", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Gain": 50}},
+    "DST": {"model": "Bass OD", "always_on": true, "settings": {"Gain": 55, "Blend": 65, "VOL": 60, "Bass": 55, "Treble": 60}},
+    "AMP": {"model": null},
+    "CAB": {"model": null},
+    "EQ": {"model": "Bass EQ 1", "always_on": true, "settings": {"33Hz": 2, "150Hz": -2, "600Hz": 2, "2kHz": 5, "8kHz": 4, "VOL": 55}},
+    "MOD": {"model": null},
+    "DLY": {"model": null},
+    "RVB": {"model": "Room", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Mix": 18, "Decay": 28, "Trail": true}}
   }
 }

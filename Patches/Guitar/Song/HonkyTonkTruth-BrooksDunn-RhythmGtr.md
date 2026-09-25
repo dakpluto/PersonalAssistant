@@ -6,11 +6,6 @@ Built from the song's overall sound. I haven't verified the exact guitars and am
 Instrument: Stratocaster (HSS). Position 2 (bridge+middle) for the rhythm. Bridge humbucker for the solo.
 GP-5 only, Stratocaster (HSS), no pedalboard.
 
-## AMP: Bellman 59B (Bassman Bright) + CAB: EVM112 IR (User IR 5)
-
-A '59 Bassman bright channel is snappy and punchy with a bit of hair. It's tighter than the tweed on Hard Workin' Man, which suits the faster tempo.
-EVM112 is the loaded guitar cab with a flat, hi-fi response. It keeps Nashville clean tones honest and doesn't add V30 honk.
-
 ## Module chain
 
 **NR — Gate**, always on.
@@ -25,12 +20,17 @@ Heavy-ish compression for the chicken-pickin' snap. Attack 45 keeps the pick cli
 Gain: 35, Tone: 60, VOL: 68.
 A Green OD for the solo. It's mid-forward so the lead cuts over fiddle and steel. VOL 68 adds about +3dB.
 
-**AMP — Bellman 59B**, always on.
-Gain: 34, PRES: 58, VOL: 62, Bass: 44, Middle: 55, Treble: 60.
-Gain 34 is snappy with a bit of hair. Bass 44 keeps it tight at 160 BPM.
-
-**CAB — User IR 5 (EVM112)**, always on.
-VOL: 60.
+**AMP/CAB — NAM SnapTone, slot 63: EdgyTwang** (always on)
+- Built from the `EDGY - Fender Deluxe Reverb 1965 [Hyper Accuracy]` NAM and the Origin Effects Brown Deluxe 1x12 Medium Mix IR, combined into one snaptone.
+- Real 1965 Deluxe Reverb at the "edgy" setting, just starting to break up, into the Brown Deluxe 1x12.
+- Honky-tonk twang with hair on it. Edgy Deluxe.
+- Gain: 50, VOL: 50, Bass: 44, Middle: 55, Treble: 60
+- Gain 50: the capture as built.
+- Bass 44: low end pulled back noticeably.
+- Middle 55: a touch more midrange.
+- Treble 60: more top end.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 63 directly.
 
 **EQ — Guitar EQ 2**, always on.
 100Hz: -3, 500Hz: -1, 1kHz: +1, 3kHz: +2, 6kHz: -1, VOL: 50.
@@ -50,7 +50,7 @@ A dash of spring.
 
 On CTL: DST (Green OD).
 
-- **CTL off** — Rhythm. Snappy, compressed Bassman twang with slap for the chucking and fills. This is the resting state the patch loads into.
-- **CTL on** — Lead. Green OD into the Bassman for the solos.
+- **CTL off** — Rhythm. Snappy, compressed Deluxe twang with slap for the chucking and fills. This is the resting state the patch loads into.
+- **CTL on** — Lead. Green OD into the Deluxe for the solos.
 
 Engage CTL for the solos. Stay off for the rhythm.

@@ -9,8 +9,18 @@ Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB
 - **NR — Gate.** THRE 30. Keeps the compressed, mid-gain chain quiet between chords. Always on.
 - **PRE — COMP4.** Sustain 45, Attack 55, VOL 100, Clip 40. Glassy 80s compression, evens out pick attack on the arpeggiated verse parts. Always on.
 - **DST — La Charger.** Gain 60, Tone 65, VOL 80. Off for rhythm — the amp's own breakup carries the verse/chorus. On for lead — pushes extra gain and volume to cut through for the solo. On CTL.
-- **AMP — UK 45 (Marshall JTM45).** Gain 40, PRES 55, VOL 75, Bass 55, Middle 60, Treble 62. Warm British crunch, not too hot. Base tone for both CTL states.
-- **CAB — UK GRN 4x12.** VOL 90. Standard Marshall pairing, keeps the low mids tight. Always on.
+**AMP/CAB — NAM SnapTone, slot 71: HotMarshall** (always on)
+- Built from the `JCM800 2203 - P5 B5 M5 T5 MV6 G7 - AZG - 700` NAM and the BlendOfAll_dc (Marshall 1960AV) IR, combined into one snaptone.
+- Real JCM800 2203 at Gain 7, Master 6: hot rhythm crunch. Into a 1960AV 4x12 mic blend.
+- 80s rock rhythm on a hot JCM800. The CTL drive pushes it into lead.
+- Gain: 43, VOL: 50, Bass: 55, Middle: 60, Treble: 62
+- Gain 43: noticeably under default. This part wants less push than the other HotMarshall patches.
+- Bass 55: a touch more low end.
+- Middle 60: more midrange.
+- Treble 62: more top end.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 71 directly.
+
 - **EQ — Guitar EQ 2.** 100Hz 0, 500Hz +5, 1kHz +10, 3kHz +12, 6kHz +5, VOL 65. Off for rhythm — flat, don't fight the amp tone. On for lead — mid/presence push so the solo sits on top of the mix. On CTL.
 - **MOD — Off.** Chorus duty is handled upstream by the Joyo Narcissus, so the GP-5 doesn't double the chorus into mud.
 - **DLY — Analog.** Mix 25, Time 380ms, Feedback 20, Trail on. Off for rhythm — keep the verse dry and direct. On for lead — adds width and a slap of ambience behind the solo. On CTL.

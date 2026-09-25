@@ -2,20 +2,16 @@
   "patch_name": "IWantToKnow - Foreigner",
   "patch_vol": 52,
   "bpm": 67,
-  "ir": { "name": "EBS410" },
+  "nam": {"name": "AvalonAD2022 (slot 52): Avalon - 38 dB - Chan 1 (Avalon AD2022) + none (studio DI)", "slot": 52, "settings": {"Gain": 49, "VOL": 50, "Bass": 58, "Middle": 55, "Treble": 55}},
   "modules": {
-    "NR":  { "model": "Gate", "always_on": true, "settings": { "THRE": 18 } },
-    "PRE": { "model": "Micro Boost", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
-             "settings": { "Gain": 48 } },
-    "DST": { "model": null },
-    "AMP": { "model": "Mess Bass", "always_on": true,
-             "settings": { "Gain": 28, "VOL": 65, "Bass": 58, "Middle": 55, "Treble": 55 } },
-    "CAB": { "model": "User IR 4", "always_on": true, "settings": { "VOL": 58 } },
-    "EQ":  { "model": "Bass EQ 1", "always_on": true,
-             "settings": { "33Hz": 4, "150Hz": 1, "600Hz": -2, "2kHz": 3, "8kHz": 1, "VOL": 52 } },
-    "MOD": { "model": "B-Chorus", "always_on": true, "settings": { "Depth": 15, "Rate": 0.4, "VOL": 50 } },
-    "DLY": { "model": null },
-    "RVB": { "model": "Hall", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
-             "settings": { "Mix": 33, "Decay": 58, "Trail": true } }
+    "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 18}},
+    "PRE": {"model": "Micro Boost", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Gain": 48}},
+    "DST": {"model": null},
+    "AMP": {"model": null},
+    "CAB": {"model": null},
+    "EQ": {"model": "Bass EQ 1", "always_on": true, "settings": {"33Hz": 4, "150Hz": 1, "600Hz": -2, "2kHz": 3, "8kHz": 1, "VOL": 52}},
+    "MOD": {"model": "B-Chorus", "always_on": true, "settings": {"Depth": 15, "Rate": 0.4, "VOL": 50}},
+    "DLY": {"model": null},
+    "RVB": {"model": "Hall", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Mix": 33, "Decay": 58, "Trail": true}}
   }
 }

@@ -2,21 +2,16 @@
   "patch_name": "Uprising-Muse",
   "patch_vol": 55,
   "bpm": 128,
-  "ir": { "name": "Sunn215" },
+  "nam": {"name": "HairySVT (slot 58): SVT SANS HAIRY DRIVE (SVT-CL) + Sunn215", "slot": 58, "settings": {"Gain": 54, "VOL": 50, "Bass": 55, "Middle": 55, "Treble": 55}},
   "modules": {
-    "NR":  { "model": "Gate", "always_on": true, "settings": { "THRE": 25 } },
-    "PRE": { "model": "Toucher", "ctl": true, "ctl_off_state": "on", "ctl_on_state": "off",
-             "settings": { "Sense": 60, "Range": 55, "Q": 50, "Mix": 70, "Mode": 1 } },
-    "DST": { "model": "Bass OD", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
-             "settings": { "Gain": 55, "Blend": 65, "VOL": 60, "Bass": 58, "Treble": 52 } },
-    "AMP": { "model": "Mess Bass", "always_on": true,
-             "settings": { "Gain": 55, "VOL": 65, "Bass": 55, "Middle": 55, "Treble": 55 } },
-    "CAB": { "model": "User IR 8", "always_on": true, "settings": { "VOL": 62 } },
-    "EQ":  { "model": "Bass EQ 2", "always_on": true,
-             "settings": { "50Hz": 4, "120Hz": 1, "400Hz": -3, "800Hz": 3, "4.5kHz": 3, "VOL": 55 } },
-    "MOD": { "model": "O-Phase", "always_on": true, "settings": { "Rate": 0.35 } },
-    "DLY": { "model": null },
-    "RVB": { "model": "Room", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
-             "settings": { "Mix": 22, "Decay": 32, "Trail": true } }
+    "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 25}},
+    "PRE": {"model": "Toucher", "ctl": true, "ctl_off_state": "on", "ctl_on_state": "off", "settings": {"Sense": 60, "Range": 55, "Q": 50, "Mix": 70, "Mode": 1}},
+    "DST": {"model": "Bass OD", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Gain": 55, "Blend": 65, "VOL": 60, "Bass": 58, "Treble": 52}},
+    "AMP": {"model": null},
+    "CAB": {"model": null},
+    "EQ": {"model": "Bass EQ 2", "always_on": true, "settings": {"50Hz": 4, "120Hz": 1, "400Hz": -3, "800Hz": 3, "4.5kHz": 3, "VOL": 55}},
+    "MOD": {"model": "O-Phase", "always_on": true, "settings": {"Rate": 0.35}},
+    "DLY": {"model": null},
+    "RVB": {"model": "Room", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Mix": 22, "Decay": 32, "Trail": true}}
   }
 }

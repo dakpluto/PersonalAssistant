@@ -2,20 +2,16 @@
   "patch_name": "Love Will Turn You Around - Kenny Rogers",
   "patch_vol": 50,
   "bpm": 126,
-  "ir": { "name": "EVM112" },
+  "nam": {"name": "AvalonAD2022 (slot 52): Avalon - 38 dB - Chan 1 (Avalon AD2022) + none (studio DI)", "slot": 52, "settings": {"Gain": 50, "VOL": 50, "Bass": 55, "Middle": 50, "Treble": 58}},
   "modules": {
-    "NR": { "model": "Gate", "always_on": true, "settings": { "THRE": 25 } },
-    "PRE": { "model": "Micro Boost", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
-             "settings": { "Gain": 35 } },
-    "DST": { "model": null },
-    "AMP": { "model": "Classic Bass", "always_on": true,
-             "settings": { "Gain": 30, "Bass": 55, "Middle": 50, "MidFreq": 1, "Treble": 58, "VOL": 68 } },
-    "CAB": { "model": "User IR 5", "always_on": true, "settings": { "VOL": 62 } },
-    "EQ": { "model": "Bass EQ 2", "always_on": true,
-            "settings": { "50Hz": 3, "120Hz": 2, "400Hz": -2, "800Hz": 0, "4.5kHz": 4, "VOL": 52 } },
-    "MOD": { "model": null },
-    "DLY": { "model": null },
-    "RVB": { "model": "Room", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
-             "settings": { "Mix": 22, "Decay": 30, "Trail": true } }
+    "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 25}},
+    "PRE": {"model": "Micro Boost", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Gain": 35}},
+    "DST": {"model": null},
+    "AMP": {"model": null},
+    "CAB": {"model": null},
+    "EQ": {"model": "Bass EQ 2", "always_on": true, "settings": {"50Hz": 3, "120Hz": 2, "400Hz": -2, "800Hz": 0, "4.5kHz": 4, "VOL": 52}},
+    "MOD": {"model": null},
+    "DLY": {"model": null},
+    "RVB": {"model": "Room", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Mix": 22, "Decay": 30, "Trail": true}}
   }
 }

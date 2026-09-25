@@ -24,15 +24,17 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 - Always on, same for both CTL states.
 - This is the baseline garage-rock crunch that runs through the whole song, not just the chorus. Blend at 70 keeps the fundamental solid while still giving real edge to the tone.
 
-**AMP — UK 800 (Marshall JCM800)**
-- Gain: 50, PRES: 55, VOL: 65, Bass: 55, Middle: 60, Treble: 55
-- Always on, same for both CTL states.
-- Running the bass through a Marshall-style amp model instead of a clean bass amp is a deliberate call — that midrange bark is exactly the character garage-rock revival bass tones lean on (this era of bass playing borrows a lot from guitar amps). Gain stays moderate — this isn't a metal tone, it's a driving rock crunch.
-
-**CAB — User IR 6 (Hartke410)**
-- VOL: 60
-- Always on, same for both CTL states.
-- Bright, aggressive aluminum-cone voicing — exactly the cab `IRs/ir.md` flags for a driven bass tone like this one. Keeps the Marshall AMP's midrange bark from getting dark or woolly.
+**AMP/CAB — NAM SnapTone, slot 57: GrittySVT** (always on)
+- Built from the `SVT PUSHED (SVT-CL)` NAM and the Apg810 IR, combined into one snaptone.
+- Real Ampeg SVT-CL pushed into grit, into the Apg810 8x10 IR.
+- Garage-rock bark. A pushed SVT does it on a real bass amp instead of a guitar amp.
+- Gain: 52, VOL: 50, Bass: 55, Middle: 60, Treble: 55
+- Gain 52: a little over default. This part wants more push than the other GrittySVT patches.
+- Bass 55: a touch more low end.
+- Middle 60: more midrange.
+- Treble 55: a touch more top end.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 57 directly.
 
 **EQ — Bass EQ 1**
 - 33Hz: +3, 150Hz: -2, 600Hz: +2, 2kHz: +5, 8kHz: +3, VOL: 55
@@ -49,11 +51,6 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 - Mix: 20, Decay: 30, Trail: On
 - CTL off: bypassed (verse). CTL on: engaged (chorus).
 - Verse stays dry and tight. Chorus gets a touch of room to open up alongside the boost, matching the bigger, more anthemic feel of the full band coming in.
-
-## CAB IR — Hartke410 (Slot 6)
-
-- Hartke XL410 with aluminum cones — bright, aggressive voicing, confirmed loaded on User IR slot 6.
-- Encoded directly into the `.prst` as a real, active CAB reference (`User IR 6`) — no manual loading needed for this one.
 
 ## CTL summary
 
@@ -74,7 +71,7 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 - Keeps the driving eighth-note picking even and consistent. TREBLE mode keeps pick attack bright and audible ahead of the Tidal Wave and the GP-5's own gain stages.
 
 **3. Donner Stylish Fuzz — Bypassed**
-- Footswitch off. The GP-5's own Bass OD and cranked AMP model already cover this song's grit — stacking a pedal fuzz on top of a 5-string P/J would risk turning the low end to mud.
+- Footswitch off. The GP-5's own Bass OD and the GrittySVT snaptone already cover this song's grit — stacking a pedal fuzz on top of a 5-string P/J would risk turning the low end to mud.
 
 **4. Joyo Tidal Wave — Engaged**
 - Drive: 45

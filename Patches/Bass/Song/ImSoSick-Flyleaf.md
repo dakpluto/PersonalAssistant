@@ -5,12 +5,6 @@ Bass: Harley Benton P/J, 5-string, passive. Full board.
 
 CTL Off = verse (driven, controlled). CTL On = chorus (bigger, thicker wall).
 
-## AMP + DST: Classic Bass + Bass OD, CAB: Sunn215 IR (User IR 8)
-
-Rebuilt 2026-09-18 off the GP-5's own AMP/DST + a loaded IR — NAMs are off for now (Valeton N->S volume issue, device-side). The old NAM was the Darkglass Alpha Omega's Omega (fuzz) side — thicker, looser, more organic gated-fuzz character than the Alpha (distortion) side used for RammGrind, a better match for Flyleaf's alt-metal/nu-metal-adjacent heaviness. Classic Bass + an always-on, hard-pushed Bass OD reproduces that; Sunn215 is ir.md's own named pick for "driven/fuzz bass patches."
-
-The verse-to-chorus dynamic still comes from the same mechanism used across this set: a CTL-assigned boost and reverb around a constant amp voice.
-
 ## GP-5 Settings
 
 Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB
@@ -27,13 +21,17 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB
 **DST — Bass OD**, always on.
 - Gain: 72, Blend: 78, VOL: 65, Bass: 45, Treble: 60 — pushed hard for real aggression, blended nearly-wet.
 
-**AMP — Classic Bass**, always on.
-- Gain: 50, Bass: 42 — rolled back, low end comes from the note and the mix, not amp boom, keeping the tone tight instead of woolly.
-- Middle: 68, MidFreq: 800Hz — mid-forward growl that lets the bass reinforce the riff instead of hiding under it.
-- Treble: 62 — buzz/edge on top.
-- VOL: 68.
-
-**CAB — User IR 8 (Sunn215)**, always on. VOL 62.
+**AMP/CAB — NAM SnapTone, slot 58: HairySVT** (always on)
+- Built from the `SVT SANS HAIRY DRIVE (SVT-CL)` NAM and the Sunn215 IR, combined into one snaptone.
+- Real Ampeg SVT-CL with the hairy drive setting, into the Sunn215 2x15 IR.
+- Heavy, fuzzy nu-metal bass. Hairy SVT drive.
+- Gain: 51, VOL: 50, Bass: 42, Middle: 68, Treble: 62
+- Gain 51: a little over default. This part wants more push than the other HairySVT patches.
+- Bass 42: low end pulled back noticeably.
+- Middle 68: Mid-forward growl that lets the bass reinforce the riff instead of hiding under it.
+- Treble 62: Buzz/edge on top.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 58 directly.
 
 **EQ — Bass EQ 1**
 - 33Hz: -4, 150Hz: -3, 600Hz: +6, 2kHz: +8, 8kHz: +3, VOL: 55

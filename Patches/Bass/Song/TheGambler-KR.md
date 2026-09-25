@@ -4,16 +4,6 @@
 This is a story-song, not a groove showcase — the bass job is to sit under Rogers' vocal and keep the train-track rhythm moving without drawing attention to itself. Warm, round, steady. No drive anywhere.
 GP-5 only, Sire fretless (Passive), no pedalboard.
 
-## IR: TC410 (Slot 9) + AMP: Foxy Bass
-
-TC Electronic BC 410 — flat, neutral response with a mild 100Hz boost. No editorializing on the tone, which is exactly what a song this simple needs.
-Paired with Foxy Bass (Vox AC-100 voicing) for amp character: warm without being hi-fi, no gain stage to fight.
-
-- AMP VOL: 65
-- AMP Bass: 60 — enough low end to anchor the train-beat pulse without getting boomy.
-- AMP Treble: 45 — kept low on purpose. This isn't a bright, modern bass tone; it's a laid-back late-70s country ballad.
-- CAB (User IR 9) VOL: 60
-
 ## Module chain
 
 **NR — Gate**, always on.
@@ -26,7 +16,17 @@ Off for the verse-groove storytelling sections, on for the "know when to hold 'e
 **DST — off.**
 No drive on this patch. The song is warm and clean start to finish.
 
-**AMP — Foxy Bass**, always on. **CAB — User IR 9 (TC410)**, always on.
+**AMP/CAB — NAM SnapTone, slot 51: CleanB15** (always on)
+- Built from the `Ampeg B18 - Head DI - Bass Chan - Vol 2.5 (B-18N)` NAM and the Apg115 IR, combined into one snaptone.
+- Real Ampeg B-18N fliptop (the B-15 preamp circuit), captured clean at volume 2.5, into the Apg115 B-15 cab IR.
+- 1978 Nashville storytelling song. Clean B-15, round and simple.
+- Gain: 50, VOL: 50, Bass: 60, Middle: 50, Treble: 45
+- Gain 50: the capture as built.
+- Bass 60: more low end.
+- Middle 50: flat.
+- Treble 45: top end pulled back a little.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 51 directly.
 
 **EQ — Bass EQ 1**, always on.
 33Hz: +3, 150Hz: +4, 600Hz: -2, 2kHz: -3, 8kHz: +2, VOL: 50.

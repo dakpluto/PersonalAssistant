@@ -2,90 +2,16 @@
   "patch_name": "AmerPie-Gtr",
   "patch_vol": 50,
   "bpm": 138,
-  "ir": {
-    "name": "EVM112"
-  },
+  "nam": {"name": "EdgyTwang (slot 63): EDGY - Fender Deluxe Reverb 1965 [Hyper Accuracy] + Origin Effects Brown Deluxe 1x12 Medium Mix", "slot": 63, "settings": {"Gain": 48, "VOL": 50, "Bass": 48, "Middle": 45, "Treble": 56}},
   "modules": {
-    "NR": {
-      "model": "Gate",
-      "always_on": true,
-      "settings": {
-        "THRE": 12
-      }
-    },
-    "PRE": {
-      "model": "COMP",
-      "always_on": true,
-      "settings": {
-        "Sustain": 40,
-        "VOL": 55
-      }
-    },
-    "DST": {
-      "model": "Green OD",
-      "ctl": true,
-      "ctl_off_state": "off",
-      "ctl_on_state": "on",
-      "settings": {
-        "Gain": 26,
-        "Tone": 55,
-        "VOL": 66
-      }
-    },
-    "AMP": {
-      "model": "Bellman 59N",
-      "always_on": true,
-      "settings": {
-        "Gain": 30,
-        "PRES": 50,
-        "VOL": 62,
-        "Bass": 48,
-        "Middle": 45,
-        "Treble": 56
-      }
-    },
-    "CAB": {
-      "model": "User IR 5",
-      "always_on": true,
-      "settings": {
-        "VOL": 60
-      }
-    },
-    "EQ": {
-      "model": "Guitar EQ 2",
-      "always_on": true,
-      "settings": {
-        "100Hz": -1,
-        "500Hz": -2,
-        "1kHz": 0,
-        "3kHz": 2,
-        "6kHz": 1,
-        "VOL": 50
-      }
-    },
-    "MOD": {
-      "model": null
-    },
-    "DLY": {
-      "model": "Analog",
-      "ctl": true,
-      "ctl_off_state": "off",
-      "ctl_on_state": "on",
-      "settings": {
-        "Mix": 12,
-        "Time": 330,
-        "Feedback": 15,
-        "Trail": true
-      }
-    },
-    "RVB": {
-      "model": "Room",
-      "always_on": true,
-      "settings": {
-        "Mix": 16,
-        "Decay": 32,
-        "Trail": true
-      }
-    }
+    "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 12}},
+    "PRE": {"model": "COMP", "always_on": true, "settings": {"Sustain": 40, "VOL": 55}},
+    "DST": {"model": "Green OD", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Gain": 26, "Tone": 55, "VOL": 66}},
+    "AMP": {"model": null},
+    "CAB": {"model": null},
+    "EQ": {"model": "Guitar EQ 2", "always_on": true, "settings": {"100Hz": -1, "500Hz": -2, "1kHz": 0, "3kHz": 2, "6kHz": 1, "VOL": 50}},
+    "MOD": {"model": null},
+    "DLY": {"model": "Analog", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Mix": 12, "Time": 330, "Feedback": 15, "Trail": true}},
+    "RVB": {"model": "Room", "always_on": true, "settings": {"Mix": 16, "Decay": 32, "Trail": true}}
   }
 }

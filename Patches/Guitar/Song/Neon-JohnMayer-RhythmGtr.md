@@ -6,11 +6,6 @@ On a Strat, the patch keeps that percussive energy. It's a tight, compressed, gl
 Instrument: Stratocaster (HSS). Position 4 (neck+middle). Thumb for the bass notes, fingers popping the chords.
 GP-5 only, Stratocaster (HSS), no pedalboard.
 
-## AMP: Dark Twin + CAB: EVM112 IR (User IR 5)
-
-A Twin's fast, clean transient response keeps percussive technique crisp. Bright on restores the acoustic snap.
-EVM112 is the loaded guitar cab with a flat, hi-fi response. It keeps Nashville clean tones honest and doesn't add V30 honk.
-
 ## Module chain
 
 **NR — Gate**, always on.
@@ -25,12 +20,17 @@ COMP4 with a slow-ish Attack 55 lets the slap transient punch through, then even
 Gain: 26, Tone: 52, VOL: 66.
 A light TS for Mayer-style lead lines.
 
-**AMP — Dark Twin**, always on.
-Gain: 28, VOL: 62, Bass: 52, Middle: 45, Treble: 55, Bright: on.
-Clean and fast. Bass 52 so thumb-slapped low notes have weight.
-
-**CAB — User IR 5 (EVM112)**, always on.
-VOL: 60.
+**AMP/CAB — NAM SnapTone, slot 64: BrightTwin** (always on)
+- Built from the `Tim R Fender TwinVerb Vibrato Bright (Twin Reverb)` NAM and the TWIN REVERB __ BALANCED (vulturized Twin) IR, combined into one snaptone.
+- Real Twin Reverb, Vibrato channel with Bright on, into the Twin cab IR (balanced blend).
+- Mayer's percussive clean: warm, round, with headroom. Twin Vibrato channel.
+- Gain: 52, VOL: 50, Bass: 52, Middle: 45, Treble: 55
+- Gain 52: a little over default. This part wants more push than the other BrightTwin patches.
+- Bass 52: a touch more low end.
+- Middle 45: midrange pulled back a little.
+- Treble 55: a touch more top end.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 64 directly.
 
 **EQ — Guitar EQ 2**, always on.
 100Hz: +1, 500Hz: -2, 1kHz: 0, 3kHz: +2, 6kHz: 0, VOL: 50.

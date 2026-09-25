@@ -2,85 +2,16 @@
   "patch_name": "OnlyInAm",
   "patch_vol": 52,
   "bpm": 120,
-  "ir": {
-    "name": "Apg810"
-  },
+  "nam": {"name": "CleanSVT (slot 53): SVT CLEAN (SVT-CL) + Apg810", "slot": 53, "settings": {"Gain": 50, "VOL": 50, "Bass": 55, "Middle": 56, "Treble": 50}},
   "modules": {
-    "NR": {
-      "model": "Gate",
-      "always_on": true,
-      "settings": {
-        "THRE": 14
-      }
-    },
-    "PRE": {
-      "model": "COMP",
-      "always_on": true,
-      "settings": {
-        "Sustain": 42,
-        "VOL": 58
-      }
-    },
-    "DST": {
-      "model": "Bass OD",
-      "ctl": true,
-      "ctl_off_state": "off",
-      "ctl_on_state": "on",
-      "settings": {
-        "Gain": 28,
-        "Blend": 30,
-        "VOL": 55,
-        "Bass": 50,
-        "Treble": 50
-      }
-    },
-    "AMP": {
-      "model": "Classic Bass",
-      "always_on": true,
-      "settings": {
-        "Gain": 32,
-        "Bass": 55,
-        "Middle": 56,
-        "MidFreq": 1,
-        "Treble": 50,
-        "VOL": 65
-      }
-    },
-    "CAB": {
-      "model": "User IR 3",
-      "always_on": true,
-      "settings": {
-        "VOL": 60
-      }
-    },
-    "EQ": {
-      "model": "Bass EQ 2",
-      "always_on": true,
-      "settings": {
-        "50Hz": 1,
-        "120Hz": 2,
-        "400Hz": -1,
-        "800Hz": 2,
-        "4.5kHz": -1,
-        "VOL": 52
-      }
-    },
-    "MOD": {
-      "model": null
-    },
-    "DLY": {
-      "model": null
-    },
-    "RVB": {
-      "model": "Room",
-      "ctl": true,
-      "ctl_off_state": "off",
-      "ctl_on_state": "on",
-      "settings": {
-        "Mix": 12,
-        "Decay": 28,
-        "Trail": true
-      }
-    }
+    "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 14}},
+    "PRE": {"model": "COMP", "always_on": true, "settings": {"Sustain": 42, "VOL": 58}},
+    "DST": {"model": "Bass OD", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Gain": 28, "Blend": 30, "VOL": 55, "Bass": 50, "Treble": 50}},
+    "AMP": {"model": null},
+    "CAB": {"model": null},
+    "EQ": {"model": "Bass EQ 2", "always_on": true, "settings": {"50Hz": 1, "120Hz": 2, "400Hz": -1, "800Hz": 2, "4.5kHz": -1, "VOL": 52}},
+    "MOD": {"model": null},
+    "DLY": {"model": null},
+    "RVB": {"model": "Room", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Mix": 12, "Decay": 28, "Trail": true}}
   }
 }

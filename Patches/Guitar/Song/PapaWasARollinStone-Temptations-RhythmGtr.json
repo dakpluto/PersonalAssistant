@@ -2,19 +2,16 @@
   "patch_name": "PapaRollin-Gtr",
   "patch_vol": 52,
   "bpm": 120,
-  "ir": { "name": "EVM112" },
+  "nam": {"name": "TwinClean (slot 61): Tim R Fender TwinVerb Norm Bright (Twin Reverb) + TWIN REVERB __ CLEAN (vulturized Twin)", "slot": 61, "settings": {"Gain": 48, "VOL": 50, "Bass": 42, "Middle": 58, "Treble": 62}},
   "modules": {
-    "NR":  { "model": "Gate", "always_on": true, "settings": { "THRE": 20 } },
-    "PRE": { "model": "Toucher", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
-             "settings": { "Sense": 62, "Range": 55, "Q": 68, "Mix": 85, "Mode": 0 } },
-    "DST": { "model": null },
-    "AMP": { "model": "Dark Twin", "always_on": true,
-             "settings": { "Gain": 26, "VOL": 70, "Bass": 42, "Middle": 58, "Treble": 62, "Bright": false } },
-    "CAB": { "model": "User IR 5", "always_on": true, "settings": { "VOL": 62 } },
-    "EQ":  { "model": "Guitar EQ 1", "always_on": true,
-             "settings": { "125Hz": -8, "400Hz": -2, "800Hz": 3, "1.6kHz": 4, "4kHz": 1, "VOL": 52 } },
-    "MOD": { "model": null },
-    "DLY": { "model": null },
-    "RVB": { "model": "Room", "always_on": true, "settings": { "Mix": 14, "Decay": 30, "Trail": true } }
+    "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 20}},
+    "PRE": {"model": "Toucher", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Sense": 62, "Range": 55, "Q": 68, "Mix": 85, "Mode": 0}},
+    "DST": {"model": null},
+    "AMP": {"model": null},
+    "CAB": {"model": null},
+    "EQ": {"model": "Guitar EQ 1", "always_on": true, "settings": {"125Hz": -8, "400Hz": -2, "800Hz": 3, "1.6kHz": 4, "4kHz": 1, "VOL": 52}},
+    "MOD": {"model": null},
+    "DLY": {"model": null},
+    "RVB": {"model": "Room", "always_on": true, "settings": {"Mix": 14, "Decay": 30, "Trail": true}}
   }
 }

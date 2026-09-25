@@ -5,18 +5,6 @@ Bluegrass-rooted country ballad, famous for how little is happening — no wall 
 The bass part supports, it doesn't lead. Warm, round, upright-adjacent — closer to a Nashville session P-bass through a flat amp than anything modern.
 GP-5 only, Sire fretless (passive), no pedalboard.
 
-## IR: Apg115 (Ampeg Heritage B-15, 1x15")
-
-Slot 1. Prominent 100Hz peak, girth without harshness — the classic "upright-in-a-box" bass cab voicing, and the closest thing in the library to what a session player would've actually tracked this through.
-Paired with the GP-5's own Classic Bass (Ampeg SVT) AMP model per the suggested pairing — same amp family as the cab capture.
-
-- AMP Gain: 25 — clean, no breakup anywhere. This song has zero grit in the low end.
-- Bass: 60 — full and round.
-- Middle: 55, MidFreq: 450Hz — enough midrange presence for the fretless to read as a note, not just low-end wash.
-- Treble: 45 — soft top end, matches the flatwound strings and the warm 100Hz-heavy cab.
-- AMP VOL: 65
-- CAB VOL: 60
-
 ## Module chain
 
 **NR — Gate**, always on.
@@ -26,9 +14,17 @@ THRE: 25. Light touch — just enough to keep noise floor down between the spars
 
 **DST — off.** No drive, ever, on this patch.
 
-**AMP — Classic Bass**, always on. Settings above.
-
-**CAB — User IR 1 (Apg115)**, always on. VOL: 60.
+**AMP/CAB — NAM SnapTone, slot 51: CleanB15** (always on)
+- Built from the `Ampeg B18 - Head DI - Bass Chan - Vol 2.5 (B-18N)` NAM and the Apg115 IR, combined into one snaptone.
+- Real Ampeg B-18N fliptop (the B-15 preamp circuit), captured clean at volume 2.5, into the Apg115 B-15 cab IR.
+- Acoustic-leaning ballad. A clean B-15 is warm and quiet enough to sit under the dobro and vocal.
+- Gain: 50, VOL: 50, Bass: 60, Middle: 55, Treble: 45
+- Gain 50: the capture as built.
+- Bass 60: Full and round.
+- Middle 55: Enough midrange presence for the fretless to read as a note, not just low-end wash.
+- Treble 45: Soft top end, matches the flatwound strings and the warm 100Hz-heavy cab.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 51 directly.
 
 **EQ — Bass EQ 2**, always on.
 50Hz: +5, 120Hz: +3, 400Hz: -2, 800Hz: 0, 4.5kHz: +2, VOL: 100.

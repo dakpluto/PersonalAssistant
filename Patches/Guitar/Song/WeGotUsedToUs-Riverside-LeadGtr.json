@@ -2,91 +2,16 @@
   "patch_name": "WeGotUsedToUs-Riverside-LeadGtr",
   "patch_vol": 50,
   "bpm": 90,
-  "ir": {
-    "name": "EVM112"
-  },
+  "nam": {"name": "ProgDumble (slot 73): SLAMMIN_DUMBLE_FORD_OD_SMOOTH_S (Dumble ODS #102) + V30 UR 4FB 4x12 SM57 1.00in 0.0in 7603 (Mesa V30)", "slot": 73, "settings": {"Gain": 47, "VOL": 50, "Bass": 50, "Middle": 55, "Treble": 50}},
   "modules": {
-    "NR": {
-      "model": "Gate",
-      "always_on": true,
-      "settings": {
-        "THRE": 18
-      }
-    },
-    "PRE": {
-      "model": "COMP",
-      "always_on": true,
-      "settings": {
-        "Sustain": 35,
-        "VOL": 55
-      }
-    },
-    "DST": {
-      "model": "Green OD",
-      "ctl": true,
-      "ctl_off_state": "off",
-      "ctl_on_state": "on",
-      "settings": {
-        "Gain": 35,
-        "Tone": 50,
-        "VOL": 65
-      }
-    },
-    "AMP": {
-      "model": "Z38 OD",
-      "always_on": true,
-      "settings": {
-        "Gain": 38,
-        "Tone Cut": 45,
-        "VOL": 62,
-        "Bass": 50,
-        "Middle": 55,
-        "Treble": 50
-      }
-    },
-    "CAB": {
-      "model": "User IR 5",
-      "always_on": true,
-      "settings": {
-        "VOL": 60
-      }
-    },
-    "EQ": {
-      "model": "Guitar EQ 1",
-      "always_on": true,
-      "settings": {
-        "125Hz": -1,
-        "400Hz": 0,
-        "800Hz": 2,
-        "1.6kHz": 1,
-        "4kHz": -2,
-        "VOL": 50
-      }
-    },
-    "MOD": {
-      "model": null
-    },
-    "DLY": {
-      "model": "Tape",
-      "ctl": true,
-      "ctl_off_state": "off",
-      "ctl_on_state": "on",
-      "settings": {
-        "Mix": 25,
-        "Time": 480,
-        "F.Back": 30,
-        "Trail": true
-      }
-    },
-    "RVB": {
-      "model": "Plate",
-      "always_on": true,
-      "settings": {
-        "Mix": 15,
-        "Decay": 40,
-        "Damp": 50,
-        "Trail": false
-      }
-    }
+    "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 18}},
+    "PRE": {"model": "COMP", "always_on": true, "settings": {"Sustain": 35, "VOL": 55}},
+    "DST": {"model": "Green OD", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Gain": 35, "Tone": 50, "VOL": 65}},
+    "AMP": {"model": null},
+    "CAB": {"model": null},
+    "EQ": {"model": "Guitar EQ 1", "always_on": true, "settings": {"125Hz": -1, "400Hz": 0, "800Hz": 2, "1.6kHz": 1, "4kHz": -2, "VOL": 50}},
+    "MOD": {"model": null},
+    "DLY": {"model": "Tape", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Mix": 25, "Time": 480, "F.Back": 30, "Trail": true}},
+    "RVB": {"model": "Plate", "always_on": true, "settings": {"Mix": 15, "Decay": 40, "Damp": 50, "Trail": false}}
   }
 }

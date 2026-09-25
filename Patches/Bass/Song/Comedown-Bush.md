@@ -4,13 +4,6 @@ Sixteen Stone, 1994. ~92 BPM, est.
 Darker and moodier than "Machinehead" off the same record — verse sits low and murky, chorus opens up into a heavier, fuzzed-out push. This is a different Bush tone than the other patch in this repo: Machinehead is dry and driving throughout, this one has real light/dark contrast built into the CTL.
 GP-5 only, P/J bass, no pedalboard.
 
-## AMP: Classic Bass (Ampeg SVT) + DST: Bass OD + CAB: Sunn215 IR (User IR 8)
-
-Rebuilt 2026-09-18 off the GP-5's own AMP/DST + a loaded IR — NAMs are off for now (Valeton N->S volume issue, device-side). The old NAM was the Darkglass Alpha Omega's Omega (fuzz) side into an Aguilar DB751/Darkglass cab — thicker and grungier than Machinehead's straighter V4B grit. Standing that in with real modules: Classic Bass for the amp foundation, Bass OD always-on and pushed hard for the fuzz breakup itself, and Sunn215 for CAB — ir.md calls that cab out by name for "driven/fuzz bass patches," a direct match for what this song wants.
-
-- AMP Gain: 40, Bass: 55, Middle: 45, MidFreq: 800Hz, Treble: 38, VOL: 62 — dark, matches the murky verse tone, slightly scooped mids to stay moodier/darker than Machinehead.
-- DST (Bass OD) Gain: 65, Blend: 75, VOL: 62, Bass: 55, Treble: 40 — pushed harder than Machinehead's amp-only grit, real fuzz-like breakup, not just amp grind. Always on — this is the patch's baseline texture, not a footswitched extra.
-
 ## Module chain
 
 **NR — Gate**, always on.
@@ -22,9 +15,17 @@ Off for the dark, restrained verse. On for the chorus — shoves the fuzz harder
 
 **DST — Bass OD**, always on. Gain 65, Blend 75, VOL 62, Bass 55, Treble 40. This is the always-on fuzz layer — the CTL'd boost stacks on top of it, it doesn't switch it in.
 
-**AMP — Classic Bass**, always on. Gain 40, Bass 55, Middle 45, MidFreq 800Hz, Treble 38, VOL 62.
-
-**CAB — User IR 8 (Sunn215)**, always on. VOL 60.
+**AMP/CAB — NAM SnapTone, slot 58: HairySVT** (always on)
+- Built from the `SVT SANS HAIRY DRIVE (SVT-CL)` NAM and the Sunn215 IR, combined into one snaptone.
+- Real Ampeg SVT-CL with the hairy drive setting, into the Sunn215 2x15 IR.
+- Fuzzy grunge low end. The hairy SVT drive into a Sunn 2x15.
+- Gain: 46, VOL: 50, Bass: 55, Middle: 45, Treble: 38
+- Gain 46: a little under default. This part wants less push than the other HairySVT patches.
+- Bass 55: a touch more low end.
+- Middle 45: midrange pulled back a little.
+- Treble 38: top end pulled back noticeably.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 58 directly.
 
 **EQ — Bass EQ 2**, always on.
 50Hz: +3, 120Hz: +1, 400Hz: -5, 800Hz: -1, 4.5kHz: +4, VOL: 55.

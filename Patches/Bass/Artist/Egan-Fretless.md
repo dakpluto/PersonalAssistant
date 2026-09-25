@@ -22,12 +22,17 @@ This is the single most important block in the patch. Medium attack lets enough 
 **DST — off.**
 No drive anywhere in this signal path. Egan's tone is clean top to bottom; distortion would kill the sustain-driven phrasing this patch is built around.
 
-**AMP — Mess Bass (Mesa/Boogie Bass 400)** (always on)
-Gain: 45, VOL: 70, Bass: 55, Middle: 55, Treble: 68.
-Picked over Classic Bass (Ampeg SVT) because the 400 is a hi-fi, headroom-first design — same family of amp session/fusion bassists reached for when they wanted clean and bright rather than warm and dark. Treble pushed to 68 to give the fretless's harmonic content somewhere to live.
-
-**CAB — AMPG 4x10 (Ampeg SVT-410HE)** (always on)
-VOL: 80. Only real bass cab in the catalog — no NAM or IR in the library covers bass amps or bass cabs (the NAM list is all guitar amps, the IR pack is all guitar speakers), so built-in AMP/CAB is the right call here, not a compromise.
+**AMP/CAB — NAM SnapTone, slot 52: AvalonAD2022** (always on)
+- Built from the `Avalon - 38 dB - Chan 1 (Avalon AD2022)` NAM and no cab IR (straight DI), combined into one snaptone.
+- Avalon AD2022 Class A preamp at 38 dB. A studio DI, not an amp: no speaker coloration.
+- Mark Egan's fretless is a hi-fi, studio-DI sound. The Avalon gives the fretless growl with no cab smear.
+- Gain: 58, VOL: 50, Bass: 55, Middle: 55, Treble: 68
+- Gain 58: noticeably over default. This part wants more push than the other AvalonAD2022 patches.
+- Bass 55: a touch more low end.
+- Middle 55: a touch more midrange.
+- Treble 68: more top end.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 52 directly.
 
 **EQ — Bass EQ 1** (always on)
 33Hz: +6, 150Hz: 0, 600Hz: -8, 2kHz: +5, 8kHz: +10, VOL: 58.

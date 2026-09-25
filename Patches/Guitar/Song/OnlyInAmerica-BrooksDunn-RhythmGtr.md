@@ -6,11 +6,6 @@ Built from the song's overall sound. I haven't verified the exact guitars and am
 Instrument: Stratocaster (HSS). Bridge humbucker for the crunch rhythm and the lead.
 GP-5 only, Stratocaster (HSS), no pedalboard.
 
-## AMP: UK 45 (JTM45) + CAB: V30112 IR (User IR 10)
-
-A JTM45 at medium gain is a big, open crunch that stays clear on ringing open chords. It has less compression than an 800.
-V30112 is the loaded guitar cab with enough upper-mid bark for a crunch tone. EVM112 would thin out once the amp breaks up.
-
 ## Module chain
 
 **NR — Gate**, always on.
@@ -23,12 +18,17 @@ Pushes the JTM45 into lead saturation and adds level for the solo.
 
 **DST — off.** No pedal drive. The amp handles the crunch.
 
-**AMP — UK 45**, always on.
-Gain: 48, PRES: 55, VOL: 60, Bass: 50, Middle: 58, Treble: 56.
-Gain 48 is open-chord crunch. Middle 58 keeps it in the mix against the steel and fiddle.
-
-**CAB — User IR 10 (V30112)**, always on.
-VOL: 60.
+**AMP/CAB — NAM SnapTone, slot 69: BritishCrunch** (always on)
+- Built from the `Marshall JTM45 I Crunch BAL DI` NAM and the Origin Effects British Straight 4x12 Medium Mix IR, combined into one snaptone.
+- Real Marshall JTM45 crunch, into the Origin Effects British Straight 4x12.
+- Arena-country crunch. JTM45, the same amp family as the old UK 45 model, but a real capture.
+- Gain: 46, VOL: 50, Bass: 50, Middle: 58, Treble: 56
+- Gain 46: a little under default. This part wants less push than the other BritishCrunch patches.
+- Bass 50: flat.
+- Middle 58: more midrange.
+- Treble 56: more top end.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 69 directly.
 
 **EQ — Guitar EQ 2**, always on.
 100Hz: -3, 500Hz: 0, 1kHz: +1, 3kHz: +1, 6kHz: -2, VOL: 50.

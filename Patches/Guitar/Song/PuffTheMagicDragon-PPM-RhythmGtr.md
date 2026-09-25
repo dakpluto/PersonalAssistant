@@ -6,10 +6,6 @@ There's no electric part, so the Strat plays the acoustic role: bright, compress
 Instrument: Stratocaster (HSS). Position 4 (neck+middle) for a hollow, acoustic-ish quack. Neck for the melody.
 GP-5 only, Stratocaster (HSS), no pedalboard.
 
-## AMP: Dark Twin + CAB: EVM112 IR (User IR 5)
-
-A clean, big-headroom Twin with Bright on gives the string detail an acoustic has. EVM112 keeps it flat and natural.
-
 ## Module chain
 
 **NR — Gate**, always on.
@@ -24,12 +20,17 @@ Sustain 45 flattens the pick attack into an acoustic-like even pluck.
 Gain: 10, Tone: 52, VOL: 68.
 A level lift at Gain 10, with no real drive, so the melody sits over the picking.
 
-**AMP — Dark Twin**, always on.
-Gain: 24, VOL: 62, Bass: 50, Middle: 42, Treble: 55, Bright: on.
-Clean and detailed. Middle 42 reduces electric honk.
-
-**CAB — User IR 5 (EVM112)**, always on.
-VOL: 60.
+**AMP/CAB — NAM SnapTone, slot 64: BrightTwin** (always on)
+- Built from the `Tim R Fender TwinVerb Vibrato Bright (Twin Reverb)` NAM and the TWIN REVERB __ BALANCED (vulturized Twin) IR, combined into one snaptone.
+- Real Twin Reverb, Vibrato channel with Bright on, into the Twin cab IR (balanced blend).
+- Acoustic stand-in: a warm, round, clean Twin keeps the strum soft.
+- Gain: 50, VOL: 50, Bass: 50, Middle: 42, Treble: 55
+- Gain 50: the capture as built.
+- Bass 50: flat.
+- Middle 42: midrange pulled back noticeably.
+- Treble 55: a touch more top end.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 64 directly.
 
 **EQ — Guitar EQ 2**, always on.
 100Hz: 0, 500Hz: -3, 1kHz: -1, 3kHz: +2, 6kHz: +2, VOL: 50.

@@ -7,11 +7,6 @@ Built from Elevation's general bass sound. I haven't verified the exact parts or
 Instrument: Harley Benton P/J (passive 5-string). Both pickup volumes full, tone about 70%. The J adds definition to the P's thump so eighth notes stay articulate at this tempo.
 GP-5 only, P/J bass, no pedalboard.
 
-## AMP: Classic Bass + CAB: Apg810 IR (User IR 3)
-
-The SVT into an 8x10 is the stock sound for driving live-band bass. It has punch, round lows, and midrange that cuts through a loud stage.
-Apg810 is the most direct real-world pairing for Classic Bass in the IR set. It's punchier and more focused than the Apg115410 blend used on When Wind Meets Fire. That fits a fast song better than a slow ambient one.
-
 ## Module chain
 
 **NR — Gate**, always on.
@@ -26,12 +21,17 @@ Evens out driving eighth notes so every note hits the same level. Attack 35 lets
 Gain: 32, Blend: 35, VOL: 55, Bass: 55, Treble: 50.
 Low-gain grit for the choruses and bridge. Blend 35 keeps most of the clean low end intact. The drive only adds growl on top.
 
-**AMP — Classic Bass**, always on.
-Gain: 25, Bass: 58, Middle: 52, MidFreq: 800Hz, Treble: 48, VOL: 65.
-Clean SVT with the mid centered at 800Hz. That's the growl and punch zone, so the bass is audible on small speakers under a dense mix. Bass 58 gives weight without boom.
-
-**CAB — User IR 3 (Apg810)**, always on.
-VOL: 60.
+**AMP/CAB — NAM SnapTone, slot 59: WorshipSVT** (always on)
+- Built from the `SVT CLEAN PUSHED (SVT-CL)` NAM and the Ampeg SVT Bright Beta52 IR, combined into one snaptone.
+- Real Ampeg SVT-CL on the clean-pushed setting, into a bright, Beta 52-miked SVT 4x10 IR.
+- Elevation-style worship bass: pushed SVT with a bright 4x10 top end.
+- Gain: 50, VOL: 50, Bass: 58, Middle: 52, Treble: 48
+- Gain 50: the capture as built.
+- Bass 58: more low end.
+- Middle 52: a touch more midrange.
+- Treble 48: top end pulled back a little.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 59 directly.
 
 **EQ — Bass EQ 1**, always on.
 33Hz: 0, 150Hz: +2, 600Hz: -2, 2kHz: +2, 8kHz: -2, VOL: 52.

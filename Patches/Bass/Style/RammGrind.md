@@ -1,7 +1,7 @@
 # RammGrind — Industrial Metal Bass (Rammstein Style)
 
-**Rebuild 2026-09-08:** switched to the Darkglass Alpha Omega (Distortion) NAM (slot 62) in place of the GP-5's own DST/AMP/CAB.
-**Rebuild 2026-09-18:** switched back. NAMs are off for now — Michael is hitting a volume issue with the Valeton's N->S slot itself (device-side bug, not a tooling problem). Back to real GP-5 AMP/DST plus a loaded IR for CAB (the bass IR slots didn't exist yet at the original 2026-09-08 rebuild — Hartke410 now covers the job the built-in AMPG 4x10 cab used to). Settings below are the original real-AMP design, restored — same style target, same CTL concept throughout all three builds.
+**Rebuild 2026-09-25:** AMP/CAB replaced by the BrightSVT snaptone (slot 55). The GP-5's Bass OD stays as the main grind stage.
+**Earlier builds:** 2026-09-08 used a Darkglass Alpha Omega NAM. 2026-09-18 went back to GP-5 AMP + IR while NAMs were off for the Valeton N->S volume issue. Same style target and CTL concept across all builds.
 
 ## Style reference
 
@@ -16,10 +16,6 @@ Same territory: Paul Barker (Ministry), Jeordie White / Twiggy Ramirez (Marilyn 
 Two CTL states cover the dynamic range this style actually uses:
 verse/groove sections stay controlled and tight, choruses and breakdown hits get pushed harder.
 Rammstein's mix rarely goes "clean" — even the restrained sections carry grit. Only the amount of push changes.
-
-## Back to real AMP/DST/CAB
-
-With NAMs off, the gain-staging logic goes back to the original build: Bass OD (GP-5 DST) plus a real Classic Bass (Ampeg SVT) amp model do the core distortion work, fed by a genuinely hot board (Fuzz + Tidal Wave both pushed hard, same values as the original). CAB is the one thing that improves on the original — Hartke410 (a loaded IR, bright and aggressive, ir.md's own recommended pairing for a driven bass tone running Bass OD) stands in for the built-in AMPG 4x10, which was the only option back when this patch was first built (the bass IR slots didn't exist yet). Same layered-pedals concept throughout: Ollie Riedel really does stack drives, and this build lets three gain stages (Fuzz, Tidal Wave, Bass OD) do that job together, backed by a real amp instead of a single all-in-one capture.
 
 ## GP-5 module chain
 
@@ -41,20 +37,19 @@ Module order is fixed: NR, PRE, DST, AMP, CAB, EQ, MOD, DLY, RVB.
 - VOL: 60
 - Bass: 45
 - Treble: 68
-- Always on. This is the core of the patch — modeled on the Boss ODB-3, a real metal-bass-distortion staple. High Gain gets the buzzsaw edge. Blend at 70 keeps it mostly wet but doesn't fully drown the dry fundamental — that's what keeps note definition intact under heavy distortion instead of collapsing into undifferentiated fuzz. Bass rolled back to 45 on the pedal itself so the low end doesn't get flabby before it hits the amp stage — let AMP/CAB supply the low end, DST supplies the grind.
+- Always on. This is the core of the patch — modeled on the Boss ODB-3, a real metal-bass-distortion staple. High Gain gets the buzzsaw edge. Blend at 70 keeps it mostly wet but doesn't fully drown the dry fundamental — that's what keeps note definition intact under heavy distortion instead of collapsing into undifferentiated fuzz. Bass rolled back to 45 on the pedal itself so the low end doesn't get flabby before it hits the amp stage — let the snaptone supply the low end, DST supplies the grind.
 
-### AMP — Classic Bass (Ampeg SVT)
-- Gain: 60
-- Bass: 50
-- Middle: 65
-- MidFreq: 800Hz
-- Treble: 62
-- VOL: 70
-- Always on. SVT is the classic aggressive rock/metal bass amp voicing — present, not scooped. MidFreq at 800Hz is the growl-and-cut frequency: this is what lets the bass punch through a wall of distorted guitars instead of hiding under them. Bass held at 50, not cranked — low end comes from the note and the cab, not amp boom, which keeps the tone tight instead of woolly.
-
-### CAB — User IR 6 (Hartke410)
-- VOL: 70
-- Always on. Hartke410's bright, aggressive aluminum-cone voicing is ir.md's own named pairing for a driven bass tone running Bass OD — a loaded IR wasn't an option when this patch was first built, so the built-in AMPG 4x10 did the job back then; this is the direct upgrade now that the bass IR slots are loaded.
+### AMP/CAB — NAM SnapTone, slot 55: BrightSVT (always on)
+- Built from the `SVT SANS BRIGHT DRIVE (SVT-CL)` NAM and the Hartke410 IR, combined into one snaptone.
+- Real Ampeg SVT-CL with the bright drive setting, into the aluminum-cone Hartke410 IR.
+- Rammstein bass is a bright, driven doubling of the guitar riff. Bright SVT drive and Hartke clank.
+- Gain: 58, VOL: 50, Bass: 50, Middle: 65, Treble: 62
+- Gain 58: noticeably over default. This part wants more push than the other BrightSVT patches.
+- Bass 50: flat.
+- Middle 65: more midrange.
+- Treble 62: more top end.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 55 directly.
 
 ### EQ — Bass EQ 1
 - 33Hz: -8
@@ -112,10 +107,10 @@ The `.prst` only encodes the GP-5's own 9 modules plus the NAM. Everything below
 - Footswitch off. This style is dry and direct — no chorus anywhere in the signal. Left dialed to safe defaults in case a future patch wants it, but it stays off here.
 
 ### 6. Valeton GP-5
-- Settings as documented above, including the Darkglass Alpha Omega NAM in Slot 62.
+- Settings as documented above, including the BrightSVT snaptone in slot 55.
 
 ## When to engage what
 
-- **Base tone (CTL off):** Gate, Comp, Fuzz, Tidal Wave, Bass OD, Classic Bass/Hartke410, EQ — everything on except the PRE boost and the octave. This is the sound for the whole song, verses included. It's already distorted and aggressive at rest — that's the point.
+- **Base tone (CTL off):** Gate, Comp, Fuzz, Tidal Wave, Bass OD, BrightSVT snaptone, EQ — everything on except the PRE boost and the octave. This is the sound for the whole song, verses included. It's already distorted and aggressive at rest — that's the point.
 - **CTL on:** Punch in for choruses, big unison stabs, and breakdown hits — pushes the Bass OD harder via the Micro Boost for a thicker, more compressed wall.
 - **Octave stomp:** Reserve for song-ending swells/outros only — not a default-on effect.

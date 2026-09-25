@@ -7,11 +7,6 @@ I haven't verified the exact gear Perry used on this recording. The tone is buil
 Instrument: Stratocaster (HSS). Bridge humbucker for both sounds.
 GP-5 only, Stratocaster (HSS), no pedalboard.
 
-## AMP: UK 800 (JCM800) + CAB: V30112 IR (User IR 10)
-
-A JCM800 at medium gain is the classic hard-rock crunch. Perry is a Marshall player, and this is the most direct GP-5 route to that sound.
-V30112 is the loaded guitar cab with the upper-mid bark a driven Marshall needs. EVM112 is too clean-voiced for this job.
-
 ## Module chain
 
 **NR — Gate**, always on.
@@ -24,12 +19,17 @@ Pushes the 800 into lead saturation and adds level so the melody jumps out over 
 
 **DST — off.** The 800 supplies the crunch. A pedal drive would push it past Perry's grittier, looser feel.
 
-**AMP — UK 800**, always on.
-Gain: 55, PRES: 55, VOL: 60, Bass: 50, Middle: 60, Treble: 58.
-Middle 60 is the key setting: 90s hard rock is mid-heavy. Gain 55 on the bridge humbucker gives crunchy chords that still articulate.
-
-**CAB — User IR 10 (V30112)**, always on.
-VOL: 60.
+**AMP/CAB — NAM SnapTone, slot 69: BritishCrunch** (always on)
+- Built from the `Marshall JTM45 I Crunch BAL DI` NAM and the Origin Effects British Straight 4x12 Medium Mix IR, combined into one snaptone.
+- Real Marshall JTM45 crunch, into the Origin Effects British Straight 4x12.
+- Classic British hard-rock crunch. JTM45.
+- Gain: 50, VOL: 50, Bass: 50, Middle: 60, Treble: 58
+- Gain 50: the capture as built.
+- Bass 50: flat.
+- Middle 60: more midrange.
+- Treble 58: more top end.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 69 directly.
 
 **EQ — Guitar EQ 2**, always on.
 100Hz: -2, 500Hz: 0, 1kHz: +1, 3kHz: +1, 6kHz: -2, VOL: 50.

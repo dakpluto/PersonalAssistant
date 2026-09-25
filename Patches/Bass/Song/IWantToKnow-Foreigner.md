@@ -3,10 +3,6 @@
 Bass: Harley Benton P/J, 5-string, passive. Full board.
 1984 AOR power ballad (*Agent Provocateur*). ~67 BPM (estimate — no hard chart reference, tempo isn't load-bearing for the tone choices below). Textbook quiet-verse-to-massive-choir-chorus structure — piano and vocal carry the verses almost alone, and the chorus detonates into full band plus gospel choir. The bass job is to stay warm, simple, and out of the way in the verses, then lean in for the chorus lift without ever getting aggressive — this is a ballad, not a rock song, even at its biggest.
 
-## AMP: Mess Bass (Mesa/Boogie Bass 400) + CAB: EBS410 IR (User IR 4)
-
-Rebuilt 2026-09-18 off the GP-5's own AMP + a loaded IR — NAMs are off for now (Valeton N->S volume issue, device-side). The old NAM was a Darkglass B7K Ultra dialed low-gain rather than driven, chosen at the time for its flexible independent Gain/Bass/Middle/Treble tone-shaping. Mess Bass at the same low gain gives the same warm, present clean target; EBS410 is ir.md's own pick for clean bass tones.
-
 ## GP-5 Settings
 
 Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB
@@ -23,13 +19,17 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB
 **DST — Off**
 Not used. No drive anywhere in this tone — the amp stays clean regardless of CTL state.
 
-**AMP — Mess Bass**, always on.
-- Gain: 28 — kept low, a clean tone, not a driven one.
-- VOL: 65
-- Bass: 58 — warmth and low-end weight this song's big chorus wants.
-- Middle: 55, Treble: 55 — both moderate, present without being aggressive or scooped.
-
-**CAB — User IR 4 (EBS410)**, always on. VOL 58.
+**AMP/CAB — NAM SnapTone, slot 52: AvalonAD2022** (always on)
+- Built from the `Avalon - 38 dB - Chan 1 (Avalon AD2022)` NAM and no cab IR (straight DI), combined into one snaptone.
+- Avalon AD2022 Class A preamp at 38 dB. A studio DI, not an amp: no speaker coloration.
+- Glossy 80s power ballad. Clean DI bass under the synths and choir.
+- Gain: 49, VOL: 50, Bass: 58, Middle: 55, Treble: 55
+- Gain 49: a little under default. This part wants less push than the other AvalonAD2022 patches.
+- Bass 58: Warmth and low-end weight this song's big chorus wants.
+- Middle 55: a touch more midrange.
+- Treble 55: a touch more top end.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 52 directly.
 
 **EQ — Bass EQ 1**
 - 33Hz: +4, 150Hz: +1, 600Hz: -2, 2kHz: +3, 8kHz: +1, VOL: 52
@@ -73,7 +73,7 @@ No fuzz texture anywhere in this song.
 - Bass-Shift toggle: 40Hz (fuller, warmer low end — this is a spacious ballad arrangement, not a busy mix that needs extra tightness)
 - Cab-Sim (DI out): On
 - Ground Lift: Off (only flip on if a specific room throws hum)
-- Drive kept very light — this pedal is doing foundational glue and a consistent DI feed only, not tone-shaping. The B7K NAM is carrying the actual tone.
+- Drive kept very light — this pedal is doing foundational glue and a consistent DI feed only, not tone-shaping. The Avalon DI snaptone is carrying the actual tone.
 
 **Joyo Narcissus — bypassed**
 Modulation is handled by the GP-5's own MOD module (B-Chorus, light, always on). Stacking this pedal on top would fight with that.

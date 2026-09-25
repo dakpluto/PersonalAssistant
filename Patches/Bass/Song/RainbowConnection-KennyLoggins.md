@@ -5,10 +5,6 @@ Bass: Harley Benton P/J, 5-string, passive. GP-5 only.
 Soft lullaby arrangement. The bass should feel like a gentle acoustic or upright underpinning: round, short, warm. Roots and gentle walk-ups.
 Thumb or soft fingers over the neck. P pickup soloed. Tone knob around 30%.
 
-## AMP: Classic Bass (Ampeg SVT) + CAB: Apg115 IR (User IR 1)
-
-A B-15 with the top rolled way back is the softest, woodiest bass this set of loaded cabs can do.
-
 ## Module chain
 
 **NR — Gate**, always on.
@@ -21,12 +17,17 @@ Gentle leveling.
 
 **DST — off.** No grit.
 
-**AMP — Classic Bass**, always on.
-Gain: 18, Bass: 58, Middle: 50, MidFreq: 220Hz, Treble: 30, VOL: 66.
-Very round and woody. MidFreq 220Hz for warmth.
-
-**CAB — User IR 1 (Apg115)**, always on.
-VOL: 60.
+**AMP/CAB — NAM SnapTone, slot 51: CleanB15** (always on)
+- Built from the `Ampeg B18 - Head DI - Bass Chan - Vol 2.5 (B-18N)` NAM and the Apg115 IR, combined into one snaptone.
+- Real Ampeg B-18N fliptop (the B-15 preamp circuit), captured clean at volume 2.5, into the Apg115 B-15 cab IR.
+- Gentle, acoustic-led arrangement. The clean B-15 stays soft and round.
+- Gain: 47, VOL: 50, Bass: 58, Middle: 50, Treble: 30
+- Gain 47: a little under default. This part wants less push than the other CleanB15 patches.
+- Bass 58: more low end.
+- Middle 50: flat.
+- Treble 30: top end pulled back noticeably.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 51 directly.
 
 **EQ — Bass EQ 2**, always on.
 50Hz: 0, 120Hz: +2, 400Hz: +1, 800Hz: -1, 4.5kHz: -5, VOL: 52.

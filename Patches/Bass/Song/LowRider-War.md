@@ -4,17 +4,6 @@ Why Can't We Be Friends?, 1975. 106 BPM, est.
 B.B. Dickerson's bass line is the entire song — that descending riff has to sit warm, round, and laid-back, not punchy or aggressive. This is a muted, almost palm-muted P-bass sound, not a bright modern tone.
 GP-5 only, P/J bass, no pedalboard.
 
-## AMP: Classic Bass (Ampeg SVT) + CAB: Apg115 IR (User IR 1)
-
-SVT is still the right amp family for this era, but Low Rider wants the rounder, boxier vintage voice of a 1x15 rather than an 8x10 stack — Apg115 (Ampeg Heritage B-15) has a prominent peak around 100Hz that adds girth without the more modern, aggressive top end of the 810. Same suggested AMP pairing as the 810 (same Ampeg family), just a darker, girthier cab choice to match the laid-back part.
-
-- Gain: 30 — clean. This tone never breaks up; the amp just needs to sound warm and full.
-- Bass: 65 — deep, full low end, the foundation of the riff.
-- Middle: 45, MidFreq: 450Hz — pulled back from a typical funk-snap 800Hz setting. Low Rider isn't a percussive pop tone, it's smooth and rounded.
-- Treble: 35 — dark on purpose, close to a muted/flatwound feel even on the roundwound P/J.
-- VOL: 65.
-- CAB VOL: 60.
-
 ## Module chain
 
 **NR — Gate**, always on.
@@ -26,12 +15,20 @@ Lighter squash than a percussive funk patch — Low Rider's feel is loose and be
 
 **DST — Bass OD**, on CTL.
 Gain: 22, Blend: 45, VOL: 62, Bass: 50, Treble: 45.
-Off for the main groove — clean SVT tone through the whole verse riff.
+Off for the main groove — clean B-15 tone through the whole verse riff.
 On for the instrumental hook/outro breakdown section, where the band opens up — a light push adds a bit more weight and presence without turning the tone aggressive.
 
-**AMP — Classic Bass**, always on. Gain 30, Bass 65, Middle 45, MidFreq 450Hz, Treble 35, VOL 65.
-
-**CAB — User IR 1 (Apg115)**, always on. VOL 60.
+**AMP/CAB — NAM SnapTone, slot 60: SoulB18** (always on)
+- Built from the `Ampeg B18 - Head DI - Bass Chan - Vol 7.5 (B-18N)` NAM and the Apg115 IR, combined into one snaptone.
+- Real Ampeg B-18N at volume 7.5, where the tubes start to growl, into the Apg115 B-15 cab IR.
+- Warm, girthy 70s soul-funk. A cranked B-15 is rounder and boxier than an 8x10, which is what the riff wants.
+- Gain: 48, VOL: 50, Bass: 65, Middle: 45, Treble: 35
+- Gain 48: a little under default. This part wants less push than the other SoulB18 patches.
+- Bass 65: Deep, full low end, the foundation of the riff.
+- Middle 45: Pulled back from a typical funk-snap 800Hz setting. Low Rider isn't a percussive pop tone, it's smooth and rounded.
+- Treble 35: Dark on purpose, close to a muted/flatwound feel even on the roundwound P/J.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 60 directly.
 
 **EQ — Bass EQ 2**, always on.
 50Hz: +4, 120Hz: +3, 400Hz: +2, 800Hz: -3, 4.5kHz: -4, VOL: 50.
@@ -50,7 +47,7 @@ On alongside the OD push for the instrumental hook — a touch of room air to op
 
 Two modules on CTL: DST (Bass OD) and RVB (Room).
 
-- **CTL off** — main verse/riff groove. Clean, warm, dark SVT tone through the B-15-style 1x15, dry and laid-back. This is the resting state the patch loads into.
+- **CTL off** — main verse/riff groove. Warm, dark B-15 tone, dry and laid-back. This is the resting state the patch loads into.
 - **CTL on** — instrumental hook/outro breakdown. Light OD push plus a touch of room, same amp tone underneath, a bit more weight and size for the open section.
 
 Engage CTL for the instrumental/outro stretch, back off for the main verse riff.

@@ -2,85 +2,16 @@
   "patch_name": "CreekMarysBlood-Nightwish",
   "patch_vol": 50,
   "bpm": 90,
-  "ir": {
-    "name": "Apg810"
-  },
+  "nam": {"name": "BrightSVT (slot 55): SVT SANS BRIGHT DRIVE (SVT-CL) + Hartke410", "slot": 55, "settings": {"Gain": 46, "VOL": 50, "Bass": 58, "Middle": 55, "Treble": 45}},
   "modules": {
-    "NR": {
-      "model": "Gate",
-      "always_on": true,
-      "settings": {
-        "THRE": 20
-      }
-    },
-    "PRE": {
-      "model": "COMP",
-      "always_on": true,
-      "settings": {
-        "Sustain": 50,
-        "VOL": 58
-      }
-    },
-    "DST": {
-      "model": "Bass OD",
-      "ctl": true,
-      "ctl_off_state": "off",
-      "ctl_on_state": "on",
-      "settings": {
-        "Gain": 42,
-        "Blend": 55,
-        "VOL": 60,
-        "Bass": 55,
-        "Treble": 50
-      }
-    },
-    "AMP": {
-      "model": "Classic Bass",
-      "always_on": true,
-      "settings": {
-        "Gain": 38,
-        "Bass": 58,
-        "Middle": 55,
-        "MidFreq": 1,
-        "Treble": 45,
-        "VOL": 63
-      }
-    },
-    "CAB": {
-      "model": "User IR 3",
-      "always_on": true,
-      "settings": {
-        "VOL": 60
-      }
-    },
-    "EQ": {
-      "model": "Bass EQ 2",
-      "always_on": true,
-      "settings": {
-        "50Hz": 2,
-        "120Hz": 2,
-        "400Hz": 0,
-        "800Hz": 2,
-        "4.5kHz": 1,
-        "VOL": 50
-      }
-    },
-    "MOD": {
-      "model": null
-    },
-    "DLY": {
-      "model": null
-    },
-    "RVB": {
-      "model": "Hall",
-      "ctl": true,
-      "ctl_off_state": "off",
-      "ctl_on_state": "on",
-      "settings": {
-        "Mix": 15,
-        "Decay": 35,
-        "Trail": false
-      }
-    }
+    "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 20}},
+    "PRE": {"model": "COMP", "always_on": true, "settings": {"Sustain": 50, "VOL": 58}},
+    "DST": {"model": "Bass OD", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Gain": 42, "Blend": 55, "VOL": 60, "Bass": 55, "Treble": 50}},
+    "AMP": {"model": null},
+    "CAB": {"model": null},
+    "EQ": {"model": "Bass EQ 2", "always_on": true, "settings": {"50Hz": 2, "120Hz": 2, "400Hz": 0, "800Hz": 2, "4.5kHz": 1, "VOL": 50}},
+    "MOD": {"model": null},
+    "DLY": {"model": null},
+    "RVB": {"model": "Hall", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Mix": 15, "Decay": 35, "Trail": false}}
   }
 }

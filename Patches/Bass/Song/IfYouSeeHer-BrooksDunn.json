@@ -2,76 +2,16 @@
   "patch_name": "IfUSeeHer",
   "patch_vol": 52,
   "bpm": 70,
-  "ir": {
-    "name": "TC410"
-  },
+  "nam": {"name": "CleanB15 (slot 51): Ampeg B18 - Head DI - Bass Chan - Vol 2.5 (B-18N) + Apg115", "slot": 51, "settings": {"Gain": 48, "VOL": 50, "Bass": 58, "Middle": 50, "Treble": 44}},
   "modules": {
-    "NR": {
-      "model": "Gate",
-      "always_on": true,
-      "settings": {
-        "THRE": 10
-      }
-    },
-    "PRE": {
-      "model": "COMP",
-      "always_on": true,
-      "settings": {
-        "Sustain": 38,
-        "VOL": 58
-      }
-    },
-    "DST": {
-      "model": null
-    },
-    "AMP": {
-      "model": "Classic Bass",
-      "always_on": true,
-      "settings": {
-        "Gain": 20,
-        "Bass": 58,
-        "Middle": 50,
-        "MidFreq": 1,
-        "Treble": 44,
-        "VOL": 65
-      }
-    },
-    "CAB": {
-      "model": "User IR 9",
-      "always_on": true,
-      "settings": {
-        "VOL": 60
-      }
-    },
-    "EQ": {
-      "model": "Bass EQ 2",
-      "always_on": true,
-      "settings": {
-        "50Hz": 1,
-        "120Hz": 2,
-        "400Hz": -1,
-        "800Hz": 1,
-        "4.5kHz": -3,
-        "VOL": 52
-      }
-    },
-    "MOD": {
-      "model": null
-    },
-    "DLY": {
-      "model": null
-    },
-    "RVB": {
-      "model": "Plate",
-      "ctl": true,
-      "ctl_off_state": "off",
-      "ctl_on_state": "on",
-      "settings": {
-        "Mix": 18,
-        "Decay": 42,
-        "Damp": 55,
-        "Trail": true
-      }
-    }
+    "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 10}},
+    "PRE": {"model": "COMP", "always_on": true, "settings": {"Sustain": 38, "VOL": 58}},
+    "DST": {"model": null},
+    "AMP": {"model": null},
+    "CAB": {"model": null},
+    "EQ": {"model": "Bass EQ 2", "always_on": true, "settings": {"50Hz": 1, "120Hz": 2, "400Hz": -1, "800Hz": 1, "4.5kHz": -3, "VOL": 52}},
+    "MOD": {"model": null},
+    "DLY": {"model": null},
+    "RVB": {"model": "Plate", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Mix": 18, "Decay": 42, "Damp": 55, "Trail": true}}
   }
 }

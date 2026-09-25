@@ -23,15 +23,17 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 - Gain: 55, Blend: 65, VOL: 60, Bass: 58, Treble: 52
 - CTL off: bypassed (verse — the Toucher and fuzz pedal already carry the texture). CTL on: engaged (chorus — extra push and grit for the bigger hook).
 
-**AMP — Mess Bass (Mesa/Boogie Bass 400+)**
-- Gain: 55, VOL: 65, Bass: 55, Middle: 55, Treble: 55
-- Always on, same for both CTL states.
-- Modern, aggressive bass amp voicing that matches Muse's generally processed, contemporary alt-rock sound better than a vintage tube amp would.
-
-**CAB — User IR 8 (Sunn215)**
-- VOL: 62
-- Always on, same for both CTL states.
-- Fat 2x15 voicing that's specifically suited to a fuzz/distortion-heavy signal — this patch stacks fuzz, OD, and a filter, and Sunn215 keeps all of that from thinning out.
+**AMP/CAB — NAM SnapTone, slot 58: HairySVT** (always on)
+- Built from the `SVT SANS HAIRY DRIVE (SVT-CL)` NAM and the Sunn215 IR, combined into one snaptone.
+- Real Ampeg SVT-CL with the hairy drive setting, into the Sunn215 2x15 IR.
+- Fuzzed, synth-like bass. Hairy SVT drive into the Sunn 2x15.
+- Gain: 54, VOL: 50, Bass: 55, Middle: 55, Treble: 55
+- Gain 54: a little over default. This part wants more push than the other HairySVT patches.
+- Bass 55: a touch more low end.
+- Middle 55: a touch more midrange.
+- Treble 55: a touch more top end.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 58 directly.
 
 **EQ — Bass EQ 2**
 - 50Hz: +4, 120Hz: +1, 400Hz: -3, 800Hz: +3, 4.5kHz: +3, VOL: 55
@@ -50,11 +52,6 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 - Mix: 22, Decay: 32, Trail: On
 - CTL off: bypassed (verse — tight and dry, letting the filter/fuzz texture read clearly). CTL on: engaged (chorus).
 - Opens the space up for the bigger chorus hook, matching the arena-rock scale that section is going for.
-
-## CAB IR — Sunn215 (Slot 8)
-
-- Sunn 200S 2x15, confirmed loaded on User IR slot 8. Notably good pairing for distortion/fuzz-heavy bass tones, per `IRs/ir.md`.
-- Encoded directly into the `.prst` as a real, active CAB reference (`User IR 8`) — no manual loading needed for this one.
 
 ## CTL summary
 

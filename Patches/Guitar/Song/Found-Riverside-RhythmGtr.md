@@ -4,10 +4,6 @@ Riverside, from Love, Fear and the Time Machine. BPM est. Open, art-rock rhythm 
 Instrument: Stratocaster (HSS). Use the neck or middle pickup for verses, bridge pickup for choruses.
 GP-5 only, Stratocaster (HSS), no pedalboard.
 
-## AMP: Dark Twin + CAB: EVM112 IR (User IR 5)
-
-EVM112 (Electro-Voice EVM12L) — open and full-range. Keeps clean arpeggios clear and lets the chorus sit on top.
-
 ## Module chain
 
 **NR — Gate**, always on.
@@ -22,13 +18,17 @@ Light leveling for even arpeggios.
 Gain: 25, Tone: 50, VOL: 62.
 On CTL. Mild crunch for the chorus. Gain 25 stays open and does not fill up the space.
 
-**AMP — Dark Twin**, always on.
-Gain: 30, VOL: 60, Bass: 50, Middle: 50, Treble: 45, Bright: off.
-Twin Reverb, clean with a lot of headroom. Gain 30 takes the edge off. Bright off keeps the Strat from getting harsh.
-
-**CAB — User IR 5 (EVM112)**, always on.
-VOL: 60.
-EVM112 IR.
+**AMP/CAB — NAM SnapTone, slot 68: ClassicMarshall** (always on)
+- Built from the `JCM800 2203 - P5 B5 M5 T5 MV5 G4 - AZG - 700` NAM and the V7X_dc (Marshall 1960AV) IR, combined into one snaptone.
+- Real JCM800 2203 at Gain 4, Master 5: classic edge-of-crunch Marshall. Into a 1960AV 4x12.
+- No Mesa Mark capture on hand. A JCM800 at low gain gives the edge the part needs.
+- Gain: 50, VOL: 50, Bass: 50, Middle: 50, Treble: 45
+- Gain 50: the capture as built.
+- Bass 50: flat.
+- Middle 50: flat.
+- Treble 45: top end pulled back a little.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 68 directly.
 
 **EQ — Guitar EQ 2**, always on.
 100Hz: -2, 500Hz: -1, 1kHz: 0, 3kHz: +1, 6kHz: +1, VOL: 50.

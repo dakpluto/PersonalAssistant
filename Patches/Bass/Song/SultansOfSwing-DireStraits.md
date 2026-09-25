@@ -5,14 +5,6 @@ GP-5 only, P/J bass, no pedalboard.
 John Illsley's part is a clean, moving fingerstyle line with walking passing tones between chord changes and a steady, driving eighth-note feel under Knopfler's fingerpicked Strat.
 It's a late-70s, pre-gloss tone: dry, woody, and even. It has to leave the mids open for the guitar.
 
-## AMP: Foxy Bass (Vox AC-100) + CAB: TC410 IR (User IR 9)
-
-Foxy Bass is a simple Bass/Treble voicing. It doesn't draw attention to itself, which fits this record's direct, unhyped sound.
-TC410 is flat with a mild 100Hz bump, so it's a neutral cab that won't color the part.
-
-- VOL: 66, Bass: 55, Treble: 55. Balanced. No tricks.
-- CAB VOL: 60.
-
 ## Module chain
 
 **NR — Gate**, always on.
@@ -24,9 +16,17 @@ A clean level push for the long outro solo. The band gets louder, and the bass h
 
 **DST — off.** Clean the whole way.
 
-**AMP — Foxy Bass**, always on. VOL 66, Bass 55, Treble 55.
-
-**CAB — User IR 9 (TC410)**, always on. VOL 60.
+**AMP/CAB — NAM SnapTone, slot 54: FullB15** (always on)
+- Built from the `Ampeg B18 - Head DI - Bass Chan - Vol 5 (B-18N)` NAM and the Apg115410 IR, combined into one snaptone.
+- Real Ampeg B-18N at volume 5, warmer and fuller than the clean capture, into the Apg115410 (1x15 + 4x10) IR.
+- John Illsley's line is warm and round under Knopfler's picking. Fuller B-15.
+- Gain: 50, VOL: 50, Bass: 55, Middle: 50, Treble: 55
+- Gain 50: the capture as built.
+- Bass 55: a touch more low end.
+- Middle 50: flat.
+- Treble 55: a touch more top end.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 54 directly.
 
 **EQ — Bass EQ 2**, always on.
 50Hz: +1, 120Hz: +2, 400Hz: 0, 800Hz: +2, 4.5kHz: +1, VOL: 55.

@@ -2,87 +2,16 @@
   "patch_name": "WWMF-EW",
   "patch_vol": 52,
   "bpm": 72,
-  "ir": {
-    "name": "Apg115410"
-  },
+  "nam": {"name": "WorshipSVT (slot 59): SVT CLEAN PUSHED (SVT-CL) + Ampeg SVT Bright Beta52", "slot": 59, "settings": {"Gain": 48, "VOL": 50, "Bass": 62, "Middle": 45, "Treble": 40}},
   "modules": {
-    "NR": {
-      "model": "Gate",
-      "always_on": true,
-      "settings": {
-        "THRE": 10
-      }
-    },
-    "PRE": {
-      "model": "COMP4",
-      "always_on": true,
-      "settings": {
-        "Sustain": 45,
-        "Attack": 40,
-        "Clip": 40,
-        "VOL": 58
-      }
-    },
-    "DST": {
-      "model": "Bass OD",
-      "ctl": true,
-      "ctl_off_state": "off",
-      "ctl_on_state": "on",
-      "settings": {
-        "Gain": 30,
-        "Blend": 30,
-        "VOL": 55,
-        "Bass": 55,
-        "Treble": 45
-      }
-    },
-    "AMP": {
-      "model": "Classic Bass",
-      "always_on": true,
-      "settings": {
-        "Gain": 22,
-        "Bass": 62,
-        "Middle": 45,
-        "MidFreq": 1,
-        "Treble": 40,
-        "VOL": 65
-      }
-    },
-    "CAB": {
-      "model": "User IR 2",
-      "always_on": true,
-      "settings": {
-        "VOL": 60
-      }
-    },
-    "EQ": {
-      "model": "Bass EQ 1",
-      "always_on": true,
-      "settings": {
-        "33Hz": 2,
-        "150Hz": 1,
-        "600Hz": -2,
-        "2kHz": 1,
-        "8kHz": -3,
-        "VOL": 52
-      }
-    },
-    "MOD": {
-      "model": null
-    },
-    "DLY": {
-      "model": null
-    },
-    "RVB": {
-      "model": "Hall",
-      "ctl": true,
-      "ctl_off_state": "off",
-      "ctl_on_state": "on",
-      "settings": {
-        "Mix": 12,
-        "Decay": 40,
-        "Trail": true
-      }
-    }
+    "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 10}},
+    "PRE": {"model": "COMP4", "always_on": true, "settings": {"Sustain": 45, "Attack": 40, "Clip": 40, "VOL": 58}},
+    "DST": {"model": "Bass OD", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Gain": 30, "Blend": 30, "VOL": 55, "Bass": 55, "Treble": 45}},
+    "AMP": {"model": null},
+    "CAB": {"model": null},
+    "EQ": {"model": "Bass EQ 1", "always_on": true, "settings": {"33Hz": 2, "150Hz": 1, "600Hz": -2, "2kHz": 1, "8kHz": -3, "VOL": 52}},
+    "MOD": {"model": null},
+    "DLY": {"model": null},
+    "RVB": {"model": "Hall", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Mix": 12, "Decay": 40, "Trail": true}}
   }
 }

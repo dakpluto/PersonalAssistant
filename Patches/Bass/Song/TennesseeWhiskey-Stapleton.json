@@ -2,20 +2,16 @@
   "patch_name": "TN Whiskey",
   "patch_vol": 52,
   "bpm": 68,
-  "ir": { "name": "Apg115" },
+  "nam": {"name": "CleanB15 (slot 51): Ampeg B18 - Head DI - Bass Chan - Vol 2.5 (B-18N) + Apg115", "slot": 51, "settings": {"Gain": 53, "VOL": 50, "Bass": 62, "Middle": 52, "Treble": 45}},
   "modules": {
-    "NR":  { "model": "Gate", "always_on": true, "settings": { "THRE": 15 } },
-    "PRE": { "model": "Micro Boost", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
-             "settings": { "Gain": 45 } },
-    "DST": { "model": null },
-    "AMP": { "model": "Classic Bass", "always_on": true,
-             "settings": { "Gain": 30, "Bass": 62, "Middle": 52, "MidFreq": 1, "Treble": 45, "VOL": 65 } },
-    "CAB": { "model": "User IR 1", "always_on": true, "settings": { "VOL": 60 } },
-    "EQ":  { "model": "Bass EQ 1", "always_on": true,
-             "settings": { "33Hz": 4, "150Hz": 1, "600Hz": -3, "2kHz": 2, "8kHz": 4, "VOL": 55 } },
-    "MOD": { "model": null },
-    "DLY": { "model": null },
-    "RVB": { "model": "Room", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
-             "settings": { "Mix": 18, "Decay": 30, "Trail": true } }
+    "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 15}},
+    "PRE": {"model": "Micro Boost", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Gain": 45}},
+    "DST": {"model": null},
+    "AMP": {"model": null},
+    "CAB": {"model": null},
+    "EQ": {"model": "Bass EQ 1", "always_on": true, "settings": {"33Hz": 4, "150Hz": 1, "600Hz": -3, "2kHz": 2, "8kHz": 4, "VOL": 55}},
+    "MOD": {"model": null},
+    "DLY": {"model": null},
+    "RVB": {"model": "Room", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Mix": 18, "Decay": 30, "Trail": true}}
   }
 }

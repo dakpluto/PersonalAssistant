@@ -21,13 +21,17 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 **DST — Off**
 - No drive. Classic 70s funk slap tone is clean and punchy, not distorted.
 
-**AMP — Classic Bass (Ampeg SVT)**
-- Gain: 40, Bass: 62, Middle: 48, MidFreq: 220Hz, Treble: 58, VOL: 68
-- Always on. SVT is genuinely the amp of this era and this genre — deep funk and soul records from the 70s were built on it. MidFreq at 220Hz (the deepest option) keeps the low end round and full rather than boxy, since the EQ module below handles the midrange scoop separately. Treble pushed for the pop snap.
-
-**CAB — User IR 3 (Apg810)**
-- VOL: 62
-- Always on. Ampeg SVT-810E — the classic "wall of Ampeg" bass stack, the direct real-world pairing for the Classic Bass AMP model and genuinely period-correct for this band.
+**AMP/CAB — NAM SnapTone, slot 60: SoulB18** (always on)
+- Built from the `Ampeg B18 - Head DI - Bass Chan - Vol 7.5 (B-18N)` NAM and the Apg115 IR, combined into one snaptone.
+- Real Ampeg B-18N at volume 7.5, where the tubes start to growl, into the Apg115 B-15 cab IR.
+- Larry Graham's tone is gritty tube funk. The cranked B-15 gives the growl.
+- Gain: 52, VOL: 50, Bass: 62, Middle: 48, Treble: 58
+- Gain 52: a little over default. This part wants more push than the other SoulB18 patches.
+- Bass 62: more low end.
+- Middle 48: midrange pulled back a little.
+- Treble 58: more top end.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 60 directly.
 
 **EQ — Bass EQ 1**
 - 33Hz: +5, 150Hz: -2, 600Hz: -4, 2kHz: +3, 8kHz: +5, VOL: 56
@@ -42,11 +46,6 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 **RVB — Room**
 - Mix: 12, Decay: 22, Trail: On
 - Always on. Just a touch of natural space — enough to feel like a real room/band, not enough to soften the percussive attack this tone depends on.
-
-## CAB IR — Apg810 (Slot 3)
-
-- Ampeg SVT-810E, confirmed loaded on User IR slot 3 — the classic "wall of Ampeg" bass stack, genuinely period-correct for this band and era.
-- Encoded directly into the `.prst` as a real, active CAB reference (`User IR 3`) — no manual loading needed for this one.
 
 ## Why no CTL
 

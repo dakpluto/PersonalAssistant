@@ -7,11 +7,6 @@ I haven't verified exactly which guitar parts are on the record. This is built f
 Instrument: Stratocaster (HSS). Neck or position 4 (neck+middle) for rhythm. Neck pickup for the fills.
 GP-5 only, Stratocaster (HSS), no pedalboard.
 
-## AMP: Dark Twin + CAB: EVM112 IR (User IR 5)
-
-A blackface Twin is the default Nashville clean. Big headroom, a smooth top, no breakup.
-EVM112 is the loaded guitar cab with a flat, hi-fi response. It suits a clean tone better than the V30's mid bark.
-
 ## Module chain
 
 **NR — Gate**, always on.
@@ -26,12 +21,17 @@ Ross-style squash is a country staple. 35 evens out soft strums and adds a bit o
 Gain: 18, Tone: 55, VOL: 68.
 Barely any drive. Mostly a level and mid push so the fills sit above the vocal. Gain 18 just rounds the attack.
 
-**AMP — Dark Twin**, always on.
-Gain: 28, VOL: 62, Bass: 45, Middle: 45, Treble: 58, Bright: off.
-Clean with lots of headroom. Bass 45 keeps it out of the piano's low end. Bright off, because single coils plus Bright plus Treble 58 is ice-pick territory.
-
-**CAB — User IR 5 (EVM112)**, always on.
-VOL: 60.
+**AMP/CAB — NAM SnapTone, slot 61: TwinClean** (always on)
+- Built from the `Tim R Fender TwinVerb Norm Bright (Twin Reverb)` NAM and the TWIN REVERB __ CLEAN (vulturized Twin) IR, combined into one snaptone.
+- Real Fender Twin Reverb, Normal channel with Bright on, into the matching Twin cab IR (clean blend).
+- Clean, glassy Nashville electric. Twin Normal Bright.
+- Gain: 49, VOL: 50, Bass: 45, Middle: 45, Treble: 58
+- Gain 49: a little under default. This part wants less push than the other TwinClean patches.
+- Bass 45: low end pulled back a little.
+- Middle 45: midrange pulled back a little.
+- Treble 58: more top end.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 61 directly.
 
 **EQ — Guitar EQ 2**, always on.
 100Hz: -2, 500Hz: 0, 1kHz: 0, 3kHz: +1, 6kHz: -2, VOL: 50.

@@ -2,92 +2,16 @@
   "patch_name": "Neon-Gtr",
   "patch_vol": 50,
   "bpm": 104,
-  "ir": {
-    "name": "EVM112"
-  },
+  "nam": {"name": "BrightTwin (slot 64): Tim R Fender TwinVerb Vibrato Bright (Twin Reverb) + TWIN REVERB __ BALANCED (vulturized Twin)", "slot": 64, "settings": {"Gain": 52, "VOL": 50, "Bass": 52, "Middle": 45, "Treble": 55}},
   "modules": {
-    "NR": {
-      "model": "Gate",
-      "always_on": true,
-      "settings": {
-        "THRE": 14
-      }
-    },
-    "PRE": {
-      "model": "COMP4",
-      "always_on": true,
-      "settings": {
-        "Sustain": 48,
-        "Attack": 55,
-        "Clip": 40,
-        "VOL": 58
-      }
-    },
-    "DST": {
-      "model": "Green OD",
-      "ctl": true,
-      "ctl_off_state": "off",
-      "ctl_on_state": "on",
-      "settings": {
-        "Gain": 26,
-        "Tone": 52,
-        "VOL": 66
-      }
-    },
-    "AMP": {
-      "model": "Dark Twin",
-      "always_on": true,
-      "settings": {
-        "Gain": 28,
-        "VOL": 62,
-        "Bass": 52,
-        "Middle": 45,
-        "Treble": 55,
-        "Bright": true
-      }
-    },
-    "CAB": {
-      "model": "User IR 5",
-      "always_on": true,
-      "settings": {
-        "VOL": 60
-      }
-    },
-    "EQ": {
-      "model": "Guitar EQ 2",
-      "always_on": true,
-      "settings": {
-        "100Hz": 1,
-        "500Hz": -2,
-        "1kHz": 0,
-        "3kHz": 2,
-        "6kHz": 0,
-        "VOL": 50
-      }
-    },
-    "MOD": {
-      "model": null
-    },
-    "DLY": {
-      "model": "Analog",
-      "ctl": true,
-      "ctl_off_state": "off",
-      "ctl_on_state": "on",
-      "settings": {
-        "Mix": 12,
-        "Time": 290,
-        "Feedback": 15,
-        "Trail": true
-      }
-    },
-    "RVB": {
-      "model": "Room",
-      "always_on": true,
-      "settings": {
-        "Mix": 12,
-        "Decay": 25,
-        "Trail": true
-      }
-    }
+    "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 14}},
+    "PRE": {"model": "COMP4", "always_on": true, "settings": {"Sustain": 48, "Attack": 55, "Clip": 40, "VOL": 58}},
+    "DST": {"model": "Green OD", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Gain": 26, "Tone": 52, "VOL": 66}},
+    "AMP": {"model": null},
+    "CAB": {"model": null},
+    "EQ": {"model": "Guitar EQ 2", "always_on": true, "settings": {"100Hz": 1, "500Hz": -2, "1kHz": 0, "3kHz": 2, "6kHz": 0, "VOL": 50}},
+    "MOD": {"model": null},
+    "DLY": {"model": "Analog", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Mix": 12, "Time": 290, "Feedback": 15, "Trail": true}},
+    "RVB": {"model": "Room", "always_on": true, "settings": {"Mix": 12, "Decay": 25, "Trail": true}}
   }
 }

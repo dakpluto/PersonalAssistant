@@ -18,12 +18,10 @@ CTL on = the McCartney-bridge driving sound.
 Tempo isn't metronomic — Ringo drags and pushes through the song on purpose.
 BPM set to 85 as the verse pulse; don't treat it as a click track.
 
-## Why no NAM
+## Why the Avalon DI snaptone
 
-Bass NAMs get strong default preference in this rig now, but none of the five Darkglass captures fit here.
-They're all Aguilar DB751-into-Darkglass-cab voicings — modern, mid-forward, built for aggressive tones.
 This song needs a vintage, DI'd, hi-fi clean sound with almost no amp coloration.
-GP-5 AMP + IR gets closer to that than any of the available NAMs, so that's what this patch uses.
+The AvalonAD2022 snaptone is a studio DI capture with no cab, so it's the closest match in the set.
 
 ## GP-5 settings
 
@@ -43,21 +41,17 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 **DST — Off**
 - Not used. No grit anywhere in this bass part — stays clean start to finish.
 
-**AMP — Classic Bass (Ampeg SVT)**
-- Gain: 32
-- Bass: 50
-- Middle: 62
-- MidFreq: 3kHz
-- Treble: 62
-- VOL: 65
-- Always on.
-- Gain kept low to stay clean — this is a headroom setting, not a drive setting.
-- Middle pushed and MidFreq set to 3kHz for upper-mid definition — that's where McCartney's melodic runs need to cut through, since a real Rickenbacker DI has way more top-end presence than a typical SVT stack. This compensates for that.
-
-**CAB — User IR 4 (EBS410, Slot 4)**
-- VOL: 62
-- Always on.
-- EBS410 has an accentuated high-mid boost around 2-3kHz — closest thing in the IR library to the Rickenbacker's natural brightness. Explicitly the right call for a clean, low-gain bass patch per the pack notes.
+**AMP/CAB — NAM SnapTone, slot 52: AvalonAD2022** (always on)
+- Built from the `Avalon - 38 dB - Chan 1 (Avalon AD2022)` NAM and no cab IR (straight DI), combined into one snaptone.
+- Avalon AD2022 Class A preamp at 38 dB. A studio DI, not an amp: no speaker coloration.
+- McCartney's Rickenbacker on this record has a DI'd, hi-fi clean sound with almost no amp coloration. The Avalon DI is exactly that.
+- Gain: 50, VOL: 50, Bass: 50, Middle: 62, Treble: 62
+- Gain 50: the capture as built.
+- Bass 50: flat.
+- Middle 62: more midrange.
+- Treble 62: more top end.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 52 directly.
 
 **EQ — Bass EQ 1**
 - 33Hz: +3
@@ -67,7 +61,7 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 - 8kHz: +3
 - VOL: 55
 - Always on, same for both CTL states.
-- 600Hz cut clears out boxiness. 2kHz and 8kHz boosts add the note definition and top-end sparkle a DI'd Rickenbacker naturally has that the SVT-voiced AMP doesn't fully deliver on its own.
+- 600Hz cut clears out boxiness. 2kHz and 8kHz boosts add the note definition and top-end sparkle a DI'd Rickenbacker naturally has that a flat DI doesn't add on its own.
 
 **MOD — Off**
 - No modulation. This bass tone is bone dry on the record — a chorus or vibe here would just smear the melodic lines. Skipping the usual light-touch default on purpose.
@@ -98,7 +92,7 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 - LEVEL: 60
 - Mode: NORMAL
 - Light-moderate compression evens out finger dynamics without squashing the melodic phrasing — keeps the DI'd tone consistent the way the original recording's chain would have.
-- TONE pushed toward bright to keep finger attack audible before it hits the AMP/EQ stage.
+- TONE pushed toward bright to keep finger attack audible before it hits the snaptone/EQ stage.
 
 **3. Donner Stylish Fuzz — Bypassed**
 - Footswitch off. No fuzz anywhere in this song's bass part.

@@ -4,10 +4,6 @@ Jo Dee Messina, 90s country-pop. About 118 BPM, est. Bright, bouncy country-rock
 Instrument: Stratocaster (HSS). Use the bridge or bridge-and-middle position for the twang.
 GP-5 only, Stratocaster (HSS), no pedalboard.
 
-## AMP: Bellman 59B + CAB: EVM112 IR (User IR 5)
-
-EVM112 (Electro-Voice EVM12L) — open and full-range, the best loaded guitar-friendly cab for a bright clean-crunch sound. The Origin Effects Tweed Combo or American Twin IRs would also fit but are not loaded.
-
 ## Module chain
 
 **NR — Gate**, always on.
@@ -22,13 +18,17 @@ Country-style compression. 40 evens out the strums and adds snap.
 Gain: 30, Tone: 60, VOL: 62.
 On CTL. Pushes the amp for a bigger chorus strum. Tone 60 keeps the twang.
 
-**AMP — Bellman 59B**, always on.
-Gain: 35, PRES: 55, VOL: 62, Bass: 45, Middle: 55, Treble: 58.
-Fender Bassman bright channel. Classic country-rock crunch with a lot of snap. Gain 35 is edge of breakup. Treble 58 keeps the twang.
-
-**CAB — User IR 5 (EVM112)**, always on.
-VOL: 60.
-EVM112 IR.
+**AMP/CAB — NAM SnapTone, slot 63: EdgyTwang** (always on)
+- Built from the `EDGY - Fender Deluxe Reverb 1965 [Hyper Accuracy]` NAM and the Origin Effects Brown Deluxe 1x12 Medium Mix IR, combined into one snaptone.
+- Real 1965 Deluxe Reverb at the "edgy" setting, just starting to break up, into the Brown Deluxe 1x12.
+- Country-pop twang with a bit of grit. Edgy Deluxe.
+- Gain: 51, VOL: 50, Bass: 45, Middle: 55, Treble: 58
+- Gain 51: a little over default. This part wants more push than the other EdgyTwang patches.
+- Bass 45: low end pulled back a little.
+- Middle 55: a touch more midrange.
+- Treble 58: more top end.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 63 directly.
 
 **EQ — Guitar EQ 1**, always on.
 125Hz: -1, 400Hz: -1, 800Hz: 0, 1.6kHz: +2, 4kHz: +2, VOL: +50.

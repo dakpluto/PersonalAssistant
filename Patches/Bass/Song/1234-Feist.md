@@ -25,15 +25,17 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 **DST — Off**
 - No drive. This tone is clean and warm from top to bottom, built entirely around touch and roundness.
 
-**AMP — Tweedy (Fender Tweed Deluxe, Clean)**
-- Gain: 28, Tone: 55, VOL: 65
-- Always on, same for both CTL states.
-- A simple, warm vintage American clean voicing rather than a modern bass amp — fits the retro, upright-adjacent character this song is going for. Gain kept low for genuine clean headroom.
-
-**CAB — User IR 1 (Apg115)**
-- VOL: 60
-- Always on, same for both CTL states.
-- Ampeg Heritage B-15 — the quintessential vintage warm bass amp voicing, the same era-correct sound behind a lot of 60s pop and soul. A direct fit for this song's retro flavor.
+**AMP/CAB — NAM SnapTone, slot 54: FullB15** (always on)
+- Built from the `Ampeg B18 - Head DI - Bass Chan - Vol 5 (B-18N)` NAM and the Apg115410 IR, combined into one snaptone.
+- Real Ampeg B-18N at volume 5, warmer and fuller than the clean capture, into the Apg115410 (1x15 + 4x10) IR.
+- Indie-pop with a warm, vintage feel. The fuller B-15 is round without sounding hi-fi.
+- Gain: 51, VOL: 50, Bass: 50, Middle: 50, Treble: 50
+- Gain 51: a little over default. This part wants more push than the other FullB15 patches.
+- Bass 50: flat.
+- Middle 50: flat.
+- Treble 50: flat.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 54 directly.
 
 **EQ — Bass EQ 1**
 - 33Hz: +3, 150Hz: +1, 600Hz: -2, 2kHz: +2, 8kHz: +3, VOL: 55
@@ -50,11 +52,6 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 - Mix: 20, Decay: 30, Trail: On
 - CTL off: bypassed (verse — dry and bouncy). CTL on: engaged (build).
 - A touch of room opens things up as the horns and layers build, matching the song's gradual broadening.
-
-## CAB IR — Apg115 (Slot 1)
-
-- Ampeg Heritage B-15, confirmed loaded on User IR slot 1. Prominent 100Hz peak adds real girth — the classic warm, vintage bass voicing this retro-pop tune wants.
-- Encoded directly into the `.prst` as a real, active CAB reference (`User IR 1`) — no manual loading needed for this one.
 
 ## CTL summary
 

@@ -5,19 +5,13 @@ Bass: Harley Benton P/J, 5-string, passive. Full board.
 
 CTL Off = verse. CTL On = chorus.
 
-## AMP: Classic Bass (Ampeg SVT) + CAB: Apg115 IR (User IR 1)
-
-Rebuilt 2026-09-18 off the GP-5's own AMP + a loaded IR — NAMs are off for now (Valeton N->S volume issue, device-side). The old NAM was the Darkglass Vintage Deluxe, the warmer, more vintage-tube-flavored of the Darkglass captures, dialed at a moderate gain for natural warmth and looseness rather than a pristine clean tone. Classic Bass at the same moderate gain covers that territory; Apg115 (the vintage Ampeg Heritage B-15 1x15, girth-adding 100Hz peak) is the vintage-flavored pick in the loaded IR set, fitting the same 90s grunge character the NAM was chosen for.
-
-The verse-to-chorus dynamic still comes from the same mechanism used elsewhere in this set: a CTL-assigned boost and reverb around a constant amp voice, not a change in the amp/drive character itself.
-
 ## GP-5 Settings
 
 Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB
 
 **NR — Gate**
 - THRE: 24
-- Always on. Moderate — enough to clean up idle noise on a NAM with some inherent drive baked in, without choking sustained notes.
+- Always on. Moderate — enough to clean up idle noise once the boost pushes the snaptone into grit, without choking sustained notes.
 
 **PRE — Micro Boost** (MXR M133 Micro Amp)
 - Gain: 55
@@ -27,13 +21,17 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB
 **DST — Off**
 Not used. The amp's own moderate gain carries this patch's drive character — a separate drive pedal on top would just muddy it.
 
-**AMP — Classic Bass**, always on.
-- Gain: 40 — enough natural warmth/looseness for a grunge-era tone, not clean, not maxed-aggressive.
-- Bass: 55, Middle: 58, MidFreq: 450Hz — Middle nudged up slightly for presence under the chorus's wall of guitars.
-- Treble: 55.
-- VOL: 65.
-
-**CAB — User IR 1 (Apg115)**, always on. VOL 62.
+**AMP/CAB — NAM SnapTone, slot 53: CleanSVT** (always on)
+- Built from the `SVT CLEAN (SVT-CL)` NAM and the Apg810 IR, combined into one snaptone.
+- Real Ampeg SVT-CL preamp on its clean setting, into the Apg810 8x10 IR.
+- 90s alt-rock. Clean SVT for the verses. DST handles the heavy parts.
+- Gain: 54, VOL: 50, Bass: 55, Middle: 58, Treble: 55
+- Gain 54: a little over default. This part wants more push than the other CleanSVT patches.
+- Bass 55: a touch more low end.
+- Middle 58: more midrange.
+- Treble 55: a touch more top end.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 53 directly.
 
 **EQ — Bass EQ 1**
 - 33Hz: +2, 150Hz: +1, 600Hz: -3, 2kHz: +6, 8kHz: +2, VOL: 54
@@ -65,10 +63,10 @@ Signal chain order: Flamma FS-08 Octave → Donner Ultimate Comp → Donner Styl
 
 **Donner Ultimate Comp — engaged**
 - COMP: 42, TONE: 52, LEVEL: 55, Mode: NORMAL
-- Evens out dynamics across a song with a genuinely big quiet-to-loud swing — keeps the verse controlled and the chorus from spiking unevenly. NORMAL mode — nothing extra to brighten, the Vintage Deluxe's own voicing already has enough character.
+- Evens out dynamics across a song with a genuinely big quiet-to-loud swing — keeps the verse controlled and the chorus from spiking unevenly. NORMAL mode — nothing extra to brighten, the SVT snaptone's own voicing already has enough character.
 
 **Donner Stylish Fuzz — bypassed**
-No separate fuzz texture — the Vintage Deluxe NAM already supplies this patch's drive character; stacking a fuzz pedal on top would be redundant and muddy the tone.
+No separate fuzz texture — the Micro Boost pushing the SVT snaptone already supplies this patch's drive; stacking a fuzz pedal on top would be redundant and muddy the tone.
 
 **Joyo Tidal Wave — engaged**
 - Drive: 20, Blend: 30, Presence: 52, Level: 55
@@ -77,7 +75,7 @@ No separate fuzz texture — the Vintage Deluxe NAM already supplies this patch'
 - Bass-Shift toggle: 40Hz (fuller low end)
 - Cab-Sim (DI out): On
 - Ground Lift: Off (only flip on if a specific room throws hum)
-- Drive kept light — foundational glue and a consistent DI feed, not a second tone-shaping gain stage. The NAM carries the actual drive character.
+- Drive kept light — foundational glue and a consistent DI feed, not a second tone-shaping gain stage. The boosted snaptone carries the actual drive.
 
 **Joyo Narcissus — bypassed**
 Modulation is handled by the GP-5's own MOD module (B-Chorus, light, always on). Stacking this pedal on top would fight with that.

@@ -4,10 +4,6 @@ Pat Metheny, 1976. BPM est., brisk swing. Metheny is known for a warm, round, da
 Instrument: Stratocaster (HSS). A Strat is much brighter and snappier than a hollowbody, so the patch pulls the highs down hard. Use the neck pickup, tone knob around 4-5, and pick with the fleshy part of the pick or thumb-side to soften the attack.
 GP-5 only, Stratocaster (HSS), no pedalboard.
 
-## AMP: Dark Twin + CAB: EVM112 IR (User IR 5)
-
-EVM112 (Electro-Voice EVM12L) — open, full-range, works for guitar or bass. Suits a clean, jazz-leaning tone that needs warmth without a bright Fender-cab ring.
-
 ## Module chain
 
 **NR — Gate**, always on.
@@ -22,13 +18,17 @@ Light Ross-style leveling. 30 evens the chord and single-note attack and adds a 
 Gain: 12, Tone: 40, VOL: 65.
 On CTL. Gain 12 is a warm push, not overdrive. Tone 40 keeps it dark. VOL 65 gives a small lead lift.
 
-**AMP — Dark Twin**, always on.
-Gain: 25, VOL: 60, Bass: 55, Middle: 50, Treble: 35, Bright: off.
-Twin Reverb is the classic clean jazz platform, with lots of headroom. Gain 25 stays clean. Treble 35 and Bright off tame the Strat's top end. Bass 55 adds body.
-
-**CAB — User IR 5 (EVM112)**, always on.
-VOL: 60.
-EVM112 IR.
+**AMP/CAB — NAM SnapTone, slot 64: BrightTwin** (always on)
+- Built from the `Tim R Fender TwinVerb Vibrato Bright (Twin Reverb)` NAM and the TWIN REVERB __ BALANCED (vulturized Twin) IR, combined into one snaptone.
+- Real Twin Reverb, Vibrato channel with Bright on, into the Twin cab IR (balanced blend).
+- Warm, round jazz clean. The Twin Vibrato channel is rounder than the Normal.
+- Gain: 50, VOL: 50, Bass: 55, Middle: 50, Treble: 35
+- Gain 50: the capture as built.
+- Bass 55: a touch more low end.
+- Middle 50: flat.
+- Treble 35: top end pulled back noticeably.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 64 directly.
 
 **EQ — Guitar EQ 1**, always on.
 125Hz: 0, 400Hz: +2, 800Hz: 0, 1.6kHz: -2, 4kHz: -5, VOL: +50.

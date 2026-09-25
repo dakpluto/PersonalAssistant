@@ -2,19 +2,16 @@
   "patch_name": "SCOM-GNR",
   "patch_vol": 55,
   "bpm": 125,
-  "ir": { "name": "Hartke410" },
+  "nam": {"name": "GrittySVT (slot 57): SVT PUSHED (SVT-CL) + Apg810", "slot": 57, "settings": {"Gain": 48, "VOL": 50, "Bass": 55, "Middle": 60, "Treble": 58}},
   "modules": {
-    "NR":  { "model": "Gate", "always_on": true, "settings": { "THRE": 20 } },
-    "PRE": { "model": "COMP4", "always_on": true, "settings": { "Sustain": 50, "Attack": 40, "Clip": 30, "VOL": 60 } },
-    "DST": { "model": "Bass OD", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
-             "settings": { "Gain": 38, "Blend": 42, "VOL": 62, "Bass": 50, "Treble": 55 } },
-    "AMP": { "model": "Classic Bass", "always_on": true,
-             "settings": { "Gain": 40, "Bass": 55, "Middle": 60, "MidFreq": 2, "Treble": 58, "VOL": 65 } },
-    "CAB": { "model": "User IR 6", "always_on": true, "settings": { "VOL": 58 } },
-    "EQ":  { "model": "Bass EQ 1", "always_on": true,
-             "settings": { "33Hz": 0, "150Hz": 1, "600Hz": 2, "2kHz": 3, "8kHz": 1, "VOL": 54 } },
-    "MOD": { "model": null },
-    "DLY": { "model": null },
-    "RVB": { "model": null }
+    "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 20}},
+    "PRE": {"model": "COMP4", "always_on": true, "settings": {"Sustain": 50, "Attack": 40, "Clip": 30, "VOL": 60}},
+    "DST": {"model": "Bass OD", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Gain": 38, "Blend": 42, "VOL": 62, "Bass": 50, "Treble": 55}},
+    "AMP": {"model": null},
+    "CAB": {"model": null},
+    "EQ": {"model": "Bass EQ 1", "always_on": true, "settings": {"33Hz": 0, "150Hz": 1, "600Hz": 2, "2kHz": 3, "8kHz": 1, "VOL": 54}},
+    "MOD": {"model": null},
+    "DLY": {"model": null},
+    "RVB": {"model": null}
   }
 }

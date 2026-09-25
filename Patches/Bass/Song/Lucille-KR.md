@@ -5,11 +5,6 @@ A story-song, not a rocker — Lucille walking out on her husband in a bar, told
 The bass job here is to sit under the story, not draw attention to itself.
 GP-5 only, Sire fretless (Passive), no pedalboard.
 
-## IR: Apg115410
-
-Summed Ampeg Heritage B-15 + HLF 410 blend — flat response, thunderous low end. Slot 2.
-Paired with Classic Bass (Ampeg SVT) for AMP — the B-15/SVT lineage is exactly the warm, unhyped low end this song wants.
-
 ## Module chain
 
 **NR — Gate**, always on.
@@ -23,14 +18,19 @@ On for the chorus/hook lines — a small nudge forward, not a different tone.
 **DST — off.**
 No drive anywhere. This is a clean, warm 70s country ballad.
 
-**AMP — Classic Bass (Ampeg SVT)**, always on.
-Gain: 35, Bass: 60, Middle: 55, MidFreq: 450Hz, Treble: 45, VOL: 65.
-Moderate gain for headroom, bass and mid pushed for warmth and body, treble held back so the fretless stays round instead of zingy.
+**AMP/CAB — NAM SnapTone, slot 51: CleanB15** (always on)
+- Built from the `Ampeg B18 - Head DI - Bass Chan - Vol 2.5 (B-18N)` NAM and the Apg115 IR, combined into one snaptone.
+- Real Ampeg B-18N fliptop (the B-15 preamp circuit), captured clean at volume 2.5, into the Apg115 B-15 cab IR.
+- 1977 Nashville countrypolitan. Clean B-15 is exactly what those sessions used.
+- Gain: 56, VOL: 50, Bass: 60, Middle: 55, Treble: 45
+- Gain 56: noticeably over default. This part wants more push than the other CleanB15 patches.
+- Bass 60: more low end.
+- Middle 55: a touch more midrange.
+- Treble 45: top end pulled back a little.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 51 directly.
 
-**CAB — User IR 2 (Apg115410)**, always on.
-VOL: 60. The B-15+410 blend gives a flat, full low end without any hype — exactly what a supportive story-song bass part needs.
-
-**EQ — off.** The AMP's own tone controls handle shaping; no need to stack another EQ stage.
+**EQ — off.** The snaptone's own tone controls handle shaping; no need to stack another EQ stage.
 
 **MOD — off.** No chorus/vibe — the fretless glide speaks for itself here, don't wash it out.
 

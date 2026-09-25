@@ -2,20 +2,16 @@
   "patch_name": "WontBackDwn",
   "patch_vol": 54,
   "bpm": 93,
-  "ir": { "name": "TC410" },
+  "nam": {"name": "AvalonAD2022 (slot 52): Avalon - 38 dB - Chan 1 (Avalon AD2022) + none (studio DI)", "slot": 52, "settings": {"Gain": 50, "VOL": 50, "Bass": 56, "Middle": 52, "Treble": 54}},
   "modules": {
-    "NR":  { "model": "Gate", "always_on": true, "settings": { "THRE": 12 } },
-    "PRE": { "model": "Micro Boost", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
-             "settings": { "Gain": 42 } },
-    "DST": { "model": null },
-    "AMP": { "model": "L-Star CL", "always_on": true,
-             "settings": { "Gain": 30, "PRES": 55, "VOL": 65, "Bass": 56, "Middle": 52, "Treble": 54 } },
-    "CAB": { "model": "User IR 9", "always_on": true, "settings": { "VOL": 60 } },
-    "EQ":  { "model": "Bass EQ 2", "always_on": true,
-             "settings": { "50Hz": 3, "120Hz": 1, "400Hz": 0, "800Hz": 2, "4.5kHz": 2, "VOL": 55 } },
-    "MOD": { "model": null },
-    "DLY": { "model": null },
-    "RVB": { "model": "Room", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
-             "settings": { "Mix": 15, "Decay": 25, "Trail": true } }
+    "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 12}},
+    "PRE": {"model": "Micro Boost", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Gain": 42}},
+    "DST": {"model": null},
+    "AMP": {"model": null},
+    "CAB": {"model": null},
+    "EQ": {"model": "Bass EQ 2", "always_on": true, "settings": {"50Hz": 3, "120Hz": 1, "400Hz": 0, "800Hz": 2, "4.5kHz": 2, "VOL": 55}},
+    "MOD": {"model": null},
+    "DLY": {"model": null},
+    "RVB": {"model": "Room", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Mix": 15, "Decay": 25, "Trail": true}}
   }
 }

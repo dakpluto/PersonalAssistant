@@ -22,15 +22,17 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 **DST — Off**
 - No drive. The guitar owns all the distortion in this song — the bass needs to stay clean and out of its way.
 
-**AMP — Foxy Bass (Vox AC-100)**
-- VOL: 68, Bass: 58, Treble: 58
-- Always on, same for both CTL states.
-- A simpler, more direct bass amp voicing rather than a modern high-headroom design — fits a mid-80s British rock record where the bass tone is straightforward and doesn't call attention to itself.
-
-**CAB — User IR 4 (EBS410)**
-- VOL: 58
-- Always on, same for both CTL states.
-- Accentuated high-mids with a boost around 2-3kHz — `IRs/ir.md` flags this one specifically for clean tones that need to sit well in a mix, which is exactly this song's job: punchy and present without any grit to lean on.
+**AMP/CAB — NAM SnapTone, slot 52: AvalonAD2022** (always on)
+- Built from the `Avalon - 38 dB - Chan 1 (Avalon AD2022)` NAM and no cab IR (straight DI), combined into one snaptone.
+- Avalon AD2022 Class A preamp at 38 dB. A studio DI, not an amp: no speaker coloration.
+- Mid-80s hi-fi rock production. Clean, tight DI bass under the big guitar.
+- Gain: 50, VOL: 50, Bass: 58, Middle: 50, Treble: 58
+- Gain 50: the capture as built.
+- Bass 58: more low end.
+- Middle 50: flat.
+- Treble 58: more top end.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 52 directly.
 
 **EQ — Bass EQ 2**
 - 50Hz: +2, 120Hz: +1, 400Hz: -2, 800Hz: +3, 4.5kHz: +3, VOL: 55
@@ -49,11 +51,6 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 - Mix: 20, Decay: 30, Trail: On
 - CTL off: bypassed (verse — tight and dry). CTL on: engaged (chorus).
 - A touch of room opens the tone up for the "money for nothin'" hook, matching the bigger, more anthemic feel of the chorus.
-
-## CAB IR — EBS410 (Slot 4)
-
-- EBS ProLine 410 with a 2" tweeter, confirmed loaded on User IR slot 4. Accentuated high-mids that sit well in a mix, particularly on clean tones — the direct match for this song's punchy, present, ungritted bass job.
-- Encoded directly into the `.prst` as a real, active CAB reference (`User IR 4`) — no manual loading needed for this one.
 
 ## CTL summary
 

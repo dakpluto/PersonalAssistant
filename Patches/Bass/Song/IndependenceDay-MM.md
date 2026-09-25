@@ -4,14 +4,6 @@ Martina McBride, *The Way That I Am*, 1994. Uptempo 90s country, ~120 BPM.
 This isn't a flag-waving anthem despite the title — it's a heavy, serious story song that hits hard on the choruses. The bass needs to carry real weight and drive, not just sit under the fiddle.
 GP-5 only, P/J bass, no pedalboard.
 
-## IR: Hartke410
-
-Hartke XL410 (Slot 6) — aluminum cones, bright and aggressive. Paired with the Classic Bass AMP model (Ampeg SVT).
-No direct AMP match for this cab in the catalog, but the bright top end works well against a driving country-rock strum — keeps the bass present instead of getting buried by acoustic and electric guitars.
-
-- CAB: User IR 6, VOL 65.
-- AMP: Classic Bass — Gain 45, Bass 62, Middle 55, MidFreq 800Hz, Treble 58, VOL 70. Moderate gain, no breakup — this is a clean, driving tone, not a dirty one. MidFreq at 800Hz keeps some bite for pick/finger attack to cut through the mix.
-
 ## Module chain
 
 **NR — Gate**, always on.
@@ -24,11 +16,19 @@ Off for the verse, on for the chorus — same amp tone throughout, just pushed h
 **DST — off.**
 No drive/distortion anywhere on this one — the weight comes from gain staging and low end, not grit. Distortion would fight the song's clean, driving country-rock character.
 
-**AMP — Classic Bass**, always on. See settings above.
+**AMP/CAB — NAM SnapTone, slot 51: CleanB15** (always on)
+- Built from the `Ampeg B18 - Head DI - Bass Chan - Vol 2.5 (B-18N)` NAM and the Apg115 IR, combined into one snaptone.
+- Real Ampeg B-18N fliptop (the B-15 preamp circuit), captured clean at volume 2.5, into the Apg115 B-15 cab IR.
+- Big 90s country anthem, but the bass is still clean and round. B-15 carries it.
+- Gain: 60, VOL: 50, Bass: 62, Middle: 55, Treble: 58
+- Gain 60: noticeably over default. This part wants more push than the other CleanB15 patches.
+- Bass 62: more low end.
+- Middle 55: a touch more midrange.
+- Treble 58: more top end.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 51 directly.
 
-**CAB — User IR 6 (Hartke410)**, always on. See settings above.
-
-**EQ — off.** The Hartke's inherent brightness plus the AMP's own tone controls cover what's needed — no extra EQ stage.
+**EQ — off.** The snaptone's own tone controls cover what's needed — no extra EQ stage.
 
 **MOD — off.** No modulation — straight, driving part.
 

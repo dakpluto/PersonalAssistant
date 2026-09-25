@@ -26,9 +26,17 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 **DST — Off**
 - Not used. The amp's own gain carries the drive character this song needs — stacking a pedal on top would just get muddy.
 
-**AMP — Classic Bass**, always on. Gain 40, Bass 52, Middle 58, MidFreq 450Hz, Treble 60, VOL 65.
-
-**CAB — User IR 1 (Apg115)**, always on. VOL 60.
+**AMP/CAB — NAM SnapTone, slot 57: GrittySVT** (always on)
+- Built from the `SVT PUSHED (SVT-CL)` NAM and the Apg810 IR, combined into one snaptone.
+- Real Ampeg SVT-CL pushed into grit, into the Apg810 8x10 IR.
+- Jangly 90s rock with a gritty low end. Pushed SVT.
+- Gain: 48, VOL: 50, Bass: 52, Middle: 58, Treble: 60
+- Gain 48: a little under default. This part wants less push than the other GrittySVT patches.
+- Bass 52: a touch more low end.
+- Middle 58: more midrange.
+- Treble 60: more top end.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 57 directly.
 
 **EQ — Bass EQ 1**
 - 33Hz: +2
@@ -51,16 +59,6 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 - CTL off: bypassed (verse). CTL on: engaged (chorus).
 - Verse stays tight and dry. Chorus gets a touch of room to swell with the hook — same "lift together" logic as the PRE boost, both kick in on the same footswitch press.
 
-## AMP: Classic Bass (Ampeg SVT) + CAB: Apg115 IR (User IR 1)
-
-Rebuilt 2026-09-18 off the GP-5's own AMP + a loaded IR — NAMs are off for now (Valeton N->S volume issue, device-side). The old NAM was the Darkglass Vintage Deluxe — a lower-gain, vintage-voiced bass drive giving warmth and harmonic girth without turning into an overdrive pedal, present and a little gritty on pick attack, not clean-hi-fi and not distorted. Classic Bass dialed moderate (not maxed) covers the same territory; Apg115 (Ampeg Heritage B-15, the vintage 1x15 with a girth-adding 100Hz peak) is the vintage-flavored counterpart in the loaded IR set, a better fit for this early-90s alt-rock production than the more modern SVT-810 stack.
-
-- Gain: 40 — moderate, enough natural amp breakup for the vintage push, not clean, not maxed-aggressive.
-- Bass: 52, Middle: 58, MidFreq: 450Hz — a lower-mid-leaning frequency for the vintage character, rather than the more aggressive 800Hz used elsewhere in this set.
-- Treble: 60.
-- VOL: 65.
-- CAB VOL: 60.
-
 ## CTL summary
 
 - **CTL Off — Verse.** No boost, dry. Bass sits back, holds the pocket.
@@ -81,7 +79,7 @@ Rebuilt 2026-09-18 off the GP-5's own AMP + a loaded IR — NAMs are off for now
 - TREBLE mode keeps that attack audible and bright before it hits the NAM's own drive stage — important since the NAM adds some low-end girth that could otherwise dull the pick transient.
 
 **3. Donner Stylish Fuzz — Bypassed**
-- Footswitch off. No fuzz — this song's bass grit comes from the NAM's own vintage drive character, not a stompbox fuzz wall.
+- Footswitch off. No fuzz — this song's bass grit comes from the GrittySVT snaptone's own grit, not a stompbox fuzz wall.
 
 **4. Joyo Tidal Wave — Bypassed**
 - Footswitch off, Drive/Blend not engaged. Stacking another preamp/drive stage on top of the NAM would overdo the grit for a pop-rock tune this bright and clean-driven.

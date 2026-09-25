@@ -2,20 +2,16 @@
   "patch_name": "1979-SP",
   "patch_vol": 53,
   "bpm": 126,
-  "ir": { "name": "EBS410" },
+  "nam": {"name": "CleanSVT (slot 53): SVT CLEAN (SVT-CL) + Apg810", "slot": 53, "settings": {"Gain": 52, "VOL": 50, "Bass": 56, "Middle": 50, "Treble": 58}},
   "modules": {
-    "NR":  { "model": "Gate", "always_on": true, "settings": { "THRE": 12 } },
-    "PRE": { "model": "Micro Boost", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
-             "settings": { "Gain": 45 } },
-    "DST": { "model": null },
-    "AMP": { "model": "Mess Bass", "always_on": true,
-             "settings": { "Gain": 35, "VOL": 65, "Bass": 56, "Middle": 50, "Treble": 58 } },
-    "CAB": { "model": "User IR 4", "always_on": true, "settings": { "VOL": 58 } },
-    "EQ":  { "model": "Bass EQ 2", "always_on": true,
-             "settings": { "50Hz": 3, "120Hz": 1, "400Hz": -1, "800Hz": 1, "4.5kHz": 3, "VOL": 55 } },
-    "MOD": { "model": "B-Chorus", "always_on": true, "settings": { "Depth": 35, "Rate": 0.5, "VOL": 56 } },
-    "DLY": { "model": "Analog", "always_on": true, "settings": { "Mix": 15, "Time": 380, "Feedback": 15, "Trail": true } },
-    "RVB": { "model": "Room", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
-             "settings": { "Mix": 22, "Decay": 35, "Trail": true } }
+    "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 12}},
+    "PRE": {"model": "Micro Boost", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Gain": 45}},
+    "DST": {"model": null},
+    "AMP": {"model": null},
+    "CAB": {"model": null},
+    "EQ": {"model": "Bass EQ 2", "always_on": true, "settings": {"50Hz": 3, "120Hz": 1, "400Hz": -1, "800Hz": 1, "4.5kHz": 3, "VOL": 55}},
+    "MOD": {"model": "B-Chorus", "always_on": true, "settings": {"Depth": 35, "Rate": 0.5, "VOL": 56}},
+    "DLY": {"model": "Analog", "always_on": true, "settings": {"Mix": 15, "Time": 380, "Feedback": 15, "Trail": true}},
+    "RVB": {"model": "Room", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Mix": 22, "Decay": 35, "Trail": true}}
   }
 }

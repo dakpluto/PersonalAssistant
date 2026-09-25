@@ -6,7 +6,7 @@ GP-5 only, Sire fretless (Active), no pedalboard.
 
 ## AMP: Mess Bass (Mesa/Boogie Bass 400) + CAB: EBS410 IR (User IR 4)
 
-Rebuilt 2026-09-18 off the GP-5's own AMP + a loaded IR — NAMs are off for now (Valeton N->S volume issue, device-side). Mess Bass at low gain gives the same clean, no-grind lift the Harmonic Booster capture provided; EBS410 is ir.md's own recommendation for clean bass tones, which suits a warm, emotional fretless ballad.
+Rebuilt 2026-09-18 on the GP-5's own AMP + a loaded IR. Kept that way in the 2026-09-25 snaptone pass: Mess Bass is a direct model of the Mesa bass rig Myung used, and the ProgSVT snaptone is only an SVT stand-in. Mess Bass at low gain gives the same clean, no-grind lift the Harmonic Booster capture provided; EBS410 is ir.md's own recommendation for clean bass tones, which suits a warm, emotional fretless ballad.
 
 - Gain: 30 — kept low. This isn't a grind tone, it's a clean lift.
 - VOL: 62

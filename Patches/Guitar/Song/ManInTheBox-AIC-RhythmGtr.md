@@ -8,11 +8,6 @@ Built from the song's overall sound. I haven't verified the exact guitars and am
 Instrument: Stratocaster (HSS). Bridge humbucker throughout.
 GP-5 only, Stratocaster (HSS), no pedalboard.
 
-## AMP: UK 800 (JCM800) + CAB: V30112 IR (User IR 10)
-
-A JCM800 with a boost in front is the late-80s and early-90s heavy Seattle foundation: thick, grinding, mid-heavy. It's not scooped metal.
-V30112 is the loaded guitar cab with enough upper-mid bark for a crunch tone. EVM112 would thin out once the amp breaks up.
-
 ## Module chain
 
 **NR — Gate**, always on.
@@ -27,12 +22,17 @@ The talk-box and wah stand-in. The Toucher envelope filter at a high Q of 65 giv
 Gain: 20, Tone: 45, VOL: 70.
 An always-on TS boost, low gain and high level. It tightens and pushes the 800 for the grinding Seattle chunk.
 
-**AMP — UK 800**, always on.
-Gain: 68, PRES: 50, VOL: 58, Bass: 55, Middle: 62, Treble: 52.
-Gain 68 is thick and heavy. Middle 62: this sound is mid-heavy sludge, not scooped.
-
-**CAB — User IR 10 (V30112)**, always on.
-VOL: 60.
+**AMP/CAB — NAM SnapTone, slot 71: HotMarshall** (always on)
+- Built from the `JCM800 2203 - P5 B5 M5 T5 MV6 G7 - AZG - 700` NAM and the BlendOfAll_dc (Marshall 1960AV) IR, combined into one snaptone.
+- Real JCM800 2203 at Gain 7, Master 6: hot rhythm crunch. Into a 1960AV 4x12 mic blend.
+- Hot, mid-heavy Marshall rhythm. JCM800 at Gain 7.
+- Gain: 57, VOL: 50, Bass: 55, Middle: 62, Treble: 52
+- Gain 57: noticeably over default. This part wants more push than the other HotMarshall patches.
+- Bass 55: a touch more low end.
+- Middle 62: more midrange.
+- Treble 52: a touch more top end.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 71 directly.
 
 **EQ — Guitar EQ 2**, always on.
 100Hz: 0, 500Hz: +1, 1kHz: +1, 3kHz: 0, 6kHz: -3, VOL: 50.

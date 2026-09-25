@@ -2,21 +2,16 @@
   "patch_name": "One-Metallic",
   "patch_vol": 55,
   "bpm": 85,
-  "ir": { "name": "V30112" },
+  "nam": {"name": "GrittySVT (slot 57): SVT PUSHED (SVT-CL) + Apg810", "slot": 57, "settings": {"Gain": 42, "VOL": 50, "Bass": 55, "Middle": 55, "Treble": 50}},
   "modules": {
-    "NR":  { "model": "Gate", "always_on": true, "settings": { "THRE": 25 } },
-    "PRE": { "model": "Micro Boost", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
-             "settings": { "Gain": 55 } },
-    "DST": { "model": "SM Dist", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
-             "settings": { "Gain": 70, "Tone": 60, "VOL": 65 } },
-    "AMP": { "model": "UK 800", "always_on": true,
-             "settings": { "Gain": 30, "PRES": 55, "VOL": 65, "Bass": 55, "Middle": 55, "Treble": 50 } },
-    "CAB": { "model": "User IR 10", "always_on": true, "settings": { "VOL": 60 } },
-    "EQ":  { "model": "Bass EQ 1", "always_on": true,
-             "settings": { "33Hz": 3, "150Hz": 0, "600Hz": 2, "2kHz": 3, "8kHz": 1, "VOL": 55 } },
-    "MOD": { "model": null },
-    "DLY": { "model": null },
-    "RVB": { "model": "Room", "ctl": true, "ctl_off_state": "on", "ctl_on_state": "off",
-             "settings": { "Mix": 20, "Decay": 35, "Trail": true } }
+    "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 25}},
+    "PRE": {"model": "Micro Boost", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Gain": 55}},
+    "DST": {"model": "SM Dist", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Gain": 70, "Tone": 60, "VOL": 65}},
+    "AMP": {"model": null},
+    "CAB": {"model": null},
+    "EQ": {"model": "Bass EQ 1", "always_on": true, "settings": {"33Hz": 3, "150Hz": 0, "600Hz": 2, "2kHz": 3, "8kHz": 1, "VOL": 55}},
+    "MOD": {"model": null},
+    "DLY": {"model": null},
+    "RVB": {"model": "Room", "ctl": true, "ctl_off_state": "on", "ctl_on_state": "off", "settings": {"Mix": 20, "Decay": 35, "Trail": true}}
   }
 }

@@ -4,13 +4,6 @@ Images and Words, 1992. Est. ~130 BPM.
 John Myung's bass here is aggressive and technical — locked tight to the double-kick riff, present enough to cut through two guitars and keyboards without turning to mush. That's a different problem than a pocket groove: this part needs bite and definition first, low end second.
 GP-5 only, P/J bass, no pedalboard.
 
-## AMP: Classic Bass (Ampeg SVT) + DST: Bass OD + CAB: Hartke410 IR (User IR 6)
-
-Rebuilt 2026-09-18 off the GP-5's own AMP/DST + a loaded IR — NAMs are off for now (Valeton N->S volume issue, device-side). The old NAM was the Darkglass Alpha Omega's controlled, saturated Alpha (distortion) side — modern metal bass grind without the fuzz side's wooliness, aggressive but articulate. Standing that in: Classic Bass for the amp foundation, Bass OD always-on and pushed hard for the distortion character, and Hartke410 for CAB — ir.md calls that cab's bright, aggressive aluminum-cone voicing out by name as pairing well with a driven bass tone "alongside Bass OD," which is exactly the setup here.
-
-- AMP Gain: 50, Bass: 60, Middle: 55, MidFreq: 1.6kHz, Treble: 60, VOL: 70 — enough low end to matter without swallowing the attack, mids kept present so the part reads as a note under the guitars.
-- DST (Bass OD) Gain: 68, Blend: 75, VOL: 65, Bass: 58, Treble: 55 — real distortion, not edge-of-breakup, this riff is meant to hit hard. Always on — the baseline texture, not a footswitched extra.
-
 ## Module chain
 
 **NR — Gate**, always on.
@@ -22,9 +15,17 @@ Off for the quieter intro/interlude passages, on for the driving main riff and i
 
 **DST — Bass OD**, always on. Gain 68, Blend 75, VOL 65, Bass 58, Treble 55. Baseline distortion layer, independent of the PRE boost's CTL toggle.
 
-**AMP — Classic Bass**, always on. Gain 50, Bass 60, Middle 55, MidFreq 1.6kHz, Treble 60, VOL 70.
-
-**CAB — User IR 6 (Hartke410)**, always on. VOL 65.
+**AMP/CAB — NAM SnapTone, slot 56: ProgSVT** (always on)
+- Built from the `SVT CLEAN PUSHED (SVT-CL)` NAM and the Mesa215 IR, combined into one snaptone.
+- Real Ampeg SVT-CL on the clean-pushed setting, into the Mesa215 2x15 IR.
+- Myung's tone is Mesa. No Mesa bass NAM on hand, so a pushed SVT into a Mesa 2x15 gets the cab half right.
+- Gain: 54, VOL: 50, Bass: 60, Middle: 55, Treble: 60
+- Gain 54: a little over default. This part wants more push than the other ProgSVT patches.
+- Bass 60: more low end.
+- Middle 55: a touch more midrange.
+- Treble 60: more top end.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 56 directly.
 
 **EQ — Bass EQ 2**, always on.
 50Hz: 0, 120Hz: -3, 400Hz: -6, 800Hz: +8, 4.5kHz: +10.

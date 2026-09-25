@@ -8,9 +8,19 @@
 
 # "Suggested GP-5 AMP pairing" below is our own mapping (not from Origin Effects) — the GP-5 AMP model whose real-amp counterpart most closely matches the amp this cab was captured with, for patches that use one of these IRs for CAB instead of a GP-5 CAB model.
 
+## Pack files (Tone3000, added 2026-09-25)
+
+Part of the NAM + IR snaptone rebuild (see `NAMs/nams.md`): one md file per Tone3000 IR pack in this folder, scraped with `Tools/t3k_scrape.py --meta`. The loaded User IR slots and the Origin Effects pack below stay as they are.
+
+- [Fender Twin Reverb (IR) — vulturized](vulturized-Fender-Twin-Reverb.md) — Twin 2x12, JBL D120F, 3 EQ versions (clean / balanced / mids)
+- [Marshall 1960AV - V7X+SM57+RB500 (IR) — pipppriss](pipppriss-Marshall-1960AV.md) — Marshall 4x12 with V30s, 4 phase-aligned mic files incl. an all-mic blend
+- [Celestion Vintage 30 - 2002 Mesa Boogie 4x12 - SM57 (IR) — outmodedelectronics](outmodedelectronics-Mesa-4x12-V30-SM57.md) — Mesa straight 4x12 V30, SM57 on all 4 speakers, 14 mic positions × 3 preamps (168 files)
+- [Bogner 2x12 with EVM12L IR Files — maestrodimusica](maestrodimusica-Bogner-2x12-EVM12L.md) — Bogner closed-back 2x12, EVM12L, 5 close mics × 4 positions + Fredman + room mics (52 unique files)
+- [Ampeg SVT - DI - 4x10 - 8x10 (IR) — morenoteslesstalk](morenoteslesstalk-Ampeg-SVT-8x10-4x10-DI.md) — **bass**, Ampeg 8x10 × 4 mics, SVT (likely 4x10) + 2 DI-out IRs; unknown provenance, several duplicates (about 12 distinct)
+
 ## Bass/Guitar Cab IR Library (loaded on device — User IR slots 1-20)
 
-Unlike the Origin Effects pack below (reference material, not confirmed loaded), these are actually loaded onto the GP-5's 20 `User IR` slots right now. The catalog has a distinct entry per slot (`"User IR 1"` .. `"User IR 20"`, each with its own real name — unlike the NAM/SnapTone slots, which all collide on `name: "Empty"`), so a confirmed slot here encodes directly: set `CAB` to `"model": "User IR <N>"` with `always_on: true` and a real `VOL` setting — no `model: null` placeholder needed, no encoder change needed either. `AMP` still picks a real GP-5 model as normal, same as any IR use.
+Unlike the Origin Effects pack below (files on hand as of 2026-09-25 and usable in snaptone builds, but not loaded into a User IR slot), these are actually loaded onto the GP-5's 20 `User IR` slots right now. The catalog has a distinct entry per slot (`"User IR 1"` .. `"User IR 20"`, each with its own real name — unlike the NAM/SnapTone slots, which all collide on `name: "Empty"`), so a confirmed slot here encodes directly: set `CAB` to `"model": "User IR <N>"` with `always_on: true` and a real `VOL` setting — no `model: null` placeholder needed, no encoder change needed either. `AMP` still picks a real GP-5 model as normal, same as any IR use.
 
 - Apg115 (Ampeg Heritage B-15, 1x15", ceramic Eminence driver designed specifically for it): prominent peak at 100Hz, adds girth. **Slot: 1**. Suggested AMP pairing: Classic Bass (Ampeg SVT) — same brand family.
 - Apg115410 (summed Ampeg Heritage B-15 + HLF 410): flat response, thunderous. **Slot: 2**. Suggested AMP pairing: Classic Bass.

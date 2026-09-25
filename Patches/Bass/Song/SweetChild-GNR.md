@@ -5,17 +5,6 @@ GP-5 only, P/J bass, no pedalboard.
 Duff McKagan plays with a pick and comes from punk. The tone is bright, mid-forward, and a little gritty, with pick attack that cuts through two Les Pauls.
 The "Where do we go now?" outro gets heavier and darker, and the band digs in hard.
 
-## AMP: Classic Bass (Ampeg SVT) + CAB: Hartke410 IR (User IR 6)
-
-This is a real bass rig, not a guitar amp. The grit comes from the SVT being pushed plus the aluminum-cone Hartke.
-Hartke410's bright, aggressive aluminum cones are a direct fit for picked-bass clank and attack.
-
-- Gain: 40. Edge of breakup. Hard pick attack growls, lighter playing stays clean.
-- Bass: 55.
-- Middle: 60, MidFreq: 800Hz. This is where a picked bass cuts.
-- Treble: 58. Pick definition.
-- VOL: 65. CAB VOL: 58.
-
 ## Module chain
 
 **NR — Gate**, always on.
@@ -29,9 +18,17 @@ Evens out the picked eighth notes. Attack at 40 keeps the pick transient.
 Gain: 38, Blend: 42, VOL: 62, Bass: 50, Treble: 55.
 Blend at 42 keeps the clean low end underneath, so the drive adds snarl without thinning out the bottom.
 
-**AMP — Classic Bass**, always on. Gain 40, Bass 55, Middle 60, MidFreq 800Hz, Treble 58, VOL 65.
-
-**CAB — User IR 6 (Hartke410)**, always on. VOL 58.
+**AMP/CAB — NAM SnapTone, slot 57: GrittySVT** (always on)
+- Built from the `SVT PUSHED (SVT-CL)` NAM and the Apg810 IR, combined into one snaptone.
+- Real Ampeg SVT-CL pushed into grit, into the Apg810 8x10 IR.
+- Duff's tone is gritty and mid-forward. Pushed SVT.
+- Gain: 48, VOL: 50, Bass: 55, Middle: 60, Treble: 58
+- Gain 48: a little under default. This part wants less push than the other GrittySVT patches.
+- Bass 55: a touch more low end.
+- Middle 60: more midrange.
+- Treble 58: more top end.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 57 directly.
 
 **EQ — Bass EQ 1**, always on.
 33Hz: 0, 150Hz: +1, 600Hz: +2, 2kHz: +3, 8kHz: +1, VOL: 54.

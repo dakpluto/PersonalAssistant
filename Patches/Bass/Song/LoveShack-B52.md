@@ -24,11 +24,17 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB
 - **DST — Bass OD**: Gain 45, Blend 40, VOL 70, Bass 55, Treble 65. **CTL module** — off in CTL off, on in CTL on.
   Second half of the chorus lift. Blend at 40 keeps the low end clean underneath while stacking in upper-harmonic edge — gives the chorus a little extra bite and excitement without turning into a distorted bass tone. Paired with PRE Boost, this is the full verse-to-chorus jump.
 
-- **AMP — Classic Bass** (Ampeg SVT): Gain 45, Bass 62, Middle 60, MidFreq 1.6kHz, Treble 60, VOL 78. Always on.
-  SVT again for the same reason as any big, present rock/pop bass tone — punchy, not scooped. MidFreq pushed up to 1.6kHz (brighter than a typical SVT setting) for the funkier, poppier upper-mid snap this song wants over a heavier low-mid growl.
-
-- **CAB — AMPG 4x10** (Ampeg SVT-410HE): VOL 70. Always on.
-  Standard SVT pairing. No bass IR available in the current pack, so built-in CAB is the right call, not a fallback.
+**AMP/CAB — NAM SnapTone, slot 52: AvalonAD2022** (always on)
+- Built from the `Avalon - 38 dB - Chan 1 (Avalon AD2022)` NAM and no cab IR (straight DI), combined into one snaptone.
+- Avalon AD2022 Class A preamp at 38 dB. A studio DI, not an amp: no speaker coloration.
+- Bouncy, clean party bass. The DI keeps the bounce punchy.
+- Gain: 58, VOL: 50, Bass: 62, Middle: 60, Treble: 60
+- Gain 58: noticeably over default. This part wants more push than the other AvalonAD2022 patches.
+- Bass 62: more low end.
+- Middle 60: more midrange.
+- Treble 60: more top end.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 52 directly.
 
 - **EQ — Bass EQ 2**: 50Hz +4, 120Hz +2, 400Hz -5, 800Hz +6, 4.5kHz +6, VOL 55. Always on.
   400Hz cut clears out boxiness so the staccato hits stay punchy instead of thick. 800Hz push adds funk snap, 4.5kHz push adds the bright top-end "pop" this bouncy line needs to cut through the surf guitar and organ.

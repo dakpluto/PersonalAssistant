@@ -21,13 +21,17 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB
 **DST — Off**
 Not used. No drive anywhere in this tone — it's a clean, spacious ballad.
 
-**AMP — Foxy Bass** (Vox AC-100)
-- VOL: 60, Bass: 55, Treble: 55
-- Always on, both CTL states. Warm and rounded rather than aggressive — a good, unforced foundation for a slow ballad that needs to breathe.
-
-**CAB — AMPG 4x10** (Ampeg SVT-410HE)
-- VOL: 55
-- Always on.
+**AMP/CAB — NAM SnapTone, slot 54: FullB15** (always on)
+- Built from the `Ampeg B18 - Head DI - Bass Chan - Vol 5 (B-18N)` NAM and the Apg115410 IR, combined into one snaptone.
+- Real Ampeg B-18N at volume 5, warmer and fuller than the clean capture, into the Apg115410 (1x15 + 4x10) IR.
+- Warm, organic worship. The fuller B-15 keeps the low end soft and round.
+- Gain: 50, VOL: 50, Bass: 55, Middle: 50, Treble: 55
+- Gain 50: the capture as built.
+- Bass 55: a touch more low end.
+- Middle 50: flat.
+- Treble 55: a touch more top end.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 54 directly.
 
 **EQ — Bass EQ 1**
 - 33Hz: +5, 150Hz: 0, 600Hz: -2, 2kHz: +2, 8kHz: +2, VOL: 50

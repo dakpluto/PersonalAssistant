@@ -7,17 +7,6 @@ GP-5 only, Sire fretless, no pedalboard.
 
 Active electronics for this one. The patch leans on chorus/delay/reverb to build atmosphere, and active output gives cleaner headroom feeding into that chain instead of the passive pickup's softer top end getting buried under the effects.
 
-## AMP: Mess Bass (Mesa/Boogie Bass 400) + CAB: EBS410 IR (User IR 4)
-
-Rebuilt 2026-09-18 off the GP-5's own AMP + a loaded IR — NAMs are off for now (Valeton N->S volume issue, device-side). Mess Bass gives the same low-gain, hi-fi clean headroom the Darkglass Harmonic Booster capture was standing in for; EBS410's accentuated hi-mids are the ir.md-recommended pairing for clean bass tones, which fits this patch's atmosphere-not-attack brief.
-
-- Gain: 30 — low, just enough to feel the amp, not push it.
-- VOL: 65
-- Bass: 60 — full low end, this needs to feel like it's under everything.
-- Middle: 45 — kept out of the way so the fretless glide reads clearly.
-- Treble: 50 — present but not clanky.
-- CAB VOL: 60.
-
 ## Module chain
 
 **NR — Gate**, always on.
@@ -27,9 +16,17 @@ THRE: 20. Low threshold — clean, low-gain tone doesn't need much gating, just 
 
 **DST — off.** No drive anywhere in this one.
 
-**AMP — Mess Bass**, always on. Gain 30, VOL 65, Bass 60, Middle 45, Treble 50.
-
-**CAB — User IR 4 (EBS410)**, always on. VOL 60.
+**AMP/CAB — NAM SnapTone, slot 52: AvalonAD2022** (always on)
+- Built from the `Avalon - 38 dB - Chan 1 (Avalon AD2022)` NAM and no cab IR (straight DI), combined into one snaptone.
+- Avalon AD2022 Class A preamp at 38 dB. A studio DI, not an amp: no speaker coloration.
+- Mariusz Duda's fretless on Lunatic Soul is intimate and studio-clean. A DI fits better than any cab.
+- Gain: 50, VOL: 50, Bass: 60, Middle: 45, Treble: 50
+- Gain 50: the capture as built.
+- Bass 60: Full low end, this needs to feel like it's under everything.
+- Middle 45: Kept out of the way so the fretless glide reads clearly.
+- Treble 50: Present but not clanky.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 52 directly.
 
 **EQ — Bass EQ 2**, always on.
 50Hz: +3, 120Hz: +2, 400Hz: -3, 800Hz: -2, 4.5kHz: +2, VOL: 52.

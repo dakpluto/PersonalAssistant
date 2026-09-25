@@ -6,10 +6,6 @@ Thick, gritty, and heavy. The bass doubles the grinding riff and fills out the s
 Built from the song's overall sound. I haven't verified the exact bass rig on the record.
 A pick for the grind. Both pickups up. Tone knob around 60%.
 
-## AMP: Classic Bass (Ampeg SVT) + CAB: Sunn215 IR (User IR 8)
-
-A driven SVT into Sunn215. The IR notes call the Sunn 2x15 fat and great with distortion. That's exactly a sludge-rock bass cab.
-
 ## Module chain
 
 **NR — Gate**, always on.
@@ -24,12 +20,17 @@ Evens the picked grind.
 Gain: 50, Blend: 45, VOL: 55, Bass: 55, Treble: 50.
 Always-on grit is part of the core tone here. Blend 45 keeps the fundamental.
 
-**AMP — Classic Bass**, always on.
-Gain: 45, Bass: 58, Middle: 58, MidFreq: 450Hz, Treble: 48, VOL: 62.
-SVT hair at gain 45. The mid push helps the bass grind with the guitar.
-
-**CAB — User IR 8 (Sunn215)**, always on.
-VOL: 60.
+**AMP/CAB — NAM SnapTone, slot 58: HairySVT** (always on)
+- Built from the `SVT SANS HAIRY DRIVE (SVT-CL)` NAM and the Sunn215 IR, combined into one snaptone.
+- Real Ampeg SVT-CL with the hairy drive setting, into the Sunn215 2x15 IR.
+- Mike Starr's sludgy tone. Hairy SVT drive into the Sunn 2x15.
+- Gain: 48, VOL: 50, Bass: 58, Middle: 58, Treble: 48
+- Gain 48: a little under default. This part wants less push than the other HairySVT patches.
+- Bass 58: more low end.
+- Middle 58: more midrange.
+- Treble 48: top end pulled back a little.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 58 directly.
 
 **EQ — Bass EQ 2**, on CTL.
 50Hz: +1, 120Hz: +1, 400Hz: +2, 800Hz: +3, 4.5kHz: 0, VOL: 56.

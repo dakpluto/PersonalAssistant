@@ -6,11 +6,6 @@ A ballad-tempo two-step feel. Warm root-fifth with soft walk-ups. Round and dark
 Built from the song's overall sound. I haven't verified the session bassist's exact rig.
 Fingers over the neck. P pickup soloed or dominant. Tone knob around 40%.
 
-## AMP: Classic Bass (Ampeg SVT) + CAB: Apg115 IR (User IR 1)
-
-The B-15 is the classic Nashville studio bass sound: round, woody, and warm.
-Apg115's 100Hz peak gives girth. Classic Bass stays clean at low gain.
-
 ## Module chain
 
 **NR — Gate**, always on.
@@ -23,12 +18,17 @@ Evens out the sustained notes lightly.
 
 **DST — off.** No grit.
 
-**AMP — Classic Bass**, always on.
-Gain: 20, Bass: 60, Middle: 48, MidFreq: 450Hz, Treble: 38, VOL: 65.
-Clean and warm. Treble 38 rounds off finger noise.
-
-**CAB — User IR 1 (Apg115)**, always on.
-VOL: 60.
+**AMP/CAB — NAM SnapTone, slot 51: CleanB15** (always on)
+- Built from the `Ampeg B18 - Head DI - Bass Chan - Vol 2.5 (B-18N)` NAM and the Apg115 IR, combined into one snaptone.
+- Real Ampeg B-18N fliptop (the B-15 preamp circuit), captured clean at volume 2.5, into the Apg115 B-15 cab IR.
+- Slow, sad two-step. Clean B-15 gives warm, sustained roots.
+- Gain: 48, VOL: 50, Bass: 60, Middle: 48, Treble: 38
+- Gain 48: a little under default. This part wants less push than the other CleanB15 patches.
+- Bass 60: more low end.
+- Middle 48: midrange pulled back a little.
+- Treble 38: top end pulled back noticeably.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 51 directly.
 
 **EQ — Bass EQ 2**, always on.
 50Hz: +1, 120Hz: +2, 400Hz: 0, 800Hz: 0, 4.5kHz: -4, VOL: 52.

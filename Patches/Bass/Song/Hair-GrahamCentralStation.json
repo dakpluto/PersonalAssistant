@@ -2,18 +2,16 @@
   "patch_name": "Hair-GCS",
   "patch_vol": 56,
   "bpm": 104,
-  "ir": { "name": "Apg810" },
+  "nam": {"name": "SoulB18 (slot 60): Ampeg B18 - Head DI - Bass Chan - Vol 7.5 (B-18N) + Apg115", "slot": 60, "settings": {"Gain": 52, "VOL": 50, "Bass": 62, "Middle": 48, "Treble": 58}},
   "modules": {
-    "NR":  { "model": "Gate", "always_on": true, "settings": { "THRE": 20 } },
-    "PRE": { "model": "COMP4", "always_on": true, "settings": { "Sustain": 70, "Attack": 40, "Clip": 15, "VOL": 60 } },
-    "DST": { "model": null },
-    "AMP": { "model": "Classic Bass", "always_on": true,
-             "settings": { "Gain": 40, "Bass": 62, "Middle": 48, "MidFreq": 0, "Treble": 58, "VOL": 68 } },
-    "CAB": { "model": "User IR 3", "always_on": true, "settings": { "VOL": 62 } },
-    "EQ":  { "model": "Bass EQ 1", "always_on": true,
-             "settings": { "33Hz": 5, "150Hz": -2, "600Hz": -4, "2kHz": 3, "8kHz": 5, "VOL": 56 } },
-    "MOD": { "model": null },
-    "DLY": { "model": null },
-    "RVB": { "model": "Room", "always_on": true, "settings": { "Mix": 12, "Decay": 22, "Trail": true } }
+    "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 20}},
+    "PRE": {"model": "COMP4", "always_on": true, "settings": {"Sustain": 70, "Attack": 40, "Clip": 15, "VOL": 60}},
+    "DST": {"model": null},
+    "AMP": {"model": null},
+    "CAB": {"model": null},
+    "EQ": {"model": "Bass EQ 1", "always_on": true, "settings": {"33Hz": 5, "150Hz": -2, "600Hz": -4, "2kHz": 3, "8kHz": 5, "VOL": 56}},
+    "MOD": {"model": null},
+    "DLY": {"model": null},
+    "RVB": {"model": "Room", "always_on": true, "settings": {"Mix": 12, "Decay": 22, "Trail": true}}
   }
 }

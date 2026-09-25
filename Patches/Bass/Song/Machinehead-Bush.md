@@ -4,17 +4,6 @@ Sixteen Stone, 1994. 147 BPM, est.
 Dave Parsons' bass sits low, dark, and driving — this is the grunge/alt-rock era, not a bright modern rock tone.
 GP-5 only, P/J bass, no pedalboard.
 
-## AMP: Classic Bass (Ampeg SVT) + CAB: Apg810 IR (User IR 3)
-
-Rebuilt 2026-09-18 off the GP-5's own AMP + a loaded IR — NAMs are off for now (Valeton N->S volume issue, device-side). Same target as before: a tube-breakup Ampeg push is the classic mid-90s alt/grunge bass amp move, raw and a little gritty, not hi-fi. Classic Bass is the GP-5's own Ampeg SVT sim, and Apg810 (Ampeg SVT-810E) is a direct real-world match for the discontinued V4B capture's own "Ampeg 8x10" cab.
-
-- Gain: 48 — enough to get real amp grit, not fizz; the "dirty without being distorted" character. Classic Bass's gain structure runs hotter than the old NAM's 58, so this is dialed a touch lower for the same feel.
-- Bass: 60 — the low end that carries the riff.
-- Middle: 58, MidFreq: 800Hz — pushed for grind and to cut through the guitars, not scooped.
-- Treble: 42 — kept dark on purpose. Bush's mix isn't a bright, clanky bass tone.
-- VOL: 65.
-- CAB VOL: 62.
-
 ## Module chain
 
 **NR — Gate**, always on.
@@ -27,9 +16,17 @@ Off for the verse groove, on for the chorus. Same amp tone throughout, just loud
 **DST — off.**
 The amp's own grind carries the grit. Stacking a drive pedal on top would just mud out the riff instead of adding character.
 
-**AMP — Classic Bass**, always on. Gain 48, Bass 60, Middle 58, MidFreq 800Hz, Treble 42, VOL 65.
-
-**CAB — User IR 3 (Apg810)**, always on. VOL 62.
+**AMP/CAB — NAM SnapTone, slot 57: GrittySVT** (always on)
+- Built from the `SVT PUSHED (SVT-CL)` NAM and the Apg810 IR, combined into one snaptone.
+- Real Ampeg SVT-CL pushed into grit, into the Apg810 8x10 IR.
+- Grunge-era grit. Pushed SVT into an 8x10.
+- Gain: 52, VOL: 50, Bass: 60, Middle: 58, Treble: 42
+- Gain 52: a little over default. This part wants more push than the other GrittySVT patches.
+- Bass 60: The low end that carries the riff.
+- Middle 58: Pushed for grind and to cut through the guitars, not scooped.
+- Treble 42: Kept dark on purpose. Bush's mix isn't a bright, clanky bass tone.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 57 directly.
 
 **EQ — Bass EQ 2**, always on.
 50Hz: +4, 120Hz: +2, 400Hz: -4, 800Hz: -2, 4.5kHz: +5, VOL: 55.

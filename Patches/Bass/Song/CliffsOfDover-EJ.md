@@ -18,9 +18,17 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 - Compression duties are handled by the Donner Ultimate Comp on the board (see below).
 
 **DST — Off**
-**AMP — Mess Bass**, always on. Gain 40, VOL 65, Bass 55, Middle 60, Treble 65.
-**CAB — User IR 4 (EBS410)**, always on. VOL 60.
-- No separate drive stage — this tune calls for clarity and note definition, not grit, and stacking a gain stage would just work against that.
+**AMP/CAB — NAM SnapTone, slot 52: AvalonAD2022** (always on)
+- Built from the `Avalon - 38 dB - Chan 1 (Avalon AD2022)` NAM and no cab IR (straight DI), combined into one snaptone.
+- Avalon AD2022 Class A preamp at 38 dB. A studio DI, not an amp: no speaker coloration.
+- Hi-fi, clean support under a guitar showcase. A DI keeps the bass tight and out of the way.
+- Gain: 55, VOL: 50, Bass: 55, Middle: 60, Treble: 65
+- Gain 55: noticeably over default. This part wants more push than the other AvalonAD2022 patches.
+- Bass 55: a touch more low end.
+- Middle 60: more midrange.
+- Treble 65: more top end.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 52 directly.
 
 **EQ — Bass EQ 2**
 - 50Hz: +2, 120Hz: 0, 400Hz: -3, 800Hz: +3, 4.5kHz: +4, VOL: 55
@@ -39,17 +47,6 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 - Mix: 25, Decay: 35, Trail: On
 - CTL off: bypassed (main groove — tight and dry, right in the pocket with the drums). CTL on: engaged (interlude).
 - Opens the space up for the interlude's more atmospheric feel, then closes right back down as the tune ramps back to full energy.
-
-## AMP: Mess Bass (Mesa/Boogie Bass 400) + CAB: EBS410 IR (User IR 4)
-
-Rebuilt 2026-09-18 off the GP-5's own AMP + a loaded IR — NAMs are off for now (Valeton N->S volume issue, device-side). The old NAM was the clean-voiced Darkglass Harmonic Booster into an Aguilar DB 751 — no grit, just a warm, hi-fi boost. Mess Bass at the same low gain gives the same clean, articulate character; EBS410 is ir.md's own recommendation for clean bass tones, which suits a part that has to stay present without ever competing with Eric Johnson's guitar for space.
-
-- Gain: 40
-- VOL: 65
-- Bass: 55
-- Middle: 60
-- Treble: 65
-- CAB VOL: 60.
 
 ## CTL summary
 
@@ -73,7 +70,7 @@ Rebuilt 2026-09-18 off the GP-5's own AMP + a loaded IR — NAMs are off for now
 - Footswitch off. No fuzz anywhere in this build — it would clash with the clean, hi-fi character the whole tune is built around.
 
 **4. Joyo Tidal Wave — Bypassed**
-- Footswitch off, Drive/Blend not engaged. The NAM's own harmonic-boost character is the only "enhancement" this tone needs — stacking another gain stage would just soften the note definition this tune depends on.
+- Footswitch off, Drive/Blend not engaged. The Avalon DI's clean, hi-fi character is the only "enhancement" this tone needs — stacking another gain stage would just soften the note definition this tune depends on.
 
 **5. Joyo Narcissus — Bypassed**
 - Footswitch off. The GP-5's own B-Chorus already covers the interlude's chorus needs — running both at once would just get thick and washy where this section wants shimmer, not mud.

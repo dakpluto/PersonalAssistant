@@ -29,15 +29,17 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 - CTL off: bypassed (verse). CTL on: engaged (mid-section).
 - This is the module doing the heavy lifting for the dynamic contrast. Verse stays completely clean. Mid-section gets real grit — matching the intensity of that famously wild, heavily-processed electric guitar passage without trying to literally imitate it.
 
-**AMP — Classic Bass (Ampeg SVT)**
-- Gain: 30, Bass: 55, Middle: 55, MidFreq: 800Hz, Treble: 45, VOL: 60
-- Always on, same for both CTL states.
-- Low gain keeps this headroom-only, not a drive source — the DST module handles all the grit. MidFreq at 800Hz and a rolled-back Treble keep the tone warm and rounded, matching the intimate, unplugged character of the verses without fighting the acoustic 12-string's own top end.
-
-**CAB — User IR 9 (TC410, Slot 9)**
-- VOL: 58
-- Always on.
-- TC410 has a simple, near-flat response with a mild 100Hz boost — a neutral, honest pairing that doesn't push its own character onto a part that isn't a transcription of Lake's original tone.
+**AMP/CAB — NAM SnapTone, slot 53: CleanSVT** (always on)
+- Built from the `SVT CLEAN (SVT-CL)` NAM and the Apg810 IR, combined into one snaptone.
+- Real Ampeg SVT-CL preamp on its clean setting, into the Apg810 8x10 IR.
+- Lake's ballad bass: clean, round, supportive.
+- Gain: 49, VOL: 50, Bass: 55, Middle: 55, Treble: 45
+- Gain 49: a little under default. This part wants less push than the other CleanSVT patches.
+- Bass 55: a touch more low end.
+- Middle 55: a touch more midrange.
+- Treble 45: top end pulled back a little.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 53 directly.
 
 **EQ — Bass EQ 1**
 - 33Hz: +2, 150Hz: +2, 600Hz: 0, 2kHz: +1, 8kHz: -1, VOL: 52

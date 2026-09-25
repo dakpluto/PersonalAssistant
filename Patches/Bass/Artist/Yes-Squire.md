@@ -25,13 +25,17 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB
 - **CTL switch.** Off = engaged, On = bypassed.
 - Blend at 60 (not maxed) keeps the fundamental intact under the drive — this is the Blend knob doing the job Squire's amp-splitting rig did physically. Treble pushed hard (70) for the aggressive top-end snap that defines the tone. Off = the driven growl (main Yes sound). On = fully clean for open/arpeggiated sections.
 
-**AMP — Foxy Bass** (Vox AC-100)
-- VOL: 60, Bass: 55, Treble: 70
-- Always on, both CTL states. Squire ran Vox alongside his Marshall for the top-end snap — Foxy Bass is the closest voicing in this catalog to that brightness. Treble pushed to keep the amp itself bright regardless of which CTL state is active.
-
-**CAB — AMPG 4x10** (Ampeg SVT-410HE)
-- VOL: 55
-- Always on. Only true bass cab in the catalog — gives the amp sim real low-end foundation under the brightness.
+**AMP/CAB — NAM SnapTone, slot 55: BrightSVT** (always on)
+- Built from the `SVT SANS BRIGHT DRIVE (SVT-CL)` NAM and the Hartke410 IR, combined into one snaptone.
+- Real Ampeg SVT-CL with the bright drive setting, into the aluminum-cone Hartke410 IR.
+- Squire's Rickenbacker clank: bright, driven, trebly. The closest combo in the set.
+- Gain: 50, VOL: 50, Bass: 55, Middle: 50, Treble: 70
+- Gain 50: the capture as built.
+- Bass 55: a touch more low end.
+- Middle 50: flat.
+- Treble 70: more top end.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 55 directly.
 
 **EQ — Bass EQ 1**
 - 33Hz: +8, 150Hz: -5, 600Hz: +8, 2kHz: +12, 8kHz: +15, VOL: 50

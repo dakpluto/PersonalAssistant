@@ -7,11 +7,6 @@ Built from the band's general sound. I haven't verified the exact guitars and am
 Instrument: Stratocaster (HSS). Position 2 (bridge+middle) for the riff, bridge humbucker for the solo.
 GP-5 only, Stratocaster (HSS), no pedalboard.
 
-## AMP: Foxy 30TB (AC30 Top Boost) + CAB: EVM112 IR (User IR 5)
-
-An AC30 Top Boost at the edge of breakup gives you the chime-plus-grit that sits under the harmonica. It crunches when you dig in and cleans up when you back off.
-EVM112 is clean-voiced and flat, so the AC30's own character comes through without extra V30 honk.
-
 ## Module chain
 
 **NR — Gate**, always on.
@@ -24,12 +19,17 @@ The AC30 at gain 38 plus a hot pickup hums between riff phrases. 20 cleans that 
 Gain: 35, Tone: 55, VOL: 68.
 Pushes the already-edgy AC30 into a singing lead. The Tube Screamer mid-hump helps the solo cut through the band. VOL 68 gives about +3dB for the lead.
 
-**AMP — Foxy 30TB**, always on.
-Gain: 38, Tone Cut: 45, VOL: 60, Bass: 50, Treble: 58, Char: Cool.
-Gain 38 is the edge of breakup: the riff crunches, arpeggiated notes stay clear. Tone Cut 45 tames the AC30 top a bit. Char Cool keeps it vintage, not hot-rodded.
-
-**CAB — User IR 5 (EVM112)**, always on.
-VOL: 60.
+**AMP/CAB — NAM SnapTone, slot 74: PushedAC30** (always on)
+- Built from the `SLAMMIN_VOX_AC30_TB_V7_TC0_B7_T8_PUSH_S` NAM and the Origin Effects British Alnico 2x12 Medium Mix IR, combined into one snaptone.
+- Real AC30 Top Boost at volume 7, pushed into crunch, into the British Alnico 2x12.
+- Mike Campbell's pushed AC30 crunch.
+- Gain: 50, VOL: 50, Bass: 50, Middle: 50, Treble: 58
+- Gain 50: the capture as built.
+- Bass 50: flat.
+- Middle 50: flat.
+- Treble 58: more top end.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 74 directly.
 
 **EQ — Guitar EQ 2**, always on.
 100Hz: -3, 500Hz: 0, 1kHz: +1, 3kHz: +1, 6kHz: -2, VOL: 50.

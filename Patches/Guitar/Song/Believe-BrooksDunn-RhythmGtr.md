@@ -7,11 +7,6 @@ Built from the song's overall sound. I haven't verified the exact guitars and am
 Instrument: Stratocaster (HSS). Neck pickup for the arpeggios. Bridge humbucker for the climax lead.
 GP-5 only, Stratocaster (HSS), no pedalboard.
 
-## AMP: Match CL + CAB: EVM112 IR (User IR 5)
-
-A Matchless clean is chimey and touch-sensitive for the quiet parts. It takes a boosted drive stack well for the climax.
-EVM112 is the loaded guitar cab with a flat, hi-fi response. It keeps Nashville clean tones honest and doesn't add V30 honk.
-
 ## Module chain
 
 **NR — Gate**, always on.
@@ -26,12 +21,17 @@ Stacks into the Green OD for the climax lead. Adds level so it soars over the ch
 Gain: 36, Tone: 55, VOL: 64.
 A singing, sustained lead tone. Gain 36 plus the Boost gives long sustain without fizz.
 
-**AMP — Match CL**, always on.
-Gain: 30, PRES: 50, VOL: 62, Bass: 48, Middle: 52, Treble: 54.
-A clean, chimey base.
-
-**CAB — User IR 5 (EVM112)**, always on.
-VOL: 60.
+**AMP/CAB — NAM SnapTone, slot 62: NashClean** (always on)
+- Built from the `CLEANEST - Fender Deluxe Reverb 1965 [Hyper Accuracy]` NAM and the Origin Effects Brown Deluxe 1x12 Medium Mix IR, combined into one snaptone.
+- Real 1965 Fender Deluxe Reverb at its cleanest setting, into the Origin Effects Brown Deluxe 1x12.
+- Clean Nashville ballad electric. The cleanest Deluxe setting.
+- Gain: 50, VOL: 50, Bass: 48, Middle: 52, Treble: 54
+- Gain 50: the capture as built.
+- Bass 48: low end pulled back a little.
+- Middle 52: a touch more midrange.
+- Treble 54: a touch more top end.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 62 directly.
 
 **EQ — Guitar EQ 2**, always on.
 100Hz: -3, 500Hz: -1, 1kHz: 0, 3kHz: +1, 6kHz: -1, VOL: 50.

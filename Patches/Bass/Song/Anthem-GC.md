@@ -4,17 +4,6 @@
 Pop-punk bass — tight low end, upfront pick attack, driving eighth notes under the verse riff, bigger and more open for the "I don't wanna be" hook.
 GP-5 only, P/J bass, no pedalboard.
 
-## AMP: Classic Bass (Ampeg SVT) + CAB: Apg810 IR (User IR 3)
-
-Rebuilt 2026-09-18 off the GP-5's own AMP + a loaded IR — NAMs are off for now (Valeton N->S volume issue, device-side). Same Ampeg-family target as the discontinued V4B capture, dialed brighter and cleaner than the Bush patch below — this is early-2000s pop-punk, not grunge, needs pick clarity over amp breakup. Apg810 is a direct real-world match for the SVT-family AMP model (same "Ampeg 8x10" cab the original NAM capture used).
-
-- Gain: 45 — enough amp character to feel like a real rig, not clean-DI flat; lower than a NAM-equivalent 55 since Classic Bass's own gain structure runs hotter for the same feel.
-- Bass: 62 — full low end to anchor the palm-muted verse riff.
-- Middle: 55, MidFreq: 800Hz — present, not scooped, so the bass cuts through two guitars.
-- Treble: 55 — brighter than a grunge dial-in. Pick attack needs to read clearly at this tempo.
-- VOL: 68.
-- CAB VOL: 62.
-
 ## Module chain
 
 **NR — Gate**, always on.
@@ -27,9 +16,17 @@ Gain: 45, Blend: 60, VOL: 60, Bass: 55, Treble: 55.
 Off for the verse — clean punchy V4B tone, all pick and low end.
 On for the chorus — Bass OD stacked on top adds grit and push without burying the note, blended at 60% so it thickens rather than fuzzes out.
 
-**AMP — Classic Bass**, always on. Gain 45, Bass 62, Middle 55, MidFreq 800Hz, Treble 55, VOL 68.
-
-**CAB — User IR 3 (Apg810)**, always on. VOL 62.
+**AMP/CAB — NAM SnapTone, slot 55: BrightSVT** (always on)
+- Built from the `SVT SANS BRIGHT DRIVE (SVT-CL)` NAM and the Hartke410 IR, combined into one snaptone.
+- Real Ampeg SVT-CL with the bright drive setting, into the aluminum-cone Hartke410 IR.
+- Pop-punk bass: bright, driven, picked. The bright SVT drive plus Hartke clank.
+- Gain: 50, VOL: 50, Bass: 62, Middle: 55, Treble: 55
+- Gain 50: the capture as built.
+- Bass 62: Full low end to anchor the palm-muted verse riff.
+- Middle 55: Present, not scooped, so the bass cuts through two guitars.
+- Treble 55: Brighter than a grunge dial-in. Pick attack needs to read clearly at this tempo.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 55 directly.
 
 **EQ — Bass EQ 2**, always on.
 50Hz: +3, 120Hz: +2, 400Hz: -3, 800Hz: 0, 4.5kHz: +6, VOL: 55.

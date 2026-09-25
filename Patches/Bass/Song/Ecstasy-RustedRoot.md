@@ -24,15 +24,17 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 - CTL off: bypassed (groove — amp alone, warm and edge-of-breakup). CTL on: engaged (climax).
 - A Tube Screamer-style warm, mid-forward drive rather than a harsher distortion — fits this song's organic, tribal-rock intensity better than something colder or more aggressive.
 
-**AMP — Bellman 59B (Fender 59 Bassman, Bright Channel)**
-- Gain: 38, PRES: 55, VOL: 65, Bass: 56, Middle: 55, Treble: 55
-- Always on, same for both CTL states.
-- The Bright channel of a vintage Fender Bassman gives natural, warm breakup even at moderate Gain — a good match for this song's organic, slightly raw energy. This same setting has to serve the grounded groove too, so it stays short of full drive; the Green OD is what pushes it into real intensity for the climax.
-
-**CAB — User IR 6 (Hartke410)**
-- VOL: 60
-- Always on, same for both CTL states.
-- Bright, aggressive aluminum-cone voicing that keeps this present and defined through a busy, percussion-heavy mix.
+**AMP/CAB — NAM SnapTone, slot 60: SoulB18** (always on)
+- Built from the `Ampeg B18 - Head DI - Bass Chan - Vol 7.5 (B-18N)` NAM and the Apg115 IR, combined into one snaptone.
+- Real Ampeg B-18N at volume 7.5, where the tubes start to growl, into the Apg115 B-15 cab IR.
+- Organic, raw, percussion-heavy. The cranked B-15 gives natural tube growl.
+- Gain: 52, VOL: 50, Bass: 56, Middle: 55, Treble: 55
+- Gain 52: a little over default. This part wants more push than the other SoulB18 patches.
+- Bass 56: more low end.
+- Middle 55: a touch more midrange.
+- Treble 55: a touch more top end.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 60 directly.
 
 **EQ — Bass EQ 1**
 - 33Hz: +3, 150Hz: -1, 600Hz: +2, 2kHz: +4, 8kHz: +2, VOL: 55
@@ -49,11 +51,6 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 - Mix: 25, Decay: 38, Trail: On
 - CTL off: bypassed (groove — tight and dry, locked with the percussion). CTL on: engaged (climax).
 - Opens the space up for the song's big, cathartic climax — a genuine "ecstasy" moment deserves some real scale.
-
-## CAB IR — Hartke410 (Slot 6)
-
-- Hartke XL410 with aluminum cones, confirmed loaded on User IR slot 6. Bright, aggressive voicing suited to a driven bass tone in a busy mix.
-- Encoded directly into the `.prst` as a real, active CAB reference (`User IR 6`) — no manual loading needed for this one.
 
 ## CTL summary
 

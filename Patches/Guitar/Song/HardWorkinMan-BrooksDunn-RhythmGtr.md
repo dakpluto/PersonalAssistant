@@ -6,11 +6,6 @@ Built from the song's overall sound. I haven't verified the exact guitars and am
 Instrument: Stratocaster (HSS). Position 2 (bridge+middle) for twang. Bridge humbucker for the solo.
 GP-5 only, Stratocaster (HSS), no pedalboard.
 
-## AMP: Tweedy (Tweed Deluxe) + CAB: EVM112 IR (User IR 5)
-
-A tweed Deluxe is ragged and raucous even at low gain. That's the grit a fast honky-tonk rocker wants under the twang.
-EVM112 is the loaded guitar cab with a flat, hi-fi response. It keeps Nashville clean tones honest and doesn't add V30 honk.
-
 ## Module chain
 
 **NR — Gate**, always on.
@@ -25,12 +20,17 @@ Chicken-pickin' needs compression: every plucked note snaps out at the same leve
 Gain: 38, Tone: 58, VOL: 68.
 The SD-1 for the solo. It has a tight, bright bite that suits fast Tele-style runs. VOL 68 adds about +3dB.
 
-**AMP — Tweedy**, always on.
-Gain: 36, Tone: 60, VOL: 62.
-Gain 36 is just broken up. Tone 60 gives twang without ice.
-
-**CAB — User IR 5 (EVM112)**, always on.
-VOL: 60.
+**AMP/CAB — NAM SnapTone, slot 65: RythymDeluxe** (always on)
+- Built from the `RYTHM - Fender Deluxe Reverb 1965 [Hyper Accuracy]` NAM and the Origin Effects Brown Deluxe 1x12 Medium Mix IR, combined into one snaptone.
+- Real 1965 Deluxe Reverb at the rhythm setting, gritty but not saturated, into the Brown Deluxe 1x12.
+- Gritty country-rock rhythm. The Deluxe rhythm setting.
+- Gain: 50, VOL: 50, Bass: 50, Middle: 50, Treble: 50
+- Gain 50: the capture as built.
+- Bass 50: flat.
+- Middle 50: flat.
+- Treble 50: flat.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 65 directly.
 
 **EQ — Guitar EQ 2**, always on.
 100Hz: -3, 500Hz: -1, 1kHz: +1, 3kHz: +2, 6kHz: -1, VOL: 50.

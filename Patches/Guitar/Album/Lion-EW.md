@@ -2,17 +2,23 @@
 
 HSS Stratocaster. Full board.
 Album-level build, modeled on the overall guitar approach across Elevation Worship's *Lion* (2022) and their wider catalog — the modern CCM "wall of sound": ambient, heavily modulated clean tones under verses, swelling into a bigger, saturated anthem tone for choruses and lead lines, all of it soaked in delay and reverb the whole time.
-That wash never goes away between the two states — only the gain does. That's the core design decision here: MOD/DLY/RVB/EQ/AMP stay fixed and always on, CTL only swaps the gain stages.
+That wash never goes away between the two states — only the gain does. That's the core design decision here: MOD/DLY/RVB/EQ and the snaptone stay fixed and always on, CTL only swaps the gain stages.
 
 ## GP-5 Settings
 
 Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB
 
-**AMP/CAB — uses an IR for CAB**
-- AMP: **Dark Twin** (Fender 65 Twin Reverb) — Gain 35, VOL 65, Bass 50, Middle 60, Treble 55, Bright off.
-- IR: **American Twin 2x12 Medium Mix** (from `IRs/ir.md`) — the suggested pairing for Dark Twin in that file. Medium blend chosen specifically because this cab has to work for both CTL states: Bright Mix would get brittle once the drive stages kick in for the anthem state, Dark Mix would dull the ambient clean shimmer too much.
-- `CAB` is off (`model: null`) in the `.prst`, same reasoning as a NAM: no way to know which of the 20 `User IR` slots this file is sitting in on the device, or whether it's loaded at all right now. Load **American Twin 2x12 Medium Mix** into a `User IR` slot in Valeton Suite and point the device's CAB block at it before using this patch.
-- Bright switch on the amp itself is left off — the American Twin IR (JBL D120F) is already a hi-fi, extended-top-end speaker; stacking the amp's own bright switch on top would get harsh once EQ and the 6kHz lift are added downstream.
+**AMP/CAB — NAM SnapTone, slot 67: WorshipAC30** (always on)
+- Built from the `SLAMMIN_VOX_AC30_TB_V3_TC0_B4_T7_BRIGHT_S` NAM and the Origin Effects British Alnico 2x12 Medium Mix IR, combined into one snaptone.
+- Real Vox AC30 Top Boost, Bright, into the Origin Effects British Alnico 2x12.
+- Modern worship lives on a chimey AC30. Bright Top Boost channel.
+- Gain: 50, VOL: 50, Bass: 50, Middle: 60, Treble: 55
+- Gain 50: the capture as built.
+- Bass 50: flat.
+- Middle 60: more midrange.
+- Treble 55: a touch more top end.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 67 directly.
 
 **NR — Gate**
 - THRE: 20
@@ -45,7 +51,7 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB
 - Always on, both CTL states. Long, modulated, spacious reverb — the Mod parameter adds a subtle shimmer/movement to the tail that's very characteristic of this modern-CCM ambient sound. This is the "room" the whole track lives in.
 
 ### CTL Summary (GP-5)
-- **CTL Off — Rhythm (verses, ambient sections):** Clean Dark Twin/American Twin tone, no PRE boost, no drive. The wash (chorus/delay/reverb) carries the sound. This is the main texture of the patch.
+- **CTL Off — Rhythm (verses, ambient sections):** Clean, chimey AC30 tone, no PRE boost, no drive. The wash (chorus/delay/reverb) carries the sound. This is the main texture of the patch.
 - **CTL On — Lead (choruses, anthem sections):** Boost + Green OD both kick in on top of the same amp/cab/wash, pushing into a bigger, saturated, sustained tone — same ambient character, just louder and driven. Pair with the King of Kings right channel for the full swell.
 
 ## Full Pedalboard (signal chain order)

@@ -6,10 +6,6 @@ A polished power ballad. Smooth whole and half notes, warm but clearer than a vi
 Built from the song's overall sound. I haven't verified the session bassist's exact rig.
 Fingers. P forward with a little J. Tone knob around 50%.
 
-## AMP: Classic Bass (Ampeg SVT) + CAB: TC410 IR (User IR 9)
-
-A clean SVT into the neutral TC410. It's polished and modern-for-1998, a bit clearer than the B-15 thump on Neon Moon.
-
 ## Module chain
 
 **NR — Gate**, always on.
@@ -22,12 +18,17 @@ Smooth, even sustain.
 
 **DST — off.** No grit.
 
-**AMP — Classic Bass**, always on.
-Gain: 20, Bass: 58, Middle: 50, MidFreq: 450Hz, Treble: 44, VOL: 65.
-Clean and warm with a touch more clarity.
-
-**CAB — User IR 9 (TC410)**, always on.
-VOL: 60.
+**AMP/CAB — NAM SnapTone, slot 51: CleanB15** (always on)
+- Built from the `Ampeg B18 - Head DI - Bass Chan - Vol 2.5 (B-18N)` NAM and the Apg115 IR, combined into one snaptone.
+- Real Ampeg B-18N fliptop (the B-15 preamp circuit), captured clean at volume 2.5, into the Apg115 B-15 cab IR.
+- Ballad bass: sustained roots under the vocal. The clean B-15 keeps it warm and out of the way.
+- Gain: 48, VOL: 50, Bass: 58, Middle: 50, Treble: 44
+- Gain 48: a little under default. This part wants less push than the other CleanB15 patches.
+- Bass 58: more low end.
+- Middle 50: flat.
+- Treble 44: top end pulled back noticeably.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 51 directly.
 
 **EQ — Bass EQ 2**, always on.
 50Hz: +1, 120Hz: +2, 400Hz: -1, 800Hz: +1, 4.5kHz: -3, VOL: 52.

@@ -8,12 +8,6 @@ The guitar job here is mostly rhythm: pushing eighth notes and tight chord stabs
 Instrument: Stratocaster (HSS). Position 2 or 4 for the verse chops. Bridge humbucker for the chorus drive and lead hooks.
 GP-5 only, Stratocaster (HSS), no pedalboard.
 
-## AMP: Foxy 30TB + CAB: V30112 IR (User IR 10)
-
-An AC30 Top Boost is the most common worship-rig amp. It has chime on top and a mid push that cuts through a dense band.
-Gain 32 keeps it just clean enough that the always-on Green OD does the dirt work.
-V30112 gives the tighter, upper-mid bark a driven rhythm part needs at this tempo. EVM112 would stay rounder and lose some of the chop.
-
 ## Module chain
 
 **NR — Gate**, always on.
@@ -28,12 +22,17 @@ Level and push for the lead hooks. It hits the Green OD harder for more sustain.
 Gain: 30, Tone: 60, VOL: 62.
 The core rhythm grit. Low gain keeps eighth-note chugs tight and articulate at 127 BPM. Tone 60 cuts through the keys and the choir.
 
-**AMP — Foxy 30TB**, always on.
-Gain: 32, Tone Cut: 40, VOL: 60, Bass: 45, Treble: 58, Char: Cool.
-Edge-of-breakup AC30. Treble 58 gives chime. Tone Cut 40 takes the fizz off. Bass 45 leaves room for the bass and kick. Cool keeps it from going too hairy with the drive stacked in front.
-
-**CAB — User IR 10 (V30112)**, always on.
-VOL: 60.
+**AMP/CAB — NAM SnapTone, slot 67: WorshipAC30** (always on)
+- Built from the `SLAMMIN_VOX_AC30_TB_V3_TC0_B4_T7_BRIGHT_S` NAM and the Origin Effects British Alnico 2x12 Medium Mix IR, combined into one snaptone.
+- Real Vox AC30 Top Boost, Bright, into the Origin Effects British Alnico 2x12.
+- Chimey AC30 Top Boost: the modern worship standard.
+- Gain: 48, VOL: 50, Bass: 45, Middle: 50, Treble: 58
+- Gain 48: a little under default. This part wants less push than the other WorshipAC30 patches.
+- Bass 45: low end pulled back a little.
+- Middle 50: flat.
+- Treble 58: more top end.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 67 directly.
 
 **EQ — Guitar EQ 2**, always on.
 100Hz: -3, 500Hz: -1, 1kHz: +1, 3kHz: +2, 6kHz: 0, VOL: 50.

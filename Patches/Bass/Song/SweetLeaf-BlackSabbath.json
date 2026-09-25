@@ -2,76 +2,16 @@
   "patch_name": "SweetLeaf",
   "patch_vol": 52,
   "bpm": 94,
-  "ir": {
-    "name": "Sunn215"
-  },
+  "nam": {"name": "HairySVT (slot 58): SVT SANS HAIRY DRIVE (SVT-CL) + Sunn215", "slot": 58, "settings": {"Gain": 50, "VOL": 50, "Bass": 60, "Middle": 58, "Treble": 45}},
   "modules": {
-    "NR": {
-      "model": "Gate",
-      "always_on": true,
-      "settings": {
-        "THRE": 25
-      }
-    },
-    "PRE": {
-      "model": "Micro Boost",
-      "ctl": true,
-      "ctl_off_state": "off",
-      "ctl_on_state": "on",
-      "settings": {
-        "Gain": 40
-      }
-    },
-    "DST": {
-      "model": "Bass OD",
-      "always_on": true,
-      "settings": {
-        "Gain": 55,
-        "Blend": 50,
-        "VOL": 55,
-        "Bass": 58,
-        "Treble": 48
-      }
-    },
-    "AMP": {
-      "model": "Classic Bass",
-      "always_on": true,
-      "settings": {
-        "Gain": 48,
-        "Bass": 60,
-        "Middle": 58,
-        "MidFreq": 1,
-        "Treble": 45,
-        "VOL": 62
-      }
-    },
-    "CAB": {
-      "model": "User IR 8",
-      "always_on": true,
-      "settings": {
-        "VOL": 60
-      }
-    },
-    "EQ": {
-      "model": "Bass EQ 2",
-      "always_on": true,
-      "settings": {
-        "50Hz": 1,
-        "120Hz": 2,
-        "400Hz": 2,
-        "800Hz": 1,
-        "4.5kHz": -3,
-        "VOL": 52
-      }
-    },
-    "MOD": {
-      "model": null
-    },
-    "DLY": {
-      "model": null
-    },
-    "RVB": {
-      "model": null
-    }
+    "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 25}},
+    "PRE": {"model": "Micro Boost", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Gain": 40}},
+    "DST": {"model": "Bass OD", "always_on": true, "settings": {"Gain": 55, "Blend": 50, "VOL": 55, "Bass": 58, "Treble": 48}},
+    "AMP": {"model": null},
+    "CAB": {"model": null},
+    "EQ": {"model": "Bass EQ 2", "always_on": true, "settings": {"50Hz": 1, "120Hz": 2, "400Hz": 2, "800Hz": 1, "4.5kHz": -3, "VOL": 52}},
+    "MOD": {"model": null},
+    "DLY": {"model": null},
+    "RVB": {"model": null}
   }
 }

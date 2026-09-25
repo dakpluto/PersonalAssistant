@@ -24,15 +24,17 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 - CTL off: bypassed (verse — amp alone, clean-to-edge). CTL on: engaged (climax).
 - Crunch Box gives a thick, saturated rock crunch rather than a harsh, buzzy distortion — the right character for a hard rock power ballad climax, not a metal one. This is what turns the tone from "restrained" to "driving" for the back half of the song.
 
-**AMP — Classic Bass (Ampeg SVT)**
-- Gain: 30, Bass: 58, Middle: 54, MidFreq: 800Hz, Treble: 50, VOL: 65
-- Always on, same for both CTL states.
-- A real bass amp, not a guitar amp — Duff McKagan's actual tone here is a proper rock bass rig, not a Marshall. Gain kept moderate since this same setting has to serve the quiet verse too; the La Charger module below is what pushes it into full rock drive for the climax. MidFreq at 800Hz gives a bit of rock bite without losing the SVT's low-end authority.
-
-**CAB — User IR 3 (Apg810)**
-- VOL: 60
-- Always on, same for both CTL states.
-- Ampeg SVT-810E — the direct real-world pairing for the Classic Bass AMP model above, and a properly bass-voiced cab rather than a guitar 4x12.
+**AMP/CAB — NAM SnapTone, slot 53: CleanSVT** (always on)
+- Built from the `SVT CLEAN (SVT-CL)` NAM and the Apg810 IR, combined into one snaptone.
+- Real Ampeg SVT-CL preamp on its clean setting, into the Apg810 8x10 IR.
+- Duff's ballad tone is clean and big. Clean SVT into an 8x10.
+- Gain: 49, VOL: 50, Bass: 58, Middle: 54, Treble: 50
+- Gain 49: a little under default. This part wants less push than the other CleanSVT patches.
+- Bass 58: more low end.
+- Middle 54: a touch more midrange.
+- Treble 50: flat.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 53 directly.
 
 **EQ — Bass EQ 1**
 - 33Hz: +3, 150Hz: 0, 600Hz: +2, 2kHz: +3, 8kHz: +1, VOL: 55
@@ -49,11 +51,6 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 - Mix: 30, Decay: 48, Trail: On
 - CTL off: bypassed (verse — dry, intimate, right with the piano). CTL on: engaged (climax).
 - A big Hall for the huge, cinematic outro — strings, choir-like backing vocals, and Slash's solo all call for real scale here.
-
-## CAB IR — Apg810 (Slot 3)
-
-- Ampeg SVT-810E, confirmed loaded on User IR slot 3 — the classic "wall of Ampeg" bass stack, and the most direct real-world pairing for the Classic Bass AMP model above.
-- Encoded directly into the `.prst` as a real, active CAB reference (`User IR 3`) — no manual loading needed for this one.
 
 ## CTL summary
 

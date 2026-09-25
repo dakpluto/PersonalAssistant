@@ -24,15 +24,17 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 - Always on, same for both CTL states.
 - Slightly less pushed than the "Basket Case" build (Gain 48 vs. 55) — this song's more laid-back tempo doesn't need quite as much edge, but the same blended clean+dirty Dirnt character carries through both songs.
 
-**AMP — Classic Bass (Ampeg SVT)**
-- Gain: 40, Bass: 55, Middle: 56, MidFreq: 800Hz, Treble: 58, VOL: 66
-- Always on, same for both CTL states.
-- Same amp family as "Basket Case" — SVT is a genuine punk-rock bass amp choice, and keeping it consistent across the two songs makes sense for the same artist and era.
-
-**CAB — User IR 4 (EBS410)**
-- VOL: 58
-- Always on, same for both CTL states.
-- Bright, clean-favoring high-mid character — a different flavor from "Basket Case"'s Hartke410, matching this song's slightly more relaxed, melodic delivery.
+**AMP/CAB — NAM SnapTone, slot 55: BrightSVT** (always on)
+- Built from the `SVT SANS BRIGHT DRIVE (SVT-CL)` NAM and the Hartke410 IR, combined into one snaptone.
+- Real Ampeg SVT-CL with the bright drive setting, into the aluminum-cone Hartke410 IR.
+- Dirnt again: bright, driven, picked. Same rig logic as Basket Case.
+- Gain: 48, VOL: 50, Bass: 55, Middle: 56, Treble: 58
+- Gain 48: a little under default. This part wants less push than the other BrightSVT patches.
+- Bass 55: a touch more low end.
+- Middle 56: more midrange.
+- Treble 58: more top end.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 55 directly.
 
 **EQ — Bass EQ 1**
 - 33Hz: +2, 150Hz: -1, 600Hz: +2, 2kHz: +4, 8kHz: +3, VOL: 55
@@ -49,11 +51,6 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 - Mix: 16, Decay: 26, Trail: On
 - CTL off: bypassed (verse — tight and dry). CTL on: engaged (chorus).
 - A light touch of room for the chorus hook, kept subtle in line with 90s pop-punk's generally dry production.
-
-## CAB IR — EBS410 (Slot 4)
-
-- EBS ProLine 410 with a 2" tweeter, confirmed loaded on User IR slot 4. Accentuated high-mids that sit well in a mix, particularly on clean tones.
-- Encoded directly into the `.prst` as a real, active CAB reference (`User IR 4`) — no manual loading needed for this one.
 
 ## CTL summary
 

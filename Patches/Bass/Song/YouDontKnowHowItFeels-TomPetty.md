@@ -6,10 +6,6 @@ A deep, relaxed pocket under a dry groove. The bass is round, warm, and sits beh
 Built from the song's overall sound. I haven't verified the exact bass rig on the record.
 Fingers over the neck. P pickup soloed. Tone knob around 40%.
 
-## AMP: Classic Bass (Ampeg SVT) + CAB: Apg115 IR (User IR 1)
-
-The B-15's round, woody thump is the classic organic-record bass sound. It suits Rubin's natural production.
-
 ## Module chain
 
 **NR — Gate**, always on.
@@ -22,12 +18,17 @@ Light leveling.
 
 **DST — off.** No grit.
 
-**AMP — Classic Bass**, always on.
-Gain: 22, Bass: 60, Middle: 50, MidFreq: 450Hz, Treble: 38, VOL: 65.
-Warm, clean, round.
-
-**CAB — User IR 1 (Apg115)**, always on.
-VOL: 60.
+**AMP/CAB — NAM SnapTone, slot 54: FullB15** (always on)
+- Built from the `Ampeg B18 - Head DI - Bass Chan - Vol 5 (B-18N)` NAM and the Apg115410 IR, combined into one snaptone.
+- Real Ampeg B-18N at volume 5, warmer and fuller than the clean capture, into the Apg115410 (1x15 + 4x10) IR.
+- Laid-back, warm mid-90s Petty groove. Fuller B-15.
+- Gain: 48, VOL: 50, Bass: 60, Middle: 50, Treble: 38
+- Gain 48: a little under default. This part wants less push than the other FullB15 patches.
+- Bass 60: more low end.
+- Middle 50: flat.
+- Treble 38: top end pulled back noticeably.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 54 directly.
 
 **EQ — Bass EQ 2**, always on.
 50Hz: +1, 120Hz: +2, 400Hz: 0, 800Hz: 0, 4.5kHz: -4, VOL: 52.

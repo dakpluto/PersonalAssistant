@@ -6,10 +6,6 @@ Sparse and warm under the piano in the verses. Big, deep, sustained under the go
 Built from the song's overall sound. I haven't verified the session bassist's exact rig.
 Fingers over the neck. P forward. Tone knob around 45%.
 
-## AMP: Mess Bass (Mesa Bass 400) + CAB: Apg115410 IR (User IR 2)
-
-A smooth Bass 400 clean into the summed B-15 and 410. It's flat and thunderous, so it fills the room under a choir.
-
 ## Module chain
 
 **NR — Gate**, always on.
@@ -24,12 +20,17 @@ Holds long notes steady.
 Gain: 22, Blend: 22, VOL: 55, Bass: 55, Treble: 45.
 A hint of harmonic push for the climax. Blend 22 keeps it essentially clean.
 
-**AMP — Mess Bass**, always on.
-Gain: 22, VOL: 65, Bass: 60, Middle: 48, Treble: 42.
-Warm, deep clean.
-
-**CAB — User IR 2 (Apg115410)**, always on.
-VOL: 60.
+**AMP/CAB — NAM SnapTone, slot 51: CleanB15** (always on)
+- Built from the `Ampeg B18 - Head DI - Bass Chan - Vol 2.5 (B-18N)` NAM and the Apg115 IR, combined into one snaptone.
+- Real Ampeg B-18N fliptop (the B-15 preamp circuit), captured clean at volume 2.5, into the Apg115 B-15 cab IR.
+- A slow country ballad wants warm, clean, round low end. The B-15 does that with no tricks.
+- Gain: 49, VOL: 50, Bass: 60, Middle: 48, Treble: 42
+- Gain 49: a little under default. This part wants less push than the other CleanB15 patches.
+- Bass 60: more low end.
+- Middle 48: midrange pulled back a little.
+- Treble 42: top end pulled back noticeably.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 51 directly.
 
 **EQ — Bass EQ 1**, always on.
 33Hz: +2, 150Hz: +1, 600Hz: -2, 2kHz: 0, 8kHz: -3, VOL: 52.

@@ -26,11 +26,17 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB
 - **DST — off.**
   No overdrive anywhere in this patch. The real Simple Minds bass tone is clean — adding grit here would just muddy the low end this song needs to stay tight.
 
-- **AMP — Classic Bass** (Ampeg SVT): Gain 40, Bass 60, Middle 65, MidFreq 800Hz, Treble 55, VOL 75. Always on.
-  SVT is the right call for 80s pop-rock bass — punchy without being scooped. MidFreq at 800Hz gives upper-mid bite so the bass cuts through the synth pads instead of hiding under them. Gain stays low — this is a clean amp voicing, not a driven one.
-
-- **CAB — AMPG 4x10** (Ampeg SVT-410HE): VOL 70. Always on.
-  Direct pairing with the SVT amp model. No bass IR available in the current pack (it's guitar-cab focused), so this is the right default rather than a compromise.
+**AMP/CAB — NAM SnapTone, slot 52: AvalonAD2022** (always on)
+- Built from the `Avalon - 38 dB - Chan 1 (Avalon AD2022)` NAM and no cab IR (straight DI), combined into one snaptone.
+- Avalon AD2022 Class A preamp at 38 dB. A studio DI, not an amp: no speaker coloration.
+- 80s pop bass with a DI-style punch, sitting with the synths.
+- Gain: 55, VOL: 50, Bass: 60, Middle: 65, Treble: 55
+- Gain 55: noticeably over default. This part wants more push than the other AvalonAD2022 patches.
+- Bass 60: more low end.
+- Middle 65: more midrange.
+- Treble 55: a touch more top end.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 52 directly.
 
 - **EQ — Bass EQ 1**: 33Hz +6, 150Hz +2, 600Hz -6, 2kHz +8, 8kHz +5, VOL 55. Always on.
   600Hz cut clears out boxiness that fights with the synth pads' low-mids. 2kHz and 8kHz push give the classic bright, "clicky" 80s bass attack that cuts through a busy mix. Slight 33Hz lift keeps the fundamental anchored without letting it get flabby.
@@ -58,14 +64,14 @@ A light +1 octave layer under the hook fills things out without turning into a s
 
 **Donner Ultimate Comp** — engaged for the entire song.
 COMP 55, TONE 60, LEVEL 60, Mode: TREBLE.
-Evens out pick/finger attack across the whole part without an audible squeeze — TREBLE mode keeps that attack articulate feeding into the SVT, which is exactly what a driving 80s pulse bassline needs.
+Evens out pick/finger attack across the whole part without an audible squeeze — TREBLE mode keeps that attack articulate feeding into the DI snaptone, which is exactly what a driving 80s pulse bassline needs.
 
 **Donner Stylish Fuzz** — bypassed for the entire song (footswitch off, true bypass).
 This song never calls for a fuzzy or gated texture on bass — leave it fully out of the chain.
 
 **Joyo Tidal Wave** — engaged for the entire song, low drive character.
 Drive 25, Blend 30, Presence 50, Level 50, Treble 55, Middle 60, Bass 55.
-Mid-Frequency: 500Hz (bass body, not attack-focused — the SVT/EQ stage already handles cut-through).
+Mid-Frequency: 500Hz (bass body, not attack-focused — the GP-5's EQ stage already handles cut-through).
 Bass-Shift: 80Hz (tighter low end, keeps this pop bassline articulate instead of muddy).
 Cab-Sim (DI out): on, if running a DI to FOH. Ground Lift: off unless hum shows up.
 Drive stays low here — it's doing gentle harmonic thickening and acting as a preamp/EQ utility stage, not adding audible dirt. Blend keeps the fundamental intact underneath.

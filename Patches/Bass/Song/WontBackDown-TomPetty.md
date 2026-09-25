@@ -22,15 +22,17 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 **DST — Off**
 - No drive. This tone is clean and warm from top to bottom.
 
-**AMP — L-Star CL (Mesa/Boogie Lone Star, Clean)**
-- Gain: 30, PRES: 55, VOL: 65, Bass: 56, Middle: 52, Treble: 54
-- Always on, same for both CTL states.
-- A hi-fi, headroom-first clean amp voicing — gives this part real warmth with enough clarity to sit alongside the chiming acoustic/electric guitar interplay without getting lost or muddy.
-
-**CAB — User IR 9 (TC410)**
-- VOL: 60
-- Always on, same for both CTL states.
-- Flat, neutral response with just a mild 100Hz boost — a safe, uncolored pairing that lets the L-Star CL's own warmth come through without adding its own character on top.
+**AMP/CAB — NAM SnapTone, slot 52: AvalonAD2022** (always on)
+- Built from the `Avalon - 38 dB - Chan 1 (Avalon AD2022)` NAM and no cab IR (straight DI), combined into one snaptone.
+- Avalon AD2022 Class A preamp at 38 dB. A studio DI, not an amp: no speaker coloration.
+- Jeff Lynne's production is clean and compressed, very DI-forward.
+- Gain: 50, VOL: 50, Bass: 56, Middle: 52, Treble: 54
+- Gain 50: the capture as built.
+- Bass 56: more low end.
+- Middle 52: a touch more midrange.
+- Treble 54: a touch more top end.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 52 directly.
 
 **EQ — Bass EQ 2**
 - 50Hz: +3, 120Hz: +1, 400Hz: 0, 800Hz: +2, 4.5kHz: +2, VOL: 55
@@ -47,11 +49,6 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 - Mix: 15, Decay: 25, Trail: On
 - CTL off: bypassed (verse/chorus — dry and direct). CTL on: engaged (hook).
 - A subtle touch of room for the hook, kept understated — this song's production stays fairly close and direct throughout, so even the "bigger" moment shouldn't open up too much.
-
-## CAB IR — TC410 (Slot 9)
-
-- TC Electronic BC 410, confirmed loaded on User IR slot 9. Flat, neutral response with a mild 100Hz boost — a safe general-purpose pairing for any GP-5 bass AMP, chosen here specifically so it doesn't compete with the L-Star CL's own warm character.
-- Encoded directly into the `.prst` as a real, active CAB reference (`User IR 9`) — no manual loading needed for this one.
 
 ## CTL summary
 

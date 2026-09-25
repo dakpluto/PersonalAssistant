@@ -34,18 +34,17 @@ Gain 32 is a nudge, not a volume jump.
 **DST — off**
 Clean. Any audible grit is wrong for this record.
 
-**AMP — Classic Bass** (Ampeg SVT) (always on)
-- Gain: 30, Bass: 62, Middle: 46, MidFreq: 450Hz, Treble: 34, VOL: 66
-Gain 30 keeps it clean with a little tube warmth.
-Bass 62 for that deep, full fundamental.
-Middle 46 at 450Hz takes a small scoop out of the honk zone. That keeps the thump round instead of boxy.
-Treble 34 is the second half of the flatwound imitation, after the tone knob.
-
-**CAB — User IR 1 (Apg115)** (always on)
-- VOL: 62
-Ampeg B-15, 1x15. This is the Detroit studio bass amp of the era, and the IR is loaded and encoded.
-Its 100Hz peak is exactly the girth this line wants.
-Classic Bass into Apg115 is the same brand family, per ir.md's own pairing.
+**AMP/CAB — NAM SnapTone, slot 51: CleanB15** (always on)
+- Built from the `Ampeg B18 - Head DI - Bass Chan - Vol 2.5 (B-18N)` NAM and the Apg115 IR, combined into one snaptone.
+- Real Ampeg B-18N fliptop (the B-15 preamp circuit), captured clean at volume 2.5, into the Apg115 B-15 cab IR.
+- Motown-era bass. A B-15 is the period-correct amp, clean and round.
+- Gain: 53, VOL: 50, Bass: 62, Middle: 46, Treble: 34
+- Gain 53: a little over default. This part wants more push than the other CleanB15 patches.
+- Bass 62: more low end.
+- Middle 46: midrange pulled back a little.
+- Treble 34: top end pulled back noticeably.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 51 directly.
 
 **EQ — Bass EQ 2** (always on)
 - 50Hz: +1, 120Hz: +3, 400Hz: -2, 800Hz: +2, 4.5kHz: -7, VOL: 52

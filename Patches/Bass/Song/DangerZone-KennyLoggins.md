@@ -6,10 +6,6 @@ The low-end pulse on the record sounds sequenced-synth, typical of a Moroder pro
 The CTL trick: Octa adds a sub-octave for a fat, synth-wall chorus.
 Use a pick with a consistent down-pick. Both pickups up. Tone knob around 70%. Mute hard with the fretting hand so the eighths are staccato like a sequencer.
 
-## AMP: Classic Bass (Ampeg SVT) + CAB: Hartke410 IR (User IR 6)
-
-A bright SVT into Hartke410's aluminum cones. It's a hard, clicky attack that reads like a synth envelope.
-
 ## Module chain
 
 **NR — Gate**, always on.
@@ -24,12 +20,17 @@ A sub-octave under the pulse, Low 45 and Dry 80. Single-note eighths track clean
 Gain: 30, Blend: 30, VOL: 55, Bass: 50, Treble: 55.
 Grit on top of the sub for the synth-wall chorus.
 
-**AMP — Classic Bass**, always on.
-Gain: 30, Bass: 55, Middle: 52, MidFreq: 800Hz, Treble: 60, VOL: 64.
-Bright SVT with an 800Hz mid focus.
-
-**CAB — User IR 6 (Hartke410)**, always on.
-VOL: 60.
+**AMP/CAB — NAM SnapTone, slot 52: AvalonAD2022** (always on)
+- Built from the `Avalon - 38 dB - Chan 1 (Avalon AD2022)` NAM and no cab IR (straight DI), combined into one snaptone.
+- Avalon AD2022 Class A preamp at 38 dB. A studio DI, not an amp: no speaker coloration.
+- Mid-80s soundtrack bass sits like a DI: clean and tight under the synths.
+- Gain: 50, VOL: 50, Bass: 55, Middle: 52, Treble: 60
+- Gain 50: the capture as built.
+- Bass 55: a touch more low end.
+- Middle 52: a touch more midrange.
+- Treble 60: more top end.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 52 directly.
 
 **EQ — Bass EQ 1**, always on.
 33Hz: +2, 150Hz: 0, 600Hz: -3, 2kHz: +3, 8kHz: +1, VOL: 52.

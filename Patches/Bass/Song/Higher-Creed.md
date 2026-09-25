@@ -20,9 +20,17 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 - Verse stays restrained on its own. Chorus gets a clean push to match the song's own explosion in energy.
 
 **DST — Bass OD**, always on. Gain 63, Blend 75, VOL 62, Bass 55, Treble 58.
-**AMP — Classic Bass**, always on. Gain 45, Bass 55, Middle 60, MidFreq 800Hz, Treble 60, VOL 65.
-**CAB — User IR 3 (Apg810)**, always on. VOL 62.
-- Bass OD plus Classic Bass together reproduce the grit this part needs.
+**AMP/CAB — NAM SnapTone, slot 57: GrittySVT** (always on)
+- Built from the `SVT PUSHED (SVT-CL)` NAM and the Apg810 IR, combined into one snaptone.
+- Real Ampeg SVT-CL pushed into grit, into the Apg810 8x10 IR.
+- Post-grunge: moody verses, huge driven choruses. The pushed SVT is the base. DST adds the chorus weight.
+- Gain: 50, VOL: 50, Bass: 55, Middle: 60, Treble: 60
+- Gain 50: the capture as built.
+- Bass 55: a touch more low end.
+- Middle 60: more midrange.
+- Treble 60: more top end.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 57 directly.
 
 **EQ — Bass EQ 1**
 - 33Hz: +3, 150Hz: 0, 600Hz: -2, 2kHz: +5, 8kHz: +3, VOL: 56
@@ -39,10 +47,6 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 - Mix: 22, Decay: 36, Trail: On
 - CTL off: bypassed (verse). CTL on: engaged (chorus).
 - Verse stays tight and close. Chorus opens up with a touch of room to match the bigger, more anthemic space that section lives in.
-
-## AMP + DST: Classic Bass + Bass OD, CAB: Apg810 IR (User IR 3)
-
-Rebuilt 2026-09-18 off the GP-5's own AMP/DST + a loaded IR — NAMs are off for now (Valeton N->S volume issue, device-side). The old NAM was a Darkglass B7K Ultra (Gain 60) — modern, punchy drive/preamp character, exactly the territory late-90s post-grunge choruses live in, same reasoning that made it the right call for "Everlong." Classic Bass + an always-on Bass OD reproduce that grind; Apg810 is the direct SVT-family cab pairing. Middle and Treble kept up on both stages to keep the part cutting through the guitars.
 
 ## CTL summary
 

@@ -20,9 +20,17 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 - Verse riff is already driving hard on its own. Chorus and outro get a clean push to match the song's escalating scale.
 
 **DST — Bass OD**, always on. Gain 65, Blend 75, VOL 65, Bass 55, Treble 58.
-**AMP — Classic Bass**, always on. Gain 48, Bass 58, Middle 60, MidFreq 1.6kHz, Treble 60, VOL 68.
-**CAB — User IR 6 (Hartke410)**, always on. VOL 65.
-- Bass OD carries the drive, Classic Bass the amp foundation — one thick, unified voice, not several stacked gain stages fighting each other.
+**AMP/CAB — NAM SnapTone, slot 55: BrightSVT** (always on)
+- Built from the `SVT SANS BRIGHT DRIVE (SVT-CL)` NAM and the Hartke410 IR, combined into one snaptone.
+- Real Ampeg SVT-CL with the bright drive setting, into the aluminum-cone Hartke410 IR.
+- Bright, aggressive drive that cuts through the gallop and synths.
+- Gain: 52, VOL: 50, Bass: 58, Middle: 60, Treble: 60
+- Gain 52: a little over default. This part wants more push than the other BrightSVT patches.
+- Bass 58: more low end.
+- Middle 60: more midrange.
+- Treble 60: more top end.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 55 directly.
 
 **EQ — Bass EQ 1**
 - 33Hz: +3, 150Hz: -1, 600Hz: +3, 2kHz: +4, 8kHz: +2, VOL: 55
@@ -40,10 +48,6 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 - CTL off: bypassed (verse — tight and dry). CTL on: engaged (chorus/outro).
 - Hall over Room here — this song is going for genuine scale on the hook and outro, and a bigger, longer decay matches that "epic space-rock" reach better than a tighter room ambience would.
 
-## AMP + DST: Classic Bass + Bass OD, CAB: Hartke410 IR (User IR 6)
-
-Rebuilt 2026-09-18 off the GP-5's own AMP/DST + a loaded IR — NAMs are off for now (Valeton N->S volume issue, device-side). The old NAM was the Alpha side of the Darkglass Alpha Omega — the more aggressive distortion voicing, exactly the thick, driven wall this riff needs. Classic Bass + a hard-pushed always-on Bass OD reproduce that; Hartke410's bright, aggressive aluminum-cone voicing is ir.md's own recommended pairing for a driven bass tone running Bass OD. Middle and Treble kept up on both stages so the riff carries its own presence instead of getting buried under the guitar.
-
 ## CTL summary
 
 - **CTL Off — Verse.** The galloping main riff. Driven, dry, tight.
@@ -60,10 +64,10 @@ Rebuilt 2026-09-18 off the GP-5's own AMP/DST + a loaded IR — NAMs are off for
 - TONE: 55
 - LEVEL: 60
 - Mode: TREBLE
-- Keeps the fast, galloping picking pattern even and consistent. TREBLE mode keeps attack defined ahead of the NAM's own heavy distortion.
+- Keeps the fast, galloping picking pattern even and consistent. TREBLE mode keeps attack defined ahead of the snaptone's own drive.
 
 **3. Donner Stylish Fuzz — Bypassed**
-- Footswitch off. The NAM's own Alpha Omega distortion already carries all the grit this song needs — stacking a fuzz on top of an already-aggressive distortion capture would just turn a 5-string P/J to mush.
+- Footswitch off. The BrightSVT snaptone's own drive already carries all the grit this song needs — stacking a fuzz on top of an already-aggressive distortion capture would just turn a 5-string P/J to mush.
 
 **4. Joyo Tidal Wave — Bypassed**
 - Footswitch off, Drive/Blend not engaged. Same reasoning — one heavy drive source is enough; piling on more would cost definition on a riff that has to stay tight and articulate at tempo.

@@ -2,17 +2,16 @@
   "patch_name": "Adrift - Lunatic Soul",
   "patch_vol": 50,
   "bpm": 100,
-  "ir": { "name": "EBS410" },
+  "nam": {"name": "AvalonAD2022 (slot 52): Avalon - 38 dB - Chan 1 (Avalon AD2022) + none (studio DI)", "slot": 52, "settings": {"Gain": 50, "VOL": 50, "Bass": 60, "Middle": 45, "Treble": 50}},
   "modules": {
-    "NR": { "model": "Gate", "always_on": true, "settings": { "THRE": 20 } },
-    "PRE": { "model": null },
-    "DST": { "model": null },
-    "AMP": { "model": "Mess Bass", "always_on": true,
-             "settings": { "Gain": 30, "VOL": 65, "Bass": 60, "Middle": 45, "Treble": 50 } },
-    "CAB": { "model": "User IR 4", "always_on": true, "settings": { "VOL": 60 } },
-    "EQ": { "model": "Bass EQ 2", "always_on": true, "settings": { "50Hz": 3, "120Hz": 2, "400Hz": -3, "800Hz": -2, "4.5kHz": 2, "VOL": 52 } },
-    "MOD": { "model": "B-Chorus", "always_on": true, "settings": { "Depth": 22, "Rate": 0.35, "VOL": 52 } },
-    "DLY": { "model": "Analog", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": { "Mix": 30, "Time": 450, "Feedback": 25, "Trail": true } },
-    "RVB": { "model": "Hall", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": { "Mix": 35, "Decay": 55, "Trail": true } }
+    "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 20}},
+    "PRE": {"model": null},
+    "DST": {"model": null},
+    "AMP": {"model": null},
+    "CAB": {"model": null},
+    "EQ": {"model": "Bass EQ 2", "always_on": true, "settings": {"50Hz": 3, "120Hz": 2, "400Hz": -3, "800Hz": -2, "4.5kHz": 2, "VOL": 52}},
+    "MOD": {"model": "B-Chorus", "always_on": true, "settings": {"Depth": 22, "Rate": 0.35, "VOL": 52}},
+    "DLY": {"model": "Analog", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Mix": 30, "Time": 450, "Feedback": 25, "Trail": true}},
+    "RVB": {"model": "Hall", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Mix": 35, "Decay": 55, "Trail": true}}
   }
 }

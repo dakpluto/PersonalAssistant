@@ -6,11 +6,6 @@ Built from the song's overall sound. I haven't verified the exact guitars and am
 Instrument: Stratocaster (HSS). Position 2 or the bridge humbucker for the rhythm. Bridge humbucker for the leads.
 GP-5 only, Stratocaster (HSS), no pedalboard.
 
-## AMP: Z38 OD (Dr. Z Maz 38) + CAB: V30112 IR (User IR 10)
-
-The Maz 38 is an EL84 boutique amp: warm, chimey edge-of-breakup that swells when you dig in. That's the heartland-country crunch.
-V30112 is the loaded guitar cab with enough upper-mid bark for a crunch tone. EVM112 would thin out once the amp breaks up.
-
 ## Module chain
 
 **NR — Gate**, always on.
@@ -23,12 +18,17 @@ Catches hiss from the edge-of-breakup amp.
 Gain: 32, Tone: 56, VOL: 66.
 The lead push. A mid-forward singing tone for the melodic lines.
 
-**AMP — Z38 OD**, always on.
-Gain: 38, Tone Cut: 45, VOL: 60, Bass: 48, Middle: 56, Treble: 55.
-Gain 38 is warm edge that swells when you dig in. Tone Cut 45 tames the EL84 top.
-
-**CAB — User IR 10 (V30112)**, always on.
-VOL: 60.
+**AMP/CAB — NAM SnapTone, slot 65: RythymDeluxe** (always on)
+- Built from the `RYTHM - Fender Deluxe Reverb 1965 [Hyper Accuracy]` NAM and the Origin Effects Brown Deluxe 1x12 Medium Mix IR, combined into one snaptone.
+- Real 1965 Deluxe Reverb at the rhythm setting, gritty but not saturated, into the Brown Deluxe 1x12.
+- Gritty mid-tempo country-rock. Deluxe rhythm setting.
+- Gain: 50, VOL: 50, Bass: 48, Middle: 56, Treble: 55
+- Gain 50: the capture as built.
+- Bass 48: low end pulled back a little.
+- Middle 56: more midrange.
+- Treble 55: a touch more top end.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 65 directly.
 
 **EQ — Guitar EQ 2**, always on.
 100Hz: -3, 500Hz: 0, 1kHz: +1, 3kHz: +1, 6kHz: -2, VOL: 50.
@@ -48,7 +48,7 @@ A small room for warmth.
 
 On CTL: DST (Green OD), DLY (Analog).
 
-- **CTL off** — Rhythm. Warm, edge-of-breakup Maz strum for the verses and choruses. This is the resting state the patch loads into.
+- **CTL off** — Rhythm. Warm, gritty Deluxe strum for the verses and choruses. This is the resting state the patch loads into.
 - **CTL on** — Lead. Green OD plus dotted-eighth analog delay for the melodic fills and the solo.
 
 Engage CTL for the lead lines and the solo. Drop back for strumming.

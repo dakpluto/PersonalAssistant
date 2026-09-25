@@ -22,17 +22,19 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 **DST — Bass OD**
 - Gain: 70, Blend: 75, VOL: 62, Bass: 62, Treble: 55
 - Always on, same for both CTL states.
-- A second drive stage stacked in front of the AMP's own gain — this is a deliberately maximalist build, unlike the "one drive source" logic used on cleaner patches. Blend at 75 still keeps enough low end intact that the riff doesn't collapse into fizz.
+- A second drive stage stacked in front of the snaptone's own grit — this is a deliberately maximalist build, unlike the "one drive source" logic used on cleaner patches. Blend at 75 still keeps enough low end intact that the riff doesn't collapse into fizz.
 
-**AMP — Mess DualV (Mesa/Boogie Dual Rectifier, Vintage mode)**
-- Gain: 65, PRES: 55, VOL: 65, Bass: 58, Middle: 58, Treble: 55
-- Always on, same for both CTL states.
-- A genuine hi-gain guitar amp model, not a bass amp — this riff needs the same wall-of-gain character a modern rock guitarist would reach for. Stacked behind the Bass OD and the Stylish Fuzz pedal, this is where the tone goes from "driven" to genuinely huge.
-
-**CAB — User IR 7 (Mesa215)**
-- VOL: 62
-- Always on, same for both CTL states.
-- Mesa/Boogie Road Ready 2x15 — same amp family as the AMP model above, and `IRs/ir.md` specifically calls this one "modern, crushing." Exactly the cab this riff needs under it.
+**AMP/CAB — NAM SnapTone, slot 58: HairySVT** (always on)
+- Built from the `SVT SANS HAIRY DRIVE (SVT-CL)` NAM and the Sunn215 IR, combined into one snaptone.
+- Real Ampeg SVT-CL with the hairy drive setting, into the Sunn215 2x15 IR.
+- Wolstenholme's fuzz wall. Hairy SVT drive is the real-bass-amp base under the fuzz and OD.
+- Gain: 58, VOL: 50, Bass: 58, Middle: 58, Treble: 55
+- Gain 58: noticeably over default. This part wants more push than the other HairySVT patches.
+- Bass 58: more low end.
+- Middle 58: more midrange.
+- Treble 55: a touch more top end.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 58 directly.
 
 **EQ — Bass EQ 1**
 - 33Hz: +4, 150Hz: -1, 600Hz: +4, 2kHz: +4, 8kHz: +1, VOL: 55
@@ -49,11 +51,6 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 - Mix: 20, Decay: 32, Trail: On
 - CTL off: bypassed (verse — tight and dry, letting the riff hit hard and direct). CTL on: engaged (chorus).
 - A touch of room opens things up for the chorus without turning this into a wash — this song stays heavy and direct even at its biggest moments.
-
-## CAB IR — Mesa215 (Slot 7)
-
-- Mesa Boogie Road Ready 2x15 with a bright tweeter, confirmed loaded on User IR slot 7. Same brand family as the Mess DualV AMP model above — a direct, crushing pairing.
-- Encoded directly into the `.prst` as a real, active CAB reference (`User IR 7`) — no manual loading needed for this one.
 
 ## CTL summary
 
@@ -83,7 +80,7 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 - Treble: 55
 - Bass: 60
 - Volume: 62
-- The pedal that defines this song. Sustain pushed hard for a thick, compressed wall-of-fuzz character — this is the first of three stacked gain stages (fuzz → Bass OD → Mess DualV) that build the full "Hysteria" tone.
+- The pedal that defines this song. Sustain pushed hard for a thick, compressed wall-of-fuzz character — this is the first of three stacked gain stages (fuzz → Bass OD → HairySVT snaptone) that build the full "Hysteria" tone.
 
 **4. Joyo Tidal Wave — Engaged**
 - Drive: 50

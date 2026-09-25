@@ -30,18 +30,23 @@ Not used. The Donner Ultimate Comp on the board ahead of the GP-5 is already han
 **DST — Super OD** (CTL)
 - Gain: 50, Tone: 62, VOL: 68
 - CTL Off = off, CTL On = on
-This is the lead kick. Boss SD-1-style asymmetrical clipping pushed into the JCM800 sim adds extra saturation and — more importantly — extra output volume, so the solo actually sits on top of the mix instead of getting buried under the rhythm section. Off for the verse riff so it stays tight and doesn't mush out the palm mutes.
+This is the lead kick. Boss SD-1-style asymmetrical clipping pushed into the Rectifier snaptone adds extra saturation and — more importantly — extra output volume, so the solo actually sits on top of the mix instead of getting buried under the rhythm section. Off for the verse riff so it stays tight and doesn't mush out the palm mutes.
 
-**AMP — UK 800** (always on)
-- Gain: 62, PRES: 55, VOL: 68, Bass: 55, Middle: 68, Treble: 62
-JCM800 voicing gets you the thick, mid-forward hard-rock crunch this song actually has — Saliva's tone isn't scooped like a metal band, it's a mid-present rock grind with real low-end weight. Middle pushed to 68 keeps the riff present and cutting instead of hollow. Same amp setting serves both CTL states — the DST boost on top is what separates rhythm from lead, not a second amp voicing.
-
-**CAB — off, using IR instead**
-See "IR Cab Captures" below.
+**AMP/CAB — NAM SnapTone, slot 76: ModernRect** (always on)
+- Built from the `4. MESA DUAL RECTIFIER 2025 | RHYTHM #4` NAM and the V30 LR 4FB 4x12 SM57 0.75in 0.0in 7603 (Mesa V30) IR, combined into one snaptone.
+- Real 2025 Mesa Dual Rectifier on a heavy rhythm setting, into a Mesa 4x12 V30 IR.
+- Heavy, tight, modern nu-metal. Rectifier rhythm into V30s.
+- Gain: 50, VOL: 50, Bass: 55, Middle: 68, Treble: 62
+- Gain 50: the capture as built.
+- Bass 55: a touch more low end.
+- Middle 68: more midrange.
+- Treble 62: more top end.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 76 directly.
 
 **EQ — Guitar EQ 2** (always on)
 - 100Hz: 0, 500Hz: +5, 1kHz: +8, 3kHz: +3, 6kHz: -6, VOL: 52
-Boost at 500Hz/1kHz fattens the riff's mid-punch and keeps single-note lead lines from thinning out. -6 at 6kHz reins in fizz from the high-gain AMP+IR pairing without killing pick attack. Runs the same in both CTL states.
+Boost at 500Hz/1kHz fattens the riff's mid-punch and keeps single-note lead lines from thinning out. -6 at 6kHz reins in fizz from the high-gain Rectifier snaptone without killing pick attack. Runs the same in both CTL states.
 
 **MOD — off**
 Not used on the GP-5. The Joyo Narcissus on the board is carrying the (very light) chorus duty for this patch — no reason to run two modulation sources and risk mud. See "Full Pedalboard" below.
@@ -57,13 +62,9 @@ Not used on the GP-5. The Joyo Narcissus on the board is carrying the (very ligh
 Small room wash opens the lead tone up just enough to feel bigger without going ambient/shoegaze on you. Off for rhythm — the riff needs to stay dry and in-your-face, reverb would just wash out the attack.
 
 ### CTL summary
-- **CTL Off (verse/rhythm):** NR + AMP (UK 800) + EQ only. Dry, tight, mid-forward crunch built for palm-muted riffing.
+- **CTL Off (verse/rhythm):** NR + ModernRect snaptone + EQ only. Dry, tight, mid-forward crunch built for palm-muted riffing.
 - **CTL On (chorus/solo):** adds DST (Super OD boost) + DLY (Analog slap) + RVB (Room wash). Louder, more sustain, more air — built to carry a lead line or a bigger chorus strum over the same amp voicing.
 - Hit CTL going into the chorus and for the guitar solo section. Kick it back off for the next verse.
-
-### IR Cab Captures
-Using **British Checkerboard 4x12 Medium Mix** (Marshall 1960A, Celestion G12M Greenback) in place of a GP-5 CAB model.
-The Greenback's brighter, more articulate voicing is the classic pairing for a JCM800-style amp and gives the riff more bite/definition than a stock CAB model would — CAB stays `model: null` in the JSON/`.prst`; load this IR into a `User IR` slot by hand in Valeton Suite and point the CAB block at it.
 
 ## Full Pedalboard
 
@@ -76,7 +77,7 @@ No octave texture anywhere in "Click Click Boom" — this stays fully out of the
 
 **Donner Ultimate Comp — engaged always**
 - COMP: 45, TONE: 55, LEVEL: 55, Mode: NORMAL
-Light-to-moderate squeeze evens out pick attack across the palm-muted riff before it hits the fuzz/OD/amp gain stages. NORMAL mode — the JCM800 sim downstream is already bright enough with the Greenback IR, don't need TREBLE mode stacking more top end on top of that.
+Light-to-moderate squeeze evens out pick attack across the palm-muted riff before it hits the fuzz/OD/amp gain stages. NORMAL mode — the Rectifier snaptone downstream is already bright enough, don't need TREBLE mode stacking more top end on top of that.
 
 **Donner Stylish Fuzz — bypassed**
 No fuzz texture in this song. Leave off; footswitch never engaged for this patch.
@@ -84,7 +85,7 @@ No fuzz texture in this song. Leave off; footswitch never engaged for this patch
 **Joyo King of Kings — Left channel engaged always, Right channel bypassed**
 - Left: Volume 55, Gain 35, Tone 55, Clipping toggle: softer/asymmetric position, Feedback toggle: standard position
 - Right: off, footswitch not engaged
-Left channel run low-gain as a subtle always-on push into the front of the GP-5's UK 800 sim — classic "boost into a cranked Marshall" move, adds extra grind and touch-sensitivity to both CTL states without changing the amp's core voicing. Right channel stays in reserve — if you want the outro or final chorus even bigger live, stack it in manually (separate footswitch from GP-5 CTL), but it's not part of the baseline patch.
+Left channel run low-gain as a subtle always-on push into the front of the Rectifier snaptone — classic "boost into a cranked amp" move, adds extra grind and touch-sensitivity to both CTL states without changing the amp's core voicing. Right channel stays in reserve — if you want the outro or final chorus even bigger live, stack it in manually (separate footswitch from GP-5 CTL), but it's not part of the baseline patch.
 
 **Joyo Narcissus — engaged always**
 - Mode: Vintage, Width: 30, Depth: 20, Rate: 25

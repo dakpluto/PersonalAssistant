@@ -22,13 +22,17 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB
 - **CTL switch.** Off = bypassed, On = engaged.
 - This is the chorus lift, and it's deliberately subtle — low Gain, low Blend. Off (verse), the tone is pure and clean. On (chorus), it adds a touch of harmonic warmth and perceived energy without turning into an audible overdrive — the fundamental stays intact either way.
 
-**AMP — Classic Bass** (Ampeg SVT)
-- Gain: 28, Bass: 60, Middle: 50, MidFreq: 220Hz, Treble: 42, VOL: 65
-- Always on, both CTL states. SVT is the classic pop/R&B-adjacent bass voicing — full and round rather than growly. MidFreq set to 220Hz (the lowest option) instead of the usual 800Hz keeps the mid push low and warm, not present/cutting — that's the lo-fi character this song wants. Treble held back for the same reason.
-
-**CAB — AMPG 4x10** (Ampeg SVT-410HE)
-- VOL: 55
-- Always on. Direct classic pairing for the Classic Bass amp model.
+**AMP/CAB — NAM SnapTone, slot 52: AvalonAD2022** (always on)
+- Built from the `Avalon - 38 dB - Chan 1 (Avalon AD2022)` NAM and no cab IR (straight DI), combined into one snaptone.
+- Avalon AD2022 Class A preamp at 38 dB. A studio DI, not an amp: no speaker coloration.
+- Modern pop production. Clean, tight DI bass under the programmed drums.
+- Gain: 49, VOL: 50, Bass: 60, Middle: 50, Treble: 42
+- Gain 49: a little under default. This part wants less push than the other AvalonAD2022 patches.
+- Bass 60: more low end.
+- Middle 50: flat.
+- Treble 42: top end pulled back noticeably.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 52 directly.
 
 **EQ — Bass EQ 2**
 - 50Hz: +4, 120Hz: +2, 400Hz: -3, 800Hz: -2, 4.5kHz: 0, VOL: 52

@@ -22,15 +22,17 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 **DST — Off**
 - No drive. Clean and warm from top to bottom.
 
-**AMP — Match CL (Matchless Chieftain, Clean)**
-- Gain: 32, PRES: 55, VOL: 65, Bass: 56, Middle: 54, Treble: 54
-- Always on, same for both CTL states.
-- A warm boutique clean voicing with a bit of natural push — fits the sunny, welcoming character of this song well, giving it some life without ever pushing toward grit.
-
-**CAB — User IR 2 (Apg115410)**
-- VOL: 58
-- Always on, same for both CTL states.
-- Summed Ampeg Heritage B-15 + HLF 410 — flat, full-bodied, and uncolored, letting the Match CL's own warmth come through without adding its own character on top.
+**AMP/CAB — NAM SnapTone, slot 53: CleanSVT** (always on)
+- Built from the `SVT CLEAN (SVT-CL)` NAM and the Apg810 IR, combined into one snaptone.
+- Real Ampeg SVT-CL preamp on its clean setting, into the Apg810 8x10 IR.
+- 90s radio rock. A clean SVT is the default rig for that sound.
+- Gain: 50, VOL: 50, Bass: 56, Middle: 54, Treble: 54
+- Gain 50: the capture as built.
+- Bass 56: more low end.
+- Middle 54: a touch more midrange.
+- Treble 54: a touch more top end.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 53 directly.
 
 **EQ — Bass EQ 2**
 - 50Hz: +3, 120Hz: +1, 400Hz: 0, 800Hz: +2, 4.5kHz: +2, VOL: 55
@@ -47,11 +49,6 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 - Mix: 18, Decay: 28, Trail: On
 - CTL off: bypassed (verse — clean and direct). CTL on: engaged (chorus hook).
 - A light touch of room opens things up for the sing-along hook, matching the song's easy, warm lift there.
-
-## CAB IR — Apg115410 (Slot 2)
-
-- Summed Ampeg Heritage B-15 + HLF 410, confirmed loaded on User IR slot 2. Flat, thunderous response — a solid, uncolored foundation.
-- Encoded directly into the `.prst` as a real, active CAB reference (`User IR 2`) — no manual loading needed for this one.
 
 ## CTL summary
 

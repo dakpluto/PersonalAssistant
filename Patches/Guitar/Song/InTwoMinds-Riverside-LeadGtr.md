@@ -4,10 +4,6 @@ Riverside, prog rock/metal. BPM est. The lead guitar here is a fat, singing, sus
 Instrument: Stratocaster (HSS). Use the bridge humbucker for leads.
 GP-5 only, Stratocaster (HSS), no pedalboard.
 
-## AMP: Bog RedV + CAB: V30112 IR (User IR 10)
-
-V30112 (Celestion V30 in an isolation cabinet, sub mic blended in for low end) — the only guitar cab in the loaded set. Modern V30 character pairs with Bog RedV, as IRs/ir.md suggests.
-
 ## Module chain
 
 **NR — Gate**, always on.
@@ -22,13 +18,17 @@ On CTL. Gain 60 with +3dB adds level and sustain for solos. Bright off keeps it 
 Gain: 30, Tone: 55, VOL: 60.
 Always on, tightens the low end and pushes the amp. Tube Screamer style, Gain 30 is a push, not a drive.
 
-**AMP — Bog RedV**, always on.
-Gain: 50, PRES: 50, VOL: 60, Bass: 45, Middle: 60, Treble: 55.
-Bogner XTC Red channel. Modern, articulate high-gain with a singing mid range. Gain 50 with the OD in front gives lead sustain. Middle 60 keeps the lead forward.
-
-**CAB — User IR 10 (V30112)**, always on.
-VOL: 60.
-V30112 IR.
+**AMP/CAB — NAM SnapTone, slot 73: ProgDumble** (always on)
+- Built from the `SLAMMIN_DUMBLE_FORD_OD_SMOOTH_S (Dumble ODS #102)` NAM and the V30 UR 4FB 4x12 SM57 1.00in 0.0in 7603 (Mesa V30) IR, combined into one snaptone.
+- Dumble ODS #102 overdrive channel, smooth setting, into a Mesa 4x12 with V30s.
+- Smooth, singing prog lead in the Gilmour mold. Dumble overdrive.
+- Gain: 53, VOL: 50, Bass: 45, Middle: 60, Treble: 55
+- Gain 53: a little over default. This part wants more push than the other ProgDumble patches.
+- Bass 45: low end pulled back a little.
+- Middle 60: more midrange.
+- Treble 55: a touch more top end.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 73 directly.
 
 **EQ — Guitar EQ 2**, always on.
 100Hz: -3, 500Hz: +1, 1kHz: +2, 3kHz: +2, 6kHz: -1, VOL: 50.

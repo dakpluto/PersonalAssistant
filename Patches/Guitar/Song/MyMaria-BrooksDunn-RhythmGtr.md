@@ -7,11 +7,6 @@ Built from the song's overall sound. I haven't verified the exact guitars and am
 Instrument: Stratocaster (HSS). Position 2 (bridge+middle) for the rhythm. Bridge humbucker for the solo.
 GP-5 only, Stratocaster (HSS), no pedalboard.
 
-## AMP: Dark Twin + CAB: EVM112 IR (User IR 5)
-
-A blackface Twin at gain 38 is clean with a little bite when you dig in. That's the right base for a 90s Nashville-rock groove.
-EVM112 is the loaded guitar cab with a flat, hi-fi response. It keeps Nashville clean tones honest and doesn't add V30 honk.
-
 ## Module chain
 
 **NR — Gate**, always on.
@@ -24,14 +19,19 @@ Light Ross squash evens out the strum. Nashville rhythm is always a little compr
 
 **DST — Green OD (TS-808)**, on CTL.
 Gain: 32, Tone: 58, VOL: 68.
-The lead push. Gain 32 turns the Twin's edge into a singing solo tone. VOL 68 adds about +3dB.
+The lead push. Gain 32 pushes the clean Deluxe into a singing solo tone. VOL 68 adds about +3dB.
 
-**AMP — Dark Twin**, always on.
-Gain: 38, VOL: 62, Bass: 48, Middle: 52, Treble: 58, Bright: off.
-Gain 38 is right at the edge. Bright off, because Treble 58 and single coils give enough top on their own.
-
-**CAB — User IR 5 (EVM112)**, always on.
-VOL: 60.
+**AMP/CAB — NAM SnapTone, slot 62: NashClean** (always on)
+- Built from the `CLEANEST - Fender Deluxe Reverb 1965 [Hyper Accuracy]` NAM and the Origin Effects Brown Deluxe 1x12 Medium Mix IR, combined into one snaptone.
+- Real 1965 Fender Deluxe Reverb at its cleanest setting, into the Origin Effects Brown Deluxe 1x12.
+- Clean country-rock rhythm. Cleanest Deluxe. The OD on CTL adds the hair.
+- Gain: 54, VOL: 50, Bass: 48, Middle: 52, Treble: 58
+- Gain 54: a little over default. This part wants more push than the other NashClean patches.
+- Bass 48: low end pulled back a little.
+- Middle 52: a touch more midrange.
+- Treble 58: more top end.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 62 directly.
 
 **EQ — Guitar EQ 2**, always on.
 100Hz: -2, 500Hz: 0, 1kHz: +1, 3kHz: +1, 6kHz: -2, VOL: 50.
@@ -51,7 +51,7 @@ A little Fender spring for air.
 
 On CTL: DST (Green OD), DLY (Analog).
 
-- **CTL off** — Rhythm. Compressed, edge-of-clean Twin for the verse and chorus strum. This is the resting state the patch loads into.
+- **CTL off** — Rhythm. Compressed, clean Deluxe for the verse and chorus strum. This is the resting state the patch loads into.
 - **CTL on** — Lead. Green OD plus analog repeats for the fills and the solo.
 
 Engage CTL for the solo and the turnaround licks. Drop back when Ronnie comes in.

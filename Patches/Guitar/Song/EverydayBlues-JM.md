@@ -23,13 +23,17 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB
 - **CTL switch.** Off = bypassed, On = engaged.
 - This is the whole trick of the patch. Off, the amp runs clean-to-edge-of-breakup on its own for rhythm. On, the TS's mid hump shoves the same amp into a warmer, more compressed, singing lead voice — the way Mayer actually does it live instead of switching amp channels.
 
-**AMP — L-Star CL** (Mesa/Boogie Lonestar Clean)
-- Gain: 55, PRES: 60, VOL: 70, Bass: 55, Middle: 65, Treble: 60
-- Always on. The GP-5 catalog has no Two-Rock/Dumble model, and L-Star CL is the standard stand-in modelers reach for — warm, sweet, boutique-clean voicing with real headroom. Middle pushed to 65 keeps it vocal instead of scooped.
-
-**CAB — SUP Star 2x12** (Mesa Lonestar 2x12)
-- VOL: 60
-- Always on. Matches the amp model, fuller low end than a 1x12 to hold up in a live band mix with horns.
+**AMP/CAB — NAM SnapTone, slot 66: MayerDumble** (always on)
+- Built from the `SLAMMIN_DUMBLE_FORD_CLN_BALANCED_S (Dumble ODS #102)` NAM and the Bogner 2x12 EVM12L - SM57 1 - Cap Edge IR, combined into one snaptone.
+- Dumble ODS #102 (the Robben Ford amp) clean channel, into a Bogner 2x12 with EVM12L speakers.
+- Mayer's live blues tone is Dumble/Two-Rock clean. This is the Dumble half.
+- Gain: 55, VOL: 50, Bass: 55, Middle: 65, Treble: 60
+- Gain 55: noticeably over default. This part wants more push than the other MayerDumble patches.
+- Bass 55: a touch more low end.
+- Middle 65: more midrange.
+- Treble 60: more top end.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 66 directly.
 
 **EQ — Guitar EQ 2**
 - 100Hz: -2, 500Hz: +3, 1kHz: +2, 3kHz: 0, 6kHz: -3
@@ -49,7 +53,7 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB
 - Always on, both states. A touch of spring keeps the amp from sounding dead-dry in a live mix without smearing the shuffle's rhythmic snap.
 
 ### CTL Summary (GP-5)
-- **CTL Off — Rhythm/Intro:** Clean-to-edge-of-breakup L-Star CL, dry (no slap delay), compressed shuffle comping. This is the main groove sound.
+- **CTL Off — Rhythm/Intro:** Clean-to-edge-of-breakup Dumble clean, dry (no slap delay), compressed shuffle comping. This is the main groove sound.
 - **CTL On — Lead/Solo:** Green OD kicks the same amp into a warmer, more sustained, vocal lead tone, with slapback delay added for width.
 
 ## Full Pedalboard (signal chain order)
@@ -76,7 +80,7 @@ Not a fuzz song. True bypass, footswitch off throughout.
 - Clipping toggle: softer setting (smoother, lower-gain breakup character)
 - Feedback toggle: standard setting (no added compression)
 
-Low-gain, always-on push that adds a little extra edge-of-breakup grit ahead of the GP-5's amp sim — this is doing some of the work a real boutique amp's natural front-end drive would do, since the L-Star CL sim alone doesn't drive as hard as a real Two-Rock would.
+Low-gain, always-on push that adds a little extra edge-of-breakup grit ahead of the Dumble snaptone. The clean-channel capture stays clean on its own, so this supplies the front-end grit a cranked boutique amp would.
 
 *Right channel (solo/lead only):*
 - Volume: 65

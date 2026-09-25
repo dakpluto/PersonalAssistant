@@ -2,20 +2,16 @@
   "patch_name": "CNumb-PF",
   "patch_vol": 52,
   "bpm": 64,
-  "ir": { "name": "Apg115410" },
+  "nam": {"name": "CleanSVT (slot 53): SVT CLEAN (SVT-CL) + Apg810", "slot": 53, "settings": {"Gain": 46, "VOL": 50, "Bass": 62, "Middle": 48, "Treble": 40}},
   "modules": {
-    "NR":  { "model": "Gate", "always_on": true, "settings": { "THRE": 12 } },
-    "PRE": { "model": "COMP", "always_on": true, "settings": { "Sustain": 40, "VOL": 60 } },
-    "DST": { "model": "Bass OD", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
-             "settings": { "Gain": 15, "Blend": 30, "VOL": 60, "Bass": 55, "Treble": 45 } },
-    "AMP": { "model": "Mess Bass", "always_on": true,
-             "settings": { "Gain": 25, "Bass": 62, "Middle": 48, "Treble": 40, "VOL": 65 } },
-    "CAB": { "model": "User IR 2", "always_on": true, "settings": { "VOL": 60 } },
-    "EQ":  { "model": "Bass EQ 1", "always_on": true,
-             "settings": { "33Hz": 3, "150Hz": 2, "600Hz": -2, "2kHz": 0, "8kHz": -3, "VOL": 52 } },
-    "MOD": { "model": null },
-    "DLY": { "model": null },
-    "RVB": { "model": "Hall", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
-             "settings": { "Mix": 22, "Decay": 50, "Trail": true } }
+    "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 12}},
+    "PRE": {"model": "COMP", "always_on": true, "settings": {"Sustain": 40, "VOL": 60}},
+    "DST": {"model": "Bass OD", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Gain": 15, "Blend": 30, "VOL": 60, "Bass": 55, "Treble": 45}},
+    "AMP": {"model": null},
+    "CAB": {"model": null},
+    "EQ": {"model": "Bass EQ 1", "always_on": true, "settings": {"33Hz": 3, "150Hz": 2, "600Hz": -2, "2kHz": 0, "8kHz": -3, "VOL": 52}},
+    "MOD": {"model": null},
+    "DLY": {"model": null},
+    "RVB": {"model": "Hall", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Mix": 22, "Decay": 50, "Trail": true}}
   }
 }

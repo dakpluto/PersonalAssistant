@@ -22,15 +22,17 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 **DST — Off**
 - No drive. This tone is clean and smooth from top to bottom.
 
-**AMP — J-120 CL (Roland JC-120, Clean)**
-- VOL: 62, Bass: 55, Middle: 50, Treble: 52, Bright: Off
-- Always on, same for both CTL states.
-- The Jazz Chorus is a genuinely fitting name-and-character match here — that glassy, smooth solid-state clean voicing is exactly the late-80s yacht-pop territory this song lives in. Bright switched off to keep things warm rather than glassy-hard, letting the MOD chorus below do the shimmer work instead.
-
-**CAB — User IR 5 (EVM112)**
-- VOL: 60
-- Always on, same for both CTL states.
-- Versatile, hi-fi Electro-Voice voicing that stays out of the way — this tone doesn't need a cab with a strong character of its own, just a clean, uncolored foundation under the J-120 CL.
+**AMP/CAB — NAM SnapTone, slot 52: AvalonAD2022** (always on)
+- Built from the `Avalon - 38 dB - Chan 1 (Avalon AD2022)` NAM and no cab IR (straight DI), combined into one snaptone.
+- Avalon AD2022 Class A preamp at 38 dB. A studio DI, not an amp: no speaker coloration.
+- Late-80s polished pop. Clean DI bass sits with the steel drums and synths.
+- Gain: 50, VOL: 50, Bass: 55, Middle: 50, Treble: 52
+- Gain 50: the capture as built.
+- Bass 55: a touch more low end.
+- Middle 50: flat.
+- Treble 52: a touch more top end.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 52 directly.
 
 **EQ — Bass EQ 2**
 - 50Hz: +3, 120Hz: +1, 400Hz: -1, 800Hz: +1, 4.5kHz: +2, VOL: 54
@@ -49,11 +51,6 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 - Mix: 20, Decay: 30, Trail: On
 - CTL off: bypassed (verse — clean and direct). CTL on: engaged (hook).
 - A light touch of room opens things up for the sing-along hook, matching the song's easy, warm lift there.
-
-## CAB IR — EVM112 (Slot 5)
-
-- Electro-Voice EVM12L, confirmed loaded on User IR slot 5. No bass/guitar-specific pairing implied by the cab itself — picked here for its clean, versatile character alongside the J-120 CL AMP model.
-- Encoded directly into the `.prst` as a real, active CAB reference (`User IR 5`) — no manual loading needed for this one.
 
 ## CTL summary
 

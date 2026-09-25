@@ -2,16 +2,16 @@
   "patch_name": "When You Say Nothing At All - Alison Krauss",
   "patch_vol": 50,
   "bpm": 68,
-  "ir": { "name": "Apg115" },
+  "nam": {"name": "CleanB15 (slot 51): Ampeg B18 - Head DI - Bass Chan - Vol 2.5 (B-18N) + Apg115", "slot": 51, "settings": {"Gain": 50, "VOL": 50, "Bass": 60, "Middle": 55, "Treble": 45}},
   "modules": {
-    "NR":  { "model": "Gate", "always_on": true, "settings": { "THRE": 25 } },
-    "PRE": { "model": null },
-    "DST": { "model": null },
-    "AMP": { "model": "Classic Bass", "always_on": true, "settings": { "Gain": 25, "Bass": 60, "Middle": 55, "MidFreq": 1, "Treble": 45, "VOL": 65 } },
-    "CAB": { "model": "User IR 1", "always_on": true, "settings": { "VOL": 60 } },
-    "EQ":  { "model": "Bass EQ 2", "always_on": true, "settings": { "50Hz": 5, "120Hz": 3, "400Hz": -2, "800Hz": 0, "4.5kHz": 2, "VOL": 100 } },
-    "MOD": { "model": null },
-    "DLY": { "model": null },
-    "RVB": { "model": "Room", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": { "Mix": 25, "Decay": 35, "Trail": true } }
+    "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 25}},
+    "PRE": {"model": null},
+    "DST": {"model": null},
+    "AMP": {"model": null},
+    "CAB": {"model": null},
+    "EQ": {"model": "Bass EQ 2", "always_on": true, "settings": {"50Hz": 5, "120Hz": 3, "400Hz": -2, "800Hz": 0, "4.5kHz": 2, "VOL": 100}},
+    "MOD": {"model": null},
+    "DLY": {"model": null},
+    "RVB": {"model": "Room", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Mix": 25, "Decay": 35, "Trail": true}}
   }
 }

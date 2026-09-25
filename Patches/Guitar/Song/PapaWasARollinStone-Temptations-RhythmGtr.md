@@ -42,19 +42,17 @@ Range 55 centers the sweep in the upper mids, where a real wah quacks.
 **DST — off**
 Clean record. No drive in either state.
 
-**AMP — Dark Twin** (Fender 65 Twin Reverb) (always on)
-- Gain: 26, VOL: 70, Bass: 42, Middle: 58, Treble: 62, Bright: Off
-Big-headroom Fender clean. Motown-era guitar is clean and tight, never pushed.
-Gain 26 keeps it glassy even when the Toucher peak jumps in level.
-Bass 42 on purpose. This song belongs to the bass player. The guitar stays out of the low end.
-Middle 58 gives the stabs body in the 800Hz–1.6kHz range, where they sit in the mix.
-Bright off. The EVM IR is already detailed up top, and Bright plus a resonant filter gets shrill.
-
-**CAB — User IR 5 (EVM112)** (always on)
-- VOL: 62
-Electro-Voice EVM12L. 70s Twin Reverbs were sold with EV speakers as a factory option, so this is a period-correct pairing.
-Tight, hi-fi, doesn't fold up under transients. It keeps the muted stabs punchy.
-The slot is confirmed, so it's encoded directly in the `.prst`.
+**AMP/CAB — NAM SnapTone, slot 61: TwinClean** (always on)
+- Built from the `Tim R Fender TwinVerb Norm Bright (Twin Reverb)` NAM and the TWIN REVERB __ CLEAN (vulturized Twin) IR, combined into one snaptone.
+- Real Fender Twin Reverb, Normal channel with Bright on, into the matching Twin cab IR (clean blend).
+- Motown session guitar: bright, clean Fender. Twin Normal channel with Bright on.
+- Gain: 48, VOL: 50, Bass: 42, Middle: 58, Treble: 62
+- Gain 48: a little under default. This part wants less push than the other TwinClean patches.
+- Bass 42: low end pulled back noticeably.
+- Middle 58: more midrange.
+- Treble 62: more top end.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 61 directly.
 
 **EQ — Guitar EQ 1** (always on)
 - 125Hz: -8, 400Hz: -2, 800Hz: +3, 1.6kHz: +4, 4kHz: +1, VOL: 52
@@ -75,7 +73,7 @@ A light nod to the Hitsville echo-chamber sound.
 Mix 14 is just enough air to sit in a room, not enough to push the guitar back.
 
 ### CTL summary
-- **CTL Off (intro/main groove):** NR + Dark Twin + EVM112 + EQ + Room. Dry, clipped, muted single notes locked to the bass.
+- **CTL Off (intro/main groove):** NR + TwinClean snaptone + EQ + Room. Dry, clipped, muted single notes locked to the bass.
 - **CTL On (build/wah sections):** adds PRE Toucher. Same amp, now quacking with your pick attack.
 - Stay on CTL Off through the long intro. Only the bass, hi-hat and handclaps are there, and the guitar should stay sparse.
 - Hit CTL once the strings and horns start stacking up, and for the extended vamp in the back half.

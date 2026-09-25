@@ -22,15 +22,17 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 **DST — Off**
 - No drive. This part exists to support, not to draw attention to itself.
 
-**AMP — Dark Twin (Fender '65 Blackface Twin Reverb, Clean)**
-- Gain: 30, VOL: 65, Bass: 58, Middle: 52, Treble: 52, Bright: Off
-- Always on, same for both CTL states.
-- A warm, clean blackface Fender voicing — Bright switched off on purpose, keeping this rounded and supportive rather than glassy. This is period-appropriate 80s clean-amp territory without pushing into the harder-edged brightness the Bright switch would add.
-
-**CAB — User IR 5 (EVM112)**
-- VOL: 60
-- Always on, same for both CTL states.
-- Electro-Voice EVM12L — a versatile, hi-fi speaker that works equally well for guitar or bass, paired here with the Dark Twin AMP for a clean, warm, unforced tone.
+**AMP/CAB — NAM SnapTone, slot 53: CleanSVT** (always on)
+- Built from the `SVT CLEAN (SVT-CL)` NAM and the Apg810 IR, combined into one snaptone.
+- Real Ampeg SVT-CL preamp on its clean setting, into the Apg810 8x10 IR.
+- Clean and huge. The SVT 8x10 supplies the size without grit.
+- Gain: 49, VOL: 50, Bass: 58, Middle: 52, Treble: 52
+- Gain 49: a little under default. This part wants less push than the other CleanSVT patches.
+- Bass 58: more low end.
+- Middle 52: a touch more midrange.
+- Treble 52: a touch more top end.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 53 directly.
 
 **EQ — Bass EQ 2**
 - 50Hz: +3, 120Hz: +1, 400Hz: 0, 800Hz: +1, 4.5kHz: +1, VOL: 54
@@ -49,11 +51,6 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 - Mix: 35, Decay: 55, Trail: On
 - CTL off: bypassed (verse — dry and restrained). CTL on: engaged (climax).
 - Pushed even further than the "Under the Bridge" build — this is one of the most epic, cathedral-scale climaxes in pop music, and the reverb needs real size to do that moment justice.
-
-## CAB IR — EVM112 (Slot 5)
-
-- Electro-Voice EVM12L, confirmed loaded on User IR slot 5. No bass/guitar-specific pairing implied by the cab itself — picked here for its versatile, hi-fi character alongside the Dark Twin AMP model.
-- Encoded directly into the `.prst` as a real, active CAB reference (`User IR 5`) — no manual loading needed for this one.
 
 ## CTL summary
 

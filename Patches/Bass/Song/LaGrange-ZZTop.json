@@ -2,19 +2,16 @@
   "patch_name": "La Grange - ZZ Top",
   "patch_vol": 55,
   "bpm": 144,
-  "ir": { "name": "Apg810" },
+  "nam": {"name": "GrittySVT (slot 57): SVT PUSHED (SVT-CL) + Apg810", "slot": 57, "settings": {"Gain": 55, "VOL": 50, "Bass": 60, "Middle": 58, "Treble": 50}},
   "modules": {
-    "NR":  { "model": "Gate", "always_on": true, "settings": { "THRE": 20 } },
-    "PRE": { "model": null },
-    "DST": { "model": "Bass OD", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",
-             "settings": { "Gain": 55, "Blend": 65, "VOL": 62, "Bass": 60, "Treble": 50 } },
-    "AMP": { "model": "Classic Bass", "always_on": true,
-             "settings": { "Gain": 55, "Bass": 60, "Middle": 58, "MidFreq": 2, "Treble": 50, "VOL": 68 } },
-    "CAB": { "model": "User IR 3", "always_on": true, "settings": { "VOL": 65 } },
-    "EQ":  { "model": "Bass EQ 1", "always_on": true,
-             "settings": { "33Hz": 4, "150Hz": -2, "600Hz": 3, "2kHz": 4, "8kHz": 2, "VOL": 55 } },
-    "MOD": { "model": null },
-    "DLY": { "model": null },
-    "RVB": { "model": null }
+    "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 20}},
+    "PRE": {"model": null},
+    "DST": {"model": "Bass OD", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Gain": 55, "Blend": 65, "VOL": 62, "Bass": 60, "Treble": 50}},
+    "AMP": {"model": null},
+    "CAB": {"model": null},
+    "EQ": {"model": "Bass EQ 1", "always_on": true, "settings": {"33Hz": 4, "150Hz": -2, "600Hz": 3, "2kHz": 4, "8kHz": 2, "VOL": 55}},
+    "MOD": {"model": null},
+    "DLY": {"model": null},
+    "RVB": {"model": null}
   }
 }

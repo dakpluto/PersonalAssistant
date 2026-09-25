@@ -2,76 +2,16 @@
   "patch_name": "InTwoMinds-Riverside",
   "patch_vol": 50,
   "bpm": 100,
-  "ir": {
-    "name": "Mesa215"
-  },
+  "nam": {"name": "ProgSVT (slot 56): SVT CLEAN PUSHED (SVT-CL) + Mesa215", "slot": 56, "settings": {"Gain": 50, "VOL": 50, "Bass": 55, "Middle": 62, "Treble": 52}},
   "modules": {
-    "NR": {
-      "model": "Gate",
-      "always_on": true,
-      "settings": {
-        "THRE": 22
-      }
-    },
-    "PRE": {
-      "model": "COMP",
-      "always_on": true,
-      "settings": {
-        "Sustain": 50,
-        "VOL": 58
-      }
-    },
-    "DST": {
-      "model": "Bass OD",
-      "ctl": true,
-      "ctl_off_state": "off",
-      "ctl_on_state": "on",
-      "settings": {
-        "Gain": 40,
-        "Blend": 50,
-        "VOL": 60,
-        "Bass": 50,
-        "Treble": 55
-      }
-    },
-    "AMP": {
-      "model": "Mess Bass",
-      "always_on": true,
-      "settings": {
-        "Gain": 42,
-        "VOL": 62,
-        "Bass": 55,
-        "Middle": 62,
-        "Treble": 52
-      }
-    },
-    "CAB": {
-      "model": "User IR 7",
-      "always_on": true,
-      "settings": {
-        "VOL": 60
-      }
-    },
-    "EQ": {
-      "model": "Bass EQ 2",
-      "always_on": true,
-      "settings": {
-        "50Hz": 2,
-        "120Hz": 2,
-        "400Hz": -2,
-        "800Hz": 3,
-        "4.5kHz": 2,
-        "VOL": 50
-      }
-    },
-    "MOD": {
-      "model": null
-    },
-    "DLY": {
-      "model": null
-    },
-    "RVB": {
-      "model": null
-    }
+    "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 22}},
+    "PRE": {"model": "COMP", "always_on": true, "settings": {"Sustain": 50, "VOL": 58}},
+    "DST": {"model": "Bass OD", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Gain": 40, "Blend": 50, "VOL": 60, "Bass": 50, "Treble": 55}},
+    "AMP": {"model": null},
+    "CAB": {"model": null},
+    "EQ": {"model": "Bass EQ 2", "always_on": true, "settings": {"50Hz": 2, "120Hz": 2, "400Hz": -2, "800Hz": 3, "4.5kHz": 2, "VOL": 50}},
+    "MOD": {"model": null},
+    "DLY": {"model": null},
+    "RVB": {"model": null}
   }
 }

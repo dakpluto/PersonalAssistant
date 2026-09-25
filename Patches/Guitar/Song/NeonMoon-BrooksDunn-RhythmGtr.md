@@ -6,11 +6,6 @@ Built from the song's overall sound. I haven't verified the exact guitars and am
 Instrument: Stratocaster (HSS). Neck or position 4 for the rhythm. Neck pickup for the fills.
 GP-5 only, Stratocaster (HSS), no pedalboard.
 
-## AMP: Dark Twin + CAB: EVM112 IR (User IR 5)
-
-A blackface Twin with Bright on, played on the neck pickup, gives a glassy, warm clean. That's the barroom-at-midnight sound.
-EVM112 is the loaded guitar cab with a flat, hi-fi response. It keeps Nashville clean tones honest and doesn't add V30 honk.
-
 ## Module chain
 
 **NR — Gate**, always on.
@@ -25,12 +20,17 @@ Light leveling on soft strums.
 Gain: 20, Tone: 55, VOL: 68.
 Barely drive. A level and mid push so the fills sit above the steel and the vocal.
 
-**AMP — Dark Twin**, always on.
-Gain: 28, VOL: 62, Bass: 46, Middle: 46, Treble: 55, Bright: on.
-Clean. Bright on works here because the neck pickup is dark. If you switch to the bridge, pull the guitar's tone back.
-
-**CAB — User IR 5 (EVM112)**, always on.
-VOL: 60.
+**AMP/CAB — NAM SnapTone, slot 62: NashClean** (always on)
+- Built from the `CLEANEST - Fender Deluxe Reverb 1965 [Hyper Accuracy]` NAM and the Origin Effects Brown Deluxe 1x12 Medium Mix IR, combined into one snaptone.
+- Real 1965 Fender Deluxe Reverb at its cleanest setting, into the Origin Effects Brown Deluxe 1x12.
+- Clean, sad two-step electric. Cleanest Deluxe Reverb.
+- Gain: 49, VOL: 50, Bass: 46, Middle: 46, Treble: 55
+- Gain 49: a little under default. This part wants less push than the other NashClean patches.
+- Bass 46: low end pulled back a little.
+- Middle 46: midrange pulled back a little.
+- Treble 55: a touch more top end.
+- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 62 directly.
 
 **EQ — Guitar EQ 2**, always on.
 100Hz: -2, 500Hz: 0, 1kHz: 0, 3kHz: +1, 6kHz: -2, VOL: 50.
