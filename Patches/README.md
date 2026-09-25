@@ -49,6 +49,9 @@ Patches are split first by Instrument Type (`Patches/Guitar/`, `Patches/Bass/`),
 | `Neon-JohnMayer-RhythmGtr` | Neon, rhythm guitar — John Mayer (~104 BPM, est.) | Strat | No (GP-5 only) | AMP: Dark Twin + IR: EVM112, Slot 5 | Percussive acoustic stand-in: snappy COMP4 clean with body; CTL on DST (Green OD, light) + DLY Analog: thumb-and-pop part vs. lead |
 | `AmericanPie-DonMcLean-RhythmGtr` | American Pie, rhythm guitar — Don McLean (~138 BPM band sections, est.) | Strat | No (GP-5 only) | AMP: Bellman 59N + IR: EVM112, Slot 5 | Acoustic-adjacent Bassman strum clean; CTL on DST (Green OD, light) + DLY Analog: strum vs. fills/melody |
 | `ManInTheBox-AIC-RhythmGtr` | Man in the Box, rhythm guitar — Alice In Chains (~108 BPM, est.; Eb tuning) | Strat | No (GP-5 only) | AMP: UK 800 + IR: V30112, Slot 10 | Boosted JCM800 Seattle sludge (always-on TS); CTL on PRE Toucher (talk-box/wah stand-in) + DLY Analog: riff vs. talk-box line/solo |
+| `SweetLeaf-BlackSabbath-RhythmGtr` | Sweet Leaf, rhythm guitar — Black Sabbath (~94 BPM, est.; C# tuning) | Strat | No (GP-5 only) | AMP: UK 50JP + IR: V30112, Slot 10 | Treble-boosted plexi grind (always-on Boost, Bright = Rangemaster stand-in); CTL on DST (Sora Fuzz) + DLY Tape: riff vs. solo jam |
+| `Praise-EW-RhythmGtr` | Praise, rhythm guitar — Elevation Worship (~127 BPM, est.) | Strat | No (GP-5 only) | AMP: Foxy 30TB + IR: V30112, Slot 10 | Driving gospel-pop rhythm, always-on Green OD + short plate; CTL on PRE Boost + DLY Tape (dotted 8th): rhythm vs. lead hooks |
+| `PapaWasARollinStone-Temptations-RhythmGtr` | Papa Was a Rollin' Stone, guitar — The Temptations (~120 BPM, est.) | Strat | Yes | AMP: Dark Twin + IR: EVM112, Slot 5 | Dry muted Motown single-note stabs, light room; CTL on PRE Toucher (envelope wah): main groove vs. wah comping |
 
 ### Album/
 
@@ -170,6 +173,9 @@ Set of 5 for one worship set — full board (Flamma octave, Donner comp, Donner 
 | `Neon-JohnMayer` | Neon — John Mayer (~104 BPM, est.) | P/J | No (GP-5 only) | AMP: Mess Bass + IR: EBS410, Slot 4 | Articulate, syncopated clean, COMP4; CTL on RVB Room: verse vs. chorus |
 | `AmericanPie-DonMcLean` | American Pie — Don McLean (~138 BPM band sections, est.) | P/J | No (GP-5 only) | AMP: Classic Bass + IR: Apg115, Slot 1 | Warm early-70s B-15 folk-rock; CTL on DST (Bass OD, hint): early vs. driving later verses |
 | `ManInTheBox-AIC` | Man in the Box — Alice In Chains (~108 BPM, est.; Eb tuning) | P/J | No (GP-5 only) | AMP: Classic Bass + IR: Sunn215, Slot 8 | Thick, gritty sludge, always-on Bass OD; CTL on EQ (400/800Hz growl boost): riff vs. chorus/solo |
+| `SweetLeaf-BlackSabbath` | Sweet Leaf — Black Sabbath (~94 BPM, est.; C# tuning) | P/J | No (GP-5 only) | AMP: Classic Bass + IR: Sunn215, Slot 8 | Fat, fuzzy doom riff-double, always-on Bass OD; CTL on PRE Micro Boost: riff vs. middle jam |
+| `Praise-EW` | Praise — Elevation Worship (~127 BPM, est.) | P/J | No (GP-5 only) | AMP: Classic Bass + IR: Apg810, Slot 3 | Punchy, dry SVT drive with COMP4; CTL on DST (Bass OD): verse vs. chorus/bridge |
+| `PapaWasARollinStone-Temptations` | Papa Was a Rollin' Stone — The Temptations (~120 BPM, est.) | P/J | Yes | AMP: Classic Bass + IR: Apg115, Slot 1 | Dry, muted Motown P-bass thump (P pickup, tone rolled back, heavy top cut); Tidal Wave as clean preamp; CTL on PRE Micro Boost: groove vs. dense string/horn sections |
 
 ### Artist/
 

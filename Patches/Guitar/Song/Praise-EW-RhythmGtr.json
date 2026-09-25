@@ -1,0 +1,93 @@
+{
+  "patch_name": "Praise-EW-Gtr",
+  "patch_vol": 50,
+  "bpm": 127,
+  "ir": {
+    "name": "V30112"
+  },
+  "modules": {
+    "NR": {
+      "model": "Gate",
+      "always_on": true,
+      "settings": {
+        "THRE": 22
+      }
+    },
+    "PRE": {
+      "model": "Boost",
+      "ctl": true,
+      "ctl_off_state": "off",
+      "ctl_on_state": "on",
+      "settings": {
+        "Gain": 40,
+        "+3dB": true,
+        "Bright": false
+      }
+    },
+    "DST": {
+      "model": "Green OD",
+      "always_on": true,
+      "settings": {
+        "Gain": 30,
+        "Tone": 60,
+        "VOL": 62
+      }
+    },
+    "AMP": {
+      "model": "Foxy 30TB",
+      "always_on": true,
+      "settings": {
+        "Gain": 32,
+        "Tone Cut": 40,
+        "VOL": 60,
+        "Bass": 45,
+        "Treble": 58,
+        "Char": 0
+      }
+    },
+    "CAB": {
+      "model": "User IR 10",
+      "always_on": true,
+      "settings": {
+        "VOL": 60
+      }
+    },
+    "EQ": {
+      "model": "Guitar EQ 2",
+      "always_on": true,
+      "settings": {
+        "100Hz": -3,
+        "500Hz": -1,
+        "1kHz": 1,
+        "3kHz": 2,
+        "6kHz": 0,
+        "VOL": 50
+      }
+    },
+    "MOD": {
+      "model": null
+    },
+    "DLY": {
+      "model": "Tape",
+      "ctl": true,
+      "ctl_off_state": "off",
+      "ctl_on_state": "on",
+      "settings": {
+        "Mix": 25,
+        "Time": 354,
+        "F.Back": 28,
+        "Trail": true
+      }
+    },
+    "RVB": {
+      "model": "Plate",
+      "always_on": true,
+      "settings": {
+        "Mix": 18,
+        "Decay": 35,
+        "Damp": 50,
+        "Trail": true
+      }
+    }
+  }
+}

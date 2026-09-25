@@ -1,0 +1,92 @@
+{
+  "patch_name": "SweetLeaf-Gtr",
+  "patch_vol": 50,
+  "bpm": 94,
+  "ir": {
+    "name": "V30112"
+  },
+  "modules": {
+    "NR": {
+      "model": "Gate",
+      "always_on": true,
+      "settings": {
+        "THRE": 35
+      }
+    },
+    "PRE": {
+      "model": "Boost",
+      "always_on": true,
+      "settings": {
+        "Gain": 60,
+        "+3dB": true,
+        "Bright": true
+      }
+    },
+    "DST": {
+      "model": "Sora Fuzz",
+      "ctl": true,
+      "ctl_off_state": "off",
+      "ctl_on_state": "on",
+      "settings": {
+        "Fuzz": 55,
+        "VOL": 62
+      }
+    },
+    "AMP": {
+      "model": "UK 50JP",
+      "always_on": true,
+      "settings": {
+        "Gain 1": 65,
+        "Gain 2": 60,
+        "PRES": 50,
+        "VOL": 58,
+        "Bass": 55,
+        "Middle": 62,
+        "Treble": 50
+      }
+    },
+    "CAB": {
+      "model": "User IR 10",
+      "always_on": true,
+      "settings": {
+        "VOL": 60
+      }
+    },
+    "EQ": {
+      "model": "Guitar EQ 2",
+      "always_on": true,
+      "settings": {
+        "100Hz": 1,
+        "500Hz": 2,
+        "1kHz": 1,
+        "3kHz": -1,
+        "6kHz": -3,
+        "VOL": 50
+      }
+    },
+    "MOD": {
+      "model": null
+    },
+    "DLY": {
+      "model": "Tape",
+      "ctl": true,
+      "ctl_off_state": "off",
+      "ctl_on_state": "on",
+      "settings": {
+        "Mix": 16,
+        "Time": 380,
+        "F.Back": 22,
+        "Trail": true
+      }
+    },
+    "RVB": {
+      "model": "Room",
+      "always_on": true,
+      "settings": {
+        "Mix": 10,
+        "Decay": 25,
+        "Trail": true
+      }
+    }
+  }
+}
