@@ -10,15 +10,15 @@ Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB
 - **PRE — COMP4.** Sustain 30, Attack 70, Clip 20, VOL 55. Gentle compression, evens out strum dynamics without squashing the pick attack. Always on.
 - **DST — Yellow OD.** Gain 20, VOL 65. Off for the main verse strum — stays fully clean. On for the hook/bridge — a light boost that lifts the tone, not real distortion. On CTL.
 **AMP/CAB — NAM SnapTone, slot 61: TwinClean** (always on)
-- Built from the `Tim R Fender TwinVerb Norm Bright (Twin Reverb)` NAM and the TWIN REVERB __ CLEAN (vulturized Twin) IR, combined into one snaptone.
-- Real Fender Twin Reverb, Normal channel with Bright on, into the matching Twin cab IR (clean blend).
-- Jangly, bright, clean pop. Twin Normal Bright.
-- Gain: 50, VOL: 50, Bass: 45, Middle: 45, Treble: 65
+- Built from the `CLEANEST - Fender Deluxe Reverb 1965 [Hyper Accuracy]` NAM and the TWIN REVERB __ CLEAN (vulturized Twin) IR, combined into one snaptone.
+- 1965 blackface Deluxe Reverb at its cleanest setting. It shares the Twin's blackface preamp circuit, so here it's the amp half of a Twin clean, into a real Twin 2x12 (JBL D120F) IR. Rebuilt 2026-09-26: the original TwinClean used the Tim R Twin Normal-channel capture, which was dropped for being too quiet.
+- Jangly, bright, clean pop.
+- Gain: 50, VOL: 75, Bass: 45, Middle: 45, Treble: 65
 - Gain 50: the capture as built.
 - Bass 45: low end pulled back a little.
 - Middle 45: midrange pulled back a little.
 - Treble 65: more top end.
-- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- VOL 75: the level Michael set for this snaptone in the 2026-10-01 VOL audit. Trim here if the patch jumps in level against your others.
 - Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 61 directly.
 
 - **EQ — Guitar EQ 1.** 125Hz -5, 400Hz -8, 800Hz -3, 1.6kHz +8, 4kHz +10, VOL 55. Cuts low-mid mud, pushes highs for that bright, twee jangle. Always on.

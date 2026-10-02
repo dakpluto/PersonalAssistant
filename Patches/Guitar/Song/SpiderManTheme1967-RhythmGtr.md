@@ -19,15 +19,15 @@ Gain: 45, Tone: 55, VOL: 66.
 Garage-rock grit for the melody. The SD-1's asymmetric clipping into a bright clean amp is punchy and a little raw, which is good for the rock-cover energy.
 
 **AMP/CAB — NAM SnapTone, slot 61: TwinClean** (always on)
-- Built from the `Tim R Fender TwinVerb Norm Bright (Twin Reverb)` NAM and the TWIN REVERB __ CLEAN (vulturized Twin) IR, combined into one snaptone.
-- Real Fender Twin Reverb, Normal channel with Bright on, into the matching Twin cab IR (clean blend).
-- 60s TV-surf guitar. Bright, clean Twin.
-- Gain: 51, VOL: 50, Bass: 48, Middle: 50, Treble: 60
+- Built from the `CLEANEST - Fender Deluxe Reverb 1965 [Hyper Accuracy]` NAM and the TWIN REVERB __ CLEAN (vulturized Twin) IR, combined into one snaptone.
+- 1965 blackface Deluxe Reverb at its cleanest setting. It shares the Twin's blackface preamp circuit, so here it's the amp half of a Twin clean, into a real Twin 2x12 (JBL D120F) IR. Rebuilt 2026-09-26: the original TwinClean used the Tim R Twin Normal-channel capture, which was dropped for being too quiet.
+- 60s TV-surf guitar. Bright, clean Fender.
+- Gain: 51, VOL: 75, Bass: 48, Middle: 50, Treble: 60
 - Gain 51: a little over default. This part wants more push than the other TwinClean patches.
 - Bass 48: low end pulled back a little.
 - Middle 50: flat.
 - Treble 60: more top end.
-- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- VOL 75: the level Michael set for this snaptone in the 2026-10-01 VOL audit. Trim here if the patch jumps in level against your others.
 - Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 61 directly.
 
 **EQ — Guitar EQ 2**, always on.

@@ -22,12 +22,12 @@ The lead push. A mid-forward singing tone for the melodic lines.
 - Built from the `RYTHM - Fender Deluxe Reverb 1965 [Hyper Accuracy]` NAM and the Origin Effects Brown Deluxe 1x12 Medium Mix IR, combined into one snaptone.
 - Real 1965 Deluxe Reverb at the rhythm setting, gritty but not saturated, into the Brown Deluxe 1x12.
 - Gritty mid-tempo country-rock. Deluxe rhythm setting.
-- Gain: 50, VOL: 50, Bass: 48, Middle: 56, Treble: 55
+- Gain: 50, VOL: 65, Bass: 48, Middle: 56, Treble: 55
 - Gain 50: the capture as built.
 - Bass 48: low end pulled back a little.
 - Middle 56: more midrange.
 - Treble 55: a touch more top end.
-- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- VOL 65: the level Michael set for this snaptone in the 2026-10-01 VOL audit. Trim here if the patch jumps in level against your others.
 - Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 65 directly.
 
 **EQ — Guitar EQ 2**, always on.

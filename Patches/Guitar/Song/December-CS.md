@@ -18,7 +18,7 @@ Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB
 - Bass 55: a touch more low end.
 - Middle 60: more midrange.
 - Treble 65: more top end.
-- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- VOL 50: the level Michael set for this snaptone in the 2026-10-01 VOL audit. Trim here if the patch jumps in level against your others.
 - Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 68 directly.
 
 - **EQ — Guitar EQ 2.** 100Hz +5, 500Hz -5, 1kHz +8, 3kHz +10, 6kHz +5, VOL 60. Scoops low-mid mud, pushes upper mids/presence so the riff cuts. Always on.

@@ -25,12 +25,12 @@ The lead push. Gain 32 pushes the clean Deluxe into a singing solo tone. VOL 68 
 - Built from the `CLEANEST - Fender Deluxe Reverb 1965 [Hyper Accuracy]` NAM and the Origin Effects Brown Deluxe 1x12 Medium Mix IR, combined into one snaptone.
 - Real 1965 Fender Deluxe Reverb at its cleanest setting, into the Origin Effects Brown Deluxe 1x12.
 - Clean country-rock rhythm. Cleanest Deluxe. The OD on CTL adds the hair.
-- Gain: 54, VOL: 50, Bass: 48, Middle: 52, Treble: 58
+- Gain: 54, VOL: 75, Bass: 48, Middle: 52, Treble: 58
 - Gain 54: a little over default. This part wants more push than the other NashClean patches.
 - Bass 48: low end pulled back a little.
 - Middle 52: a touch more midrange.
 - Treble 58: more top end.
-- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- VOL 75: the level Michael set for this snaptone in the 2026-10-01 VOL audit. Trim here if the patch jumps in level against your others.
 - Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 62 directly.
 
 **EQ — Guitar EQ 2**, always on.

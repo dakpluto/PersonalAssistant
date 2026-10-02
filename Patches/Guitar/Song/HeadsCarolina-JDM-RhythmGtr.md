@@ -22,12 +22,12 @@ On CTL. Pushes the amp for a bigger chorus strum. Tone 60 keeps the twang.
 - Built from the `EDGY - Fender Deluxe Reverb 1965 [Hyper Accuracy]` NAM and the Origin Effects Brown Deluxe 1x12 Medium Mix IR, combined into one snaptone.
 - Real 1965 Deluxe Reverb at the "edgy" setting, just starting to break up, into the Brown Deluxe 1x12.
 - Country-pop twang with a bit of grit. Edgy Deluxe.
-- Gain: 51, VOL: 50, Bass: 45, Middle: 55, Treble: 58
+- Gain: 51, VOL: 70, Bass: 45, Middle: 55, Treble: 58
 - Gain 51: a little over default. This part wants more push than the other EdgyTwang patches.
 - Bass 45: low end pulled back a little.
 - Middle 55: a touch more midrange.
 - Treble 58: more top end.
-- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- VOL 70: the level Michael set for this snaptone in the 2026-10-01 VOL audit. Trim here if the patch jumps in level against your others.
 - Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 63 directly.
 
 **EQ — Guitar EQ 1**, always on.

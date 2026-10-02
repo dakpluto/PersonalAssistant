@@ -24,12 +24,12 @@ The SD-1 for the solo. It has a tight, bright bite that suits fast Tele-style ru
 - Built from the `RYTHM - Fender Deluxe Reverb 1965 [Hyper Accuracy]` NAM and the Origin Effects Brown Deluxe 1x12 Medium Mix IR, combined into one snaptone.
 - Real 1965 Deluxe Reverb at the rhythm setting, gritty but not saturated, into the Brown Deluxe 1x12.
 - Gritty country-rock rhythm. The Deluxe rhythm setting.
-- Gain: 50, VOL: 50, Bass: 50, Middle: 50, Treble: 50
+- Gain: 50, VOL: 65, Bass: 50, Middle: 50, Treble: 50
 - Gain 50: the capture as built.
 - Bass 50: flat.
 - Middle 50: flat.
 - Treble 50: flat.
-- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- VOL 65: the level Michael set for this snaptone in the 2026-10-01 VOL audit. Trim here if the patch jumps in level against your others.
 - Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 65 directly.
 
 **EQ — Guitar EQ 2**, always on.

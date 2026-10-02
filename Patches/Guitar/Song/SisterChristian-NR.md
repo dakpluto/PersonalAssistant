@@ -13,12 +13,12 @@ Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB
 - Built from the `JCM800 2203 - P5 B5 M5 T5 MV6 G7 - AZG - 700` NAM and the BlendOfAll_dc (Marshall 1960AV) IR, combined into one snaptone.
 - Real JCM800 2203 at Gain 7, Master 6: hot rhythm crunch. Into a 1960AV 4x12 mic blend.
 - 80s rock rhythm on a hot JCM800. The CTL drive pushes it into lead.
-- Gain: 43, VOL: 50, Bass: 55, Middle: 60, Treble: 62
+- Gain: 43, VOL: 40, Bass: 55, Middle: 60, Treble: 62
 - Gain 43: noticeably under default. This part wants less push than the other HotMarshall patches.
 - Bass 55: a touch more low end.
 - Middle 60: more midrange.
 - Treble 62: more top end.
-- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- VOL 40: the level Michael set for this snaptone in the 2026-10-01 VOL audit. Trim here if the patch jumps in level against your others.
 - Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 71 directly.
 
 - **EQ — Guitar EQ 2.** 100Hz 0, 500Hz +5, 1kHz +10, 3kHz +12, 6kHz +5, VOL 65. Off for rhythm — flat, don't fight the amp tone. On for lead — mid/presence push so the solo sits on top of the mix. On CTL.

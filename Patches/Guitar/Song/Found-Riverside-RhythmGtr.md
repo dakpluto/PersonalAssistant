@@ -27,7 +27,7 @@ On CTL. Mild crunch for the chorus. Gain 25 stays open and does not fill up the 
 - Bass 50: flat.
 - Middle 50: flat.
 - Treble 45: top end pulled back a little.
-- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- VOL 50: the level Michael set for this snaptone in the 2026-10-01 VOL audit. Trim here if the patch jumps in level against your others.
 - Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 68 directly.
 
 **EQ — Guitar EQ 2**, always on.

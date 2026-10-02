@@ -2,7 +2,7 @@
   "patch_name": "HeadsCarolina-JDM-RhythmGtr",
   "patch_vol": 50,
   "bpm": 118,
-  "nam": {"name": "EdgyTwang (slot 63): EDGY - Fender Deluxe Reverb 1965 [Hyper Accuracy] + Origin Effects Brown Deluxe 1x12 Medium Mix", "slot": 63, "settings": {"Gain": 51, "VOL": 50, "Bass": 45, "Middle": 55, "Treble": 58}},
+  "nam": {"name": "EdgyTwang (slot 63): EDGY - Fender Deluxe Reverb 1965 [Hyper Accuracy] + Origin Effects Brown Deluxe 1x12 Medium Mix", "slot": 63, "settings": {"Gain": 51, "VOL": 70, "Bass": 45, "Middle": 55, "Treble": 58}},
   "modules": {
     "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 15}},
     "PRE": {"model": "COMP", "always_on": true, "settings": {"Sustain": 40, "VOL": 55}},

@@ -22,15 +22,15 @@ Gain: 18, Tone: 55, VOL: 68.
 Barely any drive. Mostly a level and mid push so the fills sit above the vocal. Gain 18 just rounds the attack.
 
 **AMP/CAB — NAM SnapTone, slot 61: TwinClean** (always on)
-- Built from the `Tim R Fender TwinVerb Norm Bright (Twin Reverb)` NAM and the TWIN REVERB __ CLEAN (vulturized Twin) IR, combined into one snaptone.
-- Real Fender Twin Reverb, Normal channel with Bright on, into the matching Twin cab IR (clean blend).
-- Clean, glassy Nashville electric. Twin Normal Bright.
-- Gain: 49, VOL: 50, Bass: 45, Middle: 45, Treble: 58
+- Built from the `CLEANEST - Fender Deluxe Reverb 1965 [Hyper Accuracy]` NAM and the TWIN REVERB __ CLEAN (vulturized Twin) IR, combined into one snaptone.
+- 1965 blackface Deluxe Reverb at its cleanest setting. It shares the Twin's blackface preamp circuit, so here it's the amp half of a Twin clean, into a real Twin 2x12 (JBL D120F) IR. Rebuilt 2026-09-26: the original TwinClean used the Tim R Twin Normal-channel capture, which was dropped for being too quiet.
+- Clean, glassy Nashville electric.
+- Gain: 49, VOL: 75, Bass: 45, Middle: 45, Treble: 58
 - Gain 49: a little under default. This part wants less push than the other TwinClean patches.
 - Bass 45: low end pulled back a little.
 - Middle 45: midrange pulled back a little.
 - Treble 58: more top end.
-- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- VOL 75: the level Michael set for this snaptone in the 2026-10-01 VOL audit. Trim here if the patch jumps in level against your others.
 - Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 61 directly.
 
 **EQ — Guitar EQ 2**, always on.

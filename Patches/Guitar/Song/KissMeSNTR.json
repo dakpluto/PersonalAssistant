@@ -2,7 +2,7 @@
   "patch_name": "KissMeSNTR",
   "patch_vol": 50,
   "bpm": 145,
-  "nam": {"name": "TwinClean (slot 61): Tim R Fender TwinVerb Norm Bright (Twin Reverb) + TWIN REVERB __ CLEAN (vulturized Twin)", "slot": 61, "settings": {"Gain": 50, "VOL": 50, "Bass": 45, "Middle": 45, "Treble": 65}},
+  "nam": {"name": "TwinClean (slot 61): CLEANEST - Fender Deluxe Reverb 1965 [Hyper Accuracy] + TWIN REVERB __ CLEAN (vulturized Twin)", "slot": 61, "settings": {"Gain": 50, "VOL": 75, "Bass": 45, "Middle": 45, "Treble": 65}},
   "modules": {
     "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 15}},
     "PRE": {"model": "COMP4", "always_on": true, "settings": {"Sustain": 30, "Attack": 70, "VOL": 55, "Clip": 20}},

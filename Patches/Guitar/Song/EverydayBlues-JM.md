@@ -27,12 +27,12 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB
 - Built from the `SLAMMIN_DUMBLE_FORD_CLN_BALANCED_S (Dumble ODS #102)` NAM and the Bogner 2x12 EVM12L - SM57 1 - Cap Edge IR, combined into one snaptone.
 - Dumble ODS #102 (the Robben Ford amp) clean channel, into a Bogner 2x12 with EVM12L speakers.
 - Mayer's live blues tone is Dumble/Two-Rock clean. This is the Dumble half.
-- Gain: 55, VOL: 50, Bass: 55, Middle: 65, Treble: 60
+- Gain: 55, VOL: 70, Bass: 55, Middle: 65, Treble: 60
 - Gain 55: noticeably over default. This part wants more push than the other MayerDumble patches.
 - Bass 55: a touch more low end.
 - Middle 65: more midrange.
 - Treble 60: more top end.
-- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- VOL 70: the level Michael set for this snaptone in the 2026-10-01 VOL audit. Trim here if the patch jumps in level against your others.
 - Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 66 directly.
 
 **EQ — Guitar EQ 2**

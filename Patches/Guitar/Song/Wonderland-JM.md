@@ -14,12 +14,12 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB
 - Built from the `SLAMMIN_DUMBLE_FORD_CLN_BALANCED_S (Dumble ODS #102)` NAM and the Bogner 2x12 EVM12L - SM57 1 - Cap Edge IR, combined into one snaptone.
 - Dumble ODS #102 (the Robben Ford amp) clean channel, into a Bogner 2x12 with EVM12L speakers.
 - Warm, clean, Dumble-style Mayer tone. Replaces the old Two-Rock NAM, which is no longer loaded.
-- Gain: 50, VOL: 50, Bass: 50, Middle: 50, Treble: 50
+- Gain: 50, VOL: 70, Bass: 50, Middle: 50, Treble: 50
 - Gain 50: the capture as built.
 - Bass 50: flat.
 - Middle 50: flat.
 - Treble 50: flat.
-- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- VOL 70: the level Michael set for this snaptone in the 2026-10-01 VOL audit. Trim here if the patch jumps in level against your others.
 - Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 66 directly.
 
 **NR — Gate**

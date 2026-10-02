@@ -18,17 +18,19 @@ Light.
 Gain: 30, Tone: 52, VOL: 68.
 A mild push for the lead lines and the solo. It's warm, not hot.
 
-**AMP/CAB — NAM SnapTone, slot 70: GlassyAC30** (always on)
-- Built from the `SLAMMIN_VOX_AC30_N_V3_TC0_S` NAM and the Origin Effects British Alnico 2x12 Medium Mix IR, combined into one snaptone.
-- Real AC30 Normal channel at volume 3, glassy and clean, into the British Alnico 2x12.
-- Petty's jangly clean: glassy AC30 Normal channel.
-- Gain: 49, VOL: 50, Bass: 50, Middle: 50, Treble: 50
-- Gain 49: a little under default. This part wants less push than the other GlassyAC30 patches.
-- Bass 50: flat.
-- Middle 50: flat.
-- Treble 50: flat.
-- VOL 50: the default. Trim here if the patch jumps in level against your others.
-- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 70 directly.
+**AMP — Foxy 30N** (always on)
+- Gain: 42, Tone Cut: 50, VOL: 62, Bright: Off
+- The GP-5's model of the Vox AC30HW Normal channel. Petty's jangly clean.
+- Gain 42: warm clean with a little bloom on hard strums.
+- Tone Cut 50: neutral.
+- Bright off: keeps the strum warm, not glassy.
+- Moved off the GlassyAC30 snaptone 2026-10-01. Michael dropped the AC30 NAMs until a better one turns up, so this uses the GP-5's own AC30 model.
+- Same in both CTL states.
+
+**CAB — User IR 5: EVM112** (always on)
+- VOL: 60
+- Electro-Voice EVM12L 1x12 IR from the loaded set. Clean, full and even for a dry strum.
+- Same in both CTL states.
 
 **EQ — Guitar EQ 2**, always on.
 100Hz: -2, 500Hz: 0, 1kHz: +1, 3kHz: 0, 6kHz: -2, VOL: 50.

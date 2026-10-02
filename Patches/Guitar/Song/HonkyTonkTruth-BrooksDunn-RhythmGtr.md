@@ -24,12 +24,12 @@ A Green OD for the solo. It's mid-forward so the lead cuts over fiddle and steel
 - Built from the `EDGY - Fender Deluxe Reverb 1965 [Hyper Accuracy]` NAM and the Origin Effects Brown Deluxe 1x12 Medium Mix IR, combined into one snaptone.
 - Real 1965 Deluxe Reverb at the "edgy" setting, just starting to break up, into the Brown Deluxe 1x12.
 - Honky-tonk twang with hair on it. Edgy Deluxe.
-- Gain: 50, VOL: 50, Bass: 44, Middle: 55, Treble: 60
+- Gain: 50, VOL: 70, Bass: 44, Middle: 55, Treble: 60
 - Gain 50: the capture as built.
 - Bass 44: low end pulled back noticeably.
 - Middle 55: a touch more midrange.
 - Treble 60: more top end.
-- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- VOL 70: the level Michael set for this snaptone in the 2026-10-01 VOL audit. Trim here if the patch jumps in level against your others.
 - Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 63 directly.
 
 **EQ — Guitar EQ 2**, always on.

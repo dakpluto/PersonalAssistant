@@ -25,12 +25,12 @@ A germanium Tone Bender-style fuzz for the solo jam. It adds hairy sustain on to
 - Built from the `Marshall JTM45 I Crunch BAL DI` NAM and the Origin Effects British Straight 4x12 Medium Mix IR, combined into one snaptone.
 - Real Marshall JTM45 crunch, into the Origin Effects British Straight 4x12.
 - No Laney capture on hand. The JTM45 is the closest British crunch, with fuzz and boost on top.
-- Gain: 55, VOL: 50, Bass: 55, Middle: 62, Treble: 50
+- Gain: 55, VOL: 67, Bass: 55, Middle: 62, Treble: 50
 - Gain 55: noticeably over default. This part wants more push than the other BritishCrunch patches.
 - Bass 55: a touch more low end.
 - Middle 62: more midrange.
 - Treble 50: flat.
-- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- VOL 67: the level Michael set for this snaptone in the 2026-10-01 VOL audit. Trim here if the patch jumps in level against your others.
 - Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 69 directly.
 
 **EQ — Guitar EQ 2**, always on.

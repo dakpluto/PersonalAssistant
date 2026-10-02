@@ -30,7 +30,7 @@ A ProCo Rat, the quintessential 90s alt-rock distortion. Gain 55 is thick and fu
 - Bass 48: low end pulled back a little.
 - Middle 50: flat.
 - Treble 58: more top end.
-- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- VOL 50: the level Michael set for this snaptone in the 2026-10-01 VOL audit. Trim here if the patch jumps in level against your others.
 - Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 68 directly.
 
 **EQ — Guitar EQ 2**, always on.

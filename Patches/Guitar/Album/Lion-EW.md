@@ -2,23 +2,26 @@
 
 HSS Stratocaster. Full board.
 Album-level build, modeled on the overall guitar approach across Elevation Worship's *Lion* (2022) and their wider catalog — the modern CCM "wall of sound": ambient, heavily modulated clean tones under verses, swelling into a bigger, saturated anthem tone for choruses and lead lines, all of it soaked in delay and reverb the whole time.
-That wash never goes away between the two states — only the gain does. That's the core design decision here: MOD/DLY/RVB/EQ and the snaptone stay fixed and always on, CTL only swaps the gain stages.
+That wash never goes away between the two states — only the gain does. That's the core design decision here: MOD/DLY/RVB/EQ and the amp/cab stay fixed and always on, CTL only swaps the gain stages.
 
 ## GP-5 Settings
 
 Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB
 
-**AMP/CAB — NAM SnapTone, slot 67: WorshipAC30** (always on)
-- Built from the `SLAMMIN_VOX_AC30_TB_V3_TC0_B4_T7_BRIGHT_S` NAM and the Origin Effects British Alnico 2x12 Medium Mix IR, combined into one snaptone.
-- Real Vox AC30 Top Boost, Bright, into the Origin Effects British Alnico 2x12.
-- Modern worship lives on a chimey AC30. Bright Top Boost channel.
-- Gain: 50, VOL: 50, Bass: 50, Middle: 60, Treble: 55
-- Gain 50: the capture as built.
-- Bass 50: flat.
-- Middle 60: more midrange.
-- Treble 55: a touch more top end.
-- VOL 50: the default. Trim here if the patch jumps in level against your others.
-- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 67 directly.
+**AMP — Foxy 30TB** (always on)
+- Gain: 32, Tone Cut: 40, VOL: 60, Bass: 45, Treble: 62, Char: Cool
+- The GP-5's model of the Vox AC30HW Top Boost channel. Modern worship lives on a chimey AC30.
+- Gain 32: clean with a little edge. The Boost, Green OD and King of Kings supply the anthem gain.
+- Tone Cut 40 and Treble 62: bright and chimey. The EQ's 3kHz/6kHz lift adds the shimmer on top.
+- Bass 45: a little lean, so it doesn't fight bass and pads.
+- Char Cool: the cleaner of the two voicings. Hot would pile more gain under the OD stack.
+- Moved off the WorshipAC30 snaptone 2026-10-01. Michael dropped the AC30 NAMs until a better one turns up, so this uses the GP-5's own AC30 model.
+- Same in both CTL states.
+
+**CAB — User IR 10: V30112** (always on)
+- VOL: 60
+- Celestion V30 1x12 IR from the loaded set, the same cab as the other Elevation Worship patches (Praise). It's tight and mid-forward, so it cuts through a dense worship mix.
+- Same in both CTL states.
 
 **NR — Gate**
 - THRE: 20

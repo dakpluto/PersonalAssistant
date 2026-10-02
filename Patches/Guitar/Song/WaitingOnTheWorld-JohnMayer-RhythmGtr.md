@@ -24,12 +24,12 @@ A TS for the lead, which is Mayer's go-to. Gain 28 keeps it vocal and touch-sens
 - Built from the `SLAMMIN_DUMBLE_FORD_CLN_BALANCED_S (Dumble ODS #102)` NAM and the Bogner 2x12 EVM12L - SM57 1 - Cap Edge IR, combined into one snaptone.
 - Dumble ODS #102 (the Robben Ford amp) clean channel, into a Bogner 2x12 with EVM12L speakers.
 - Mayer's Continuum-era clean: Dumble clean into EVM12Ls.
-- Gain: 45, VOL: 50, Bass: 50, Middle: 58, Treble: 52
+- Gain: 45, VOL: 70, Bass: 50, Middle: 58, Treble: 52
 - Gain 45: noticeably under default. This part wants less push than the other MayerDumble patches.
 - Bass 50: flat.
 - Middle 58: more midrange.
 - Treble 52: a touch more top end.
-- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- VOL 70: the level Michael set for this snaptone in the 2026-10-01 VOL audit. Trim here if the patch jumps in level against your others.
 - Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 66 directly.
 
 **EQ — Guitar EQ 2**, always on.

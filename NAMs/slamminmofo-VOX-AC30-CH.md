@@ -1,5 +1,7 @@
 # VOX AC30 CH [Hyper Accuracy+] — slamminmofo
 
+> **Dropped 2026-10-01:** Michael wasn't happy enough with these on the GP-5. The four snaptones built from this pack (G7, G10, G14, G17) are retired. AC30 patches use the GP-5's Foxy 30N / Foxy 30TB until a better AC30 NAM turns up.
+
 - **Source:** https://www.tone3000.com/tones/vox-ac30-ch-hyper-accuracy-31267
 - **Creator:** @slamminmofo (verified)
 - **Type:** NAM, **amp only** — captured into a Suhr Reactive Load, no cab/mic. Always pair with an IR when building the snaptone.

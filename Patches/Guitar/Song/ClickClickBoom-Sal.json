@@ -2,7 +2,7 @@
   "patch_name": "Click Click Boom - Saliva",
   "patch_vol": 55,
   "bpm": 100,
-  "nam": {"name": "ModernRect (slot 76): 4. MESA DUAL RECTIFIER 2025 | RHYTHM #4 + V30 LR 4FB 4x12 SM57 0.75in 0.0in 7603 (Mesa V30)", "slot": 76, "settings": {"Gain": 50, "VOL": 50, "Bass": 55, "Middle": 68, "Treble": 62}},
+  "nam": {"name": "ModernRect (slot 76): 4. MESA DUAL RECTIFIER 2025 | RHYTHM #4 + V30 LR 4FB 4x12 SM57 0.75in 0.0in 7603 (Mesa V30)", "slot": 76, "settings": {"Gain": 50, "VOL": 40, "Bass": 55, "Middle": 68, "Treble": 62}},
   "modules": {
     "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 38}},
     "PRE": {"model": null},

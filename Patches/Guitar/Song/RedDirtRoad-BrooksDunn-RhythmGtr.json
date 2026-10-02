@@ -2,7 +2,7 @@
   "patch_name": "RedDirt-Gtr",
   "patch_vol": 50,
   "bpm": 96,
-  "nam": {"name": "RythymDeluxe (slot 65): RYTHM - Fender Deluxe Reverb 1965 [Hyper Accuracy] + Origin Effects Brown Deluxe 1x12 Medium Mix", "slot": 65, "settings": {"Gain": 50, "VOL": 50, "Bass": 48, "Middle": 56, "Treble": 55}},
+  "nam": {"name": "RythymDeluxe (slot 65): RYTHM - Fender Deluxe Reverb 1965 [Hyper Accuracy] + Origin Effects Brown Deluxe 1x12 Medium Mix", "slot": 65, "settings": {"Gain": 50, "VOL": 65, "Bass": 48, "Middle": 56, "Treble": 55}},
   "modules": {
     "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 22}},
     "PRE": {"model": null},

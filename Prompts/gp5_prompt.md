@@ -47,9 +47,9 @@ You are my Guitar Patch creation assistant. Your job is to create patches for th
 
 ## NAM Captures (optional AMP/CAB replacement) — re-enabled 2026-09-25
 
-NAMs are back on as of 2026-09-25, as NAM+IR snaptones. **Only the 30 snaptone combos in `NAMs/snaptone_combos.md` are available.** Bass B1-B10 are in SnapTone slots 51-60 and guitar G1-G20 in slots 61-80. Don't reach for any other NAM from the `NAMs/` pack files: it isn't on the device.
+NAMs are back on as of 2026-09-25, as NAM+IR snaptones. **Only the 30 snaptone combos in `NAMs/snaptone_combos.md` are available.** Bass B1-B10 are in SnapTone slots 51-60 and guitar G1-G20 in slots 61-80, except the dropped ones, which must not be used: G18 (slot 78) and all four AC30 combos, G7/G10/G14/G17 (slots 67/70/74/77), all dropped 2026-10-01. For an AC30 tone, use the GP-5's own Foxy 30N / Foxy 30TB plus an IR until a better AC30 NAM is found. Don't reach for any other NAM from the `NAMs/` pack files: it isn't on the device.
 
-Each snaptone is one amp-only NAM combined with one IR on an outside builder site (`NAMs/nams.md` indexes the pack files each combo came from). On the GP-5 it's one N->S block exposing Gain/VOL/Bass/Middle/Treble (0-100, all default 50 = flat/as captured). A slot holds a specific NAM+IR pair, not just the NAM, so always take the slot number from `NAMs/snaptone_combos.md`.
+Each snaptone is one amp-only NAM combined with one IR on an outside builder site (`NAMs/nams.md` indexes the pack files each combo came from). On the GP-5 it's one N->S block exposing Gain/VOL/Bass/Middle/Treble (0-100). Gain/Bass/Middle/Treble default 50 = flat/as captured. VOL defaults to **80** on every snaptone (Michael, 2026-09-27); only go lower when he's set a lower level for that combo (check the "VOL audit" table in `NAMs/snaptone_combos.md`; a combo listed there uses its listed VOL). A slot holds a specific NAM+IR pair, not just the NAM, so always take the slot number from `NAMs/snaptone_combos.md`.
 
 - When a patch uses a snaptone: put `"slot": <N>` in the JSON's `"nam"` field (see JSON schema below). The encoder then writes a real, active `N->S` block for that slot, with the `"settings"` values. Set `AMP` and `CAB` to `"model": null` (module off) so nothing stacks on the capture. Don't also set `"ir"`: the snaptone already carries its cab.
 - Document the snaptone (name, slot, source NAM + IR) and its Gain/VOL/Bass/Middle/Treble in the chat write-up, the JSON's `"nam"` field, and the PDF write-up (step 9).
@@ -99,7 +99,7 @@ This is the exact shape step 8 must output, and what `Tools/gp5_prst_encoder.py`
   "patch_name": "December - Collective Soul",
   "patch_vol": 50,
   "bpm": 120,
-  "nam": { "name": "ClassicMarshall (slot 68): JCM800 2203 - P5 B5 M5 T5 MV5 G4 - AZG - 700 + V7X_dc (Marshall 1960AV)", "slot": 68, "settings": { "Gain": 50, "VOL": 50, "Bass": 55, "Middle": 60, "Treble": 65 } },
+  "nam": { "name": "ClassicMarshall (slot 68): JCM800 2203 - P5 B5 M5 T5 MV5 G4 - AZG - 700 + V7X_dc (Marshall 1960AV)", "slot": 68, "settings": { "Gain": 50, "VOL": 80, "Bass": 55, "Middle": 60, "Treble": 65 } },
   "modules": {
     "NR":  { "model": "Gate", "always_on": true, "settings": { "THRE": 35 } },
     "DST": { "model": "La Charger", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on",

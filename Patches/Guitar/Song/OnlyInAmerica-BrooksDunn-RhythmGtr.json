@@ -2,7 +2,7 @@
   "patch_name": "OnlyInAm-Gtr",
   "patch_vol": 50,
   "bpm": 120,
-  "nam": {"name": "BritishCrunch (slot 69): Marshall JTM45 I Crunch BAL DI + Origin Effects British Straight 4x12 Medium Mix", "slot": 69, "settings": {"Gain": 46, "VOL": 50, "Bass": 50, "Middle": 58, "Treble": 56}},
+  "nam": {"name": "BritishCrunch (slot 69): Marshall JTM45 I Crunch BAL DI + Origin Effects British Straight 4x12 Medium Mix", "slot": 69, "settings": {"Gain": 46, "VOL": 67, "Bass": 50, "Middle": 58, "Treble": 56}},
   "modules": {
     "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 28}},
     "PRE": {"model": "Boost", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Gain": 45, "+3dB": true, "Bright": false}},

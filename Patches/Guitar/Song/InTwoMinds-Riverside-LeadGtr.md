@@ -22,12 +22,12 @@ Always on, tightens the low end and pushes the amp. Tube Screamer style, Gain 30
 - Built from the `SLAMMIN_DUMBLE_FORD_OD_SMOOTH_S (Dumble ODS #102)` NAM and the V30 UR 4FB 4x12 SM57 1.00in 0.0in 7603 (Mesa V30) IR, combined into one snaptone.
 - Dumble ODS #102 overdrive channel, smooth setting, into a Mesa 4x12 with V30s.
 - Smooth, singing prog lead in the Gilmour mold. Dumble overdrive.
-- Gain: 53, VOL: 50, Bass: 45, Middle: 60, Treble: 55
+- Gain: 53, VOL: 65, Bass: 45, Middle: 60, Treble: 55
 - Gain 53: a little over default. This part wants more push than the other ProgDumble patches.
 - Bass 45: low end pulled back a little.
 - Middle 60: more midrange.
 - Treble 55: a touch more top end.
-- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- VOL 65: the level Michael set for this snaptone in the 2026-10-01 VOL audit. Trim here if the patch jumps in level against your others.
 - Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 73 directly.
 
 **EQ — Guitar EQ 2**, always on.

@@ -2,7 +2,7 @@
   "patch_name": "ManInBox-Gtr",
   "patch_vol": 50,
   "bpm": 108,
-  "nam": {"name": "HotMarshall (slot 71): JCM800 2203 - P5 B5 M5 T5 MV6 G7 - AZG - 700 + BlendOfAll_dc (Marshall 1960AV)", "slot": 71, "settings": {"Gain": 57, "VOL": 50, "Bass": 55, "Middle": 62, "Treble": 52}},
+  "nam": {"name": "HotMarshall (slot 71): JCM800 2203 - P5 B5 M5 T5 MV6 G7 - AZG - 700 + BlendOfAll_dc (Marshall 1960AV)", "slot": 71, "settings": {"Gain": 57, "VOL": 40, "Bass": 55, "Middle": 62, "Treble": 52}},
   "modules": {
     "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 45}},
     "PRE": {"model": "Toucher", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Sense": 60, "Range": 55, "Q": 65, "Mix": 70, "Mode": 0}},

@@ -21,15 +21,15 @@ Gain: 26, Tone: 52, VOL: 66.
 A light TS for Mayer-style lead lines.
 
 **AMP/CAB — NAM SnapTone, slot 64: BrightTwin** (always on)
-- Built from the `Tim R Fender TwinVerb Vibrato Bright (Twin Reverb)` NAM and the TWIN REVERB __ BALANCED (vulturized Twin) IR, combined into one snaptone.
-- Real Twin Reverb, Vibrato channel with Bright on, into the Twin cab IR (balanced blend).
-- Mayer's percussive clean: warm, round, with headroom. Twin Vibrato channel.
-- Gain: 52, VOL: 50, Bass: 52, Middle: 45, Treble: 55
+- Built from the `CLEANEST - Fender Deluxe Reverb 1965 [Hyper Accuracy]` NAM and the TWIN REVERB __ BALANCED (vulturized Twin) IR, combined into one snaptone.
+- 1965 blackface Deluxe Reverb at its cleanest setting. It shares the Twin's blackface preamp circuit, so here it's the amp half of a Twin clean, into a real Twin 2x12 (JBL D120F) IR. Rebuilt 2026-09-26: the original BrightTwin used the Tim R Twin Vibrato-channel capture, which was dropped for being too quiet. Balanced IR blend.
+- Mayer's percussive clean: warm, round, with headroom.
+- Gain: 52, VOL: 75, Bass: 52, Middle: 45, Treble: 55
 - Gain 52: a little over default. This part wants more push than the other BrightTwin patches.
 - Bass 52: a touch more low end.
 - Middle 45: midrange pulled back a little.
 - Treble 55: a touch more top end.
-- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- VOL 75: the level Michael set for this snaptone in the 2026-10-01 VOL audit. Trim here if the patch jumps in level against your others.
 - Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 64 directly.
 
 **EQ — Guitar EQ 2**, always on.

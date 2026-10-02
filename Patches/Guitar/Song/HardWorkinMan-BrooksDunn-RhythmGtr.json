@@ -2,7 +2,7 @@
   "patch_name": "HardWork-Gtr",
   "patch_vol": 50,
   "bpm": 150,
-  "nam": {"name": "RythymDeluxe (slot 65): RYTHM - Fender Deluxe Reverb 1965 [Hyper Accuracy] + Origin Effects Brown Deluxe 1x12 Medium Mix", "slot": 65, "settings": {"Gain": 50, "VOL": 50, "Bass": 50, "Middle": 50, "Treble": 50}},
+  "nam": {"name": "RythymDeluxe (slot 65): RYTHM - Fender Deluxe Reverb 1965 [Hyper Accuracy] + Origin Effects Brown Deluxe 1x12 Medium Mix", "slot": 65, "settings": {"Gain": 50, "VOL": 65, "Bass": 50, "Middle": 50, "Treble": 50}},
   "modules": {
     "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 22}},
     "PRE": {"model": "COMP4", "always_on": true, "settings": {"Sustain": 50, "Attack": 45, "Clip": 40, "VOL": 58}},

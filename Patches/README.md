@@ -12,7 +12,7 @@ Patches are split first by Instrument Type (`Patches/Guitar/`, `Patches/Bass/`),
 |---|---|---|---|---|---|
 | `Cassie-Flyleaf` | Cassie — Flyleaf (original studio version) | Strat | Yes | IR: American Twin 2x12 Medium Mix | CTL on DST + DLY (inverted): clean ambient verse vs. heavy chorus wall |
 | `ClickClickBoom-Sal` | Click Click Boom — Saliva (100 BPM) | Strat | Yes | SnapTone: ModernRect (slot 76) | CTL on DST + DLY + RVB: tight verse riff vs. boosted/wet solo lead |
-| `Creep-RH` | Creep — Radiohead | Strat | Yes | SnapTone: GlassyAC30 (slot 70) | Clean/dirty split, CTL on PRE boost + DST |
+| `Creep-RH` | Creep — Radiohead | Strat | Yes | AMP: Foxy 30N + CAB: Foxy 2x12 | Clean/dirty split, CTL on PRE boost + DST |
 | `December-CS` | December — Collective Soul | Strat | No | SnapTone: ClassicMarshall (slot 68) | CTL on DST + MOD (inverted) + DLY: clean vibe intro vs. driven riff |
 | `EverydayBlues-JM` | Everyday I Have the Blues — John Mayer (*Where the Light Is*) | Strat | Yes | SnapTone: MayerDumble (slot 66) | Full pedalboard chain |
 | `KissMeSNTR` | Kiss Me — Sixpence None the Richer | Strat | No | SnapTone: TwinClean (slot 61) | CTL on DST + DLY + RVB: dry verse strum vs. lifted hook/bridge |
@@ -25,8 +25,8 @@ Patches are split first by Instrument Type (`Patches/Guitar/`, `Patches/Bass/`),
 | `HeadsCarolina-JDM-RhythmGtr` | Heads Carolina, Tails California, rhythm guitar — Jo Dee Messina (~118 BPM, est.) | Strat | No (GP-5 only) | SnapTone: EdgyTwang (slot 63) | Bright country-rock strum, slapback + spring; CTL on DST (Green OD): verse vs. chorus |
 | `Higher-Creed-Gtr` | Higher, rhythm guitar — Creed (~85 BPM, est.) | Strat | No (GP-5 only) | AMP: Match CL + IR: V30112, Slot 10 | CTL off = clean (light chorus, hall); CTL on = driven (PRE Boost + DST La Charger stack) |
 | `IWillAlwaysLoveYou-Dolly-RhythmGtr` | I Will Always Love You, rhythm guitar — Dolly Parton (~66 BPM, est.) | Strat | No (GP-5 only) | SnapTone: TwinClean (slot 61) | Soft Nashville clean, Ross comp + spring; CTL on DST (Green OD, light) + DLY Analog: rhythm vs. lead fills |
-| `MaryJanesLastDance-TomPetty-RhythmGtr` | Mary Jane's Last Dance, rhythm guitar — Tom Petty and the Heartbreakers (~84 BPM, est.) | Strat | No (GP-5 only) | SnapTone: PushedAC30 (slot 74) | AC30 edge crunch for the Am riff, small room; CTL on DST (Green OD) + DLY Analog: riff vs. solo/outro lead |
-| `WhenWindMeetsFire-EW-RhythmGtr` | When Wind Meets Fire, rhythm guitar — Elevation Worship (~72 BPM, est.) | Strat | No (GP-5 only) | SnapTone: WorshipAC30 (slot 67) | Modern worship ambient: always-on dotted-8th Tape + Sweet Space; CTL on PRE Boost + DST (Green OD): swells/verse vs. driven chorus/bridge lead |
+| `MaryJanesLastDance-TomPetty-RhythmGtr` | Mary Jane's Last Dance, rhythm guitar — Tom Petty and the Heartbreakers (~84 BPM, est.) | Strat | No (GP-5 only) | AMP: Foxy 30TB + IR: EVM112, Slot 5 | AC30 edge crunch for the Am riff, small room; CTL on DST (Green OD) + DLY Analog: riff vs. solo/outro lead |
+| `WhenWindMeetsFire-EW-RhythmGtr` | When Wind Meets Fire, rhythm guitar — Elevation Worship (~72 BPM, est.) | Strat | No (GP-5 only) | AMP: Foxy 30TB + IR: V30112, Slot 10 | Modern worship ambient: always-on dotted-8th Tape + Sweet Space; CTL on PRE Boost + DST (Green OD): swells/verse vs. driven chorus/bridge lead |
 | `SpiderManTheme1994-RhythmGtr` | Spider-Man: The Animated Series theme (1994), rhythm guitar — Joe Perry (driving hard-rock tempo, est.) | Strat | No (GP-5 only) | SnapTone: BritishCrunch (slot 69) | 90s Aerosmith-style Marshall crunch; CTL on PRE Boost + DLY Analog: riff vs. lead melody |
 | `SpiderManTheme1967-RhythmGtr` | Spider-Man Theme (1967 cartoon), rhythm guitar — Bob Harris & Paul Francis Webster (fast swing, est.) | Strat | No (GP-5 only) | SnapTone: TwinClean (slot 61) | 60s TV-theme twang: always-on slapback + spring; CTL on DST (Super OD): comping/riff vs. driven melody lead |
 | `MyMaria-BrooksDunn-RhythmGtr` | My Maria, rhythm guitar — Brooks & Dunn (~96 BPM, est.) | Strat | No (GP-5 only) | SnapTone: NashClean (slot 62) | Edge-of-clean Twin, Ross comp; CTL on DST (Green OD) + DLY Analog: rhythm vs. solo |
@@ -40,7 +40,7 @@ Patches are split first by Instrument Type (`Patches/Guitar/`, `Patches/Bass/`),
 | `IfYouSeeHer-BrooksDunn-RhythmGtr` | If You See Her ("If You See Him/If You See Her", w/ Reba), rhythm guitar — Brooks & Dunn (~70 BPM, est.) | Strat | No (GP-5 only) | SnapTone: NashClean (slot 62) | Pristine late-90s ballad clean, light chorus + hall; CTL on DST (Green OD) + DLY Analog: arpeggios vs. lead |
 | `TimeOfMyLife-DirtyDancing-RhythmGtr` | (I've Had) The Time of My Life, rhythm guitar — Bill Medley & Jennifer Warnes (~108 BPM, est.) | Strat | No (GP-5 only) | AMP: J-120 CL + IR: EVM112, Slot 5 | Glassy 80s JC clean, obvious chorus + plate; CTL on DST (Super OD) + DLY Analog: funky rhythm vs. lead/finale |
 | `DangerZone-KennyLoggins-RhythmGtr` | Danger Zone, rhythm guitar — Kenny Loggins (~158 BPM, est.) | Strat | No (GP-5 only) | AMP: Solo100 OD + IR: V30112, Slot 10 | 80s hard-rock SLO crunch, light chorus; CTL on PRE Boost + DLY Analog: power chords vs. soaring lead |
-| `YouDontKnowHowItFeels-TomPetty-RhythmGtr` | You Don't Know How It Feels, rhythm guitar — Tom Petty (~92 BPM, est.) | Strat | No (GP-5 only) | SnapTone: GlassyAC30 (slot 70) | Warm, dry AC30 normal, small room; CTL on DST (Green OD, mild) + DLY Analog: strum vs. lead |
+| `YouDontKnowHowItFeels-TomPetty-RhythmGtr` | You Don't Know How It Feels, rhythm guitar — Tom Petty (~92 BPM, est.) | Strat | No (GP-5 only) | AMP: Foxy 30N + IR: EVM112, Slot 5 | Warm, dry AC30 normal, small room; CTL on DST (Green OD, mild) + DLY Analog: strum vs. lead |
 | `WerewolvesOfLondon-Zevon-RhythmGtr` | Werewolves of London, rhythm guitar — Warren Zevon (~104 BPM, est.) | Strat | No (GP-5 only) | AMP: Bellman 59N + IR: EVM112, Slot 5 | Warm 70s Bassman grit under the piano riff; CTL on DST (Green OD) + DLY Analog: riff vs. solo |
 | `RainbowConnection-KennyLoggins-RhythmGtr` | Rainbow Connection, rhythm guitar — Kenny Loggins (~72 BPM, est.) | Strat | No (GP-5 only) | SnapTone: BrightTwin (slot 64) | Acoustic-adjacent fingerpicked clean, light chorus + hall; CTL on DST (Green OD, level lift) + DLY Tape: accompaniment vs. melody |
 | `WaitingOnTheWorld-JohnMayer-RhythmGtr` | Waiting on the World to Change, rhythm guitar — John Mayer (~88 BPM, est.) | Strat | No (GP-5 only) | SnapTone: MayerDumble (slot 66) | Warm, mid-rich Dumble-ish soul clean; CTL on DST (Green OD, light) + DLY Analog: double-stops vs. lead |
@@ -50,7 +50,7 @@ Patches are split first by Instrument Type (`Patches/Guitar/`, `Patches/Bass/`),
 | `AmericanPie-DonMcLean-RhythmGtr` | American Pie, rhythm guitar — Don McLean (~138 BPM band sections, est.) | Strat | No (GP-5 only) | SnapTone: EdgyTwang (slot 63) | Acoustic-adjacent Bassman strum clean; CTL on DST (Green OD, light) + DLY Analog: strum vs. fills/melody |
 | `ManInTheBox-AIC-RhythmGtr` | Man in the Box, rhythm guitar — Alice In Chains (~108 BPM, est.; Eb tuning) | Strat | No (GP-5 only) | SnapTone: HotMarshall (slot 71) | Boosted JCM800 Seattle sludge (always-on TS); CTL on PRE Toucher (talk-box/wah stand-in) + DLY Analog: riff vs. talk-box line/solo |
 | `SweetLeaf-BlackSabbath-RhythmGtr` | Sweet Leaf, rhythm guitar — Black Sabbath (~94 BPM, est.; C# tuning) | Strat | No (GP-5 only) | SnapTone: BritishCrunch (slot 69) | Treble-boosted plexi grind (always-on Boost, Bright = Rangemaster stand-in); CTL on DST (Sora Fuzz) + DLY Tape: riff vs. solo jam |
-| `Praise-EW-RhythmGtr` | Praise, rhythm guitar — Elevation Worship (~127 BPM, est.) | Strat | No (GP-5 only) | SnapTone: WorshipAC30 (slot 67) | Driving gospel-pop rhythm, always-on Green OD + short plate; CTL on PRE Boost + DLY Tape (dotted 8th): rhythm vs. lead hooks |
+| `Praise-EW-RhythmGtr` | Praise, rhythm guitar — Elevation Worship (~127 BPM, est.) | Strat | No (GP-5 only) | AMP: Foxy 30TB + IR: V30112, Slot 10 | Driving gospel-pop rhythm, always-on Green OD + short plate; CTL on PRE Boost + DLY Tape (dotted 8th): rhythm vs. lead hooks |
 | `PapaWasARollinStone-Temptations-RhythmGtr` | Papa Was a Rollin' Stone, guitar — The Temptations (~120 BPM, est.) | Strat | Yes | SnapTone: TwinClean (slot 61) | Dry muted Motown single-note stabs, light room; CTL on PRE Toucher (envelope wah): main groove vs. wah comping |
 | `SurfinUSA-BeachBoys-RhythmGtr` | Surfin' U.S.A., guitar — The Beach Boys (~158 BPM, est.) | Strat | Yes | SnapTone: TwinClean (slot 61) | Bright early-60s Fender chug with spring; CTL on DST (Green OD, light push) + DLY Slapback: rhythm vs. Chuck Berry-style lead |
 
@@ -58,7 +58,7 @@ Patches are split first by Instrument Type (`Patches/Guitar/`, `Patches/Bass/`),
 
 | File | Song / Reference | Instrument | Full Board | AMP/CAB substitute | Notes |
 |---|---|---|---|---|---|
-| `Lion-EW` | *Lion* — Elevation Worship (CCM / modern worship, whole-album build) | Strat | Yes | SnapTone: WorshipAC30 (slot 67) | CAB null, real AMP (Dark Twin) |
+| `Lion-EW` | *Lion* — Elevation Worship (CCM / modern worship, whole-album build) | Strat | Yes | AMP: Foxy 30TB + IR: V30112, Slot 10 | Ambient AC30 wash; CTL on PRE Boost + DST (Green OD): verse vs. anthem |
 
 ## Bass/
 

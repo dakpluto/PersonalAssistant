@@ -26,12 +26,12 @@ An always-on TS boost, low gain and high level. It tightens and pushes the 800 f
 - Built from the `JCM800 2203 - P5 B5 M5 T5 MV6 G7 - AZG - 700` NAM and the BlendOfAll_dc (Marshall 1960AV) IR, combined into one snaptone.
 - Real JCM800 2203 at Gain 7, Master 6: hot rhythm crunch. Into a 1960AV 4x12 mic blend.
 - Hot, mid-heavy Marshall rhythm. JCM800 at Gain 7.
-- Gain: 57, VOL: 50, Bass: 55, Middle: 62, Treble: 52
+- Gain: 57, VOL: 40, Bass: 55, Middle: 62, Treble: 52
 - Gain 57: noticeably over default. This part wants more push than the other HotMarshall patches.
 - Bass 55: a touch more low end.
 - Middle 62: more midrange.
 - Treble 52: a touch more top end.
-- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- VOL 40: the level Michael set for this snaptone in the 2026-10-01 VOL audit. Trim here if the patch jumps in level against your others.
 - Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 71 directly.
 
 **EQ — Guitar EQ 2**, always on.

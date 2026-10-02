@@ -2,7 +2,7 @@
   "patch_name": "WaitWorld-Gtr",
   "patch_vol": 50,
   "bpm": 88,
-  "nam": {"name": "MayerDumble (slot 66): SLAMMIN_DUMBLE_FORD_CLN_BALANCED_S (Dumble ODS #102) + Bogner 2x12 EVM12L - SM57 1 - Cap Edge", "slot": 66, "settings": {"Gain": 45, "VOL": 50, "Bass": 50, "Middle": 58, "Treble": 52}},
+  "nam": {"name": "MayerDumble (slot 66): SLAMMIN_DUMBLE_FORD_CLN_BALANCED_S (Dumble ODS #102) + Bogner 2x12 EVM12L - SM57 1 - Cap Edge", "slot": 66, "settings": {"Gain": 45, "VOL": 70, "Bass": 50, "Middle": 58, "Treble": 52}},
   "modules": {
     "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 14}},
     "PRE": {"model": "COMP", "always_on": true, "settings": {"Sustain": 30, "VOL": 55}},

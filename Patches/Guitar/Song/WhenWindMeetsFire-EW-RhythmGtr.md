@@ -21,17 +21,20 @@ Hits the Green OD harder and adds level for the chorus and lead lines. Bright of
 Gain: 38, Tone: 58, VOL: 64.
 The main worship drive. Mid-forward, with the chords still clear. Tone 58 helps it cut through pads and keys.
 
-**AMP/CAB — NAM SnapTone, slot 67: WorshipAC30** (always on)
-- Built from the `SLAMMIN_VOX_AC30_TB_V3_TC0_B4_T7_BRIGHT_S` NAM and the Origin Effects British Alnico 2x12 Medium Mix IR, combined into one snaptone.
-- Real Vox AC30 Top Boost, Bright, into the Origin Effects British Alnico 2x12.
-- Chimey AC30 Top Boost for modern worship.
-- Gain: 50, VOL: 50, Bass: 48, Middle: 55, Treble: 55
-- Gain 50: the capture as built.
-- Bass 48: low end pulled back a little.
-- Middle 55: a touch more midrange.
-- Treble 55: a touch more top end.
-- VOL 50: the default. Trim here if the patch jumps in level against your others.
-- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 67 directly.
+**AMP — Foxy 30TB** (always on)
+- Gain: 35, Tone Cut: 40, VOL: 62, Bass: 48, Treble: 58, Char: Cool
+- The GP-5's model of the Vox AC30HW Top Boost channel. Chimey AC30 for modern worship.
+- Gain 35: edge of breakup, so volume-knob swells clean up and the Boost/Green OD push it into drive.
+- Tone Cut 40, Treble 58: chime without harshness under the big reverb.
+- Bass 48: close to flat.
+- Char Cool: the cleaner voicing.
+- Moved off the WorshipAC30 snaptone 2026-10-01. Michael dropped the AC30 NAMs until a better one turns up, so this uses the GP-5's own AC30 model.
+- Same in both CTL states.
+
+**CAB — User IR 10: V30112** (always on)
+- VOL: 60
+- Celestion V30 1x12 IR from the loaded set, the same cab as the other Elevation Worship patches.
+- Same in both CTL states.
 
 **EQ — Guitar EQ 2**, always on.
 100Hz: -3, 500Hz: -1, 1kHz: 0, 3kHz: +2, 6kHz: +1, VOL: 50.

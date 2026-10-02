@@ -1,11 +1,11 @@
 # Snaptone combo plan (NAM + IR)
 
-Drafted 2026-09-25 (G6/G13 updated the same day when the Dumble ODS pack was added) from the NAM/IR pack files in `NAMs/` and `IRs/`, mapped against every existing patch using the per-song "ideal rig" picks from the same session. One combo per patch: a GP-5 patch has a single N->S block, so any clean-vs-dirty CTL switching still comes from DST/PRE, not from swapping snaptones. Counts are unique songs/parts (the one Brooks & Dunn GP-5-only duplicate is counted once): 114 bass, 44 guitar. Every patch is covered by exactly one combo. Record the SnapTone slot (1-80) in the Slot column once a combo is loaded. Bass B1-B10 loaded 2026-09-25 into slots 51-60 (the Snaptone name column is the name each was saved under on the device); guitar G1-G20 loaded into slots 61-80. All 30 slots from 51 to 80 are now in use.
+Drafted 2026-09-25 (G6/G13 updated the same day when the Dumble ODS pack was added) from the NAM/IR pack files in `NAMs/` and `IRs/`, mapped against every existing patch using the per-song "ideal rig" picks from the same session. One combo per patch: a GP-5 patch has a single N->S block, so any clean-vs-dirty CTL switching still comes from DST/PRE, not from swapping snaptones. Counts are unique songs/parts (the one Brooks & Dunn GP-5-only duplicate is counted once): 114 bass, 44 guitar. Every patch is covered by exactly one combo. Record the SnapTone slot (1-80) in the Slot column once a combo is loaded. Bass B1-B10 loaded 2026-09-25 into slots 51-60 (the Snaptone name column is the name each was saved under on the device); guitar G1-G20 loaded into slots 61-80. All 30 slots from 51 to 80 were filled; G18 (slot 78) was dropped 2026-10-01, and the four AC30 combos (G7, G10, G14, G17) were dropped the same day, so 25 combos are usable.
 
 ## Caveats
 
 - **Origin Effects IRs** (Brown Deluxe, British Alnico, British Straight): Michael confirmed 2026-09-25 he has the files, so the primary IR in each combo is the one used. G7, G9 and G10 were built with the Origin Effects IR, not the fallback. The fallbacks listed for the combos that aren't loaded yet are only there in case a file turns up missing.
-- **Preamp-only NAMs:** the SVT-CL and Rectifier packs have no power-amp stage (see their pack files). That affects B3 and B5-B9 on bass and G12 and G16 on guitar. Test those combos in the builder before committing slots.
+- **Preamp-only NAMs:** the SVT-CL and Rectifier packs have no power-amp stage (see their pack files). That affects B3 and B5-B9 on bass and G12 and G16 on guitar. Test those combos in the builder before committing slots. On guitar, both play fine on the device: G12 and G16 passed the 2026-10-01 VOL audit, and Michael singled out G12 RectifierCrunch as sounding really nice. A Higher/Cassie rebuild around it, or a new Rectifier-rhythm patch, is worth considering.
 - **Provenance:** `Ampeg SVT Bright Beta52` and `Ampeg SVT D-I-Out` come from the unknown-provenance pack (`IRs/morenoteslesstalk-Ampeg-SVT-8x10-4x10-DI.md`), so they're fine for personal use but not for anything published.
 - **No NAM yet** for Mesa Mark, Soldano, Laney, tweed Bassman, JC-120, Mesa bass, Acoustic 360 or Hiwatt. Those songs use the nearest stand-in below and are worth revisiting if packs turn up.
 
@@ -21,6 +21,43 @@ NAMs were re-enabled and every existing patch was re-checked against these combo
   - Werewolves of London (guitar): Bellman 59N directly models the '59 Bassman. G5 was a stand-in.
   - Higher and Cassie (guitar): CTL off is a clean part on a clean amp, and G12 is a crunch capture.
 - So **G12 (RectifierCrunch) and G15 (80sLeadJCM800) aren't used by any patch right now.** They stay loaded for future high-gain patches, or for a Higher/Cassie rebuild around a Rectifier rhythm tone.
+
+## Rebuild 2026-09-26: G1 and G4
+
+Both Tim R clean Twin captures (`TwinVerb Norm Bright`, `TwinVerb Vibrato Bright`) were too quiet on the GP-5 no matter how the snaptone was set, so Michael dropped them. The Tim R `Ch1 BR` breakup captures are fine. The library has no other clean Twin NAM, so G1 (TwinClean, slot 61) and G4 (BrightTwin, slot 64) were rebuilt on the Deluxe `CLEANEST` capture, which is blackface like the Twin and the loudest clean file in the library (-14.0 dB vs -21). Each combo keeps its original Twin IR. G2 (NashClean) uses the same NAM with the Brown Deluxe 1x12 IR. Slot numbers, snaptone names and patch assignments are unchanged. Michael loaded both rebuilt snaptones the same day and confirmed they sound much better. A true clean Twin NAM is still worth finding.
+
+## VOL audit (in progress)
+
+VOL 50 was too quiet on every snaptone, so new patches start at 80 (2026-09-27). Michael is checking each combo for its working VOL. Guitar audit finished 2026-10-01, and every guitar snaptone patch was updated to these levels the same day. Bass (B1-B10) hasn't been audited yet, so bass patches stay at 50 until it is.
+
+| NAM | Combos | VOL | Checked |
+|---|---|---|---|
+| Deluxe `CLEANEST` | G1, G2, G4 | 75 minimum | 2026-10-01 |
+| Deluxe `EDGY` | G3 | 70 minimum | 2026-10-01 |
+| Deluxe `RYTHM` | G5 | 65 minimum | 2026-10-01 |
+| Dumble `CLN_BALANCED` | G6 | 70 | 2026-10-01 |
+| AC30 TB `BRIGHT` | G7 | 75 | 2026-10-01 |
+| JCM800 `G4` | G8 | 50 | 2026-10-01 |
+| JTM45 `Crunch` | G9 | 67 | 2026-10-01 |
+| AC30 `N_V3` (Normal) | G10 | 50 | 2026-10-01 |
+| JCM800 `G7` | G11 | 40 | 2026-10-01 |
+| Dumble `OD_SMOOTH` | G13 | 65 | 2026-10-01 |
+| AC30 TB `PUSH` | G14 | 70 | 2026-10-01 |
+| Rectifier `RHYTHM #4` | G16 | 40 | 2026-10-01 |
+| Rectifier `CRUNCH RHYTHM #1` | G12 | 70 | 2026-10-01 |
+| JCM800 `G10` | G15 | 60 | 2026-10-01 |
+| AC30 `N_V10 DALLASTREBLE` | G17 | 70 | 2026-10-01 |
+| Deluxe `HOT` | G19 | 60 | 2026-10-01 |
+| JCM800 `G3` | G20 | 60 | 2026-10-01 |
+| Tim R Twin `Ch1 BR G08` | G18 | dropped | 2026-10-01 |
+
+Audit notes (2026-10-01):
+
+- **All AC30 combos dropped (G7, G10, G14, G17):** Michael wasn't happy enough with the slamminmofo AC30 captures. Until he finds a better AC30 NAM, AC30 patches use the GP-5's own Foxy 30N / Foxy 30TB with a CAB IR. The six patches on them (Lion, Praise, When Wind Meets Fire, Mary Jane's Last Dance, You Don't Know How It Feels, Creep) were moved to Foxy the same day. Slots 67, 70, 74 and 77 stay loaded but are off-limits for patches.
+- **G18 CrankedTwin dropped:** it sounded bad on the device. Slot 78 is free; don't use it in patches.
+- **G17 TrebleBoostAC30** works but is only so-so. Michael may look for a better AC30 NAM in general.
+- **G19 CrankedDeluxe** and **G20 JCM800Clean** both sound great. G20 was rebuilt on the JCM800 `G3` capture (light crunch) instead of `G1`; slot and snaptone name unchanged.
+- **G12 RectifierCrunch** sounds really nice (see Caveats).
 
 ## Bass (10 combos, 114 songs)
 
@@ -45,25 +82,25 @@ G1-G16 cover every current guitar patch. G17-G20 add range the current patches d
 
 | # | NAM file | IR (fallback) | Role | Songs | Count | Slot | Snaptone name |
 |---|---|---|---|---|---|---|---|
-| G1 | `Tim R Fender TwinVerb Norm Bright` (Twin) | `TWIN REVERB __ CLEAN` (vulturized Twin) | Glassy Twin clean: Motown, surf, pop, 80s clean | Papa Was a Rollin' Stone, Surfin' U.S.A., Kiss Me, Spider-Man '67, Time of My Life (JC-120 stand-in), I Will Always Love You | 6 | 61 | TwinClean |
+| G1 | `CLEANEST - Fender Deluxe Reverb 1965 [Hyper Accuracy]` (blackface Deluxe standing in for the Twin's amp half) | `TWIN REVERB __ CLEAN` (vulturized Twin) | Glassy Twin clean: Motown, surf, pop, 80s clean | Papa Was a Rollin' Stone, Surfin' U.S.A., Kiss Me, Spider-Man '67, Time of My Life (JC-120 stand-in), I Will Always Love You | 6 | 61 | TwinClean |
 | G2 | `CLEANEST - Fender Deluxe Reverb 1965 [Hyper Accuracy]` | Brown Deluxe 1x12 Medium Mix (fallback: EVM112, User IR 5) | Nashville clean ballads | Believe, If You See Her, Neon Moon, My Maria | 4 | 62 | NashClean |
 | G3 | `EDGY - Fender Deluxe Reverb 1965 [Hyper Accuracy]` | Brown Deluxe 1x12 Medium Mix (fallback: EVM112) | Twang with a little hair: chicken pickin', country-pop | Ain't Nothin' 'Bout You, Heads Carolina, Honky Tonk Truth, American Pie | 4 | 63 | EdgyTwang |
-| G4 | `Tim R Fender TwinVerb Vibrato Bright` (Twin) | `TWIN REVERB __ BALANCED` (vulturized Twin) | Warm, round clean: jazz and the acoustic stand-ins | Bright Size Life, Puff the Magic Dragon, Rainbow Connection, Neon | 4 | 64 | BrightTwin |
+| G4 | `CLEANEST - Fender Deluxe Reverb 1965 [Hyper Accuracy]` (blackface Deluxe standing in for the Twin's amp half) | `TWIN REVERB __ BALANCED` (vulturized Twin) | Warm, round clean: jazz and the acoustic stand-ins | Bright Size Life, Puff the Magic Dragon, Rainbow Connection, Neon | 4 | 64 | BrightTwin |
 | G5 | `RYTHM - Fender Deluxe Reverb 1965 [Hyper Accuracy]` | Brown Deluxe 1x12 Medium Mix (fallback: EVM112) | Gritty country-rock / 70s rhythm (also the tweed Bassman stand-in) | Hard Workin' Man, Red Dirt Road, Werewolves of London | 3 | 65 | RythymDeluxe |
 | G6 | `SLAMMIN_DUMBLE_FORD_CLN_BALANCED_S` (Dumble ODS) | `Bogner 2x12 EVM12L - SM57 1 - Cap Edge` | Dumble clean into EVM12Ls: the Mayer tone (`CLN_KLEAN` if it breaks up too early) | Everyday I Have the Blues, Waiting on the World to Change, Your Body Is a Wonderland | 3 | 66 | MayerDumble |
-| G7 | `SLAMMIN_VOX_AC30_TB_V3_TC0_B4_T7_BRIGHT_S` | British Alnico 2x12 Medium Mix (fallback: `TWIN REVERB __ BALANCED`) | Chimey AC30: modern worship | Lion, Praise, When Wind Meets Fire | 3 | 67 | WorshipAC30 |
+| ~~G7~~ | `SLAMMIN_VOX_AC30_TB_V3_TC0_B4_T7_BRIGHT_S` | British Alnico 2x12 Medium Mix (fallback: `TWIN REVERB __ BALANCED`) | Chimey AC30: modern worship | Lion, Praise, When Wind Meets Fire | 3 | ~~67~~ (dropped 2026-10-01) | ~~WorshipAC30~~ |
 | G8 | `JCM800 2203 - P5 B5 M5 T5 MV5 G4 - AZG - 700` | `V7X_dc` (1960AV) | Classic Marshall crunch (also the Mesa Mark stand-in for Found) | December, Ironic, Found | 3 | 68 | ClassicMarshall |
 | G9 | `Marshall JTM45 I Crunch BAL DI` | British Straight 4x12 Medium Mix (fallback: `BlendOfAll_dc`, 1960AV) | 60s/70s British crunch (Plexi slot; also the Laney stand-in) | Only in America, Spider-Man '94, Sweet Leaf | 3 | 69 | BritishCrunch |
-| G10 | `SLAMMIN_VOX_AC30_N_V3_TC0_S` | British Alnico 2x12 Medium Mix (fallback: `TWIN REVERB __ BALANCED`) | Glassy AC30 Normal-channel clean | You Don't Know How It Feels, Creep | 2 | 70 | GlassyAC30 |
+| ~~G10~~ | `SLAMMIN_VOX_AC30_N_V3_TC0_S` | British Alnico 2x12 Medium Mix (fallback: `TWIN REVERB __ BALANCED`) | Glassy AC30 Normal-channel clean | You Don't Know How It Feels, Creep | 2 | ~~70~~ (dropped 2026-10-01) | ~~GlassyAC30~~ |
 | G11 | `JCM800 2203 - P5 B5 M5 T5 MV6 G7 - AZG - 700` | `BlendOfAll_dc` (1960AV) | Hot Marshall rhythm | Man in the Box, Sister Christian | 2 | 71 | HotMarshall |
 | G12 | `1. MESA DUAL RECTIFIER 2025 \| CRUNCH \| RHYTHM #1` | `V30 UR 4FB 4x12 SM57 0.50in 0.0in 7603` (Mesa V30) | Rectifier crunch/rhythm | Higher, Cassie | 2 | 72 | RectifierCrunch |
 | G13 | `SLAMMIN_DUMBLE_FORD_OD_SMOOTH_S` (Dumble ODS) | `V30 UR 4FB 4x12 SM57 1.00in 0.0in 7603` (Mesa V30) | Smooth, singing prog lead (Gilmour-style; Mesa Mark stand-in) | In Two Minds, We Got Used to Us | 2 | 73 | ProgDumble |
-| G14 | `SLAMMIN_VOX_AC30_TB_V7_TC0_B7_T8_PUSH_S` | British Alnico 2x12 Medium Mix (fallback: `TWIN REVERB __ MIDS`) | Pushed AC30 crunch: Petty/Campbell | Mary Jane's Last Dance | 1 | 74 | PushedAC30 |
+| ~~G14~~ | `SLAMMIN_VOX_AC30_TB_V7_TC0_B7_T8_PUSH_S` | British Alnico 2x12 Medium Mix (fallback: `TWIN REVERB __ MIDS`) | Pushed AC30 crunch: Petty/Campbell | Mary Jane's Last Dance | 1 | ~~74~~ (dropped 2026-10-01) | ~~PushedAC30~~ |
 | G15 | `JCM800 2203 - P5 B5 M5 T5 MV6 G10 - AZG - 700` | `V30 UR 4FB 4x12 SM57 0.50in 0.0in 7603` (Mesa V30) | Full-gain 80s lead (Soldano stand-in) | Danger Zone | 1 | 75 | 80sLeadJCM800 |
-| G16 | `4. MESA DUAL RECTIFIER 2025 \| RHYTHM #4` | `V30 LR 4FB 4x12 SM57 0.75in 0.0in 7603` (Mesa V30) | Heavy modern Recto | Click Click Boom | 1 | | 76 | ModernRect |
-| G17 | `SLAMMIN_VOX_AC30_N_V10_TC0_DALLASTREBLE_6_S` | British Alnico 2x12 Medium Mix (fallback: `TWIN REVERB __ MIDS`) | Range: treble-boosted AC30 lead (Brian May / Rory Gallagher) | future patches | 0 | | 77 | TrebleBoostAC30 |
-| G18 | `Tim R Fender Twin Reverb Ch1 BR G08` (Twin) | `TWIN REVERB __ MIDS` (vulturized Twin) | Range: cranked Twin crunch / blues lead | future patches | 0 | | 78 | CrankedTwin |
-| G19 | `HOT - Fender Deluxe Reverb 1965 [Hyper Accuracy]` | Brown Deluxe 1x12 Medium Mix (fallback: EVM112) | Range: cranked small-Fender grind (Neil Young / roots rock) | future patches | 0 | | 79 | CrankedDeluxe |
-| G20 | `JCM800 2203 - P5 B5 M5 T5 MV5 G1 - AZG - 700` | `BlendOfAll_dc` (1960AV) | Range: Marshall edge-of-breakup clean for classic rock rhythm | future patches | 0 | | 80 | JCM800Clean |
+| G16 | `4. MESA DUAL RECTIFIER 2025 \| RHYTHM #4` | `V30 LR 4FB 4x12 SM57 0.75in 0.0in 7603` (Mesa V30) | Heavy modern Recto | Click Click Boom | 1 | 76 | ModernRect |
+| ~~G17~~ | `SLAMMIN_VOX_AC30_N_V10_TC0_DALLASTREBLE_6_S` | British Alnico 2x12 Medium Mix (fallback: `TWIN REVERB __ MIDS`) | Range: treble-boosted AC30 lead (Brian May / Rory Gallagher) | future patches | 0 | ~~77~~ (dropped 2026-10-01) | ~~TrebleBoostAC30~~ |
+| ~~G18~~ | ~~`Tim R Fender Twin Reverb Ch1 BR G08` (Twin)~~ | ~~`TWIN REVERB __ MIDS`~~ | **Dropped 2026-10-01: sounded bad on the GP-5.** Don't use | none | 0 | ~~78~~ (free) | ~~CrankedTwin~~ |
+| G19 | `HOT - Fender Deluxe Reverb 1965 [Hyper Accuracy]` | Brown Deluxe 1x12 Medium Mix (fallback: EVM112) | Range: cranked small-Fender grind (Neil Young / roots rock) | future patches | 0 | 79 | CrankedDeluxe |
+| G20 | `JCM800 2203 - P5 B5 M5 T5 MV5 G3 - AZG - 700` (rebuilt from `G1` 2026-10-01) | `BlendOfAll_dc` (1960AV) | Range: Marshall light crunch for classic rock rhythm | future patches | 0 | 80 | JCM800Clean |
 
 Total 44 across G1-G16. G1-G6 (the Fender cleans and edge-of-breakup) cover 24 of the 44.

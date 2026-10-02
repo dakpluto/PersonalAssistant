@@ -2,7 +2,7 @@
   "patch_name": "WeGotUsedToUs-Riverside-LeadGtr",
   "patch_vol": 50,
   "bpm": 90,
-  "nam": {"name": "ProgDumble (slot 73): SLAMMIN_DUMBLE_FORD_OD_SMOOTH_S (Dumble ODS #102) + V30 UR 4FB 4x12 SM57 1.00in 0.0in 7603 (Mesa V30)", "slot": 73, "settings": {"Gain": 47, "VOL": 50, "Bass": 50, "Middle": 55, "Treble": 50}},
+  "nam": {"name": "ProgDumble (slot 73): SLAMMIN_DUMBLE_FORD_OD_SMOOTH_S (Dumble ODS #102) + V30 UR 4FB 4x12 SM57 1.00in 0.0in 7603 (Mesa V30)", "slot": 73, "settings": {"Gain": 47, "VOL": 65, "Bass": 50, "Middle": 55, "Treble": 50}},
   "modules": {
     "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 18}},
     "PRE": {"model": "COMP", "always_on": true, "settings": {"Sustain": 35, "VOL": 55}},

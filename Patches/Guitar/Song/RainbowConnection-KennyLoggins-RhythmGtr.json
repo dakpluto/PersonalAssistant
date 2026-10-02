@@ -2,7 +2,7 @@
   "patch_name": "Rainbow-Gtr",
   "patch_vol": 50,
   "bpm": 72,
-  "nam": {"name": "BrightTwin (slot 64): Tim R Fender TwinVerb Vibrato Bright (Twin Reverb) + TWIN REVERB __ BALANCED (vulturized Twin)", "slot": 64, "settings": {"Gain": 50, "VOL": 50, "Bass": 50, "Middle": 45, "Treble": 52}},
+  "nam": {"name": "BrightTwin (slot 64): CLEANEST - Fender Deluxe Reverb 1965 [Hyper Accuracy] + TWIN REVERB __ BALANCED (vulturized Twin)", "slot": 64, "settings": {"Gain": 50, "VOL": 75, "Bass": 50, "Middle": 45, "Treble": 52}},
   "modules": {
     "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 10}},
     "PRE": {"model": "COMP", "always_on": true, "settings": {"Sustain": 42, "VOL": 55}},

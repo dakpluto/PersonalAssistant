@@ -24,12 +24,12 @@ A light push for fills and melody doubling in the later, bigger choruses.
 - Built from the `EDGY - Fender Deluxe Reverb 1965 [Hyper Accuracy]` NAM and the Origin Effects Brown Deluxe 1x12 Medium Mix IR, combined into one snaptone.
 - Real 1965 Deluxe Reverb at the "edgy" setting, just starting to break up, into the Brown Deluxe 1x12.
 - Early-70s electric with a little grit. Edgy Deluxe.
-- Gain: 48, VOL: 50, Bass: 48, Middle: 45, Treble: 56
+- Gain: 48, VOL: 70, Bass: 48, Middle: 45, Treble: 56
 - Gain 48: a little under default. This part wants less push than the other EdgyTwang patches.
 - Bass 48: low end pulled back a little.
 - Middle 45: midrange pulled back a little.
 - Treble 56: more top end.
-- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- VOL 70: the level Michael set for this snaptone in the 2026-10-01 VOL audit. Trim here if the patch jumps in level against your others.
 - Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 63 directly.
 
 **EQ — Guitar EQ 2**, always on.

@@ -2,7 +2,7 @@
   "patch_name": "Sister Christian - Night Ranger",
   "patch_vol": 55,
   "bpm": 101,
-  "nam": {"name": "HotMarshall (slot 71): JCM800 2203 - P5 B5 M5 T5 MV6 G7 - AZG - 700 + BlendOfAll_dc (Marshall 1960AV)", "slot": 71, "settings": {"Gain": 43, "VOL": 50, "Bass": 55, "Middle": 60, "Treble": 62}},
+  "nam": {"name": "HotMarshall (slot 71): JCM800 2203 - P5 B5 M5 T5 MV6 G7 - AZG - 700 + BlendOfAll_dc (Marshall 1960AV)", "slot": 71, "settings": {"Gain": 43, "VOL": 40, "Bass": 55, "Middle": 60, "Treble": 62}},
   "modules": {
     "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 30}},
     "PRE": {"model": "COMP4", "always_on": true, "settings": {"Sustain": 45, "Attack": 55, "VOL": 100, "Clip": 40}},

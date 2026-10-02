@@ -23,13 +23,13 @@ ESR = training error, lower = closer to the real amp (under ~0.01 is excellent).
 
 | File | Channel | Bright | Volume | NAM gain | Loudness | Tone | ESR A2-Full | ESR A2-Lite | Slot |
 |---|---|---|---|---|---|---|---|---|---|
-| `Tim R Fender TwinVerb Norm Bright` | Normal | On | not stated | 0.01 | -21.0 | Classic glassy Twin clean | 0.0003 | 0.0014 | |
-| `Tim R Fender TwinVerb Vibrato Bright` | Vibrato | On | not stated | 0.01 | -21.4 | Twin clean, Vibrato channel voicing (captured without the tremolo running, presumably) | 0.0004 | 0.0008 | |
+| `Tim R Fender TwinVerb Norm Bright` | Normal | On | not stated | 0.01 | -21.0 | Classic glassy Twin clean. **Dropped 2026-09-26: too quiet on the GP-5**, don't use | 0.0003 | 0.0014 | |
+| `Tim R Fender TwinVerb Vibrato Bright` | Vibrato | On | not stated | 0.01 | -21.4 | Twin clean, Vibrato channel voicing (captured without the tremolo running, presumably). **Dropped 2026-09-26: too quiet on the GP-5**, don't use | 0.0004 | 0.0008 | |
 | `Tim R Fender Twin Reverb Ch1 BR G04` | Ch 1 (likely Normal) | On | 4 | 0.61 | -19.0 | Already real breakup, about as driven as G05-G07 | 0.0038 | 0.0193 | |
 | `Tim R Fender Twin Reverb Ch1 BR G05` | Ch 1 (likely Normal) | On | 5 | 0.59 | -19.2 | Breakup, slightly the lightest of the five | 0.0045 | 0.0153 | |
 | `Tim R Fender Twin Reverb Ch1 BR G06` | Ch 1 (likely Normal) | On | 6 | 0.65 | -19.4 | Breakup | 0.0058 | 0.0168 | |
 | `Tim R Fender Twin Reverb Ch1 BR G07` | Ch 1 (likely Normal) | On | 7 | 0.66 | -19.3 | Breakup / light crunch | 0.0054 | 0.0219 | |
-| `Tim R Fender Twin Reverb Ch1 BR G08` | Ch 1 (likely Normal) | On | 8 | 0.74 | -19.8 | Most driven file in the pack; Twin crunch | 0.0061 | 0.0228 | |
+| `Tim R Fender Twin Reverb Ch1 BR G08` | Ch 1 (likely Normal) | On | 8 | 0.74 | -19.8 | Most driven file in the pack; Twin crunch. **Tried as snaptone G18 (with `TWIN REVERB __ MIDS`), dropped 2026-10-01: sounded bad on the GP-5** | 0.0061 | 0.0228 | |
 
 NAM gain (0-1, how driven) and loudness (dB) come from each file's own metadata via `t3k_scrape.py --meta`. The Tone column is my read from those numbers, not the creator's. The gain barely moves from volume 4 to 7 and doesn't rise steadily (G04 reads above G05), which fits a Twin that breaks up early once it's pushed. It could also mean the gain was driven by something besides the volume knob, which is what the unanswered commenter asked about.
 

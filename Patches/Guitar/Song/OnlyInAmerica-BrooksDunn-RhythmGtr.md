@@ -22,12 +22,12 @@ Pushes the JTM45 into lead saturation and adds level for the solo.
 - Built from the `Marshall JTM45 I Crunch BAL DI` NAM and the Origin Effects British Straight 4x12 Medium Mix IR, combined into one snaptone.
 - Real Marshall JTM45 crunch, into the Origin Effects British Straight 4x12.
 - Arena-country crunch. JTM45, the same amp family as the old UK 45 model, but a real capture.
-- Gain: 46, VOL: 50, Bass: 50, Middle: 58, Treble: 56
+- Gain: 46, VOL: 67, Bass: 50, Middle: 58, Treble: 56
 - Gain 46: a little under default. This part wants less push than the other BritishCrunch patches.
 - Bass 50: flat.
 - Middle 58: more midrange.
 - Treble 56: more top end.
-- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- VOL 67: the level Michael set for this snaptone in the 2026-10-01 VOL audit. Trim here if the patch jumps in level against your others.
 - Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 69 directly.
 
 **EQ — Guitar EQ 2**, always on.

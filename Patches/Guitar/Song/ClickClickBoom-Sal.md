@@ -36,12 +36,12 @@ This is the lead kick. Boss SD-1-style asymmetrical clipping pushed into the Rec
 - Built from the `4. MESA DUAL RECTIFIER 2025 | RHYTHM #4` NAM and the V30 LR 4FB 4x12 SM57 0.75in 0.0in 7603 (Mesa V30) IR, combined into one snaptone.
 - Real 2025 Mesa Dual Rectifier on a heavy rhythm setting, into a Mesa 4x12 V30 IR.
 - Heavy, tight, modern nu-metal. Rectifier rhythm into V30s.
-- Gain: 50, VOL: 50, Bass: 55, Middle: 68, Treble: 62
+- Gain: 50, VOL: 40, Bass: 55, Middle: 68, Treble: 62
 - Gain 50: the capture as built.
 - Bass 55: a touch more low end.
 - Middle 68: more midrange.
 - Treble 62: more top end.
-- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- VOL 40: the level Michael set for this snaptone in the 2026-10-01 VOL audit. Trim here if the patch jumps in level against your others.
 - Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 76 directly.
 
 **EQ — Guitar EQ 2** (always on)

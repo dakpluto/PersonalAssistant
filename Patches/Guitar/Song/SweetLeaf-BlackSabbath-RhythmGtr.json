@@ -2,7 +2,7 @@
   "patch_name": "SweetLeaf-Gtr",
   "patch_vol": 50,
   "bpm": 94,
-  "nam": {"name": "BritishCrunch (slot 69): Marshall JTM45 I Crunch BAL DI + Origin Effects British Straight 4x12 Medium Mix", "slot": 69, "settings": {"Gain": 55, "VOL": 50, "Bass": 55, "Middle": 62, "Treble": 50}},
+  "nam": {"name": "BritishCrunch (slot 69): Marshall JTM45 I Crunch BAL DI + Origin Effects British Straight 4x12 Medium Mix", "slot": 69, "settings": {"Gain": 55, "VOL": 67, "Bass": 55, "Middle": 62, "Treble": 50}},
   "modules": {
     "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 35}},
     "PRE": {"model": "Boost", "always_on": true, "settings": {"Gain": 60, "+3dB": true, "Bright": true}},
