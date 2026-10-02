@@ -1,8 +1,8 @@
 {
   "patch_name": "Everyday I Have the Blues - Mayer",
-  "patch_vol": 55,
+  "patch_vol": 65,
   "bpm": 104,
-  "nam": {"name": "MayerDumble (slot 66): SLAMMIN_DUMBLE_FORD_CLN_BALANCED_S (Dumble ODS #102) + Bogner 2x12 EVM12L - SM57 1 - Cap Edge", "slot": 66, "settings": {"Gain": 55, "VOL": 70, "Bass": 55, "Middle": 65, "Treble": 60}},
+  "nam": {"name": "MayerDumble (slot 66): SLAMMIN_DUMBLE_FORD_CLN_BALANCED_S (Dumble ODS #102) + Bogner 2x12 EVM12L - SM57 1 - Cap Edge", "slot": 66, "settings": {"Gain": 55, "VOL": 75, "Bass": 55, "Middle": 65, "Treble": 60}},
   "modules": {
     "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 28}},
     "PRE": {"model": "COMP4", "always_on": true, "settings": {"Sustain": 30, "Attack": 60, "VOL": 55, "Clip": 50}},
