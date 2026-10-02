@@ -7,6 +7,8 @@ Built from the song's overall sound. I haven't verified the exact guitars and am
 Instrument: Stratocaster (HSS). Neck pickup for the arpeggios. Bridge humbucker for the climax lead.
 GP-5 only, Stratocaster (HSS), no pedalboard.
 
+**Patch VOL: 70.** Raised from 50 on 2026-10-01 after checking it on the pedal: this quiet ballad patch sat too low against the others.
+
 ## Module chain
 
 **NR — Gate**, always on.
