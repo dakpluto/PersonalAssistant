@@ -19,7 +19,7 @@ Gain: 30, Tone: 52, VOL: 68.
 A mild push for the lead lines and the solo. It's warm, not hot.
 
 **AMP — Foxy 30N** (always on)
-- Gain: 42, Tone Cut: 50, VOL: 62, Bright: Off
+- Gain: 42, Tone Cut: 50, VOL: 50, Bright: Off
 - The GP-5's model of the Vox AC30HW Normal channel. Petty's jangly clean.
 - Gain 42: warm clean with a little bloom on hard strums.
 - Tone Cut 50: neutral.

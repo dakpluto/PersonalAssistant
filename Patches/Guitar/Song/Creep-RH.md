@@ -10,7 +10,7 @@ Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB
 - **PRE — Boost.** Gain 55, +3dB on, Bright on. Off for the clean verse. On for the loud hits — the treble kick that pushes into the DST and the AC30 for that sudden slam. On CTL.
 - **DST — SM Dist (Boss DS-1).** Gain 65, Tone 55, VOL 80. Off for the verse — stays clean. On for the loud hits — hard clipping gives that blown-out "chunk" character. On CTL.
 **AMP — Foxy 30N** (always on)
-- Gain: 45, Tone Cut: 40, VOL: 78, Bright: On
+- Gain: 45, Tone Cut: 40, VOL: 50, Bright: On
 - The GP-5's model of the Vox AC30HW Normal channel. The verse tone is a glassy AC30 clean, and the CTL distortion slams it for the chorus.
 - Gain 45: clean, but with enough push to bloom when the Boost and DS-1 hit it.
 - Tone Cut 40, Bright on: glassy top end for the arpeggios.
@@ -18,7 +18,7 @@ Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB
 - Same in both CTL states.
 
 **CAB — Foxy 2x12** (always on)
-- VOL: 88
+- VOL: 50
 - The GP-5's own Vox AC30 2x12 cab, matched to the amp model.
 - Same in both CTL states.
 
