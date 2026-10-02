@@ -24,12 +24,12 @@ Not used. No boost stage needed — this patch is already at full size and drive
 - Built from the `SVT SANS BRIGHT DRIVE (SVT-CL)` NAM and the Hartke410 IR, combined into one snaptone.
 - Real Ampeg SVT-CL with the bright drive setting, into the aluminum-cone Hartke410 IR.
 - Squire's driven Rickenbacker tone. Bright SVT drive plus aluminum cones.
-- Gain: 60, VOL: 50, Bass: 55, Middle: 70, Treble: 60
+- Gain: 60, VOL: 60, Bass: 55, Middle: 70, Treble: 60
 - Gain 60: noticeably over default. This part wants more push than the other BrightSVT patches.
 - Bass 55: a touch more low end.
 - Middle 70: more midrange.
 - Treble 60: more top end.
-- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- VOL 60: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
 - Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 55 directly.
 
 **EQ — Bass EQ 1**

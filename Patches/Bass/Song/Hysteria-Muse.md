@@ -28,12 +28,12 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 - Built from the `SVT SANS HAIRY DRIVE (SVT-CL)` NAM and the Sunn215 IR, combined into one snaptone.
 - Real Ampeg SVT-CL with the hairy drive setting, into the Sunn215 2x15 IR.
 - Wolstenholme's fuzz wall. Hairy SVT drive is the real-bass-amp base under the fuzz and OD.
-- Gain: 58, VOL: 50, Bass: 58, Middle: 58, Treble: 55
+- Gain: 58, VOL: 55, Bass: 58, Middle: 58, Treble: 55
 - Gain 58: noticeably over default. This part wants more push than the other HairySVT patches.
 - Bass 58: more low end.
 - Middle 58: more midrange.
 - Treble 55: a touch more top end.
-- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- VOL 55: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
 - Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 58 directly.
 
 **EQ — Bass EQ 1**

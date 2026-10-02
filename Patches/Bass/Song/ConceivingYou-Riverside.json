@@ -2,7 +2,7 @@
   "patch_name": "ConceivingYou-Riverside",
   "patch_vol": 50,
   "bpm": 95,
-  "nam": {"name": "ProgSVT (slot 56): SVT CLEAN PUSHED (SVT-CL) + Mesa215", "slot": 56, "settings": {"Gain": 50, "VOL": 50, "Bass": 60, "Middle": 55, "Treble": 40}},
+  "nam": {"name": "ProgSVT (slot 56): SVT CLEAN PUSHED (SVT-CL) + Mesa215", "slot": 56, "settings": {"Gain": 50, "VOL": 60, "Bass": 60, "Middle": 55, "Treble": 40}},
   "modules": {
     "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 25}},
     "PRE": {"model": "COMP", "always_on": true, "settings": {"Sustain": 55, "VOL": 58}},

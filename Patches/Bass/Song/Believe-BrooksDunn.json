@@ -2,7 +2,7 @@
   "patch_name": "Believe",
   "patch_vol": 52,
   "bpm": 66,
-  "nam": {"name": "CleanB15 (slot 51): Ampeg B18 - Head DI - Bass Chan - Vol 2.5 (B-18N) + Apg115", "slot": 51, "settings": {"Gain": 49, "VOL": 50, "Bass": 60, "Middle": 48, "Treble": 42}},
+  "nam": {"name": "CleanB15 (slot 51): Ampeg B18 - Head DI - Bass Chan - Vol 2.5 (B-18N) + Apg115", "slot": 51, "settings": {"Gain": 49, "VOL": 80, "Bass": 60, "Middle": 48, "Treble": 42}},
   "modules": {
     "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 10}},
     "PRE": {"model": "COMP4", "always_on": true, "settings": {"Sustain": 42, "Attack": 40, "Clip": 40, "VOL": 58}},

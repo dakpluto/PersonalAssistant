@@ -2,7 +2,7 @@
   "patch_name": "Yes-Squire",
   "patch_vol": 55,
   "bpm": 120,
-  "nam": {"name": "BrightSVT (slot 55): SVT SANS BRIGHT DRIVE (SVT-CL) + Hartke410", "slot": 55, "settings": {"Gain": 50, "VOL": 50, "Bass": 55, "Middle": 50, "Treble": 70}},
+  "nam": {"name": "BrightSVT (slot 55): SVT SANS BRIGHT DRIVE (SVT-CL) + Hartke410", "slot": 55, "settings": {"Gain": 50, "VOL": 60, "Bass": 55, "Middle": 50, "Treble": 70}},
   "modules": {
     "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 25}},
     "PRE": {"model": "B-Boost", "ctl": true, "ctl_off_state": "on", "ctl_on_state": "off", "settings": {"Gain": 60, "VOL": 55, "Bass": 55, "Treble": 65}},

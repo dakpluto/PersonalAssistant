@@ -20,12 +20,12 @@ On for the chorus — Bass OD stacked on top adds grit and push without burying 
 - Built from the `SVT SANS BRIGHT DRIVE (SVT-CL)` NAM and the Hartke410 IR, combined into one snaptone.
 - Real Ampeg SVT-CL with the bright drive setting, into the aluminum-cone Hartke410 IR.
 - Pop-punk bass: bright, driven, picked. The bright SVT drive plus Hartke clank.
-- Gain: 50, VOL: 50, Bass: 62, Middle: 55, Treble: 55
+- Gain: 50, VOL: 60, Bass: 62, Middle: 55, Treble: 55
 - Gain 50: the capture as built.
 - Bass 62: Full low end to anchor the palm-muted verse riff.
 - Middle 55: Present, not scooped, so the bass cuts through two guitars.
 - Treble 55: Brighter than a grunge dial-in. Pick attack needs to read clearly at this tempo.
-- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- VOL 60: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
 - Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 55 directly.
 
 **EQ — Bass EQ 2**, always on.

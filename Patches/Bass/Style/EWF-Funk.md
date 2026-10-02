@@ -26,12 +26,12 @@ Attack at 45 lets the initial transient through first, so notes still pop.
 - Built from the `Avalon - 38 dB - Chan 1 (Avalon AD2022)` NAM and no cab IR (straight DI), combined into one snaptone.
 - Avalon AD2022 Class A preamp at 38 dB. A studio DI, not an amp: no speaker coloration.
 - Verdine White's tone is snappy and hi-fi. A DI keeps it that way, with no cab coloration.
-- Gain: 48, VOL: 50, Bass: 55, Middle: 55, Treble: 60
+- Gain: 48, VOL: 75, Bass: 55, Middle: 55, Treble: 60
 - Gain 48: a little under default. This part wants less push than the other AvalonAD2022 patches.
 - Bass 55: a touch more low end.
 - Middle 55: a touch more midrange.
 - Treble 60: more top end.
-- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- VOL 75: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
 - Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 52 directly.
 
 **EQ — Bass EQ 2**, on CTL.

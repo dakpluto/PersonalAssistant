@@ -25,12 +25,12 @@ Always on, and a core part of the tone. Gain 55 at Blend 50 is a fuzzy growl tha
 - Built from the `SVT SANS HAIRY DRIVE (SVT-CL)` NAM and the Sunn215 IR, combined into one snaptone.
 - Real Ampeg SVT-CL with the hairy drive setting, into the Sunn215 2x15 IR.
 - Geezer's doom tone: fuzzy, heavy, huge. Hairy SVT into the Sunn 2x15.
-- Gain: 50, VOL: 50, Bass: 60, Middle: 58, Treble: 45
+- Gain: 50, VOL: 55, Bass: 60, Middle: 58, Treble: 45
 - Gain 50: the capture as built.
 - Bass 60: more low end.
 - Middle 58: more midrange.
 - Treble 45: top end pulled back a little.
-- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- VOL 55: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
 - Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 58 directly.
 
 **EQ — Bass EQ 2**, always on.

@@ -26,12 +26,12 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 - Built from the `SVT CLEAN (SVT-CL)` NAM and the Apg810 IR, combined into one snaptone.
 - Real Ampeg SVT-CL preamp on its clean setting, into the Apg810 8x10 IR.
 - 90s radio rock. A clean SVT is the default rig for that sound.
-- Gain: 50, VOL: 50, Bass: 56, Middle: 54, Treble: 54
+- Gain: 50, VOL: 65, Bass: 56, Middle: 54, Treble: 54
 - Gain 50: the capture as built.
 - Bass 56: more low end.
 - Middle 54: a touch more midrange.
 - Treble 54: a touch more top end.
-- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- VOL 65: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
 - Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 53 directly.
 
 **EQ — Bass EQ 2**

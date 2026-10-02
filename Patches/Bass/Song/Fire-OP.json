@@ -2,7 +2,7 @@
   "patch_name": "Fire-OP",
   "patch_vol": 52,
   "bpm": 116,
-  "nam": {"name": "CleanSVT (slot 53): SVT CLEAN (SVT-CL) + Apg810", "slot": 53, "settings": {"Gain": 55, "VOL": 50, "Bass": 60, "Middle": 62, "Treble": 55}},
+  "nam": {"name": "CleanSVT (slot 53): SVT CLEAN (SVT-CL) + Apg810", "slot": 53, "settings": {"Gain": 55, "VOL": 65, "Bass": 60, "Middle": 62, "Treble": 55}},
   "modules": {
     "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 20}},
     "PRE": {"model": "COMP", "always_on": true, "settings": {"Sustain": 55, "VOL": 65}},

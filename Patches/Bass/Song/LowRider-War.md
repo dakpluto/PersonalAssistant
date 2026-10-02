@@ -18,17 +18,18 @@ Gain: 22, Blend: 45, VOL: 62, Bass: 50, Treble: 45.
 Off for the main groove — clean B-15 tone through the whole verse riff.
 On for the instrumental hook/outro breakdown section, where the band opens up — a light push adds a bit more weight and presence without turning the tone aggressive.
 
-**AMP/CAB — NAM SnapTone, slot 60: SoulB18** (always on)
-- Built from the `Ampeg B18 - Head DI - Bass Chan - Vol 7.5 (B-18N)` NAM and the Apg115 IR, combined into one snaptone.
-- Real Ampeg B-18N at volume 7.5, where the tubes start to growl, into the Apg115 B-15 cab IR.
-- Warm, girthy 70s soul-funk. A cranked B-15 is rounder and boxier than an 8x10, which is what the riff wants.
-- Gain: 48, VOL: 50, Bass: 65, Middle: 45, Treble: 35
-- Gain 48: a little under default. This part wants less push than the other SoulB18 patches.
+**AMP/CAB — NAM SnapTone, slot 54: FullB15** (always on)
+- Built from the `Ampeg B18 - Head DI - Bass Chan - Vol 5 (B-18N)` NAM and the Apg115410 IR, combined into one snaptone.
+- Real Ampeg B-18N at volume 5, warmer and fuller than the clean capture, into the Apg115410 (1x15 + 4x10) IR.
+- Warm, girthy 70s soul-funk. A B-15 is rounder and boxier than an 8x10, which is what the riff wants.
+- Moved off the SoulB18 snaptone (slot 60) 2026-10-02. Michael dropped that combo in the bass VOL audit.
+- Gain: 48, VOL: 80, Bass: 65, Middle: 45, Treble: 35
+- Gain 48: a little under default. This part wants less push than the other FullB15 patches.
 - Bass 65: Deep, full low end, the foundation of the riff.
 - Middle 45: Pulled back from a typical funk-snap 800Hz setting. Low Rider isn't a percussive pop tone, it's smooth and rounded.
 - Treble 35: Dark on purpose, close to a muted/flatwound feel even on the roundwound P/J.
-- VOL 50: the default. Trim here if the patch jumps in level against your others.
-- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 60 directly.
+- VOL 80: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 54 directly.
 
 **EQ — Bass EQ 2**, always on.
 50Hz: +4, 120Hz: +3, 400Hz: +2, 800Hz: -3, 4.5kHz: -4, VOL: 50.

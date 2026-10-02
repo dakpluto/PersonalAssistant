@@ -2,7 +2,7 @@
   "patch_name": "Ironic",
   "patch_vol": 52,
   "bpm": 116,
-  "nam": {"name": "CleanSVT (slot 53): SVT CLEAN (SVT-CL) + Apg810", "slot": 53, "settings": {"Gain": 48, "VOL": 50, "Bass": 56, "Middle": 55, "Treble": 48}},
+  "nam": {"name": "CleanSVT (slot 53): SVT CLEAN (SVT-CL) + Apg810", "slot": 53, "settings": {"Gain": 48, "VOL": 65, "Bass": 56, "Middle": 55, "Treble": 48}},
   "modules": {
     "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 14}},
     "PRE": {"model": "COMP", "always_on": true, "settings": {"Sustain": 40, "VOL": 58}},

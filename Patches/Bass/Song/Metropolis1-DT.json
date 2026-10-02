@@ -2,7 +2,7 @@
   "patch_name": "Metropolis Pt. 1 - Dream Theater",
   "patch_vol": 55,
   "bpm": 130,
-  "nam": {"name": "ProgSVT (slot 56): SVT CLEAN PUSHED (SVT-CL) + Mesa215", "slot": 56, "settings": {"Gain": 54, "VOL": 50, "Bass": 60, "Middle": 55, "Treble": 60}},
+  "nam": {"name": "ProgSVT (slot 56): SVT CLEAN PUSHED (SVT-CL) + Mesa215", "slot": 56, "settings": {"Gain": 54, "VOL": 60, "Bass": 60, "Middle": 55, "Treble": 60}},
   "modules": {
     "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 30}},
     "PRE": {"model": "Micro Boost", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Gain": 45}},

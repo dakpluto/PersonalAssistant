@@ -2,7 +2,7 @@
   "patch_name": "1979-SP",
   "patch_vol": 53,
   "bpm": 126,
-  "nam": {"name": "CleanSVT (slot 53): SVT CLEAN (SVT-CL) + Apg810", "slot": 53, "settings": {"Gain": 52, "VOL": 50, "Bass": 56, "Middle": 50, "Treble": 58}},
+  "nam": {"name": "CleanSVT (slot 53): SVT CLEAN (SVT-CL) + Apg810", "slot": 53, "settings": {"Gain": 52, "VOL": 65, "Bass": 56, "Middle": 50, "Treble": 58}},
   "modules": {
     "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 12}},
     "PRE": {"model": "Micro Boost", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Gain": 45}},

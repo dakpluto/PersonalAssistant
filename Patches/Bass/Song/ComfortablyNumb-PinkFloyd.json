@@ -2,7 +2,7 @@
   "patch_name": "CNumb-PF",
   "patch_vol": 52,
   "bpm": 64,
-  "nam": {"name": "CleanSVT (slot 53): SVT CLEAN (SVT-CL) + Apg810", "slot": 53, "settings": {"Gain": 46, "VOL": 50, "Bass": 62, "Middle": 48, "Treble": 40}},
+  "nam": {"name": "CleanSVT (slot 53): SVT CLEAN (SVT-CL) + Apg810", "slot": 53, "settings": {"Gain": 46, "VOL": 65, "Bass": 62, "Middle": 48, "Treble": 40}},
   "modules": {
     "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 12}},
     "PRE": {"model": "COMP", "always_on": true, "settings": {"Sustain": 40, "VOL": 60}},

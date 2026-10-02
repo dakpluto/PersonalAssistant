@@ -2,7 +2,7 @@
   "patch_name": "StormCorrosion-StormCorrosion",
   "patch_vol": 50,
   "bpm": 65,
-  "nam": {"name": "FullB15 (slot 54): Ampeg B18 - Head DI - Bass Chan - Vol 5 (B-18N) + Apg115410", "slot": 54, "settings": {"Gain": 44, "VOL": 50, "Bass": 62, "Middle": 45, "Treble": 30}},
+  "nam": {"name": "FullB15 (slot 54): Ampeg B18 - Head DI - Bass Chan - Vol 5 (B-18N) + Apg115410", "slot": 54, "settings": {"Gain": 44, "VOL": 80, "Bass": 62, "Middle": 45, "Treble": 30}},
   "modules": {
     "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 8}},
     "PRE": {"model": "COMP", "always_on": true, "settings": {"Sustain": 35, "VOL": 58}},

@@ -2,7 +2,7 @@
   "patch_name": "PapaRollin",
   "patch_vol": 55,
   "bpm": 120,
-  "nam": {"name": "CleanB15 (slot 51): Ampeg B18 - Head DI - Bass Chan - Vol 2.5 (B-18N) + Apg115", "slot": 51, "settings": {"Gain": 53, "VOL": 50, "Bass": 62, "Middle": 46, "Treble": 34}},
+  "nam": {"name": "CleanB15 (slot 51): Ampeg B18 - Head DI - Bass Chan - Vol 2.5 (B-18N) + Apg115", "slot": 51, "settings": {"Gain": 53, "VOL": 80, "Bass": 62, "Middle": 46, "Treble": 34}},
   "modules": {
     "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 15}},
     "PRE": {"model": "Micro Boost", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Gain": 32}},

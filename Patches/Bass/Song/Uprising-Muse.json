@@ -2,7 +2,7 @@
   "patch_name": "Uprising-Muse",
   "patch_vol": 55,
   "bpm": 128,
-  "nam": {"name": "HairySVT (slot 58): SVT SANS HAIRY DRIVE (SVT-CL) + Sunn215", "slot": 58, "settings": {"Gain": 54, "VOL": 50, "Bass": 55, "Middle": 55, "Treble": 55}},
+  "nam": {"name": "HairySVT (slot 58): SVT SANS HAIRY DRIVE (SVT-CL) + Sunn215", "slot": 58, "settings": {"Gain": 54, "VOL": 55, "Bass": 55, "Middle": 55, "Treble": 55}},
   "modules": {
     "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 25}},
     "PRE": {"model": "Toucher", "ctl": true, "ctl_off_state": "on", "ctl_on_state": "off", "settings": {"Sense": 60, "Range": 55, "Q": 50, "Mix": 70, "Mode": 1}},

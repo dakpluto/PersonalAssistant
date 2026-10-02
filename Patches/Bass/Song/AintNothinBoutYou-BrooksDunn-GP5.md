@@ -22,12 +22,12 @@ Replaces the board's Donner comp. Even, punchy notes.
 - Built from the `Ampeg B18 - Head DI - Bass Chan - Vol 2.5 (B-18N)` NAM and the Apg115 IR, combined into one snaptone.
 - Real Ampeg B-18N fliptop (the B-15 preamp circuit), captured clean at volume 2.5, into the Apg115 B-15 cab IR.
 - 90s Nashville session bass is a clean B-15 or a DI. This is the B-15 half of that.
-- Gain: 50, VOL: 50, Bass: 58, Middle: 50, Treble: 54
+- Gain: 50, VOL: 80, Bass: 58, Middle: 50, Treble: 54
 - Gain 50: the capture as built.
 - Bass 58: more low end.
 - Middle 50: flat.
 - Treble 54: a touch more top end.
-- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- VOL 80: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
 - Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 51 directly.
 
 **EQ — Bass EQ 1**, on CTL.

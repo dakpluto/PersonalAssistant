@@ -22,12 +22,12 @@ Light leveling.
 - Built from the `Ampeg B18 - Head DI - Bass Chan - Vol 5 (B-18N)` NAM and the Apg115410 IR, combined into one snaptone.
 - Real Ampeg B-18N at volume 5, warmer and fuller than the clean capture, into the Apg115410 (1x15 + 4x10) IR.
 - Laid-back, warm mid-90s Petty groove. Fuller B-15.
-- Gain: 48, VOL: 50, Bass: 60, Middle: 50, Treble: 38
+- Gain: 48, VOL: 80, Bass: 60, Middle: 50, Treble: 38
 - Gain 48: a little under default. This part wants less push than the other FullB15 patches.
 - Bass 60: more low end.
 - Middle 50: flat.
 - Treble 38: top end pulled back noticeably.
-- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- VOL 80: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
 - Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 54 directly.
 
 **EQ — Bass EQ 2**, always on.

@@ -28,12 +28,12 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 - Built from the `SVT PUSHED (SVT-CL)` NAM and the Apg810 IR, combined into one snaptone.
 - Real Ampeg SVT-CL pushed into grit, into the Apg810 8x10 IR.
 - Late-80s thrash bass wants grit. A pushed SVT gets there on a real bass amp.
-- Gain: 42, VOL: 50, Bass: 55, Middle: 55, Treble: 50
+- Gain: 42, VOL: 55, Bass: 55, Middle: 55, Treble: 50
 - Gain 42: noticeably under default. This part wants less push than the other GrittySVT patches.
 - Bass 55: a touch more low end.
 - Middle 55: a touch more midrange.
 - Treble 50: flat.
-- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- VOL 55: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
 - Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 57 directly.
 
 **EQ — Bass EQ 1**

@@ -2,7 +2,7 @@
   "patch_name": "SurfinUSA",
   "patch_vol": 55,
   "bpm": 158,
-  "nam": {"name": "CleanB15 (slot 51): Ampeg B18 - Head DI - Bass Chan - Vol 2.5 (B-18N) + Apg115", "slot": 51, "settings": {"Gain": 54, "VOL": 50, "Bass": 55, "Middle": 55, "Treble": 50}},
+  "nam": {"name": "CleanB15 (slot 51): Ampeg B18 - Head DI - Bass Chan - Vol 2.5 (B-18N) + Apg115", "slot": 51, "settings": {"Gain": 54, "VOL": 80, "Bass": 55, "Middle": 55, "Treble": 50}},
   "modules": {
     "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 15}},
     "PRE": {"model": "Micro Boost", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Gain": 30}},

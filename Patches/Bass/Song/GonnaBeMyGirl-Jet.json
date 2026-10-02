@@ -2,7 +2,7 @@
   "patch_name": "My Girl - Jet",
   "patch_vol": 55,
   "bpm": 137,
-  "nam": {"name": "GrittySVT (slot 57): SVT PUSHED (SVT-CL) + Apg810", "slot": 57, "settings": {"Gain": 52, "VOL": 50, "Bass": 55, "Middle": 60, "Treble": 55}},
+  "nam": {"name": "GrittySVT (slot 57): SVT PUSHED (SVT-CL) + Apg810", "slot": 57, "settings": {"Gain": 52, "VOL": 55, "Bass": 55, "Middle": 60, "Treble": 55}},
   "modules": {
     "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 25}},
     "PRE": {"model": "Micro Boost", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Gain": 55}},

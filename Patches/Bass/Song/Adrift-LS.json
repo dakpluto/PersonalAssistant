@@ -2,7 +2,7 @@
   "patch_name": "Adrift - Lunatic Soul",
   "patch_vol": 50,
   "bpm": 100,
-  "nam": {"name": "AvalonAD2022 (slot 52): Avalon - 38 dB - Chan 1 (Avalon AD2022) + none (studio DI)", "slot": 52, "settings": {"Gain": 50, "VOL": 50, "Bass": 60, "Middle": 45, "Treble": 50}},
+  "nam": {"name": "AvalonAD2022 (slot 52): Avalon - 38 dB - Chan 1 (Avalon AD2022) + none (studio DI)", "slot": 52, "settings": {"Gain": 50, "VOL": 75, "Bass": 60, "Middle": 45, "Treble": 50}},
   "modules": {
     "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 20}},
     "PRE": {"model": null},

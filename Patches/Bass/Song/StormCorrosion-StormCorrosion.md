@@ -21,12 +21,12 @@ Light push for the climax. Dark treble, Blend 30.
 - Built from the `Ampeg B18 - Head DI - Bass Chan - Vol 5 (B-18N)` NAM and the Apg115410 IR, combined into one snaptone.
 - Real Ampeg B-18N at volume 5, warmer and fuller than the clean capture, into the Apg115410 (1x15 + 4x10) IR.
 - Dark, atmospheric, vintage-leaning. The fuller B-15 is warm without being clean-DI sterile.
-- Gain: 44, VOL: 50, Bass: 62, Middle: 45, Treble: 30
+- Gain: 44, VOL: 80, Bass: 62, Middle: 45, Treble: 30
 - Gain 44: noticeably under default. This part wants less push than the other FullB15 patches.
 - Bass 62: more low end.
 - Middle 45: midrange pulled back a little.
 - Treble 30: top end pulled back noticeably.
-- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- VOL 80: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
 - Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 54 directly.
 
 **EQ — Bass EQ 2**, always on.

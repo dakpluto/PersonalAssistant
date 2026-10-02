@@ -2,7 +2,7 @@
   "patch_name": "Ecstasy-RR",
   "patch_vol": 55,
   "bpm": 102,
-  "nam": {"name": "SoulB18 (slot 60): Ampeg B18 - Head DI - Bass Chan - Vol 7.5 (B-18N) + Apg115", "slot": 60, "settings": {"Gain": 52, "VOL": 50, "Bass": 56, "Middle": 55, "Treble": 55}},
+  "nam": {"name": "FullB15 (slot 54): Ampeg B18 - Head DI - Bass Chan - Vol 5 (B-18N) + Apg115410", "slot": 54, "settings": {"Gain": 52, "VOL": 80, "Bass": 56, "Middle": 55, "Treble": 55}},
   "modules": {
     "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 20}},
     "PRE": {"model": "Micro Boost", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Gain": 52}},

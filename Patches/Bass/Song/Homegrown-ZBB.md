@@ -20,12 +20,12 @@ No drive anywhere in this patch. Country-rock brightness comes from the cab and 
 - Built from the `Ampeg B18 - Head DI - Bass Chan - Vol 2.5 (B-18N)` NAM and the Apg115 IR, combined into one snaptone.
 - Real Ampeg B-18N fliptop (the B-15 preamp circuit), captured clean at volume 2.5, into the Apg115 B-15 cab IR.
 - Modern country with a vintage lean. A clean B-15 keeps the groove warm instead of hi-fi.
-- Gain: 60, VOL: 50, Bass: 55, Middle: 60, Treble: 65
+- Gain: 60, VOL: 80, Bass: 55, Middle: 60, Treble: 65
 - Gain 60: noticeably over default. This part wants more push than the other CleanB15 patches.
 - Bass 55: Enough low end for the groove without getting boomy.
 - Middle 60: Present midrange so the line doesn't disappear under the guitars.
 - Treble 65: Bright on purpose, matches the Hartke cab's character.
-- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- VOL 80: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
 - Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 51 directly.
 
 **EQ — Bass EQ 1**, always on.

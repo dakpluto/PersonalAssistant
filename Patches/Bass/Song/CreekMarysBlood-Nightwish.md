@@ -21,12 +21,12 @@ Growl for the heavy payoff.
 - Built from the `SVT SANS BRIGHT DRIVE (SVT-CL)` NAM and the Hartke410 IR, combined into one snaptone.
 - Real Ampeg SVT-CL with the bright drive setting, into the aluminum-cone Hartke410 IR.
 - Symphonic metal: bright, driven bass so the notes survive the orchestra.
-- Gain: 46, VOL: 50, Bass: 58, Middle: 55, Treble: 45
+- Gain: 46, VOL: 60, Bass: 58, Middle: 55, Treble: 45
 - Gain 46: a little under default. This part wants less push than the other BrightSVT patches.
 - Bass 58: more low end.
 - Middle 55: a touch more midrange.
 - Treble 45: top end pulled back a little.
-- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- VOL 60: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
 - Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 55 directly.
 
 **EQ — Bass EQ 2**, always on.

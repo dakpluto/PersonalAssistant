@@ -24,12 +24,12 @@ It adds some harmonic density so the bass holds its ground under the chorus and 
 - Built from the `SVT CLEAN (SVT-CL)` NAM and the Apg810 IR, combined into one snaptone.
 - Real Ampeg SVT-CL preamp on its clean setting, into the Apg810 8x10 IR.
 - Waters' tone here is clean and round. No Hiwatt capture on hand, and a clean SVT gets closer than anything else here.
-- Gain: 46, VOL: 50, Bass: 62, Middle: 48, Treble: 40
+- Gain: 46, VOL: 65, Bass: 62, Middle: 48, Treble: 40
 - Gain 46: a little under default. This part wants less push than the other CleanSVT patches.
 - Bass 62: more low end.
 - Middle 48: midrange pulled back a little.
 - Treble 40: top end pulled back noticeably.
-- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- VOL 65: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
 - Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 53 directly.
 
 **EQ — Bass EQ 1**, always on.

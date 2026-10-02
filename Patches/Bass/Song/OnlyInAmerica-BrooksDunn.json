@@ -2,7 +2,7 @@
   "patch_name": "OnlyInAm",
   "patch_vol": 52,
   "bpm": 120,
-  "nam": {"name": "CleanSVT (slot 53): SVT CLEAN (SVT-CL) + Apg810", "slot": 53, "settings": {"Gain": 50, "VOL": 50, "Bass": 55, "Middle": 56, "Treble": 50}},
+  "nam": {"name": "CleanSVT (slot 53): SVT CLEAN (SVT-CL) + Apg810", "slot": 53, "settings": {"Gain": 50, "VOL": 65, "Bass": 55, "Middle": 56, "Treble": 50}},
   "modules": {
     "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 14}},
     "PRE": {"model": "COMP", "always_on": true, "settings": {"Sustain": 42, "VOL": 58}},

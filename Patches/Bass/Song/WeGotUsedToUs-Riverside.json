@@ -2,7 +2,7 @@
   "patch_name": "WeGotUsedToUs-Riverside",
   "patch_vol": 50,
   "bpm": 90,
-  "nam": {"name": "FullB15 (slot 54): Ampeg B18 - Head DI - Bass Chan - Vol 5 (B-18N) + Apg115410", "slot": 54, "settings": {"Gain": 49, "VOL": 50, "Bass": 60, "Middle": 48, "Treble": 38}},
+  "nam": {"name": "FullB15 (slot 54): Ampeg B18 - Head DI - Bass Chan - Vol 5 (B-18N) + Apg115410", "slot": 54, "settings": {"Gain": 49, "VOL": 80, "Bass": 60, "Middle": 48, "Treble": 38}},
   "modules": {
     "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 12}},
     "PRE": {"model": "COMP", "always_on": true, "settings": {"Sustain": 42, "VOL": 58}},

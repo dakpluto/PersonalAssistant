@@ -20,12 +20,12 @@ THRE: 20. Low threshold — clean, low-gain tone doesn't need much gating, just 
 - Built from the `Avalon - 38 dB - Chan 1 (Avalon AD2022)` NAM and no cab IR (straight DI), combined into one snaptone.
 - Avalon AD2022 Class A preamp at 38 dB. A studio DI, not an amp: no speaker coloration.
 - Mariusz Duda's fretless on Lunatic Soul is intimate and studio-clean. A DI fits better than any cab.
-- Gain: 50, VOL: 50, Bass: 60, Middle: 45, Treble: 50
+- Gain: 50, VOL: 75, Bass: 60, Middle: 45, Treble: 50
 - Gain 50: the capture as built.
 - Bass 60: Full low end, this needs to feel like it's under everything.
 - Middle 45: Kept out of the way so the fretless glide reads clearly.
 - Treble 50: Present but not clanky.
-- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- VOL 75: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
 - Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 52 directly.
 
 **EQ — Bass EQ 2**, always on.

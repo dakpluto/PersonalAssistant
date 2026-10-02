@@ -1,6 +1,6 @@
 # Snaptone combo plan (NAM + IR)
 
-Drafted 2026-09-25 (G6/G13 updated the same day when the Dumble ODS pack was added) from the NAM/IR pack files in `NAMs/` and `IRs/`, mapped against every existing patch using the per-song "ideal rig" picks from the same session. One combo per patch: a GP-5 patch has a single N->S block, so any clean-vs-dirty CTL switching still comes from DST/PRE, not from swapping snaptones. Counts are unique songs/parts (the one Brooks & Dunn GP-5-only duplicate is counted once): 114 bass, 44 guitar. Every patch is covered by exactly one combo. Record the SnapTone slot (1-80) in the Slot column once a combo is loaded. Bass B1-B10 loaded 2026-09-25 into slots 51-60 (the Snaptone name column is the name each was saved under on the device); guitar G1-G20 loaded into slots 61-80. All 30 slots from 51 to 80 were filled; G18 (slot 78) was dropped 2026-10-01, and the four AC30 combos (G7, G10, G14, G17) were dropped the same day, so 25 combos are usable.
+Drafted 2026-09-25 (G6/G13 updated the same day when the Dumble ODS pack was added) from the NAM/IR pack files in `NAMs/` and `IRs/`, mapped against every existing patch using the per-song "ideal rig" picks from the same session. One combo per patch: a GP-5 patch has a single N->S block, so any clean-vs-dirty CTL switching still comes from DST/PRE, not from swapping snaptones. Counts are unique songs/parts (the one Brooks & Dunn GP-5-only duplicate is counted once): 114 bass, 44 guitar. Every patch is covered by exactly one combo. Record the SnapTone slot (1-80) in the Slot column once a combo is loaded. Bass B1-B10 loaded 2026-09-25 into slots 51-60 (the Snaptone name column is the name each was saved under on the device); guitar G1-G20 loaded into slots 61-80. All 30 slots from 51 to 80 were filled; G18 (slot 78) was dropped 2026-10-01, and the four AC30 combos (G7, G10, G14, G17) were dropped the same day. B10 (slot 60) was dropped 2026-10-02, so 24 combos are usable.
 
 ## Caveats
 
@@ -26,9 +26,9 @@ NAMs were re-enabled and every existing patch was re-checked against these combo
 
 Both Tim R clean Twin captures (`TwinVerb Norm Bright`, `TwinVerb Vibrato Bright`) were too quiet on the GP-5 no matter how the snaptone was set, so Michael dropped them. The Tim R `Ch1 BR` breakup captures are fine. The library has no other clean Twin NAM, so G1 (TwinClean, slot 61) and G4 (BrightTwin, slot 64) were rebuilt on the Deluxe `CLEANEST` capture, which is blackface like the Twin and the loudest clean file in the library (-14.0 dB vs -21). Each combo keeps its original Twin IR. G2 (NashClean) uses the same NAM with the Brown Deluxe 1x12 IR. Slot numbers, snaptone names and patch assignments are unchanged. Michael loaded both rebuilt snaptones the same day and confirmed they sound much better. A true clean Twin NAM is still worth finding.
 
-## VOL audit (in progress)
+## VOL audit
 
-VOL 50 was too quiet on every snaptone, so new patches start at 80 (2026-09-27). Michael is checking each combo for its working VOL. Guitar audit finished 2026-10-01, and every guitar snaptone patch was updated to these levels the same day. Bass (B1-B10) hasn't been audited yet, so bass patches stay at 50 until it is.
+VOL 50 was too quiet on every snaptone, so new patches start at 80 (2026-09-27). Michael checked each combo for its working VOL. Guitar audit finished 2026-10-01 and bass 2026-10-02. Every snaptone patch was updated to these levels the day its audit finished.
 
 | NAM | Combos | VOL | Checked |
 |---|---|---|---|
@@ -50,6 +50,16 @@ VOL 50 was too quiet on every snaptone, so new patches start at 80 (2026-09-27).
 | Deluxe `HOT` | G19 | 60 | 2026-10-01 |
 | JCM800 `G3` | G20 | 60 | 2026-10-01 |
 | Tim R Twin `Ch1 BR G08` | G18 | dropped | 2026-10-01 |
+| B-18N `Vol 2.5` | B1 | 80 | 2026-10-02 |
+| Avalon AD2022 `38 dB Chan 1` | B2 | 75 | 2026-10-02 |
+| SVT-CL `SVT CLEAN` | B3 | 65 | 2026-10-02 |
+| B-18N `Vol 5` | B4 | 80 | 2026-10-02 |
+| SVT-CL `SANS BRIGHT DRIVE` | B5 | 60 | 2026-10-02 |
+| SVT-CL `CLEAN PUSHED` + Mesa215 | B6 | 60 | 2026-10-02 |
+| SVT-CL `PUSHED` | B7 | 55 | 2026-10-02 |
+| SVT-CL `SANS HAIRY DRIVE` | B8 | 55 | 2026-10-02 |
+| SVT-CL `CLEAN PUSHED` + SVT Bright Beta52 | B9 | 55 | 2026-10-02 |
+| B-18N `Vol 7.5` | B10 | dropped | 2026-10-02 |
 
 Audit notes (2026-10-01):
 
@@ -59,20 +69,25 @@ Audit notes (2026-10-01):
 - **G19 CrankedDeluxe** and **G20 JCM800Clean** both sound great. G20 was rebuilt on the JCM800 `G3` capture (light crunch) instead of `G1`; slot and snaptone name unchanged.
 - **G12 RectifierCrunch** sounds really nice (see Caveats).
 
-## Bass (10 combos, 114 songs)
+Bass audit notes (2026-10-02):
+
+- **B10 SoulB18 dropped:** Michael didn't like it. Its five songs (Ecstasy, Hair, Heaven, Low Rider, Proud Mary) moved to **B4 FullB15**, the same B-18N amp captured at volume 5 instead of 7.5, with their knob settings unchanged. Slot 60 stays loaded but is off-limits for patches.
+- All 113 bass snaptone patches were updated to these levels the same day.
+
+## Bass (10 combos, 9 usable, 114 songs)
 
 | # | NAM file | IR | Role | Songs | Count | Slot | Snaptone name |
 |---|---|---|---|---|---|---|---|
 | B1 | `Ampeg B18 - Head DI - Bass Chan - Vol 2.5` (B-18N) | Apg115 (User IR 1) | Classic clean B-15: Nashville, Motown, 60s-70s studio | Ain't Nothin' 'Bout You, American Pie, Believe, Hard Workin' Man, Heads Carolina, Homegrown, Honky Tonk Truth, If You See Her, Independence Day, I Will Always Love You, Knee Deep, Lucille, My Maria, Neon Moon, When You Say Nothing At All, Papa Was a Rollin' Stone, Puff the Magic Dragon, Rainbow Connection, Red Dirt Road, Spider-Man '67, Surfin' U.S.A., Tennessee Whiskey, The Gambler | 23 | 51 | CleanB15 |
 | B2 | `Avalon - 38 dB - Chan 1` (Avalon AD2022) | none; fallback `Ampeg SVT D-I-Out` if the builder requires an IR | Studio DI: polished 80s pop, LA sessions, fretless | Egan Fretless, Adrift, After the Love Has Gone, Bright Size Life, Cliffs of Dover, Danger Zone, Don't You Forget About Me, EWF Funk, Islands in the Stream, I Want to Know What Love Is, Kokomo, Lady, Love Shack, Love Will Turn You Around, Money for Nothing, Stairway to Heaven, Time of My Life, Werewolves of London, I Won't Back Down, Your Ways Better | 20 | 52 | AvalonAD2022 |
 | B3 | `SVT CLEAN` (SVT-CL) | Apg810 (User IR 3) | Clean SVT 8x10: rock/pop baseline | SNTR Bass, 1979, All for You, Comfortably Numb, Crash Into Me, Fire, Hoedown, Ironic, Like the Way I Do, November Rain, Only in America, Purple Rain, Still...You Turn Me On, Under the Bridge, You | 15 | 53 | CleanSVT |
-| B4 | `Ampeg B18 - Head DI - Bass Chan - Vol 5` (B-18N) | Apg115410 (User IR 2) | Warmer, fuller B-15 with a 4x10 edge: 70s rock, indie, Mayer/Petty | 1234, A Day in the Life, Giving It All to You, Hotel California, Mary Jane's Last Dance, Neon, Storm Corrosion, Sultans of Swing, Waiting on the World to Change, We Got Used to Us, You Don't Know How It Feels, Your Love Changes Everything | 12 | 54 | FullB15 |
+| B4 | `Ampeg B18 - Head DI - Bass Chan - Vol 5` (B-18N) | Apg115410 (User IR 2) | Warmer, fuller B-15 with a 4x10 edge: 70s rock, indie, Mayer/Petty | 1234, A Day in the Life, Ecstasy, Giving It All to You, Hair, Heaven, Hotel California, Low Rider, Mary Jane's Last Dance, Neon, Proud Mary, Storm Corrosion, Sultans of Swing, Waiting on the World to Change, We Got Used to Us, You Don't Know How It Feels, Your Love Changes Everything | 17 | 54 | FullB15 |
 | B5 | `SVT SANS BRIGHT DRIVE` (SVT-CL) | Hartke410 (User IR 6) | Bright, aggressive drive: pop-punk, power metal, Squire's Rickenbacker clank | The Anthem, Basket Case, When I Come Around, Knights of Cydonia, Dawn of Victory, Spider-Man '94, Creek Mary's Blood, RammGrind, Yes Squire, Parallels | 10 | 55 | BrightSVT |
 | B6 | `SVT CLEAN PUSHED` (SVT-CL) | Mesa215 (User IR 7) | Prog: stand-in for the Mesa Bass 400+ (Dream Theater) and the Riverside/prog parts | Metropolis Pt. 1, Pull Me Under, The Spirit Carries On, Stream of Consciousness, Conceiving You, Found, In Two Minds, River Down Below, Dryad of the Woods | 9 | 56 | ProgSVT |
 | B7 | `SVT PUSHED` (SVT-CL) | Apg810 (User IR 3) | Gritty SVT rock | Everlong, Hey Jealousy, Machinehead, La Grange, Are You Gonna Be My Girl, Sweet Child O' Mine, Higher, One | 8 | 57 | GrittySVT |
 | B8 | `SVT SANS HAIRY DRIVE` (SVT-CL) | Sunn215 (User IR 8) | Fuzz/doom/grunge | Comedown, I'm So Sick, Touch Peel and Stand, Man in the Box, Hysteria, Uprising, Sweet Leaf | 7 | 58 | HairySVT |
 | B9 | `SVT CLEAN PUSHED` (SVT-CL) | `Ampeg SVT Bright Beta52` (SVT pack) | Modern worship 4x10 | The Bread Has Been Broken, Praise, Thrive, Unstoppable God, When Wind Meets Fire | 5 | 59 | WorshipSVT |
-| B10 | `Ampeg B18 - Head DI - Bass Chan - Vol 7.5` (B-18N) | Apg115 (User IR 1) | Gritty vintage tube growl: soul/funk/rock | Ecstasy, Hair, Heaven, Low Rider, Proud Mary | 5 | 60 | SoulB18 |
+| ~~B10~~ | ~~`Ampeg B18 - Head DI - Bass Chan - Vol 7.5` (B-18N)~~ | ~~Apg115 (User IR 1)~~ | **Dropped 2026-10-02: Michael didn't like it.** Songs moved to B4 | none | 0 | ~~60~~ (dropped 2026-10-02) | ~~SoulB18~~ |
 
 Total 114. B1 + B2 + B3 alone cover 58 songs (just over half).
 

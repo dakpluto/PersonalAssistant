@@ -28,12 +28,12 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 - Built from the `SVT SANS BRIGHT DRIVE (SVT-CL)` NAM and the Hartke410 IR, combined into one snaptone.
 - Real Ampeg SVT-CL with the bright drive setting, into the aluminum-cone Hartke410 IR.
 - Dirnt again: bright, driven, picked. Same rig logic as Basket Case.
-- Gain: 48, VOL: 50, Bass: 55, Middle: 56, Treble: 58
+- Gain: 48, VOL: 60, Bass: 55, Middle: 56, Treble: 58
 - Gain 48: a little under default. This part wants less push than the other BrightSVT patches.
 - Bass 55: a touch more low end.
 - Middle 56: more midrange.
 - Treble 58: more top end.
-- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- VOL 60: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
 - Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 55 directly.
 
 **EQ — Bass EQ 1**

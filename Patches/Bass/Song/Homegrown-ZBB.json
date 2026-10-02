@@ -2,7 +2,7 @@
   "patch_name": "Homegrown - Zac Brown Band",
   "patch_vol": 54,
   "bpm": 100,
-  "nam": {"name": "CleanB15 (slot 51): Ampeg B18 - Head DI - Bass Chan - Vol 2.5 (B-18N) + Apg115", "slot": 51, "settings": {"Gain": 60, "VOL": 50, "Bass": 55, "Middle": 60, "Treble": 65}},
+  "nam": {"name": "CleanB15 (slot 51): Ampeg B18 - Head DI - Bass Chan - Vol 2.5 (B-18N) + Apg115", "slot": 51, "settings": {"Gain": 60, "VOL": 80, "Bass": 55, "Middle": 60, "Treble": 65}},
   "modules": {
     "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 30}},
     "PRE": {"model": "Micro Boost", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Gain": 35}},

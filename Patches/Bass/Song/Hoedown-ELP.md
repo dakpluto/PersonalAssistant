@@ -21,12 +21,12 @@ Always on. Natural grit, bright top. Blend 50 keeps the low end.
 - Built from the `SVT CLEAN (SVT-CL)` NAM and the Apg810 IR, combined into one snaptone.
 - Real Ampeg SVT-CL preamp on its clean setting, into the Apg810 8x10 IR.
 - Greg Lake's bass is clean and punchy under the organ. Clean SVT gives it the weight.
-- Gain: 52, VOL: 50, Bass: 50, Middle: 60, Treble: 58
+- Gain: 52, VOL: 65, Bass: 50, Middle: 60, Treble: 58
 - Gain 52: a little over default. This part wants more push than the other CleanSVT patches.
 - Bass 50: flat.
 - Middle 60: more midrange.
 - Treble 58: more top end.
-- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- VOL 65: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
 - Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 53 directly.
 
 **EQ — Bass EQ 2**, on CTL.

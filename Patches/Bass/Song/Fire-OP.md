@@ -22,12 +22,12 @@ On for the "Fire" chorus hits and the horn stabs — a light push that thickens 
 - Built from the `SVT CLEAN (SVT-CL)` NAM and the Apg810 IR, combined into one snaptone.
 - Real Ampeg SVT-CL preamp on its clean setting, into the Apg810 8x10 IR.
 - Ampeg SVT through an 8x10 is the default 70s funk/soul rig. A direct hit for this record's era.
-- Gain: 55, VOL: 50, Bass: 60, Middle: 62, Treble: 55
+- Gain: 55, VOL: 65, Bass: 60, Middle: 62, Treble: 55
 - Gain 55: noticeably over default. This part wants more push than the other CleanSVT patches.
 - Bass 60: Full, round low end.
 - Middle 62: Pushed hard. This is what gets the bass through a horn section — without upper-mid presence a P-bass disappears under brass.
 - Treble 55: Enough top end for pick/finger attack, not brittle.
-- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- VOL 65: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
 - Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 53 directly.
 
 **EQ — Bass EQ 1**, always on.

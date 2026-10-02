@@ -22,12 +22,12 @@ A light hair on top for the choruses and outro. Blend 30 keeps the clean low end
 - Built from the `Ampeg B18 - Head DI - Bass Chan - Vol 5 (B-18N)` NAM and the Apg115410 IR, combined into one snaptone.
 - Real Ampeg B-18N at volume 5, warmer and fuller than the clean capture, into the Apg115410 (1x15 + 4x10) IR.
 - Heartbreakers bass is warm and round, a little pushed. The fuller B-15 does that.
-- Gain: 52, VOL: 50, Bass: 55, Middle: 55, Treble: 48
+- Gain: 52, VOL: 80, Bass: 55, Middle: 55, Treble: 48
 - Gain 52: a little over default. This part wants more push than the other FullB15 patches.
 - Bass 55: a touch more low end.
 - Middle 55: a touch more midrange.
 - Treble 48: top end pulled back a little.
-- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- VOL 80: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
 - Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 54 directly.
 
 **EQ — Bass EQ 2**, always on.

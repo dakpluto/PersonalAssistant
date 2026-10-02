@@ -2,7 +2,7 @@
   "patch_name": "Stream of Consciousness - Dream Theater",
   "patch_vol": 50,
   "bpm": 160,
-  "nam": {"name": "ProgSVT (slot 56): SVT CLEAN PUSHED (SVT-CL) + Mesa215", "slot": 56, "settings": {"Gain": 52, "VOL": 50, "Bass": 55, "Middle": 62, "Treble": 55}},
+  "nam": {"name": "ProgSVT (slot 56): SVT CLEAN PUSHED (SVT-CL) + Mesa215", "slot": 56, "settings": {"Gain": 52, "VOL": 60, "Bass": 55, "Middle": 62, "Treble": 55}},
   "modules": {
     "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 30}},
     "PRE": {"model": "Micro Boost", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Gain": 40}},

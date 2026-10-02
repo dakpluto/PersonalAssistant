@@ -21,12 +21,12 @@ Heavy-section push. Blend 50 keeps the dry low end intact under the drive.
 - Built from the `SVT CLEAN PUSHED (SVT-CL)` NAM and the Mesa215 IR, combined into one snaptone.
 - Real Ampeg SVT-CL on the clean-pushed setting, into the Mesa215 2x15 IR.
 - Tight, mid-forward prog riffing. Pushed SVT into the Mesa 2x15.
-- Gain: 50, VOL: 50, Bass: 55, Middle: 62, Treble: 52
+- Gain: 50, VOL: 60, Bass: 55, Middle: 62, Treble: 52
 - Gain 50: the capture as built.
 - Bass 55: a touch more low end.
 - Middle 62: more midrange.
 - Treble 52: a touch more top end.
-- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- VOL 60: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
 - Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 56 directly.
 
 **EQ — Bass EQ 2**, always on.

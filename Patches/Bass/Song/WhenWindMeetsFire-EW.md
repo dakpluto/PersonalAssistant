@@ -23,12 +23,12 @@ Adds grit in the mids for the big sections while Blend 30 keeps the clean low en
 - Built from the `SVT CLEAN PUSHED (SVT-CL)` NAM and the Ampeg SVT Bright Beta52 IR, combined into one snaptone.
 - Real Ampeg SVT-CL on the clean-pushed setting, into a bright, Beta 52-miked SVT 4x10 IR.
 - Modern worship build. Pushed SVT with a bright 4x10 top end.
-- Gain: 48, VOL: 50, Bass: 62, Middle: 45, Treble: 40
+- Gain: 48, VOL: 55, Bass: 62, Middle: 45, Treble: 40
 - Gain 48: a little under default. This part wants less push than the other WorshipSVT patches.
 - Bass 62: more low end.
 - Middle 45: midrange pulled back a little.
 - Treble 40: top end pulled back noticeably.
-- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- VOL 55: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
 - Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 59 directly.
 
 **EQ — Bass EQ 1**, always on.

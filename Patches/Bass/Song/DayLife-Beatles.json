@@ -2,7 +2,7 @@
   "patch_name": "DayLife-Beatles",
   "patch_vol": 54,
   "bpm": 85,
-  "nam": {"name": "AvalonAD2022 (slot 52): Avalon - 38 dB - Chan 1 (Avalon AD2022) + none (studio DI)", "slot": 52, "settings": {"Gain": 50, "VOL": 50, "Bass": 50, "Middle": 62, "Treble": 62}},
+  "nam": {"name": "AvalonAD2022 (slot 52): Avalon - 38 dB - Chan 1 (Avalon AD2022) + none (studio DI)", "slot": 52, "settings": {"Gain": 50, "VOL": 75, "Bass": 50, "Middle": 62, "Treble": 62}},
   "modules": {
     "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 18}},
     "PRE": {"model": "Micro Boost", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Gain": 55}},

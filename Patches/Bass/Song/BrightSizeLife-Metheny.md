@@ -22,12 +22,12 @@ On CTL. Gain 15 and Blend 28 add only a little edge to the mwah on melodic lines
 - Built from the `Avalon - 38 dB - Chan 1 (Avalon AD2022)` NAM and no cab IR (straight DI), combined into one snaptone.
 - Avalon AD2022 Class A preamp at 38 dB. A studio DI, not an amp: no speaker coloration.
 - Jaco's fretless on this record is clear and woody. A clean DI keeps every harmonic intact.
-- Gain: 44, VOL: 50, Bass: 50, Middle: 58, Treble: 58
+- Gain: 44, VOL: 75, Bass: 50, Middle: 58, Treble: 58
 - Gain 44: noticeably under default. This part wants less push than the other AvalonAD2022 patches.
 - Bass 50: flat.
 - Middle 58: more midrange.
 - Treble 58: more top end.
-- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- VOL 75: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
 - Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 52 directly.
 
 **EQ — Bass EQ 2**, on CTL.

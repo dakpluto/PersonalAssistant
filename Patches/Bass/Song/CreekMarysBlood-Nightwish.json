@@ -2,7 +2,7 @@
   "patch_name": "CreekMarysBlood-Nightwish",
   "patch_vol": 50,
   "bpm": 90,
-  "nam": {"name": "BrightSVT (slot 55): SVT SANS BRIGHT DRIVE (SVT-CL) + Hartke410", "slot": 55, "settings": {"Gain": 46, "VOL": 50, "Bass": 58, "Middle": 55, "Treble": 45}},
+  "nam": {"name": "BrightSVT (slot 55): SVT SANS BRIGHT DRIVE (SVT-CL) + Hartke410", "slot": 55, "settings": {"Gain": 46, "VOL": 60, "Bass": 58, "Middle": 55, "Treble": 45}},
   "modules": {
     "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 20}},
     "PRE": {"model": "COMP", "always_on": true, "settings": {"Sustain": 50, "VOL": 58}},

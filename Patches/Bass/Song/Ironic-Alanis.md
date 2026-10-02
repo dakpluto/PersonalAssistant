@@ -24,12 +24,12 @@ Real grit for the chorus, matching the guitars' Rat wall. Blend 38 keeps the low
 - Built from the `SVT CLEAN (SVT-CL)` NAM and the Apg810 IR, combined into one snaptone.
 - Real Ampeg SVT-CL preamp on its clean setting, into the Apg810 8x10 IR.
 - Mid-90s clean radio-rock bass. The clean SVT is the default.
-- Gain: 48, VOL: 50, Bass: 56, Middle: 55, Treble: 48
+- Gain: 48, VOL: 65, Bass: 56, Middle: 55, Treble: 48
 - Gain 48: a little under default. This part wants less push than the other CleanSVT patches.
 - Bass 56: more low end.
 - Middle 55: a touch more midrange.
 - Treble 48: top end pulled back a little.
-- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- VOL 65: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
 - Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 53 directly.
 
 **EQ — Bass EQ 2**, always on.

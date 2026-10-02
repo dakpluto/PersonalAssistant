@@ -2,7 +2,7 @@
   "patch_name": "BreadBrkn",
   "patch_vol": 48,
   "bpm": 72,
-  "nam": {"name": "WorshipSVT (slot 59): SVT CLEAN PUSHED (SVT-CL) + Ampeg SVT Bright Beta52", "slot": 59, "settings": {"Gain": 50, "VOL": 50, "Bass": 58, "Middle": 45, "Treble": 42}},
+  "nam": {"name": "WorshipSVT (slot 59): SVT CLEAN PUSHED (SVT-CL) + Ampeg SVT Bright Beta52", "slot": 59, "settings": {"Gain": 50, "VOL": 55, "Bass": 58, "Middle": 45, "Treble": 42}},
   "modules": {
     "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 18}},
     "PRE": {"model": "COMP", "always_on": true, "settings": {"Sustain": 35, "VOL": 52}},

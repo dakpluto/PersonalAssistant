@@ -23,12 +23,12 @@ Extra growl under the lead melody sections. Blend 40 keeps the clean low end sol
 - Built from the `SVT SANS BRIGHT DRIVE (SVT-CL)` NAM and the Hartke410 IR, combined into one snaptone.
 - Real Ampeg SVT-CL with the bright drive setting, into the aluminum-cone Hartke410 IR.
 - 90s hard-rock TV theme. Bright, driven bass that cuts.
-- Gain: 48, VOL: 50, Bass: 55, Middle: 58, Treble: 55
+- Gain: 48, VOL: 60, Bass: 55, Middle: 58, Treble: 55
 - Gain 48: a little under default. This part wants less push than the other BrightSVT patches.
 - Bass 55: a touch more low end.
 - Middle 58: more midrange.
 - Treble 55: a touch more top end.
-- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- VOL 60: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
 - Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 55 directly.
 
 **EQ — Bass EQ 2**, always on.

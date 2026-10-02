@@ -33,12 +33,12 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 - Built from the `SVT CLEAN (SVT-CL)` NAM and the Apg810 IR, combined into one snaptone.
 - Real Ampeg SVT-CL preamp on its clean setting, into the Apg810 8x10 IR.
 - Lake's ballad bass: clean, round, supportive.
-- Gain: 49, VOL: 50, Bass: 55, Middle: 55, Treble: 45
+- Gain: 49, VOL: 65, Bass: 55, Middle: 55, Treble: 45
 - Gain 49: a little under default. This part wants less push than the other CleanSVT patches.
 - Bass 55: a touch more low end.
 - Middle 55: a touch more midrange.
 - Treble 45: top end pulled back a little.
-- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- VOL 65: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
 - Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 53 directly.
 
 **EQ — Bass EQ 1**

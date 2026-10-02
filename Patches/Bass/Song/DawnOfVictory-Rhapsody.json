@@ -2,7 +2,7 @@
   "patch_name": "DawnOfVictory-Rhapsody",
   "patch_vol": 50,
   "bpm": 170,
-  "nam": {"name": "BrightSVT (slot 55): SVT SANS BRIGHT DRIVE (SVT-CL) + Hartke410", "slot": 55, "settings": {"Gain": 45, "VOL": 50, "Bass": 50, "Middle": 55, "Treble": 55}},
+  "nam": {"name": "BrightSVT (slot 55): SVT SANS BRIGHT DRIVE (SVT-CL) + Hartke410", "slot": 55, "settings": {"Gain": 45, "VOL": 60, "Bass": 50, "Middle": 55, "Treble": 55}},
   "modules": {
     "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 25}},
     "PRE": {"model": "COMP4", "always_on": true, "settings": {"Sustain": 55, "Attack": 45, "Clip": 50, "VOL": 58}},

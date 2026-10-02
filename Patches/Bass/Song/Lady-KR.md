@@ -17,12 +17,12 @@ THRE: 20. Light — this is a quiet part, just enough to clean up between-note n
 - Built from the `Avalon - 38 dB - Chan 1 (Avalon AD2022)` NAM and no cab IR (straight DI), combined into one snaptone.
 - Avalon AD2022 Class A preamp at 38 dB. A studio DI, not an amp: no speaker coloration.
 - Lionel Richie-produced 1980 ballad. Smooth, clean studio DI bass.
-- Gain: 48, VOL: 50, Bass: 58, Middle: 50, Treble: 48
+- Gain: 48, VOL: 75, Bass: 58, Middle: 50, Treble: 48
 - Gain 48: a little under default. This part wants less push than the other AvalonAD2022 patches.
 - Bass 58: Full but not boomy.
 - Middle 50: Neutral, doesn't fight the strings/keys sitting in the same range.
 - Treble 48: Soft on top, no fretless string-noise brightness.
-- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- VOL 75: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
 - Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 52 directly.
 
 **EQ — Bass EQ 2**, always on.

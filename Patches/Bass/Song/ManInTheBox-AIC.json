@@ -2,7 +2,7 @@
   "patch_name": "ManInBox",
   "patch_vol": 52,
   "bpm": 108,
-  "nam": {"name": "HairySVT (slot 58): SVT SANS HAIRY DRIVE (SVT-CL) + Sunn215", "slot": 58, "settings": {"Gain": 48, "VOL": 50, "Bass": 58, "Middle": 58, "Treble": 48}},
+  "nam": {"name": "HairySVT (slot 58): SVT SANS HAIRY DRIVE (SVT-CL) + Sunn215", "slot": 58, "settings": {"Gain": 48, "VOL": 55, "Bass": 58, "Middle": 58, "Treble": 48}},
   "modules": {
     "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 25}},
     "PRE": {"model": "COMP", "always_on": true, "settings": {"Sustain": 40, "VOL": 58}},

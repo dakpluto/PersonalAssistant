@@ -38,12 +38,12 @@ Clean. Any audible grit is wrong for this record.
 - Built from the `Ampeg B18 - Head DI - Bass Chan - Vol 2.5 (B-18N)` NAM and the Apg115 IR, combined into one snaptone.
 - Real Ampeg B-18N fliptop (the B-15 preamp circuit), captured clean at volume 2.5, into the Apg115 B-15 cab IR.
 - Motown-era bass. A B-15 is the period-correct amp, clean and round.
-- Gain: 53, VOL: 50, Bass: 62, Middle: 46, Treble: 34
+- Gain: 53, VOL: 80, Bass: 62, Middle: 46, Treble: 34
 - Gain 53: a little over default. This part wants more push than the other CleanB15 patches.
 - Bass 62: more low end.
 - Middle 46: midrange pulled back a little.
 - Treble 34: top end pulled back noticeably.
-- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- VOL 80: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
 - Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 51 directly.
 
 **EQ — Bass EQ 2** (always on)

@@ -2,7 +2,7 @@
   "patch_name": "Neon",
   "patch_vol": 52,
   "bpm": 104,
-  "nam": {"name": "FullB15 (slot 54): Ampeg B18 - Head DI - Bass Chan - Vol 5 (B-18N) + Apg115410", "slot": 54, "settings": {"Gain": 48, "VOL": 50, "Bass": 55, "Middle": 52, "Treble": 55}},
+  "nam": {"name": "FullB15 (slot 54): Ampeg B18 - Head DI - Bass Chan - Vol 5 (B-18N) + Apg115410", "slot": 54, "settings": {"Gain": 48, "VOL": 80, "Bass": 55, "Middle": 52, "Treble": 55}},
   "modules": {
     "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 12}},
     "PRE": {"model": "COMP4", "always_on": true, "settings": {"Sustain": 45, "Attack": 50, "Clip": 40, "VOL": 58}},

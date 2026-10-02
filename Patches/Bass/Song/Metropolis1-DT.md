@@ -19,12 +19,12 @@ Off for the quieter intro/interlude passages, on for the driving main riff and i
 - Built from the `SVT CLEAN PUSHED (SVT-CL)` NAM and the Mesa215 IR, combined into one snaptone.
 - Real Ampeg SVT-CL on the clean-pushed setting, into the Mesa215 2x15 IR.
 - Myung's tone is Mesa. No Mesa bass NAM on hand, so a pushed SVT into a Mesa 2x15 gets the cab half right.
-- Gain: 54, VOL: 50, Bass: 60, Middle: 55, Treble: 60
+- Gain: 54, VOL: 60, Bass: 60, Middle: 55, Treble: 60
 - Gain 54: a little over default. This part wants more push than the other ProgSVT patches.
 - Bass 60: more low end.
 - Middle 55: a touch more midrange.
 - Treble 60: more top end.
-- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- VOL 60: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
 - Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 56 directly.
 
 **EQ — Bass EQ 2**, always on.

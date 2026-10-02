@@ -24,12 +24,12 @@ Always-on grit is part of the core tone here. Blend 45 keeps the fundamental.
 - Built from the `SVT SANS HAIRY DRIVE (SVT-CL)` NAM and the Sunn215 IR, combined into one snaptone.
 - Real Ampeg SVT-CL with the hairy drive setting, into the Sunn215 2x15 IR.
 - Mike Starr's sludgy tone. Hairy SVT drive into the Sunn 2x15.
-- Gain: 48, VOL: 50, Bass: 58, Middle: 58, Treble: 48
+- Gain: 48, VOL: 55, Bass: 58, Middle: 58, Treble: 48
 - Gain 48: a little under default. This part wants less push than the other HairySVT patches.
 - Bass 58: more low end.
 - Middle 58: more midrange.
 - Treble 48: top end pulled back a little.
-- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- VOL 55: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
 - Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 58 directly.
 
 **EQ — Bass EQ 2**, on CTL.

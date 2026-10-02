@@ -24,12 +24,12 @@ Grit for the big choruses. Blend 30 keeps the low end clean.
 - Built from the `SVT CLEAN (SVT-CL)` NAM and the Apg810 IR, combined into one snaptone.
 - Real Ampeg SVT-CL preamp on its clean setting, into the Apg810 8x10 IR.
 - Big arena-country. Clean SVT gives more weight than a B-15.
-- Gain: 50, VOL: 50, Bass: 55, Middle: 56, Treble: 50
+- Gain: 50, VOL: 65, Bass: 55, Middle: 56, Treble: 50
 - Gain 50: the capture as built.
 - Bass 55: a touch more low end.
 - Middle 56: more midrange.
 - Treble 50: flat.
-- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- VOL 65: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
 - Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 53 directly.
 
 **EQ — Bass EQ 2**, always on.

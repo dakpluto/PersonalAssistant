@@ -2,7 +2,7 @@
   "patch_name": "Hair-GCS",
   "patch_vol": 56,
   "bpm": 104,
-  "nam": {"name": "SoulB18 (slot 60): Ampeg B18 - Head DI - Bass Chan - Vol 7.5 (B-18N) + Apg115", "slot": 60, "settings": {"Gain": 52, "VOL": 50, "Bass": 62, "Middle": 48, "Treble": 58}},
+  "nam": {"name": "FullB15 (slot 54): Ampeg B18 - Head DI - Bass Chan - Vol 5 (B-18N) + Apg115410", "slot": 54, "settings": {"Gain": 52, "VOL": 80, "Bass": 62, "Middle": 48, "Treble": 58}},
   "modules": {
     "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 20}},
     "PRE": {"model": "COMP4", "always_on": true, "settings": {"Sustain": 70, "Attack": 40, "Clip": 15, "VOL": 60}},

@@ -26,12 +26,12 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 - Built from the `Avalon - 38 dB - Chan 1 (Avalon AD2022)` NAM and no cab IR (straight DI), combined into one snaptone.
 - Avalon AD2022 Class A preamp at 38 dB. A studio DI, not an amp: no speaker coloration.
 - Jeff Lynne's production is clean and compressed, very DI-forward.
-- Gain: 50, VOL: 50, Bass: 56, Middle: 52, Treble: 54
+- Gain: 50, VOL: 75, Bass: 56, Middle: 52, Treble: 54
 - Gain 50: the capture as built.
 - Bass 56: more low end.
 - Middle 52: a touch more midrange.
 - Treble 54: a touch more top end.
-- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- VOL 75: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
 - Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 52 directly.
 
 **EQ — Bass EQ 2**

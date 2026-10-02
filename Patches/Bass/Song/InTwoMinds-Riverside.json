@@ -2,7 +2,7 @@
   "patch_name": "InTwoMinds-Riverside",
   "patch_vol": 50,
   "bpm": 100,
-  "nam": {"name": "ProgSVT (slot 56): SVT CLEAN PUSHED (SVT-CL) + Mesa215", "slot": 56, "settings": {"Gain": 50, "VOL": 50, "Bass": 55, "Middle": 62, "Treble": 52}},
+  "nam": {"name": "ProgSVT (slot 56): SVT CLEAN PUSHED (SVT-CL) + Mesa215", "slot": 56, "settings": {"Gain": 50, "VOL": 60, "Bass": 55, "Middle": 62, "Treble": 52}},
   "modules": {
     "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 22}},
     "PRE": {"model": "COMP", "always_on": true, "settings": {"Sustain": 50, "VOL": 58}},

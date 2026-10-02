@@ -26,12 +26,12 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB
 - Built from the `SVT CLEAN PUSHED (SVT-CL)` NAM and the Ampeg SVT Bright Beta52 IR, combined into one snaptone.
 - Real Ampeg SVT-CL on the clean-pushed setting, into a bright, Beta 52-miked SVT 4x10 IR.
 - Driving CCM rock. Pushed SVT with a bright 4x10 edge.
-- Gain: 60, VOL: 50, Bass: 55, Middle: 58, Treble: 58
+- Gain: 60, VOL: 55, Bass: 55, Middle: 58, Treble: 58
 - Gain 60: noticeably over default. This part wants more push than the other WorshipSVT patches.
 - Bass 55: a touch more low end.
 - Middle 58: more midrange.
 - Treble 58: more top end.
-- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- VOL 55: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
 - Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 59 directly.
 
 **EQ — Bass EQ 2**

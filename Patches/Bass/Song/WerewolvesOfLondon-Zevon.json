@@ -2,7 +2,7 @@
   "patch_name": "Werewolves",
   "patch_vol": 52,
   "bpm": 104,
-  "nam": {"name": "AvalonAD2022 (slot 52): Avalon - 38 dB - Chan 1 (Avalon AD2022) + none (studio DI)", "slot": 52, "settings": {"Gain": 48, "VOL": 50, "Bass": 58, "Middle": 52, "Treble": 42}},
+  "nam": {"name": "AvalonAD2022 (slot 52): Avalon - 38 dB - Chan 1 (Avalon AD2022) + none (studio DI)", "slot": 52, "settings": {"Gain": 48, "VOL": 75, "Bass": 58, "Middle": 52, "Treble": 42}},
   "modules": {
     "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 12}},
     "PRE": {"model": "COMP", "always_on": true, "settings": {"Sustain": 35, "VOL": 58}},

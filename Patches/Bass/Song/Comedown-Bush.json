@@ -2,7 +2,7 @@
   "patch_name": "Comedown - Bush",
   "patch_vol": 50,
   "bpm": 92,
-  "nam": {"name": "HairySVT (slot 58): SVT SANS HAIRY DRIVE (SVT-CL) + Sunn215", "slot": 58, "settings": {"Gain": 46, "VOL": 50, "Bass": 55, "Middle": 45, "Treble": 38}},
+  "nam": {"name": "HairySVT (slot 58): SVT SANS HAIRY DRIVE (SVT-CL) + Sunn215", "slot": 58, "settings": {"Gain": 46, "VOL": 55, "Bass": 55, "Middle": 45, "Treble": 38}},
   "modules": {
     "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 30}},
     "PRE": {"model": "Micro Boost", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Gain": 42}},

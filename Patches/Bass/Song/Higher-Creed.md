@@ -24,12 +24,12 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 - Built from the `SVT PUSHED (SVT-CL)` NAM and the Apg810 IR, combined into one snaptone.
 - Real Ampeg SVT-CL pushed into grit, into the Apg810 8x10 IR.
 - Post-grunge: moody verses, huge driven choruses. The pushed SVT is the base. DST adds the chorus weight.
-- Gain: 50, VOL: 50, Bass: 55, Middle: 60, Treble: 60
+- Gain: 50, VOL: 55, Bass: 55, Middle: 60, Treble: 60
 - Gain 50: the capture as built.
 - Bass 55: a touch more low end.
 - Middle 60: more midrange.
 - Treble 60: more top end.
-- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- VOL 55: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
 - Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 57 directly.
 
 **EQ — Bass EQ 1**

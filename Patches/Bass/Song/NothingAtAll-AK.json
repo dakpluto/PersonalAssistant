@@ -2,7 +2,7 @@
   "patch_name": "When You Say Nothing At All - Alison Krauss",
   "patch_vol": 50,
   "bpm": 68,
-  "nam": {"name": "CleanB15 (slot 51): Ampeg B18 - Head DI - Bass Chan - Vol 2.5 (B-18N) + Apg115", "slot": 51, "settings": {"Gain": 50, "VOL": 50, "Bass": 60, "Middle": 55, "Treble": 45}},
+  "nam": {"name": "CleanB15 (slot 51): Ampeg B18 - Head DI - Bass Chan - Vol 2.5 (B-18N) + Apg115", "slot": 51, "settings": {"Gain": 50, "VOL": 80, "Bass": 60, "Middle": 55, "Treble": 45}},
   "modules": {
     "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 25}},
     "PRE": {"model": null},

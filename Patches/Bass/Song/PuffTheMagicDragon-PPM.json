@@ -2,7 +2,7 @@
   "patch_name": "Puff",
   "patch_vol": 52,
   "bpm": 110,
-  "nam": {"name": "CleanB15 (slot 51): Ampeg B18 - Head DI - Bass Chan - Vol 2.5 (B-18N) + Apg115", "slot": 51, "settings": {"Gain": 47, "VOL": 50, "Bass": 58, "Middle": 55, "Treble": 22}},
+  "nam": {"name": "CleanB15 (slot 51): Ampeg B18 - Head DI - Bass Chan - Vol 2.5 (B-18N) + Apg115", "slot": 51, "settings": {"Gain": 47, "VOL": 80, "Bass": 58, "Middle": 55, "Treble": 22}},
   "modules": {
     "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 18}},
     "PRE": {"model": "COMP", "always_on": true, "settings": {"Sustain": 28, "VOL": 58}},

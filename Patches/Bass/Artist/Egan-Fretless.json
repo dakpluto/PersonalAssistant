@@ -2,7 +2,7 @@
   "patch_name": "EganFretls",
   "patch_vol": 55,
   "bpm": 92,
-  "nam": {"name": "AvalonAD2022 (slot 52): Avalon - 38 dB - Chan 1 (Avalon AD2022) + none (studio DI)", "slot": 52, "settings": {"Gain": 58, "VOL": 50, "Bass": 55, "Middle": 55, "Treble": 68}},
+  "nam": {"name": "AvalonAD2022 (slot 52): Avalon - 38 dB - Chan 1 (Avalon AD2022) + none (studio DI)", "slot": 52, "settings": {"Gain": 58, "VOL": 75, "Bass": 55, "Middle": 55, "Treble": 68}},
   "modules": {
     "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 28}},
     "PRE": {"model": "COMP4", "always_on": true, "settings": {"Sustain": 65, "Attack": 45, "Clip": 50, "VOL": 60}},

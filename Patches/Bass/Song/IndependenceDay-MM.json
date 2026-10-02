@@ -2,7 +2,7 @@
   "patch_name": "Independence Day - Martina McBride",
   "patch_vol": 50,
   "bpm": 120,
-  "nam": {"name": "CleanB15 (slot 51): Ampeg B18 - Head DI - Bass Chan - Vol 2.5 (B-18N) + Apg115", "slot": 51, "settings": {"Gain": 60, "VOL": 50, "Bass": 62, "Middle": 55, "Treble": 58}},
+  "nam": {"name": "CleanB15 (slot 51): Ampeg B18 - Head DI - Bass Chan - Vol 2.5 (B-18N) + Apg115", "slot": 51, "settings": {"Gain": 60, "VOL": 80, "Bass": 62, "Middle": 55, "Treble": 58}},
   "modules": {
     "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 35}},
     "PRE": {"model": "Micro Boost", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Gain": 55}},

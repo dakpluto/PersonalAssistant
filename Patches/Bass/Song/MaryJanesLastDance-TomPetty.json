@@ -2,7 +2,7 @@
   "patch_name": "MaryJane-TP",
   "patch_vol": 52,
   "bpm": 84,
-  "nam": {"name": "FullB15 (slot 54): Ampeg B18 - Head DI - Bass Chan - Vol 5 (B-18N) + Apg115410", "slot": 54, "settings": {"Gain": 52, "VOL": 50, "Bass": 55, "Middle": 55, "Treble": 48}},
+  "nam": {"name": "FullB15 (slot 54): Ampeg B18 - Head DI - Bass Chan - Vol 5 (B-18N) + Apg115410", "slot": 54, "settings": {"Gain": 52, "VOL": 80, "Bass": 55, "Middle": 55, "Treble": 48}},
   "modules": {
     "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 15}},
     "PRE": {"model": "COMP", "always_on": true, "settings": {"Sustain": 40, "VOL": 58}},

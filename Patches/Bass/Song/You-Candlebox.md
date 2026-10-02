@@ -25,12 +25,12 @@ Not used. The amp's own moderate gain carries this patch's drive character — a
 - Built from the `SVT CLEAN (SVT-CL)` NAM and the Apg810 IR, combined into one snaptone.
 - Real Ampeg SVT-CL preamp on its clean setting, into the Apg810 8x10 IR.
 - 90s alt-rock. Clean SVT for the verses. DST handles the heavy parts.
-- Gain: 54, VOL: 50, Bass: 55, Middle: 58, Treble: 55
+- Gain: 54, VOL: 65, Bass: 55, Middle: 58, Treble: 55
 - Gain 54: a little over default. This part wants more push than the other CleanSVT patches.
 - Bass 55: a touch more low end.
 - Middle 58: more midrange.
 - Treble 55: a touch more top end.
-- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- VOL 65: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
 - Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 53 directly.
 
 **EQ — Bass EQ 1**

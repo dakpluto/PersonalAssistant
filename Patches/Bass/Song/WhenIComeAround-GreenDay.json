@@ -2,7 +2,7 @@
   "patch_name": "WhenIComeAr",
   "patch_vol": 55,
   "bpm": 119,
-  "nam": {"name": "BrightSVT (slot 55): SVT SANS BRIGHT DRIVE (SVT-CL) + Hartke410", "slot": 55, "settings": {"Gain": 48, "VOL": 50, "Bass": 55, "Middle": 56, "Treble": 58}},
+  "nam": {"name": "BrightSVT (slot 55): SVT SANS BRIGHT DRIVE (SVT-CL) + Hartke410", "slot": 55, "settings": {"Gain": 48, "VOL": 60, "Bass": 55, "Middle": 56, "Treble": 58}},
   "modules": {
     "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 20}},
     "PRE": {"model": "Micro Boost", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Gain": 45}},

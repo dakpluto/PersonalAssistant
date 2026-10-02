@@ -20,12 +20,12 @@ The amp's own grind carries the grit. Stacking a drive pedal on top would just m
 - Built from the `SVT PUSHED (SVT-CL)` NAM and the Apg810 IR, combined into one snaptone.
 - Real Ampeg SVT-CL pushed into grit, into the Apg810 8x10 IR.
 - Grunge-era grit. Pushed SVT into an 8x10.
-- Gain: 52, VOL: 50, Bass: 60, Middle: 58, Treble: 42
+- Gain: 52, VOL: 55, Bass: 60, Middle: 58, Treble: 42
 - Gain 52: a little over default. This part wants more push than the other GrittySVT patches.
 - Bass 60: The low end that carries the riff.
 - Middle 58: Pushed for grind and to cut through the guitars, not scooped.
 - Treble 42: Kept dark on purpose. Bush's mix isn't a bright, clanky bass tone.
-- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- VOL 55: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
 - Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 57 directly.
 
 **EQ — Bass EQ 2**, always on.

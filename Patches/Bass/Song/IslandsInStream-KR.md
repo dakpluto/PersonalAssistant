@@ -19,12 +19,12 @@ Off for the verse groove, on for the big duet chorus hook — same clean tone th
 - Built from the `Avalon - 38 dB - Chan 1 (Avalon AD2022)` NAM and no cab IR (straight DI), combined into one snaptone.
 - Avalon AD2022 Class A preamp at 38 dB. A studio DI, not an amp: no speaker coloration.
 - Polished early-80s pop-country. Studio DI bass, clean and smooth.
-- Gain: 52, VOL: 50, Bass: 55, Middle: 60, Treble: 55
+- Gain: 52, VOL: 75, Bass: 55, Middle: 60, Treble: 55
 - Gain 52: a little over default. This part wants more push than the other AvalonAD2022 patches.
 - Bass 55: a touch more low end.
 - Middle 60: more midrange.
 - Treble 55: Bright enough to read clearly, not harsh.
-- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- VOL 75: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
 - Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 52 directly.
 
 **EQ — Bass EQ 2**, always on.

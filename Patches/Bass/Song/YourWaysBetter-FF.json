@@ -2,7 +2,7 @@
   "patch_name": "Your Ways Better - Forrest Frank",
   "patch_vol": 52,
   "bpm": 92,
-  "nam": {"name": "AvalonAD2022 (slot 52): Avalon - 38 dB - Chan 1 (Avalon AD2022) + none (studio DI)", "slot": 52, "settings": {"Gain": 49, "VOL": 50, "Bass": 60, "Middle": 50, "Treble": 42}},
+  "nam": {"name": "AvalonAD2022 (slot 52): Avalon - 38 dB - Chan 1 (Avalon AD2022) + none (studio DI)", "slot": 52, "settings": {"Gain": 49, "VOL": 75, "Bass": 60, "Middle": 50, "Treble": 42}},
   "modules": {
     "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 20}},
     "PRE": {"model": "COMP4", "always_on": true, "settings": {"Sustain": 55, "Attack": 55, "VOL": 100, "Clip": 30}},

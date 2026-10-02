@@ -2,7 +2,7 @@
   "patch_name": "La Grange - ZZ Top",
   "patch_vol": 55,
   "bpm": 144,
-  "nam": {"name": "GrittySVT (slot 57): SVT PUSHED (SVT-CL) + Apg810", "slot": 57, "settings": {"Gain": 55, "VOL": 50, "Bass": 60, "Middle": 58, "Treble": 50}},
+  "nam": {"name": "GrittySVT (slot 57): SVT PUSHED (SVT-CL) + Apg810", "slot": 57, "settings": {"Gain": 55, "VOL": 55, "Bass": 60, "Middle": 58, "Treble": 50}},
   "modules": {
     "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 20}},
     "PRE": {"model": null},

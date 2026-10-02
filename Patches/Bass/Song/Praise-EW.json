@@ -2,7 +2,7 @@
   "patch_name": "Praise-EW",
   "patch_vol": 52,
   "bpm": 127,
-  "nam": {"name": "WorshipSVT (slot 59): SVT CLEAN PUSHED (SVT-CL) + Ampeg SVT Bright Beta52", "slot": 59, "settings": {"Gain": 50, "VOL": 50, "Bass": 58, "Middle": 52, "Treble": 48}},
+  "nam": {"name": "WorshipSVT (slot 59): SVT CLEAN PUSHED (SVT-CL) + Ampeg SVT Bright Beta52", "slot": 59, "settings": {"Gain": 50, "VOL": 55, "Bass": 58, "Middle": 52, "Treble": 48}},
   "modules": {
     "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 10}},
     "PRE": {"model": "COMP4", "always_on": true, "settings": {"Sustain": 50, "Attack": 35, "Clip": 40, "VOL": 58}},

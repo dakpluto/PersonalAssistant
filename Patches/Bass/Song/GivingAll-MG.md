@@ -24,12 +24,12 @@ Not used. No drive anywhere in this tone.
 - Built from the `Ampeg B18 - Head DI - Bass Chan - Vol 5 (B-18N)` NAM and the Apg115410 IR, combined into one snaptone.
 - Real Ampeg B-18N at volume 5, warmer and fuller than the clean capture, into the Apg115410 (1x15 + 4x10) IR.
 - Warm, organic worship-folk. The fuller B-15 gives body without grit.
-- Gain: 54, VOL: 50, Bass: 55, Middle: 50, Treble: 50
+- Gain: 54, VOL: 80, Bass: 55, Middle: 50, Treble: 50
 - Gain 54: a little over default. This part wants more push than the other FullB15 patches.
 - Bass 55: a touch more low end.
 - Middle 50: flat.
 - Treble 50: flat.
-- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- VOL 80: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
 - Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 54 directly.
 
 **EQ — Bass EQ 1**

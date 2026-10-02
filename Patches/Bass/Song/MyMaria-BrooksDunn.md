@@ -24,12 +24,12 @@ Barely-there hair for the choruses. Blend 25 keeps it mostly clean.
 - Built from the `Ampeg B18 - Head DI - Bass Chan - Vol 2.5 (B-18N)` NAM and the Apg115 IR, combined into one snaptone.
 - Real Ampeg B-18N fliptop (the B-15 preamp circuit), captured clean at volume 2.5, into the Apg115 B-15 cab IR.
 - Mid-90s country-rock. Clean, round bass under a busy band. B-15 keeps it defined without bite.
-- Gain: 50, VOL: 50, Bass: 56, Middle: 54, Treble: 48
+- Gain: 50, VOL: 80, Bass: 56, Middle: 54, Treble: 48
 - Gain 50: the capture as built.
 - Bass 56: more low end.
 - Middle 54: a touch more midrange.
 - Treble 48: top end pulled back a little.
-- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- VOL 80: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
 - Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 51 directly.
 
 **EQ — Bass EQ 2**, always on.

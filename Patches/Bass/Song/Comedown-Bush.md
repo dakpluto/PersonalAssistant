@@ -19,12 +19,12 @@ Off for the dark, restrained verse. On for the chorus — shoves the fuzz harder
 - Built from the `SVT SANS HAIRY DRIVE (SVT-CL)` NAM and the Sunn215 IR, combined into one snaptone.
 - Real Ampeg SVT-CL with the hairy drive setting, into the Sunn215 2x15 IR.
 - Fuzzy grunge low end. The hairy SVT drive into a Sunn 2x15.
-- Gain: 46, VOL: 50, Bass: 55, Middle: 45, Treble: 38
+- Gain: 46, VOL: 55, Bass: 55, Middle: 45, Treble: 38
 - Gain 46: a little under default. This part wants less push than the other HairySVT patches.
 - Bass 55: a touch more low end.
 - Middle 45: midrange pulled back a little.
 - Treble 38: top end pulled back noticeably.
-- VOL 50: the default. Trim here if the patch jumps in level against your others.
+- VOL 55: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
 - Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 58 directly.
 
 **EQ — Bass EQ 2**, always on.
