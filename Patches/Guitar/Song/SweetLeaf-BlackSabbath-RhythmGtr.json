@@ -2,10 +2,10 @@
   "patch_name": "SweetLeaf-Gtr",
   "patch_vol": 50,
   "bpm": 94,
-  "nam": {"name": "BritishCrunch (slot 69): Marshall JTM45 I Crunch BAL DI + Origin Effects British Straight 4x12 Medium Mix", "slot": 69, "settings": {"Gain": 55, "VOL": 67, "Bass": 55, "Middle": 62, "Treble": 50}},
+  "nam": {"name": "CleanPlexi (slot 74): Marshall JTM45 with a clean boost in front + Matchless ES212 2x12 (Celestion G12M-25 Greenbacks)", "slot": 74, "settings": {"Gain": 50, "VOL": 70, "Bass": 55, "Middle": 60, "Treble": 48}},
   "modules": {
     "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 35}},
-    "PRE": {"model": "Boost", "always_on": true, "settings": {"Gain": 60, "+3dB": true, "Bright": true}},
+    "PRE": {"model": "Boost", "always_on": true, "settings": {"Gain": 35, "+3dB": false, "Bright": true}},
     "DST": {"model": "Sora Fuzz", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Fuzz": 55, "VOL": 62}},
     "AMP": {"model": null},
     "CAB": {"model": null},

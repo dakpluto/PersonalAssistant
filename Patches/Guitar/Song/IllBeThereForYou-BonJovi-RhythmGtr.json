@@ -1,0 +1,17 @@
+{
+  "patch_name": "IBTFY-Gtr",
+  "patch_vol": 50,
+  "bpm": 68,
+  "nam": {"name": "JCM800Clean (slot 80): JCM800 2203 - P5 B5 M5 T5 MV5 G3 - AZG - 700 + BlendOfAll_dc (Marshall 1960AV)", "slot": 80, "settings": {"Gain": 42, "VOL": 60, "Bass": 50, "Middle": 55, "Treble": 55}},
+  "modules": {
+    "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 22}},
+    "PRE": {"model": null},
+    "DST": {"model": "Super OD", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Gain": 40, "Tone": 55, "VOL": 68}},
+    "AMP": {"model": null},
+    "CAB": {"model": null},
+    "EQ": {"model": "Guitar EQ 2", "always_on": true, "settings": {"100Hz": -2, "500Hz": 0, "1kHz": 2, "3kHz": 1, "6kHz": -1, "VOL": 50}},
+    "MOD": {"model": "A-Chorus", "always_on": true, "settings": {"Depth": 20, "Rate": 0.7, "Tone": 55}},
+    "DLY": {"model": "Analog", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Mix": 22, "Time": 662, "Feedback": 28, "Trail": true}},
+    "RVB": {"model": "Plate", "always_on": true, "settings": {"Mix": 18, "Decay": 45, "Damp": 40, "Trail": true}}
+  }
+}

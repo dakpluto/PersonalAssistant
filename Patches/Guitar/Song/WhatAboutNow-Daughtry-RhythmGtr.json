@@ -1,0 +1,17 @@
+{
+  "patch_name": "WhatAbt-Gtr",
+  "patch_vol": 50,
+  "bpm": 74,
+  "nam": {"name": "MayerDumble (slot 66): SLAMMIN_DUMBLE_FORD_CLN_BALANCED_S (Dumble ODS #102) + Bogner 2x12 EVM12L - SM57 1 - Cap Edge", "slot": 66, "settings": {"Gain": 45, "VOL": 70, "Bass": 48, "Middle": 52, "Treble": 55}},
+  "modules": {
+    "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 20}},
+    "PRE": {"model": "COMP4", "always_on": true, "settings": {"Sustain": 40, "Attack": 50, "Clip": 35, "VOL": 55}},
+    "DST": {"model": "La Charger", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Gain": 50, "Tone": 55, "VOL": 64}},
+    "AMP": {"model": null},
+    "CAB": {"model": null},
+    "EQ": {"model": "Guitar EQ 2", "always_on": true, "settings": {"100Hz": -2, "500Hz": -1, "1kHz": 1, "3kHz": 2, "6kHz": -1, "VOL": 50}},
+    "MOD": {"model": "A-Chorus", "always_on": true, "settings": {"Depth": 15, "Rate": 0.6, "Tone": 55}},
+    "DLY": {"model": "Pure", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Mix": 18, "Time": 608, "F.Back": 25, "Trail": true}},
+    "RVB": {"model": "Hall", "always_on": true, "settings": {"Mix": 18, "Decay": 40, "Trail": true}}
+  }
+}

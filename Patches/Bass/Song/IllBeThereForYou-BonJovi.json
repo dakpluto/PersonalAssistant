@@ -1,0 +1,17 @@
+{
+  "patch_name": "IBTFY",
+  "patch_vol": 50,
+  "bpm": 68,
+  "nam": {"name": "AvalonAD2022 (slot 52): Avalon - 38 dB - Chan 1 (Avalon AD2022)", "slot": 52, "settings": {"Gain": 50, "VOL": 75, "Bass": 52, "Middle": 48, "Treble": 55}},
+  "modules": {
+    "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 12}},
+    "PRE": {"model": "COMP4", "always_on": true, "settings": {"Sustain": 50, "Attack": 45, "Clip": 35, "VOL": 56}},
+    "DST": {"model": "Bass OD", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Gain": 20, "Blend": 25, "VOL": 55, "Bass": 52, "Treble": 52}},
+    "AMP": {"model": null},
+    "CAB": {"model": null},
+    "EQ": {"model": "Bass EQ 2", "always_on": true, "settings": {"50Hz": 1, "120Hz": 1, "400Hz": -2, "800Hz": 1, "4.5kHz": 2, "VOL": 52}},
+    "MOD": {"model": null},
+    "DLY": {"model": null},
+    "RVB": {"model": "Room", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Mix": 12, "Decay": 32, "Trail": true}}
+  }
+}

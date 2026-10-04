@@ -1,0 +1,17 @@
+{
+  "patch_name": "DirtRd-Gtr",
+  "patch_vol": 50,
+  "bpm": 86,
+  "nam": {"name": "RythymDeluxe (slot 65): RYTHM - Fender Deluxe Reverb 1965 [Hyper Accuracy] + Origin Effects Brown Deluxe 1x12 Medium Mix", "slot": 65, "settings": {"Gain": 42, "VOL": 65, "Bass": 50, "Middle": 52, "Treble": 52}},
+  "modules": {
+    "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 22}},
+    "PRE": {"model": "Boost", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Gain": 40, "+3dB": true, "Bright": false}},
+    "DST": {"model": "Super OD", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Gain": 45, "Tone": 52, "VOL": 64}},
+    "AMP": {"model": null},
+    "CAB": {"model": null},
+    "EQ": {"model": "Guitar EQ 2", "always_on": true, "settings": {"100Hz": -2, "500Hz": 0, "1kHz": 1, "3kHz": 1, "6kHz": -2, "VOL": 50}},
+    "MOD": {"model": null},
+    "DLY": {"model": "Slapback", "always_on": true, "settings": {"Mix": 12, "Time": 110, "F.Back": 5, "Trail": true}},
+    "RVB": {"model": "Room", "always_on": true, "settings": {"Mix": 14, "Decay": 30, "Trail": true}}
+  }
+}

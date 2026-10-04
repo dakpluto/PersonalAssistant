@@ -14,24 +14,24 @@ THRE: 35.
 A boosted, cranked amp hisses. 35 keeps the gaps in the riff dead. Keep it below the level where held chords get cut off.
 
 **PRE — Boost (EP Booster)**, always on.
-Gain: 60, +3dB: on, Bright: on.
-The Rangemaster stand-in. Bright on plus Gain 60 slams the amp with treble-heavy gain. It's always on because it's part of the core Iommi sound.
+Gain: 35, +3dB: off, Bright: on.
+The Rangemaster stand-in. The capture already has a clean boost in front of the amp, so this one only adds the treble-booster edge.
+Bright on gives the treble-heavy push. Gain 35 and +3dB off keep it from stacking into mush. It's always on because it's part of the core Iommi sound.
 
 **DST — Sora Fuzz (Tone Bender)**, on CTL.
 Fuzz: 55, VOL: 62.
 A germanium Tone Bender-style fuzz for the solo jam. It adds hairy sustain on top of the boosted amp. Fuzz 55 keeps notes defined.
 
-**AMP/CAB — NAM SnapTone, slot 69: BritishCrunch** (always on)
-- Built from the `Marshall JTM45 I Crunch BAL DI` NAM and the Origin Effects British Straight 4x12 Medium Mix IR, combined into one snaptone.
-- Real Marshall JTM45 crunch, into the Origin Effects British Straight 4x12.
-- No Laney capture on hand. The JTM45 is the closest British crunch, with fuzz and boost on top.
-- Gain: 55, VOL: 67, Bass: 55, Middle: 62, Treble: 50
-- Gain 55: noticeably over default. This part wants more push than the other BritishCrunch patches.
-- Bass 55: a touch more low end.
-- Middle 62: more midrange.
-- Treble 50: flat.
-- VOL 67: the level Michael set for this snaptone in the 2026-10-01 VOL audit. Trim here if the patch jumps in level against your others.
-- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 69 directly.
+**AMP/CAB — NAM SnapTone, slot 74: CleanPlexi** (always on)
+- A Marshall JTM45 with a clean boost in front, into a Matchless ES212 2x12 loaded with Celestion G12M-25 Greenbacks.
+- No Laney capture on hand. A boosted JTM45 is the closest thing to Iommi's boosted Laney, and the boost is already part of the capture. Michael checked it 2026-10-04: "very nice", "great lead sound".
+- Gain: 50, VOL: 70, Bass: 55, Middle: 60, Treble: 48
+- Gain 50: the capture as built. It's already boosted, so it needs no extra push.
+- Bass 55: a touch more low end for the down-tuned riff.
+- Middle 60: more midrange.
+- Treble 48: slightly under flat, since the Bright boost adds top.
+- VOL 70: the level Michael set for this snaptone on 2026-10-04. Trim here if the patch jumps in level against your others.
+- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 74 directly.
 
 **EQ — Guitar EQ 2**, always on.
 100Hz: +1, 500Hz: +2, 1kHz: +1, 3kHz: -1, 6kHz: -3, VOL: 50.
@@ -55,3 +55,10 @@ On CTL: DST (Sora Fuzz), DLY (Tape).
 - **CTL on** — Lead. The Tone Bender fuzz stacks on top, plus tape echo, for the solo jam.
 
 Engage CTL for the middle jam and the solo. Drop back for the riff.
+
+## Previous version (BritishCrunch, before 2026-10-04)
+
+Moved to CleanPlexi on 2026-10-04. To go back, restore these values:
+- N->S: slot 69, BritishCrunch (`Marshall JTM45 I Crunch BAL DI` + Origin Effects British Straight 4x12 Medium Mix). Gain 55, VOL 67, Bass 55, Middle 62, Treble 50.
+- PRE Boost: Gain 60, +3dB on, Bright on.
+- Everything else is unchanged.

@@ -1,0 +1,17 @@
+{
+  "patch_name": "NotMyTime",
+  "patch_vol": 50,
+  "bpm": 100,
+  "nam": {"name": "GrittySVT (slot 57): SVT PUSHED (SVT-CL) + Apg810", "slot": 57, "settings": {"Gain": 50, "VOL": 55, "Bass": 55, "Middle": 58, "Treble": 58}},
+  "modules": {
+    "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 22}},
+    "PRE": {"model": "Micro Boost", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Gain": 55}},
+    "DST": {"model": "Bass OD", "always_on": true, "settings": {"Gain": 45, "Blend": 60, "VOL": 58, "Bass": 55, "Treble": 56}},
+    "AMP": {"model": null},
+    "CAB": {"model": null},
+    "EQ": {"model": "Bass EQ 1", "always_on": true, "settings": {"33Hz": 2, "150Hz": 0, "600Hz": -2, "2kHz": 4, "8kHz": 2, "VOL": 54}},
+    "MOD": {"model": null},
+    "DLY": {"model": null},
+    "RVB": {"model": "Room", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Mix": 14, "Decay": 30, "Trail": true}}
+  }
+}

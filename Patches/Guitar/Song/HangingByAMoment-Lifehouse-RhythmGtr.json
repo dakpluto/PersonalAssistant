@@ -1,0 +1,17 @@
+{
+  "patch_name": "Hanging-Gtr",
+  "patch_vol": 50,
+  "bpm": 124,
+  "nam": {"name": "ClassicMarshall (slot 68): JCM800 2203 - P5 B5 M5 T5 MV5 G4 - AZG - 700 + V7X_dc (Marshall 1960AV)", "slot": 68, "settings": {"Gain": 48, "VOL": 50, "Bass": 50, "Middle": 58, "Treble": 56}},
+  "modules": {
+    "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 28}},
+    "PRE": {"model": null},
+    "DST": {"model": "Super OD", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Gain": 35, "Tone": 55, "VOL": 68}},
+    "AMP": {"model": null},
+    "CAB": {"model": null},
+    "EQ": {"model": "Guitar EQ 2", "always_on": true, "settings": {"100Hz": -2, "500Hz": -1, "1kHz": 1, "3kHz": 2, "6kHz": -1, "VOL": 50}},
+    "MOD": {"model": null},
+    "DLY": {"model": "Analog", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Mix": 16, "Time": 363, "Feedback": 20, "Trail": true}},
+    "RVB": {"model": "Room", "always_on": true, "settings": {"Mix": 14, "Decay": 30, "Trail": true}}
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "patch_name": "BMTL-Gtr",
+  "patch_vol": 50,
+  "bpm": 95,
+  "ir": {"name": "V30112"},
+  "modules": {
+    "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 42}},
+    "PRE": {"model": "Boost", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Gain": 45, "+3dB": true, "Bright": false}},
+    "DST": {"model": "Green OD", "always_on": true, "settings": {"Gain": 8, "Tone": 55, "VOL": 72}},
+    "AMP": {"model": "Mess DualM", "always_on": true, "settings": {"Gain": 60, "PRES": 55, "VOL": 60, "Bass": 56, "Middle": 46, "Treble": 56}},
+    "CAB": {"model": "User IR 10", "always_on": true, "settings": {"VOL": 60}},
+    "EQ": {"model": "Guitar EQ 2", "always_on": true, "settings": {"100Hz": 0, "500Hz": -3, "1kHz": 1, "3kHz": 2, "6kHz": -2, "VOL": 50}},
+    "MOD": {"model": null},
+    "DLY": {"model": "Analog", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Mix": 18, "Time": 474, "Feedback": 25, "Trail": true}},
+    "RVB": {"model": "Room", "always_on": true, "settings": {"Mix": 12, "Decay": 30, "Trail": true}}
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "patch_name": "BringMe",
+  "patch_vol": 50,
+  "bpm": 95,
+  "nam": {"name": "GrittySVT (slot 57): SVT PUSHED (SVT-CL) + Apg810", "slot": 57, "settings": {"Gain": 50, "VOL": 55, "Bass": 56, "Middle": 55, "Treble": 56}},
+  "modules": {
+    "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 20}},
+    "PRE": {"model": "COMP", "always_on": true, "settings": {"Sustain": 50, "VOL": 58}},
+    "DST": {"model": "Bass OD", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Gain": 50, "Blend": 55, "VOL": 56, "Bass": 56, "Treble": 58}},
+    "AMP": {"model": null},
+    "CAB": {"model": null},
+    "EQ": {"model": "Bass EQ 1", "always_on": true, "settings": {"33Hz": 3, "150Hz": 0, "600Hz": -3, "2kHz": 3, "8kHz": 1, "VOL": 54}},
+    "MOD": {"model": null},
+    "DLY": {"model": null},
+    "RVB": {"model": "Room", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Mix": 10, "Decay": 28, "Trail": true}}
+  }
+}

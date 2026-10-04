@@ -1,6 +1,6 @@
 # VOX AC30 CH [Hyper Accuracy+] — slamminmofo
 
-> **Dropped 2026-10-01:** Michael wasn't happy enough with these on the GP-5. The four snaptones built from this pack (G7, G10, G14, G17) are retired. AC30 patches use the GP-5's Foxy 30N / Foxy 30TB until a better AC30 NAM turns up.
+> **Dropped 2026-10-01:** Michael wasn't happy enough with these on the GP-5. The four snaptones built from this pack (G7, G10, G14, G17) are retired (slots 70, 74 and 77, G10's, G14's and G17's old slots, were reloaded 2026-10-04 with EVH 5150, JTM45 and Friedman captures). AC30 patches use the GP-5's Foxy 30N / Foxy 30TB until a better AC30 NAM turns up.
 
 - **Source:** https://www.tone3000.com/tones/vox-ac30-ch-hyper-accuracy-31267
 - **Creator:** @slamminmofo (verified)

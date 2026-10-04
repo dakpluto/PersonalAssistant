@@ -1,0 +1,17 @@
+{
+  "patch_name": "BillieJ-Gtr",
+  "patch_vol": 50,
+  "bpm": 70,
+  "nam": {"name": "Fen65DlxKl (slot 78): Fender '65 Deluxe Reverb (Vol 5, Tone 6, Bass 4) + Klon Centaur (Gain 10), full amp + cab capture", "slot": 78, "settings": {"Gain": 40, "VOL": 70, "Bass": 50, "Middle": 52, "Treble": 44}},
+  "modules": {
+    "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 22}},
+    "PRE": {"model": null},
+    "DST": {"model": "Darktale", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Gain": 45, "Filter": 45, "VOL": 62}},
+    "AMP": {"model": null},
+    "CAB": {"model": null},
+    "EQ": {"model": "Guitar EQ 2", "always_on": true, "settings": {"100Hz": -2, "500Hz": 1, "1kHz": 1, "3kHz": -1, "6kHz": -2, "VOL": 50}},
+    "MOD": {"model": null},
+    "DLY": {"model": "Analog", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Mix": 20, "Time": 643, "Feedback": 28, "Trail": true}},
+    "RVB": {"model": "Spring", "always_on": true, "settings": {"Mix": 20, "Decay": 40, "Trail": true}}
+  }
+}

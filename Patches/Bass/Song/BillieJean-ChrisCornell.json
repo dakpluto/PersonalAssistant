@@ -1,0 +1,17 @@
+{
+  "patch_name": "BillieJean",
+  "patch_vol": 50,
+  "bpm": 70,
+  "nam": {"name": "FullB15 (slot 54): Ampeg B18 - Head DI - Bass Chan - Vol 5 (B-18N) + Apg115410", "slot": 54, "settings": {"Gain": 50, "VOL": 80, "Bass": 56, "Middle": 52, "Treble": 46}},
+  "modules": {
+    "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 12}},
+    "PRE": {"model": "COMP", "always_on": true, "settings": {"Sustain": 45, "VOL": 58}},
+    "DST": {"model": "Bass OD", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Gain": 40, "Blend": 45, "VOL": 56, "Bass": 55, "Treble": 52}},
+    "AMP": {"model": null},
+    "CAB": {"model": null},
+    "EQ": {"model": "Bass EQ 2", "always_on": true, "settings": {"50Hz": 2, "120Hz": 2, "400Hz": -2, "800Hz": 1, "4.5kHz": -1, "VOL": 52}},
+    "MOD": {"model": null},
+    "DLY": {"model": null},
+    "RVB": {"model": "Room", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Mix": 12, "Decay": 32, "Trail": true}}
+  }
+}

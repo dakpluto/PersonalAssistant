@@ -1,0 +1,17 @@
+{
+  "patch_name": "OneLast",
+  "patch_vol": 50,
+  "bpm": 62,
+  "nam": {"name": "CleanSVT (slot 53): SVT CLEAN (SVT-CL) + Apg810", "slot": 53, "settings": {"Gain": 50, "VOL": 65, "Bass": 56, "Middle": 54, "Treble": 52}},
+  "modules": {
+    "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 16}},
+    "PRE": {"model": "COMP", "always_on": true, "settings": {"Sustain": 45, "VOL": 58}},
+    "DST": {"model": "Bass OD", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Gain": 50, "Blend": 55, "VOL": 58, "Bass": 55, "Treble": 56}},
+    "AMP": {"model": null},
+    "CAB": {"model": null},
+    "EQ": {"model": "Bass EQ 1", "always_on": true, "settings": {"33Hz": 2, "150Hz": 0, "600Hz": -2, "2kHz": 3, "8kHz": 1, "VOL": 54}},
+    "MOD": {"model": null},
+    "DLY": {"model": null},
+    "RVB": {"model": "Room", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Mix": 14, "Decay": 34, "Trail": true}}
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "patch_name": "SomebodyLY",
+  "patch_vol": 50,
+  "bpm": 120,
+  "nam": {"name": "CleanB15 (slot 51): Ampeg B18 - Head DI - Bass Chan - Vol 2.5 (B-18N) + Apg115", "slot": 51, "settings": {"Gain": 50, "VOL": 80, "Bass": 55, "Middle": 52, "Treble": 50}},
+  "modules": {
+    "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 12}},
+    "PRE": {"model": "COMP", "always_on": true, "settings": {"Sustain": 45, "VOL": 58}},
+    "DST": {"model": "Bass OD", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Gain": 18, "Blend": 22, "VOL": 56, "Bass": 52, "Treble": 50}},
+    "AMP": {"model": null},
+    "CAB": {"model": null},
+    "EQ": {"model": "Bass EQ 2", "always_on": true, "settings": {"50Hz": 0, "120Hz": 2, "400Hz": -1, "800Hz": 2, "4.5kHz": 0, "VOL": 52}},
+    "MOD": {"model": null},
+    "DLY": {"model": null},
+    "RVB": {"model": "Room", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Mix": 10, "Decay": 28, "Trail": true}}
+  }
+}
