@@ -197,6 +197,15 @@ Set of 5 for one worship set — full board (Flamma octave, Donner comp, Donner 
 | `BringMeToLife-Evanescence` | Bring Me to Life — Evanescence (~95 BPM, est.) | P/J | No (GP-5 only) | SnapTone: GrittySVT (slot 57) | Deep gritty SVT, pick; CTL on DST (Bass OD, heavy) + RVB Room: verse vs. chorus |
 | `BillieJean-ChrisCornell` | Billie Jean (Carry On studio version) — Chris Cornell (~70 BPM, est.) | P/J | No (GP-5 only) | SnapTone: FullB15 (slot 54) | Warm, round line up front; CTL on DST (Bass OD) + RVB Room: verse vs. heavy build |
 
+Set of 4 for a second worship set (2026-10-05). Board knobs are fixed across all 4; footswitches are free. Donner comp on (COMP 40) all set. Tidal Wave preamp on all set; its drive section (Drive 42, Blend 40) is the set's only drive, stomped per song in place of the GP-5 Bass OD. FOH comes from the DC210XLT's DI, so every patch keeps its cab sim. Flamma (-OCT 35) only for The Blessing's bridge/climax. Fuzz and Narcissus off. Only the GP-5 patch's settings change song to song. See any of the 4 patches' "Full Pedalboard" section for the exact settings.
+
+| File | Song / Reference | Instrument | Full Board | AMP/CAB substitute | Notes |
+|---|---|---|---|---|---|
+| `River-JF` | The River — Jordan Feliz (124 BPM, Bb) | P/J | Yes (set board) | SnapTone: AvalonAD2022 (slot 52) | Punchy soul-pop pocket, light COMP4; no CTL, Tidal Wave drive stomped: verse vs. chorus |
+| `10000Reasons-MR` | 10,000 Reasons — Matt Redman (~73 BPM, G) | P/J | Yes (set board) | SnapTone: CleanB15 (slot 51) | Warm, round clean B-15 under acoustic/piano; CTL on PRE Micro Boost: verses vs. final chorus |
+| `ForeverReign-HS` | Forever Reign — Hillsong Worship (~83 BPM, C) | P/J | Yes (set board) | SnapTone: WorshipSVT (slot 59) | Smooth foundation under pads; CTL on PRE Micro Boost + Tidal Wave drive stomped: verses vs. bridge/final choruses |
+| `Blessing-KJ` | The Blessing — Kari Jobe, Cody Carnes (70 BPM, B) | P/J | Yes (set board) | SnapTone: WorshipSVT (slot 59) | Dark, sub-forward SVT; no CTL, Tidal Wave drive + Flamma -OCT stomped: verses vs. bridge/"Amen" climax |
+
 ### Artist/
 
 | File | Song / Reference | Instrument | Full Board | AMP/CAB substitute | Notes |

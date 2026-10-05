@@ -1,0 +1,64 @@
+{
+  "patch_name": "ForeverReign-HS",
+  "patch_vol": 55,
+  "bpm": 83,
+  "nam": {
+    "name": "WorshipSVT (slot 59): SVT CLEAN PUSHED (SVT-CL) + Ampeg SVT Bright Beta52",
+    "slot": 59,
+    "settings": {
+      "Gain": 50,
+      "VOL": 55,
+      "Bass": 58,
+      "Middle": 50,
+      "Treble": 48
+    }
+  },
+  "modules": {
+    "NR": {
+      "model": "Gate",
+      "always_on": true,
+      "settings": {
+        "THRE": 10
+      }
+    },
+    "PRE": {
+      "model": "Micro Boost",
+      "ctl": true,
+      "ctl_off_state": "off",
+      "ctl_on_state": "on",
+      "settings": {
+        "Gain": 30
+      }
+    },
+    "DST": {
+      "model": null
+    },
+    "AMP": {
+      "model": null
+    },
+    "CAB": {
+      "model": null
+    },
+    "EQ": {
+      "model": "Bass EQ 1",
+      "always_on": true,
+      "settings": {
+        "33Hz": 1,
+        "150Hz": 2,
+        "600Hz": -2,
+        "2kHz": 1,
+        "8kHz": -3,
+        "VOL": 52
+      }
+    },
+    "MOD": {
+      "model": null
+    },
+    "DLY": {
+      "model": null
+    },
+    "RVB": {
+      "model": null
+    }
+  }
+}

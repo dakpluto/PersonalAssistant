@@ -1,0 +1,65 @@
+{
+  "patch_name": "River-JF",
+  "patch_vol": 55,
+  "bpm": 124,
+  "nam": {
+    "name": "AvalonAD2022 (slot 52): Avalon - 38 dB - Chan 1 (Avalon AD2022) + none (studio DI)",
+    "slot": 52,
+    "settings": {
+      "Gain": 52,
+      "VOL": 75,
+      "Bass": 55,
+      "Middle": 52,
+      "Treble": 56
+    }
+  },
+  "modules": {
+    "NR": {
+      "model": "Gate",
+      "always_on": true,
+      "settings": {
+        "THRE": 15
+      }
+    },
+    "PRE": {
+      "model": "COMP4",
+      "always_on": true,
+      "settings": {
+        "Sustain": 42,
+        "Attack": 40,
+        "VOL": 56,
+        "Clip": 35
+      }
+    },
+    "DST": {
+      "model": null
+    },
+    "AMP": {
+      "model": null
+    },
+    "CAB": {
+      "model": null
+    },
+    "EQ": {
+      "model": "Bass EQ 1",
+      "always_on": true,
+      "settings": {
+        "33Hz": 0,
+        "150Hz": 3,
+        "600Hz": -3,
+        "2kHz": 3,
+        "8kHz": -1,
+        "VOL": 50
+      }
+    },
+    "MOD": {
+      "model": null
+    },
+    "DLY": {
+      "model": null
+    },
+    "RVB": {
+      "model": null
+    }
+  }
+}

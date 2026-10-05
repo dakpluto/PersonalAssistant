@@ -17,6 +17,9 @@ Bass preamp/overdrive pedal with 3-band EQ, DI output, and noise reduction. Bass
 - **Cab-Sim (DI out)**: Engages cabinet simulation on the DI output only (main instrument output is unaffected)
 - **Ground Lift**: Reduces hum/noise on the DI output when engaged
 
+## Footswitch
+- Toggles the **drive section only**. The preamp, 3-band EQ and Level stay active whether the drive is on or off, and the DI output isn't affected by the footswitch (confirmed by Michael, 2026-10-05).
+
 ## I/O
 - Standard 1/4" in/out plus a balanced DI output (XLR) with its own cab-sim and ground-lift switches — the DI path is independent of what's being sent to the amp/GP-5.
 

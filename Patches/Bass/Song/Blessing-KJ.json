@@ -1,0 +1,58 @@
+{
+  "patch_name": "Blessing-KJ",
+  "patch_vol": 55,
+  "bpm": 70,
+  "nam": {
+    "name": "WorshipSVT (slot 59): SVT CLEAN PUSHED (SVT-CL) + Ampeg SVT Bright Beta52",
+    "slot": 59,
+    "settings": {
+      "Gain": 48,
+      "VOL": 55,
+      "Bass": 62,
+      "Middle": 46,
+      "Treble": 44
+    }
+  },
+  "modules": {
+    "NR": {
+      "model": "Gate",
+      "always_on": true,
+      "settings": {
+        "THRE": 8
+      }
+    },
+    "PRE": {
+      "model": null
+    },
+    "DST": {
+      "model": null
+    },
+    "AMP": {
+      "model": null
+    },
+    "CAB": {
+      "model": null
+    },
+    "EQ": {
+      "model": "Bass EQ 2",
+      "always_on": true,
+      "settings": {
+        "50Hz": 4,
+        "120Hz": 1,
+        "400Hz": -3,
+        "800Hz": 0,
+        "4.5kHz": -3,
+        "VOL": 52
+      }
+    },
+    "MOD": {
+      "model": null
+    },
+    "DLY": {
+      "model": null
+    },
+    "RVB": {
+      "model": null
+    }
+  }
+}

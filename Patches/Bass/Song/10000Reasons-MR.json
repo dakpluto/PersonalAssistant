@@ -1,0 +1,17 @@
+{
+  "patch_name": "10KReasons-MR",
+  "patch_vol": 55,
+  "bpm": 73,
+  "nam": {"name": "CleanB15 (slot 51): Ampeg B18 - Head DI - Bass Chan - Vol 2.5 (B-18N) + Apg115", "slot": 51, "settings": {"Gain": 52, "VOL": 80, "Bass": 58, "Middle": 52, "Treble": 46}},
+  "modules": {
+    "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 10}},
+    "PRE": {"model": "Micro Boost", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Gain": 32}},
+    "DST": {"model": null},
+    "AMP": {"model": null},
+    "CAB": {"model": null},
+    "EQ": {"model": "Bass EQ 1", "always_on": true, "settings": {"33Hz": 1, "150Hz": 2, "600Hz": -2, "2kHz": 0, "8kHz": -3, "VOL": 52}},
+    "MOD": {"model": null},
+    "DLY": {"model": null},
+    "RVB": {"model": null}
+  }
+}
