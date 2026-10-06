@@ -11,6 +11,7 @@ Patches are split first by Instrument Type (`Patches/Guitar/`, `Patches/Bass/`),
 | File | Song / Reference | Instrument | Full Board | AMP/CAB substitute | Notes |
 |---|---|---|---|---|---|
 | `Cassie-Flyleaf` | Cassie — Flyleaf (original studio version) | Strat | Yes | IR: American Twin 2x12 Medium Mix | CTL on DST + DLY (inverted): clean ambient verse vs. heavy chorus wall |
+| `CivilWar-GNR` | Civil War — Guns N' Roses (~70 BPM, est.; Eb standard) | Strat | Yes | SnapTone: JCM800Clean (slot 80) | Boosted JCM800 rhythm (intro via guitar volume); CTL on DST Green OD + DLY Analog: crunch riff vs. Slash solo. KoK Left for the outro, Narcissus for the intro |
 | `ClickClickBoom-Sal` | Click Click Boom — Saliva (100 BPM) | Strat | Yes | SnapTone: ModernRect (slot 76) | CTL on DST + DLY + RVB: tight verse riff vs. boosted/wet solo lead |
 | `Creep-RH` | Creep — Radiohead | Strat | Yes | AMP: Foxy 30N + CAB: Foxy 2x12 | Clean/dirty split, CTL on PRE boost + DST |
 | `December-CS` | December — Collective Soul | Strat | No | SnapTone: ClassicMarshall (slot 68) | CTL on DST + MOD (inverted) + DLY: clean vibe intro vs. driven riff |
@@ -106,6 +107,7 @@ Set of 5 for one worship set — full board (Flamma octave, Donner comp, Donner 
 | `UnderTheBridge-RHCP` | Under the Bridge — Red Hot Chili Peppers (85 BPM, est.) | P/J | Yes | SnapTone: CleanSVT (slot 53) | Warm, restrained, un-Flea clean tone; CTL on PRE Micro Boost + RVB Hall (big): quiet verse vs. choir-backed outro swell |
 | `PurpleRain-Prince` | Purple Rain — Prince (112 BPM, est.) | P/J | Yes | SnapTone: CleanSVT (slot 53) | Tasteful supportive part for a song famous for having almost no bass on the record; CTL on PRE Micro Boost + RVB Hall (huge): quiet verse vs. gospel-scale climax |
 | `NovemberRain-GNR` | November Rain — Guns N' Roses (~52 BPM, est.) | P/J | Yes | SnapTone: CleanSVT (slot 53) | CTL on PRE Micro Boost + DST La Charger + RVB Hall: restrained piano-verse vs. huge driven rock climax |
+| `CivilWar-GNR` | Civil War — Guns N' Roses (~70 BPM, est.; Eb standard) | P/J | Yes | SnapTone: GrittySVT (slot 57) | Picked Duff tone, Donner Comp + Tidal Wave preamp (drive off); CTL on DST (Bass OD): sparse verse vs. heavy chorus/outro |
 | `BasketCase-GreenDay` | Basket Case — Green Day (171 BPM) | P/J | Yes | SnapTone: BrightSVT (slot 55) | Bright, punchy pop-punk with always-on Bass OD blend (Dirnt's clean+dirty tone); CTL on PRE Micro Boost + RVB Room: driving verse vs. chorus push |
 | `WontBackDown-TomPetty` | I Won't Back Down — Tom Petty (93 BPM, est.) | P/J | Yes | SnapTone: AvalonAD2022 (slot 52) | Warm, direct heartland rock tone, no drive anywhere; CTL on PRE Micro Boost + RVB Room (subtle): steady verse/chorus vs. gentle hook lift |
 | `LikeTheWayIDo-Etheridge` | Like the Way I Do — Melissa Etheridge (~80 BPM, est.) | P/J | Yes | SnapTone: CleanSVT (slot 53) | CTL on PRE Micro Boost + DST Darktale + RVB Room (inverted): moody restrained intro/verse vs. raw, dry, driving climax |

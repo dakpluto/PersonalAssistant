@@ -1,0 +1,17 @@
+{
+  "patch_name": "CivilWar-GNR",
+  "patch_vol": 50,
+  "bpm": 70,
+  "nam": {"name": "JCM800Clean (slot 80): JCM800 2203 - P5 B5 M5 T5 MV5 G3 - AZG - 700 + BlendOfAll_dc (Marshall 1960AV)", "slot": 80, "settings": {"Gain": 55, "VOL": 60, "Bass": 55, "Middle": 60, "Treble": 52}},
+  "modules": {
+    "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 30}},
+    "PRE": {"model": "Boost", "always_on": true, "settings": {"Gain": 45, "+3dB": false, "Bright": false}},
+    "DST": {"model": "Green OD", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Gain": 28, "Tone": 55, "VOL": 66}},
+    "AMP": {"model": null},
+    "CAB": {"model": null},
+    "EQ": {"model": "Guitar EQ 2", "always_on": true, "settings": {"100Hz": 0, "500Hz": 2, "1kHz": 2, "3kHz": 0, "6kHz": -2, "VOL": 50}},
+    "MOD": {"model": null},
+    "DLY": {"model": "Analog", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Mix": 18, "Time": 430, "Feedback": 22, "Trail": true}},
+    "RVB": {"model": "Plate", "always_on": true, "settings": {"Mix": 12, "Decay": 30, "Damp": 50, "Trail": true}}
+  }
+}
