@@ -1,0 +1,17 @@
+{
+  "patch_name": "BeatIt-MJ",
+  "patch_vol": 50,
+  "bpm": 139,
+  "nam": {"name": "CrankedDeluxe (slot 79): HOT - Fender Deluxe Reverb 1965 [Hyper Accuracy] + Brown Deluxe 1x12 Medium Mix", "slot": 79, "settings": {"Gain": 55, "VOL": 60, "Bass": 52, "Middle": 58, "Treble": 52}},
+  "modules": {
+    "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 32}},
+    "PRE": {"model": "Boost", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Gain": 55, "+3dB": true, "Bright": true}},
+    "DST": {"model": "Super OD", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Gain": 45, "Tone": 58, "VOL": 62}},
+    "AMP": {"model": null},
+    "CAB": {"model": null},
+    "EQ": {"model": "Guitar EQ 2", "always_on": true, "settings": {"100Hz": 1, "500Hz": 1, "1kHz": 2, "3kHz": 0, "6kHz": -2, "VOL": 50}},
+    "MOD": {"model": null},
+    "DLY": {"model": "Sweet Echo", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Mix": 15, "Time": 216, "F.Back": 18, "Trail": true}},
+    "RVB": {"model": "Plate", "always_on": true, "settings": {"Mix": 12, "Decay": 25, "Damp": 50, "Trail": true}}
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "patch_name": "BeatIt-MJ",
+  "patch_vol": 55,
+  "bpm": 139,
+  "nam": {"name": "AvalonAD2022 (slot 52): Avalon - 38 dB - Chan 1 (Avalon AD2022 studio DI)", "slot": 52, "settings": {"Gain": 50, "VOL": 75, "Bass": 55, "Middle": 52, "Treble": 56}},
+  "modules": {
+    "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 15}},
+    "PRE": {"model": null},
+    "DST": {"model": null},
+    "AMP": {"model": null},
+    "CAB": {"model": null},
+    "EQ": {"model": "Bass EQ 2", "always_on": true, "settings": {"50Hz": 1, "120Hz": 2, "400Hz": -1, "800Hz": 1, "4.5kHz": 2, "VOL": 52}},
+    "MOD": {"model": null},
+    "DLY": {"model": null},
+    "RVB": {"model": "Room", "always_on": true, "settings": {"Mix": 6, "Decay": 20, "Trail": true}}
+  }
+}
