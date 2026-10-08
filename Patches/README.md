@@ -4,6 +4,8 @@ One row per patch in this directory. Built by hand from each `<Name>.json` / `<N
 
 Patches are split first by Instrument Type (`Patches/Guitar/`, `Patches/Bass/`), then by Type (`Song/`, `Artist/`, `Album/`, `Style/`) — the same two fields `gp5_prompt.md` asks for up front when building a patch. A patch's four files (`.json`, `.prst`, `.md`, `.pdf`) live together in that `<Guitar|Bass>/<Type>/` folder. A Type subfolder only exists once a patch needs it.
 
+`Bass-prst.zip` bundles every bass `.prst` (130 files, flat, no subfolders) for loading in one go. It's a snapshot from 2026-10-08 and doesn't update itself: rebuild it after adding or changing bass patches.
+
 ## Guitar/
 
 ### Song/
