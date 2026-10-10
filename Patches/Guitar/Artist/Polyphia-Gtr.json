@@ -1,0 +1,17 @@
+{
+  "patch_name": "Polyphia-Gtr",
+  "patch_vol": 50,
+  "bpm": 120,
+  "ir": {"name": "V30112 (User IR 10)"},
+  "modules": {
+    "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 32}},
+    "PRE": {"model": "COMP4", "always_on": true, "settings": {"Sustain": 58, "Attack": 40, "Clip": 45, "VOL": 55}},
+    "DST": {"model": "La Charger", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Gain": 72, "Tone": 58, "VOL": 62}},
+    "AMP": {"model": "L-Star CL", "always_on": true, "settings": {"Gain": 38, "PRES": 60, "VOL": 60, "Bass": 45, "Middle": 50, "Treble": 62}},
+    "CAB": {"model": "User IR 10", "always_on": true, "settings": {"VOL": 60}},
+    "EQ": {"model": "Guitar EQ 2", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"100Hz": -4, "500Hz": -2, "1kHz": 3, "3kHz": 1, "6kHz": -4, "VOL": 52}},
+    "MOD": {"model": "A-Chorus", "ctl": true, "ctl_off_state": "on", "ctl_on_state": "off", "settings": {"Depth": 22, "Rate": 0.8, "Tone": 60}},
+    "DLY": {"model": "Pure", "always_on": true, "settings": {"Mix": 18, "Time": 375, "F.Back": 25, "Trail": true}},
+    "RVB": {"model": "Plate", "always_on": true, "settings": {"Mix": 20, "Decay": 40, "Damp": 45, "Trail": true}}
+  }
+}
