@@ -1,0 +1,17 @@
+{
+  "patch_name": "ChalkOut-Ren",
+  "patch_vol": 50,
+  "bpm": 123,
+  "nam": {"name": "Fen65DlxKl (slot 78): Fender '65 Deluxe Reverb (Volume 5, Tone 6, Bass 4) boosted by a Klon Centaur (Gain 10), full rig capture", "slot": 78, "settings": {"Gain": 45, "VOL": 70, "Bass": 50, "Middle": 52, "Treble": 55}},
+  "modules": {
+    "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 18}},
+    "PRE": {"model": null},
+    "DST": {"model": "Green OD", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Gain": 40, "Tone": 55, "VOL": 62}},
+    "AMP": {"model": null},
+    "CAB": {"model": null},
+    "EQ": {"model": "Guitar EQ 2", "always_on": true, "settings": {"100Hz": -1, "500Hz": 0, "1kHz": 1, "3kHz": 1, "6kHz": -1, "VOL": 50}},
+    "MOD": {"model": null},
+    "DLY": {"model": "Analog", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Mix": 16, "Time": 366, "Feedback": 22, "Trail": true}},
+    "RVB": {"model": "Plate", "always_on": true, "settings": {"Mix": 14, "Decay": 30, "Damp": 50, "Trail": true}}
+  }
+}

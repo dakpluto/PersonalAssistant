@@ -12,6 +12,7 @@ Patches are split first by Instrument Type (`Patches/Guitar/`, `Patches/Bass/`),
 |---|---|---|---|---|---|
 | `BeatIt-MJ` | Beat It — Michael Jackson (~139 BPM, est.; Eb minor) | Strat | Yes | SnapTone: CrankedDeluxe (slot 79) | Lukather's toned-down Deluxe crunch riff; CTL on PRE Boost (Echoplex preamp) + DST Super OD + DLY Sweet Echo: riff vs. EVH solo. Board all bypassed |
 | `Cassie-Flyleaf` | Cassie — Flyleaf (original studio version) | Strat | Yes | IR: American Twin 2x12 Medium Mix | CTL on DST + DLY (inverted): clean ambient verse vs. heavy chorus wall |
+| `ChalkOutlines-Ren` | Chalk Outlines — Ren & Chinchilla (123 BPM, measured; C#m, capo 4) | Strat | Yes | SnapTone: Fen65DlxKl (slot 78) | Edge-of-breakup verse; CTL on DST Green OD + DLY Analog for choruses; KoK Left stacked for the bridge. Song map from mp3 analysis |
 | `CivilWar-GNR` | Civil War — Guns N' Roses (~70 BPM, est.; Eb standard) | Strat | Yes | SnapTone: JCM800Clean (slot 80) | Boosted JCM800 rhythm (intro via guitar volume); CTL on DST Green OD + DLY Analog: crunch riff vs. Slash solo. KoK Left for the outro, Narcissus for the intro |
 | `ClickClickBoom-Sal` | Click Click Boom — Saliva (100 BPM) | Strat | Yes | SnapTone: ModernRect (slot 76) | CTL on DST + DLY + RVB: tight verse riff vs. boosted/wet solo lead |
 | `Creep-RH` | Creep — Radiohead | Strat | Yes | AMP: Foxy 30N + CAB: Foxy 2x12 | Clean/dirty split, CTL on PRE boost + DST |
