@@ -1,0 +1,16 @@
+{
+  "patch_name": "ThisIsHlwn",
+  "patch_vol": 55,
+  "nam": {"name": "FullB15 (slot 54): Ampeg B18 - Head DI - Bass Chan - Vol 5 (B-18N) + Apg115410 (User IR 2)", "slot": 54, "settings": {"Gain": 52, "VOL": 80, "Bass": 58, "Middle": 55, "Treble": 42}},
+  "modules": {
+    "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 15}},
+    "PRE": {"model": null},
+    "DST": {"model": null},
+    "AMP": {"model": null},
+    "CAB": {"model": null},
+    "EQ": {"model": "Bass EQ 2", "always_on": true, "settings": {"50Hz": 1, "120Hz": 2, "400Hz": 1, "800Hz": -1, "4.5kHz": -2, "VOL": 50}},
+    "MOD": {"model": null},
+    "DLY": {"model": null},
+    "RVB": {"model": "Hall", "always_on": true, "settings": {"Mix": 10, "Decay": 30, "Trail": true}}
+  }
+}

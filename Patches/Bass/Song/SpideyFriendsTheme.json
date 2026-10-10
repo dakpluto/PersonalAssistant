@@ -1,0 +1,17 @@
+{
+  "patch_name": "SpideyFrnd",
+  "patch_vol": 55,
+  "bpm": 150,
+  "nam": {"name": "BrightSVT (slot 55): SVT SANS BRIGHT DRIVE (SVT-CL) + Hartke410 (User IR 6)", "slot": 55, "settings": {"Gain": 45, "VOL": 60, "Bass": 56, "Middle": 52, "Treble": 55}},
+  "modules": {
+    "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 18}},
+    "PRE": {"model": null},
+    "DST": {"model": null},
+    "AMP": {"model": null},
+    "CAB": {"model": null},
+    "EQ": {"model": "Bass EQ 2", "always_on": true, "settings": {"50Hz": 0, "120Hz": 2, "400Hz": -2, "800Hz": 1, "4.5kHz": 2, "VOL": 50}},
+    "MOD": {"model": null},
+    "DLY": {"model": null},
+    "RVB": {"model": "Room", "always_on": true, "settings": {"Mix": 5, "Decay": 18, "Trail": true}}
+  }
+}
