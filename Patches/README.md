@@ -72,6 +72,7 @@ Patches are split first by Instrument Type (`Patches/Guitar/`, `Patches/Bass/`),
 
 | File | Song / Reference | Instrument | Full Board | AMP/CAB substitute | Notes |
 |---|---|---|---|---|---|
+| `Syndicate-TheMidnight` | *Syndicate* — The Midnight (2025, synthwave, whole-album build) | Strat | Yes | SnapTone: MayerDumble (slot 66) | Glassy chorused Dumble clean; CTL on PRE Boost + DST Darktale + DLY Pure: 80s rhythm vs. singing lead. KoK Right stacked for the big solos |
 | `Lion-EW` | *Lion* — Elevation Worship (CCM / modern worship, whole-album build) | Strat | Yes | AMP: Foxy 30TB + IR: V30112, Slot 10 | Ambient AC30 wash; CTL on PRE Boost + DST (Green OD): verse vs. anthem |
 
 ### Artist/
