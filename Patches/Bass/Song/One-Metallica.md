@@ -4,7 +4,10 @@ Bass: Harley Benton P/J, 5-string, passive. Full board.
 From *...And Justice for All* (1988). Base tempo ~85 BPM for the intro/verses; the outro "machine gun" section roughly doubles that feel.
 This is one of the most dynamically extreme songs in the catalog to patch for — a quiet, clean-toned intro and verses (that famous ambient/clean-arpeggio build) giving way to the all-out thrash assault of the tremolo-picked "machine gun" riff and solo section. One widely-documented bit of trivia worth knowing going in: Jason Newsted's bass on this album was mixed extremely low, a point of long-running dispute in the band. Doesn't change how to build the patch, but it's why "One" isn't a song people typically think of as a bass showcase the way "Hysteria" or "Cliffs of Dover" are.
 
-CTL off = the clean intro/verse. CTL on = the heavy machine-gun outro.
+Three sounds (updated 2026-10-12 to use a board stomp):
+- Clean intro and verses: CTL off, Tidal Wave drive off.
+- Distorted choruses: CTL off, Tidal Wave drive on.
+- Heavy back half ("Darkness imprisoning me", machine-gun riff, solos, outro): CTL on, Tidal Wave drive off.
 
 ## GP-5 settings
 
@@ -52,11 +55,24 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 - CTL off: engaged (verse/intro). CTL on: bypassed (outro).
 - Inverted on purpose — the clean intro and verses have some natural ambience to them, so a touch of room fits there. The machine-gun outro needs to stay completely tight and dry, right in the pocket with the drums, so the reverb drops out the instant CTL engages.
 
-## CTL summary
+## Sounds and switching
 
-- **CTL Off — Intro/verse.** Clean-to-edge amp tone, a touch of room ambience, no distortion. Matches the song's restrained opening build.
-- **CTL On — Machine-gun outro.** SM Dist and Micro Boost engage, Room drops out — tight, dry, and aggressive for the tremolo-picked assault and solo section.
-- Engage CTL right as the song breaks into the fast outro riff; there's no need to toggle back since the song stays heavy from there to the end.
+On CTL: PRE (Micro Boost), DST (SM Dist), RVB (Room, inverted). Board stomp: Joyo Tidal Wave drive.
+
+- **Sound 1 — Clean intro/verse.** CTL off, Tidal Wave drive off. Clean-to-edge pushed SVT, a touch of room. The restrained opening build.
+- **Sound 2 — Chorus.** CTL off, Tidal Wave drive **on**. Mid-gain grit from the Tidal Wave's blended drive. Heavier than the verse, nowhere near the back half.
+- **Sound 3 — Heavy back half.** CTL **on**, Tidal Wave drive off. SM Dist + Micro Boost, Room drops out. Tight, dry and aggressive for the machine-gun riff and solos.
+
+Section map:
+- Intro and verse 1: sound 1.
+- Chorus 1 ("Hold my breath as I wish for death..."): stomp Tidal Wave drive on. Sound 2.
+- Verse 2: stomp it off. Sound 1.
+- Chorus 2: Tidal Wave drive on. Sound 2.
+- "Darkness imprisoning me" to the end: CTL on and Tidal Wave drive off in the same move. Sound 3. No need to switch back, since the song stays heavy from there.
+
+Why the Tidal Wave drive comes off for sound 3: stacked into the DS-1, its drive turns the fast tremolo picking to mush. The SM Dist alone keeps it articulate.
+
+Before this update, the choruses fell into the clean CTL-off sound. On the record they're distorted.
 
 ## Full pedalboard (signal chain order)
 
@@ -73,7 +89,7 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 **3. Donner Stylish Fuzz — Bypassed**
 - Footswitch off. A fuzz's looser, wall-of-noise character works against a riff that needs to stay tight and articulate at high speed — the GP-5's own SM Dist is the better tool here.
 
-**4. Joyo Tidal Wave — Engaged**
+**4. Joyo Tidal Wave — Engaged (preamp/EQ) all song. Drive footswitch on for the choruses only**
 - Drive: 30
 - Blend: 55
 - Presence: 60
@@ -86,6 +102,8 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 - Cab-Sim (DI out): Off
 - Ground Lift: Off
 - Adds body and presence feeding into the amp. Bass-Shift at 80Hz keeps things tight — critical for the machine-gun section to stay defined instead of turning to mud at speed.
+- The footswitch toggles only the drive section. The preamp and EQ stay active all song.
+- Drive footswitch on for the two choruses (sound 2). Drive 30 with Blend 55 is a mid-gain grit that keeps half the clean fundamental. Off for the verses and for the heavy back half (see "Sounds and switching").
 
 **5. Joyo Narcissus — Bypassed**
 - Footswitch off. No chorus — matches the MOD-off call on the GP-5. Direct, dry metal tone throughout.
