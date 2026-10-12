@@ -10,7 +10,7 @@
     "AMP": {"model": null},
     "CAB": {"model": null},
     "EQ": {"model": "Bass EQ 2", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"50Hz": 4, "120Hz": 1, "400Hz": -5, "800Hz": -1, "4.5kHz": 5, "VOL": 58}},
-    "MOD": {"model": null},
+    "MOD": {"model": "B-Chorus", "midi": true, "start_state": "off", "settings": {"Depth": 30, "Rate": 0.7, "VOL": 50}},
     "DLY": {"model": null},
     "RVB": {"model": null}
   }

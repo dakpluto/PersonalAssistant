@@ -39,7 +39,10 @@ Attack at 45 lets the initial transient through first, so notes still pop.
 This is the slap scoop. Deep lows for the thumb, a 400Hz cut to remove the boxiness, and 4.5kHz up for the pop and string zing.
 VOL 58 makes up for the level lost to the scoop, so the slap sound doesn't drop in the mix.
 
-**MOD — off.** Verdine's tone is dry and direct.
+**MOD — B-Chorus, MIDI-only, loads bypassed.**
+- Depth: 30, Rate: 0.7Hz, VOL: 50
+- Off by default: Verdine's groove tone is dry and direct.
+- On MIDI for the ballads ("After the Love Has Gone" territory). Light, slow chorus for the smooth late-70s ballad bass sheen. Light touch, per the MOD rule.
 
 **DLY — off.**
 
@@ -53,3 +56,14 @@ One module on CTL: EQ (Bass EQ 2).
 - **CTL on**: slap/pop feature. The scooped EQ gives a Louis Johnson thumb-and-pop tone for breakdowns and bass features.
 
 Stomp it when you switch from fingers to thumb. Stomp it off when you go back to the pocket.
+
+## MIDI toggles
+
+MIDI = True (added 2026-10-12). With no MIDI controller connected, the patch loads and plays exactly as before: CTL and the board work the same. MIDI adds single-block toggles on top.
+
+On MIDI: MOD (B-Chorus), MIDI-only, loads bypassed.
+
+Sounds:
+- **Pocket** (default). CTL off. Fingerstyle Verdine White groove.
+- **Ballad.** CTL off, MIDI MOD on. Light chorus for the smooth ballads.
+- **Slap feature** (CTL on). Scooped EQ for thumb-and-pop sections.

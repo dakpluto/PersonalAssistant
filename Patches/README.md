@@ -74,14 +74,14 @@ The Joyo American Sound joined both Full Boards on 2026-10-12, after the King of
 
 | File | Song / Reference | Instrument | Full Board | AMP/CAB substitute | Notes |
 |---|---|---|---|---|---|
-| `Syndicate-TheMidnight` | *Syndicate* — The Midnight (2025, synthwave, whole-album build) | Strat | Yes | SnapTone: MayerDumble (slot 66) | Glassy chorused Dumble clean; CTL on PRE Boost + DST Darktale + DLY Pure: 80s rhythm vs. singing lead. KoK Right stacked for the big solos |
-| `Lion-EW` | *Lion* — Elevation Worship (CCM / modern worship, whole-album build) | Strat | Yes | AMP: Foxy 30TB + IR: V30112, Slot 10 | Ambient AC30 wash; CTL on PRE Boost + DST (Green OD): verse vs. anthem |
+| `Syndicate-TheMidnight` | *Syndicate* — The Midnight (2025, synthwave, whole-album build) | Strat | Yes | SnapTone: MayerDumble (slot 66) | Glassy chorused Dumble clean; CTL on PRE Boost + DST Darktale + DLY Pure: 80s rhythm vs. singing lead. KoK Right stacked for the big solos. MIDI: PRE/DST/MOD/DLY (6 sounds) |
+| `Lion-EW` | *Lion* — Elevation Worship (CCM / modern worship, whole-album build) | Strat | Yes | AMP: Foxy 30TB + IR: V30112, Slot 10 | Ambient AC30 wash; CTL on PRE Boost + DST (Green OD): verse vs. anthem. MIDI: PRE/DST/MOD/DLY (5 sounds) |
 
 ### Artist/
 
 | File | Song / Reference | Instrument | Full Board | AMP/CAB substitute | Notes |
 |---|---|---|---|---|---|
-| `Polyphia-Gtr` | Tim Henson / Polyphia signature sound | Strat | No (GP-5 only) | AMP: L-Star CL + IR: V30112, Slot 10 | Compressed glassy clean (COMP4, light chorus, Pure delay, plate); CTL on DST (La Charger) + EQ, chorus off: clean vs. tight drive |
+| `Polyphia-Gtr` | Tim Henson / Polyphia signature sound | Strat | No (GP-5 only) | AMP: L-Star CL + IR: V30112, Slot 10 | Compressed glassy clean (COMP4, light chorus, Pure delay, plate); CTL on DST (La Charger) + EQ, chorus off: clean vs. tight drive. MIDI: MOD/DLY |
 
 ## Bass/
 
@@ -230,14 +230,14 @@ Set of 4 for a second worship set (2026-10-05). Board knobs are fixed across all
 
 | File | Song / Reference | Instrument | Full Board | AMP/CAB substitute | Notes |
 |---|---|---|---|---|---|
-| `Egan-Fretless` | Mark Egan signature style | Sire fretless | Yes | SnapTone: AvalonAD2022 (slot 52) | Chorus + always-on delay for fretless glide |
-| `Yes-Squire` | Chris Squire signature style (Yes) | P/J | Yes | SnapTone: BrightSVT (slot 55) | CTL on PRE boost + DST (inverted: on by default, CTL kills them) |
-| `SNTR-Bass` | Sixpence None the Richer signature style | P/J | Yes | SnapTone: CleanSVT (slot 53) | CTL on MOD (B-Chorus) + RVB: dry pop-bounce vs. chorus/reverb dream-pop |
-| `Polyphia-Bass` | Tim Henson / Polyphia signature sound (Clay Gober's bass) | P/J | Yes | SnapTone: AvalonAD2022 (slot 52) | Hi-fi DI slap tone; no CTL, Tidal Wave drive (Blend 40) stomped for heavy sections, Flamma -OCT for 808-style parts |
+| `Egan-Fretless` | Mark Egan signature style | Sire fretless | Yes | SnapTone: AvalonAD2022 (slot 52) | Chorus + always-on delay for fretless glide. MIDI: DLY (dry session option) |
+| `Yes-Squire` | Chris Squire signature style (Yes) | P/J | Yes | SnapTone: BrightSVT (slot 55) | CTL on PRE boost + DST (inverted: on by default, CTL kills them). MIDI: DST (B-Boost-only "clank") |
+| `SNTR-Bass` | Sixpence None the Richer signature style | P/J | Yes | SnapTone: CleanSVT (slot 53) | CTL on MOD (B-Chorus) + RVB: dry pop-bounce vs. chorus/reverb dream-pop. MIDI: MOD (chorus without the reverb) |
+| `Polyphia-Bass` | Tim Henson / Polyphia signature sound (Clay Gober's bass) | P/J | Yes | SnapTone: AvalonAD2022 (slot 52) | Hi-fi DI slap tone; no CTL, Tidal Wave drive (Blend 40) stomped for heavy sections, Flamma -OCT for 808-style parts. MIDI: PRE COMP4 for slap (loads off) |
 
 ### Style/
 
 | File | Song / Reference | Instrument | Full Board | AMP/CAB substitute | Notes |
 |---|---|---|---|---|---|
-| `RammGrind` | Industrial metal (Rammstein — Ollie Riedel) | P/J | Yes | SnapTone: BrightSVT (slot 55) | Fuzz + Tidal Wave feed the Bass OD/amp stage; CTL on PRE Micro Boost: base grind vs. pushed chorus/breakdown |
-| `EWF-Funk` | Earth, Wind & Fire funk (Verdine White; Louis Johnson, Rocco Prestia) | P/J | No (GP-5 only) | SnapTone: AvalonAD2022 (slot 52) | Bright compressed fingerstyle (COMP4); CTL on EQ (Bass EQ 2 slap scoop): pocket vs. thumb/pop |
+| `RammGrind` | Industrial metal (Rammstein — Ollie Riedel) | P/J | Yes | SnapTone: BrightSVT (slot 55) | Fuzz + Tidal Wave feed the Bass OD/amp stage; CTL on PRE Micro Boost: base grind vs. pushed chorus/breakdown. MIDI: DST (lean grind) |
+| `EWF-Funk` | Earth, Wind & Fire funk (Verdine White; Louis Johnson, Rocco Prestia) | P/J | No (GP-5 only) | SnapTone: AvalonAD2022 (slot 52) | Bright compressed fingerstyle (COMP4); CTL on EQ (Bass EQ 2 slap scoop): pocket vs. thumb/pop. MIDI: MOD B-Chorus for ballads (loads off) |

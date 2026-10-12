@@ -31,7 +31,7 @@ Module order is fixed: NR, PRE, DST, AMP, CAB, EQ, MOD, DLY, RVB.
 - CTL off: leaner grind — DST alone drives the tone. Covers verses and groove sections.
 - CTL on: extra clean gain shoved into the DST stage for choruses, breakdowns, and big unison hits — thickens and compresses the distortion without changing its color.
 
-### DST — Bass OD
+### DST — Bass OD (loads on; MIDI toggle, see MIDI toggles)
 - Gain: 78
 - Blend: 70
 - VOL: 60
@@ -64,6 +64,18 @@ Module order is fixed: NR, PRE, DST, AMP, CAB, EQ, MOD, DLY, RVB.
 ### MOD / DLY / RVB — Off
 - No modulation, no delay, no reverb.
 - This style is dry and direct by design — a chorus or delay would soften the attack and blur the tightness the whole patch is built around. Unchanged from the original build.
+
+## MIDI toggles
+
+MIDI = True (added 2026-10-12). With no MIDI controller connected, the patch loads and plays exactly as before: CTL and the board work the same. MIDI adds single-block toggles on top.
+
+On MIDI: DST (Bass OD), MIDI-only, loads on.
+
+Sounds:
+- **Base grind** (default). CTL off.
+- **Lean grind.** MIDI DST off. The Stylish Fuzz and Tidal Wave keep grinding, but without the Bass OD layer. A lower level of push for quieter verses. Rammstein rarely goes clean, so this stays gritty, just less dense.
+- **Pushed** (CTL on). Micro Boost into the Bass OD for choruses and breakdowns.
+- Don't combine Lean grind with CTL on: the Micro Boost then has no Bass OD to push.
 
 ## Full pedalboard (signal chain order)
 

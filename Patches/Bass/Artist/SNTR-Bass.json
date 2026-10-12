@@ -10,7 +10,7 @@
     "AMP": {"model": null},
     "CAB": {"model": null},
     "EQ": {"model": "Bass EQ 2", "always_on": true, "settings": {"50Hz": 2, "120Hz": 4, "400Hz": -3, "800Hz": 2, "4.5kHz": 3, "VOL": 55}},
-    "MOD": {"model": "B-Chorus", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Depth": 40, "Rate": 2.5, "VOL": 55}},
+    "MOD": {"model": "B-Chorus", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Depth": 40, "Rate": 2.5, "VOL": 55}, "midi": true},
     "DLY": {"model": null},
     "RVB": {"model": "Air", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Mix": 35, "Decay": 45, "Damp": 40, "Trail": true}}
   }

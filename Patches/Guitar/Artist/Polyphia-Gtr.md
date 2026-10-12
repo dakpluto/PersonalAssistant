@@ -57,7 +57,7 @@ Depth: 22, Rate: 0.8, Tone: 60.
 The shimmer on the clean. Light hand per the patch rules: it sits under the tone.
 CTL kills it for the drive. Chorus on fast distorted lines just smears them.
 
-**DLY — Pure**, always on.
+**DLY — Pure**, loads on. MIDI toggle (see MIDI toggles).
 Mix: 18, Time: 375ms, F.Back: 25, Trail: on.
 Clean digital repeats, no tape or analog darkening. That fits the produced sound.
 375ms is a dotted eighth at 120 BPM. This is an artist patch, not one song, so set Time to taste per tune (dotted eighth = 45000 / BPM).
@@ -75,3 +75,17 @@ On CTL: DST (La Charger), EQ (Guitar EQ 2), MOD (A-Chorus, inverted).
 - **CTL on** — The drive. La Charger into the Lone Star, low end and fizz trimmed by the EQ, chorus off, delay and plate still there. Riffs, heavier sections, leads.
 
 Stomp CTL when the tune goes heavy. Switch to the bridge humbucker at the same time.
+
+## MIDI toggles
+
+MIDI = True (added 2026-10-12). With no MIDI controller connected, the patch loads and plays exactly as before: CTL and the board work the same. MIDI adds single-block toggles on top.
+
+On MIDI: MOD (A-Chorus, also on CTL, inverted) and DLY (Pure, MIDI-only, loads on).
+
+Sounds:
+- **Clean** (default). CTL off: chorus on, delay on.
+- **Dry percussive clean.** CTL off, MIDI DLY off. Tight slapped/tapped percussive parts where delay repeats blur the rhythm.
+- **Dry clean.** CTL off, MIDI MOD off. Straight hi-fi clean, no chorus, for the most pristine passages.
+- **Lead** (CTL on). Drive + EQ, chorus off.
+- **Wide lead.** CTL on, MIDI MOD on. Chorus back under the lead for melodic, singing lines.
+- **Dry lead.** CTL on, MIDI DLY off. Fast runs with no delay.

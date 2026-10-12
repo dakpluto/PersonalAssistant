@@ -43,11 +43,11 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB
 
 **MOD — A-Chorus** (Arion SCH-1)
 - Depth: 55, Rate: 0.6Hz, Tone: 60
-- Always on, both CTL states. Heavier than this workflow's usual light-touch MOD default — deliberately, because a drenched, obvious chorus shimmer is the whole point of this style, not an accident. This is doing a lot of the "ambient wall" work by itself.
+- Loads on, both CTL states. MIDI toggle: loads on, can be switched off (see MIDI toggles). Heavier than this workflow's usual light-touch MOD default — deliberately, because a drenched, obvious chorus shimmer is the whole point of this style, not an accident. This is doing a lot of the "ambient wall" work by itself.
 
 **DLY — Tape**
 - Mix: 35, Time: 450ms, F.Back: 35, Trail: On
-- Always on, both CTL states. Long, warm, saturated repeats — this genre's guitar sound is inseparable from delay. Same delay under both the quiet rhythm parts and the big lead swells, which is exactly how these records are built.
+- Loads on, both CTL states. MIDI toggle: loads on, can be switched off (see MIDI toggles). Long, warm, saturated repeats — this genre's guitar sound is inseparable from delay. Same delay under both the quiet rhythm parts and the big lead swells, which is exactly how these records are built.
 
 **RVB — Sweet Space**
 - Mix: 40, Decay: 70, Damp: 40, Mod: 35, Trail: On
@@ -56,6 +56,19 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB
 ### CTL Summary (GP-5)
 - **CTL Off — Rhythm (verses, ambient sections):** Clean, chimey AC30 tone, no PRE boost, no drive. The wash (chorus/delay/reverb) carries the sound. This is the main texture of the patch.
 - **CTL On — Lead (choruses, anthem sections):** Boost + Green OD both kick in on top of the same amp/cab/wash, pushing into a bigger, saturated, sustained tone — same ambient character, just louder and driven. Pair with the King of Kings right channel for the full swell.
+
+## MIDI toggles
+
+MIDI = True (added 2026-10-12). With no MIDI controller connected, the patch loads and plays exactly as before: CTL and the board work the same. MIDI adds single-block toggles on top.
+
+On MIDI: PRE (Boost), DST (Green OD), MOD (A-Chorus), DLY (Tape). PRE and DST are also on CTL. MOD and DLY are MIDI-only and load on.
+
+Sounds:
+- **Clean wash** (default). CTL off, all MIDI blocks as loaded. Verses and ambient sections.
+- **Driven rhythm.** CTL off, MIDI DST on. The Green OD alone, no boost: mid-gain strummed rhythm for second verses and builds, before the anthem.
+- **Dry tight strum.** CTL off, MIDI DLY off, MIDI MOD off. Rhythmic strumming and up-tempo songs where the wash smears the groove.
+- **Anthem lead** (CTL on). Boost + Green OD over the full wash. Choruses and anthem sections.
+- **Soft lead.** CTL on, MIDI PRE off. The Green OD without the boost: a quieter, smoother lead for bridges and intimate melody lines.
 
 ## Full Pedalboard (signal chain order)
 

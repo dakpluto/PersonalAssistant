@@ -56,6 +56,17 @@ Not used, on either CTL state. Keeping the bass dry and upfront — any room/hal
 - **CTL Off — Driven Squire growl (main tone):** B-Boost + Bass OD both engaged, no chorus. This is the tone for verses, riffs, and anything with real drive and attack — the core Yes bass sound.
 - **CTL On — Clean/arpeggiated:** Both gain stages bypassed, light chorus engaged. Use for intros, builds, and open sections where the part needs to breathe and shimmer instead of push.
 
+## MIDI toggles
+
+MIDI = True (added 2026-10-12). With no MIDI controller connected, the patch loads and plays exactly as before: CTL and the board work the same. MIDI adds single-block toggles on top.
+
+On MIDI: DST (Bass OD), also on CTL (inverted: on at load).
+
+Sounds:
+- **Squire growl** (default). CTL off: B-Boost + Bass OD.
+- **Clank.** CTL off, MIDI DST off. The B-Boost alone: the clanky, trebly Rickenbacker preamp edge without the full drive. A middle ground for brighter, busier passages that need bite but not grind.
+- **Clean/arpeggiated** (CTL on). Both gain stages off, light chorus.
+
 ## Full Pedalboard (signal chain order)
 
 **1. Flamma FS-08 Octave — Bypassed, whole patch.**

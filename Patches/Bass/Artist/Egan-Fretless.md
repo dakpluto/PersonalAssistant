@@ -44,7 +44,7 @@ This is the deliberate exception to the usual light-touch MOD rule — Egan is a
 - **CTL Off:** Narcissus only. Grounded, present tone — for rhythmic/supporting lines, or any passage where you want the note fundamental clearly audible.
 - **CTL On:** Narcissus + B-Chorus stacked. Full drenched, wide swirl — the "floating on top of the mix" Egan lead voice, for melodic statements and solos.
 
-**DLY — Analog** (always on)
+**DLY — Analog** (loads on; MIDI toggle, see MIDI toggles)
 Mix: 18, Time: 450ms, Feedback: 12, Trail: On.
 Low in the mix on purpose — this isn't a rhythmic delay, it's there to thicken the tail of the chorus and reverb into one continuous wash, the way Egan's tone always sounds like it's decaying into a room rather than stopping dead. Trail on so the tail doesn't get cut off if you kill the patch mid-note.
 
@@ -56,6 +56,16 @@ Hall over Plate/Room for the bigger, more spacious ECM-label ambiance that's all
 
 - **CTL Off:** Supporting/rhythm voice. Compressed, bright, chorused (Narcissus only), spacious — but the fundamental stays clear enough to sit under a band.
 - **CTL On:** Lead/solo voice. Adds the GP-5's own B-Chorus on top of the Narcissus for the full drenched, singing wash Egan uses when the bass steps forward melodically.
+
+## MIDI toggles
+
+MIDI = True (added 2026-10-12). With no MIDI controller connected, the patch loads and plays exactly as before: CTL and the board work the same. MIDI adds single-block toggles on top.
+
+On MIDI: DLY (Analog), MIDI-only, loads on.
+
+Sounds:
+- **Signature glide** (default). Delay on, chorus per CTL.
+- **Dry session.** MIDI DLY off. Busy, tight grooves and R&B/pop sessions where the delay tail clutters the pocket. Still chorus-capable from CTL.
 
 ## Full pedalboard (signal chain order)
 

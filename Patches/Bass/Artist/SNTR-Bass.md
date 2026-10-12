@@ -58,6 +58,17 @@ Two modules on CTL: MOD (B-Chorus) and RVB (Air) — both flip together, both fu
 - **CTL off** — dry, tight, punchy pop bass. Use for verses, up-tempo bounce, anything in the "Kiss Me" family.
 - **CTL on** — chorus + reverb engaged, opens into a warmer, washier dream-pop tone. Use for "There She Goes," "Breathe Your Name," choruses/bridges that want to bloom.
 
+## MIDI toggles
+
+MIDI = True (added 2026-10-12). With no MIDI controller connected, the patch loads and plays exactly as before: CTL and the board work the same. MIDI adds single-block toggles on top.
+
+On MIDI: MOD (B-Chorus), also on CTL.
+
+Sounds:
+- **Dry pop bounce** (default). CTL off.
+- **Chorus only.** CTL off, MIDI MOD on. Chorus width without the big Air reverb: for the brighter pop songs that want shimmer but not the full dream-pop wash.
+- **Dream-pop** (CTL on). Chorus + Air reverb.
+
 ## Full pedalboard (bass chain order)
 
 Flamma FS-08 Octave → Donner Ultimate Comp → Donner Stylish Fuzz → Joyo Tidal Wave → Joyo Narcissus → Valeton GP-5

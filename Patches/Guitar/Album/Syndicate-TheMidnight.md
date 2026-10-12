@@ -51,7 +51,7 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 - -2 at 100Hz and -1 at 500Hz: lean and glassy, the 80s production curve. It leaves room for the synths.
 - +2 at 3kHz: pick definition on the chops, and cut for the lead.
 
-**MOD — A-Chorus (Arion SCH-1)**, always on.
+**MOD — A-Chorus (Arion SCH-1)**, loads on. MIDI toggle (see MIDI toggles).
 - Depth: 45, Rate: 0.8Hz, Tone: 60
 - Chorus is a core part of The Midnight's sound, so it runs heavier than the usual light-touch default. That's the exception the patch rules allow for songs known for an obvious chorus.
 - It's on the GP-5, after the drive, not on the board's Narcissus before it. Chorus after distortion is the 80s rack placement. It keeps the lead wide and smooth instead of warbly.
@@ -75,6 +75,21 @@ On CTL: PRE (Boost), DST (Darktale), DLY (Pure).
 - **CTL off — Rhythm.** Glassy, chorused Dumble clean in a big hall. Position 2 (bridge+middle) or position 4 (neck+middle) for the quacky 80s funk chops. Position 3 (middle) for arpeggios. This is the resting state the patch loads into.
 - **CTL on — Lead.** Boosted RAT, chorus, and long digital delay. Bridge humbucker.
 - Engage CTL for solos and sax-trade lead lines. Drop back for verses and choruses.
+
+## MIDI toggles
+
+MIDI = True (added 2026-10-12). With no MIDI controller connected, the patch loads and plays exactly as before: CTL and the board work the same. MIDI adds single-block toggles on top.
+
+On MIDI: PRE (Boost), DST (Darktale), DLY (Pure) — all also on CTL — and MOD (A-Chorus), MIDI-only, loads on.
+
+Sounds:
+- **Clean rhythm** (default). CTL off. Glassy chorused Dumble.
+- **Clean echo.** CTL off, MIDI DLY on. Arpeggios and ringing clean melodies with the dotted-eighth repeats, a staple of the band's sound.
+- **Crunch rhythm.** CTL off, MIDI DST on. The RAT alone, without the boost: 80s rock rhythm for the album's heavier tracks.
+- **Dry funk chops.** CTL off, MIDI MOD off. Tight muted chops without the chorus wobble.
+- **Lead** (CTL on). Boost + RAT + delay, with chorus.
+- **Dry fast lead.** CTL on, MIDI DLY off. Fast runs and the Vai-style flurries without delay smear.
+- The King of Kings Right channel stomp from the board section still stacks on any lead state for the showcase solos.
 
 ## Full pedalboard (signal chain order)
 

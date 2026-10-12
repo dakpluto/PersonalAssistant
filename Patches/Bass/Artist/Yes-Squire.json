@@ -6,7 +6,7 @@
   "modules": {
     "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 25}},
     "PRE": {"model": "B-Boost", "ctl": true, "ctl_off_state": "on", "ctl_on_state": "off", "settings": {"Gain": 60, "VOL": 55, "Bass": 55, "Treble": 65}},
-    "DST": {"model": "Bass OD", "ctl": true, "ctl_off_state": "on", "ctl_on_state": "off", "settings": {"Gain": 65, "Blend": 60, "VOL": 60, "Bass": 55, "Treble": 70}},
+    "DST": {"model": "Bass OD", "ctl": true, "ctl_off_state": "on", "ctl_on_state": "off", "settings": {"Gain": 65, "Blend": 60, "VOL": 60, "Bass": 55, "Treble": 70}, "midi": true},
     "AMP": {"model": null},
     "CAB": {"model": null},
     "EQ": {"model": "Bass EQ 1", "always_on": true, "settings": {"33Hz": 8, "150Hz": -5, "600Hz": 8, "2kHz": 12, "8kHz": 15, "VOL": 50}},

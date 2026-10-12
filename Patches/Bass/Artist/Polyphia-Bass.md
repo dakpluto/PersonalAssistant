@@ -25,8 +25,10 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 THRE: 18.
 Polyphia riffs have hard stops. A light gate keeps the rests clean when the Tidal Wave drive is on, without choking ghost notes.
 
-**PRE — Off.**
-The Donner Ultimate Comp does the compression on the board.
+**PRE — COMP4 (Keeley C4), MIDI-only, loads bypassed.**
+- Sustain: 55, Attack: 35, Clip: 40, VOL: 55
+- Off by default: the Donner Ultimate Comp does the compression on the board.
+- On MIDI for slap sections. A second, faster compressor evens out thumb hits against pops, the same two-comp slap trick as the Hair (Graham Central Station) patch.
 
 **DST — Off.**
 Drive comes from the Tidal Wave. Bass OD is too harsh.
@@ -62,6 +64,17 @@ Barely there. Modern produced bass is close to dry, and this just keeps the DI f
 
 - No CTL assignment. Allowed on bass.
 - The clean-vs-heavy switch is the Tidal Wave drive footswitch. See below.
+
+## MIDI toggles
+
+MIDI = True (added 2026-10-12). With no MIDI controller connected, the patch loads and plays exactly as before: CTL and the board work the same. MIDI adds single-block toggles on top.
+
+On MIDI: PRE (COMP4), MIDI-only, loads bypassed.
+
+Sounds:
+- **Base tone** (default). Hi-fi DI, fingerstyle.
+- **Slap.** MIDI PRE on. Second compressor for even thumb-and-pop slap features.
+- The board stomps (Tidal Wave drive for heavy sections, Flamma -OCT for the 808 layer) still work the same on top.
 
 ## Full pedalboard (signal chain order)
 
