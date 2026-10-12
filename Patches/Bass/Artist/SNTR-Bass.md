@@ -68,7 +68,7 @@ Sounds:
 - **Dry pop bounce** (default). CTL off.
 - **Chorus only.** CTL off, MIDI MOD on. Chorus width without the big Air reverb: for the brighter pop songs that want shimmer but not the full dream-pop wash.
 - **Dream-pop** (CTL on). Chorus + Air reverb.
-- **Shared CTL/MIDI blocks:** before pressing CTL, switch any CTL block you changed by MIDI back to how it was. I haven't confirmed whether the GP-5's CTL flips each block or sets it to a fixed state, and doing this gives the right result either way. Changing a block by MIDI *after* pressing CTL is always safe.
+- **Shared CTL/MIDI blocks:** CTL flips every block assigned to it, whatever state it's in (confirmed by Michael, 2026-10-12). A CTL block you switched by MIDI ends up the opposite of the designed CTL sound. So before pressing CTL, switch it back by MIDI. Changing a block by MIDI *after* pressing CTL is always safe.
 
 
 ## Full pedalboard (bass chain order)

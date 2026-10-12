@@ -69,7 +69,7 @@ Sounds:
 - **Dry tight strum.** CTL off, MIDI DLY off, MIDI MOD off. Rhythmic strumming and up-tempo songs where the wash smears the groove.
 - **Anthem lead** (CTL on). Boost + Green OD over the full wash. Choruses and anthem sections.
 - **Soft lead.** CTL on, MIDI PRE off. The Green OD without the boost: a quieter, smoother lead for bridges and intimate melody lines.
-- **Shared CTL/MIDI blocks:** before pressing CTL, switch any CTL block you changed by MIDI back to how it was. I haven't confirmed whether the GP-5's CTL flips each block or sets it to a fixed state, and doing this gives the right result either way. Changing a block by MIDI *after* pressing CTL is always safe.
+- **Shared CTL/MIDI blocks:** CTL flips every block assigned to it, whatever state it's in (confirmed by Michael, 2026-10-12). A CTL block you switched by MIDI ends up the opposite of the designed CTL sound. So before pressing CTL, switch it back by MIDI. Changing a block by MIDI *after* pressing CTL is always safe.
 
 
 ## Full Pedalboard (signal chain order)

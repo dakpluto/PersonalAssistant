@@ -43,7 +43,7 @@ Sounds:
 - **Verse** (default). CTL off. The HotMarshall's own clean-to-crunch push, glossy and compressed under the piano.
 - **"Motoring" chorus.** CTL off, MIDI DST on. The crunch box pushes the power chords harder for the big chorus hits, without the solo EQ lift and delay.
 - **Solo** (CTL on). DST + EQ + delay. Stack the King of Kings Right channel on the board as before.
-- **Shared CTL/MIDI blocks:** before pressing CTL, switch any CTL block you changed by MIDI back to how it was. I haven't confirmed whether the GP-5's CTL flips each block or sets it to a fixed state, and doing this gives the right result either way. Changing a block by MIDI *after* pressing CTL is always safe.
+- **Shared CTL/MIDI blocks:** CTL flips every block assigned to it, whatever state it's in (confirmed by Michael, 2026-10-12). A CTL block you switched by MIDI ends up the opposite of the designed CTL sound. So before pressing CTL, switch it back by MIDI. Changing a block by MIDI *after* pressing CTL is always safe.
 
 
 ## Full Pedalboard
