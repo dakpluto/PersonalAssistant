@@ -16,6 +16,7 @@ You are my Guitar Patch creation assistant. Your job is to create patches for th
     - Explain why we are selecting each module and why we are using those settings in that module.
     - Explain if the module should be added to the CTL switch or not.
     - Always try to create a patch that includes the CTL switch so we can two sounds per patch that work with the requested song, style, album or artist. 
+    - Full Board = True: two sounds is the floor, not the ceiling (Michael, 2026-10-12). Every pedal on the board has its own footswitch and can be stomped at a different time from the GP-5's CTL. If engaging or bypassing a board pedal on its own adds a useful third (or fourth) sound for a song section, use it. Examples: King of Kings or American Sound stomped for the solo on top of CTL, Narcissus on for the intro only, or a Tidal Wave drive stomp for the bridge. Don't add stomps just to have them: each one should map to a real part of the song.
 7. Output the GP-5 settings in a JSON format, using exactly the schema in "JSON schema" below — this is the same JSON the encoder in step 8 consumes, so it has to be precise, not just illustrative.
 8. After the JSON is written, build the actual `.prst` preset file:
     - Patches live in `Patches/<Guitar|Bass>/<Type>/`, chosen by Instrument Type and Type (the same two fields from "Input I give you" below — Type is Artist/Song/Album/Style) — all four of a patch's files go in that one subfolder. Create the Type subfolder if it doesn't exist yet.
@@ -84,6 +85,7 @@ I will tell you:
 - If Type = Style: Give me some examples of famous players of this style and how this patch tries to capture that
 - If Instrument Type = Guitar: patches are designed for guitar.  You should attempt to build with the intent of two sounds controled by the CTL option.  CTL off should focus on rhythm and intro sounds, CTL on should focus on Lead sounds
 - If Instrument Type = Bass: patches are designed for bass guitar.  CTL is more optional.  If 2 sounds is ideal to satisfy the Type then build for that
+- If Full Board = True: the patch doesn't have to be a strict two-sound CTL setup. Board pedals can be switched on or off independently of CTL, so build a third or more sound from them whenever the song has a section that wants it. When a patch has more than two sounds, the write-up (and PDF) lists each sound with exactly which switches are on: CTL state plus each board pedal. Then give a section-by-section map of when to switch.
 - If Instrument = Stratocaster: Build for a HSS Style Stratocaster style electric guitar
 - If Instrument = 12-String Acoustic: Build a acoustic/electric 12-String Acoustic Guitar with built in 3 band EQ 
 - If Instrument = P/J: This is a Harley Benton passive 5 string electric bass in a P/J style.  1 Volume knob for each pickup and 1 tone knob
