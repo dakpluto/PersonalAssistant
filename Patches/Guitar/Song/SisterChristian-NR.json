@@ -6,7 +6,7 @@
   "modules": {
     "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 30}},
     "PRE": {"model": "COMP4", "always_on": true, "settings": {"Sustain": 45, "Attack": 55, "VOL": 100, "Clip": 40}},
-    "DST": {"model": "La Charger", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Gain": 60, "Tone": 65, "VOL": 80}},
+    "DST": {"model": "La Charger", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Gain": 60, "Tone": 65, "VOL": 80}, "midi": true},
     "AMP": {"model": null},
     "CAB": {"model": null},
     "EQ": {"model": "Guitar EQ 2", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"100Hz": 0, "500Hz": 5, "1kHz": 10, "3kHz": 12, "6kHz": 5, "VOL": 65}},

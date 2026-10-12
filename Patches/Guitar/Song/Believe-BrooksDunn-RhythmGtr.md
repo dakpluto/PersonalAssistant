@@ -57,3 +57,16 @@ On CTL: PRE (Boost), DST (Green OD).
 - **CTL on** — Lead. Boost plus Green OD for the soaring climax lead and the melodic fills in the build.
 
 Stay off through the verses. Engage for the build and the final choir section.
+
+## MIDI toggles
+
+MIDI = True (added 2026-10-12). With no MIDI controller connected, the patch loads and plays exactly as before. MIDI adds single-block toggles on top of CTL.
+
+On MIDI: DST (Green OD), also on CTL.
+
+Sounds:
+- **Verse arpeggios** (default). CTL off. Chimey clean with tape echo and hall.
+- **Build.** CTL off, MIDI DST on. The Green OD alone, without the boost: fuller strummed rhythm as the band comes in and the song builds.
+- **Climax lead** (CTL on). Boost + Green OD for the soaring lead over the choir.
+- Section map: verses (default) → the build: MIDI DST on → choir climax: MIDI DST off, then CTL on (CTL brings the Green OD back with the boost).
+- **Shared CTL/MIDI blocks:** before pressing CTL, switch any CTL block you changed by MIDI back to how it was. I haven't confirmed whether the GP-5's CTL flips each block or sets it to a fixed state, and doing this gives the right result either way. Changing a block by MIDI *after* pressing CTL is always safe.

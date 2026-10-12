@@ -89,3 +89,4 @@ Sounds:
 - **Lead** (CTL on). Drive + EQ, chorus off.
 - **Wide lead.** CTL on, MIDI MOD on. Chorus back under the lead for melodic, singing lines.
 - **Dry lead.** CTL on, MIDI DLY off. Fast runs with no delay.
+- **Shared CTL/MIDI blocks:** before pressing CTL, switch any CTL block you changed by MIDI back to how it was. I haven't confirmed whether the GP-5's CTL flips each block or sets it to a fixed state, and doing this gives the right result either way. Changing a block by MIDI *after* pressing CTL is always safe.

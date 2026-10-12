@@ -38,7 +38,7 @@ Low cut keeps the slow, heavy chords tight. A small presence lift for both tones
 
 **MOD — off.** No modulation. The delay supplies the movement.
 
-**DLY — Analog**, always on.
+**DLY — Analog**, loads on. MIDI toggle (see MIDI toggles).
 Mix: 14, Time: 726ms, Feedback: 22, Trail: on.
 A dotted eighth at 62 BPM. It gives the clean arpeggios that ringing, cascading feel. Mix 14 keeps it under the heavy chorus.
 
@@ -54,3 +54,15 @@ On CTL: PRE (Boost), DST (La Charger).
 - **CTL on** — Lead. Boost plus crunch box for the heavy chorus and the solo.
 
 Engage CTL at the chorus and the solo. Drop back for the verses.
+
+## MIDI toggles
+
+MIDI = True (added 2026-10-12). With no MIDI controller connected, the patch loads and plays exactly as before. MIDI adds single-block toggles on top of CTL.
+
+On MIDI: DLY (Analog), MIDI-only, loads on.
+
+Sounds:
+- **Clean arpeggios** (default). CTL off, delay on. The cascading dotted-eighth verse.
+- **Heavy chorus.** CTL on, MIDI DLY off. Boost + crunch box with no dotted-eighth repeats smearing the big chords. Tight and huge.
+- **Solo.** CTL on, delay on. The repeats come back to make the melodic solo sing.
+- Section map: verse (default) → chorus: CTL on, DLY off → back to verse: CTL off, DLY on → solo: CTL on, DLY on.

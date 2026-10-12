@@ -42,7 +42,7 @@ The low cut is essential with this much ambience: it keeps the delay and reverb 
 
 **MOD — off.** The Sweet Space reverb already carries modulation. A chorus on top of it would smear.
 
-**DLY — Tape**, always on.
+**DLY — Tape**, loads on. MIDI toggle (see MIDI toggles).
 Mix: 22, Time: 625ms, F.Back: 30, Trail: on.
 Dotted eighth at 72 BPM (833ms x 0.75). If the real tempo differs, set Time = 45000 / BPM. Tape gives warmer repeats than Pure, so the rhythm doesn't turn into a ping-fest. Always on because it's part of the core sound in both states.
 
@@ -58,3 +58,17 @@ On CTL: PRE (Boost), DST (Green OD).
 - **CTL on** — Lead and driven. Boost into Green OD into the same amp and ambience. Use it for the big chorus, the bridge build, and melodic lead lines. The delay and reverb carry over, so the lead lines sing.
 
 Engage CTL when the song opens into the chorus and bridge. Step off for the verses and any breakdown.
+
+## MIDI toggles
+
+MIDI = True (added 2026-10-12). With no MIDI controller connected, the patch loads and plays exactly as before. MIDI adds single-block toggles on top of CTL.
+
+On MIDI: PRE (Boost) and DST (Green OD), both also on CTL. DLY (Tape), MIDI-only, loads on.
+
+Sounds:
+- **Ambient** (default). CTL off. Swells, verse arpeggios, quiet strumming.
+- **Driven rhythm.** CTL off, MIDI DST on. The Green OD alone, no boost: a mid-gain strum for the second verse and the build into the chorus.
+- **Dry strum.** CTL off, MIDI DLY off. Rhythmic strumming without the dotted-eighth repeats, for any section where the delay fights the groove.
+- **Anthem** (CTL on). Boost + Green OD with the full wash. Big chorus, bridge, lead lines.
+- **Soft lead.** CTL on, MIDI PRE off. The Green OD without the boost: a smoother, quieter lead for melodic lines over a breakdown.
+- **Shared CTL/MIDI blocks:** before pressing CTL, switch any CTL block you changed by MIDI back to how it was. I haven't confirmed whether the GP-5's CTL flips each block or sets it to a fixed state, and doing this gives the right result either way. Changing a block by MIDI *after* pressing CTL is always safe.

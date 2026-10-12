@@ -66,6 +66,8 @@ Sounds:
 - **Squire growl** (default). CTL off: B-Boost + Bass OD.
 - **Clank.** CTL off, MIDI DST off. The B-Boost alone: the clanky, trebly Rickenbacker preamp edge without the full drive. A middle ground for brighter, busier passages that need bite but not grind.
 - **Clean/arpeggiated** (CTL on). Both gain stages off, light chorus.
+- **Shared CTL/MIDI blocks:** before pressing CTL, switch any CTL block you changed by MIDI back to how it was. I haven't confirmed whether the GP-5's CTL flips each block or sets it to a fixed state, and doing this gives the right result either way. Changing a block by MIDI *after* pressing CTL is always safe.
+
 
 ## Full Pedalboard (signal chain order)
 

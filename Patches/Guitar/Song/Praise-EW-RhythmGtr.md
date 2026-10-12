@@ -18,7 +18,7 @@ A bit higher than a swell patch. There are no volume swells here, and the gate c
 Gain: 40, +3dB: on, Bright: off.
 Level and push for the lead hooks. It hits the Green OD harder for more sustain. Bright off keeps the top from getting spiky on the V30.
 
-**DST — Green OD**, always on.
+**DST — Green OD**, loads on. MIDI toggle (see MIDI toggles).
 Gain: 30, Tone: 60, VOL: 62.
 The core rhythm grit. Low gain keeps eighth-note chugs tight and articulate at 127 BPM. Tone 60 cuts through the keys and the choir.
 
@@ -61,3 +61,14 @@ On CTL: PRE (Boost), DLY (Tape).
 - **CTL on** — Lead. The Boost pushes the Green OD into more sustain and level, and the dotted-eighth Tape delay comes in. Use it for melodic hooks, fills between vocal lines, and any solo lines over the final choruses.
 
 Engage CTL for the lead hooks. Step off when you're back on the rhythm part.
+
+## MIDI toggles
+
+MIDI = True (added 2026-10-12). With no MIDI controller connected, the patch loads and plays exactly as before. MIDI adds single-block toggles on top of CTL.
+
+On MIDI: DST (Green OD), MIDI-only, loads on.
+
+Sounds:
+- **Rhythm** (default). AC30 edge + Green OD. Verses, the pushing chorus strumming, the bridge chugs.
+- **Breakdown.** MIDI DST off. The AC30 alone at edge of breakup, for the quiet opening of the "I'll praise" bridge and any stripped-down section. Turn the Green OD back on as the bridge builds.
+- **Lead** (CTL on). Boost + dotted-eighth Tape over the Green OD for the hooks. Keep DST on for this.

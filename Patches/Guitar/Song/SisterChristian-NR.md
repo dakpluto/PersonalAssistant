@@ -33,6 +33,19 @@ Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB
 - Modules on CTL: DST, EQ, DLY. All three flip together on the same footswitch press.
 - Use CTL Off for the verses and the main rhythm chorus. Switch to CTL On for the guitar solo and any other lead break.
 
+## MIDI toggles
+
+MIDI = True (added 2026-10-12). With no MIDI controller connected, the patch loads and plays exactly as before. MIDI adds single-block toggles on top of CTL.
+
+On MIDI: DST (La Charger), also on CTL.
+
+Sounds:
+- **Verse** (default). CTL off. The HotMarshall's own clean-to-crunch push, glossy and compressed under the piano.
+- **"Motoring" chorus.** CTL off, MIDI DST on. The crunch box pushes the power chords harder for the big chorus hits, without the solo EQ lift and delay.
+- **Solo** (CTL on). DST + EQ + delay. Stack the King of Kings Right channel on the board as before.
+- **Shared CTL/MIDI blocks:** before pressing CTL, switch any CTL block you changed by MIDI back to how it was. I haven't confirmed whether the GP-5's CTL flips each block or sets it to a fixed state, and doing this gives the right result either way. Changing a block by MIDI *after* pressing CTL is always safe.
+
+
 ## Full Pedalboard
 
 1. **Flamma FS-08 Octave** — Off. No octave content in this song.

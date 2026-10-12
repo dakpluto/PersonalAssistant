@@ -90,6 +90,8 @@ Sounds:
 - **Lead** (CTL on). Boost + RAT + delay, with chorus.
 - **Dry fast lead.** CTL on, MIDI DLY off. Fast runs and the Vai-style flurries without delay smear.
 - The King of Kings Right channel stomp from the board section still stacks on any lead state for the showcase solos.
+- **Shared CTL/MIDI blocks:** before pressing CTL, switch any CTL block you changed by MIDI back to how it was. I haven't confirmed whether the GP-5's CTL flips each block or sets it to a fixed state, and doing this gives the right result either way. Changing a block by MIDI *after* pressing CTL is always safe.
+
 
 ## Full pedalboard (signal chain order)
 
