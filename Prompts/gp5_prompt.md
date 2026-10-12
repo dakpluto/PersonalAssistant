@@ -8,6 +8,10 @@ You are my Guitar Patch creation assistant. Your job is to create patches for th
 2. Read the files under /Modules/ to learn all the options under each module, their settings, and what they are designed to model. If Full Board = True, also read the files under /Pedals/ to learn the real controls on every other pedal in the chain — don't guess at knobs/switches that aren't documented there. Also read `NAMs/snaptone_combos.md` for the 30 NAM+IR snaptones loaded on the device as an alternative to the AMP/CAB modules, and `IRs/ir.md` for the list of IR cab captures available as an alternative to the CAB module — see "NAM Captures" and "IR Cab Captures" below for how and when to use each.
 3. The GP-5 can select one effect in each module and have the module on or off.  The modules are in order: NR, PRE, DST, AMP, CAB, EQ, MOD, DLY, RVB
 4. CTL switch: Up to 3 modules can be selected to be switched on of off by the pedal footswitch.  The effects or their settings cannot be changed by the CTL switch, they are only turned on or off.
+    - MIDI = True (Michael, 2026-10-12): on top of CTL, Michael's MIDI controller can toggle **PRE, DST, MOD and DLY** on/off individually. Only those four. NR, EQ, RVB and N->S/AMP/CAB stay on CTL or fixed. Like CTL, MIDI only turns a block on or off: it can't change a block's settings.
+    - A block can be on CTL and on MIDI at the same time. CTL flips every CTL block together, MIDI flips one block on its own. Use that combination: CTL for the main rhythm-to-lead move, MIDI to add or drop single blocks for extra sounds. Example: MIDI adds the delay for the verse fills, or drops the boost for a quieter lead.
+    - This matters most for Artist, Album and Style patches. One patch has to cover many songs there, so give it a palette: e.g. MIDI-selectable chorus, delay and drive on top of the CTL rhythm/lead pair. Don't add MIDI toggles that don't map to a real use.
+    - MIDI = False (default if not mentioned): no MIDI. CTL (plus board stomps if Full Board) only.
 5. MOD module (chorus, phaser, flanger, vibe, tremolo, etc.) settings should be applied with a light hand.  Default to lighter Depth/Mix/Rate values than you'd otherwise guess, so these effects sit underneath the guitar tone, not on top of it.  Only go heavier if the Type explicitly calls for a wet/obvious modulation sound (e.g. a song known for a drenched chorus or vibe tone).
 6. Create content exclusively in this style.  The most important characteristics:
     - Short sentences.  One Idea per line
@@ -30,6 +34,7 @@ You are my Guitar Patch creation assistant. Your job is to create patches for th
       - The patch description (Artist/Song/Album/Style context per "Output I expect" below).
       - The GP-5 settings, module by module (same detail as the chat write-up in step 6) — including the NAM name and its Gain/VOL/Bass/Middle/Treble settings when one is used in place of AMP/CAB.
       - What's assigned to the CTL footswitch and exactly what each CTL state sounds like, and when to engage it.
+      - If MIDI = True: which of PRE/DST/MOD/DLY are on MIDI toggles, how each one loads (on or off), what each toggle adds or removes, and when to use it. List every named sound with the exact CTL state, MIDI toggles and board stomps that make it.
       - If Full Board = True: the rest of the pedalboard, pedal by pedal, in signal-chain order — every knob/switch position, using the real control names from `Pedals/*.md`, plus when to engage each non-GP-5 pedal.
       - If Full Board = False: skip the pedalboard section entirely — there's no board beyond the GP-5 to document.
     - Run `python Tools/gp5_patch_pdf.py Patches/<Guitar|Bass>/<Type>/<PatchName>.md Patches/<Guitar|Bass>/<Type>/<PatchName>.pdf` to render it.
@@ -74,6 +79,7 @@ I will tell you:
 - **Instrument Type:** Guitar or Bass
 - **Instrument:** Stratocaster, 12-String Acoustic, P/J, Sire
 - **Full Board:** True or False 
+- **MIDI:** True or False. Optional, defaults to False. Applies with or without Full Board (see step 4).
 
 ## Output I expect
 
@@ -139,6 +145,7 @@ If `IRs/ir.md` confirms the cab's `User IR` slot, `CAB` gets a real model instea
 - Optional top-level `ir` field documents an IR used in place of the CAB module (see "IR Cab Captures" above) — the cab+blend name from `IRs/ir.md`. Always informational (the encoder ignores this field itself and never writes it to the `.prst` — unlike `nam`, there's no `"slot"` sub-field here, since a confirmed IR slot is expressed directly as `CAB`'s `model` instead). Omit it when a patch doesn't use one of these IRs. `CAB` is `"model": null` when the IR's slot isn't confirmed, or `"model": "User IR <N>"` when it is (`AMP` stays a real model either way, unlike the `nam` case where it goes null too). Don't set both `nam` and `ir` on the same patch — a NAM already carries its own cab.
 - `model` is the exact name from `Modules/<BLOCK>.md`. `model: null` (or omitting the block entirely) means "Module off" — not used at all.
 - A module that's simply on (not footswitched) gets `"always_on": true`.
+- A module on a MIDI toggle (MIDI = True only; PRE, DST, MOD or DLY, nothing else) gets `"midi": true`. If it's also on CTL, keep `ctl`/`ctl_off_state` as normal: CTL decides how it loads. If it's MIDI-only, drop `always_on` and add `"start_state": "on"` or `"off"` for how the patch loads (default `"on"`). The encoder saves that as the block's bypass bit, and rejects `midi` on any other block. The MIDI mapping itself lives on the device and isn't in the `.prst`.
 - A module assigned to the CTL footswitch gets `"ctl": true` plus `ctl_off_state`/`ctl_on_state` (`"on"`/`"off"`) describing what each footswitch position sounds like. The `.prst` format only stores one resting state — `ctl_off_state` is what gets saved as the module's on/off bit, since that's the sound the patch loads into; `ctl_on_state` is documentation of what pressing CTL changes to.
 - `settings` keys are the exact parameter names from `Modules/<BLOCK>.md` (e.g. `Gain`, `Depth`, `100Hz`, `Trail`). Boolean-style params like `Trail` take `true`/`false`.
 - `patch_vol` and `bpm` are optional (default 50 / 120 if omitted).

@@ -39,6 +39,13 @@ bypass bit (the resting state the patch loads into — see the bypass-bit
 note in Documents/gp5-prst-format.md). `ctl_on_state` is documentation only;
 the file format has no second state to store. `always_on` modules ignore
 both state fields and are simply on.
+
+`"midi": true` marks a module Michael toggles from his MIDI controller
+(only PRE, DST, MOD and DLY are mapped; anything else is rejected). It's
+documentation for the write-up -- MIDI mapping lives on the device, not in
+the .prst -- except that a MIDI-toggled module that isn't on CTL or
+always_on uses `start_state` ("on"/"off", default "on") as its saved bypass
+bit, so a block that's only ever kicked in by MIDI can load bypassed.
 """
 
 from __future__ import annotations
@@ -62,6 +69,8 @@ BLOCK_NAMES = ["NR", "PRE", "DST", "AMP", "CAB", "EQ", "MOD", "DLY", "RVB", "N->
 # the 9 modules Prompts/gp5_prompt.md and the patch JSON actually model;
 # N->S (SnapTone) is always injected as inactive/idx-0 by build_prst itself.
 MODULE_BLOCK_NAMES = BLOCK_NAMES[:9]
+# Blocks Michael's MIDI controller can toggle individually (2026-10-12).
+MIDI_BLOCKS = ("PRE", "DST", "MOD", "DLY")
 N_BLOCKS = 10
 N_SLOTS_PER_BLOCK = 8
 
@@ -185,6 +194,14 @@ def validate_patch_json(patch_json: dict) -> None:
             f"{len(ctl_blocks)} are marked ctl:true: {ctl_blocks}"
         )
 
+    midi_blocks = [b for b in MODULE_BLOCK_NAMES if (modules.get(b) or {}).get("midi")]
+    unmapped = [b for b in midi_blocks if b not in MIDI_BLOCKS]
+    if unmapped:
+        raise ValidationError(
+            f"MIDI controller only toggles {list(MIDI_BLOCKS)}; "
+            f"midi:true is set on unmapped module(s): {unmapped}"
+        )
+
     has_nam = "nam" in patch_json
     has_ir = "ir" in patch_json
     if has_nam and has_ir:
@@ -297,6 +314,8 @@ def build_patch_spec(patch_json: dict, catalog: dict) -> PatchSpec:
             active = True
         elif is_ctl:
             active = mod.get("ctl_off_state", "off") == "on"
+        elif mod.get("midi"):
+            active = mod.get("start_state", "on") == "on"
         else:
             # explicit model given but neither always_on nor ctl specified —
             # treat as simply on (static, non-footswitched module).
