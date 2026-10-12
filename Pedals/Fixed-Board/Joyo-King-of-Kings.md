@@ -16,5 +16,5 @@ Dual-channel overdrive pedal, clone of the Analogman King of Tone. Two fully ind
 
 ## Notes for patch-building
 - Because each channel is fully independent, this is the natural "two distinct drive voicings in one pedal" tool for full-board builds — e.g. left = low-gain rhythm push, right = higher-gain lead boost.
-- Sits after the fuzz pedal and before the Narcissus/GP-5 in the board order — typically used as a boost/second gain stage into the GP-5's own DST+AMP, not as the only drive source.
+- Sits after the fuzz pedal and before the American Sound/Narcissus/GP-5 in the board order (it can push the American Sound like a boost into a Fender amp) — typically used as a boost/second gain stage into the GP-5's own DST+AMP, not as the only drive source.
 - When only one channel is needed for a song, leave the other bypassed rather than setting it to unity/clean — it's true bypass per side, so an unused channel should just stay off.

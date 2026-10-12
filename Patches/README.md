@@ -4,6 +4,8 @@ One row per patch in this directory. Built by hand from each `<Name>.json` / `<N
 
 Patches are split first by Instrument Type (`Patches/Guitar/`, `Patches/Bass/`), then by Type (`Song/`, `Artist/`, `Album/`, `Style/`) — the same two fields `gp5_prompt.md` asks for up front when building a patch. A patch's four files (`.json`, `.prst`, `.md`, `.pdf`) live together in that `<Guitar|Bass>/<Type>/` folder. A Type subfolder only exists once a patch needs it.
 
+The Joyo American Sound joined both Full Boards on 2026-10-12, after the King of Kings / Tidal Wave. Full Board patches built before then don't list it: treat it as bypassed for those. All of them were checked the same day, and none needed it.
+
 ## Guitar/
 
 ### Song/

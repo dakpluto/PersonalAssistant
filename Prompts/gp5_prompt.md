@@ -147,6 +147,7 @@ If `IRs/ir.md` confirms the cab's `User IR` slot, `CAB` gets a real model instea
 - Donner Ultimate Comp
 - Donner Stylish Fuzz
 - Joyo King of Kings (List left channel settings first, right channel settings 2nd.  Make sure to include the toggle switch settings, these mirror the dip switches on the Analogman King of Tone pedal that this pedal is a clone of, and which channels should be engaged and when)
+- Joyo American Sound (Fender amp-in-a-box, Tech21 Blonde clone; added 2026-10-12. Mostly used as a low-gain drive. Include Level/Drive/Voice/Low/Mid/High and when it's engaged, or say bypassed)
 - Joyo Narcissus
 - Valeton GP-5
 
@@ -155,6 +156,7 @@ If `IRs/ir.md` confirms the cab's `User IR` slot, `CAB` gets a real model instea
 - Donner Ultimate Comp
 - Donner Stylish Fuzz
 - Joyo Tidal Wave (Make sure to include if Drive should be engaged or not and when.  Include the frequency toggle switch settings)
+- Joyo American Sound (Fender amp-in-a-box, Tech21 Blonde clone; added 2026-10-12. On bass keep Drive low: no Blend control, so the whole signal goes through it. Include Level/Drive/Voice/Low/Mid/High and when it's engaged, or say bypassed)
 - Joyo Narcissus
 - Valeton GP-5
 
