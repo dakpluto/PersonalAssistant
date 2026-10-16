@@ -1,6 +1,6 @@
 # Joyo American Sound (JF-14)
 
-Fender-style "amp-in-a-box" overdrive. Widely treated as a clone of the Tech21 SansAmp Blonde, and marketed by Joyo as a '57 Deluxe simulator, from clean to overdrive. Michael mostly uses it as a low-gain drive pedal. On both the guitar and bass Full Boards (added 2026-10-12).
+Fender-style "amp-in-a-box" overdrive. Widely treated as a clone of the Tech21 SansAmp Blonde, and marketed by Joyo as a '57 Deluxe simulator, from clean to overdrive. Michael mostly uses it as a low-gain drive pedal. On both the guitar and bass Full Boards (added 2026-10-12). Optional since 2026-10-16: either/or with the Donner White Tape. Michael says which one a build uses.
 
 ## Knobs
 - **Level** (labeled Volume on some listings): Output volume

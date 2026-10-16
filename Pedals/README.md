@@ -26,7 +26,8 @@ The only pedals `Prompts/gp5_prompt.md` includes automatically when a patch is b
 | `Donner-Ultimate-Comp.md` | Optical compressor |
 | `Donner-Stylish-Fuzz.md` | Classic-voiced fuzz |
 | `Joyo-King-of-Kings.md` | Dual-channel overdrive (Analogman King of Tone clone) |
-| `Joyo-American-Sound.md` | Fender amp-in-a-box / low-gain drive (Tech21 Blonde clone). Both boards, after King of Kings / Tidal Wave (added 2026-10-12) |
+| `Joyo-American-Sound.md` | Fender amp-in-a-box / low-gain drive (Tech21 Blonde clone). Both boards, after King of Kings / Tidal Wave (added 2026-10-12). Either/or with the White Tape since 2026-10-16 |
+| `Donner-White-Tape-Delay.md` | Analog stereo tape delay. Both boards, after the GP-5 (added 2026-10-16). Either/or with the American Sound |
 | `Joyo-Narcissus.md` | Chorus (guitar board) |
 | `Joyo-Tidal-Wave.md` | Bass preamp/overdrive with 3-band EQ + DI (bass board, replaces Stylish Fuzz + King of Kings) |
 

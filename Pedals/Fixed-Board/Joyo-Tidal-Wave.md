@@ -27,4 +27,4 @@ Bass preamp/overdrive pedal with 3-band EQ, DI output, and noise reduction. Bass
 - Drive/Blend together control how much overdrive character stacks with the GP-5's own PRE/DST/AMP chain — for a full board build, keep Blend moderate unless the song specifically wants an obviously dirty bass tone, since bass tone usually needs the fundamental to stay intact.
 - Bass-Shift 40Hz keeps more low end in the drive signal (fuller/muddier); 80Hz tightens it up (more articulate, better for high-gain or busy mixes).
 - Mid-Frequency 500Hz vs 1000Hz picks where the EQ's mid push/cut lands — 500Hz is a classic "bass body" frequency, 1000Hz is more "pick/finger attack and cut-through."
-- Followed by the Joyo American Sound on the bass board (added 2026-10-12). Tidal Wave drive into the American Sound stacks two drives, so keep at least one of them low-gain on bass.
+- Followed by the Joyo American Sound on the bass board (added 2026-10-12) when the build carries it rather than the White Tape. Tidal Wave drive into the American Sound stacks two drives, so keep at least one of them low-gain on bass.

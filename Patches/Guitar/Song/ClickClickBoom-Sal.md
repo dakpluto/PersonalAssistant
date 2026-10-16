@@ -3,6 +3,7 @@
 **Type:** Song
 **Instrument:** Stratocaster (HSS)
 **Full Board:** Yes
+**Board Option:** White Tape (rebuilt 2026-10-16)
 **BPM:** 100
 
 ## The song
@@ -51,10 +52,8 @@ Boost at 500Hz/1kHz fattens the riff's mid-punch and keeps single-note lead line
 **MOD — off**
 Not used on the GP-5. The Joyo Narcissus on the board is carrying the (very light) chorus duty for this patch — no reason to run two modulation sources and risk mud. See "Full Pedalboard" below.
 
-**DLY — Analog** (CTL)
-- Mix: 28, Time: 300ms, Feedback: 22, Trail: On
-- CTL Off = off, CTL On = on
-300ms at 100 BPM lands close to a dotted-16th slap — enough to give sustained lead notes some air and repeat without smearing into a wash. Off for the verse riff; a tight palm-muted riff does not want delay repeats stacking on top of the mutes.
+**DLY — off** (moved to the White Tape, 2026-10-16)
+The lead slap now lives on the Donner White Tape after the GP-5 (see Full Pedalboard). Before, the GP-5's Analog delay sat on CTL, so every chorus strum got the same 300ms slap as the solo. A slap at that mix smears big open chords. On its own footswitch, the delay goes on for the solo only. The chorus stays big and dry.
 
 **RVB — Room** (CTL)
 - Mix: 25, Decay: 35, Trail: On
@@ -63,12 +62,20 @@ Small room wash opens the lead tone up just enough to feel bigger without going 
 
 ### CTL summary
 - **CTL Off (verse/rhythm):** NR + ModernRect snaptone + EQ only. Dry, tight, mid-forward crunch built for palm-muted riffing.
-- **CTL On (chorus/solo):** adds DST (Super OD boost) + DLY (Analog slap) + RVB (Room wash). Louder, more sustain, more air — built to carry a lead line or a bigger chorus strum over the same amp voicing.
-- Hit CTL going into the chorus and for the guitar solo section. Kick it back off for the next verse.
+- **CTL On (chorus):** adds DST (Super OD boost) + RVB (Room wash). Louder, more sustain, more air — a bigger chorus strum over the same amp voicing, no repeats.
+- **Solo:** CTL On + White Tape on. The chorus sound plus a 300ms slap behind the lead.
+- Modules on CTL: DST, RVB. One CTL slot is free.
+
+### Section map
+- **Verse:** CTL off, White Tape off.
+- **Chorus:** CTL on, White Tape off.
+- **Solo:** CTL on, stomp the White Tape on.
+- **Back to the verse:** CTL off, White Tape off. Hit both on the same beat.
 
 ## Full Pedalboard
 
-Signal chain order: Flamma FS-08 Octave → Donner Ultimate Comp → Donner Stylish Fuzz → Joyo King of Kings → Joyo Narcissus → Valeton GP-5.
+Signal chain order: Flamma FS-08 Octave → Donner Ultimate Comp → Donner Stylish Fuzz → Joyo King of Kings → Joyo Narcissus → Valeton GP-5 → Donner White Tape.
+Board Option = White Tape, so the Joyo American Sound is off the board for this build.
 
 **Flamma FS-08 Octave — bypassed**
 - All octave knobs (-2OCT, -OCT, +OCT, +2OCT) at 0, Dry at 100
@@ -93,3 +100,12 @@ Light chorus sheen underneath the whole patch, vintage mode kept subtle per the 
 
 **Valeton GP-5**
 See GP-5 settings above.
+
+**Donner White Tape — solo only**
+- Top row (left channel) only. Mono rig, bottom row unused.
+- Level: ~10 o'clock. About the old Mix 28: the slap sits behind the lead, not level with it.
+- Time: 300ms target, about 10 o'clock. 300ms is an eighth note at 100 BPM. No tap tempo, so dial it in against the track.
+- Feedback: ~9 o'clock. Two or three repeats, no wash.
+- Footswitch: on for the solo, off for everything else.
+- It sits after the GP-5's Room reverb, so the repeats carry a little room with them. That's fine at this Level.
+- Clock positions assume a linear Time taper across the 25-1000ms sweep. Trust the ear over the number.

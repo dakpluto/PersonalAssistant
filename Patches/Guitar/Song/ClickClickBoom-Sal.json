@@ -11,7 +11,7 @@
     "CAB": {"model": null},
     "EQ": {"model": "Guitar EQ 2", "always_on": true, "settings": {"100Hz": 0, "500Hz": 5, "1kHz": 8, "3kHz": 3, "6kHz": -6, "VOL": 52}},
     "MOD": {"model": null},
-    "DLY": {"model": "Analog", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Mix": 28, "Time": 300, "Feedback": 22, "Trail": true}},
+    "DLY": {"model": null},
     "RVB": {"model": "Room", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Mix": 25, "Decay": 35, "Trail": true}}
   }
 }

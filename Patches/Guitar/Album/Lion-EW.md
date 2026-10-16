@@ -1,6 +1,6 @@
 # Lion — Elevation Worship (CCM / Modern Worship)
 
-HSS Stratocaster. Full board.
+HSS Stratocaster. Full board. Board Option: White Tape (rebuilt 2026-10-16).
 Album-level build, modeled on the overall guitar approach across Elevation Worship's *Lion* (2022) and their wider catalog — the modern CCM "wall of sound": ambient, heavily modulated clean tones under verses, swelling into a bigger, saturated anthem tone for choruses and lead lines, all of it soaked in delay and reverb the whole time.
 That wash never goes away between the two states — only the gain does. That's the core design decision here: MOD/DLY/RVB/EQ and the amp/cab stay fixed and always on, CTL only swaps the gain stages.
 
@@ -69,10 +69,13 @@ Sounds:
 - **Dry tight strum.** CTL off, MIDI DLY off, MIDI MOD off. Rhythmic strumming and up-tempo songs where the wash smears the groove.
 - **Anthem lead** (CTL on). Boost + Green OD over the full wash. Choruses and anthem sections.
 - **Soft lead.** CTL on, MIDI PRE off. The Green OD without the boost: a quieter, smoother lead for bridges and intimate melody lines.
+- **Swell pad.** Any state above + White Tape on (board). A second, longer delay layered over the GP-5's Tape. Intros, ambient bridges, outros, volume swells.
 - **Shared CTL/MIDI blocks:** CTL flips every block assigned to it, whatever state it's in (confirmed by Michael, 2026-10-12). A CTL block you switched by MIDI ends up the opposite of the designed CTL sound. So before pressing CTL, switch it back by MIDI. Changing a block by MIDI *after* pressing CTL is always safe.
 
 
 ## Full Pedalboard (signal chain order)
+Flamma FS-08 Octave → Donner Ultimate Comp → Donner Stylish Fuzz → Joyo King of Kings → Joyo Narcissus → Valeton GP-5 → Donner White Tape.
+Board Option = White Tape, so the Joyo American Sound is off the board for this build.
 
 **1. Flamma FS-08 Octave — Engaged, light shimmer layer, whole song.**
 - +OCT: 25, all other octave knobs (-2OCT, -OCT, +2OCT): 0
@@ -113,9 +116,19 @@ Stacks with the left channel, the GP-5's Boost, and Green OD for the full anthem
 The GP-5's own A-Chorus (always on) is the primary chorus/shimmer voice for this patch, already pushed harder than usual on purpose. Stacking a second chorus pedal on top would turn the wash to mud. True bypass throughout.
 
 **6. Valeton GP-5 — as detailed above.**
+**7. Donner White Tape — Engaged for swells, intros, ambient bridges and outros.**
+- Top row (left channel) only. Mono rig, bottom row unused.
+- Level: ~10 o'clock. Under the GP-5's Tape (Mix 35), so it reads as depth behind the main repeats, not a second rhythm.
+- Time: ~700ms target, about 2 o'clock. A quarter note at about 86 BPM (60000 ÷ BPM). It isn't locked to any one song. Album and set tempos vary, and the board knobs stay fixed for a set. A long, loose layer under the 450ms Tape tolerates that. Clashing rhythmic echoes don't stand out at this Level.
+- Feedback: ~11 o'clock. Five or six repeats that fade into the Sweet Space tail.
+- Why a second delay: the modern worship rig runs two delays, one rhythmic and one long ambient. The GP-5 has one DLY block. The White Tape is the second one.
+- It sits after the GP-5's Sweet Space reverb, so its repeats echo the whole wash, not just the dry note. That's the pad effect this style wants.
+- Off for strummed up-tempo songs and anything with the Dry tight strum MIDI state. A second delay there is pure smear.
+- Clock positions assume a linear Time taper across the 25-1000ms sweep. Set it by ear.
 
 ## Footswitch Choreography
 
 - **Rhythm / verses / ambient sections:** GP-5 CTL off, King of Kings right channel off. Comp and Octave shimmer running underneath the whole time.
 - **Chorus / lead / anthem sections:** GP-5 CTL on (engages PRE Boost + Green OD together) at the same moment you step on the King of Kings right channel. All three come off together when dropping back to a verse/rhythm section.
+- **Swells / intros / ambient bridges / outros:** stomp the White Tape on, on its own, in any CTL state. Off when the song locks into a groove. Stomp it before the swell, not on the note, so the first repeat isn't clipped.
 - Fuzz and Narcissus stay bypassed for the entire patch — the wash comes from the GP-5's own MOD/DLY/RVB, not from stacking extra modulation/fuzz pedals.

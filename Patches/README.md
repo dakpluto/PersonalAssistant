@@ -16,7 +16,7 @@ The Joyo American Sound joined both Full Boards on 2026-10-12, after the King of
 | `Cassie-Flyleaf` | Cassie — Flyleaf (original studio version) | Strat | Yes | IR: American Twin 2x12 Medium Mix | CTL on DST + DLY (inverted): clean ambient verse vs. heavy chorus wall |
 | `ChalkOutlines-Ren` | Chalk Outlines — Ren & Chinchilla (123 BPM, measured; C#m, capo 4) | Strat | Yes | SnapTone: Fen65DlxKl (slot 78) | Edge-of-breakup verse; CTL on DST Green OD + DLY Analog for choruses; KoK Left stacked for the bridge. Song map from mp3 analysis |
 | `CivilWar-GNR-RhythmGtr` | Civil War — Guns N' Roses (~70 BPM, est.; Eb standard) | Strat | Yes | SnapTone: JCM800Clean (slot 80) | Boosted JCM800 rhythm (intro via guitar volume); CTL on DST Green OD + DLY Analog: crunch riff vs. Slash solo. KoK Left for the outro, Narcissus for the intro |
-| `ClickClickBoom-Sal` | Click Click Boom — Saliva (100 BPM) | Strat | Yes | SnapTone: ModernRect (slot 76) | CTL on DST + DLY + RVB: tight verse riff vs. boosted/wet solo lead |
+| `ClickClickBoom-Sal` | Click Click Boom — Saliva (100 BPM) | Strat | Yes | SnapTone: ModernRect (slot 76) | White Tape build. CTL on DST + RVB: tight verse riff vs. boosted chorus; White Tape stomp adds the solo slap |
 | `Creep-RH` | Creep — Radiohead | Strat | Yes | AMP: Foxy 30N + CAB: Foxy 2x12 | Clean/dirty split, CTL on PRE boost + DST |
 | `December-CS` | December — Collective Soul | Strat | No | SnapTone: ClassicMarshall (slot 68) | CTL on DST + MOD (inverted) + DLY: clean vibe intro vs. driven riff |
 | `EverydayBlues-JM` | Everyday I Have the Blues — John Mayer (*Where the Light Is*) | Strat | Yes | SnapTone: MayerDumble (slot 66) | Full pedalboard chain |
@@ -75,7 +75,7 @@ The Joyo American Sound joined both Full Boards on 2026-10-12, after the King of
 | File | Song / Reference | Instrument | Full Board | AMP/CAB substitute | Notes |
 |---|---|---|---|---|---|
 | `Syndicate-TheMidnight` | *Syndicate* — The Midnight (2025, synthwave, whole-album build) | Strat | Yes | SnapTone: MayerDumble (slot 66) | Glassy chorused Dumble clean; CTL on PRE Boost + DST Darktale + DLY Pure: 80s rhythm vs. singing lead. KoK Right stacked for the big solos. MIDI: PRE/DST/MOD/DLY (6 sounds) |
-| `Lion-EW` | *Lion* — Elevation Worship (CCM / modern worship, whole-album build) | Strat | Yes | AMP: Foxy 30TB + IR: V30112, Slot 10 | Ambient AC30 wash; CTL on PRE Boost + DST (Green OD): verse vs. anthem. MIDI: PRE/DST/MOD/DLY (5 sounds) |
+| `Lion-EW` | *Lion* — Elevation Worship (CCM / modern worship, whole-album build) | Strat | Yes | AMP: Foxy 30TB + IR: V30112, Slot 10 | Ambient AC30 wash; CTL on PRE Boost + DST (Green OD): verse vs. anthem. MIDI: PRE/DST/MOD/DLY (5 sounds). White Tape build: second long delay stomp for swells |
 
 ### Artist/
 
