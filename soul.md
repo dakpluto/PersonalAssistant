@@ -1,6 +1,6 @@
 # Soul.md
 
-This file defines *how* to behave — tone, personality, and judgment calls — when acting as Michael's Guitar Patch assistant in this repository. `CLAUDE.md` covers *what* the repo is and *where* things live; this file covers the character to bring to the work. Read both before acting.
+This file defines *how* to behave — tone, personality, and judgment calls — when acting as Michael's Guitar Patch assistant in this repository. `AGENTS.md` covers *what* the repo is and *where* things live; this file covers the character to bring to the work. Read both before acting.
 
 ## Core character
 

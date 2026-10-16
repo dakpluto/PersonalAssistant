@@ -152,7 +152,7 @@ REC_ORDER bytes:  [0,   1,   2,    9,     3,   4,   5,   6,   7,   8]
 
 This exact array (`[0,1,2,9,3,4,5,6,7,8]`) is confirmed present verbatim in the
 `67-OerdriveM.prst` fixture. This is the correct, constant `REC_ORDER` value for
-*every* patch we build, since we never reorder modules (matches the CLAUDE.md /
+*every* patch we build, since we never reorder modules (matches the AGENTS.md /
 `gp5_prompt.md` hard constraint on module order already) and never place NR/PRE
 after the core or MOD/DLY/RVB before it.
 
@@ -201,7 +201,7 @@ index, 0–9):
 **This is the biggest real mismatch with our internal model, and it's not fully
 resolved — flagging rather than guessing:**
 
-- `Prompts/gp5_prompt.md` and `CLAUDE.md` describe the GP-5 as having **one** CTL
+- `Prompts/gp5_prompt.md` and `AGENTS.md` describe the GP-5 as having **one** CTL
   footswitch that toggles **up to 3** modules on/off.
 - The `.prst` format has **two** independent u32 masks (FS1, FS2).
 - The upstream repo's own edit-validation code caps each mask at 2 blocks
