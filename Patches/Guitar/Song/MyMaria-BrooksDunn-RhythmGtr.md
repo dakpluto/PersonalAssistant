@@ -5,7 +5,7 @@ A cover of B.W. Stevenson's 1973 hit. Ronnie Dunn's falsetto hook drives it, ove
 The rhythm guitar is a warm clean-to-edge strum with some push. Tele-style fills and a solo sit on top.
 Built from the song's overall sound. I haven't verified the exact guitars and amps on the record.
 Instrument: Stratocaster (HSS). Position 2 (bridge+middle) for the rhythm. Bridge humbucker for the solo.
-GP-5 only, Stratocaster (HSS), no pedalboard.
+Full board, Stratocaster (HSS). Board Option: White Tape (rebuilt 2026-10-16).
 
 ## Module chain
 
@@ -54,4 +54,48 @@ On CTL: DST (Green OD), DLY (Analog).
 - **CTL off** — Rhythm. Compressed, clean Deluxe for the verse and chorus strum. This is the resting state the patch loads into.
 - **CTL on** — Lead. Green OD plus analog repeats for the fills and the solo.
 
-Engage CTL for the solo and the turnaround licks. Drop back when Ronnie comes in.
+Engage CTL for the solo. Drop back when Ronnie comes in.
+
+## Sounds
+- **Rhythm** (default). CTL off, White Tape off. Verse and chorus strum.
+- **Clean fills.** CTL off, White Tape on. The Tele-style fills and turnaround licks: clean, snappy, one slap behind each note. That's the Nashville chicken-pickin' sound.
+- **Solo.** CTL on, White Tape off. Green OD plus the GP-5's eighth-note Analog delay.
+- Section map: rhythm under the vocal, White Tape on for the fills between lines and the turnarounds, CTL on for the solo. Step off both before the vocal comes back.
+
+## Full pedalboard (signal chain order)
+Flamma FS-08 Octave → Donner Ultimate Comp → Donner Stylish Fuzz → Joyo King of Kings → Joyo Narcissus → Valeton GP-5 → Donner White Tape.
+Board Option = White Tape, so the Joyo American Sound is off the board for this build.
+Rebuilt from GP-5-only on 2026-10-16. The GP-5 settings didn't change, and every pedal except the White Tape stays bypassed. Played without the board, the patch sounds exactly as before.
+
+**1. Flamma FS-08 Octave — bypassed**
+- -2OCT: 0, -OCT: 0, +OCT: 0, +2OCT: 0, Dry: 100
+- Footswitch off all song.
+
+**2. Donner Ultimate Comp — bypassed**
+- Footswitch off all song. The GP-5's PRE compressor already does this job.
+
+**3. Donner Stylish Fuzz — bypassed**
+- Footswitch off all song.
+
+**4. Joyo King of Kings — both channels bypassed**
+- Left: off. Right: off.
+- The GP-5's Green OD on CTL is all the push this song wants.
+
+**5. Joyo Narcissus — bypassed**
+- Footswitch off all song. Matches the MOD-off call.
+
+**6. Valeton GP-5** — see settings above.
+
+**7. Donner White Tape — tape slap, for the fills and turnarounds.**
+- Top row (left channel) only. Mono rig, bottom row unused.
+- Level: ~10:30. A clearly audible single echo, still behind the dry note.
+- Time: ~120ms target, just past 8 o'clock. Slapback range.
+- Feedback: fully counterclockwise. One repeat.
+- This is the shared slap setting (same as Syndicate, Click Click Boom, Everyday Blues, My Maria, Somebody Like You, Neon Moon). Any of these can share a set without touching the knobs.
+- Footswitch: on for the clean fills and turnaround licks (CTL off). Off for the strum and the solo.
+- Why: the fills used to need CTL, which brought in the OD and the eighth-note delay. A clean slap is the more country fill sound, and it leaves CTL for the solo.
+- It sits after the GP-5's Spring, so the slap repeats a little spring with it.
+- The clock positions assume the Time knob sweeps 25-1000ms evenly. Set the slap by ear: it should thicken the note, not answer it.
+
+## Note on the full board vs. the `.prst`
+The `.prst` file only encodes the GP-5's own 9 modules. The board settings above are not and cannot be part of that file. They're set by hand on the board, and documented here so the full patch can be rebuilt.

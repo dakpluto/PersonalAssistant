@@ -33,3 +33,9 @@ No toggle switches. No tap tempo.
 - Board knobs stay fixed across a set (Michael's rule for all board pedals). One setting has to serve every song in the set; only the footswitch changes.
 - The bass drop-off on the repeats keeps a bass patch's low end clean under delay. Still keep Level low on bass.
 - Keep Feedback below about 2 o'clock unless runaway oscillation is the point.
+
+## Shared slap setting (2026-10-16)
+Level ~10:30, Time ~120ms (just past 8 o'clock), Feedback fully counterclockwise (one repeat). A slap doesn't lock to any tempo, so one fixed setting works for a whole set.
+- Used by: Syndicate, Click Click Boom, Everyday I Have the Blues, My Maria, Somebody Like You, Neon Moon (all guitar).
+- Default to this setting for any new White Tape build that needs a slap, so patches can share a set without knob changes.
+- Exception: Lion (Elevation Worship) runs a ~700ms ambient layer. If Lion shares a set with a slap patch, one of them has to be reset between songs.

@@ -1,6 +1,7 @@
 # Everyday I Have the Blues — John Mayer (Where the Light Is)
 
 Full-band live cut, horns and rhythm section, mid-tempo shuffle around 104 BPM.
+Board Option: White Tape (rebuilt 2026-10-16).
 Mayer's rig for this set is boutique-clean-amp-into-a-Tube-Screamer-style-boost — never a channel switch, just the same amp pushed harder for the solo.
 This board copies that exact trick: one amp voicing, one boost that kicks it into gain for the lead break.
 
@@ -48,7 +49,8 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB
 **DLY — Slapback**
 - Mix: 30, Time: 320ms, F.Back: 20, Trail: On
 - **CTL switch.** Off = bypassed, On = engaged.
-- Rhythm stays dry and tight for the shuffle groove. Lead gets a single slap of echo (low feedback, one real repeat) for width and sustain in a big room — not a wash, just dimension.
+- Rhythm stays dry and tight for the shuffle groove. Lead gets a short echo (320ms, low feedback) for width and sustain in a big room — not a wash, just dimension.
+- At 320ms this is an eighth-note echo more than a true slap. The real slap lives on the White Tape (see pedalboard).
 
 **RVB — Spring**
 - Mix: 20, Decay: 30, Trail: On
@@ -98,8 +100,22 @@ No chorus anywhere in this patch, on the GP-5 or here. Keep it off to stay consi
 
 **6. Valeton GP-5 — as detailed above.**
 
+**7. Donner White Tape — tape slap, for the clean fills between horn lines.**
+- Top row (left channel) only. Mono rig, bottom row unused.
+- Level: ~10:30. A clearly audible single echo, still behind the dry note.
+- Time: ~120ms target, just past 8 o'clock. Slapback range.
+- Feedback: fully counterclockwise. One repeat.
+- This is the shared slap setting (same as Syndicate, Click Click Boom, Everyday Blues, My Maria, Somebody Like You, Neon Moon). Any of these can share a set without touching the knobs.
+- Footswitch: on for the single-note fills you play between the horn lines in the rhythm sections (CTL off). Off for the shuffle comping.
+- Why: CTL off is dry, so the fills had no echo at all. A true slap is the classic live-blues fill sound. It thickens short licks without smearing the shuffle.
+- For the solo, leave it off: the GP-5's 320ms echo covers it. Stacking both works in a big, loud room, but it gets busy on fast licks.
+- It sits after the GP-5's Spring, so the slap repeats a little spring with it.
+- The clock positions assume the Time knob sweeps 25-1000ms evenly. Set the slap by ear: it should thicken the note, not answer it.
+
 ## Footswitch Choreography
 
 - **Rhythm / intro / horn-section trade-offs:** King of Kings left channel only, GP-5 CTL off. Comp always running underneath.
+- **Fills between horn lines:** same as rhythm, plus the White Tape on. Off again when you go back to comping.
 - **Guitar solo:** Step on King of Kings right channel (stacks with left) at the same time you hit GP-5 CTL on. Both come off together when the solo ends and you drop back to rhythm.
+- Board Option = White Tape, so the Joyo American Sound is off the board for this build.
 - Everything else (Octave, Fuzz, Narcissus) stays bypassed for the entire song — this patch is deliberately lean: comp, two gain stages, one amp, one delay-for-lead trick. No clutter.

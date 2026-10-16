@@ -53,7 +53,7 @@ Boost at 500Hz/1kHz fattens the riff's mid-punch and keeps single-note lead line
 Not used on the GP-5. The Joyo Narcissus on the board is carrying the (very light) chorus duty for this patch — no reason to run two modulation sources and risk mud. See "Full Pedalboard" below.
 
 **DLY — off** (moved to the White Tape, 2026-10-16)
-The lead slap now lives on the Donner White Tape after the GP-5 (see Full Pedalboard). Before, the GP-5's Analog delay sat on CTL, so every chorus strum got the same 300ms slap as the solo. A slap at that mix smears big open chords. On its own footswitch, the delay goes on for the solo only. The chorus stays big and dry.
+The lead slap now lives on the Donner White Tape after the GP-5 (see Full Pedalboard). Before, the GP-5's Analog delay sat on CTL, so every chorus strum got the same 300ms echo as the solo. A slap at that mix smears big open chords. On its own footswitch, the delay goes on for the solo only. The chorus stays big and dry.
 
 **RVB — Room** (CTL)
 - Mix: 25, Decay: 35, Trail: On
@@ -63,7 +63,7 @@ Small room wash opens the lead tone up just enough to feel bigger without going 
 ### CTL summary
 - **CTL Off (verse/rhythm):** NR + ModernRect snaptone + EQ only. Dry, tight, mid-forward crunch built for palm-muted riffing.
 - **CTL On (chorus):** adds DST (Super OD boost) + RVB (Room wash). Louder, more sustain, more air — a bigger chorus strum over the same amp voicing, no repeats.
-- **Solo:** CTL On + White Tape on. The chorus sound plus a 300ms slap behind the lead.
+- **Solo:** CTL On + White Tape on. The chorus sound plus a short tape slap behind the lead.
 - Modules on CTL: DST, RVB. One CTL slot is free.
 
 ### Section map
@@ -101,11 +101,13 @@ Light chorus sheen underneath the whole patch, vintage mode kept subtle per the 
 **Valeton GP-5**
 See GP-5 settings above.
 
-**Donner White Tape — solo only**
+**Donner White Tape — tape slap, solo only**
 - Top row (left channel) only. Mono rig, bottom row unused.
-- Level: ~10 o'clock. About the old Mix 28: the slap sits behind the lead, not level with it.
-- Time: 300ms target, about 10 o'clock. 300ms is an eighth note at 100 BPM. No tap tempo, so dial it in against the track.
-- Feedback: ~9 o'clock. Two or three repeats, no wash.
+- Level: ~10:30. A clearly audible single echo, still behind the dry note.
+- Time: ~120ms target, just past 8 o'clock. Slapback range.
+- Feedback: fully counterclockwise. One repeat.
+- This is the shared slap setting (same as Syndicate, Click Click Boom, Everyday Blues, My Maria, Somebody Like You, Neon Moon). Any of these can share a set without touching the knobs.
 - Footswitch: on for the solo, off for everything else.
-- It sits after the GP-5's Room reverb, so the repeats carry a little room with them. That's fine at this Level.
-- Clock positions assume a linear Time taper across the 25-1000ms sweep. Trust the ear over the number.
+- Changed from a 300ms eighth-note echo to the shared slap on 2026-10-16. A short slap gives the lead the same width without tying it to the tempo.
+- It sits after the GP-5's Room reverb, so the slap carries a little room with it. That's fine at this Level.
+- The clock positions assume the Time knob sweeps 25-1000ms evenly. Set the slap by ear: it should thicken the note, not answer it.
