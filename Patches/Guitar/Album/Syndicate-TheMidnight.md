@@ -4,7 +4,7 @@
 Royce Whittaker is credited on guitar. Reviews single out the "Vai-era" solos on "Friction" and "Shadowverse".
 I found no gear details for the album, so this patch builds The Midnight's guitar sound from the records, not from a known rig.
 Instrument: Stratocaster (HSS).
-Full board.
+Full board. Board Option: White Tape (rebuilt 2026-10-16).
 
 ## The Midnight's guitar sound
 
@@ -63,6 +63,7 @@ Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
 - 433ms is a dotted eighth at 104 BPM, a typical tempo for the band. Album tempos vary, so reset it per song: dotted eighth (ms) = 45000 ÷ BPM.
 - CTL off: bypassed, so the rhythm chops stay tight. CTL on: engaged.
 - Trail on so the solo's last notes ring out into the next section.
+- The patch's second delay option is the White Tape on the board: a short tape slap. See the pedalboard section.
 
 **RVB — Hall**, always on.
 - Mix: 20, Decay: 45, Trail: on
@@ -89,13 +90,17 @@ Sounds:
 - **Dry funk chops.** CTL off, MIDI MOD off. Tight muted chops without the chorus wobble.
 - **Lead** (CTL on). Boost + RAT + delay, with chorus.
 - **Dry fast lead.** CTL on, MIDI DLY off. Fast runs and the Vai-style flurries without delay smear.
+- **Slap fast lead.** CTL on, MIDI DLY off, White Tape on. The White Tape slap replaces the dotted eighth. Fast runs get thickness and width, still no smear.
+- **Slap chops.** CTL off, White Tape on. No MIDI needed: Pure is already off at CTL off. The 80s doubled-rhythm trick. Muted chops and stabs get wider without losing their snap.
 - The King of Kings Right channel stomp from the board section still stacks on any lead state for the showcase solos.
+- **No MIDI controller?** CTL brings Pure in on the lead, so the White Tape stacks with it instead of replacing it. Slap + dotted eighth is the classic 80s rack lead stack, so that works as a bigger lead in its own right. Swapping one delay for the other needs MIDI DLY off.
 - **Shared CTL/MIDI blocks:** CTL flips every block assigned to it, whatever state it's in (confirmed by Michael, 2026-10-12). A CTL block you switched by MIDI ends up the opposite of the designed CTL sound. So before pressing CTL, switch it back by MIDI. Changing a block by MIDI *after* pressing CTL is always safe.
 
 
 ## Full pedalboard (signal chain order)
 
-Flamma FS-08 Octave → Donner Ultimate Comp → Donner Stylish Fuzz → Joyo King of Kings → Joyo Narcissus → Valeton GP-5.
+Flamma FS-08 Octave → Donner Ultimate Comp → Donner Stylish Fuzz → Joyo King of Kings → Joyo Narcissus → Valeton GP-5 → Donner White Tape.
+Board Option = White Tape, so the Joyo American Sound is off the board for this build.
 
 **1. Flamma FS-08 Octave — bypassed**
 - -2OCT: 0, -OCT: 0, +OCT: 0, +2OCT: 0, Dry: 100
@@ -132,6 +137,20 @@ Flamma FS-08 Octave → Donner Ultimate Comp → Donner Stylish Fuzz → Joyo Ki
 
 **6. Valeton GP-5** — see settings above.
 
+**7. Donner White Tape — the second delay: a short tape slap, stomped as needed.**
+- Top row (left channel) only. Mono rig, bottom row unused.
+- Level: ~10:30. A clearly audible single echo, still behind the dry note.
+- Time: ~120ms target, just past 8 o'clock. Slapback range.
+- Feedback: fully counterclockwise. One repeat, which is what a slap is.
+- Why a slap and not a second long delay: the board's knobs stay fixed for a whole set, and this is an album patch covering songs at different tempos. Pure stays the tempo-matched dotted eighth, reset per song on the GP-5. A 120ms slap doesn't lock to any tempo, so one fixed setting works on every song in the set.
+- Why it's different from Pure, not a copy: Pure is clean, bright and long. The White Tape is short and warm, with wow, flutter and bass drop-off on the repeat. The flutter gives the slap a faint tape-machine wobble that suits the band's retro, VHS-era aesthetic. The bass drop-off keeps the low end of the chops tight.
+- When to stomp it:
+  - Fast Vai-style runs, with MIDI DLY off (Slap fast lead).
+  - Muted funk chops and chord stabs, CTL off (Slap chops).
+  - Off for clean arpeggios and slow melodic leads: those want Pure's dotted eighth.
+- It sits after the GP-5's Hall, so the slap repeats the hall-wet signal. At Hall Mix 20 that reads as size, not mud.
+- The clock positions assume the Time knob sweeps 25-1000ms evenly. Set the slap by ear: it should thicken the note, not answer it.
+
 ## Note on the full board vs. the `.prst`
 
-The `.prst` file only encodes the GP-5's own 9 modules. The Flamma, Donner Ultimate Comp, Donner Stylish Fuzz, Joyo King of Kings and Joyo Narcissus settings above are not and cannot be part of that file. They're set by hand on the board, and documented here so the full patch can be rebuilt.
+The `.prst` file only encodes the GP-5's own 9 modules. The Flamma, Donner Ultimate Comp, Donner Stylish Fuzz, Joyo King of Kings, Joyo Narcissus and Donner White Tape settings above are not and cannot be part of that file. They're set by hand on the board, and documented here so the full patch can be rebuilt.

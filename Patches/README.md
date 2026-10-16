@@ -74,7 +74,7 @@ The Joyo American Sound joined both Full Boards on 2026-10-12, after the King of
 
 | File | Song / Reference | Instrument | Full Board | AMP/CAB substitute | Notes |
 |---|---|---|---|---|---|
-| `Syndicate-TheMidnight` | *Syndicate* — The Midnight (2025, synthwave, whole-album build) | Strat | Yes | SnapTone: MayerDumble (slot 66) | Glassy chorused Dumble clean; CTL on PRE Boost + DST Darktale + DLY Pure: 80s rhythm vs. singing lead. KoK Right stacked for the big solos. MIDI: PRE/DST/MOD/DLY (6 sounds) |
+| `Syndicate-TheMidnight` | *Syndicate* — The Midnight (2025, synthwave, whole-album build) | Strat | Yes | SnapTone: MayerDumble (slot 66) | Glassy chorused Dumble clean; CTL on PRE Boost + DST Darktale + DLY Pure: 80s rhythm vs. singing lead. KoK Right stacked for the big solos. MIDI: PRE/DST/MOD/DLY. White Tape build: tape slap as the alternate delay (8 sounds) |
 | `Lion-EW` | *Lion* — Elevation Worship (CCM / modern worship, whole-album build) | Strat | Yes | AMP: Foxy 30TB + IR: V30112, Slot 10 | Ambient AC30 wash; CTL on PRE Boost + DST (Green OD): verse vs. anthem. MIDI: PRE/DST/MOD/DLY (5 sounds). White Tape build: second long delay stomp for swells |
 
 ### Artist/
