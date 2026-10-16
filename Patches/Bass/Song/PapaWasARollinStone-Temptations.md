@@ -1,118 +1,164 @@
 # Papa Was a Rollin' Stone — The Temptations (Bass)
 
-Bass: Harley Benton P/J, 5-string, passive. Full board.
-1972. Norman Whitfield production, Funk Brothers session band. ~120 BPM (estimate).
-The bass line *is* the song. One ostinato, repeated for 7 minutes on the single and close to 12 on the album version.
-The bass part is generally credited to Bob Babbitt.
-The target is the classic Detroit P-bass sound: flatwounds, a muted, round attack, deep fundamental, almost no top end.
-The P/J has roundwounds, so the flatwound thump has to come from the pickup choice, the tone knob, and the treble cuts below.
+Revised 2026-10-16 following the approved library audit.
+Type: Song. Instrument: Harley Benton passive 5-string P/J.
+Full board. Board Option: American Sound (bypassed; retained for legacy full-board builds).
+Patch screen name: B-PapaRoll. Patch VOL: 55.
+Preset tempo: 120 BPM.
 
-Instrument setup:
-- P pickup volume: full. J pickup volume: 0. P alone is the Motown sound.
-- Tone knob: about 40% (rolled back). This does most of the flatwound imitation.
-- Play with the side of your palm resting lightly on the strings at the bridge. That stands in for the foam mute on a vintage P-bass.
-- Pluck over the neck end of the P pickup. Round, not snappy.
+Papa Was a Rollin’ Stone: one dry, muted repeating bass figure. Favor the P pickup and roll the tone down for the round attack. CleanB15 provides the amp voice. The prior Bob Babbitt credit was not verified and has been removed pending a reliable session source.
 
-CTL off = the main groove. CTL on = the same groove with a small level lift for when the strings and horns pile in.
+## Revision intent
+
+Keep the musical role of the original patch while reducing redundant gain, excessive space and unclear switching where identified in audit entry 89.
+The module settings and section map below are the active revision.
+Audited capture volumes and Michael’s explicit patch-level adjustments are preserved.
+No hardware audition or measured level match has been performed.
 
 ## GP-5 settings
 
-Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
+Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB.
+The encoded N->S block sits between DST and AMP when a SnapTone is used.
 
-**NR — Gate** (always on)
-- THRE: 15
-Low threshold. Passive P pickup hum is mild.
-The muted notes are short already. A higher threshold would chop the tail of the sustained ostinato notes.
+AMP/CAB replacement: SnapTone CleanB15 (slot 51): Ampeg B18 - Head DI - Bass Chan - Vol 2.5 (B-18N) + Apg115.
+Slot: 51. Always on.
+Gain: 53, VOL: 80, Bass: 56, Middle: 46, Treble: 34.
+AMP and CAB are both off; the capture already includes its cab/DI character.
+The capture voice is fixed across CTL states. Audited VOL is preserved for this slot.
 
-**PRE — Micro Boost** (CTL)
-- Gain: 32
-- CTL off: bypassed. CTL on: engaged.
-A clean level lift, roughly +3dB, no tone change.
-The arrangement grows a lot: strings, horns, wah guitar, orchestral hits. The bass line doesn't change, so it needs a little more level to hold its ground as the mix gets denser.
-Gain 32 is a nudge, not a volume jump.
+## NR - Gate
 
-**DST — off**
-Clean. Any audible grit is wrong for this record.
+THRE: 15.
+Fixed on. Not on CTL.
+Use the lowest threshold that keeps rests quiet. Check soft notes and held-note decay. This gate is before the drives and amp; it does not directly gate noise generated after it.
 
-**AMP/CAB — NAM SnapTone, slot 51: CleanB15** (always on)
-- Built from the `Ampeg B18 - Head DI - Bass Chan - Vol 2.5 (B-18N)` NAM and the Apg115 IR, combined into one snaptone.
-- Real Ampeg B-18N fliptop (the B-15 preamp circuit), captured clean at volume 2.5, into the Apg115 B-15 cab IR.
-- Motown-era bass. A B-15 is the period-correct amp, clean and round.
-- Gain: 53, VOL: 80, Bass: 62, Middle: 46, Treble: 34
-- Gain 53: a little over default. This part wants more push than the other CleanB15 patches.
-- Bass 62: more low end.
-- Middle 46: midrange pulled back a little.
-- Treble 34: top end pulled back noticeably.
-- VOL 80: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
-- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 51 directly.
+## PRE - Module off
 
-**EQ — Bass EQ 2** (always on)
-- 50Hz: +1, 120Hz: +3, 400Hz: -2, 800Hz: +2, 4.5kHz: -7, VOL: 52
--7 at 4.5kHz is the biggest move. It cuts roundwound zing and finger noise. Flatwounds don't have that top end.
-+3 at 120Hz reinforces the B-15 thump.
-Only +1 at 50Hz. The 5-string's low B and the line's low notes can boom on a small room system, so the low end stays controlled.
-+2 at 800Hz keeps enough note definition that the ostinato reads clearly on small speakers.
--2 at 400Hz matches the amp's mid scoop: round, not boxy.
-Same in both CTL states.
-
-**MOD — off**
-No modulation.
-
-**DLY — off**
 Not used.
 
-**RVB — off**
-Motown bass is dry and up front. Any reverb blurs the pocket.
+## DST - Module off
 
-## CTL summary
+Not used.
 
-- **CTL Off — Main groove.** Round, deep, muted, dry. This is 90% of the song.
-- **CTL On — Dense sections.** Same tone plus Micro Boost, about +3dB.
-- Engage CTL when the strings and horns stack up in the extended vamps and the orchestral swells.
-- Drop back to CTL Off for the sparse intro (bass, hi-hat, handclaps) and under the vocal verses.
-- Honestly optional. The line never changes. If the mix is balanced, you can leave CTL off all night.
+## AMP - Module off
 
-## Full pedalboard (signal chain order)
+Not used.
 
-**1. Flamma FS-08 Octave — Bypassed**
-- -2OCT: 0, -OCT: 0, +OCT: 0, +2OCT: 0, Dry: 100
-- Footswitch off.
-The line is already low and fat. An octave voice would turn a clean Motown thump into synth bass.
+## CAB - Module off
 
-**2. Donner Ultimate Comp — Engaged**
-- COMP: 40
-- TONE: 40
-- LEVEL: 55
-- Mode: NORMAL
-Keeps every repetition of the ostinato at the same level. That evenness over 7+ minutes is half the feel.
-TONE 40 keeps the comp from putting back the top end we're cutting everywhere else.
-NORMAL mode. TREBLE mode is the opposite of what a flatwound imitation needs.
+Not used.
 
-**3. Donner Stylish Fuzz — Bypassed**
-- Footswitch off.
-No fuzz on this record.
+## EQ - Bass EQ 2
 
-**4. Joyo Tidal Wave — Engaged (as a clean preamp; Drive effectively out)**
-- Drive: 15
-- Blend: 10
-- Presence: 25
-- Level: 55
-- Treble: 38
-- Middle: 52
-- Bass: 60
-- Mid-Frequency: 500Hz
-- Bass-Shift: 80Hz
-- Cab-Sim (DI out): Off. Ground Lift: Off. Only matters if you're using the DI out.
-It's there for EQ and a touch of preamp weight, not drive.
-Blend 10 with Drive 15 means the driven path is barely in the mix. That's a hint of warmth, like a pushed B-15, with no audible grit. Don't bring Drive in at any point in this song.
-Bass-Shift 80Hz tightens the low end on the 5-string, so it thumps instead of booming.
-Mid-Frequency 500Hz, Middle 52: essentially flat body. The GP-5's EQ handles the mid shaping.
-Treble 38 and Presence 25 start the treble roll-off early in the chain.
+50Hz: 1.
+120Hz: 1.
+400Hz: -2.
+800Hz: 2.
+4.5kHz: -7.
+VOL: 52.
+Fixed on. Not on CTL.
+Shapes note body and cut after the amp/capture. Where assigned to CTL, its output adds the specified lift after the gain stages. Numbers are GP-5 control values, not a calibrated loudness guarantee.
 
-**5. Joyo Narcissus — Bypassed**
-- Footswitch off.
-No chorus. Matches the MOD-off call on the GP-5.
+## MOD - Module off
 
-**6. Valeton GP-5** — see settings above.
+Not used.
 
-The `.prst` only carries the GP-5's 9 modules. The pedalboard settings above are not stored in the file. Set them by hand.
+## DLY - Module off
+
+Not used.
+
+## RVB - Module off
+
+Not used.
+
+## Switching and section map
+
+CTL blocks: None.
+- CTL off / loaded state: Main ostinato. GP-5 active: NR, EQ, N->S.
+- No GP-5 CTL change. Use the board stomps listed below when the arrangement needs another sound.
+
+## Full pedalboard
+
+Flamma FS-08 Octave -> Donner Ultimate Comp -> Donner Stylish Fuzz -> Joyo Tidal Wave -> Joyo American Sound -> Joyo Narcissus -> Valeton GP-5.
+Board settings are set by hand and are not encoded in the .prst.
+All numeric pedal positions use the existing 0–100 position shorthand unless a clock position is specified.
+
+## Flamma FS-08 Octave
+
+Bypassed throughout.
+-2OCT: 0.
+-OCT: 0.
++OCT: 0.
++2OCT: 0.
+Dry: 100.
+
+## Donner Ultimate Comp
+
+On throughout.
+COMP: 40.
+TONE: 40.
+LEVEL: 55.
+Mode: NORMAL.
+
+## Donner Stylish Fuzz
+
+Bypassed throughout.
+Sustain: 25.
+Treble: 50.
+Bass: 50.
+Volume: 50.
+
+## Joyo Tidal Wave
+
+Drive off throughout; preamp/EQ/Level remain active.
+Drive: 15.
+Blend: 10.
+Presence: 25.
+Level: 55.
+Treble: 38.
+Middle: 52.
+Bass: 60.
+Mid-Frequency: 500Hz.
+Bass-Shift: 80Hz.
+Cab-Sim (DI out): Off.
+Ground Lift: Off.
+The footswitch toggles drive only. Preamp EQ and Level stay active in both states. Cab-Sim/Ground Lift affect the DI path; main instrument output is unchanged.
+
+## Joyo American Sound
+
+Bypassed throughout.
+Level: 50.
+Drive: 10.
+Voice: 50.
+Low: 50.
+Mid: 50.
+High: 50.
+
+## Joyo Narcissus
+
+Bypassed throughout.
+Width: 30.
+Depth: 20.
+Rate: 20.
+Mode: Vintage.
+
+## Board choreography
+
+- Flamma FS-08 Octave: Bypassed throughout.
+- Donner Ultimate Comp: On throughout.
+- Donner Stylish Fuzz: Bypassed throughout.
+- Joyo Tidal Wave: Drive off throughout; preamp/EQ/Level remain active.
+- Joyo American Sound: Bypassed throughout.
+- Joyo Narcissus: Bypassed throughout.
+Set the board switches for the section you are entering. Intro-only or clean-only effects may need to start on. Return each pedal to its documented state at the next section. Board pedals are independent of CTL.
+
+## Revision record
+
+Approved audit entry 89.
+- Pedal display name: PapaRollin -> B-PapaRoll. Filenames stay unchanged.
+- SnapTone Bass: 62 -> 56.
+- PRE: Micro Boost -> off.
+- PRE: removed from CTL.
+- EQ 120Hz: 3 -> 1.
+Pre-revision JSON, Markdown and original file hashes are preserved in Documents/patch-audit-2026-10-16/inventory.json and implementation-manifest.json.
+The site piece title and on-disk filenames stay stable; only the short pedal display name may change.

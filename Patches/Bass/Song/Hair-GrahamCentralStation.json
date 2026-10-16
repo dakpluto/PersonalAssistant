@@ -2,16 +2,70 @@
   "patch_name": "Hair-GCS",
   "patch_vol": 56,
   "bpm": 104,
-  "nam": {"name": "FullB15 (slot 54): Ampeg B18 - Head DI - Bass Chan - Vol 5 (B-18N) + Apg115410", "slot": 54, "settings": {"Gain": 52, "VOL": 80, "Bass": 62, "Middle": 48, "Treble": 58}},
+  "nam": {
+    "name": "FullB15 (slot 54): Ampeg B18 - Head DI - Bass Chan - Vol 5 (B-18N) + Apg115410",
+    "slot": 54,
+    "settings": {
+      "Gain": 52,
+      "VOL": 80,
+      "Bass": 56,
+      "Middle": 48,
+      "Treble": 58
+    }
+  },
   "modules": {
-    "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 20}},
-    "PRE": {"model": "COMP4", "always_on": true, "settings": {"Sustain": 70, "Attack": 40, "Clip": 15, "VOL": 60}},
-    "DST": {"model": null},
-    "AMP": {"model": null},
-    "CAB": {"model": null},
-    "EQ": {"model": "Bass EQ 1", "always_on": true, "settings": {"33Hz": 5, "150Hz": -2, "600Hz": -4, "2kHz": 3, "8kHz": 5, "VOL": 56}},
-    "MOD": {"model": null},
-    "DLY": {"model": null},
-    "RVB": {"model": "Room", "always_on": true, "settings": {"Mix": 12, "Decay": 22, "Trail": true}}
+    "NR": {
+      "model": "Gate",
+      "always_on": true,
+      "settings": {
+        "THRE": 20
+      }
+    },
+    "PRE": {
+      "model": "COMP4",
+      "always_on": true,
+      "settings": {
+        "Sustain": 35,
+        "Attack": 40,
+        "Clip": 40,
+        "VOL": 60
+      }
+    },
+    "DST": {
+      "model": null
+    },
+    "AMP": {
+      "model": null
+    },
+    "CAB": {
+      "model": null
+    },
+    "EQ": {
+      "model": "Bass EQ 1",
+      "always_on": true,
+      "settings": {
+        "33Hz": 0,
+        "150Hz": -2,
+        "600Hz": -4,
+        "2kHz": 3,
+        "8kHz": 2,
+        "VOL": 56
+      }
+    },
+    "MOD": {
+      "model": null
+    },
+    "DLY": {
+      "model": null
+    },
+    "RVB": {
+      "model": "Room",
+      "always_on": true,
+      "settings": {
+        "Mix": 12,
+        "Decay": 22,
+        "Trail": true
+      }
+    }
   }
 }

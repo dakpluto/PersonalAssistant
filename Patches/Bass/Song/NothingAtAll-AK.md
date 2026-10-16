@@ -1,48 +1,97 @@
 # When You Say Nothing At All — Alison Krauss
 
+Revised 2026-10-16 following the approved library audit.
+Type: Song. Instrument: Sire V7 2nd Generation 5-string fretless, flatwounds; run passive.
+GP-5 only.
+Patch screen name: When You S. Patch VOL: 50.
+Preset tempo: 68 BPM.
+
 I'll Remember You, 1995 (also on the Keith Whitley original, 1988). ~68 BPM, est.
 Bluegrass-rooted country ballad, famous for how little is happening — no wall of sound anywhere, ever.
 The bass part supports, it doesn't lead. Warm, round, upright-adjacent — closer to a Nashville session P-bass through a flat amp than anything modern.
 GP-5 only, Sire fretless (passive), no pedalboard.
 
-## Module chain
+## Revision intent
 
-**NR — Gate**, always on.
-THRE: 25. Light touch — just enough to keep noise floor down between the sparse phrases, doesn't need to fight anything.
+Keep the musical role of the original patch while reducing redundant gain, excessive space and unclear switching where identified in audit entry 84.
+The module settings and section map below are the active revision.
+Audited capture volumes and Michael’s explicit patch-level adjustments are preserved.
+No hardware audition or measured level match has been performed.
 
-**PRE — off.** No boost anywhere. This song doesn't ask for a louder front end, it asks for restraint.
+## GP-5 settings
 
-**DST — off.** No drive, ever, on this patch.
+Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB.
+The encoded N->S block sits between DST and AMP when a SnapTone is used.
 
-**AMP/CAB — NAM SnapTone, slot 51: CleanB15** (always on)
-- Built from the `Ampeg B18 - Head DI - Bass Chan - Vol 2.5 (B-18N)` NAM and the Apg115 IR, combined into one snaptone.
-- Real Ampeg B-18N fliptop (the B-15 preamp circuit), captured clean at volume 2.5, into the Apg115 B-15 cab IR.
-- Acoustic-leaning ballad. A clean B-15 is warm and quiet enough to sit under the dobro and vocal.
-- Gain: 50, VOL: 80, Bass: 60, Middle: 55, Treble: 45
-- Gain 50: the capture as built.
-- Bass 60: Full and round.
-- Middle 55: Enough midrange presence for the fretless to read as a note, not just low-end wash.
-- Treble 45: Soft top end, matches the flatwound strings and the warm 100Hz-heavy cab.
-- VOL 80: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
-- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 51 directly.
+AMP/CAB replacement: SnapTone CleanB15 (slot 51): Ampeg B18 - Head DI - Bass Chan - Vol 2.5 (B-18N) + Apg115.
+Slot: 51. Always on.
+Gain: 50, VOL: 80, Bass: 60, Middle: 55, Treble: 45.
+AMP and CAB are both off; the capture already includes its cab/DI character.
+The capture voice is fixed across CTL states. Audited VOL is preserved for this slot.
 
-**EQ — Bass EQ 2**, always on.
-50Hz: +5, 120Hz: +3, 400Hz: -2, 800Hz: 0, 4.5kHz: +2, VOL: 100.
-Small low-end reinforcement for that upright-adjacent weight, a slight dip around 400Hz to keep the fretless from getting boxy, a touch of top-end lift so the note attack stays audible under the vocal and dobro/steel.
+## NR - Gate
 
-**MOD — off.** No chorus or vibe — a wet fretless glide would work against how plainspoken this arrangement is.
+THRE: 8.
+Fixed on. Not on CTL.
+Use the lowest threshold that keeps rests quiet. Check soft notes and held-note decay. This gate is before the drives and amp; it does not directly gate noise generated after it.
 
-**DLY — off.** No delay. Dry and direct.
+## PRE - Module off
 
-**RVB — Room**, on CTL.
-Mix: 22, Decay: 32, Trail: true.
-Off for the verses — close, dry, intimate. On for the choruses/bridge — just enough room to open the sound up slightly without turning it into a wash. This song builds almost entirely on vocal harmony and arrangement, not bass dynamics, so the lift here is deliberately subtle.
+Not used.
 
-## CTL footswitch
+## DST - Module off
 
-One module on CTL: RVB (Room). That's the only thing this song asks the patch to do.
+Not used.
 
-- **CTL off** — verse sound. Dry, close, restrained. This is the resting state the patch loads into.
-- **CTL on** — chorus/bridge sound. A touch of room air opens things up without changing the fundamental tone.
+## AMP - Module off
 
-Nudge CTL on for the choruses and the bridge, off everywhere else. This is a one-sound-mostly patch by design — the song doesn't have the dynamic range to justify more than that, and overbuilding the CTL split here would fight the arrangement instead of serving it.
+Not used.
+
+## CAB - Module off
+
+Not used.
+
+## EQ - Bass EQ 2
+
+50Hz: 1.
+120Hz: 1.
+400Hz: -2.
+800Hz: 0.
+4.5kHz: 2.
+VOL: 50.
+Fixed on. Not on CTL.
+Shapes note body and cut after the amp/capture. Where assigned to CTL, its output adds the specified lift after the gain stages. Numbers are GP-5 control values, not a calibrated loudness guarantee.
+
+## MOD - Module off
+
+Not used.
+
+## DLY - Module off
+
+Not used.
+
+## RVB - Room
+
+Mix: 6.
+Decay: 35.
+Trail: on.
+CTL assigned. Loads off; first CTL press switches it on.
+Adds the specified room or ambient tail. The revised mix keeps the initial note audible. Trail behavior follows the saved setting.
+
+## Switching and section map
+
+CTL blocks: RVB.
+- CTL off / loaded state: verse sound. GP-5 active: NR, EQ, N->S.
+- First CTL press: chorus/bridge sound. GP-5 active: NR, EQ, RVB, N->S.
+- Press CTL again to return to the loaded block pattern, provided no shared MIDI block has been changed.
+
+## Revision record
+
+Approved audit entry 84.
+- NR THRE: 25 -> 8.
+- EQ 50Hz: 5 -> 1.
+- EQ 120Hz: 3 -> 1.
+- EQ VOL: 100 -> 50.
+- RVB Mix: 25 -> 6.
+Pre-revision JSON, Markdown and original file hashes are preserved in Documents/patch-audit-2026-10-16/inventory.json and implementation-manifest.json.
+The site piece title and on-disk filenames stay stable; only the short pedal display name may change.

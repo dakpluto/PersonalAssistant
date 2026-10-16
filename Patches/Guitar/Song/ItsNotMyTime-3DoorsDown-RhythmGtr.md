@@ -1,67 +1,108 @@
 # It's Not My Time (Rhythm Guitar) — 3 Doors Down
 
+Revised 2026-10-16 following the approved library audit.
+Type: Song. Instrument: HSS Stratocaster.
+GP-5 only.
+Patch screen name: G-NotMyTim. Patch VOL: 50.
+Preset tempo: 100 BPM.
+
 From *3 Doors Down* (2008). About 100 BPM, est.
 Driving post-grunge. Chunky, palm-muted high-gain rhythm through the verses, big open chords in the chorus, and a short melodic lead.
 Built from the song's overall sound. I haven't verified the exact guitars and amps on the record.
 Instrument: Stratocaster (HSS). Bridge humbucker throughout.
 GP-5 only, Stratocaster (HSS), no pedalboard.
 
-## AMP/CAB: RectifierCrunch snaptone (slot 72)
+## Revision intent
 
-A real Rectifier crunch/rhythm capture into a Mesa V30 4x12. That's the go-to 2000s post-grunge voice, captured from the real amp instead of modeled.
-Moved here 2026-10-04, when Michael cleared G12 for high-gain patches ("sounded fantastic").
+Keep the musical role of the original patch while reducing redundant gain, excessive space and unclear switching where identified in audit entry 167.
+The module settings and section map below are the active revision.
+Audited capture volumes and Michael’s explicit patch-level adjustments are preserved.
+No hardware audition or measured level match has been performed.
 
-## Module chain
+## GP-5 settings
 
-**NR — Gate**, always on.
+Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB.
+The encoded N->S block sits between DST and AMP when a SnapTone is used.
+
+AMP/CAB replacement: SnapTone RectifierCrunch (slot 72): 1. MESA DUAL RECTIFIER 2025 | CRUNCH | RHYTHM #1 + V30 UR 4FB 4x12 SM57 0.50in 0.0in 7603 (Mesa V30).
+Slot: 72. Always on.
+Gain: 55, VOL: 70, Bass: 52, Middle: 55, Treble: 55.
+AMP and CAB are both off; the capture already includes its cab/DI character.
+The capture voice is fixed across CTL states. Audited VOL is preserved for this slot.
+
+## NR - Gate
+
 THRE: 38.
-High-gain palm mutes need hard stops. 38 kills the hiss without cutting off sustained chorus chords.
+Fixed on. Not on CTL.
+Use the lowest threshold that keeps rests quiet. Check soft notes and held-note decay. This gate is before the drives and amp; it does not directly gate noise generated after it.
 
-**PRE — Boost (EP Booster)**, on CTL.
-Gain: 50, +3dB: on, Bright: off.
-The lead push. More level and sustain for the solo. Bright off keeps it smooth.
+## PRE - Module off
 
-**DST — Green OD (TS-808)**, always on.
-Gain: 10, Tone: 55, VOL: 70.
-The classic tightening trick. Low gain, high level. It trims the Rectifier's low end so the palm mutes stay tight. It also adds the push a crunch-channel capture needs to reach full rhythm gain.
+Not used.
 
-**AMP/CAB — NAM SnapTone, slot 72: RectifierCrunch** (always on)
-- Built from the `1. MESA DUAL RECTIFIER 2025 | CRUNCH | RHYTHM #1` NAM and the `V30 UR 4FB 4x12 SM57 0.50in 0.0in 7603` (Mesa V30) IR, combined into one snaptone.
-- Real Mesa Dual Rectifier, crunch/rhythm setting, into a Mesa 4x12 with V30s.
-- Gain: 55, VOL: 70, Bass: 52, Middle: 55, Treble: 55
-- Gain 55: a little over the capture. With the TS in front it reaches full post-grunge rhythm gain.
-- Bass 52: a touch more low end. The TS already trims the flub.
-- Middle 55: keeps it out of scooped-metal territory. This is radio rock.
-- Treble 55: a touch more bite.
-- VOL 70: the level Michael set for this snaptone in the 2026-10-01 VOL audit. Trim here if the patch jumps in level against your others.
-- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 72 directly.
+## DST - Green OD
 
-**EQ — Guitar EQ 2**, always on.
-100Hz: -1, 500Hz: -2, 1kHz: +1, 3kHz: +2, 6kHz: -2, VOL: 50.
--2 at 500Hz clears the boxiness. +2 at 3kHz for bite. -2 at 6kHz takes off the fizz.
+Gain: 10.
+Tone: 55.
+VOL: 70.
+Fixed on. Not on CTL.
+Supplies the selected additional drive voice. Use its level and gain as separate controls. A pre-amp boost may add compression instead of a proportional solo-volume increase.
 
-**MOD — off.**
+## AMP - Module off
 
-**DLY — Analog**, on CTL.
-Mix: 20, Time: 450ms, Feedback: 25, Trail: on.
-A dotted eighth at 100 BPM, behind the lead.
+Not used.
 
-**RVB — Room**, always on.
-Mix: 12, Decay: 30, Trail: on.
-A small room. High gain doesn't want much space.
+## CAB - Module off
 
-## CTL footswitch
+Not used.
 
-On CTL: PRE (Boost), DLY (Analog).
+## EQ - Guitar EQ 2
 
-- **CTL off** — Rhythm. Tight, mid-forward Rectifier crunch for the verses and choruses. This is the resting state the patch loads into.
-- **CTL on** — Lead. Boost plus dotted-eighth delay for the solo.
+100Hz: -1.
+500Hz: -2.
+1kHz: 1.
+3kHz: 2.
+6kHz: -2.
+VOL: 53.
+CTL assigned. Loads off; first CTL press switches it on.
+Shapes note body and cut after the amp/capture. Where assigned to CTL, its output adds the specified lift after the gain stages. Numbers are GP-5 control values, not a calibrated loudness guarantee.
 
-Engage CTL for the lead. Drop back for the rhythm.
+## MOD - Module off
 
-## Previous version (Mess DualV + V30112, before 2026-10-04)
+Not used.
 
-Moved to RectifierCrunch on 2026-10-04. To go back, restore these values:
-- AMP Mess DualV: Gain 55, PRES 52, VOL 60, Bass 52, Middle 55, Treble 55.
-- CAB User IR 10 (V30112): VOL 60. JSON `"ir": {"name": "V30112"}`, no `nam` field.
-- Everything else is unchanged.
+## DLY - Analog
+
+Mix: 14.
+Time: 450.
+Feedback: 25.
+Trail: on.
+CTL assigned. Loads off; first CTL press switches it on.
+Adds repeats only in the listed states. Trail preserves the remaining repeats when this block is bypassed; it does not change delay time or mix.
+
+## RVB - Room
+
+Mix: 12.
+Decay: 30.
+Trail: on.
+Fixed on. Not on CTL.
+Adds the specified room or ambient tail. The revised mix keeps the initial note audible. Trail behavior follows the saved setting.
+
+## Switching and section map
+
+CTL blocks: EQ, DLY.
+- CTL off / loaded state: Rhythm. GP-5 active: NR, DST, RVB, N->S.
+- First CTL press: Lead. GP-5 active: NR, DST, EQ, DLY, RVB, N->S.
+- Press CTL again to return to the loaded block pattern, provided no shared MIDI block has been changed.
+
+## Revision record
+
+Approved audit entry 167.
+- Pedal display name: NotMyTime -> G-NotMyTim. Filenames stay unchanged.
+- PRE: Boost -> off.
+- PRE: removed from CTL.
+- EQ VOL: 50 -> 53.
+- EQ: assigned to CTL.
+- DLY Mix: 20 -> 14.
+Pre-revision JSON, Markdown and original file hashes are preserved in Documents/patch-audit-2026-10-16/inventory.json and implementation-manifest.json.
+The site piece title and on-disk filenames stay stable; only the short pedal display name may change.

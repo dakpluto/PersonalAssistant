@@ -1,104 +1,173 @@
 # Civil War — Guns N' Roses
 
+Revised 2026-10-16 following the approved library audit.
+Type: Song. Instrument: Harley Benton passive 5-string P/J.
+Full board. Board Option: American Sound (bypassed; retained for legacy full-board builds).
+Patch screen name: B-CivilWar. Patch VOL: 55.
+Preset tempo: 70 BPM.
+
 Bass: Harley Benton P/J, 5-string, passive. Full board.
 From *Use Your Illusion II* (1991). About 70 BPM half-time feel, est. Online tempo sources disagree.
 Tuning: Eb standard. GNR tuned down a half step on the *Illusion* records. Tune down, or play it in E and transpose by ear.
 Duff McKagan plays with a pick: punky, mid-forward, with real grit when the band is loud. His bass is a Fender Jazz Special, which is a P/J. Your Harley Benton is the right instrument for this.
 The song moves between a sparse, moody verse and a heavy, driving chorus and double-time outro.
-
-CTL off = intro and verses. CTL on = heavy choruses and the outro.
-
 Pickups: both volumes full. Tone at about 70%. Pick, not fingers.
+
+## Revision intent
+
+Keep the musical role of the original patch while reducing redundant gain, excessive space and unclear switching where identified in audit entry 23.
+The module settings and section map below are the active revision.
+Audited capture volumes and Michael’s explicit patch-level adjustments are preserved.
+No hardware audition or measured level match has been performed.
 
 ## GP-5 settings
 
-Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
+Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB.
+The encoded N->S block sits between DST and AMP when a SnapTone is used.
 
-**NR — Gate**
-- THRE: 20
-- Always on. Low enough to keep the quiet verse notes intact, high enough to catch hum once the DST is on.
+AMP/CAB replacement: SnapTone GrittySVT (slot 57): SVT PUSHED (SVT-CL) + Apg810.
+Slot: 57. Always on.
+Gain: 48, VOL: 55, Bass: 56, Middle: 58, Treble: 56.
+AMP and CAB are both off; the capture already includes its cab/DI character.
+The capture voice is fixed across CTL states. Audited VOL is preserved for this slot.
 
-**PRE — Off**
-- The Donner Ultimate Comp handles compression on the board. A second compressor here would squash the pick attack.
+## NR - Gate
 
-**DST — Bass OD — On CTL**
-- Gain: 42, Blend: 45, VOL: 60, Bass: 52, Treble: 56
-- CTL off: bypassed (verse). CTL on: engaged (heavy sections).
-- Blend 45 keeps the clean fundamental under the grit. The low end stays solid under two crunching Marshalls.
-- Treble 56: a little extra pick bite on top of the drive.
+THRE: 20.
+Fixed on. Not on CTL.
+Use the lowest threshold that keeps rests quiet. Check soft notes and held-note decay. This gate is before the drives and amp; it does not directly gate noise generated after it.
 
-**AMP/CAB — NAM SnapTone, slot 57: GrittySVT** (always on)
-- Built from the `SVT PUSHED` NAM (SVT-CL) and the Apg810 IR, combined into one snaptone.
-- A pushed SVT preamp into an 8x10. Already a little gritty on its own. That's Duff's picked hard-rock tone, and the same combo the Sweet Child O' Mine patch uses. Keeps the GNR patches consistent.
-- Gain: 48, VOL: 55, Bass: 56, Middle: 58, Treble: 56
-- Gain 48: just under as-captured, so the verse isn't too hairy.
-- Bass 56: a little more low end for the half-time groove.
-- Middle 58: mids to cut through the guitars.
-- Treble 56: keeps the pick clack.
-- VOL 55: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level.
-- Same in both CTL states. AMP and CAB are off in the `.prst`. The N->S block calls slot 57 directly.
+## PRE - Module off
 
-**EQ — Bass EQ 1**
-- 33Hz: +1, 150Hz: +1, 600Hz: +2, 2kHz: +3, 8kHz: +1, VOL: 54
-- Always on, same in both CTL states.
-- +3 at 2kHz: pick definition through the wall of guitars.
-- +2 at 600Hz: midrange body for the driven sections.
-- +1 at 33Hz and 150Hz: a bit of weight on the low B and E for the slow groove.
+Not used.
 
-**MOD — Off**
-- No modulation. Straight rock bass.
+## DST - Module off
 
-**DLY — Off**
-- Not used.
+Not used.
 
-**RVB — Room**
-- Mix: 10, Decay: 25, Trail: On
-- Always on. Just enough room to match the big *Illusion* production. Not enough to blur the low end.
+## AMP - Module off
 
-## CTL summary
+Not used.
 
-On CTL: DST (Bass OD).
+## CAB - Module off
 
-- **CTL Off — Verse.** Pushed SVT, clean-ish with a little hair. Sits under the clean guitar and Axl's vocal.
-- **CTL On — Heavy.** Bass OD adds grit and growl for the choruses ("What's so civil about war anyway") and the double-time outro.
-- Engage CTL when the band hits the heavy sections. Drop back for the quiet verses.
+Not used.
 
-## Full pedalboard (signal chain order)
+## EQ - Bass EQ 1
 
-**1. Flamma FS-08 Octave — Bypassed**
-- -2OCT: 0, -OCT: 0, +OCT: 0, +2OCT: 0, Dry: 100
-- Footswitch off all song. No octave layer on this part.
+33Hz: 1.
+150Hz: 1.
+600Hz: 2.
+2kHz: 3.
+8kHz: 1.
+VOL: 54.
+Fixed on. Not on CTL.
+Shapes note body and cut after the amp/capture. Where assigned to CTL, its output adds the specified lift after the gain stages. Numbers are GP-5 control values, not a calibrated loudness guarantee.
 
-**2. Donner Ultimate Comp — Engaged**
-- COMP: 45
-- TONE: 55
-- LEVEL: 58
-- Mode: TREBLE
-- Evens out the picked notes across the quiet verse and the loud chorus. TREBLE mode keeps the pick attack audible into the gritty SVT.
+## MOD - Module off
 
-**3. Donner Stylish Fuzz — Bypassed**
-- Footswitch off. Duff's grit here is amp-and-overdrive, not fuzz. The GP-5's Bass OD is the drive.
+Not used.
 
-**4. Joyo Tidal Wave — Engaged (preamp/EQ), Drive off**
-- Drive: 20
-- Blend: 35
-- Presence: 58
-- Level: 58
-- Treble: 55
-- Middle: 58
-- Bass: 55
-- Mid-Frequency: 1000Hz
-- Bass-Shift: 80Hz
-- Cab-Sim (DI out): Off
-- Ground Lift: Off
-- Drive footswitch: off all song. The GP-5's Bass OD handles the heavy sections from the CTL switch, so one stomp does it. Running both would get too dirty and lose the fundamental.
-- The preamp and EQ stay active regardless of the footswitch. Mid-Frequency 1000Hz pushes pick attack and cut-through. Bass-Shift 80Hz keeps the low end tight under the guitars.
+## DLY - Module off
 
-**5. Joyo Narcissus — Bypassed**
-- Footswitch off. No chorus. Matches the MOD-off call on the GP-5.
+Not used.
 
-**6. Valeton GP-5** — see settings above.
+## RVB - Room
 
-## Note on the full board vs. the `.prst`
+Mix: 5.
+Decay: 25.
+Trail: on.
+Fixed on. Not on CTL.
+Adds the specified room or ambient tail. The revised mix keeps the initial note audible. Trail behavior follows the saved setting.
 
-The `.prst` file only encodes the GP-5's own 9 modules. The Flamma, Donner Ultimate Comp, Donner Stylish Fuzz, Joyo Tidal Wave and Joyo Narcissus settings above are not and cannot be part of that file. They're set by hand on the board, and documented here so the full patch can be rebuilt.
+## Switching and section map
+
+CTL blocks: None.
+- CTL off / loaded state: Intro and verses. GP-5 active: NR, EQ, RVB, N->S.
+- No GP-5 CTL change. Use the board stomps listed below when the arrangement needs another sound.
+
+## Full pedalboard
+
+Flamma FS-08 Octave -> Donner Ultimate Comp -> Donner Stylish Fuzz -> Joyo Tidal Wave -> Joyo American Sound -> Joyo Narcissus -> Valeton GP-5.
+Board settings are set by hand and are not encoded in the .prst.
+All numeric pedal positions use the existing 0–100 position shorthand unless a clock position is specified.
+
+## Flamma FS-08 Octave
+
+Bypassed throughout.
+-2OCT: 0.
+-OCT: 0.
++OCT: 0.
++2OCT: 0.
+Dry: 100.
+
+## Donner Ultimate Comp
+
+On throughout.
+COMP: 45.
+TONE: 55.
+LEVEL: 58.
+Mode: TREBLE.
+
+## Donner Stylish Fuzz
+
+Bypassed throughout.
+Sustain: 25.
+Treble: 50.
+Bass: 50.
+Volume: 50.
+
+## Joyo Tidal Wave
+
+Drive off for intro/verses; on for heavy choruses and outro; preamp active throughout.
+Drive: 30.
+Blend: 35.
+Presence: 58.
+Level: 58.
+Treble: 55.
+Middle: 58.
+Bass: 55.
+Mid-Frequency: 1000Hz.
+Bass-Shift: 80Hz.
+Cab-Sim (DI out): Off.
+Ground Lift: Off.
+The footswitch toggles drive only. Preamp EQ and Level stay active in both states. Cab-Sim/Ground Lift affect the DI path; main instrument output is unchanged.
+
+## Joyo American Sound
+
+Bypassed throughout.
+Level: 50.
+Drive: 10.
+Voice: 50.
+Low: 50.
+Mid: 50.
+High: 50.
+
+## Joyo Narcissus
+
+Bypassed throughout.
+Width: 30.
+Depth: 20.
+Rate: 20.
+Mode: Vintage.
+
+## Board choreography
+
+- Flamma FS-08 Octave: Bypassed throughout.
+- Donner Ultimate Comp: On throughout.
+- Donner Stylish Fuzz: Bypassed throughout.
+- Joyo Tidal Wave: Drive off for intro/verses; on for heavy choruses and outro; preamp active throughout.
+- Joyo American Sound: Bypassed throughout.
+- Joyo Narcissus: Bypassed throughout.
+Set the board switches for the section you are entering. Intro-only or clean-only effects may need to start on. Return each pedal to its documented state at the next section. Board pedals are independent of CTL.
+
+## Revision record
+
+Approved audit entry 23.
+- Pedal display name: CivilWar-GNR -> B-CivilWar. Filenames stay unchanged.
+- DST: Bass OD -> off.
+- DST: removed from CTL.
+- RVB Mix: 10 -> 5.
+- Board Tidal Wave: Drive 30, Blend 35; Drive off for intro/verses; on for heavy choruses and outro; preamp active throughout.
+Pre-revision JSON, Markdown and original file hashes are preserved in Documents/patch-audit-2026-10-16/inventory.json and implementation-manifest.json.
+The site piece title and on-disk filenames stay stable; only the short pedal display name may change.

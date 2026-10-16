@@ -1,0 +1,83 @@
+{
+  "patch_name": "FarBehind",
+  "patch_vol": 50,
+  "bpm": 90,
+  "nam": {
+    "name": "ClassicMarshall: JCM800 2203 - P5 B5 M5 T5 MV5 G4 - AZG - 700 + V7X_dc Marshall 1960AV",
+    "slot": 68,
+    "settings": {
+      "Gain": 50,
+      "VOL": 50,
+      "Bass": 47,
+      "Middle": 55,
+      "Treble": 49
+    }
+  },
+  "modules": {
+    "NR": {
+      "model": "Gate",
+      "always_on": true,
+      "settings": {
+        "THRE": 14
+      }
+    },
+    "PRE": {
+      "model": null
+    },
+    "DST": {
+      "model": "Green OD",
+      "ctl": true,
+      "ctl_off_state": "off",
+      "ctl_on_state": "on",
+      "settings": {
+        "Gain": 28,
+        "Tone": 47,
+        "VOL": 57
+      }
+    },
+    "AMP": {
+      "model": null
+    },
+    "CAB": {
+      "model": null
+    },
+    "EQ": {
+      "model": "Guitar EQ 1",
+      "ctl": true,
+      "ctl_off_state": "off",
+      "ctl_on_state": "on",
+      "settings": {
+        "125Hz": -2,
+        "400Hz": 0,
+        "800Hz": 2,
+        "1.6kHz": 2,
+        "4kHz": -1,
+        "VOL": 54
+      }
+    },
+    "MOD": {
+      "model": null
+    },
+    "DLY": {
+      "model": "Analog",
+      "ctl": true,
+      "ctl_off_state": "off",
+      "ctl_on_state": "on",
+      "settings": {
+        "Mix": 14,
+        "Time": 340,
+        "Feedback": 19,
+        "Trail": true
+      }
+    },
+    "RVB": {
+      "model": "Room",
+      "always_on": true,
+      "settings": {
+        "Mix": 9,
+        "Decay": 23,
+        "Trail": true
+      }
+    }
+  }
+}

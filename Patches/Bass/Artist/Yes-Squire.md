@@ -1,108 +1,187 @@
 # Yes — Chris Squire Signature Bass Tone
 
-Chris Squire is the reason "bright, driven bass" is a genre unto itself.
-Rickenbacker 4001 into a split rig — one side clean, one side cranked — blended back together.
-Pick attack up front, mids pushed for that vocal "growl," top end left wide open.
-No scoop. This is not a modern hi-fi bass tone — it's aggressive and present, sitting almost like a rhythm guitar in the mix.
+Revised 2026-10-16 following the approved library audit.
+Type: Artist. Instrument: Harley Benton passive 5-string P/J.
+Full board. Board Option: American Sound (bypassed; retained for legacy full-board builds).
+Patch screen name: Yes-Squire. Patch VOL: 55.
+Preset tempo: 120 BPM.
 
-This patch models that blend using the GP-5's own gain stages (boost + Bass OD, blended) instead of running two physical amps, and adds a second, cleaner CTL state for Yes's more open, arpeggiated passages (intros, builds, sections like "Roundabout"'s intro or "And You and I").
+Chris Squire-inspired picked P/J bass. Bright, mid-forward drive is intentional. Bass OD is the principal additional drive; the capture still contributes its own character. This serial chain approximates the musical role and is not a true split clean/dirty rig.
 
-## GP-5 Settings
+## Revision intent
 
-Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB
+Keep the musical role of the original patch while reducing redundant gain, excessive space and unclear switching where identified in audit entry 4.
+The module settings and section map below are the active revision.
+Audited capture volumes and Michael’s explicit patch-level adjustments are preserved.
+Keep Bass OD as the principal added drive; Tidal Wave drive stays off in both CTL states.
+No hardware audition or measured level match has been performed.
 
-**NR — Gate**
-- THRE: 25
-- Always on. Light gate — just enough to clean up hiss from the boost/OD stack without chopping sustain on longer notes.
+## GP-5 settings
 
-**PRE — B-Boost** (Xotic BB Preamp Overdrive)
-- Gain: 60, VOL: 55, Bass: 55, Treble: 65
-- **CTL switch.** Off = engaged, On = bypassed.
-- This is the "second amp" in Squire's split-signal trick — a preamp push that adds grit and top-end bite ahead of the OD stage. Off state (growl) runs it engaged; On state (clean) bypasses it entirely so the clean arpeggiated tone stays uncolored.
+Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB.
+The encoded N->S block sits between DST and AMP when a SnapTone is used.
 
-**DST — Bass OD** (bass-specific overdrive with wet/dry blend)
-- Gain: 65, Blend: 60, VOL: 60, Bass: 55, Treble: 70
-- **CTL switch.** Off = engaged, On = bypassed.
-- Blend at 60 (not maxed) keeps the fundamental intact under the drive — this is the Blend knob doing the job Squire's amp-splitting rig did physically. Treble pushed hard (70) for the aggressive top-end snap that defines the tone. Off = the driven growl (main Yes sound). On = fully clean for open/arpeggiated sections.
+AMP/CAB replacement: SnapTone BrightSVT (slot 55): SVT SANS BRIGHT DRIVE (SVT-CL) + Hartke410.
+Slot: 55. Always on.
+Gain: 50, VOL: 60, Bass: 55, Middle: 50, Treble: 58.
+AMP and CAB are both off; the capture already includes its cab/DI character.
+The capture voice is fixed across CTL states. Audited VOL is preserved for this slot.
 
-**AMP/CAB — NAM SnapTone, slot 55: BrightSVT** (always on)
-- Built from the `SVT SANS BRIGHT DRIVE (SVT-CL)` NAM and the Hartke410 IR, combined into one snaptone.
-- Real Ampeg SVT-CL with the bright drive setting, into the aluminum-cone Hartke410 IR.
-- Squire's Rickenbacker clank: bright, driven, trebly. The closest combo in the set.
-- Gain: 50, VOL: 60, Bass: 55, Middle: 50, Treble: 70
-- Gain 50: the capture as built.
-- Bass 55: a touch more low end.
-- Middle 50: flat.
-- Treble 70: more top end.
-- VOL 60: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
-- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 55 directly.
+## NR - Gate
 
-**EQ — Bass EQ 1**
-- 33Hz: +8, 150Hz: -5, 600Hz: +8, 2kHz: +12, 8kHz: +15, VOL: 50
-- Always on, both states. This is the Squire signature curve: solid low-end anchor (33Hz), a dip at 150Hz to keep it from getting muddy, then a rising shelf from 600Hz up through 8kHz for the vocal midrange growl and the glassy top-end snap. Not scooped — Squire's mids are pushed, not cut.
+THRE: 25.
+Fixed on. Not on CTL.
+Use the lowest threshold that keeps rests quiet. Check soft notes and held-note decay. This gate is before the drives and amp; it does not directly gate noise generated after it.
 
-**MOD — B-Chorus** (Boss CE-2B for Bass)
-- Depth: 20, Rate: 0.8Hz, VOL: 50
-- **CTL switch.** Off = bypassed, On = engaged.
-- Light touch, per the usual MOD rule — this isn't a drenched chorus tone. Off (growl state) stays dry, all the character comes from the drive. On (clean state) adds a light shimmer under the open/arpeggiated playing, which is where Yes recordings do occasionally use a touch of chorus-y width on cleaner bass parts.
+## PRE - Module off
 
-**DLY — Off**
-Not used. Squire's tone (and Yes's studio bass sound generally) is dry — no delay character associated with the signature tone.
+Not used.
 
-**RVB — Off**
-Not used, on either CTL state. Keeping the bass dry and upfront — any room/hall character on a Yes record comes from the mix, not the bass tone itself.
+## DST - Bass OD
 
-### CTL Summary (GP-5)
-- **CTL Off — Driven Squire growl (main tone):** B-Boost + Bass OD both engaged, no chorus. This is the tone for verses, riffs, and anything with real drive and attack — the core Yes bass sound.
-- **CTL On — Clean/arpeggiated:** Both gain stages bypassed, light chorus engaged. Use for intros, builds, and open sections where the part needs to breathe and shimmer instead of push.
+Gain: 30.
+Blend: 35.
+VOL: 60.
+Bass: 55.
+Treble: 70.
+CTL assigned. Loads on; first CTL press switches it off.
+Also on an individual MIDI toggle.
+Supplies the selected additional drive voice. Use its level and gain as separate controls. A pre-amp boost may add compression instead of a proportional solo-volume increase.
 
-## MIDI toggles
+## AMP - Module off
 
-MIDI = True (added 2026-10-12). With no MIDI controller connected, the patch loads and plays exactly as before: CTL and the board work the same. MIDI adds single-block toggles on top.
+Not used.
 
-On MIDI: DST (Bass OD), also on CTL (inverted: on at load).
+## CAB - Module off
 
-Sounds:
-- **Squire growl** (default). CTL off: B-Boost + Bass OD.
-- **Clank.** CTL off, MIDI DST off. The B-Boost alone: the clanky, trebly Rickenbacker preamp edge without the full drive. A middle ground for brighter, busier passages that need bite but not grind.
-- **Clean/arpeggiated** (CTL on). Both gain stages off, light chorus.
-- **Shared CTL/MIDI blocks:** CTL flips every block assigned to it, whatever state it's in (confirmed by Michael, 2026-10-12). A CTL block you switched by MIDI ends up the opposite of the designed CTL sound. So before pressing CTL, switch it back by MIDI. Changing a block by MIDI *after* pressing CTL is always safe.
+Not used.
 
+## EQ - Bass EQ 1
 
-## Full Pedalboard (signal chain order)
+33Hz: 0.
+150Hz: -5.
+600Hz: 8.
+2kHz: 4.
+8kHz: 3.
+VOL: 50.
+Fixed on. Not on CTL.
+Shapes note body and cut after the amp/capture. Where assigned to CTL, its output adds the specified lift after the gain stages. Numbers are GP-5 control values, not a calibrated loudness guarantee.
 
-**1. Flamma FS-08 Octave — Bypassed, whole patch.**
-Squire didn't build his tone around octave layering. Leave the four octave knobs at 0 and Dry at 100 so there's no surprise if the footswitch gets bumped; footswitch stays off throughout.
+## MOD - B-Chorus
 
-**2. Donner Ultimate Comp — Engaged, whole patch.**
-- COMP: 45
-- TONE: 55
-- LEVEL: 55
-- Mode: TREBLE
-Sits ahead of everything, evens out pick attack before the drive stages — Squire played with a pick, hard, and compression is part of keeping that attack consistent without losing note-to-note evenness. TREBLE mode keeps pick attack audible feeding into the darker Ampeg-voiced cab downstream. Runs continuously through both CTL states — it's gluing dynamics, not part of the growl/clean split.
+Depth: 20.
+Rate: 0.8.
+VOL: 50.
+CTL assigned. Loads off; first CTL press switches it on.
+Adds the specified movement. Keep it underneath the note except for intentionally wet artist or ambient voices.
 
-**3. Donner Stylish Fuzz — Bypassed, whole patch.**
-Squire's tone is driven, not fuzzed — a full fuzz wall would bury the note definition his lines depend on. True bypass throughout.
+## DLY - Module off
 
-**4. Joyo Tidal Wave — Engaged for CTL Off (growl) sections, bypassed for CTL On (clean) sections.**
-- Drive: 40
-- Blend: 55
-- Presence: 60
-- Level: 55
-- Treble: 60, Middle: 55, Bass: 50
-- Mid-Frequency toggle: 500Hz (bass body, not pick-attack cut)
-- Bass-Shift toggle: 80Hz (tighter low end — keeps this from stacking mud with the GP-5's own Bass OD)
-- Cab-Sim (DI out): On — useful if this patch ever gets DI'd to a board or interface
-- Ground Lift: Off unless hum shows up in a given room
-This is the second grit stage in the "split signal" trick — physically bypass it for the clean CTL-on sections (step off the footswitch) so nothing colors the open/arpeggiated tone. Engage it for CTL-off growl sections; it stacks with the GP-5's own PRE/DST to build the layered, amp-splitting character of the real rig instead of relying on one gain stage alone.
+Not used.
 
-**5. Joyo Narcissus — Bypassed, whole patch.**
-The GP-5's own B-Chorus module (CTL On state) is the primary chorus voice for this patch. Per the pedal's own notes, don't run both at once — stacking two choruses just gets mushy. True bypass throughout.
+## RVB - Module off
 
-**6. Valeton GP-5 — as detailed above.**
+Not used.
 
-## Footswitch Choreography
+## Switching and section map
 
-- **Verses / riffs / driven sections (main Yes tone):** GP-5 CTL off, Tidal Wave engaged. Comp running underneath the whole time. This is the core patch — reach for this by default.
-- **Intros / builds / open arpeggiated sections:** GP-5 CTL on, Tidal Wave bypassed (step off at the same moment you hit CTL). Comp stays on.
-- Octave and Fuzz stay bypassed for the entire patch — this build is two gain stages (PRE boost + Bass OD) plus one grit pedal (Tidal Wave), not a texture pile.
+CTL blocks: DST, MOD.
+- CTL off / loaded state: Main driven Squire voice. GP-5 active: NR, DST, EQ, N->S.
+- First CTL press: Cleaner open passages. GP-5 active: NR, EQ, MOD, N->S.
+- Press CTL again to return to the loaded block pattern, provided no shared MIDI block has been changed.
+
+MIDI toggles: DST.
+MIDI mapping lives on the controller/device, not in the .prst.
+- DST Bass OD: loads on; toggle to remove this block independently.
+Before CTL, undo MIDI changes to shared CTL blocks so they match the preceding CTL pattern. CTL flips current states, not a stored scene. After pressing CTL, apply individual MIDI changes.
+- DST-only alternative from loaded state: CTL off, MIDI DST off; other MIDI blocks at their load states. GP-5 active: NR, EQ, N->S. Board switches unchanged.
+
+## Full pedalboard
+
+Flamma FS-08 Octave -> Donner Ultimate Comp -> Donner Stylish Fuzz -> Joyo Tidal Wave -> Joyo American Sound -> Joyo Narcissus -> Valeton GP-5.
+Board settings are set by hand and are not encoded in the .prst.
+All numeric pedal positions use the existing 0–100 position shorthand unless a clock position is specified.
+
+## Flamma FS-08 Octave
+
+Bypassed throughout.
+-2OCT: 0.
+-OCT: 0.
++OCT: 0.
++2OCT: 0.
+Dry: 100.
+
+## Donner Ultimate Comp
+
+On throughout.
+COMP: 45.
+TONE: 55.
+LEVEL: 55.
+Mode: TREBLE.
+
+## Donner Stylish Fuzz
+
+Bypassed throughout.
+Sustain: 25.
+Treble: 50.
+Bass: 50.
+Volume: 50.
+
+## Joyo Tidal Wave
+
+Drive off throughout; preamp active.
+Drive: 40.
+Blend: 55.
+Presence: 60.
+Level: 55.
+Treble: 60.
+Middle: 55.
+Bass: 50.
+Mid-Frequency: 500Hz.
+Bass-Shift: 80Hz.
+Cab-Sim (DI out): On.
+Ground Lift: Off.
+The footswitch toggles drive only. Preamp EQ and Level stay active in both states. Cab-Sim/Ground Lift affect the DI path; main instrument output is unchanged.
+
+## Joyo American Sound
+
+Bypassed throughout.
+Level: 50.
+Drive: 10.
+Voice: 50.
+Low: 50.
+Mid: 50.
+High: 50.
+
+## Joyo Narcissus
+
+Bypassed throughout.
+Width: 30.
+Depth: 20.
+Rate: 20.
+Mode: Vintage.
+
+## Board choreography
+
+- Flamma FS-08 Octave: Bypassed throughout.
+- Donner Ultimate Comp: On throughout.
+- Donner Stylish Fuzz: Bypassed throughout.
+- Joyo Tidal Wave: Drive off throughout; preamp active.
+- Joyo American Sound: Bypassed throughout.
+- Joyo Narcissus: Bypassed throughout.
+Set the board switches for the section you are entering. Intro-only or clean-only effects may need to start on. Return each pedal to its documented state at the next section. Board pedals are independent of CTL.
+
+## Revision record
+
+Approved audit entry 4.
+- SnapTone Treble: 70 -> 58.
+- PRE: B-Boost -> off.
+- PRE: removed from CTL.
+- DST Gain: 65 -> 30.
+- DST Blend: 60 -> 35.
+- EQ 33Hz: 8 -> 0.
+- EQ 2kHz: 12 -> 4.
+- EQ 8kHz: 15 -> 3.
+- Board Tidal Wave: ; Drive off throughout; preamp active.
+Pre-revision JSON, Markdown and original file hashes are preserved in Documents/patch-audit-2026-10-16/inventory.json and implementation-manifest.json.
+The site piece title and on-disk filenames stay stable; only the short pedal display name may change.

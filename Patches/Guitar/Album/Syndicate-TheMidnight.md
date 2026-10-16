@@ -1,156 +1,212 @@
 # *Syndicate* (Guitar) — The Midnight
 
-*Syndicate* (2025, Ultra Records). Tim McEwan and Tyler Lyle's synthwave duo, with McEwan producing.
-Royce Whittaker is credited on guitar. Reviews single out the "Vai-era" solos on "Friction" and "Shadowverse".
-I found no gear details for the album, so this patch builds The Midnight's guitar sound from the records, not from a known rig.
-Instrument: Stratocaster (HSS).
-Full board. Board Option: White Tape (rebuilt 2026-10-16).
+Revised 2026-10-16 following the approved library audit.
+Type: Album. Instrument: HSS Stratocaster.
+Full board. Board Option: White Tape.
+Patch screen name: Syndicate. Patch VOL: 50.
+Preset tempo: 104 BPM.
 
-## The Midnight's guitar sound
+The Midnight Syndicate album-inspired HSS Strat palette. Compressed chorused cleans and RAT-style leads over a clean Dumble capture. Exact recording gear is unverified. White Tape supplies the shared 120ms slap; Pure 433ms is a dotted eighth at about 104 BPM. Fixed Hall means reduced-effect sounds are not fully dry.
 
-- **Rhythm.** Glassy, compressed, chorused clean guitar. Funky muted chops, ringing arpeggios and chord stabs that sit inside a wall of synths and gated drums. Pure late-80s pop-rock production.
-- **Lead.** Big, singing 80s rock leads that trade lines with the sax. Saturated and sustaining, smoothed by delay and a large reverb. On *Syndicate* the solos push toward Steve Vai: more gain, more sustain, more flash.
-- McEwan has shown building guitar parts in the box with a Van Halen-inspired Guitar Rig preset (2021 stream). The lead here aims for that 80s-rock-lead character.
+## Revision intent
 
-CTL off = the album's overall rhythm sound. CTL on = the album's lead sound.
+Keep the musical role of the original patch while reducing redundant gain, excessive space and unclear switching where identified in audit entry 137.
+The module settings and section map below are the active revision.
+Audited capture volumes and Michael’s explicit patch-level adjustments are preserved.
+No hardware audition or measured level match has been performed.
 
 ## GP-5 settings
 
-Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
+Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB.
+The encoded N->S block sits between DST and AMP when a SnapTone is used.
 
-**NR — Gate**, always on.
-- THRE: 25
-- The RAT-stacked lead hisses. 25 keeps the gaps quiet. Rhythm chops are staccato, so the gate never fights them.
+AMP/CAB replacement: SnapTone MayerDumble (slot 66): SLAMMIN_DUMBLE_FORD_CLN_BALANCED_S (Dumble ODS) + Bogner 2x12 EVM12L - SM57 1 - Cap Edge.
+Slot: 66. Always on.
+Gain: 45, VOL: 70, Bass: 48, Middle: 50, Treble: 58.
+AMP and CAB are both off; the capture already includes its cab/DI character.
+The capture voice is fixed across CTL states. Audited VOL is preserved for this slot.
 
-**PRE — Boost (EP Booster)**, on CTL.
-- Gain: 50, +3dB: on, Bright: off
-- Hits the RAT harder for more sustain, and lifts the lead's level above the synths.
-- Bright off: the lead needs smooth, singing top, not spiky top.
-- CTL off: bypassed. CTL on: engaged.
+## NR - Gate
 
-**DST — Darktale (ProCo RAT)**, on CTL.
-- Gain: 62, Filter: 40, VOL: 58
-- The 80s rock-lead distortion. A boosted RAT into a clean Dumble gives the thick, compressed sustain the solos need.
-- Filter 40 rounds off the fizz. Higher values get harsh against bright synths.
-- CTL off: bypassed. CTL on: engaged.
+THRE: 25.
+Fixed on. Not on CTL.
+Use the lowest threshold that keeps rests quiet. Check soft notes and held-note decay. This gate is before the drives and amp; it does not directly gate noise generated after it.
 
-**AMP/CAB — NAM SnapTone, slot 66: MayerDumble** (always on)
-- The `SLAMMIN_DUMBLE_FORD_CLN_BALANCED_S` (Dumble ODS clean) NAM into the `Bogner 2x12 EVM12L - SM57 1 - Cap Edge` IR, combined into one snaptone.
-- A Dumble clean into EVM12L speakers. Glassy and articulate enough for 80s chorused rhythm.
-- It also takes drive pedals beautifully, which is the 80s LA-session way of getting a singing lead from a clean amp.
-- A clean CTL-off tone, so the snaptone gets strong preference. With no known amp to model, there's no direct-model GP-5 amp to prefer over it.
-- Gain: 45, VOL: 70, Bass: 48, Middle: 50, Treble: 58
-- Gain 45: a little under as-captured, so the rhythm stays fully clean under hard chops.
-- Bass 48: lean lows. 80s rhythm guitar stays out of the synth bass.
-- Treble 58: the glassy top.
-- VOL 70: the level Michael set for this snaptone in the 2026-10-01 VOL audit. Trim here if the patch jumps in level.
-- Same in both CTL states. AMP and CAB are off in the `.prst`. The N->S block calls slot 66 directly.
+## PRE - Boost
 
-**EQ — Guitar EQ 2**, always on.
-- 100Hz: -2, 500Hz: -1, 1kHz: +1, 3kHz: +2, 6kHz: +1, VOL: 50
-- -2 at 100Hz and -1 at 500Hz: lean and glassy, the 80s production curve. It leaves room for the synths.
-- +2 at 3kHz: pick definition on the chops, and cut for the lead.
+Gain: 25.
++3dB: off.
+Bright: off.
+CTL assigned. Loads off; first CTL press switches it on.
+Also on an individual MIDI toggle.
+Controls the source dynamics or adds the specified push/filter before distortion and amp processing. The settings stay fixed; only its on/off state can change.
 
-**MOD — A-Chorus (Arion SCH-1)**, loads on. MIDI toggle (see MIDI toggles).
-- Depth: 45, Rate: 0.8Hz, Tone: 60
-- Chorus is a core part of The Midnight's sound, so it runs heavier than the usual light-touch default. That's the exception the patch rules allow for songs known for an obvious chorus.
-- It's on the GP-5, after the drive, not on the board's Narcissus before it. Chorus after distortion is the 80s rack placement. It keeps the lead wide and smooth instead of warbly.
-- Same in both CTL states: chorused rhythm, and a wide chorused lead.
+## DST - Darktale
 
-**DLY — Pure**, on CTL.
-- Mix: 26, Time: 433ms, F.Back: 32, Trail: on
-- The big digital lead delay of 80s rack rigs. Clean repeats that don't muddy the sustain.
-- 433ms is a dotted eighth at 104 BPM, a typical tempo for the band. Album tempos vary, so reset it per song: dotted eighth (ms) = 45000 ÷ BPM.
-- CTL off: bypassed, so the rhythm chops stay tight. CTL on: engaged.
-- Trail on so the solo's last notes ring out into the next section.
-- The patch's second delay option is the White Tape on the board: a short tape slap. See the pedalboard section.
+Gain: 62.
+Filter: 40.
+VOL: 58.
+CTL assigned. Loads off; first CTL press switches it on.
+Also on an individual MIDI toggle.
+Supplies the selected additional drive voice. Use its level and gain as separate controls. A pre-amp boost may add compression instead of a proportional solo-volume increase.
 
-**RVB — Hall**, always on.
-- Mix: 20, Decay: 45, Trail: on
-- The big synthwave space. Wet enough for the album's huge production, short enough to keep the muted chops rhythmic.
+## AMP - Module off
 
-## CTL footswitch
+Not used.
 
-On CTL: PRE (Boost), DST (Darktale), DLY (Pure).
+## CAB - Module off
 
-- **CTL off — Rhythm.** Glassy, chorused Dumble clean in a big hall. Position 2 (bridge+middle) or position 4 (neck+middle) for the quacky 80s funk chops. Position 3 (middle) for arpeggios. This is the resting state the patch loads into.
-- **CTL on — Lead.** Boosted RAT, chorus, and long digital delay. Bridge humbucker.
-- Engage CTL for solos and sax-trade lead lines. Drop back for verses and choruses.
+Not used.
 
-## MIDI toggles
+## EQ - Guitar EQ 2
 
-MIDI = True (added 2026-10-12). With no MIDI controller connected, the patch loads and plays exactly as before: CTL and the board work the same. MIDI adds single-block toggles on top.
+100Hz: -2.
+500Hz: -1.
+1kHz: 1.
+3kHz: 2.
+6kHz: 1.
+VOL: 50.
+Fixed on. Not on CTL.
+Shapes note body and cut after the amp/capture. Where assigned to CTL, its output adds the specified lift after the gain stages. Numbers are GP-5 control values, not a calibrated loudness guarantee.
 
-On MIDI: PRE (Boost), DST (Darktale), DLY (Pure) — all also on CTL — and MOD (A-Chorus), MIDI-only, loads on.
+## MOD - A-Chorus
 
-Sounds:
-- **Clean rhythm** (default). CTL off. Glassy chorused Dumble.
-- **Clean echo.** CTL off, MIDI DLY on. Arpeggios and ringing clean melodies with the dotted-eighth repeats, a staple of the band's sound.
-- **Crunch rhythm.** CTL off, MIDI DST on. The RAT alone, without the boost: 80s rock rhythm for the album's heavier tracks.
-- **Dry funk chops.** CTL off, MIDI MOD off. Tight muted chops without the chorus wobble.
-- **Lead** (CTL on). Boost + RAT + delay, with chorus.
-- **Dry fast lead.** CTL on, MIDI DLY off. Fast runs and the Vai-style flurries without delay smear.
-- **Slap fast lead.** CTL on, MIDI DLY off, White Tape on. The White Tape slap replaces the dotted eighth. Fast runs get thickness and width, still no smear.
-- **Slap chops.** CTL off, White Tape on. No MIDI needed: Pure is already off at CTL off. The 80s doubled-rhythm trick. Muted chops and stabs get wider without losing their snap.
-- The King of Kings Right channel stomp from the board section still stacks on any lead state for the showcase solos.
-- **No MIDI controller?** CTL brings Pure in on the lead, so the White Tape stacks with it instead of replacing it. Slap + dotted eighth is the classic 80s rack lead stack, so that works as a bigger lead in its own right. Swapping one delay for the other needs MIDI DLY off.
-- **Shared CTL/MIDI blocks:** CTL flips every block assigned to it, whatever state it's in (confirmed by Michael, 2026-10-12). A CTL block you switched by MIDI ends up the opposite of the designed CTL sound. So before pressing CTL, switch it back by MIDI. Changing a block by MIDI *after* pressing CTL is always safe.
+Depth: 30.
+Rate: 0.8.
+Tone: 60.
+MIDI-only. Loads on.
+Adds the specified movement. Keep it underneath the note except for intentionally wet artist or ambient voices.
 
+## DLY - Pure
 
-## Full pedalboard (signal chain order)
+Mix: 26.
+Time: 433.
+F.Back: 32.
+Trail: on.
+CTL assigned. Loads off; first CTL press switches it on.
+Also on an individual MIDI toggle.
+Adds repeats only in the listed states. Trail preserves the remaining repeats when this block is bypassed; it does not change delay time or mix.
 
-Flamma FS-08 Octave → Donner Ultimate Comp → Donner Stylish Fuzz → Joyo King of Kings → Joyo Narcissus → Valeton GP-5 → Donner White Tape.
-Board Option = White Tape, so the Joyo American Sound is off the board for this build.
+## RVB - Hall
 
-**1. Flamma FS-08 Octave — bypassed**
-- -2OCT: 0, -OCT: 0, +OCT: 0, +2OCT: 0, Dry: 100
-- Footswitch off. The synths already cover the octave layers. On guitar it would also glitch on fast lead runs.
+Mix: 12.
+Decay: 45.
+Trail: on.
+Fixed on. Not on CTL.
+Adds the specified room or ambient tail. The revised mix keeps the initial note audible. Trail behavior follows the saved setting.
 
-**2. Donner Ultimate Comp — engaged all song**
-- COMP: 50
-- TONE: 58
-- LEVEL: 55
-- Mode: TREBLE
-- The squashed, even 80s studio clean. Every muted chop lands at the same level.
-- In the lead it adds sustain going into the boost and RAT.
-- TREBLE mode keeps the chops snappy through the chorus and hall.
+## Switching and section map
 
-**3. Donner Stylish Fuzz — bypassed**
-- Footswitch off. Fuzz is the wrong era and texture for synthwave leads.
+CTL blocks: PRE, DST, DLY.
+- CTL off / loaded state: Clean synthwave rhythm. GP-5 active: NR, EQ, MOD, RVB, N->S.
+- First CTL press: RAT lead and digital echo. GP-5 active: NR, PRE, DST, EQ, MOD, DLY, RVB, N->S.
+- Press CTL again to return to the loaded block pattern, provided no shared MIDI block has been changed.
 
-**4. Joyo King of Kings — Left channel bypassed. Right channel engaged only for the big solos.**
+MIDI toggles: PRE, DST, MOD, DLY.
+MIDI mapping lives on the controller/device, not in the .prst.
+- PRE Boost: loads off; toggle to add this block independently.
+- DST Darktale: loads off; toggle to add this block independently.
+- MOD A-Chorus: loads on; toggle to remove this block independently.
+- DLY Pure: loads off; toggle to add this block independently.
+Before CTL, undo MIDI changes to shared CTL blocks so they match the preceding CTL pattern. CTL flips current states, not a stored scene. After pressing CTL, apply individual MIDI changes.
+- PRE-only alternative from loaded state: CTL off, MIDI PRE on; other MIDI blocks at their load states. GP-5 active: NR, PRE, EQ, MOD, RVB, N->S. Board switches unchanged.
+- DST-only alternative from loaded state: CTL off, MIDI DST on; other MIDI blocks at their load states. GP-5 active: NR, DST, EQ, MOD, RVB, N->S. Board switches unchanged.
+- MOD-only alternative from loaded state: CTL off, MIDI MOD off; other MIDI blocks at their load states. GP-5 active: NR, EQ, RVB, N->S. Board switches unchanged.
+- DLY-only alternative from loaded state: CTL off, MIDI DLY on; other MIDI blocks at their load states. GP-5 active: NR, EQ, MOD, DLY, RVB, N->S. Board switches unchanged.
 
-*Left channel:*
-- Bypassed all song, footswitch off.
+Named sounds (from an unmodified baseline CTL/MIDI pattern):
+- Clean rhythm: CTL off; MIDI at the corresponding baseline pattern; Base board states as listed below. Active GP-5: NR, EQ, MOD, RVB, N->S.
+- Clean echo: CTL off; MIDI DLY on; Base board states as listed below. Active GP-5: NR, EQ, MOD, DLY, RVB, N->S.
+- Crunch rhythm: CTL off; MIDI DST on; Base board states as listed below. Active GP-5: NR, DST, EQ, MOD, RVB, N->S.
+- Reduced-modulation chops: CTL off; MIDI MOD off; White Tape off, both King of Kings channels off; fixed Hall remains on. Active GP-5: NR, EQ, RVB, N->S.
+- Lead: CTL on; MIDI at the corresponding baseline pattern; Base board states as listed below. Active GP-5: NR, PRE, DST, EQ, MOD, DLY, RVB, N->S.
+- Reduced-delay fast lead: CTL on; MIDI DLY off; Base board states as listed below. Active GP-5: NR, PRE, DST, EQ, MOD, RVB, N->S.
+- Slap fast lead: CTL on; MIDI DLY off; White Tape on, both King of Kings channels off. Active GP-5: NR, PRE, DST, EQ, MOD, RVB, N->S.
+- Slap chops: CTL off; MIDI at the corresponding baseline pattern; White Tape on, both King of Kings channels off. Active GP-5: NR, EQ, MOD, RVB, N->S.
 
-*Right channel (big-solo stack):*
-- Volume: 50
-- Gain: 40
-- Tone: 55
-- Clipping toggle: harder setting (more edge and saturation)
-- Feedback toggle: higher-gain setting (more sustain)
-- Stomp it on together with CTL for the showcase solos, like "Friction" and "Shadowverse". It stacks into the boost and RAT for Vai-level saturation and sustain.
-- For ordinary lead lines and sax trades, leave it off. CTL alone is enough.
+## Full pedalboard
 
-**5. Joyo Narcissus — bypassed**
-- Footswitch off. The GP-5's A-Chorus handles chorus after the drive, which is the right place for it. Running both would get seasick.
+Flamma FS-08 Octave -> Donner Ultimate Comp -> Donner Stylish Fuzz -> Joyo King of Kings -> Joyo Narcissus -> Valeton GP-5 -> Donner White Tape.
+Board settings are set by hand and are not encoded in the .prst.
+All numeric pedal positions use the existing 0–100 position shorthand unless a clock position is specified.
 
-**6. Valeton GP-5** — see settings above.
+## Flamma FS-08 Octave
 
-**7. Donner White Tape — the second delay: a short tape slap, stomped as needed.**
-- Top row (left channel) only. Mono rig, bottom row unused.
-- Level: ~10:30. A clearly audible single echo, still behind the dry note.
-- Time: ~120ms target, just past 8 o'clock. Slapback range.
-- Feedback: fully counterclockwise. One repeat, which is what a slap is.
-- Why a slap and not a second long delay: the board's knobs stay fixed for a whole set, and this is an album patch covering songs at different tempos. Pure stays the tempo-matched dotted eighth, reset per song on the GP-5. A 120ms slap doesn't lock to any tempo, so one fixed setting works on every song in the set.
-- Why it's different from Pure, not a copy: Pure is clean, bright and long. The White Tape is short and warm, with wow, flutter and bass drop-off on the repeat. The flutter gives the slap a faint tape-machine wobble that suits the band's retro, VHS-era aesthetic. The bass drop-off keeps the low end of the chops tight.
-- When to stomp it:
-  - Fast Vai-style runs, with MIDI DLY off (Slap fast lead).
-  - Muted funk chops and chord stabs, CTL off (Slap chops).
-  - Off for clean arpeggios and slow melodic leads: those want Pure's dotted eighth.
-- It sits after the GP-5's Hall, so the slap repeats the hall-wet signal. At Hall Mix 20 that reads as size, not mud.
-- The clock positions assume the Time knob sweeps 25-1000ms evenly. Set the slap by ear: it should thicken the note, not answer it.
+Bypassed throughout.
+-2OCT: 0.
+-OCT: 0.
++OCT: 0.
++2OCT: 0.
+Dry: 100.
 
-## Note on the full board vs. the `.prst`
+## Donner Ultimate Comp
 
-The `.prst` file only encodes the GP-5's own 9 modules. The Flamma, Donner Ultimate Comp, Donner Stylish Fuzz, Joyo King of Kings, Joyo Narcissus and Donner White Tape settings above are not and cannot be part of that file. They're set by hand on the board, and documented here so the full patch can be rebuilt.
+On throughout.
+COMP: 50.
+TONE: 58.
+LEVEL: 55.
+Mode: TREBLE.
+
+## Donner Stylish Fuzz
+
+Bypassed throughout.
+Sustain: 25.
+Treble: 50.
+Bass: 50.
+Volume: 50.
+
+## King of Kings Left
+
+Bypassed throughout.
+Volume: 50.
+Gain: 20.
+Tone: 50.
+Clipping toggle: Softer position.
+Feedback toggle: Standard position.
+
+## King of Kings Right
+
+Bypassed throughout.
+Volume: 50.
+Gain: 40.
+Tone: 55.
+Clipping toggle: Harder position.
+Feedback toggle: Higher-gain position.
+
+## Joyo Narcissus
+
+Bypassed throughout.
+Width: 30.
+Depth: 20.
+Rate: 20.
+Mode: Vintage.
+
+## Donner White Tape
+
+Off by default; on for slap chops at CTL off, or fast lead at CTL on with MIDI DLY off.
+Level: ~10:30.
+Time: 120ms (free-time slap; no beat subdivision).
+Feedback: Fully counterclockwise (one repeat).
+Mono rig: use the top row/left channel; bottom row unused. Set Time against the track by ear. No tap tempo. Its repeats include the GP-5 reverb. Keep this fixed across the shared slap set.
+
+## Board choreography
+
+- Flamma FS-08 Octave: Bypassed throughout.
+- Donner Ultimate Comp: On throughout.
+- Donner Stylish Fuzz: Bypassed throughout.
+- King of Kings Left: Bypassed throughout.
+- King of Kings Right: Bypassed throughout.
+- Joyo Narcissus: Bypassed throughout.
+- Donner White Tape: Off by default; on for slap chops at CTL off, or fast lead at CTL on with MIDI DLY off.
+Set the board switches for the section you are entering. Intro-only or clean-only effects may need to start on. Return each pedal to its documented state at the next section. Board pedals are independent of CTL.
+
+## Revision record
+
+Approved audit entry 137.
+- PRE Gain: 50 -> 25.
+- PRE +3dB: true -> off.
+- MOD Depth: 45 -> 30.
+- RVB Mix: 20 -> 12.
+- Board King of Kings Right: ; Bypassed throughout.
+Pre-revision JSON, Markdown and original file hashes are preserved in Documents/patch-audit-2026-10-16/inventory.json and implementation-manifest.json.
+The site piece title and on-disk filenames stay stable; only the short pedal display name may change.

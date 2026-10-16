@@ -1,128 +1,171 @@
 # RammGrind — Industrial Metal Bass (Rammstein Style)
 
-**Rebuild 2026-09-25:** AMP/CAB replaced by the BrightSVT snaptone (slot 55). The GP-5's Bass OD stays as the main grind stage.
-**Earlier builds:** 2026-09-08 used a Darkglass Alpha Omega NAM. 2026-09-18 went back to GP-5 AMP + IR while NAMs were off for the Valeton N->S volume issue. Same style target and CTL concept across all builds.
+Revised 2026-10-16 following the approved library audit.
+Type: Style. Instrument: Harley Benton passive 5-string P/J.
+Full board. Board Option: American Sound (bypassed; retained for legacy full-board builds).
+Patch screen name: RammGrind. Patch VOL: 55.
+Preset tempo: 122 BPM.
 
-## Style reference
+Rammstein-inspired industrial P/J bass. Dry, driven and precise. Tidal Wave is the principal added drive; Stylish Fuzz and GP-5 Bass OD are bypassed. BrightSVT supplies the amp voice. Lower midrange is restored so the low notes still read beneath the grind.
 
-This patch chases Oliver "Ollie" Riedel's Rammstein bass tone.
+## Revision intent
 
-Not a "bass tone" in the usual sense.
-It's a distorted low-end doubling of the guitar riff, built to be one wall of sound, not a separate instrument.
-Tight, percussive, mid-forward, buzzsaw-grindy — not boomy, not scooped.
+Keep the musical role of the original patch while reducing redundant gain, excessive space and unclear switching where identified in audit entry 135.
+The module settings and section map below are the active revision.
+Audited capture volumes and Michael’s explicit patch-level adjustments are preserved.
+No hardware audition or measured level match has been performed.
 
-Same territory: Paul Barker (Ministry), Jeordie White / Twiggy Ramirez (Marilyn Manson) — industrial and industrial-adjacent metal bassists who treat the bass as a distortion source that reinforces the guitar wall, not a low-end cushion under it.
+## GP-5 settings
 
-Two CTL states cover the dynamic range this style actually uses:
-verse/groove sections stay controlled and tight, choruses and breakdown hits get pushed harder.
-Rammstein's mix rarely goes "clean" — even the restrained sections carry grit. Only the amount of push changes.
+Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB.
+The encoded N->S block sits between DST and AMP when a SnapTone is used.
 
-## GP-5 module chain
+AMP/CAB replacement: SnapTone BrightSVT (slot 55): SVT SANS BRIGHT DRIVE (SVT-CL) + Hartke410.
+Slot: 55. Always on.
+Gain: 58, VOL: 60, Bass: 50, Middle: 56, Treble: 62.
+AMP and CAB are both off; the capture already includes its cab/DI character.
+The capture voice is fixed across CTL states. Audited VOL is preserved for this slot.
 
-Module order is fixed: NR, PRE, DST, AMP, CAB, EQ, MOD, DLY, RVB.
+## NR - Gate
 
-### NR — Gate
-- THRE: 42
-- Always on. Industrial rhythm playing is staccato and palm-muted hard. A tight gate keeps the mutes dead silent between hits instead of smearing into a wash of fuzz noise.
+THRE: 22.
+Fixed on. Not on CTL.
+Use the lowest threshold that keeps rests quiet. Check soft notes and held-note decay. This gate is before the drives and amp; it does not directly gate noise generated after it.
 
-### PRE — Micro Boost
-- Gain: 70
-- CTL switch. Off at rest, engaged on CTL press.
-- CTL off: leaner grind — DST alone drives the tone. Covers verses and groove sections.
-- CTL on: extra clean gain shoved into the DST stage for choruses, breakdowns, and big unison hits — thickens and compresses the distortion without changing its color.
+## PRE - Micro Boost
 
-### DST — Bass OD (loads on; MIDI toggle, see MIDI toggles)
-- Gain: 78
-- Blend: 70
-- VOL: 60
-- Bass: 45
-- Treble: 68
-- Always on. This is the core of the patch — modeled on the Boss ODB-3, a real metal-bass-distortion staple. High Gain gets the buzzsaw edge. Blend at 70 keeps it mostly wet but doesn't fully drown the dry fundamental — that's what keeps note definition intact under heavy distortion instead of collapsing into undifferentiated fuzz. Bass rolled back to 45 on the pedal itself so the low end doesn't get flabby before it hits the amp stage — let the snaptone supply the low end, DST supplies the grind.
+Gain: 25.
+CTL assigned. Loads off; first CTL press switches it on.
+Controls the source dynamics or adds the specified push/filter before distortion and amp processing. The settings stay fixed; only its on/off state can change.
 
-### AMP/CAB — NAM SnapTone, slot 55: BrightSVT (always on)
-- Built from the `SVT SANS BRIGHT DRIVE (SVT-CL)` NAM and the Hartke410 IR, combined into one snaptone.
-- Real Ampeg SVT-CL with the bright drive setting, into the aluminum-cone Hartke410 IR.
-- Rammstein bass is a bright, driven doubling of the guitar riff. Bright SVT drive and Hartke clank.
-- Gain: 58, VOL: 60, Bass: 50, Middle: 65, Treble: 62
-- Gain 58: noticeably over default. This part wants more push than the other BrightSVT patches.
-- Bass 50: flat.
-- Middle 65: more midrange.
-- Treble 62: more top end.
-- VOL 60: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
-- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 55 directly.
+## DST - Module off
 
-### EQ — Bass EQ 1
-- 33Hz: -8
-- 150Hz: -6
-- 600Hz: +12
-- 2kHz: +10
-- 8kHz: +6
-- VOL: 55
-- Always on.
-- Sub (33Hz) and low-mid boom (150Hz) both cut — this style has zero interest in sub-bass weight, that just competes with the kick and turns the wall to mud. 600Hz and 2kHz both pushed hard — that's the grinding midrange bite and pick/finger attack that lets the bass cut through the guitar wall on a system that can't reproduce much below 80Hz live. 8kHz nudged up for string-noise edge/buzz on top.
+Not used.
 
-### MOD / DLY / RVB — Off
-- No modulation, no delay, no reverb.
-- This style is dry and direct by design — a chorus or delay would soften the attack and blur the tightness the whole patch is built around. Unchanged from the original build.
+## AMP - Module off
 
-## MIDI toggles
+Not used.
 
-MIDI = True (added 2026-10-12). With no MIDI controller connected, the patch loads and plays exactly as before: CTL and the board work the same. MIDI adds single-block toggles on top.
+## CAB - Module off
 
-On MIDI: DST (Bass OD), MIDI-only, loads on.
+Not used.
 
-Sounds:
-- **Base grind** (default). CTL off.
-- **Lean grind.** MIDI DST off. The Stylish Fuzz and Tidal Wave keep grinding, but without the Bass OD layer. A lower level of push for quieter verses. Rammstein rarely goes clean, so this stays gritty, just less dense.
-- **Pushed** (CTL on). Micro Boost into the Bass OD for choruses and breakdowns.
-- Don't combine Lean grind with CTL on: the Micro Boost then has no Bass OD to push.
+## EQ - Bass EQ 1
 
-## Full pedalboard (signal chain order)
+33Hz: -8.
+150Hz: 0.
+600Hz: 4.
+2kHz: 3.
+8kHz: 2.
+VOL: 55.
+Fixed on. Not on CTL.
+Shapes note body and cut after the amp/capture. Where assigned to CTL, its output adds the specified lift after the gain stages. Numbers are GP-5 control values, not a calibrated loudness guarantee.
 
-The `.prst` only encodes the GP-5's own 9 modules plus the NAM. Everything below is manual — set it on the pedals themselves; it's not in the file.
+## MOD - Module off
 
-### 1. Flamma FS-08 Octave — bypassed by default
-- -2OCT: 0, -OCT: 20, +OCT: 0, +2OCT: 0, Dry: 100
-- Footswitch off for the main tone — the 5-string's low B already covers the fundamental range this style needs, and a sub-octave voice under an already-distorted signal turns to mud fast.
-- Optional engage: stomp on for big stadium-ending "wall" hits (the "Sonne" / "Mein Herz Brennt" outro-swell move) — the modest -OCT level at 20 adds weight without swallowing the note.
+Not used.
 
-### 2. Donner Ultimate Comp — engaged
-- COMP: 65
-- TONE: 55
-- LEVEL: 55
-- Mode: TREBLE
-- Always on. Squashes pick/finger attack into a consistent, aggressive, always-the-same-level groove — industrial rhythm parts need to sound machine-tight, not human-dynamic. TREBLE mode keeps attack articulate before it hits two more gain stages downstream.
+## DLY - Module off
 
-### 3. Donner Stylish Fuzz — engaged
-- Sustain: 55
-- Treble: 60
-- Bass: 35
-- Volume: 55
-- Always on. This is half of the signature grind — stacking a fuzz stage ahead of the Tidal Wave's own drive and the GP-5's Bass OD is what gets the layered, buzzsaw-dense distortion instead of one clean gain stage doing all the work. Sustain kept moderate (not maxed) — full Sustain gets gated and splattery, which reads as sloppy, not industrial-tight. Bass rolled back on the pedal itself for the same reason as the DST stage: keep the low end controlled downstream, not flubby at the source.
+Not used.
 
-### 4. Joyo Tidal Wave — engaged
-- Drive: 70
-- Blend: 65
-- Presence: 60
-- Level: 60
-- Treble: 60
-- Middle: 65
-- Bass: 50
-- Mid-Frequency: 1000Hz
-- Bass-Shift: 80Hz
-- Cab-Sim (DI out): On
-- Ground Lift: Off (engage only if hum shows up on the DI feed)
-- Always on — this is the main preamp/drive stage of the whole chain. Blend at 65 keeps it mostly-driven but not fully wet, same note-definition logic as the DST stage. Mid-Frequency at 1000Hz over 500Hz — this style wants pick/finger attack and cut-through, not round low-mid body. Bass-Shift at 80Hz tightens the low end so it doesn't stack mud on top of everything already piled up from the fuzz and DST stages before it.
+## RVB - Module off
 
-### 5. Joyo Narcissus — bypassed
-- Mode: Vintage, Width/Depth/Rate: low (default light-chorus values)
-- Footswitch off. This style is dry and direct — no chorus anywhere in the signal. Left dialed to safe defaults in case a future patch wants it, but it stays off here.
+Not used.
 
-### 6. Valeton GP-5
-- Settings as documented above, including the BrightSVT snaptone in slot 55.
+## Switching and section map
 
-## When to engage what
+CTL blocks: PRE.
+- CTL off / loaded state: Main Tidal Wave grind. GP-5 active: NR, EQ, N->S.
+- First CTL press: Input push for choruses and unison hits. GP-5 active: NR, PRE, EQ, N->S.
+- Press CTL again to return to the loaded block pattern, provided no shared MIDI block has been changed.
 
-- **Base tone (CTL off):** Gate, Comp, Fuzz, Tidal Wave, Bass OD, BrightSVT snaptone, EQ — everything on except the PRE boost and the octave. This is the sound for the whole song, verses included. It's already distorted and aggressive at rest — that's the point.
-- **CTL on:** Punch in for choruses, big unison stabs, and breakdown hits — pushes the Bass OD harder via the Micro Boost for a thicker, more compressed wall.
-- **Octave stomp:** Reserve for song-ending swells/outros only — not a default-on effect.
+## Full pedalboard
+
+Flamma FS-08 Octave -> Donner Ultimate Comp -> Donner Stylish Fuzz -> Joyo Tidal Wave -> Joyo American Sound -> Joyo Narcissus -> Valeton GP-5.
+Board settings are set by hand and are not encoded in the .prst.
+All numeric pedal positions use the existing 0–100 position shorthand unless a clock position is specified.
+
+## Flamma FS-08 Octave
+
+Off for main tone; optional on for ending hits only.
+-2OCT: 0.
+-OCT: 20.
++OCT: 0.
++2OCT: 0.
+Dry: 100.
+
+## Donner Ultimate Comp
+
+On throughout.
+COMP: 65.
+TONE: 55.
+LEVEL: 55.
+Mode: TREBLE.
+
+## Donner Stylish Fuzz
+
+Bypassed throughout; Tidal Wave is the principal added drive.
+Sustain: 55.
+Treble: 60.
+Bass: 35.
+Volume: 55.
+
+## Joyo Tidal Wave
+
+On throughout.
+Drive: 70.
+Blend: 65.
+Presence: 60.
+Level: 60.
+Treble: 60.
+Middle: 65.
+Bass: 50.
+Mid-Frequency: 1000Hz.
+Bass-Shift: 80Hz.
+Cab-Sim (DI out): On.
+Ground Lift: Off.
+The footswitch toggles drive only. Preamp EQ and Level stay active in both states. Cab-Sim/Ground Lift affect the DI path; main instrument output is unchanged.
+
+## Joyo American Sound
+
+Bypassed throughout.
+Level: 50.
+Drive: 10.
+Voice: 50.
+Low: 50.
+Mid: 50.
+High: 50.
+
+## Joyo Narcissus
+
+Bypassed throughout.
+Width: 30.
+Depth: 20.
+Rate: 20.
+Mode: Vintage.
+
+## Board choreography
+
+- Flamma FS-08 Octave: Off for main tone; optional on for ending hits only.
+- Donner Ultimate Comp: On throughout.
+- Donner Stylish Fuzz: Bypassed throughout; Tidal Wave is the principal added drive.
+- Joyo Tidal Wave: On throughout.
+- Joyo American Sound: Bypassed throughout.
+- Joyo Narcissus: Bypassed throughout.
+Set the board switches for the section you are entering. Intro-only or clean-only effects may need to start on. Return each pedal to its documented state at the next section. Board pedals are independent of CTL.
+
+## Revision record
+
+Approved audit entry 135.
+- SnapTone Middle: 65 -> 56.
+- NR THRE: 42 -> 22.
+- PRE Gain: 70 -> 25.
+- DST: Bass OD -> off.
+- EQ 150Hz: -6 -> 0.
+- EQ 600Hz: 12 -> 4.
+- EQ 2kHz: 10 -> 3.
+- EQ 8kHz: 6 -> 2.
+- Board Stylish Fuzz: ; Bypassed throughout; Tidal Wave is the principal added drive.
+Pre-revision JSON, Markdown and original file hashes are preserved in Documents/patch-audit-2026-10-16/inventory.json and implementation-manifest.json.
+The site piece title and on-disk filenames stay stable; only the short pedal display name may change.

@@ -1,134 +1,212 @@
 # Lion — Elevation Worship (CCM / Modern Worship)
 
-HSS Stratocaster. Full board. Board Option: White Tape (rebuilt 2026-10-16).
-Album-level build, modeled on the overall guitar approach across Elevation Worship's *Lion* (2022) and their wider catalog — the modern CCM "wall of sound": ambient, heavily modulated clean tones under verses, swelling into a bigger, saturated anthem tone for choruses and lead lines, all of it soaked in delay and reverb the whole time.
-That wash never goes away between the two states — only the gain does. That's the core design decision here: MOD/DLY/RVB/EQ and the amp/cab stay fixed and always on, CTL only swaps the gain stages.
+Revised 2026-10-16 following the approved library audit.
+Type: Album. Instrument: HSS Stratocaster.
+Full board. Board Option: White Tape.
+Patch screen name: Lion - Ele. Patch VOL: 55.
+Preset tempo: 72 BPM.
 
-## GP-5 Settings
+Elevation Worship Lion album palette on HSS Strat. Chimey rhythm, driven anthem lead, and a separately stomped pad layer. Ambient effects remain intentional, with less stacked modulation and gain. The White Tape keeps its 700ms loose ambient setting; reset it before sharing a set with the 120ms slap builds.
 
-Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB
+## Revision intent
 
-**AMP — Foxy 30TB** (always on)
-- Gain: 32, Tone Cut: 40, VOL: 60, Bass: 45, Treble: 62, Char: Cool
-- The GP-5's model of the Vox AC30HW Top Boost channel. Modern worship lives on a chimey AC30.
-- Gain 32: clean with a little edge. The Boost, Green OD and King of Kings supply the anthem gain.
-- Tone Cut 40 and Treble 62: bright and chimey. The EQ's 3kHz/6kHz lift adds the shimmer on top.
-- Bass 45: a little lean, so it doesn't fight bass and pads.
-- Char Cool: the cleaner of the two voicings. Hot would pile more gain under the OD stack.
-- Moved off the WorshipAC30 snaptone 2026-10-01. Michael dropped the AC30 NAMs until a better one turns up, so this uses the GP-5's own AC30 model.
-- Same in both CTL states.
+Keep the musical role of the original patch while reducing redundant gain, excessive space and unclear switching where identified in audit entry 136.
+The module settings and section map below are the active revision.
+Audited capture volumes and Michael’s explicit patch-level adjustments are preserved.
+No hardware audition or measured level match has been performed.
 
-**CAB — User IR 10: V30112** (always on)
-- VOL: 60
-- Celestion V30 1x12 IR from the loaded set, the same cab as the other Elevation Worship patches (Praise). It's tight and mid-forward, so it cuts through a dense worship mix.
-- Same in both CTL states.
+## GP-5 settings
 
-**NR — Gate**
-- THRE: 20
-- Always on. Light — this patch lives on long decaying swells and delay/reverb tails, so the gate can't be aggressive enough to chop them off.
+Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB.
+The encoded N->S block sits between DST and AMP when a SnapTone is used.
 
-**PRE — Boost** (Xotic EP Booster)
-- Gain: 60, +3dB: On, Bright: On
-- **CTL switch.** Off = bypassed, On = engaged.
-- The "size" switch for the anthem state — clean, transparent volume/edge boost that pushes the amp and DST harder without adding its own character. Off for the ambient rhythm sound, on for the lead/chorus lift.
+Cab IR: V30112. Encoded as User IR 10.
 
-**DST — Green OD** (Tube Screamer / TS-808)
-- Gain: 40, Tone: 60, VOL: 65
-- **CTL switch.** Off = bypassed, On = engaged.
-- Moderate, not metal — this is the smooth, singing mid-gain crunch that defines the modern worship "anthem" guitar tone, not a rock distortion. Off for rhythm, on for lead, stacking with the Boost and the King of Kings right channel (see pedalboard) for the full swell.
+## NR - Gate
 
-**EQ — Guitar EQ 2**
-- 100Hz: -3, 500Hz: -2, 1kHz: 0, 3kHz: +4, 6kHz: +5, VOL: 50
-- Always on. Low end trimmed so the guitar doesn't fight bass/pads in a dense worship mix; slight 500Hz cut to keep it out of the boxy zone; 3kHz/6kHz lifted for the airy, cutting shimmer that sits on top of a big band mix without needing raw volume.
+THRE: 20.
+Fixed on. Not on CTL.
+Use the lowest threshold that keeps rests quiet. Check soft notes and held-note decay. This gate is before the drives and amp; it does not directly gate noise generated after it.
 
-**MOD — A-Chorus** (Arion SCH-1)
-- Depth: 55, Rate: 0.6Hz, Tone: 60
-- Loads on, both CTL states. MIDI toggle: loads on, can be switched off (see MIDI toggles). Heavier than this workflow's usual light-touch MOD default — deliberately, because a drenched, obvious chorus shimmer is the whole point of this style, not an accident. This is doing a lot of the "ambient wall" work by itself.
+## PRE - Module off
 
-**DLY — Tape**
-- Mix: 35, Time: 450ms, F.Back: 35, Trail: On
-- Loads on, both CTL states. MIDI toggle: loads on, can be switched off (see MIDI toggles). Long, warm, saturated repeats — this genre's guitar sound is inseparable from delay. Same delay under both the quiet rhythm parts and the big lead swells, which is exactly how these records are built.
+Not used.
 
-**RVB — Sweet Space**
-- Mix: 40, Decay: 70, Damp: 40, Mod: 35, Trail: On
-- Always on, both CTL states. Long, modulated, spacious reverb — the Mod parameter adds a subtle shimmer/movement to the tail that's very characteristic of this modern-CCM ambient sound. This is the "room" the whole track lives in.
+## DST - Green OD
 
-### CTL Summary (GP-5)
-- **CTL Off — Rhythm (verses, ambient sections):** Clean, chimey AC30 tone, no PRE boost, no drive. The wash (chorus/delay/reverb) carries the sound. This is the main texture of the patch.
-- **CTL On — Lead (choruses, anthem sections):** Boost + Green OD both kick in on top of the same amp/cab/wash, pushing into a bigger, saturated, sustained tone — same ambient character, just louder and driven. Pair with the King of Kings right channel for the full swell.
+Gain: 40.
+Tone: 60.
+VOL: 65.
+CTL assigned. Loads off; first CTL press switches it on.
+Also on an individual MIDI toggle.
+Supplies the selected additional drive voice. Use its level and gain as separate controls. A pre-amp boost may add compression instead of a proportional solo-volume increase.
 
-## MIDI toggles
+## AMP - Foxy 30TB
 
-MIDI = True (added 2026-10-12). With no MIDI controller connected, the patch loads and plays exactly as before: CTL and the board work the same. MIDI adds single-block toggles on top.
+Gain: 32.
+Tone Cut: 40.
+VOL: 60.
+Bass: 45.
+Treble: 62.
+Char: 0.
+Fixed on. Not on CTL.
+Provides one fixed amp voice for the complete preset. CTL does not change its knobs or select another amp channel.
 
-On MIDI: PRE (Boost), DST (Green OD), MOD (A-Chorus), DLY (Tape). PRE and DST are also on CTL. MOD and DLY are MIDI-only and load on.
+## CAB - User IR 10
 
-Sounds:
-- **Clean wash** (default). CTL off, all MIDI blocks as loaded. Verses and ambient sections.
-- **Driven rhythm.** CTL off, MIDI DST on. The Green OD alone, no boost: mid-gain strummed rhythm for second verses and builds, before the anthem.
-- **Dry tight strum.** CTL off, MIDI DLY off, MIDI MOD off. Rhythmic strumming and up-tempo songs where the wash smears the groove.
-- **Anthem lead** (CTL on). Boost + Green OD over the full wash. Choruses and anthem sections.
-- **Soft lead.** CTL on, MIDI PRE off. The Green OD without the boost: a quieter, smoother lead for bridges and intimate melody lines.
-- **Swell pad.** Any state above + White Tape on (board). A second, longer delay layered over the GP-5's Tape. Intros, ambient bridges, outros, volume swells.
-- **Shared CTL/MIDI blocks:** CTL flips every block assigned to it, whatever state it's in (confirmed by Michael, 2026-10-12). A CTL block you switched by MIDI ends up the opposite of the designed CTL sound. So before pressing CTL, switch it back by MIDI. Changing a block by MIDI *after* pressing CTL is always safe.
+VOL: 60.
+Fixed on. Not on CTL.
+Keeps the required speaker response in the exported preset. Use the documented loaded IR slot; no extra cab goes after a SnapTone.
 
+## EQ - Guitar EQ 2
 
-## Full Pedalboard (signal chain order)
-Flamma FS-08 Octave → Donner Ultimate Comp → Donner Stylish Fuzz → Joyo King of Kings → Joyo Narcissus → Valeton GP-5 → Donner White Tape.
-Board Option = White Tape, so the Joyo American Sound is off the board for this build.
+100Hz: -3.
+500Hz: -2.
+1kHz: 0.
+3kHz: 4.
+6kHz: 1.
+VOL: 50.
+Fixed on. Not on CTL.
+Shapes note body and cut after the amp/capture. Where assigned to CTL, its output adds the specified lift after the gain stages. Numbers are GP-5 control values, not a calibrated loudness guarantee.
 
-**1. Flamma FS-08 Octave — Engaged, light shimmer layer, whole song.**
-- +OCT: 25, all other octave knobs (-2OCT, -OCT, +2OCT): 0
-- Dry: 80
-A subtle octave-up layer underneath the dry signal — this is a real Elevation Worship production trick, a quiet shimmer pad sitting under the clean arpeggios. Kept low enough (+OCT 25) that it reads as texture, not a separate voice. Since it's polyphonic and best on sustained material, it works well here because this patch is built around sustained chords and swells, not fast lead runs.
+## MOD - A-Chorus
 
-**2. Donner Ultimate Comp — Engaged, whole song.**
-- COMP: 50
-- TONE: 55
-- LEVEL: 55
-- Mode: NORMAL
-Evens out dynamics for sustained ambient swells — critical for this style, where notes need to bloom and hold evenly under all that delay/reverb. NORMAL mode (not TREBLE) because the EQ module and MOD/DLY/RVB chain already add plenty of top end; stacking more brightness pre-drive would get harsh once the Boost/Green OD kick in.
+Depth: 30.
+Rate: 0.6.
+Tone: 60.
+MIDI-only. Loads on.
+Adds the specified movement. Keep it underneath the note except for intentionally wet artist or ambient voices.
 
-**3. Donner Stylish Fuzz — Bypassed, whole song.**
-Not a fuzz style — the anthem lift comes from smooth, singing overdrive (Boost + Green OD + King of Kings), not garage fuzz character. True bypass throughout.
+## DLY - Tape
 
-**4. Joyo King of Kings — Left channel engaged whole song, Right channel engaged only for CTL On / lead sections.**
+Mix: 25.
+Time: 450.
+F.Back: 35.
+Trail: on.
+MIDI-only. Loads on.
+Adds repeats only in the listed states. Trail preserves the remaining repeats when this block is bypassed; it does not change delay time or mix.
 
-*Left channel (always on — low-gain glue):*
-- Volume: 55
-- Gain: 20
-- Tone: 55
-- Clipping toggle: softer setting
-- Feedback toggle: standard setting
+## RVB - Sweet Space
 
-A quiet, always-on push that adds warmth and a little extra harmonic content under the clean ambient tone — very common in modern worship rigs, an always-on low-gain stage that "glues" the tone even before anything else engages.
+Mix: 25.
+Decay: 70.
+Damp: 40.
+Mod: 15.
+Trail: on.
+Fixed on. Not on CTL.
+Adds the specified room or ambient tail. The revised mix keeps the initial note audible. Trail behavior follows the saved setting.
 
-*Right channel (CTL On / lead only):*
-- Volume: 65
-- Gain: 55
-- Tone: 60
-- Clipping toggle: harder setting
-- Feedback toggle: higher setting
+## Switching and section map
 
-Stacks with the left channel, the GP-5's Boost, and Green OD for the full anthem swell — this is the extra saturation and sustain that makes the chorus/lead sections feel huge without turning harsh. Step on together with the GP-5 CTL switch.
+CTL blocks: DST.
+- CTL off / loaded state: Clean ambient rhythm. GP-5 active: NR, AMP, CAB, EQ, MOD, DLY, RVB.
+- First CTL press: Driven anthem lead. GP-5 active: NR, DST, AMP, CAB, EQ, MOD, DLY, RVB.
+- Press CTL again to return to the loaded block pattern, provided no shared MIDI block has been changed.
 
-**5. Joyo Narcissus — Bypassed, whole song.**
-The GP-5's own A-Chorus (always on) is the primary chorus/shimmer voice for this patch, already pushed harder than usual on purpose. Stacking a second chorus pedal on top would turn the wash to mud. True bypass throughout.
+MIDI toggles: DST, MOD, DLY.
+MIDI mapping lives on the controller/device, not in the .prst.
+- DST Green OD: loads off; toggle to add this block independently.
+- MOD A-Chorus: loads on; toggle to remove this block independently.
+- DLY Tape: loads on; toggle to remove this block independently.
+Before CTL, undo MIDI changes to shared CTL blocks so they match the preceding CTL pattern. CTL flips current states, not a stored scene. After pressing CTL, apply individual MIDI changes.
+- DST-only alternative from loaded state: CTL off, MIDI DST on; other MIDI blocks at their load states. GP-5 active: NR, DST, AMP, CAB, EQ, MOD, DLY, RVB. Board switches unchanged.
+- MOD-only alternative from loaded state: CTL off, MIDI MOD off; other MIDI blocks at their load states. GP-5 active: NR, AMP, CAB, EQ, DLY, RVB. Board switches unchanged.
+- DLY-only alternative from loaded state: CTL off, MIDI DLY off; other MIDI blocks at their load states. GP-5 active: NR, AMP, CAB, EQ, MOD, RVB. Board switches unchanged.
 
-**6. Valeton GP-5 — as detailed above.**
-**7. Donner White Tape — Engaged for swells, intros, ambient bridges and outros.**
-- Top row (left channel) only. Mono rig, bottom row unused.
-- Level: ~10 o'clock. Under the GP-5's Tape (Mix 35), so it reads as depth behind the main repeats, not a second rhythm.
-- Time: ~700ms target, about 2 o'clock. A quarter note at about 86 BPM (60000 ÷ BPM). It isn't locked to any one song. Album and set tempos vary, and the board knobs stay fixed for a set. A long, loose layer under the 450ms Tape tolerates that. Clashing rhythmic echoes don't stand out at this Level.
-- Feedback: ~11 o'clock. Five or six repeats that fade into the Sweet Space tail.
-- Why a second delay: the modern worship rig runs two delays, one rhythmic and one long ambient. The GP-5 has one DLY block. The White Tape is the second one.
-- It sits after the GP-5's Sweet Space reverb, so its repeats echo the whole wash, not just the dry note. That's the pad effect this style wants.
-- Off for strummed up-tempo songs and anything with the Dry tight strum MIDI state. A second delay there is pure smear.
-- Clock positions assume a linear Time taper across the 25-1000ms sweep. Set it by ear.
+Named sounds (from an unmodified baseline CTL/MIDI pattern):
+- Clean wash: CTL off; MIDI at the corresponding baseline pattern; Base board states as listed below. Active GP-5: NR, AMP, CAB, EQ, MOD, DLY, RVB.
+- Driven rhythm: CTL off; MIDI DST on; Base board states as listed below. Active GP-5: NR, DST, AMP, CAB, EQ, MOD, DLY, RVB.
+- Reduced-effects strum: CTL off; MIDI MOD off, DLY off; Flamma off, White Tape off, King of Kings Left on/Right off; fixed Sweet Space remains on. Active GP-5: NR, AMP, CAB, EQ, RVB.
+- Anthem lead: CTL on; MIDI at the corresponding baseline pattern; King of Kings Left on/Right off, Flamma off, White Tape off. Active GP-5: NR, DST, AMP, CAB, EQ, MOD, DLY, RVB.
+- Swell pad: CTL off; MIDI MOD on, DLY on; Flamma on, White Tape on, King of Kings Left on/Right off. Active GP-5: NR, AMP, CAB, EQ, MOD, DLY, RVB.
 
-## Footswitch Choreography
+## Full pedalboard
 
-- **Rhythm / verses / ambient sections:** GP-5 CTL off, King of Kings right channel off. Comp and Octave shimmer running underneath the whole time.
-- **Chorus / lead / anthem sections:** GP-5 CTL on (engages PRE Boost + Green OD together) at the same moment you step on the King of Kings right channel. All three come off together when dropping back to a verse/rhythm section.
-- **Swells / intros / ambient bridges / outros:** stomp the White Tape on, on its own, in any CTL state. Off when the song locks into a groove. Stomp it before the swell, not on the note, so the first repeat isn't clipped.
-- Fuzz and Narcissus stay bypassed for the entire patch — the wash comes from the GP-5's own MOD/DLY/RVB, not from stacking extra modulation/fuzz pedals.
+Flamma FS-08 Octave -> Donner Ultimate Comp -> Donner Stylish Fuzz -> Joyo King of Kings -> Joyo Narcissus -> Valeton GP-5 -> Donner White Tape.
+Board settings are set by hand and are not encoded in the .prst.
+All numeric pedal positions use the existing 0–100 position shorthand unless a clock position is specified.
+
+## Flamma FS-08 Octave
+
+Off for rhythm/lead; on for sustained pad sections only.
+-2OCT: 0.
+-OCT: 0.
++OCT: 25.
++2OCT: 0.
+Dry: 80.
+
+## Donner Ultimate Comp
+
+On throughout.
+COMP: 50.
+TONE: 55.
+LEVEL: 55.
+Mode: NORMAL.
+
+## Donner Stylish Fuzz
+
+Bypassed throughout.
+Sustain: 25.
+Treble: 50.
+Bass: 50.
+Volume: 50.
+
+## King of Kings Left
+
+On throughout.
+Volume: 55.
+Gain: 20.
+Tone: 55.
+Clipping toggle: Softer position.
+Feedback toggle: Standard position.
+
+## King of Kings Right
+
+Bypassed; reserve for exceptional peaks after level matching.
+Volume: 65.
+Gain: 55.
+Tone: 60.
+Clipping toggle: Harder position.
+Feedback toggle: Higher-gain position.
+
+## Joyo Narcissus
+
+Bypassed throughout.
+Width: 30.
+Depth: 20.
+Rate: 20.
+Mode: Vintage.
+
+## Donner White Tape
+
+Off for strummed rhythm and anthem lead; on for sustained pads, ambient intros/bridges/outros.
+Level: ~10 o’clock.
+Time: 700ms (loose ambient; quarter at 85.7 BPM).
+Feedback: ~11 o’clock.
+Mono rig: use the top row/left channel; bottom row unused. Set Time against the track by ear. No tap tempo. Its repeats include the GP-5 reverb. Keep this fixed across the shared slap set.
+
+## Board choreography
+
+- Flamma FS-08 Octave: Off for rhythm/lead; on for sustained pad sections only.
+- Donner Ultimate Comp: On throughout.
+- Donner Stylish Fuzz: Bypassed throughout.
+- King of Kings Left: On throughout.
+- King of Kings Right: Bypassed; reserve for exceptional peaks after level matching.
+- Joyo Narcissus: Bypassed throughout.
+- Donner White Tape: Off for strummed rhythm and anthem lead; on for sustained pads, ambient intros/bridges/outros.
+Set the board switches for the section you are entering. Intro-only or clean-only effects may need to start on. Return each pedal to its documented state at the next section. Board pedals are independent of CTL.
+
+## Revision record
+
+Approved audit entry 136.
+- PRE: Boost -> off.
+- PRE: removed from CTL.
+- EQ 6kHz: 5 -> 1.
+- MOD Depth: 55 -> 30.
+- DLY Mix: 35 -> 25.
+- RVB Mix: 40 -> 25.
+- RVB Mod: 35 -> 15.
+- Board Flamma: ; Off for rhythm/lead; on for sustained pad sections only.
+- Board King of Kings Right: ; Bypassed; reserve for exceptional peaks after level matching.
+Pre-revision JSON, Markdown and original file hashes are preserved in Documents/patch-audit-2026-10-16/inventory.json and implementation-manifest.json.
+The site piece title and on-disk filenames stay stable; only the short pedal display name may change.

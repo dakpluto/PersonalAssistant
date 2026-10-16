@@ -1,5 +1,5 @@
 {
-  "patch_name": "TimeOfLife-Gtr",
+  "patch_name": "G-TimeOfLi",
   "patch_vol": 50,
   "bpm": 108,
   "ir": {
@@ -27,7 +27,7 @@
       "ctl_off_state": "off",
       "ctl_on_state": "on",
       "settings": {
-        "Gain": 45,
+        "Gain": 30,
         "Tone": 58,
         "VOL": 70
       }
@@ -66,7 +66,7 @@
       "model": "A-Chorus",
       "always_on": true,
       "settings": {
-        "Depth": 30,
+        "Depth": 20,
         "Rate": 0.8,
         "Tone": 55
       }
@@ -77,7 +77,7 @@
       "ctl_off_state": "off",
       "ctl_on_state": "on",
       "settings": {
-        "Mix": 18,
+        "Mix": 12,
         "Time": 420,
         "Feedback": 25,
         "Trail": true
@@ -87,7 +87,7 @@
       "model": "Plate",
       "always_on": true,
       "settings": {
-        "Mix": 18,
+        "Mix": 12,
         "Decay": 40,
         "Damp": 45,
         "Trail": true

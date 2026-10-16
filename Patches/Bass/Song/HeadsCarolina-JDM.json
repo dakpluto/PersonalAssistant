@@ -2,16 +2,71 @@
   "patch_name": "Heads Carolina - Jo Dee Messina",
   "patch_vol": 52,
   "bpm": 118,
-  "nam": {"name": "CleanB15 (slot 51): Ampeg B18 - Head DI - Bass Chan - Vol 2.5 (B-18N) + Apg115", "slot": 51, "settings": {"Gain": 60, "VOL": 80, "Bass": 55, "Middle": 55, "Treble": 65}},
+  "nam": {
+    "name": "CleanB15 (slot 51): Ampeg B18 - Head DI - Bass Chan - Vol 2.5 (B-18N) + Apg115",
+    "slot": 51,
+    "settings": {
+      "Gain": 50,
+      "VOL": 80,
+      "Bass": 55,
+      "Middle": 55,
+      "Treble": 56
+    }
+  },
   "modules": {
-    "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 25}},
-    "PRE": {"model": "Micro Boost", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Gain": 45}},
-    "DST": {"model": null},
-    "AMP": {"model": null},
-    "CAB": {"model": null},
-    "EQ": {"model": "Bass EQ 2", "always_on": true, "settings": {"50Hz": 2, "120Hz": 3, "400Hz": -3, "800Hz": 0, "4.5kHz": 6, "VOL": 55}},
-    "MOD": {"model": null},
-    "DLY": {"model": null},
-    "RVB": {"model": "Room", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Mix": 20, "Decay": 35, "Trail": true}}
+    "NR": {
+      "model": "Gate",
+      "always_on": true,
+      "settings": {
+        "THRE": 12
+      }
+    },
+    "PRE": {
+      "model": "Micro Boost",
+      "ctl": true,
+      "ctl_off_state": "off",
+      "ctl_on_state": "on",
+      "settings": {
+        "Gain": 25
+      }
+    },
+    "DST": {
+      "model": null
+    },
+    "AMP": {
+      "model": null
+    },
+    "CAB": {
+      "model": null
+    },
+    "EQ": {
+      "model": "Bass EQ 2",
+      "always_on": true,
+      "settings": {
+        "50Hz": 2,
+        "120Hz": 3,
+        "400Hz": -3,
+        "800Hz": 0,
+        "4.5kHz": 2,
+        "VOL": 55
+      }
+    },
+    "MOD": {
+      "model": null
+    },
+    "DLY": {
+      "model": null
+    },
+    "RVB": {
+      "model": "Room",
+      "ctl": true,
+      "ctl_off_state": "off",
+      "ctl_on_state": "on",
+      "settings": {
+        "Mix": 6,
+        "Decay": 35,
+        "Trail": true
+      }
+    }
   }
 }

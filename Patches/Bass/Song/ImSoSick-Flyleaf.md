@@ -1,85 +1,170 @@
 # I'm So Sick — Flyleaf
 
+Revised 2026-10-16 following the approved library audit.
+Type: Song. Instrument: Harley Benton passive 5-string P/J.
+Full board. Board Option: American Sound (bypassed; retained for legacy full-board builds).
+Patch screen name: ImSoSick -. Patch VOL: 56.
+Preset tempo: 102 BPM.
+
 Bass: Harley Benton P/J, 5-string, passive. Full board.
 2005 (self-titled *Flyleaf*, same album as "Cassie" — see the guitar patch for that one). ~102 BPM (estimate — no hard chart reference, tempo isn't load-bearing for the tone choices below). This is Flyleaf's heaviest track, and a very different animal from "Cassie": no clean ambient verse here, the whole song is driven and aggressive, tight palm-muted riffing in the verse building to an even bigger, thicker wall in the chorus, with the genre's usual quiet breakdown mid-song for contrast. The bass job is to reinforce that riff, not sit under it — present, gritty, mid-forward.
 
-CTL Off = verse (driven, controlled). CTL On = chorus (bigger, thicker wall).
+## Revision intent
 
-## GP-5 Settings
+Keep the musical role of the original patch while reducing redundant gain, excessive space and unclear switching where identified in audit entry 60.
+The module settings and section map below are the active revision.
+Audited capture volumes and Michael’s explicit patch-level adjustments are preserved.
+No hardware audition or measured level match has been performed.
 
-Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB
+## GP-5 settings
 
-**NR — Gate**
-- THRE: 40
-- Always on. Real distortion at real gain needs a firm gate — tight palm-muted riffing at this intensity gets ugly between hits without one.
+Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB.
+The encoded N->S block sits between DST and AMP when a SnapTone is used.
 
-**PRE — Micro Boost** (MXR M133 Micro Amp)
-- Gain: 60
-- **CTL switch.** Off = bypassed, On = engaged.
-- Off (verse) keeps the riff driven but controlled. On (chorus) pushes it into the bigger, thicker wall the payoff needs — a clean lift, not a tone change.
+AMP/CAB replacement: SnapTone HairySVT (slot 58): SVT SANS HAIRY DRIVE (SVT-CL) + Sunn215.
+Slot: 58. Always on.
+Gain: 51, VOL: 55, Bass: 42, Middle: 58, Treble: 62.
+AMP and CAB are both off; the capture already includes its cab/DI character.
+The capture voice is fixed across CTL states. Audited VOL is preserved for this slot.
 
-**DST — Bass OD**, always on.
-- Gain: 72, Blend: 78, VOL: 65, Bass: 45, Treble: 60 — pushed hard for real aggression, blended nearly-wet.
+## NR - Gate
 
-**AMP/CAB — NAM SnapTone, slot 58: HairySVT** (always on)
-- Built from the `SVT SANS HAIRY DRIVE (SVT-CL)` NAM and the Sunn215 IR, combined into one snaptone.
-- Real Ampeg SVT-CL with the hairy drive setting, into the Sunn215 2x15 IR.
-- Heavy, fuzzy nu-metal bass. Hairy SVT drive.
-- Gain: 51, VOL: 55, Bass: 42, Middle: 68, Treble: 62
-- Gain 51: a little over default. This part wants more push than the other HairySVT patches.
-- Bass 42: low end pulled back noticeably.
-- Middle 68: Mid-forward growl that lets the bass reinforce the riff instead of hiding under it.
-- Treble 62: Buzz/edge on top.
-- VOL 55: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
-- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 58 directly.
+THRE: 20.
+Fixed on. Not on CTL.
+Use the lowest threshold that keeps rests quiet. Check soft notes and held-note decay. This gate is before the drives and amp; it does not directly gate noise generated after it.
 
-**EQ — Bass EQ 1**
-- 33Hz: -4, 150Hz: -3, 600Hz: +6, 2kHz: +8, 8kHz: +3, VOL: 55
-- Always on, both CTL states. Sub and low-mid both cut — this song's wall of sound has no use for sub weight, it just competes with the kick. 600Hz and 2kHz both pushed for the grinding midrange presence that cuts through a dense alt-metal mix. Not quite as extreme a cut/push as the RammGrind patch — Flyleaf's tone is heavy but not quite as scooped-and-precise as Rammstein's industrial buzzsaw.
+## PRE - Micro Boost
 
-**MOD / DLY — Off**
-No modulation, no delay. Tight, dry, direct — a heavy riff like this doesn't want anything blurring its attack.
+Gain: 25.
+CTL assigned. Loads off; first CTL press switches it on.
+Controls the source dynamics or adds the specified push/filter before distortion and amp processing. The settings stay fixed; only its on/off state can change.
 
-**RVB — Room**
-- Mix: 20, Decay: 35, Trail: On
-- **CTL switch.** Off = bypassed, On = engaged.
-- Off (verse) stays tight and dry. On (chorus) opens up just enough to add scale to the bigger wall, without turning ambient — this is still a heavy, present tone even at its biggest, not a wash.
+## DST - Module off
 
-### CTL Summary (GP-5)
-- **CTL Off — Verse:** Micro Boost and Room both bypassed. Driven and tight, reinforcing the palm-muted riff.
-- **CTL On — Chorus:** Micro Boost and Room both engaged. A real push plus a touch of space for the thicker wall.
+Not used.
 
-## Full Pedalboard
+## AMP - Module off
 
-Signal chain order: Flamma FS-08 Octave → Donner Ultimate Comp → Donner Stylish Fuzz → Joyo Tidal Wave → Joyo Narcissus → Valeton GP-5.
+Not used.
 
-**Flamma FS-08 Octave — bypassed**
-- All octave knobs (-2OCT, -OCT, +OCT, +2OCT) at 0, Dry at 100
-- No octave texture anywhere in this song.
+## CAB - Module off
 
-**Donner Ultimate Comp — engaged**
-- COMP: 55, TONE: 55, LEVEL: 55, Mode: TREBLE
-- Always on. Squashes pick/finger attack into a consistent, driving level for tight palm-muted riffing. TREBLE mode keeps attack articulate before it hits the already-hot NAM.
+Not used.
 
-**Donner Stylish Fuzz — bypassed**
-Not used. The Alpha Omega Fuzz NAM already supplies this patch's entire distortion character — stacking a board fuzz stage on top of an already-fuzz-voiced NAM would just turn the tone to mush.
+## EQ - Bass EQ 1
 
-**Joyo Tidal Wave — engaged**
-- Drive: 25, Blend: 35, Presence: 55, Level: 58
-- Treble: 55, Middle: 60, Bass: 50
-- Mid-Frequency toggle: 1000Hz (pick/finger attack and cut-through — this is a tight, busy alt-metal mix, not a spacious ballad)
-- Bass-Shift toggle: 80Hz (tight low end for a dense full-band mix)
-- Cab-Sim (DI out): On
-- Ground Lift: Off (only flip on if a specific room throws hum)
-- Light-moderate glue and a consistent DI feed — the NAM carries the actual distortion character, this pedal isn't a second full gain stage.
+33Hz: -4.
+150Hz: -3.
+600Hz: 6.
+2kHz: 3.
+8kHz: 3.
+VOL: 55.
+Fixed on. Not on CTL.
+Shapes note body and cut after the amp/capture. Where assigned to CTL, its output adds the specified lift after the gain stages. Numbers are GP-5 control values, not a calibrated loudness guarantee.
 
-**Joyo Narcissus — bypassed**
-No modulation anywhere in this patch — dry and direct by design.
+## MOD - Module off
 
-**Valeton GP-5**
-See GP-5 settings above.
+Not used.
 
-## Footswitch Choreography
+## DLY - Module off
 
-- **Verse:** GP-5 CTL off. Comp and Tidal Wave running underneath, unchanged.
-- **Chorus:** GP-5 CTL on. Step on it going into the bigger wall, off again coming back down to the next verse.
+Not used.
+
+## RVB - Module off
+
+Not used.
+
+## Switching and section map
+
+CTL blocks: PRE.
+- CTL off / loaded state: Driven controlled verse. GP-5 active: NR, EQ, N->S.
+- First CTL press: Chorus input push. GP-5 active: NR, PRE, EQ, N->S.
+- Press CTL again to return to the loaded block pattern, provided no shared MIDI block has been changed.
+
+## Full pedalboard
+
+Flamma FS-08 Octave -> Donner Ultimate Comp -> Donner Stylish Fuzz -> Joyo Tidal Wave -> Joyo American Sound -> Joyo Narcissus -> Valeton GP-5.
+Board settings are set by hand and are not encoded in the .prst.
+All numeric pedal positions use the existing 0–100 position shorthand unless a clock position is specified.
+
+## Flamma FS-08 Octave
+
+Bypassed throughout.
+-2OCT: 0.
+-OCT: 0.
++OCT: 0.
++2OCT: 0.
+Dry: 100.
+
+## Donner Ultimate Comp
+
+On throughout.
+COMP: 55.
+TONE: 55.
+LEVEL: 55.
+Mode: TREBLE.
+
+## Donner Stylish Fuzz
+
+Bypassed throughout.
+Sustain: 25.
+Treble: 50.
+Bass: 50.
+Volume: 50.
+
+## Joyo Tidal Wave
+
+On throughout.
+Drive: 25.
+Blend: 35.
+Presence: 55.
+Level: 58.
+Treble: 55.
+Middle: 60.
+Bass: 50.
+Mid-Frequency: 1000Hz.
+Bass-Shift: 80Hz.
+Cab-Sim (DI out): On.
+Ground Lift: Off.
+The footswitch toggles drive only. Preamp EQ and Level stay active in both states. Cab-Sim/Ground Lift affect the DI path; main instrument output is unchanged.
+
+## Joyo American Sound
+
+Bypassed throughout.
+Level: 50.
+Drive: 10.
+Voice: 50.
+Low: 50.
+Mid: 50.
+High: 50.
+
+## Joyo Narcissus
+
+Bypassed throughout.
+Width: 30.
+Depth: 20.
+Rate: 20.
+Mode: Vintage.
+
+## Board choreography
+
+- Flamma FS-08 Octave: Bypassed throughout.
+- Donner Ultimate Comp: On throughout.
+- Donner Stylish Fuzz: Bypassed throughout.
+- Joyo Tidal Wave: On throughout.
+- Joyo American Sound: Bypassed throughout.
+- Joyo Narcissus: Bypassed throughout.
+Set the board switches for the section you are entering. Intro-only or clean-only effects may need to start on. Return each pedal to its documented state at the next section. Board pedals are independent of CTL.
+
+## Revision record
+
+Approved audit entry 60.
+- SnapTone Middle: 68 -> 58.
+- NR THRE: 40 -> 20.
+- PRE Gain: 60 -> 25.
+- DST: Bass OD -> off.
+- EQ 2kHz: 8 -> 3.
+- RVB: Room -> off.
+- RVB: removed from CTL.
+Pre-revision JSON, Markdown and original file hashes are preserved in Documents/patch-audit-2026-10-16/inventory.json and implementation-manifest.json.
+The site piece title and on-disk filenames stay stable; only the short pedal display name may change.

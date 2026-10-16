@@ -1,17 +1,79 @@
 {
-  "patch_name": "SpiderMan67-Gtr",
+  "patch_name": "G-Spidey67",
   "patch_vol": 50,
   "bpm": 150,
-  "nam": {"name": "TwinClean (slot 61): CLEANEST - Fender Deluxe Reverb 1965 [Hyper Accuracy] + TWIN REVERB __ CLEAN (vulturized Twin)", "slot": 61, "settings": {"Gain": 51, "VOL": 75, "Bass": 48, "Middle": 50, "Treble": 60}},
+  "nam": {
+    "name": "TwinClean (slot 61): CLEANEST - Fender Deluxe Reverb 1965 [Hyper Accuracy] + TWIN REVERB __ CLEAN (vulturized Twin)",
+    "slot": 61,
+    "settings": {
+      "Gain": 51,
+      "VOL": 75,
+      "Bass": 48,
+      "Middle": 50,
+      "Treble": 60
+    }
+  },
   "modules": {
-    "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 20}},
-    "PRE": {"model": null},
-    "DST": {"model": "Super OD", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Gain": 45, "Tone": 55, "VOL": 66}},
-    "AMP": {"model": null},
-    "CAB": {"model": null},
-    "EQ": {"model": "Guitar EQ 2", "always_on": true, "settings": {"100Hz": -2, "500Hz": 0, "1kHz": 1, "3kHz": 2, "6kHz": -1, "VOL": 50}},
-    "MOD": {"model": null},
-    "DLY": {"model": "Slapback", "always_on": true, "settings": {"Mix": 16, "Time": 110, "F.Back": 8, "Trail": true}},
-    "RVB": {"model": "Spring", "always_on": true, "settings": {"Mix": 22, "Decay": 45, "Trail": true}}
+    "NR": {
+      "model": "Gate",
+      "always_on": true,
+      "settings": {
+        "THRE": 20
+      }
+    },
+    "PRE": {
+      "model": null
+    },
+    "DST": {
+      "model": "Super OD",
+      "ctl": true,
+      "ctl_off_state": "off",
+      "ctl_on_state": "on",
+      "settings": {
+        "Gain": 30,
+        "Tone": 55,
+        "VOL": 66
+      }
+    },
+    "AMP": {
+      "model": null
+    },
+    "CAB": {
+      "model": null
+    },
+    "EQ": {
+      "model": "Guitar EQ 2",
+      "always_on": true,
+      "settings": {
+        "100Hz": -2,
+        "500Hz": 0,
+        "1kHz": 1,
+        "3kHz": 2,
+        "6kHz": -1,
+        "VOL": 50
+      }
+    },
+    "MOD": {
+      "model": null
+    },
+    "DLY": {
+      "model": "Slapback",
+      "always_on": true,
+      "settings": {
+        "Mix": 12,
+        "Time": 110,
+        "F.Back": 8,
+        "Trail": true
+      }
+    },
+    "RVB": {
+      "model": "Spring",
+      "always_on": true,
+      "settings": {
+        "Mix": 16,
+        "Decay": 45,
+        "Trail": true
+      }
+    }
   }
 }

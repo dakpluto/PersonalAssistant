@@ -1,0 +1,75 @@
+{
+  "patch_name": "BeSmHeavy",
+  "patch_vol": 50,
+  "bpm": 94,
+  "nam": {
+    "name": "RectifierCrunch: MESA DUAL RECTIFIER 2025 CRUNCH RHYTHM #1 + V30 UR 4FB 4x12 SM57 0.50in 0.0in 7603",
+    "slot": 72,
+    "settings": {
+      "Gain": 50,
+      "VOL": 70,
+      "Bass": 47,
+      "Middle": 54,
+      "Treble": 49
+    }
+  },
+  "modules": {
+    "NR": {
+      "model": "Gate",
+      "always_on": true,
+      "settings": {
+        "THRE": 23
+      }
+    },
+    "PRE": {
+      "model": null
+    },
+    "DST": {
+      "model": null
+    },
+    "AMP": {
+      "model": null
+    },
+    "CAB": {
+      "model": null
+    },
+    "EQ": {
+      "model": "Guitar EQ 1",
+      "ctl": true,
+      "ctl_off_state": "off",
+      "ctl_on_state": "on",
+      "settings": {
+        "125Hz": -2,
+        "400Hz": 0,
+        "800Hz": 2,
+        "1.6kHz": 2,
+        "4kHz": -1,
+        "VOL": 54
+      }
+    },
+    "MOD": {
+      "model": null
+    },
+    "DLY": {
+      "model": "Analog",
+      "ctl": true,
+      "ctl_off_state": "off",
+      "ctl_on_state": "on",
+      "settings": {
+        "Mix": 16,
+        "Time": 430,
+        "Feedback": 22,
+        "Trail": true
+      }
+    },
+    "RVB": {
+      "model": "Room",
+      "always_on": true,
+      "settings": {
+        "Mix": 8,
+        "Decay": 22,
+        "Trail": true
+      }
+    }
+  }
+}

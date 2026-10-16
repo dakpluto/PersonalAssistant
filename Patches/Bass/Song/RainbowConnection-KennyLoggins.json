@@ -2,16 +2,70 @@
   "patch_name": "Rainbow",
   "patch_vol": 52,
   "bpm": 72,
-  "nam": {"name": "CleanB15 (slot 51): Ampeg B18 - Head DI - Bass Chan - Vol 2.5 (B-18N) + Apg115", "slot": 51, "settings": {"Gain": 47, "VOL": 80, "Bass": 58, "Middle": 50, "Treble": 30}},
+  "nam": {
+    "name": "CleanB15 (slot 51): Ampeg B18 - Head DI - Bass Chan - Vol 2.5 (B-18N) + Apg115",
+    "slot": 51,
+    "settings": {
+      "Gain": 47,
+      "VOL": 80,
+      "Bass": 58,
+      "Middle": 50,
+      "Treble": 30
+    }
+  },
   "modules": {
-    "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 8}},
-    "PRE": {"model": "COMP", "always_on": true, "settings": {"Sustain": 32, "VOL": 58}},
-    "DST": {"model": null},
-    "AMP": {"model": null},
-    "CAB": {"model": null},
-    "EQ": {"model": "Bass EQ 2", "always_on": true, "settings": {"50Hz": 0, "120Hz": 2, "400Hz": 1, "800Hz": -1, "4.5kHz": -5, "VOL": 52}},
-    "MOD": {"model": null},
-    "DLY": {"model": null},
-    "RVB": {"model": "Hall", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Mix": 14, "Decay": 40, "Trail": true}}
+    "NR": {
+      "model": "Gate",
+      "always_on": true,
+      "settings": {
+        "THRE": 8
+      }
+    },
+    "PRE": {
+      "model": "COMP",
+      "always_on": true,
+      "settings": {
+        "Sustain": 32,
+        "VOL": 58
+      }
+    },
+    "DST": {
+      "model": null
+    },
+    "AMP": {
+      "model": null
+    },
+    "CAB": {
+      "model": null
+    },
+    "EQ": {
+      "model": "Bass EQ 2",
+      "always_on": true,
+      "settings": {
+        "50Hz": 0,
+        "120Hz": 2,
+        "400Hz": 1,
+        "800Hz": -1,
+        "4.5kHz": -5,
+        "VOL": 52
+      }
+    },
+    "MOD": {
+      "model": null
+    },
+    "DLY": {
+      "model": null
+    },
+    "RVB": {
+      "model": "Hall",
+      "ctl": true,
+      "ctl_off_state": "off",
+      "ctl_on_state": "on",
+      "settings": {
+        "Mix": 5,
+        "Decay": 25,
+        "Trail": true
+      }
+    }
   }
 }

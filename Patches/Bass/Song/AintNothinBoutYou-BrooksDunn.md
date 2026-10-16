@@ -1,91 +1,170 @@
 # Ain't Nothing 'Bout You — Brooks & Dunn
 
+Revised 2026-10-16 following the approved library audit.
+Type: Song. Instrument: Harley Benton passive 5-string P/J.
+Full board. Board Option: American Sound (bypassed; retained for legacy full-board builds).
+Patch screen name: AintNothin. Patch VOL: 55.
+Preset tempo: 128 BPM.
+
 Bass: Harley Benton P/J, 5-string, passive. Full board.
 From *Steers & Stripes* (2001), ~128 BPM.
 A fast, danceable, driving neo-traditional country hit — twangy Telecaster and steel guitar up front, a two-step energy that stays high throughout. The bass job is to stay clean, punchy, and present, driving the groove without ever getting distorted or aggressive — country bass leans on note definition and drive, not grit. Energy stays fairly consistent song-wide, with a small lift at the chorus.
 
-CTL off = the driving verse. CTL on = the chorus lift.
+## Revision intent
+
+Keep the musical role of the original patch while reducing redundant gain, excessive space and unclear switching where identified in audit entry 11.
+The module settings and section map below are the active revision.
+Audited capture volumes and Michael’s explicit patch-level adjustments are preserved.
+No hardware audition or measured level match has been performed.
 
 ## GP-5 settings
 
-Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
+Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB.
+The encoded N->S block sits between DST and AMP when a SnapTone is used.
 
-**NR — Gate**
-- THRE: 14
-- Always on. Low-moderate threshold — clean, driving country tone, minimal grit.
+AMP/CAB replacement: SnapTone CleanB15 (slot 51): Ampeg B18 - Head DI - Bass Chan - Vol 2.5 (B-18N) + Apg115.
+Slot: 51. Always on.
+Gain: 50, VOL: 80, Bass: 58, Middle: 50, Treble: 56.
+AMP and CAB are both off; the capture already includes its cab/DI character.
+The capture voice is fixed across CTL states. Audited VOL is preserved for this slot.
 
-**PRE — Micro Boost — On CTL**
-- Gain: 48
-- CTL off: bypassed (verse). CTL on: engaged (chorus).
-- Verse already drives hard on its own. Chorus gets a clean push to lift energy slightly.
+## NR - Gate
 
-**DST — Off**
-- No drive. Country bass stays clean — the twang and drive come from the guitars and steel, not the low end.
+THRE: 14.
+Fixed on. Not on CTL.
+Use the lowest threshold that keeps rests quiet. Check soft notes and held-note decay. This gate is before the drives and amp; it does not directly gate noise generated after it.
 
-**AMP/CAB — NAM SnapTone, slot 51: CleanB15** (always on)
-- Built from the `Ampeg B18 - Head DI - Bass Chan - Vol 2.5 (B-18N)` NAM and the Apg115 IR, combined into one snaptone.
-- Real Ampeg B-18N fliptop (the B-15 preamp circuit), captured clean at volume 2.5, into the Apg115 B-15 cab IR.
-- 90s Nashville session bass is a clean B-15 or a DI. This is the B-15 half of that.
-- Gain: 50, VOL: 80, Bass: 58, Middle: 50, Treble: 56
-- Gain 50: the capture as built.
-- Bass 58: more low end.
-- Middle 50: flat.
-- Treble 56: more top end.
-- VOL 80: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
-- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 51 directly.
+## PRE - Micro Boost
 
-**EQ — Bass EQ 1**
-- 33Hz: +2, 150Hz: -1, 600Hz: +2, 2kHz: +4, 8kHz: +3, VOL: 55
-- Always on, same for both CTL states.
-- +4 at 2kHz and +3 at 8kHz keep this bright and present, matching the driving, danceable energy of the song. -1 at 150Hz keeps it from getting muddy at this tempo.
+Gain: 25.
+CTL assigned. Loads off; first CTL press switches it on.
+Controls the source dynamics or adds the specified push/filter before distortion and amp processing. The settings stay fixed; only its on/off state can change.
 
-**MOD — Off**
-- No modulation. Straightforward, driving country-rock tone.
+## DST - Module off
 
-**DLY — Off**
-- Not used.
+Not used.
 
-**RVB — Room — On CTL**
-- Mix: 16, Decay: 26, Trail: On
-- CTL off: bypassed (verse — tight and dry). CTL on: engaged (chorus).
-- A light touch of room for the chorus, kept subtle to match this genre's generally dry, direct production.
+## AMP - Module off
 
-## CTL summary
+Not used.
 
-- **CTL Off — Verse.** Driving, clean, punchy country groove.
-- **CTL On — Chorus.** Boost and room reverb engage together for a slight lift.
-- Engage CTL right as the chorus hits, back off returning to the verse.
+## CAB - Module off
 
-## Full pedalboard (signal chain order)
+Not used.
 
-**1. Flamma FS-08 Octave — Bypassed**
-- Footswitch off. No octave layering needed for this driving country groove.
+## EQ - Bass EQ 1
 
-**2. Donner Ultimate Comp — Engaged**
-- COMP: 48
-- TONE: 58
-- LEVEL: 58
-- Mode: TREBLE
-- Keeps the fast, driving groove even and consistent. TREBLE mode keeps pick/finger attack bright, matching the clean, present character this whole tone is built around.
+33Hz: 2.
+150Hz: -1.
+600Hz: 2.
+2kHz: 4.
+8kHz: 3.
+VOL: 55.
+Fixed on. Not on CTL.
+Shapes note body and cut after the amp/capture. Where assigned to CTL, its output adds the specified lift after the gain stages. Numbers are GP-5 control values, not a calibrated loudness guarantee.
 
-**3. Donner Stylish Fuzz — Bypassed**
-- Footswitch off. No fuzz anywhere — country bass stays clean.
+## MOD - Module off
 
-**4. Joyo Tidal Wave — Engaged**
-- Drive: 15
-- Blend: 30
-- Presence: 58
-- Level: 58
-- Treble: 56
-- Middle: 55
-- Bass: 55
-- Mid-Frequency: 1000Hz
-- Bass-Shift: 80Hz
-- Cab-Sim (DI out): Off
-- Ground Lift: Off
-- Adds presence and attack. Mid-Frequency at 1000Hz and Bass-Shift at 80Hz both push toward articulation over body, matching this song's fast, danceable, driving energy.
+Not used.
 
-**5. Joyo Narcissus — Bypassed**
-- Footswitch off. No chorus — matches the MOD-off call on the GP-5. Clean, direct country tone throughout.
+## DLY - Module off
 
-**6. Valeton GP-5** — see settings above.
+Not used.
+
+## RVB - Room
+
+Mix: 8.
+Decay: 26.
+Trail: on.
+CTL assigned. Loads off; first CTL press switches it on.
+Adds the specified room or ambient tail. The revised mix keeps the initial note audible. Trail behavior follows the saved setting.
+
+## Switching and section map
+
+CTL blocks: PRE, RVB.
+- CTL off / loaded state: the driving verse. GP-5 active: NR, EQ, N->S.
+- First CTL press: Chorus. GP-5 active: NR, PRE, EQ, RVB, N->S.
+- Press CTL again to return to the loaded block pattern, provided no shared MIDI block has been changed.
+
+## Full pedalboard
+
+Flamma FS-08 Octave -> Donner Ultimate Comp -> Donner Stylish Fuzz -> Joyo Tidal Wave -> Joyo American Sound -> Joyo Narcissus -> Valeton GP-5.
+Board settings are set by hand and are not encoded in the .prst.
+All numeric pedal positions use the existing 0–100 position shorthand unless a clock position is specified.
+
+## Flamma FS-08 Octave
+
+Bypassed throughout.
+-2OCT: 0.
+-OCT: 0.
++OCT: 0.
++2OCT: 0.
+Dry: 100.
+
+## Donner Ultimate Comp
+
+On throughout.
+COMP: 48.
+TONE: 58.
+LEVEL: 58.
+Mode: TREBLE.
+
+## Donner Stylish Fuzz
+
+Bypassed throughout.
+Sustain: 25.
+Treble: 50.
+Bass: 50.
+Volume: 50.
+
+## Joyo Tidal Wave
+
+On throughout.
+Drive: 15.
+Blend: 30.
+Presence: 58.
+Level: 58.
+Treble: 56.
+Middle: 55.
+Bass: 55.
+Mid-Frequency: 1000Hz.
+Bass-Shift: 80Hz.
+Cab-Sim (DI out): Off.
+Ground Lift: Off.
+The footswitch toggles drive only. Preamp EQ and Level stay active in both states. Cab-Sim/Ground Lift affect the DI path; main instrument output is unchanged.
+
+## Joyo American Sound
+
+Bypassed throughout.
+Level: 50.
+Drive: 10.
+Voice: 50.
+Low: 50.
+Mid: 50.
+High: 50.
+
+## Joyo Narcissus
+
+Bypassed throughout.
+Width: 30.
+Depth: 20.
+Rate: 20.
+Mode: Vintage.
+
+## Board choreography
+
+- Flamma FS-08 Octave: Bypassed throughout.
+- Donner Ultimate Comp: On throughout.
+- Donner Stylish Fuzz: Bypassed throughout.
+- Joyo Tidal Wave: On throughout.
+- Joyo American Sound: Bypassed throughout.
+- Joyo Narcissus: Bypassed throughout.
+Set the board switches for the section you are entering. Intro-only or clean-only effects may need to start on. Return each pedal to its documented state at the next section. Board pedals are independent of CTL.
+
+## Revision record
+
+Approved audit entry 11.
+- PRE Gain: 48 -> 25.
+- RVB Mix: 16 -> 8.
+Pre-revision JSON, Markdown and original file hashes are preserved in Documents/patch-audit-2026-10-16/inventory.json and implementation-manifest.json.
+The site piece title and on-disk filenames stay stable; only the short pedal display name may change.

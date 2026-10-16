@@ -2,16 +2,80 @@
   "patch_name": "SweetLeaf-Gtr",
   "patch_vol": 50,
   "bpm": 94,
-  "nam": {"name": "CleanPlexi (slot 74): Marshall JTM45 with a clean boost in front + Matchless ES212 2x12 (Celestion G12M-25 Greenbacks)", "slot": 74, "settings": {"Gain": 50, "VOL": 70, "Bass": 55, "Middle": 60, "Treble": 48}},
+  "nam": {
+    "name": "CleanPlexi (slot 74): Marshall JTM45 with a clean boost in front + Matchless ES212 2x12 (Celestion G12M-25 Greenbacks)",
+    "slot": 74,
+    "settings": {
+      "Gain": 50,
+      "VOL": 70,
+      "Bass": 55,
+      "Middle": 60,
+      "Treble": 48
+    }
+  },
   "modules": {
-    "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 35}},
-    "PRE": {"model": "Boost", "always_on": true, "settings": {"Gain": 35, "+3dB": false, "Bright": true}},
-    "DST": {"model": "Sora Fuzz", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Fuzz": 55, "VOL": 62}},
-    "AMP": {"model": null},
-    "CAB": {"model": null},
-    "EQ": {"model": "Guitar EQ 2", "always_on": true, "settings": {"100Hz": 1, "500Hz": 2, "1kHz": 1, "3kHz": -1, "6kHz": -3, "VOL": 50}},
-    "MOD": {"model": null},
-    "DLY": {"model": "Tape", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Mix": 16, "Time": 380, "F.Back": 22, "Trail": true}},
-    "RVB": {"model": "Room", "always_on": true, "settings": {"Mix": 10, "Decay": 25, "Trail": true}}
+    "NR": {
+      "model": "Gate",
+      "always_on": true,
+      "settings": {
+        "THRE": 20
+      }
+    },
+    "PRE": {
+      "model": "Boost",
+      "always_on": true,
+      "settings": {
+        "Gain": 35,
+        "+3dB": false,
+        "Bright": true
+      }
+    },
+    "DST": {
+      "model": null
+    },
+    "AMP": {
+      "model": null
+    },
+    "CAB": {
+      "model": null
+    },
+    "EQ": {
+      "model": "Guitar EQ 2",
+      "settings": {
+        "100Hz": 1,
+        "500Hz": 2,
+        "1kHz": 1,
+        "3kHz": -1,
+        "6kHz": -3,
+        "VOL": 53
+      },
+      "ctl": true,
+      "ctl_off_state": "off",
+      "ctl_on_state": "on"
+    },
+    "MOD": {
+      "model": null
+    },
+    "DLY": {
+      "model": "Tape",
+      "ctl": true,
+      "ctl_off_state": "off",
+      "ctl_on_state": "on",
+      "settings": {
+        "Mix": 16,
+        "Time": 380,
+        "F.Back": 22,
+        "Trail": true
+      }
+    },
+    "RVB": {
+      "model": "Room",
+      "always_on": true,
+      "settings": {
+        "Mix": 10,
+        "Decay": 25,
+        "Trail": true
+      }
+    }
   }
 }

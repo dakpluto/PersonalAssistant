@@ -1,56 +1,110 @@
 # American Pie (Rhythm Guitar) — Don McLean
 
+Revised 2026-10-16 following the approved library audit.
+Type: Song. Instrument: HSS Stratocaster.
+GP-5 only.
+Patch screen name: AmerPie-Gt. Patch VOL: 50.
+Preset tempo: 138 BPM.
+
 From *American Pie* (1971). About 138 BPM for the band sections, est. The intro is slow and free-time.
 An eight-and-a-half-minute folk-rock epic: a solo-voice intro, then an acoustic-and-piano-led full band strumming through verse after verse.
 The record is acoustic-guitar driven. On a Strat, CTL off is a bright acoustic-ish strum. CTL on is a warmer, pushed electric voice for fills and for doubling the melody in later choruses.
 Instrument: Stratocaster (HSS). Position 4 (neck+middle) for the strum. Bridge for the pushed voice.
 GP-5 only, Stratocaster (HSS), no pedalboard.
 
-## Module chain
+## Revision intent
 
-**NR — Gate**, always on.
+Keep the musical role of the original patch while reducing redundant gain, excessive space and unclear switching where identified in audit entry 140.
+The module settings and section map below are the active revision.
+Audited capture volumes and Michael’s explicit patch-level adjustments are preserved.
+No hardware audition or measured level match has been performed.
+
+## GP-5 settings
+
+Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB.
+The encoded N->S block sits between DST and AMP when a SnapTone is used.
+
+AMP/CAB replacement: SnapTone NashClean (slot 62): CLEANEST - Fender Deluxe Reverb 1965 [Hyper Accuracy] + Origin Effects Brown Deluxe 1x12 Medium Mix.
+Slot: 62. Always on.
+Gain: 45, VOL: 75, Bass: 48, Middle: 48, Treble: 56.
+AMP and CAB are both off; the capture already includes its cab/DI character.
+The capture voice is fixed across CTL states. Audited VOL is preserved for this slot.
+
+## NR - Gate
+
 THRE: 12.
-Low.
+Fixed on. Not on CTL.
+Use the lowest threshold that keeps rests quiet. Check soft notes and held-note decay. This gate is before the drives and amp; it does not directly gate noise generated after it.
 
-**PRE — COMP (Ross)**, always on.
-Sustain: 40, VOL: 55.
-Even, acoustic-like strum.
+## PRE - COMP
 
-**DST — Green OD (TS-808)**, on CTL.
-Gain: 26, Tone: 55, VOL: 66.
-A light push for fills and melody doubling in the later, bigger choruses.
+Sustain: 40.
+VOL: 55.
+Fixed on. Not on CTL.
+Controls the source dynamics or adds the specified push/filter before distortion and amp processing. The settings stay fixed; only its on/off state can change.
 
-**AMP/CAB — NAM SnapTone, slot 63: EdgyTwang** (always on)
-- Built from the `EDGY - Fender Deluxe Reverb 1965 [Hyper Accuracy]` NAM and the Origin Effects Brown Deluxe 1x12 Medium Mix IR, combined into one snaptone.
-- Real 1965 Deluxe Reverb at the "edgy" setting, just starting to break up, into the Brown Deluxe 1x12.
-- Early-70s electric with a little grit. Edgy Deluxe.
-- Gain: 48, VOL: 70, Bass: 48, Middle: 45, Treble: 56
-- Gain 48: a little under default. This part wants less push than the other EdgyTwang patches.
-- Bass 48: low end pulled back a little.
-- Middle 45: midrange pulled back a little.
-- Treble 56: more top end.
-- VOL 70: the level Michael set for this snaptone in the 2026-10-01 VOL audit. Trim here if the patch jumps in level against your others.
-- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 63 directly.
+## DST - Green OD
 
-**EQ — Guitar EQ 2**, always on.
-100Hz: -1, 500Hz: -2, 1kHz: 0, 3kHz: +2, 6kHz: +1, VOL: 50.
-The 500Hz dip and 3kHz and 6kHz air make it acoustic-adjacent.
+Gain: 26.
+Tone: 55.
+VOL: 66.
+CTL assigned. Loads off; first CTL press switches it on.
+Supplies the selected additional drive voice. Use its level and gain as separate controls. A pre-amp boost may add compression instead of a proportional solo-volume increase.
 
-**MOD — off.**
+## AMP - Module off
 
-**DLY — Analog**, on CTL.
-Mix: 12, Time: 330ms, F.Back: 15, Trail: on.
-A short tail for the fills.
+Not used.
 
-**RVB — Room**, always on.
-Mix: 16, Decay: 32, Trail: on.
-A natural room.
+## CAB - Module off
 
-## CTL footswitch
+Not used.
 
-On CTL: DST (Green OD), DLY (Analog).
+## EQ - Guitar EQ 2
 
-- **CTL off** — Rhythm. Bright, compressed acoustic-ish strum. That's most of this song. This is the resting state the patch loads into.
-- **CTL on** — Lead. A warm push plus a short tail for fills and melody doubling.
+100Hz: -1.
+500Hz: -2.
+1kHz: 0.
+3kHz: 2.
+6kHz: 1.
+VOL: 50.
+Fixed on. Not on CTL.
+Shapes note body and cut after the amp/capture. Where assigned to CTL, its output adds the specified lift after the gain stages. Numbers are GP-5 control values, not a calibrated loudness guarantee.
 
-Stay off for the strum, which is most of the eight minutes. Engage for fills and the big late choruses.
+## MOD - Module off
+
+Not used.
+
+## DLY - Analog
+
+Mix: 12.
+Time: 330.
+Feedback: 15.
+Trail: on.
+CTL assigned. Loads off; first CTL press switches it on.
+Adds repeats only in the listed states. Trail preserves the remaining repeats when this block is bypassed; it does not change delay time or mix.
+
+## RVB - Room
+
+Mix: 10.
+Decay: 32.
+Trail: on.
+Fixed on. Not on CTL.
+Adds the specified room or ambient tail. The revised mix keeps the initial note audible. Trail behavior follows the saved setting.
+
+## Switching and section map
+
+CTL blocks: DST, DLY.
+- CTL off / loaded state: Acoustic-adjacent strum. GP-5 active: NR, PRE, EQ, RVB, N->S.
+- First CTL press: Electric fills. GP-5 active: NR, PRE, DST, EQ, DLY, RVB, N->S.
+- Press CTL again to return to the loaded block pattern, provided no shared MIDI block has been changed.
+
+## Revision record
+
+Approved audit entry 140.
+- Amp/cab foundation: SnapTone 63 -> SnapTone 62.
+- SnapTone Gain: 48 -> 45.
+- SnapTone VOL: 70 -> 75.
+- SnapTone Middle: 45 -> 48.
+- RVB Mix: 16 -> 10.
+Pre-revision JSON, Markdown and original file hashes are preserved in Documents/patch-audit-2026-10-16/inventory.json and implementation-manifest.json.
+The site piece title and on-disk filenames stay stable; only the short pedal display name may change.

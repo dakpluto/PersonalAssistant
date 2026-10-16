@@ -8,7 +8,7 @@
     "settings": {
       "Gain": 48,
       "VOL": 55,
-      "Bass": 62,
+      "Bass": 56,
       "Middle": 46,
       "Treble": 44
     }
@@ -37,7 +37,7 @@
       "model": "Bass EQ 2",
       "always_on": true,
       "settings": {
-        "50Hz": 4,
+        "50Hz": 1,
         "120Hz": 1,
         "400Hz": -3,
         "800Hz": 0,

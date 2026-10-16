@@ -1,90 +1,192 @@
 # Cassie — Flyleaf
 
-**Type:** Song
-**Instrument:** Stratocaster (HSS)
-**Full Board:** Yes
-**BPM:** ~138 (estimate — no hard chart reference, tempo isn't load-bearing for this build)
+Revised 2026-10-16 following the approved library audit.
+Type: Song. Instrument: HSS Stratocaster.
+Full board. Board Option: American Sound (bypassed; retained for legacy full-board builds).
+Patch screen name: Cassie - F. Patch VOL: 55.
+Preset tempo: 138 BPM.
 
-## The song
+Cassie on HSS Strat. Ambient clean verse and a heavy distorted chorus built around one fixed clean amp. La Charger supplies the extra gain. The loaded V30112 IR now makes the cab part of the preset. Narcissus is on for the clean part and off for the heavy part. The exact recording rig is unverified.
 
-"Cassie" (*Flyleaf*, 2005). Original studio version, not the later acoustic re-record.
-Textbook loud/quiet dynamic. Verse is clean, ambient, chorus-drenched — chiming arpeggios with real space around them.
-Chorus/bridge detonates into a thick, tight, mid-2000s alt-metal wall. Not a scooped death-metal tone — dense, present, and articulate, the way a lot of Howard Benson-produced records from this era sit in a mix.
-The trick here is getting real heaviness out of a genuinely clean amp plus one hot pedal in front of it, not out of a built-in hi-gain amp sim. That's how a lot of records from this scene were actually tracked — a clean, high-headroom amp getting hit hard by a pedal gives you a tighter, more controllable heavy tone than dialing an amp sim's own gain all the way up.
+## Revision intent
 
-CTL Off = clean, ambient verse.
-CTL On = heavy chorus/bridge riff.
+Keep the musical role of the original patch while reducing redundant gain, excessive space and unclear switching where identified in audit entry 146.
+The module settings and section map below are the active revision.
+Audited capture volumes and Michael’s explicit patch-level adjustments are preserved.
+No hardware audition or measured level match has been performed.
 
 ## GP-5 settings
 
-Module order: NR, PRE, DST, AMP, CAB, EQ, MOD, DLY, RVB.
+Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB.
+The encoded N->S block sits between DST and AMP when a SnapTone is used.
 
-**NR — Gate** (always on)
-- THRE: 32
-La Charger cranked hard into a clean amp will hiss between hits. 32 keeps the heavy state tight without choking off the clean verse's reverb/delay tails — those are well above the noise floor, so the gate doesn't touch them.
+Cab IR: V30112. Encoded as User IR 10.
 
-**PRE — off**
-Not used. Donner Ultimate Comp on the board is handling dynamics duty ahead of the GP-5 — see "Full Pedalboard" below.
+## NR - Gate
 
-**DST — La Charger** (CTL)
-- Gain: 78, Tone: 58, VOL: 78
-- CTL Off = off, CTL On = on
-This is the whole heavy/clean switch. Crunch Box-style pedals are a genuinely common choice for exactly this job in modern rock/metal — tight, aggressive, and built to slam a clean amp's front end rather than relying on an amp's own gain stage. Off for the verse: the Twin sits there clean and glassy on its own. On for the chorus: pushes way past crunch into a real wall.
+THRE: 32.
+Fixed on. Not on CTL.
+Use the lowest threshold that keeps rests quiet. Check soft notes and held-note decay. This gate is before the drives and amp; it does not directly gate noise generated after it.
 
-**AMP — Dark Twin** (Fender 65 Twin Reverb) (always on)
-- Gain: 30, VOL: 72, Bass: 55, Middle: 55, Treble: 62, Bright: On
-Same amp setting for both CTL states — La Charger is what separates clean from heavy, not a second amp voicing. Gain 30 keeps this genuinely clean and headroomy on its own — that's the point, this needs to be a real clean amp, not a low-gain "hi-gain amp turned down." Bright on adds the extra sparkle the ambient verse wants, and keeps the heavy tone articulate instead of mushy once La Charger is slamming it.
+## PRE - Module off
 
-**CAB — off, using IR instead**
-See "IR Cab Captures" below.
+Not used.
 
-**EQ — Guitar EQ 2** (always on)
-- 100Hz: +2, 500Hz: -6, 1kHz: +5, 3kHz: +8, 6kHz: +3, VOL: 55
--6 at 500Hz carves out the boxy low-mid buildup that a pedal-driven clean amp gets under heavy gain. +5/+8 at 1kHz/3kHz is where this riff's presence and pick-attack live — keeps it cutting instead of collapsing into mush. Small +2 at 100Hz keeps some low-end weight without letting it get flabby. Runs the same in both CTL states — it's shaping the whole signal path, not one section.
+## DST - La Charger
 
-**MOD — off**
-Not used on the GP-5. Joyo Narcissus on the board is the only modulation source for this patch — no reason to run two chorus sources.
+Gain: 55.
+Tone: 58.
+VOL: 60.
+CTL assigned. Loads off; first CTL press switches it on.
+Supplies the selected additional drive voice. Use its level and gain as separate controls. A pre-amp boost may add compression instead of a proportional solo-volume increase.
 
-**DLY — Analog** (CTL, inverted)
-- Mix: 32, Time: 380ms, Feedback: 28, Trail: On
-- CTL Off = on, CTL On = off
-This is backwards from a typical rhythm/lead CTL split, and that's deliberate — the ambient verse is what wants the delay (space, shimmer, repeats trailing off into the chorus texture underneath the arpeggios), and the heavy riff explicitly does not (repeats stacking on top of a tight palm-muted wall just smears it). On for CTL Off (verse), off for CTL On (chorus).
+## AMP - Dark Twin
 
-**RVB — Hall** (always on)
-- Mix: 30, Decay: 45, Trail: On
-Stays on in both states, unlike the delay. A Hall reverb at moderate decay gives the verse real ambient depth, and kept light, it still glues the heavy riff together instead of drying it out completely — full-dry heavy tones can sound harsh on a bright clean-amp-plus-pedal rig like this one. This is doing cohesion duty, not the "ambient" job — that's the delay's job.
+Gain: 30.
+VOL: 72.
+Bass: 55.
+Middle: 55.
+Treble: 62.
+Bright: on.
+Fixed on. Not on CTL.
+Provides one fixed amp voice for the complete preset. CTL does not change its knobs or select another amp channel.
 
-### CTL summary
-- **CTL Off (verse):** NR + AMP (clean Dark Twin) + EQ + DLY (Analog) + RVB (Hall). Clean, chiming, spacious — the record's ambient/dream-pop side.
-- **CTL On (chorus/bridge):** adds DST (La Charger, hard) and drops DLY. Thick, tight, heavy wall — same amp, same EQ, completely different weight.
-- Hit CTL going into the first chorus. Back off for the return to verse. Stay on CTL for the bridge's heavier passages; back off again for any quiet vocal-forward moment before the final chorus push.
+## CAB - User IR 10
 
-### IR Cab Captures
-Using **American Twin 2x12 Medium Mix** (Fender Twin Reverb, JBL D120F) in place of a GP-5 CAB model.
-Direct match for the Dark Twin amp model — that hi-fi, detailed JBL top end is exactly what the ambient clean verse wants, and it keeps the pedal-driven heavy tone from getting dark or woolly. CAB stays `model: null` in the JSON/`.prst`; load this IR into a `User IR` slot by hand in Valeton Suite and point the CAB block at it.
+VOL: 50.
+Fixed on. Not on CTL.
+Keeps the required speaker response in the exported preset. Use the documented loaded IR slot; no extra cab goes after a SnapTone.
 
-## Full Pedalboard
+## EQ - Guitar EQ 2
 
-Signal chain order: Flamma FS-08 Octave → Donner Ultimate Comp → Donner Stylish Fuzz → Joyo King of Kings → Joyo Narcissus → Valeton GP-5.
+100Hz: 2.
+500Hz: -2.
+1kHz: 2.
+3kHz: 2.
+6kHz: 0.
+VOL: 55.
+Fixed on. Not on CTL.
+Shapes note body and cut after the amp/capture. Where assigned to CTL, its output adds the specified lift after the gain stages. Numbers are GP-5 control values, not a calibrated loudness guarantee.
 
-**Flamma FS-08 Octave — bypassed**
-- All octave knobs (-2OCT, -OCT, +OCT, +2OCT) at 0, Dry at 100
-- Footswitch: off, never engaged for this song
-No octave texture in "Cassie" — stays fully out of the signal path.
+## MOD - Module off
 
-**Donner Ultimate Comp — engaged always**
-- COMP: 40, TONE: 55, LEVEL: 55, Mode: NORMAL
-Evens out sustain across the clean ambient arpeggios (that shimmery, even-level quality this kind of verse wants) and tames pick dynamics before they hit La Charger for the heavy state. NORMAL mode — Dark Twin with Bright on is already plenty sparkly, don't need TREBLE mode stacking more top end on top of that.
+Not used.
 
-**Donner Stylish Fuzz — bypassed**
-No fuzz texture in this song. Leave off; footswitch never engaged for this patch.
+## DLY - Analog
 
-**Joyo King of Kings — both channels bypassed**
-Not used. GP-5's own La Charger is doing 100% of the heavy lift here — the whole point of this patch is a genuinely clean amp on one side and one hot pedal on the other. Stacking a board OD in front would leak drive into the verse's clean tone even at low gain, since it can't be footswitched independently of the GP-5's CTL.
+Mix: 20.
+Time: 380.
+Feedback: 28.
+Trail: on.
+CTL assigned. Loads on; first CTL press switches it off.
+Adds repeats only in the listed states. Trail preserves the remaining repeats when this block is bypassed; it does not change delay time or mix.
 
-**Joyo Narcissus — engaged always**
-- Mode: Vintage, Width: 35, Depth: 25, Rate: 25
-Sole modulation source — the GP-5's own MOD module is off. Vintage mode keeps it musical rather than warbly; settings are a touch more present than the usual "light touch" default since the ambient verse is a genuine character element of this song, not incidental texture. Runs the same in both CTL states — subtle width under the heavy riff, more noticeably chorused under the clean verse.
+## RVB - Hall
 
-**Valeton GP-5**
-See GP-5 settings above.
+Mix: 12.
+Decay: 45.
+Trail: on.
+Fixed on. Not on CTL.
+Adds the specified room or ambient tail. The revised mix keeps the initial note audible. Trail behavior follows the saved setting.
+
+## Switching and section map
+
+CTL blocks: DST, DLY.
+- CTL off / loaded state: Ambient clean verse. GP-5 active: NR, AMP, CAB, EQ, DLY, RVB.
+- First CTL press: Heavy chorus. GP-5 active: NR, DST, AMP, CAB, EQ, RVB.
+- Press CTL again to return to the loaded block pattern, provided no shared MIDI block has been changed.
+
+## Full pedalboard
+
+Flamma FS-08 Octave -> Donner Ultimate Comp -> Donner Stylish Fuzz -> Joyo King of Kings -> Joyo American Sound -> Joyo Narcissus -> Valeton GP-5.
+Board settings are set by hand and are not encoded in the .prst.
+All numeric pedal positions use the existing 0–100 position shorthand unless a clock position is specified.
+
+## Flamma FS-08 Octave
+
+Bypassed throughout.
+-2OCT: 0.
+-OCT: 0.
++OCT: 0.
++2OCT: 0.
+Dry: 100.
+
+## Donner Ultimate Comp
+
+On throughout.
+COMP: 40.
+TONE: 55.
+LEVEL: 55.
+Mode: NORMAL.
+
+## Donner Stylish Fuzz
+
+Bypassed throughout.
+Sustain: 25.
+Treble: 50.
+Bass: 50.
+Volume: 50.
+
+## King of Kings Left
+
+Bypassed throughout.
+Volume: 50.
+Gain: 20.
+Tone: 50.
+Clipping toggle: Softer position.
+Feedback toggle: Standard position.
+
+## King of Kings Right
+
+Bypassed throughout.
+Volume: 50.
+Gain: 20.
+Tone: 50.
+Clipping toggle: Softer position.
+Feedback toggle: Standard position.
+
+## Joyo American Sound
+
+Bypassed throughout.
+Level: 50.
+Drive: 10.
+Voice: 50.
+Low: 50.
+Mid: 50.
+High: 50.
+
+## Joyo Narcissus
+
+On for clean verses; off for heavy choruses.
+Width: 35.
+Depth: 25.
+Rate: 25.
+Mode: Vintage.
+
+## Board choreography
+
+- Flamma FS-08 Octave: Bypassed throughout.
+- Donner Ultimate Comp: On throughout.
+- Donner Stylish Fuzz: Bypassed throughout.
+- King of Kings Left: Bypassed throughout.
+- King of Kings Right: Bypassed throughout.
+- Joyo American Sound: Bypassed throughout.
+- Joyo Narcissus: On for clean verses; off for heavy choruses.
+Set the board switches for the section you are entering. Intro-only or clean-only effects may need to start on. Return each pedal to its documented state at the next section. Board pedals are independent of CTL.
+
+## Revision record
+
+Approved audit entry 146.
+- DST Gain: 78 -> 55.
+- DST VOL: 78 -> 60.
+- CAB: off -> User IR 10.
+- CAB VOL: unset -> 50.
+- EQ 500Hz: -6 -> -2.
+- EQ 1kHz: 5 -> 2.
+- EQ 3kHz: 8 -> 2.
+- EQ 6kHz: 3 -> 0.
+- DLY Mix: 32 -> 20.
+- RVB Mix: 30 -> 12.
+- Board Narcissus: ; On for clean verses; off for heavy choruses.
+Pre-revision JSON, Markdown and original file hashes are preserved in Documents/patch-audit-2026-10-16/inventory.json and implementation-manifest.json.
+The site piece title and on-disk filenames stay stable; only the short pedal display name may change.

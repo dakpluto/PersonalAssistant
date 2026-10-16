@@ -1,5 +1,5 @@
 {
-  "patch_name": "Higher-Creed-Gtr",
+  "patch_name": "G-HigherCr",
   "patch_vol": 50,
   "bpm": 85,
   "ir": {
@@ -14,15 +14,7 @@
       }
     },
     "PRE": {
-      "model": "Boost",
-      "ctl": true,
-      "ctl_off_state": "off",
-      "ctl_on_state": "on",
-      "settings": {
-        "Gain": 45,
-        "+3dB": true,
-        "Bright": false
-      }
+      "model": null
     },
     "DST": {
       "model": "La Charger",
@@ -56,24 +48,28 @@
     },
     "EQ": {
       "model": "Guitar EQ 2",
-      "always_on": true,
       "settings": {
         "100Hz": -2,
         "500Hz": 0,
         "1kHz": 1,
         "3kHz": 1,
         "6kHz": -1,
-        "VOL": 50
-      }
+        "VOL": 53
+      },
+      "ctl": true,
+      "ctl_off_state": "off",
+      "ctl_on_state": "on"
     },
     "MOD": {
       "model": "A-Chorus",
-      "always_on": true,
       "settings": {
         "Depth": 15,
         "Rate": 0.5,
         "Tone": 50
-      }
+      },
+      "ctl": true,
+      "ctl_off_state": "on",
+      "ctl_on_state": "off"
     },
     "DLY": {
       "model": null
@@ -82,7 +78,7 @@
       "model": "Hall",
       "always_on": true,
       "settings": {
-        "Mix": 14,
+        "Mix": 10,
         "Decay": 35,
         "Trail": false
       }

@@ -1,0 +1,1957 @@
+{
+  "patches": 195,
+  "total_pages": 744,
+  "contact_sheets": 31,
+  "results": [
+    {
+      "number": 1,
+      "file": "Patches/Bass/Artist/Egan-Fretless.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 7254,
+      "pages": 5,
+      "prst_sha256": "bee4b5dbea3601005fa0faa1244943009bb71497c40aa59f1dca364ea4bf3516",
+      "pdf_sha256": "991b020c5274bd00addf6ff9bb4c474f02b6e7456a5a6dd43b35d1a1a0689db9",
+      "md_sha256": "ef394067a10f5dcde25934e5889168eed66ff0e6bdcb30a89f2845588b008fc1"
+    },
+    {
+      "number": 2,
+      "file": "Patches/Bass/Artist/Polyphia-Bass.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 7350,
+      "pages": 5,
+      "prst_sha256": "888f3bc4ca75dd50aba52bb6a00f713787bb31ea219c83716f19688712ed34e4",
+      "pdf_sha256": "7ccc27d34cf0bf13efcf8982566a736d112c0379a8309147ded071c072457d1d",
+      "md_sha256": "1f293426b59559ef232ec263c645a6de75ae32351ef5f484386df466bf6f9c4a"
+    },
+    {
+      "number": 3,
+      "file": "Patches/Bass/Artist/SNTR-Bass.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 6964,
+      "pages": 5,
+      "prst_sha256": "50419c2892fc02f6319c0e3680aa0ad95499bc8d1f4130fe5b665d76c6cc1c7e",
+      "pdf_sha256": "6bc7d13fe3981b31658b335a689254eadf94bd11cb3402031ec56e7a0bdba76b",
+      "md_sha256": "238d5bff719355b64252ec76295076d71aa894aa21105eb15859886c3aef3820"
+    },
+    {
+      "number": 4,
+      "file": "Patches/Bass/Artist/Yes-Squire.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 7156,
+      "pages": 5,
+      "prst_sha256": "22db9465428be2f739bac02546e07b8d6adf82b297236f2bf982f349fb0d56af",
+      "pdf_sha256": "1c0ac083fb132be842868ddab37cbc8119a6448a8c1f3cb5b86cbb362dab20f7",
+      "md_sha256": "6546758a65ee9a654e1ff2b65c926a316b49953f8d26a35f4a07e574ff4c4354"
+    },
+    {
+      "number": 5,
+      "file": "Patches/Bass/Song/10000Reasons-MR.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 6939,
+      "pages": 5,
+      "prst_sha256": "cbe3757482a66e12632ec6432e844f77cbf1016e19eebaef40bbb53a1ab5a42d",
+      "pdf_sha256": "c4c5b1109b53b7718271bb47b612ab9e3b73d67856ea334972b7a8fab1c38542",
+      "md_sha256": "5a36362657d7865d93bbc1f76238875e1554fb155808585233d9a3f03330a4db"
+    },
+    {
+      "number": 6,
+      "file": "Patches/Bass/Song/1234-Feist.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 6944,
+      "pages": 5,
+      "prst_sha256": "df61c6e59b4684cbf2d0c564199ef0b7d011c043ce3525c39e1290094cef241e",
+      "pdf_sha256": "db88a310f9c07067d63b96b13da969b096b177737bcf8a2b8c7c6ef82b24f928",
+      "md_sha256": "d74dbc1ad48535ab45099f414af99c9214f57ec9e3f32cf3583b5f2fdaf249b7"
+    },
+    {
+      "number": 7,
+      "file": "Patches/Bass/Song/1979-SmashingPumpkins.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4679,
+      "pages": 3,
+      "prst_sha256": "ace653111b4fd43194d7c6349641e32a190a71a7040f9856c807292e9ee643e5",
+      "pdf_sha256": "5cf6bc2609909ae2f09abda0eac5e0d371da03713f71d84f047791d03cff6dd8",
+      "md_sha256": "17ee0d55f1db5e218ae4b1c5ea193ec409f2e6fc5dabd75ff6304bb12861669f"
+    },
+    {
+      "number": 8,
+      "file": "Patches/Bass/Song/Adrift-LS.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4585,
+      "pages": 3,
+      "prst_sha256": "79c1d8bff072c91aa5c5be651775842817fefb78fc648eddbf0c6e9bf0282828",
+      "pdf_sha256": "95011f7cafbe5390f127b7cac17506c51d8b9af357ee1d1c97537565b94cafb8",
+      "md_sha256": "c772f965aa9e7d303e64466880dd3721bf7b11275758ea78fd86c6196a4ab8a0"
+    },
+    {
+      "number": 9,
+      "file": "Patches/Bass/Song/AfterTheLove-EWF.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4494,
+      "pages": 3,
+      "prst_sha256": "d498b904ac28ce2fb6fdab344a208f86b1a5cf83cd7889cd11786116f7a37a43",
+      "pdf_sha256": "56715bdba42f8637d86be78f46cabfd2b8aa055ce7b940d80df2e4dd2efc01d4",
+      "md_sha256": "3171b1293a5d1bbe674fa3ceeca7ebf6d0b52b762fdab78a3e4ad8879bcdbb74"
+    },
+    {
+      "number": 10,
+      "file": "Patches/Bass/Song/AintNothinBoutYou-BrooksDunn-GP5.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4583,
+      "pages": 3,
+      "prst_sha256": "9d1da9e8bac4388f32961da5449532519428b2c7dabbad8a7573ad4c4b0d453c",
+      "pdf_sha256": "73f939f22330a791ff6c7d2311c28fcf3c5d2ba1d94ec2a6aa37dd46c1dcf57d",
+      "md_sha256": "b45bdd9bd66850fb9476dadade07c31972d625db65c0b9e0ce8172b3e0e4925d"
+    },
+    {
+      "number": 11,
+      "file": "Patches/Bass/Song/AintNothinBoutYou-BrooksDunn.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 6736,
+      "pages": 5,
+      "prst_sha256": "b65c60d5068091fe7896f74bb8e2603c6c8495c96ab34ac9d6ca54080d8b7d7b",
+      "pdf_sha256": "62004506c83bba59565ad30feb0889ecf76cae296c1bbc56ebe1598177dca868",
+      "md_sha256": "b63d2e54d28ea9ffa940649130e1f61f725de1b4353a391519799f043feee2e8"
+    },
+    {
+      "number": 12,
+      "file": "Patches/Bass/Song/AllForYou-SisterHazel.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4464,
+      "pages": 3,
+      "prst_sha256": "12bbb2bc86a52c161b370072f2b0982f364996b9f9c1a92d6eef4eb530aca114",
+      "pdf_sha256": "5fed86e056666912ac82a0467ef5181d863ea3ef4d4b97547b979b23977129dc",
+      "md_sha256": "20687fbd0f2b917c12e53c5afa1665a5fde0ee876a8fd958c0fd0779cddb3638"
+    },
+    {
+      "number": 13,
+      "file": "Patches/Bass/Song/AmericanPie-DonMcLean.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4384,
+      "pages": 3,
+      "prst_sha256": "b41c04f11ea4c7d69a6f3b506efe202f359c5a4be6ee6c781c1d981f591013e8",
+      "pdf_sha256": "6f6d2118070721fdf8f0c16605e4fdf88ca18c36ee39bc0af3a118c97bbd0ecb",
+      "md_sha256": "dad2318d3cac67e7e19f606b622a35f40241a6bf834e531aae7b3cc33a87d8de"
+    },
+    {
+      "number": 14,
+      "file": "Patches/Bass/Song/Anthem-GC.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4367,
+      "pages": 3,
+      "prst_sha256": "e260631d00ae28783cd30a7244e05820559c6b5229312ea604ffd700b85ec020",
+      "pdf_sha256": "9a479fbb951b62d1a9fa318b75c1bcbd3da33ce33dd3e5f2ade6edac2a02f7cb",
+      "md_sha256": "950fac6e680e1d3e6da0c657acfe409f244a7a26ea32af05723505710580aaeb"
+    },
+    {
+      "number": 15,
+      "file": "Patches/Bass/Song/BasketCase-GreenDay.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 6553,
+      "pages": 5,
+      "prst_sha256": "d43713f3c8734855011aef353ce84de4cdd8f76eae22352d7d5d81b468618b49",
+      "pdf_sha256": "41b170186812ff921ae62506d50a68530a6ca2d20221725a5c378a5c77ab355c",
+      "md_sha256": "c64ab3530779156172fe5a1a34c3cc667509baf20e7c84c9bac2d62d095fd753"
+    },
+    {
+      "number": 16,
+      "file": "Patches/Bass/Song/BeatIt-MJ.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 6869,
+      "pages": 5,
+      "prst_sha256": "349bc5c0114b71c66e71ecf597ac0cd7fa6c93155f2df803ecf27cc46d2e2080",
+      "pdf_sha256": "eb815a1ef6f8a38242cc78a35d2707833db46d1e75b02a95714f35dd4f1ef62c",
+      "md_sha256": "6cf32fb6d9daedb155841b3877a73adaa281723ba40130a4df8ea3906d0c81c2"
+    },
+    {
+      "number": 17,
+      "file": "Patches/Bass/Song/Believe-BrooksDunn.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4529,
+      "pages": 3,
+      "prst_sha256": "7e177ff876b8bbe28fdccc3e70cc19b6fe6b30baa1c4a083c880bf3248a35d95",
+      "pdf_sha256": "01c63dab87d28257a3fc57326244c7aca2bc247287f3da996f1d0b9c23116879",
+      "md_sha256": "e4ba658e3ea61853f5d19a45657e8216d09dbe4c6987471bf2412adca3cade34"
+    },
+    {
+      "number": 18,
+      "file": "Patches/Bass/Song/BillieJean-ChrisCornell.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4734,
+      "pages": 3,
+      "prst_sha256": "1bd6b3380f1b7a34abb0f67e4986822dd5f2eb698fbb21348a7838907bfb916b",
+      "pdf_sha256": "936502d5ba09a1d97240d6935130b970433d6698b5dd84d32072f3aad85dbd25",
+      "md_sha256": "93f6ea0bf703f1ab13169e9b347a41d01ade29aafc89f9fadf238261877bcb57"
+    },
+    {
+      "number": 19,
+      "file": "Patches/Bass/Song/Blessing-KJ.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 6868,
+      "pages": 5,
+      "prst_sha256": "335052bbe96d5e77cd8b94ae106fddf0baa2a665967f020a7bfd0ba6d2d38eb7",
+      "pdf_sha256": "41166b87e431db947ec98ab0197cb42bacb4bc3573ab3823de5bce14607388b9",
+      "md_sha256": "96cf6f3706aa522a395e162a1117270c4583847b3900894f1b0bc41babcb6b40"
+    },
+    {
+      "number": 20,
+      "file": "Patches/Bass/Song/BreadBroken-JD.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 6826,
+      "pages": 5,
+      "prst_sha256": "1a33a0e382fcca4d69110fe874194759a125eeec056311647e22ed3bbf8bdbe8",
+      "pdf_sha256": "8215b2d3390764013cb9920f4f51df854b8e3fc629513993d075d99bfce65c78",
+      "md_sha256": "c204e0a507f529de6d135a8eb78d2f8356f5265984149bbee776603bfaab109c"
+    },
+    {
+      "number": 21,
+      "file": "Patches/Bass/Song/BrightSizeLife-Metheny.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4692,
+      "pages": 3,
+      "prst_sha256": "ca9c98643be9de510b88a5cd8191293677fe3082566bfbf491076c49ce70b675",
+      "pdf_sha256": "166f8ee1e5d8b35041e3a1938e297db1ec7672e14cc1f6bc4ca2f936018e4030",
+      "md_sha256": "f76d7d55a5807751ee14015d1ffea68462c47e43dbca9d46a57f72ad6dbe9bcd"
+    },
+    {
+      "number": 22,
+      "file": "Patches/Bass/Song/BringMeToLife-Evanescence.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4583,
+      "pages": 3,
+      "prst_sha256": "cc6843b9c3a14fc420f29896b64d9f451d9beb1cff68d1a9f1defb3bb8ff56db",
+      "pdf_sha256": "b5cd4b639eb3f97e29391dff0f3b4862b4dc8fdc29facdb27da0370ead0975b0",
+      "md_sha256": "2c23cb2377a8cb26bd70ad5d20b8d6469b3652db2a717b6a1d6aa6e9c8243789"
+    },
+    {
+      "number": 23,
+      "file": "Patches/Bass/Song/CivilWar-GNR.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 6771,
+      "pages": 5,
+      "prst_sha256": "7e43d6571326cab8eba5811bff87d0d292de3597ad21d4753616f075a4ad8596",
+      "pdf_sha256": "10d78f38d3b927036d86fa40131c5219702de0e3534ea78d4bee310d9cf972d3",
+      "md_sha256": "4771bf481327e35da7be987a995b1896581989a2ee87c652d57aa748812ed7c4"
+    },
+    {
+      "number": 24,
+      "file": "Patches/Bass/Song/CliffsOfDover-EJ.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 6784,
+      "pages": 5,
+      "prst_sha256": "aab78df913712bb7b4643ffdc102957bac43b150a0caf0a46c25f36afb085944",
+      "pdf_sha256": "7ca980347f884e3588695ef03a16cda73c94456cab70938906f70f8e3ca9728a",
+      "md_sha256": "3a7baad9069c42e143715b3ef36c504ee7240a35b6ca49b86bf088f0ef435f70"
+    },
+    {
+      "number": 25,
+      "file": "Patches/Bass/Song/Comedown-Bush.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4495,
+      "pages": 3,
+      "prst_sha256": "fcf2ba65c25cbadf00068e0e78489923b55041eb5933d68f3f3b4bb3e3a03f61",
+      "pdf_sha256": "c0ca2174328dc683c067865d955934f19504a8b0db9f1c96e1177ebcfc19cf3f",
+      "md_sha256": "7f1b601e29f88e8884adb1cbf91beb261471fc3a35a8aa027209f326f718df5e"
+    },
+    {
+      "number": 26,
+      "file": "Patches/Bass/Song/ComfortablyNumb-PinkFloyd.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4572,
+      "pages": 3,
+      "prst_sha256": "1a6db56a9f397045d033499af005b92e62371bd7218bd8d22e28365e124e6246",
+      "pdf_sha256": "3f07bbf5a6e38992a59fc939abc6e42917a9abded0488f1e038cf11fc151dcd2",
+      "md_sha256": "93bfc2c6f1669a8938df3f2b70c13f4632be54b4f9b3c60035b0940d54c96dc4"
+    },
+    {
+      "number": 27,
+      "file": "Patches/Bass/Song/ConceivingYou-Riverside.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4581,
+      "pages": 3,
+      "prst_sha256": "266e67766728ec0d2664d12700bf27469c0db1a59dbe365394b0e4c43b0c742c",
+      "pdf_sha256": "b190eb9e10ab01ca9c780a2498389821548988362b011fb456db68512afe0a53",
+      "md_sha256": "0fbbbd877e93f4e486610dbdb3a1f67238468cc21b571b9df84c41326b9d1953"
+    },
+    {
+      "number": 28,
+      "file": "Patches/Bass/Song/CrashIntoMe-DMB.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 6658,
+      "pages": 5,
+      "prst_sha256": "49125995ed58433a2801201adfe99491848b8d9a5466de87dd84b8dc567a40b3",
+      "pdf_sha256": "759855b53896b231f9193003ffb9908d5966121836fae2e1fb69f9d64f4b8063",
+      "md_sha256": "bb9f216de08f14318f3d87d531692ae65aadb07de0bcc17247a2df151c12267c"
+    },
+    {
+      "number": 29,
+      "file": "Patches/Bass/Song/CreekMarysBlood-Nightwish.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4628,
+      "pages": 3,
+      "prst_sha256": "eb9760d47e18252f3ea4902e0fa880583057993f107b7236e190ec3b59bf8f17",
+      "pdf_sha256": "bc1865bf6a625ba0cb33b50101cea432c491f166a066e9dbf26a0094122644c3",
+      "md_sha256": "277ff0c4e0175d48b8424f08c4f012e22b0f3584ff9ea5e3014125c17fca8e2d"
+    },
+    {
+      "number": 30,
+      "file": "Patches/Bass/Song/DYFAM-SM.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 6996,
+      "pages": 5,
+      "prst_sha256": "0ad5388f69ef49b0ac4dca4d57d3af913789f9e44ce6cc8cc8a4687c1dd04ebd",
+      "pdf_sha256": "ada61803a5322b0aa24f6191d29a2aa3b3db61c5e653f63eb305c1af0025189c",
+      "md_sha256": "5d96fda27a85e82499170c7dce7bba89ece9c15c513a12ad3991b4a21231aa27"
+    },
+    {
+      "number": 31,
+      "file": "Patches/Bass/Song/DangerZone-KennyLoggins.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4648,
+      "pages": 3,
+      "prst_sha256": "0bb6656759bfa0e88f01a5690cd57e4f957ede0e21527112bf9a089ba36ccafe",
+      "pdf_sha256": "958185431a9adba059993190999fde532e5b841a4db7f95079b6a5dd5276dc5e",
+      "md_sha256": "8199c655f8e1ee7a0b04e2f14fdf0b14f39a50ad05f7d11df41d3e51ecbbeee8"
+    },
+    {
+      "number": 32,
+      "file": "Patches/Bass/Song/DawnOfVictory-Rhapsody.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4487,
+      "pages": 3,
+      "prst_sha256": "6a6d5e8df7e2507b79a913e0738ad0ec23e4998fdcf863e51e76abb5692b54c9",
+      "pdf_sha256": "3f052d3ff597ba9eebceaf62aeeb8791083c197c4e089423550671a980256ffc",
+      "md_sha256": "a105b8c80f378b19b5eb6cfcb099d4430f0cebfb02e012b99c1bc34ee78822b7"
+    },
+    {
+      "number": 33,
+      "file": "Patches/Bass/Song/DayLife-Beatles.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 6686,
+      "pages": 5,
+      "prst_sha256": "0604f1f56467059da5785dd74822c61781362581e49cfa18602f49e0fb294a16",
+      "pdf_sha256": "0fd7b5082a6784d5335a066c6f36ecafcbdfc929938d52bb67204cf6740cef3c",
+      "md_sha256": "c4ede8178934b62a1b28d234d60a10d4c05c23f12803e9944e0c9ff6760af19d"
+    },
+    {
+      "number": 34,
+      "file": "Patches/Bass/Song/DigginYou-MN.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 6872,
+      "pages": 5,
+      "prst_sha256": "7937b088e5d9acd2d293d7326295536f0e612091d6951b316b3cd602972b8af3",
+      "pdf_sha256": "a70bc781073977356bb81bea54783e781448c95fc1b1e0d4c87f0cd938e22263",
+      "md_sha256": "09196d854f0c06c75defb71edfaee3a384dc753308b7ee0b6e771fe04ff04e00"
+    },
+    {
+      "number": 35,
+      "file": "Patches/Bass/Song/DirtRoadAnthem-JasonAldean.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4547,
+      "pages": 3,
+      "prst_sha256": "126b35cdd25fb7189eece58a3f26d28692320c947f33ed6dc105949be9d1a42b",
+      "pdf_sha256": "a6caa652afb19d9e6ca586c156ebe1af5b2cc839d51a83dfc8c5d236a8c7befb",
+      "md_sha256": "0790be4d184ef1df3f6f440705e43ebc19ca5806c8f715184b71d4aeb88d9a40"
+    },
+    {
+      "number": 36,
+      "file": "Patches/Bass/Song/Dryad-PainOfSalvation.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4560,
+      "pages": 3,
+      "prst_sha256": "ff5a5bb0573f32c2deb45ab2585b4a709f6518a132f85b9a9a5691ac74d96567",
+      "pdf_sha256": "47299ff27652a80f9a657a643c3a5f68f077bfb4559993365a84aa39c1ec4f2f",
+      "md_sha256": "7877abee053b6f225966bad64a213f271a9fb776def75e86ce934b17aa09712f"
+    },
+    {
+      "number": 37,
+      "file": "Patches/Bass/Song/Ecstasy-RustedRoot.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4799,
+      "pages": 3,
+      "prst_sha256": "95ae18855addadde07a664d9b9475e39bfca467050b30d4e57abdcd23c5241b7",
+      "pdf_sha256": "485650ae5c2147dfb887f54fd0a1f728afc7ee994533e35b8a9cf54b8ccf32e7",
+      "md_sha256": "e193b743f479e607cbe7a42896be5d752f63d29c90783ee591043eecfe96bfa6"
+    },
+    {
+      "number": 38,
+      "file": "Patches/Bass/Song/Everlong-FF.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 6655,
+      "pages": 5,
+      "prst_sha256": "e1f92d060f7c11a9a191be46410a7493810456d40ea2abb450e4ada027f7f88f",
+      "pdf_sha256": "f3869d5d6b21fef0a67edebf10100d70f8880a7a50a65b9248d129552d008609",
+      "md_sha256": "02eacb8ae224920446033f8c1bb9652e7577b9dc92c406c9f957aaa03493669a"
+    },
+    {
+      "number": 39,
+      "file": "Patches/Bass/Song/Fire-OP.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4363,
+      "pages": 3,
+      "prst_sha256": "7755e12bafb9c5228e5bc224fee3ff6a188119860b67202b54e321db5fb38c3e",
+      "pdf_sha256": "c94abd4a5e5904ad0c6cd694198319c46b4945613e9a7e1542da0816a48233fb",
+      "md_sha256": "24dfdf8bc26cfc70a60f960cc5f966300dcb3657daf0616edd0601e2277251a3"
+    },
+    {
+      "number": 40,
+      "file": "Patches/Bass/Song/ForeverReign-HS.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 6806,
+      "pages": 5,
+      "prst_sha256": "c41dc9b15d72629c6636726e910375275c04d07c24ec81ccbccf9bc709f2837b",
+      "pdf_sha256": "d15f66acf51d2381e95b43b40f236798ce386972a325e1d844e138806a035be1",
+      "md_sha256": "4a0ef8a16b32c6fb9f6f38d72bb65a3b9e5a5768254eac5681d5fd4cece37f81"
+    },
+    {
+      "number": 41,
+      "file": "Patches/Bass/Song/Found-Riverside.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4758,
+      "pages": 3,
+      "prst_sha256": "6fab43cde6c55132d0e648f43ceaa51a30f0de670a07890560806c3816e32171",
+      "pdf_sha256": "b7cb83ec65def659c6e012b2cd0d73033b44e903ea372723c20d087ef58fa8d3",
+      "md_sha256": "3b6f8091121c207e05dd525a448a88645e705727f4da1d175b3bbea829140743"
+    },
+    {
+      "number": 42,
+      "file": "Patches/Bass/Song/GivingAll-MG.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 6742,
+      "pages": 5,
+      "prst_sha256": "939efd795ba969d687886488140f0a20cd348f6f522fa6053915869cc0b5249a",
+      "pdf_sha256": "0d41acf9e87b20ecc2090f20fcc50565389129c6bd47b32ad5a3508920ac1f20",
+      "md_sha256": "e42998efd58a63d246201ddf9947c3d4b1af809bd471d59eaa866d27870dfac2"
+    },
+    {
+      "number": 43,
+      "file": "Patches/Bass/Song/GonnaBeMyGirl-Jet.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 6653,
+      "pages": 5,
+      "prst_sha256": "9933a0f1b9b1b8c75d9f656e9f7d35e794ae2b3f1b75daa9cda5ac086fd37048",
+      "pdf_sha256": "e484fdced11431f6b79c1c1f74050519b1d80beb8e5a50626d014ce0513cabea",
+      "md_sha256": "07ed404087e847388843973e5cba695e13f8e37a08f3bea418988fc0694579a9"
+    },
+    {
+      "number": 44,
+      "file": "Patches/Bass/Song/Hair-GrahamCentralStation.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 6827,
+      "pages": 5,
+      "prst_sha256": "65fd734ca60bbdded9e07b82d68155592664d8fde959144c4ce7d853199f7093",
+      "pdf_sha256": "f4a37c3a572cf205435fa9a58ce9c8c8fb28ec485d08a798b37dbecf10a02a7e",
+      "md_sha256": "70630ec667e0b55b094de84b266739ca81963c72d4961a2a8fddc8f9e50d7f18"
+    },
+    {
+      "number": 45,
+      "file": "Patches/Bass/Song/HangingByAMoment-Lifehouse.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4675,
+      "pages": 3,
+      "prst_sha256": "cd8538624becb448529855d79976327a9e8aab64d946b1151a21e7068a3bdd33",
+      "pdf_sha256": "c940c2cc3d5251c3d0d0cfceee00323979c139708c8fadeac94d1b3869227d68",
+      "md_sha256": "b445843abd89c7d5b47e1d17f9d767d19260f0fec63938d0fe5495e1cf3d39ba"
+    },
+    {
+      "number": 46,
+      "file": "Patches/Bass/Song/HardWorkinMan-BrooksDunn.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4438,
+      "pages": 3,
+      "prst_sha256": "4eead00ee5163f5df0a51ba6fe9d50b9272c35345173686e923c16fe403c43d1",
+      "pdf_sha256": "895471887d4bc1f487b245a1d142801faade3c151f6c129ccb4d6214e0377a15",
+      "md_sha256": "9afa7885a58496e7c469ff559cf7187be91e96bddc9ca4e6c9b5d467c13f8b8c"
+    },
+    {
+      "number": 47,
+      "file": "Patches/Bass/Song/HeadsCarolina-JDM.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4420,
+      "pages": 3,
+      "prst_sha256": "e27cd434b4ed76261ebaf7a94f7b336ca813fbaac298650c4b9bf568dd968e1f",
+      "pdf_sha256": "d330a8ea303f2ebe3e5f028027c6a29053fa4d388a2a869a4cc6e6bae644499b",
+      "md_sha256": "42c00284b4e7e4f70cd30dcf01dd6fab6c1b2797c7265c64352eab3628a3aec0"
+    },
+    {
+      "number": 48,
+      "file": "Patches/Bass/Song/Heaven-LLB.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4473,
+      "pages": 3,
+      "prst_sha256": "8ef98821babcb8a185170ffeee2294bbe2a4275231004deb9e20da19675c69cd",
+      "pdf_sha256": "10ca83fb04156ad04fb45e5dde69ff3a6e72cc2b6279c346b9b7df29e0b9f6ea",
+      "md_sha256": "2db59255b376fb8b0e06ee5432849ca854114c6b961a697f481f19aafacc8e66"
+    },
+    {
+      "number": 49,
+      "file": "Patches/Bass/Song/HeyJealousy-GB.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 6833,
+      "pages": 5,
+      "prst_sha256": "f931a05c8bf1ef0994c34d69bd8690c48716ef158b79f845dd3f25d704074ab7",
+      "pdf_sha256": "091272e73b201dcd14d9bf884c81f26668c58ac0d54bdb211d413868e4e2da2b",
+      "md_sha256": "12ab66955f39b05632dfe8af7ffe91379c30f323ba3f41433eb2f2837cde4512"
+    },
+    {
+      "number": 50,
+      "file": "Patches/Bass/Song/Higher-Creed.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 6813,
+      "pages": 5,
+      "prst_sha256": "0cc8495bd89296ee7d540aa46743822554b787322314f82f291fa4de38f15ca4",
+      "pdf_sha256": "1173aaf7be8ffb54403b881d0cf16d5db3e22b82d0fdcbda02eba51a83688cb7",
+      "md_sha256": "0442764ac4064100203b43c91a2c1ffdb9c0a9a7b763faddf04d2d779fcba2dd"
+    },
+    {
+      "number": 51,
+      "file": "Patches/Bass/Song/Hoedown-ELP.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4473,
+      "pages": 3,
+      "prst_sha256": "d0c6119b10c4a9737b6cb2bedcf476c48ac8ddbcfcb973f03ddd3a4ff25aa9d5",
+      "pdf_sha256": "2ec5c60c428323e2549ab2a6b879f1a26e8d5edebf0e62d5ac07df429344794f",
+      "md_sha256": "70c3c20a4c5c1e55f2c83a677cf6615ed61e5963f4983ae272a89706b4e09a1e"
+    },
+    {
+      "number": 52,
+      "file": "Patches/Bass/Song/Homegrown-ZBB.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4387,
+      "pages": 3,
+      "prst_sha256": "55caf7f0595725dcbee0cc9f247728077a3588fe1c23b38aad76bd7d262abf9a",
+      "pdf_sha256": "c6adf2591e329d10e330bcca3ccf745e5b40522f609638fefdc71d59fbf533f5",
+      "md_sha256": "dd9b349dca8498d37c3f81e2e9494cb76739bffd9ac26023a6b0e3862fa68321"
+    },
+    {
+      "number": 53,
+      "file": "Patches/Bass/Song/HonkyTonkTruth-BrooksDunn.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4414,
+      "pages": 3,
+      "prst_sha256": "82babf9c39116deafd6efde0202deb1197ed698f34e83ac16b89572348fff381",
+      "pdf_sha256": "5976b422f25769e8742fe3842c9dbc4248f7e74d29b4f3fa7bfedba47d4a29bb",
+      "md_sha256": "921045171be594582c38a67c62ff2cd7c029ac295b85aec6b9070f042289b8ef"
+    },
+    {
+      "number": 54,
+      "file": "Patches/Bass/Song/HotelCalifornia-Eagles.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4497,
+      "pages": 3,
+      "prst_sha256": "bb37cd90557695fecea904621e736e273ab44d82b84d626f3661c6ea63808ae6",
+      "pdf_sha256": "e9a29252453d0e394c3d3f63e6113c5853eade338d57f4711b33b956c8ec0f16",
+      "md_sha256": "c52cf46b8fcc44596334dc2dce87b0886700e7bea4502a70cd586213694a038e"
+    },
+    {
+      "number": 55,
+      "file": "Patches/Bass/Song/Hysteria-Muse.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 6912,
+      "pages": 5,
+      "prst_sha256": "2aae3b66595523ce5a0eafb7df0af2d7e0fb0e824f991f86b0ab675ff2127c7f",
+      "pdf_sha256": "8688abf16a2cc3500f4e67cf00105dad352d0e6e7f304e2d2ce3ad013b29215f",
+      "md_sha256": "9840c68a8aac662546d10d718422b5f319bb2827e954c9ca89ba2572f95de937"
+    },
+    {
+      "number": 56,
+      "file": "Patches/Bass/Song/IWantToKnow-Foreigner.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 6952,
+      "pages": 5,
+      "prst_sha256": "3891c1c9b2121a8dbec863804a3611919203503b73fe99da5873bfa6d9ebc13b",
+      "pdf_sha256": "8046b4af782cd9a1bc92d41974bb2b6cd7a2560cdc5c361fd8919c4c0abc81f5",
+      "md_sha256": "97d78af0006ad66ee70cc32c9295a3b7fb130421c62250927645adb6db93eab1"
+    },
+    {
+      "number": 57,
+      "file": "Patches/Bass/Song/IWillAlwaysLoveYou-Dolly.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4543,
+      "pages": 3,
+      "prst_sha256": "ed2e2fdde16d921ab6860f85d67fcdde8b06bfb93cc83fc3eed2697f481771a9",
+      "pdf_sha256": "22d06bdf4e6f41379fff398af8583ccf9db38dc95b497c157dcf8c470dcffb42",
+      "md_sha256": "3da0df0815a293b9b27092454e4082b221a32cad175040a74de4485f933473ec"
+    },
+    {
+      "number": 58,
+      "file": "Patches/Bass/Song/IfYouSeeHer-BrooksDunn.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4459,
+      "pages": 3,
+      "prst_sha256": "656273f2d23238484d6c37878b0883400bd3d184e198d8c29403aaf47c8cb7a3",
+      "pdf_sha256": "e483c4a23cd0a9f38ec73f96912a3e94238ddb6a27d04267ed3bc7ee24ab29e3",
+      "md_sha256": "22c0d94b56873f575436acac21b7691b1d50702a7b79cb67c84dfff5ca5d205d"
+    },
+    {
+      "number": 59,
+      "file": "Patches/Bass/Song/IllBeThereForYou-BonJovi.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4487,
+      "pages": 3,
+      "prst_sha256": "f70fa5aa80d885bb4ccbbbc9320fee779664b11dec25200d4923417074df26c1",
+      "pdf_sha256": "e6b41bd3a8724f096cd54b70e88963bba806bfc4c9c80e326d628a4431a0038f",
+      "md_sha256": "8469d2020bcfc34a2968a20aff4858aacc17f4669fa40d0f0c9c93191b1a5c85"
+    },
+    {
+      "number": 60,
+      "file": "Patches/Bass/Song/ImSoSick-Flyleaf.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 6778,
+      "pages": 5,
+      "prst_sha256": "3bd79565a42269f188e8c21487011e5435918888daac01a88871d2f11ffc2825",
+      "pdf_sha256": "c6a36d82a75dd28fb5a0ac44ad7e81caa8b76c7ec94c85157eb246ac7f4d3e68",
+      "md_sha256": "8d7e7cdbe1aa3e8f18871d9f613e937a3d7e369f660b1ab068adf1da11285ca7"
+    },
+    {
+      "number": 61,
+      "file": "Patches/Bass/Song/InTwoMinds-Riverside.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4510,
+      "pages": 3,
+      "prst_sha256": "5c1bfabfd69466f783753802f1d272a8c572aea6d7e04d24659371455894e532",
+      "pdf_sha256": "2b4116bac2f4f846192d777bf2a7fca1d1781c06deab07670c00ce91d4c9747b",
+      "md_sha256": "db41e99187931c9df5a6cdde1b85829a3d1d80e0fb6839d3d447e527c7675cb1"
+    },
+    {
+      "number": 62,
+      "file": "Patches/Bass/Song/IndependenceDay-MM.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4242,
+      "pages": 3,
+      "prst_sha256": "f39995b159caf764874d6a5b9bbd37f65d396e390ad0dcf9121eecbcdeae7fa2",
+      "pdf_sha256": "35131f09ac441a06f57905995878bbc04914403afbe51cfd3cda9cefb49a225e",
+      "md_sha256": "1d8871726fecef37dec3a7a25d118a3b8c0d8facd8ab1c3b1f9939e18537bbca"
+    },
+    {
+      "number": 63,
+      "file": "Patches/Bass/Song/Ironic-Alanis.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4502,
+      "pages": 3,
+      "prst_sha256": "3ab5a0b281d16474429ff08789d58aeb0142b017a5001a75c4783d1112917348",
+      "pdf_sha256": "a9948a42a5531f9b2f176eb9b007460669813cb32f07928fecaf68836fea0e46",
+      "md_sha256": "d9c7c074df09c5e037582c008b7f30c3da23db883bfe78256213d0c4a2367480"
+    },
+    {
+      "number": 64,
+      "file": "Patches/Bass/Song/IslandsInStream-KR.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4470,
+      "pages": 3,
+      "prst_sha256": "7a1690b4a28dad24804e143b17defabb0e54a098dd85c7a9605b94baa033f7e9",
+      "pdf_sha256": "42f3701f32811ce3a24184c4b42f29ca7ca81ea70c37c7f6f00b446997effde3",
+      "md_sha256": "263cf5ba75070eef8aa8561e50bcbac07390b5cb47d04fc1ba7ac057b309f67e"
+    },
+    {
+      "number": 65,
+      "file": "Patches/Bass/Song/ItsNotMyTime-3DoorsDown.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4603,
+      "pages": 3,
+      "prst_sha256": "f3ae154a7cc13ebb4b05dccccb884b0331657a8a1d83860baca96788cb6af967",
+      "pdf_sha256": "384f27e3b7328ef2fbd63c42c89ad3e463d7a5513381ef24dea27c47a88577ca",
+      "md_sha256": "075518ab4348ed441b9f311e2abfc4961143a1390c0605bf484353b5522f11b7"
+    },
+    {
+      "number": 66,
+      "file": "Patches/Bass/Song/KneeDeep-ZBB.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4435,
+      "pages": 3,
+      "prst_sha256": "53b236f5e3993ca93e85f84b0e4fc25de8c573e0011e80b028e94a3721816a69",
+      "pdf_sha256": "97da05f427a2b54e87d14bb6d2ff45d0e84dc5fd97e7d7e34dc6d958dd96e407",
+      "md_sha256": "935729ce3d362700c073b2b65e282072a396d279b9e4ff42c573020b69dbe1cf"
+    },
+    {
+      "number": 67,
+      "file": "Patches/Bass/Song/KnightsOfCydonia-Muse.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 6731,
+      "pages": 5,
+      "prst_sha256": "499ec060661df5f0ae5acca9ff1ccb987208bd4b06ce17c1aa78890e3419a34b",
+      "pdf_sha256": "51a260c4de87eccabf7d3c462426920039272d65f5def115941f0a807506e0ca",
+      "md_sha256": "5a76b92630c5f1015afe2dd3b123f8c049c197c94f1cee7b5f2d1d36f636c5ef"
+    },
+    {
+      "number": 68,
+      "file": "Patches/Bass/Song/Kokomo-BeachBoys.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 6878,
+      "pages": 5,
+      "prst_sha256": "e5c4c7d88cce8099bd13fddfb652df298b14f7b1375466ba71ce709154d82a84",
+      "pdf_sha256": "68429f15397f260ef74230c6848ffedf81fc35ca5586f05cdd97f6b91957eb91",
+      "md_sha256": "48d534c591c7cfcde38ed849f04483c5d02d884719bba0c5492a83ab33bb5d20"
+    },
+    {
+      "number": 69,
+      "file": "Patches/Bass/Song/LaGrange-ZZTop.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 6429,
+      "pages": 5,
+      "prst_sha256": "84f40a5d654c09e9495d9c944c51d068503a7d9ffa0638e3b1e2f01ac78826a8",
+      "pdf_sha256": "281465be9129a6a6ef18c3bf5b54eb7d4af2431db623995156db42f7ec6e2dd4",
+      "md_sha256": "7accac97030651c4e5d680cd10209e9c59de7d1796781b7630c944f32a647631"
+    },
+    {
+      "number": 70,
+      "file": "Patches/Bass/Song/Lady-KR.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4374,
+      "pages": 3,
+      "prst_sha256": "5294a405533d07251eb74f218ce5d471818e25c0be1b60f05a17e0fc4955b19a",
+      "pdf_sha256": "1bcd92669d80ab157ab36498530e71a41ae2df00916af32ac711c49746369a2f",
+      "md_sha256": "7d2c9c7cc89337f19727180ea5d637e3d9680d179e0e0798f630df73cff427a8"
+    },
+    {
+      "number": 71,
+      "file": "Patches/Bass/Song/LikeTheWayIDo-Etheridge.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 6791,
+      "pages": 5,
+      "prst_sha256": "65449b0771f09227c2ac65d176faf03bab0536c4eb97b476e6e761884eb80171",
+      "pdf_sha256": "f6651682125aa4b34a57cf20c81a896ba3c775282bd1153b7dd5f60e696db20a",
+      "md_sha256": "f6d9c1b97b227c6376f109ea1c0efa00070431f4a502d03b5ad00d4d80a3968b"
+    },
+    {
+      "number": 72,
+      "file": "Patches/Bass/Song/LoveShack-B52.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 6964,
+      "pages": 5,
+      "prst_sha256": "b12267b08d418ae1b4a0333ca2c4792609769bdc2076c1e52f5ae0c3ea2a468c",
+      "pdf_sha256": "99fc16693a28943f9be8c9e3882fb69644754267822a8550b50737a171c2b125",
+      "md_sha256": "146a576f16ffa9b5f56d9915c7bcfe8814a780e818311bf5069b0ce010a4af7c"
+    },
+    {
+      "number": 73,
+      "file": "Patches/Bass/Song/LoveWillTurn-KR.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4410,
+      "pages": 3,
+      "prst_sha256": "0245481ac8f4e19d34de8127d7a6b1c2716083838030bfd404c799e7f513b7cf",
+      "pdf_sha256": "b785950ff3a19c314e6d9787a2fdbb8ca044e6ada3959186ec3b39235fd08def",
+      "md_sha256": "0109c4e70cfcfcbd644eda7398119b5a97bfb1d7acbf1705d5db6fdddb3fcffb"
+    },
+    {
+      "number": 74,
+      "file": "Patches/Bass/Song/LowRider-War.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4319,
+      "pages": 3,
+      "prst_sha256": "3939f22fdbbe682b6dd84500f12a9705d96c92cf58c287b54d157e247f141790",
+      "pdf_sha256": "c90b9f7b2e96d2333dfe62f4837185038fab9d2a3f29319238ba89404883fe48",
+      "md_sha256": "dfa107aec587074fdf3bb4973b85d6c20b8528e93a024338253f9936634e82ae"
+    },
+    {
+      "number": 75,
+      "file": "Patches/Bass/Song/Lucille-KR.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4201,
+      "pages": 3,
+      "prst_sha256": "7f39b1da64ec32ffc6a5cd7cf82b699988fb988f0faff22a6f3dfb12f01b64cf",
+      "pdf_sha256": "1e53eec13a64ff2686fb88272b303d48e0741b56dbdc7ae87ffee24f34377f36",
+      "md_sha256": "52b28d5adfa7fa6b890765a37ce0b0fc448ade862d305319c6887503703a3507"
+    },
+    {
+      "number": 76,
+      "file": "Patches/Bass/Song/Machinehead-Bush.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4368,
+      "pages": 3,
+      "prst_sha256": "fb78219ee3ccf5ed7d5dc6446fee570da63e460d9d0048fcb1998bcd1879d287",
+      "pdf_sha256": "cbaae643b72407f61cbbc58cef14945be717d81e287c8cef5b0091224453f54e",
+      "md_sha256": "54c918b56b9bb1cbe2653e08f959c5897e9577cf247fbe7bc649676b2de41023"
+    },
+    {
+      "number": 77,
+      "file": "Patches/Bass/Song/ManInTheBox-AIC.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4350,
+      "pages": 3,
+      "prst_sha256": "189fb46d9fc3f6e3a7205aa11b44546d3384eca3961f90da7dd26abfbc73031f",
+      "pdf_sha256": "35288ae10ba66d9bbf6f5256303c1eae7a8f34e4f46113f8c078b76a3c787eaf",
+      "md_sha256": "5148efbe784f1c41a63241ff6ff53f7a0792c40434dcbb2ca547f94c29726505"
+    },
+    {
+      "number": 78,
+      "file": "Patches/Bass/Song/MaryJanesLastDance-TomPetty.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4337,
+      "pages": 3,
+      "prst_sha256": "dcffe038961175410a6038c64052833bb24550c54a492a72090efdafbf875a81",
+      "pdf_sha256": "1fff419d90aa576edb2a9b92a2b207fbacf2164e238df0a0b2043de9bceec59d",
+      "md_sha256": "d6e6622b1ac4efed1ad54907832b69d51c5c562f6b6802504e3f89283453649d"
+    },
+    {
+      "number": 79,
+      "file": "Patches/Bass/Song/Metropolis1-DT.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4820,
+      "pages": 3,
+      "prst_sha256": "7d1ff140909b91f2ab0072d49dd40991d1edf7e9af303b0b2998b3d96ef887b5",
+      "pdf_sha256": "baed4fee2fac83b59dddb0016da4de39ab1137d9a98289be677a9d1f7d80f692",
+      "md_sha256": "be1d93d5dc0c90e31aee6a0bee8b16d571077f326a22557d9bfe60d309712fdf"
+    },
+    {
+      "number": 80,
+      "file": "Patches/Bass/Song/MoneyForNothing-DireStraits.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 6879,
+      "pages": 5,
+      "prst_sha256": "f7869f19ad4ceb182d98bc31c19156f4fa8730becf8a844bb98768c84f87a243",
+      "pdf_sha256": "7c8122ebf1c2032b5c9e7b2f60dbc9d08b4333a3cf5539c069e5caff7058f982",
+      "md_sha256": "e773842064ff70ca93f84ac9d2dfa4b77dce360b28320cfc3ddc2ee044ee22dd"
+    },
+    {
+      "number": 81,
+      "file": "Patches/Bass/Song/MyMaria-BrooksDunn.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4253,
+      "pages": 3,
+      "prst_sha256": "2f92d0fbb83c8698e3cc6f01b462a28162314587acd5d1f7ee287ea8edf8210c",
+      "pdf_sha256": "499980d96f1b421fa8dae4b9ebff2319e01d2d2b6c79222863c46cb935b63f30",
+      "md_sha256": "e1816f02e5911b38cbbb7a7ebb689e02b838ddb8e8848a9fed1e96cc347b05ef"
+    },
+    {
+      "number": 82,
+      "file": "Patches/Bass/Song/Neon-JohnMayer.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4422,
+      "pages": 3,
+      "prst_sha256": "6cac97dcef9aff24510d0072339aad942b5f16d6a3c4dd83e23fa5048ef9faa2",
+      "pdf_sha256": "b885732da29456527afd00fe532016d3e261d85112cccb25c6fe138daa2f4962",
+      "md_sha256": "a7b89820ba434fa8f9edab2b84d8d0f5faebf192bd8add342fc3afcffa00d48a"
+    },
+    {
+      "number": 83,
+      "file": "Patches/Bass/Song/NeonMoon-BrooksDunn.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4418,
+      "pages": 3,
+      "prst_sha256": "c1f0ecf73325ff648bbeb0adbc8b309db2e1cf6664fdcd619cc6adf510fb7ffe",
+      "pdf_sha256": "aded4098615ed0d3af87e520d73ff2bc2e2cda26d1b36dd0eafc9d7264ed9625",
+      "md_sha256": "ce1890a6ea055c23fc03ae6dc65a03e7c64eda3057b017838a3e814f46026269"
+    },
+    {
+      "number": 84,
+      "file": "Patches/Bass/Song/NothingAtAll-AK.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4385,
+      "pages": 3,
+      "prst_sha256": "4ba4e9a3cbc1ca225ef346a03bf1a7b8b4f53406680ad35806b4ec1e6509ab7d",
+      "pdf_sha256": "3f32889666f4870e43b96864dbd586c1e5b118b75d8dfb70a549d3bb28593495",
+      "md_sha256": "b3eabbe7bd0dfe59af40a3fc42abe04e02d3a91317fa938da1400c13adb01445"
+    },
+    {
+      "number": 85,
+      "file": "Patches/Bass/Song/NovemberRain-GNR.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 6805,
+      "pages": 5,
+      "prst_sha256": "96b70da9cfb0871e8af3415fbaadf4c33ebbb210e728590ebe14729ff8605673",
+      "pdf_sha256": "0782ed52d348429fbc509895eab7023f91d199d4b2270da7575a40892f69583d",
+      "md_sha256": "628edd48089c9a669b74c1e221c03920438bf8e44652411142dd09fbc0457bb1"
+    },
+    {
+      "number": 86,
+      "file": "Patches/Bass/Song/One-Metallica.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 7098,
+      "pages": 5,
+      "prst_sha256": "b5b53012d0a7db8abc8de89d401b20609778d13d4320451f60fc0c424ff475ad",
+      "pdf_sha256": "7b002a44970a2536338a77aa0d24bbe80dc041302688866b2cea06b7fc203854",
+      "md_sha256": "d07a159d0510838b0a3f85b16a820760d273c8f085cafaf61abb61b080fb6505"
+    },
+    {
+      "number": 87,
+      "file": "Patches/Bass/Song/OneLastBreath-Creed.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4504,
+      "pages": 3,
+      "prst_sha256": "75d7e032f5a38aff73045adfc9178c0eb0116ba75d95428f0322ef44a81526c9",
+      "pdf_sha256": "f370c7388b03b6cc37b88bb8de59ee323b367c682e1d3a2e442cde2a939a0fdc",
+      "md_sha256": "18cb0575588ef8a7f6123a92e4b7830007abdcb822e5bca472c0ed32cabc4780"
+    },
+    {
+      "number": 88,
+      "file": "Patches/Bass/Song/OnlyInAmerica-BrooksDunn.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4669,
+      "pages": 3,
+      "prst_sha256": "bb91ebd5dff213a26510a36809ebccfe8890ea2fa83ff582a6716f8768e22cfe",
+      "pdf_sha256": "6c5fa92c3ad3cd7e0db781af12353227a227b20d852a96f23925bc1e39ed7b92",
+      "md_sha256": "cd35e57801240a0fe0a8104519d484fbf1e1366e23f63618e9a89be828b07e3d"
+    },
+    {
+      "number": 89,
+      "file": "Patches/Bass/Song/PapaWasARollinStone-Temptations.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 6344,
+      "pages": 5,
+      "prst_sha256": "7f4645ca90f365413a506ca80b5ce4bc5e0689593a47287e401cb87d16123d0f",
+      "pdf_sha256": "ffd2fe96679f8be901a81a9b1dbc41263c95848cb4230e3c317c46a760aa2ec2",
+      "md_sha256": "369fe267b7f402203442baca6958ff55389959f30e66528224480e1567e51594"
+    },
+    {
+      "number": 90,
+      "file": "Patches/Bass/Song/Parallels-Yes.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 6600,
+      "pages": 5,
+      "prst_sha256": "0d4c633d32346deef3588b8252ae9e2817bf9f74f41dd862930e9ce2b73babf4",
+      "pdf_sha256": "b681be3673ebfa8710a7605aa0ed83218b1e4ca06ac039282a899e85d058082c",
+      "md_sha256": "a62264d2f351b947bcc2363aca2ed5345e52f676ae0c3e36cef8e4d0b3ed519c"
+    },
+    {
+      "number": 91,
+      "file": "Patches/Bass/Song/Praise-EW.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4808,
+      "pages": 3,
+      "prst_sha256": "29f8a04e4a84fd6143bc86bc9cc13edbd8a1c53cf2fb1719e0b6067381112379",
+      "pdf_sha256": "dddc68370590355d433584e1078b1d0f23a8822a2d51ad77bc609963595626f8",
+      "md_sha256": "f14e1bb63bca9d0a6fc7ade79a4bb5263b016387b0b1bf4e6920df055f44cf17"
+    },
+    {
+      "number": 92,
+      "file": "Patches/Bass/Song/ProudMary-IkeTina.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 6705,
+      "pages": 5,
+      "prst_sha256": "2cf98c9305aa80f24f844c7c63a2950b1a024c670e74eaa8d28ec7bfb8a5a9de",
+      "pdf_sha256": "815c499f104c3c9e5ebbdcd7cb15704e064f99ff9cf8451769298b5957ad19b1",
+      "md_sha256": "84f7e498557214a28052a27f490e25e04d590f44b5b00fff90e70cc882347167"
+    },
+    {
+      "number": 93,
+      "file": "Patches/Bass/Song/PuffTheMagicDragon-PPM.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4464,
+      "pages": 3,
+      "prst_sha256": "60bad404d6300d4d7f3db576e7c75fe1bb2f6205edabcc6db7a214c638836c07",
+      "pdf_sha256": "f17fc03f20be8a1760705d1e01dc8d9f895e6c510a776d9388e74ec1585578c0",
+      "md_sha256": "f432465fd0614621e894f9e8ca30a2507c92cfaefb805cba610e537598131024"
+    },
+    {
+      "number": 94,
+      "file": "Patches/Bass/Song/PullMeUnder-DT.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4588,
+      "pages": 3,
+      "prst_sha256": "d44b092fb33f226224a5cdf332b09a1ad47cc782e9365cf00debe3192a49c318",
+      "pdf_sha256": "0be1b81911a4ea5e945f11d2aae493d30a580587c0633d6a6c6a9a5132bf3744",
+      "md_sha256": "a5c9f1991778bcc697c6191d56b03cda1fd688148b32f140fda3e103662c6e26"
+    },
+    {
+      "number": 95,
+      "file": "Patches/Bass/Song/PurpleRain-Prince.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 6738,
+      "pages": 5,
+      "prst_sha256": "a47a541190a373d51a09361770cc0c597a1b7ea9d1f5154916c3eaaa9fd378a3",
+      "pdf_sha256": "d212c1787e3e65690937091fe88b94abb546d910306e1970dcebdd00f757334f",
+      "md_sha256": "a900413953d93c965dace7aabcf4e03571c07cf6ac4705f09efef50c144e9013"
+    },
+    {
+      "number": 96,
+      "file": "Patches/Bass/Song/RainbowConnection-KennyLoggins.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4411,
+      "pages": 3,
+      "prst_sha256": "67fe6beb0a0f01e207bf32c0292f91844267b71d4fa68c6849e30e2aee364dd3",
+      "pdf_sha256": "923eb86a8d3f1f3686d0c1096036e8683e73a8587dc9b34f7b71da9593de6b4d",
+      "md_sha256": "29b16d7639183bf3bf6d16fac10818a723d939259b0475261a7ba5bdd4fca3c1"
+    },
+    {
+      "number": 97,
+      "file": "Patches/Bass/Song/RedDirtRoad-BrooksDunn.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4634,
+      "pages": 3,
+      "prst_sha256": "67b11188ee27e340f9f89cbaef5b529c321952ea5258845430264362a10208ec",
+      "pdf_sha256": "df9a383df35a820b39de979c306042226bc25f0cd9d5e0227e8c0363f6ff4c8b",
+      "md_sha256": "76a017cdefa94c6458e734274110b3a08e5dc19d74cdc4e0ba744b522ef037c9"
+    },
+    {
+      "number": 98,
+      "file": "Patches/Bass/Song/River-JF.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 6808,
+      "pages": 5,
+      "prst_sha256": "ab1b12528879d95248fd0bb73f5a5f6ecc355083b416ced8062097007ea65397",
+      "pdf_sha256": "ea53ac97fc8423e4d6572dd654b448b3fe9203c8a8c9430f98c8e61df6e077c9",
+      "md_sha256": "2b34a00662c7ec112f6d8ece59a574f663db1b9f5d7b2edca227215855710a46"
+    },
+    {
+      "number": 99,
+      "file": "Patches/Bass/Song/RiverDownBelow-Riverside.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4624,
+      "pages": 3,
+      "prst_sha256": "b361e0393ada91a1da8917cffb76921f582190422fccb3c530aac1f593790a4d",
+      "pdf_sha256": "96911b97bbe8a14b346ae3c5b6f8cab384b064a4a04e617ac5ccb6ce98c588d5",
+      "md_sha256": "993d8b3fa2e11d223658f534d931ae81f6f486e8686d5c2ad041eddbd96e9762"
+    },
+    {
+      "number": 100,
+      "file": "Patches/Bass/Song/SallysSong-NBC.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 6797,
+      "pages": 5,
+      "prst_sha256": "725b2cc093ce0857efc8275a28eb9b1e6f040e247eafb319f5eba3f9de665d39",
+      "pdf_sha256": "67014f432bb388448676c97a3fb228201f7d51c063538091777b7fbb398c80af",
+      "md_sha256": "6faf4a0108cbd4bbcb8de609e62b250173d3a70f2c0fba124128c965cfce57ea"
+    },
+    {
+      "number": 101,
+      "file": "Patches/Bass/Song/SomebodyLikeYou-KeithUrban.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4523,
+      "pages": 3,
+      "prst_sha256": "8b3982e8c3d05e8738c60a212309be2384a93e9c1f5e2ca80234235653c48554",
+      "pdf_sha256": "f3129b2547d0112f005b9bc7108b39c4cb8257ea20a98d9636db20c0fb0c8348",
+      "md_sha256": "46d42c1a953ca4b619c38d6eb75bd4e0b0b8b00aace4af4879303c6c8a9975ae"
+    },
+    {
+      "number": 102,
+      "file": "Patches/Bass/Song/SpiderManTheme1967.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4941,
+      "pages": 3,
+      "prst_sha256": "a89c258ae72115a9184420543f8a6edfb2fc8f5f72f2de453c23003950a3ef48",
+      "pdf_sha256": "d88cf8b5d2b7bf5e27f9fe87619ee18703ec23dded5b5e99d4af26549375664e",
+      "md_sha256": "7b3ab1c82cd224be2f547711d6744c3f09e860a221741d475faff37f8383e79d"
+    },
+    {
+      "number": 103,
+      "file": "Patches/Bass/Song/SpiderManTheme1994.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4676,
+      "pages": 3,
+      "prst_sha256": "cfcf480708fa24700248cea2d01180dbbee94c68861e73c0053f1bbc4431fafb",
+      "pdf_sha256": "8f5628bf7df5bc82a4a8b6e95d148dfcaee150c36ebc821303dc74eb97b76d19",
+      "md_sha256": "105461d24856d532f6b8a1485b2811c0dae6b837e6baf81fee0e5b4d7fa7d626"
+    },
+    {
+      "number": 104,
+      "file": "Patches/Bass/Song/SpideyFriendsTheme.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 6772,
+      "pages": 5,
+      "prst_sha256": "919fa4367a3d5a0b73a100e04f1ae39e60c56cff8f45375277a28e84d3954749",
+      "pdf_sha256": "1367398cc1465449e361a3d77db4225916663fb885eab006ca8f88d4ef9f07d2",
+      "md_sha256": "075d26859ff6eccf16811ed9a985eb0cc185fd4c00ee32ed0f25788351c9c0ec"
+    },
+    {
+      "number": 105,
+      "file": "Patches/Bass/Song/SpiritCarriesOn-DT.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4596,
+      "pages": 3,
+      "prst_sha256": "8aca3e38e73d46d29f91e753099cd4bebba4e2b390833fb679ea41f8bcb8f357",
+      "pdf_sha256": "ea5f317ed4c02f746463dce0031f097ee879d11ac82fd696c9664e4a2830a333",
+      "md_sha256": "8aa782e02a86692054c23827091fbd9a524c9d045ddab81a7cc97425a15c9543"
+    },
+    {
+      "number": 106,
+      "file": "Patches/Bass/Song/Stairway-LedZeppelin.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4664,
+      "pages": 3,
+      "prst_sha256": "cc506dcae4dd9cd00538f800f1ef68246370bef353c872546b888dcb7ebf74d0",
+      "pdf_sha256": "fbe1db7a92633adbef46cbfba8ec07805ebdc3ae83970e9fb9ac218cea147fba",
+      "md_sha256": "525f2b95f20c12fb53d331b7612458986f22b47d3d3970e8d277718f2f9718fd"
+    },
+    {
+      "number": 107,
+      "file": "Patches/Bass/Song/StillYTMO-ELP.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 7140,
+      "pages": 5,
+      "prst_sha256": "3bc090f17e41e43f68fae5b58262e974d63f7af58048e21d5a0daa9467dc173b",
+      "pdf_sha256": "74dee12c0eacc1831a24b22f28bfcb59997b9dba6f241e0c093c35bf78b3c3f4",
+      "md_sha256": "93505907e43ac9bf5ea734a62a27d3c68fa0e9a87eb88b3efdd581108459b1ec"
+    },
+    {
+      "number": 108,
+      "file": "Patches/Bass/Song/StormCorrosion-StormCorrosion.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4471,
+      "pages": 3,
+      "prst_sha256": "ef5209870349f4d4f4146f3791cbf29cd92e62ec7cc046c9808847ffb75dea7b",
+      "pdf_sha256": "7557cfe3ddd04ed549da9102bf9a26bc88e7474e75f75965f3b0202a589f6e86",
+      "md_sha256": "59b9be90dd4ee049121638cb4d09854da137b30e1ba1c52f77a0c77336c40ebc"
+    },
+    {
+      "number": 109,
+      "file": "Patches/Bass/Song/StreamCons-DT.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4833,
+      "pages": 3,
+      "prst_sha256": "d0bd89ffef43f7a13dc7bd92dd07b8607e78527d0284d77374e5b43592a04a0e",
+      "pdf_sha256": "dfe297ab4b27b0c048689e6b0795c2a87a25f829e8788f07e779e3564e456001",
+      "md_sha256": "0c0114dbc36d147a3cc26a2acdc771c7d3fdd51a1403876e9b49992d5f908939"
+    },
+    {
+      "number": 110,
+      "file": "Patches/Bass/Song/SultansOfSwing-DireStraits.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4459,
+      "pages": 3,
+      "prst_sha256": "c7b265f654eb9894fdaade0897704e0e0db8d10da88fa28160b4515434dade87",
+      "pdf_sha256": "5f4e3fd7d01c1fb9e1ba07127ee4b815489e1d85103c9c2fedec2ea666756ddc",
+      "md_sha256": "a9aacbc352ab0db7634fd9b44aa9a9ebac1a34950848fd372e2319eac517ee84"
+    },
+    {
+      "number": 111,
+      "file": "Patches/Bass/Song/SurfinUSA-BeachBoys.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 6799,
+      "pages": 5,
+      "prst_sha256": "0ec0647f828ea728a34368f83630a45f88a56624a210199b0ad2ca2c463c3f12",
+      "pdf_sha256": "5f311fc8b0ba26ffa79a401fc5059162272ac737c6bb996a714a6ad0ab8fd9a8",
+      "md_sha256": "fa0626918a993a0474c55cb363275c2afdfc212c266866585773c89c89c51a40"
+    },
+    {
+      "number": 112,
+      "file": "Patches/Bass/Song/SweetChild-GNR.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4546,
+      "pages": 3,
+      "prst_sha256": "9a9078aba6e2443b34a17bf8dd1506371e577a064bddcb564ca57a83dff7056d",
+      "pdf_sha256": "11d2bf2cd218b72fc90737eb22134038a8178d756bcdaaec082edace914bd0e5",
+      "md_sha256": "89bde0f23354b042a5b07803b304f3648b5fbc824b7b04777e8badc3ccdce92d"
+    },
+    {
+      "number": 113,
+      "file": "Patches/Bass/Song/SweetLeaf-BlackSabbath.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4449,
+      "pages": 3,
+      "prst_sha256": "5ea4b1d640431d82a3ad760c24d389bb5624d90f49758b4f0f047c9a887cd680",
+      "pdf_sha256": "e4d710be154a06a524702b17356eb172147cc29ae58f986ce82e0ca6878518a6",
+      "md_sha256": "7258e586ee4ae63f08bcdf2d4f8e41ba414e2eef1a9d8867041c766bdfc6eb26"
+    },
+    {
+      "number": 114,
+      "file": "Patches/Bass/Song/TennesseeWhiskey-Stapleton.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 7066,
+      "pages": 5,
+      "prst_sha256": "90e76503e8336ee5e71d01c214e0aeabd854b3b3f92f4e17784e6728b5adae89",
+      "pdf_sha256": "13435b9a01c73ea2dcb12988fd3852d48f591ca00da0ce132fe0411a6bd642b0",
+      "md_sha256": "1321bc823e7ae5c59b58d1deaef7b748d7cca5a8663fad3b92db24e4548f80d0"
+    },
+    {
+      "number": 115,
+      "file": "Patches/Bass/Song/TheGambler-KR.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4511,
+      "pages": 3,
+      "prst_sha256": "b17b5d6c446f3521bb8f184cffda084146fd7f9ffccb41115e54c5af38118014",
+      "pdf_sha256": "e756bab320c243fd5f7a76590070f7923c6d6948fc0222bc6e115613ad0243ba",
+      "md_sha256": "a460bb56c0b0008cdb447f615346295d970b38c705d524dffe1ff1b8d4b93f8a"
+    },
+    {
+      "number": 116,
+      "file": "Patches/Bass/Song/ThisIsHalloween-NBC.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 6841,
+      "pages": 5,
+      "prst_sha256": "029030985736f962ab6107eca00f8ce9921d58c9e8eb49fde16a1fff2c9c2e23",
+      "pdf_sha256": "cda0d32ac4263834517c98b4be91967e756eb72b2d634cea3add5b9bbfee9d0d",
+      "md_sha256": "28a87cda726f826f2f249bacaff5902839ad237fb5fc36107192150b611c847b"
+    },
+    {
+      "number": 117,
+      "file": "Patches/Bass/Song/Thrive-CC.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 6902,
+      "pages": 5,
+      "prst_sha256": "52efd678bbff08778150adf83022768d0a39ce12576b2c355637a2bb5455be11",
+      "pdf_sha256": "f51db98b1eda76812896471cf4130076d258ebc7eb93954561addca14adfd86b",
+      "md_sha256": "4c430cbf979020e4f12dd0ee2e0e315bb81b25263ee2de906bc0d9f32127c05a"
+    },
+    {
+      "number": 118,
+      "file": "Patches/Bass/Song/TimeOfMyLife-DirtyDancing.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4703,
+      "pages": 3,
+      "prst_sha256": "f3735c10c0b5ced2843de545ad6fe636dc16e8e80a242dd048e76f41fb36b402",
+      "pdf_sha256": "47854e86af4509c42cdf904f1a1911c261ad84339851d4aac8ce1b1e9eb51c4a",
+      "md_sha256": "fe2a430717fb3f8f25a6c5b45ceeca59ea4e9872443b8745981b993e3b4d298c"
+    },
+    {
+      "number": 119,
+      "file": "Patches/Bass/Song/TouchPeelStand-DaysOfTheNew.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 6852,
+      "pages": 5,
+      "prst_sha256": "80b11849e2c708a6fc33b0fd759983162b051762a8e08e01d68d2929b2162634",
+      "pdf_sha256": "de2ec85e53d71352056ebf08192e836cac290465fb1fe4d53f479b7685d77054",
+      "md_sha256": "b90c0e8f41bc0afbe1fb950c092f4ad42d34349945b45b9a7e16934a122c82d7"
+    },
+    {
+      "number": 120,
+      "file": "Patches/Bass/Song/UnderTheBridge-RHCP.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 6730,
+      "pages": 5,
+      "prst_sha256": "127d90e241c2de7c7d6ca298691e95abfaa3e5219be4c9a14cf9f61190a19485",
+      "pdf_sha256": "4772c19d0e540dcf87498a79facd1d07e5e184a81bef9eb8aa05cb9853ec3dd8",
+      "md_sha256": "33c8a6f5fdda8d473dbce74030a6b70330988e8c66af089df79bb2d4391fcb0c"
+    },
+    {
+      "number": 121,
+      "file": "Patches/Bass/Song/UnstopGod-EW.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 6880,
+      "pages": 5,
+      "prst_sha256": "ee73ba39c715de1d0a80667acb39c9f1774f3d836faa850018c125946a4ff8d5",
+      "pdf_sha256": "26e6cfba215ef3e4b106b55bdc87fbdc8f21f317081b2d3fb525404bb8a35c5c",
+      "md_sha256": "3f0fe6b7de281bcee5e30a6f78745195dcc91cf9bf09dfe57588f96cb8a109d6"
+    },
+    {
+      "number": 122,
+      "file": "Patches/Bass/Song/Uprising-Muse.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 6710,
+      "pages": 5,
+      "prst_sha256": "44eff4ec741a0dfedd55293344ec3303e75ad35d60aaa3a644e37581af04d4a6",
+      "pdf_sha256": "4b87e49c219f23f1296fb0ddbe8b80b9afe6af50121d3fd01f2914fa7713a28b",
+      "md_sha256": "a70a96bc01e08bfabc2c4ceaa8e7f00b35b47cf0e5320c02d6656211fbd8b1c2"
+    },
+    {
+      "number": 123,
+      "file": "Patches/Bass/Song/WaitingOnTheWorld-JohnMayer.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4346,
+      "pages": 3,
+      "prst_sha256": "28c2aac31fddaa0a9a8210268286be09900f7b15e27579bae01d3f0606418ea1",
+      "pdf_sha256": "fd0ab3be3a6885fb337eca02035c589b8b9afc4f77ab10a03f921e4de762e7c0",
+      "md_sha256": "60a4068bd82946b818d2091ba57e33064fc0fcbbeee671d7b615d0a70a430c6d"
+    },
+    {
+      "number": 124,
+      "file": "Patches/Bass/Song/WeGotUsedToUs-Riverside.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4646,
+      "pages": 3,
+      "prst_sha256": "7e404dcd73aa90cd27bc64d30df59c272a317fbdd56f45aa93f34ba0e145f656",
+      "pdf_sha256": "3ee2ed652b7688b834420c9b623adaaa4d2a7f3b19194ecdcfe4d05afe2b5a75",
+      "md_sha256": "8181243fbd6ff9adad993f4af029d6ac15395a7ac5a80b801d1d91289e6c5f64"
+    },
+    {
+      "number": 125,
+      "file": "Patches/Bass/Song/WerewolvesOfLondon-Zevon.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4260,
+      "pages": 3,
+      "prst_sha256": "a4e9bf16916790fedee42d927af555e8c7ea196df4423aac8df2fc7488e13278",
+      "pdf_sha256": "459e55d4ef02f804eb8e7069378cc6d3718ce6ae2c4a7c11fc62e70a655c5e0f",
+      "md_sha256": "fd5b2ea589d3272dcfdb9e09d9395ac3ca9a09ed2c7602580c9d589cc32410af"
+    },
+    {
+      "number": 126,
+      "file": "Patches/Bass/Song/WhatAboutNow-Daughtry.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4626,
+      "pages": 3,
+      "prst_sha256": "17735d54783bd97a7f5fbcf4de3700ec1cbec7591a5da01a02d0d7d346d8ccaa",
+      "pdf_sha256": "b3aabff95a590425532e94f64b922cd286b5d184647946c68f1b7ceef39db8c7",
+      "md_sha256": "a43e1559892d8befa2458f6452d4eab97892a92515e820ddfb4907eeaeb91472"
+    },
+    {
+      "number": 127,
+      "file": "Patches/Bass/Song/WhenIComeAround-GreenDay.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 6714,
+      "pages": 5,
+      "prst_sha256": "579c173c05ddb5f776d3d5ee23d1fb95087f29270e4b81e0e2fb91e231cac52d",
+      "pdf_sha256": "eed95c994b6ce7215470b9d97f96b5a8b5b10716ab7d84bd28d9c3ae6ce2e946",
+      "md_sha256": "1a7ddab211c79c9231db48e93ce33b42eda3d5050222e02c3ec2d69a63ba919d"
+    },
+    {
+      "number": 128,
+      "file": "Patches/Bass/Song/WhenWindMeetsFire-EW.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4844,
+      "pages": 3,
+      "prst_sha256": "9d074b7bbfaf28b41eee34107cc0ad519b4b481fa38e2c0588782a315b196a50",
+      "pdf_sha256": "5f905ff3be74dc632e22219fc5078ad81cac08441896d93ba9046dd7d47199b4",
+      "md_sha256": "c47385afcc0dd74bc85f2de6ca66296e1d746d551cbe9403cea8745c68dcbd84"
+    },
+    {
+      "number": 129,
+      "file": "Patches/Bass/Song/WontBackDown-TomPetty.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 6756,
+      "pages": 5,
+      "prst_sha256": "5655e4f8ab8508e2566f0a207c787c386a7bbcd1402274b1909b4e12a26d8063",
+      "pdf_sha256": "bfa6d47d17e9b0c221bccef16e5b3a746cf7821ac9d9644ec2a0c0d9f827be17",
+      "md_sha256": "9eef0826247387e8683e40259a72019eaa1285c92484d97bb9efe3d6910540c6"
+    },
+    {
+      "number": 130,
+      "file": "Patches/Bass/Song/You-Candlebox.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 6712,
+      "pages": 5,
+      "prst_sha256": "41b7126c404ec4eb2b1da44ed53dc461cd15cd50832a55e7686db08941c27785",
+      "pdf_sha256": "cd1c0083ee76381f4efe0997f4f504f850feee3b406178d6720aadc8a51dfa05",
+      "md_sha256": "6da34ef6510f3028e7dc851175f01aa2e38150c551bed14f1fca2d0051ab3da7"
+    },
+    {
+      "number": 131,
+      "file": "Patches/Bass/Song/YouDontKnowHowItFeels-TomPetty.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4402,
+      "pages": 3,
+      "prst_sha256": "e7119b942f6abfdef65135176704c42b17b2dc4f56d424538f7eb539b163d791",
+      "pdf_sha256": "e12960f67698ba7902ece859de448b59d21e77c406105cc87b069530232ddcb2",
+      "md_sha256": "d554bc29634578d4b645ad5afee2f78cd46b2d434d8f9266b0da2fd1e13fac02"
+    },
+    {
+      "number": 132,
+      "file": "Patches/Bass/Song/YourLove-UP.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 7017,
+      "pages": 5,
+      "prst_sha256": "47a3066e44d93e01d7cac727e7d3cf5cc59767461ffdd1109e259268c31f08d3",
+      "pdf_sha256": "7b59ba51b5d5e5291a9d07385ac553d856644c4285897d4636a2c96da895eedc",
+      "md_sha256": "032998ae6ced7b21055e978d0b249a04445df701edc77639fdb5a16701832a38"
+    },
+    {
+      "number": 133,
+      "file": "Patches/Bass/Song/YourWaysBetter-FF.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 6882,
+      "pages": 5,
+      "prst_sha256": "18ed73adeeea89462717bf68f1f6c572a0e5e4883dd4ff7a92c6c15f3425ce11",
+      "pdf_sha256": "78f86bfd9da5e1a910811324c0672992e9c4827b655de6fe7fd91198fbb09cd4",
+      "md_sha256": "7f4bdfe02d7263f3f2532c0b7bc0b99f374dd0bf570aaed2dbbb36e0ec55bf0e"
+    },
+    {
+      "number": 134,
+      "file": "Patches/Bass/Style/EWF-Funk.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4933,
+      "pages": 3,
+      "prst_sha256": "441be8a41c1ea9c94d346a9df748fbc1fbdc86e704bb236bb5594fe334c0b1b5",
+      "pdf_sha256": "9cda6302fa342d070c8ce7e50c37e57685388bec7ed2606fd4c12d104d8f2f2b",
+      "md_sha256": "85a156c2ba58600301318f28c3faf295f3bb5ad4519514b7b650d76febfea957"
+    },
+    {
+      "number": 135,
+      "file": "Patches/Bass/Style/RammGrind.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 6714,
+      "pages": 5,
+      "prst_sha256": "feb60f9ff2821641a4e67ed4625db8a9f26acd323463127d761f22ceff5fa356",
+      "pdf_sha256": "7423e33ddf3ea12237e1ae11de4b0d5151dc992b51da2a6da9fe82f65e00d386",
+      "md_sha256": "023aaceb6210e11128631664500b6ea792b73789e9b8be47366be8a611587b62"
+    },
+    {
+      "number": 136,
+      "file": "Patches/Guitar/Album/Lion-EW.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 8698,
+      "pages": 6,
+      "prst_sha256": "2b2244c641fa528b76dc7620485d32871a648b7147a55f69d8fab2f124413e38",
+      "pdf_sha256": "812fb0389c31a53e0cd212b131e100c7344c06f39dee6b8957c2dd0b78462c91",
+      "md_sha256": "092c28aa34d44271c594e8c74a9ddf8391212549d42c847567c04010ad96b5e2"
+    },
+    {
+      "number": 137,
+      "file": "Patches/Guitar/Album/Syndicate-TheMidnight.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 8701,
+      "pages": 6,
+      "prst_sha256": "30602bdb49e76e24dcc482d4ecdea7117f94539b5bb924954b647226b9ab51f7",
+      "pdf_sha256": "a550469986279c4502f10d13cd8c1f2117c69eddf956c4c270498e91961f96ce",
+      "md_sha256": "f4ed457abf30ad9ffc260142e88e3561611290dda0a2ac49350261884ed4982a"
+    },
+    {
+      "number": 138,
+      "file": "Patches/Guitar/Artist/Polyphia-Gtr.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 5815,
+      "pages": 4,
+      "prst_sha256": "69570b5e509939d5fc62835ea97fc1a50eaff58e535c9e333040904c0accd78b",
+      "pdf_sha256": "b26861df378b3258032721f07cba968252f1e0f7e26106d177f33056e242cd91",
+      "md_sha256": "5de01c356d4fa8d62b2e178967444c58e3704f95849141acef957df28838feee"
+    },
+    {
+      "number": 139,
+      "file": "Patches/Guitar/Song/AintNothinBoutYou-BrooksDunn-RhythmGtr.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4844,
+      "pages": 3,
+      "prst_sha256": "2e6207322ee15c1aa448abc942a1456c6ac477e2786f67417251ba349fe61832",
+      "pdf_sha256": "a21666e8db79e55df4144efff0b7afe20aa2eb7a220ff566cdf028db47beaad7",
+      "md_sha256": "f26e2212fd6d4337ad1489676fd3e7ad70a735701b520e882588b35fa8f17edb"
+    },
+    {
+      "number": 140,
+      "file": "Patches/Guitar/Song/AmericanPie-DonMcLean-RhythmGtr.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4998,
+      "pages": 3,
+      "prst_sha256": "64b41a96641eeeb2d30d53ddddca48ff3c48718f4511cdcc46560da8b2ba490e",
+      "pdf_sha256": "11e04af726303e2aa830970a140012b96571112682af085e4b68e3f0d31078d2",
+      "md_sha256": "999ba9fe9593d6af5d44847e8dd5b67033b931ef5bc6dd89f60fb85269fc0a8d"
+    },
+    {
+      "number": 141,
+      "file": "Patches/Guitar/Song/BeatIt-MJ-RhythmGtr.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 6824,
+      "pages": 5,
+      "prst_sha256": "fa8a027d3e887318d5c86efa0b12fa17cd7531231c21825a3c841cb9b5040ef0",
+      "pdf_sha256": "85c883d2b9602ddb284fd51420b65b0e81e901dae509906fcb61b239b2e43369",
+      "md_sha256": "6844ddf6f51166c1aa044dc64d081098946881e2c511f453a366ff96d8f2b0b3"
+    },
+    {
+      "number": 142,
+      "file": "Patches/Guitar/Song/Believe-BrooksDunn-RhythmGtr.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 5699,
+      "pages": 4,
+      "prst_sha256": "fd1ac72bac1893adb35290a725b47b20f380943848f50ad4b2b5d9ed2b3a2e5c",
+      "pdf_sha256": "c3c77cfb7ae890ebe98d5697feb1c0e0d31f8de5b2d0b0d430b13ee7b58e3fbe",
+      "md_sha256": "376d303dd3c2433aeda66465ad825025b2c31e346604e0648735712bb8170e4d"
+    },
+    {
+      "number": 143,
+      "file": "Patches/Guitar/Song/BillieJean-ChrisCornell-RhythmGtr.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4754,
+      "pages": 3,
+      "prst_sha256": "a17d84b4a0d2891807abdcdadaa5fd9c84e72af0676ceae72d3d91ff7c6a7785",
+      "pdf_sha256": "eeb9c6d1b66114fb42fd7aa32d789b943ce927704c38446856981ee30cd0280b",
+      "md_sha256": "ad52cab804b1fd59d7351a78e01de66721aea6f73685501073860f59308b7432"
+    },
+    {
+      "number": 144,
+      "file": "Patches/Guitar/Song/BrightSizeLife-Metheny-Gtr.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4850,
+      "pages": 3,
+      "prst_sha256": "e24cc933bb9c8773e7244a23eb1961f860d416cb5bffb8e0851e2c725dad896f",
+      "pdf_sha256": "a312796efaa74ad3e4d237c5f7e9b03135aaca8e7a9c373d370a311641f9d65e",
+      "md_sha256": "74febb4568ad696b7f805a3bdecc4bf5af6238430b72502287673c969ce718c5"
+    },
+    {
+      "number": 145,
+      "file": "Patches/Guitar/Song/BringMeToLife-Evanescence-RhythmGtr.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4841,
+      "pages": 3,
+      "prst_sha256": "a42057277105ffda570ec232f240cfb56c72ab87789eb16520d05b0b238e5de8",
+      "pdf_sha256": "269b24b5b8344dd866e54f71f987a463380ccc110097887434050578a6fe2e64",
+      "md_sha256": "6c097198e71e8f6c5506adbc4b9720c1932424f90cee221d6e646a9df0bf20ed"
+    },
+    {
+      "number": 146,
+      "file": "Patches/Guitar/Song/Cassie-Flyleaf.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 6932,
+      "pages": 5,
+      "prst_sha256": "8c032f8d9d2cfe592b8879c4ca2514ce73f37688bf6972a4867ed9d78eceb4ce",
+      "pdf_sha256": "b2d0e12dddaf78803a9ad8b4b6babdee69cf9e3dcc0adf08cc199ef05dea8984",
+      "md_sha256": "ba01173c4ea0efee8e43756b2b7ded6b0ee2cbc86a603225510c9689cd599e4c"
+    },
+    {
+      "number": 147,
+      "file": "Patches/Guitar/Song/ChalkOutlines-Ren.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 7818,
+      "pages": 6,
+      "prst_sha256": "d68b7177bc6eb3a83a1d63ef07d4de93bc27137b48f126c45694cea5f701210c",
+      "pdf_sha256": "192b69378f301ac03f65e653452ab4c5e8a9320aa3c187cbe5b3c5de945f887b",
+      "md_sha256": "e67913f0524f8363b04f894ba95eaaa74dce1adef4c17cf74e2c2209bb707828"
+    },
+    {
+      "number": 148,
+      "file": "Patches/Guitar/Song/CivilWar-GNR-RhythmGtr.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 7446,
+      "pages": 5,
+      "prst_sha256": "9067d09b105f12769c1b6aa80dfee2bdc7c088cd96e195fdd6d50b8531fc391e",
+      "pdf_sha256": "1724180029d84997dcf1710159089da6448f477ac07d1a3083dae9e662b4490f",
+      "md_sha256": "1d9dc0487d081c232cb1cb56cf61faeea48e7cb8a234c7a2d79e2a039d4d37d7"
+    },
+    {
+      "number": 149,
+      "file": "Patches/Guitar/Song/ClickClickBoom-Sal.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 7137,
+      "pages": 5,
+      "prst_sha256": "5b37313c43cecb283c2b0d51c94f62d08baecc3930e48fb2cf8759b3d34fe8d6",
+      "pdf_sha256": "a25d924fb59d13100b2103aa7464f0e7074b3e50c57c6e725022f11c27b3e9e5",
+      "md_sha256": "32edaf645d39f32996a85489ddd91809d0bf4d2f743c97999300fcd1f7e7c332"
+    },
+    {
+      "number": 150,
+      "file": "Patches/Guitar/Song/Creep-RH.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 6633,
+      "pages": 5,
+      "prst_sha256": "d1d5496e341b78379437272495706d9bd2a0d3962e3ffa22874a63148372041a",
+      "pdf_sha256": "9c0d5dc9fe819bd6167c4ebfb2f47204c5d846a8d84f0bf3d96b8472af9309b7",
+      "md_sha256": "2a4a2486a7e5651f73ed23667d845f10b72ea0788f4701150f9a09e667cd7d74"
+    },
+    {
+      "number": 151,
+      "file": "Patches/Guitar/Song/DangerZone-KennyLoggins-RhythmGtr.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4815,
+      "pages": 3,
+      "prst_sha256": "0bab45ac679d652e3361367f381c16e4cc78af2d74a8c54ec7d3b353f31c43b8",
+      "pdf_sha256": "aec6c2ea3d96bfa9b91783796a07b7f22af44d32476aeb3bf8d99eee27cf78e4",
+      "md_sha256": "62c928e39447ab20ba4b365fb519bfadef81bfad11410131319cd03ea270c937"
+    },
+    {
+      "number": 152,
+      "file": "Patches/Guitar/Song/December-CS.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 5538,
+      "pages": 4,
+      "prst_sha256": "be67284f899655623571aa1f1b0075aab2f410cf74326234310d32ba2f9d72d0",
+      "pdf_sha256": "34d2dadb5fc19b93ef30dc129c077c64594961265fbcc9ddba7f1f5be80717c8",
+      "md_sha256": "6ea41868729a585ac6016269bce765eef45aac90f26e4eb3b2cfb0161b5660c9"
+    },
+    {
+      "number": 153,
+      "file": "Patches/Guitar/Song/DigginYou-MN-RhythmGtr.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 7377,
+      "pages": 5,
+      "prst_sha256": "f3f74b9860d41e350ad3f82b5a1b78dd2711020a2b5b3a4751357f79f8d1fe4a",
+      "pdf_sha256": "a98802d1fafde10151a9d903c9967bd723044f92541ad0933c1b3b1a2ae6f5d8",
+      "md_sha256": "7b5983470cb4470434e051c950ddc2facdc59a12a464fa7837a6adbad5ad6797"
+    },
+    {
+      "number": 154,
+      "file": "Patches/Guitar/Song/DirtRoadAnthem-JasonAldean-RhythmGtr.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4714,
+      "pages": 3,
+      "prst_sha256": "e6a13cd24cad4580945b153073417b685398894a6eb3dddccbf4b79d1694dc66",
+      "pdf_sha256": "e2c533507666f74b6fb0748ddf9f5a113beae7547ca5e7bdecffcb55c7d14bc4",
+      "md_sha256": "198532795a38e8cef1266741aa670fc50b7631d0cd3d4de93eafc288af14a9a5"
+    },
+    {
+      "number": 155,
+      "file": "Patches/Guitar/Song/EverydayBlues-JM.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 7352,
+      "pages": 5,
+      "prst_sha256": "3d1f9c74ed323e2debb86f9fee093f6586ac19e319ebc167d2efe8938dd60ad5",
+      "pdf_sha256": "80d6df527ca6b045e87cee8b55567934e1c15c49328e0f668a518365f72c6114",
+      "md_sha256": "97b57aa2951a029fec649d3cc0c27a00150b27b78ee641828728c1db79a79f95"
+    },
+    {
+      "number": 156,
+      "file": "Patches/Guitar/Song/Found-Riverside-RhythmGtr.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4940,
+      "pages": 3,
+      "prst_sha256": "cddcd95949a103a28074e6319cb36d74d888f4b86d818c2adcf63da741d572aa",
+      "pdf_sha256": "e286aff700f1c777745d7f7a135a2fd6569e8941b93ffbaae63ef1198fe0d3ad",
+      "md_sha256": "d39bcc12098797e299aa3b905622207eb3bfe9e06dea4ae5073e307c402c05fb"
+    },
+    {
+      "number": 157,
+      "file": "Patches/Guitar/Song/HangingByAMoment-Lifehouse-RhythmGtr.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4771,
+      "pages": 3,
+      "prst_sha256": "992d3764b2df2e500a6239b4cb94a6da2659ba3d130c04782d917685a3eabef0",
+      "pdf_sha256": "0ee79f8d182cdcbccea89cd96321c33ed60ba4e873f26a20beb006b242884088",
+      "md_sha256": "fae15203851b01b5b91f1ac6b74452e77ab50cd5b06c132d762b62aea0a14320"
+    },
+    {
+      "number": 158,
+      "file": "Patches/Guitar/Song/HardWorkinMan-BrooksDunn-RhythmGtr.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4825,
+      "pages": 3,
+      "prst_sha256": "d57afcb1c5cb4c5e487f10f69aa93d50da240240950c9ea10f68c348411ac4ce",
+      "pdf_sha256": "1bf2e96a446148083b08c832ab03b559e8a5ebbe47737eb59afa2df5e321b11f",
+      "md_sha256": "5c709e60fb58dab4a0ff6e9f214e1652f29aaf7ee279b34773ddf8c10844e297"
+    },
+    {
+      "number": 159,
+      "file": "Patches/Guitar/Song/HeadsCarolina-JDM-RhythmGtr.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4809,
+      "pages": 3,
+      "prst_sha256": "a9b81dc1a3c66637b14fbdc11343d9a2bd9f7f49c5a9005f88ee56205ee18db9",
+      "pdf_sha256": "793bf71ebfdd754ea830cb62d648c37fb40db29ce0e9a0a5fd9dc0060808b5af",
+      "md_sha256": "6bf44a1f3e7fac0b4feaf99d2d3a8f2f26034276d6fb1a0778d2ee411c1c9aeb"
+    },
+    {
+      "number": 160,
+      "file": "Patches/Guitar/Song/Higher-Creed-Gtr.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4869,
+      "pages": 3,
+      "prst_sha256": "ba31f24f02e12af51e2b906c643a8c0434d80369158d24c25b7ba98ece407ad8",
+      "pdf_sha256": "78f5d2d1857288f70c48dd70f4916b097b7befe8fc2bdcadb761317291a92a44",
+      "md_sha256": "ba90141c116138e072059aa945946ce4f4e26f2c4b21d7c041da541d83e1f306"
+    },
+    {
+      "number": 161,
+      "file": "Patches/Guitar/Song/HonkyTonkTruth-BrooksDunn-RhythmGtr.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4852,
+      "pages": 3,
+      "prst_sha256": "2ac511aa68feb06b6f6c1d603ba030c591798107b1496ee78e68677fad4cb7eb",
+      "pdf_sha256": "2cee191ebf36e5e1075ba63c38fad14c3b02e4b7a194bbec005a628c5c1730ab",
+      "md_sha256": "9df40ab2ae00d79cb584a5e2a80993fa1755dc14f935f0d138f74bf2b803ab32"
+    },
+    {
+      "number": 162,
+      "file": "Patches/Guitar/Song/IWillAlwaysLoveYou-Dolly-RhythmGtr.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4947,
+      "pages": 3,
+      "prst_sha256": "0f14b55bc2aaad199fdee42dd1c6b626140f8c750343868f03d3e5f43c07224e",
+      "pdf_sha256": "afbfc1b27ce0701c0ff1d0d81d689295387b201ccf7cd230c14b64d531bec48c",
+      "md_sha256": "351ab2399469979824ec7199c10b6f7795293eb5e8bf7a24aadeb494399f64b5"
+    },
+    {
+      "number": 163,
+      "file": "Patches/Guitar/Song/IfYouSeeHer-BrooksDunn-RhythmGtr.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4996,
+      "pages": 3,
+      "prst_sha256": "c2958c5e5353ce73940198dced014cfb80682287ce4214f3ca246b55a4a209aa",
+      "pdf_sha256": "cd484c065bbc61ee7abc3ac95d6234d18bfca1f03be70dab2adfbd160f936a2c",
+      "md_sha256": "bec66fd01b7772185dbd679bc01f5eee8e76fec79318ede61ce93bda12f82c4d"
+    },
+    {
+      "number": 164,
+      "file": "Patches/Guitar/Song/IllBeThereForYou-BonJovi-RhythmGtr.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4857,
+      "pages": 3,
+      "prst_sha256": "fcabd90515170729b4a4d912eac3122930969c9e2289700c3bf882a3903dce8f",
+      "pdf_sha256": "dac026ded2adf8a8c5c9652c67811480fd335fef06617df9108e609c2bbf7159",
+      "md_sha256": "e835ceada51ab57c34c6c8dd2943dd6c73fbb38172b7da893530b8df92de1c91"
+    },
+    {
+      "number": 165,
+      "file": "Patches/Guitar/Song/InTwoMinds-Riverside-LeadGtr.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4860,
+      "pages": 3,
+      "prst_sha256": "9fabf5da5bd243a9aab06685e2bf5b71868fdcf6d1e114f9abb8fb5d55ecb31c",
+      "pdf_sha256": "867c927904a8220fc09fab614a12bcdb117abf48c9bbd7519d692011f5d9d09a",
+      "md_sha256": "903952fc9b567ee313f0a800ca648d6d7bf3fd4df783a50befb84f35035c2db9"
+    },
+    {
+      "number": 166,
+      "file": "Patches/Guitar/Song/Ironic-Alanis-RhythmGtr.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4877,
+      "pages": 3,
+      "prst_sha256": "66ed092b3c093eea24f805fd474ddb12a4452e34623a5ef39de8654f4a731e7e",
+      "pdf_sha256": "f95880178b0c177e0d400ad6146dc99c553f08c2dcda44d19772e9f848bf127d",
+      "md_sha256": "4536926013680bcc9ea60948880b3c5ee1bdf77c1aca498469cb8ab3d87af27a"
+    },
+    {
+      "number": 167,
+      "file": "Patches/Guitar/Song/ItsNotMyTime-3DoorsDown-RhythmGtr.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4799,
+      "pages": 3,
+      "prst_sha256": "8a83211195235ed1c4b106d8dc9135f1bab5c99b4080a663c9bae82a631d3e90",
+      "pdf_sha256": "f2e0c8b5bb32887384669c893973775798ae68f00e6eca6e234c89cd3285baf5",
+      "md_sha256": "7faad1a4df2efba0ce04bf6b99a31f220747f7e8972d6f15ce23a363fe8149ed"
+    },
+    {
+      "number": 168,
+      "file": "Patches/Guitar/Song/KissMeSNTR.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4869,
+      "pages": 3,
+      "prst_sha256": "c60f7722672b71169a29331805b6b67dc870bb757082bc43d64cb4dfd462edd0",
+      "pdf_sha256": "b081e70b5d3e635073447e33c9982d7f4929712115cbd45a26f71012f5b90174",
+      "md_sha256": "c1f2a6cf74bf7cbdd30306a20d73b595c8e94bb9d5a21bf796a2ca077fef4f58"
+    },
+    {
+      "number": 169,
+      "file": "Patches/Guitar/Song/ManInTheBox-AIC-RhythmGtr.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 5586,
+      "pages": 4,
+      "prst_sha256": "41f234273f7446bb4b6d92f8ef2a5f91e345678f04c12c7b71c99c4aa2dcb6df",
+      "pdf_sha256": "4824aaadc8b3d904e6ed6d9bc8f1e8d2f342e1d567320a4b5a96f8a5d22755d3",
+      "md_sha256": "56e3753884c1ad38b94e1242696cc679f95f816c808b18587f87ecfb2c33f974"
+    },
+    {
+      "number": 170,
+      "file": "Patches/Guitar/Song/MaryJanesLastDance-TomPetty-RhythmGtr.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4832,
+      "pages": 3,
+      "prst_sha256": "966050db674bef502fdcc576c156899a98296021a6fd67aa63d6d8b88462bafc",
+      "pdf_sha256": "3b3b90ff5b7032d79ec5fe5c83cf04dc928b280e306be09fa1b9afa565e32eb3",
+      "md_sha256": "eb2fc05771a9e85f5175b2b4dff4a236a358f0c09c604ebaf180f07d5f88558d"
+    },
+    {
+      "number": 171,
+      "file": "Patches/Guitar/Song/MyMaria-BrooksDunn-RhythmGtr.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 7099,
+      "pages": 5,
+      "prst_sha256": "afb0503a0dee8e7a5b47fb14e55306e99e543e0f7c86792e40dfe03a678d6739",
+      "pdf_sha256": "fcd5759814f55ac42d0f5a13a2ddd2129e17daede3720de9562e814cdda52867",
+      "md_sha256": "0035b1ee7b91d20c4cd2176a4f95a486893dd707aafce36d3e010580f6a6c0bb"
+    },
+    {
+      "number": 172,
+      "file": "Patches/Guitar/Song/Neon-JohnMayer-RhythmGtr.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4967,
+      "pages": 3,
+      "prst_sha256": "21e413855894ee44aaecf330d0bb354082bb2d1c588a522fcfcaecb4e4de2307",
+      "pdf_sha256": "466627ff21169bdd40d967143c3d749ffdf779260cbbd2f609d1012ead3fac2c",
+      "md_sha256": "e9a26539914c7703ea2f0d8a888cc4ccf4636587ae260a473dc403d51ba20692"
+    },
+    {
+      "number": 173,
+      "file": "Patches/Guitar/Song/NeonMoon-BrooksDunn-RhythmGtr.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 7099,
+      "pages": 5,
+      "prst_sha256": "892f9cff424217940890a1d42e56092a6ea28f1a6dad346299c36b2a6760f967",
+      "pdf_sha256": "a466c40bdbcf77006d4925f2bdb4b4b1de3beabea145f25f7950ac7c3c857273",
+      "md_sha256": "ea10a5239240cf5915d98f8f3a09172ed5880c3fb13775e6f05e332da2cf7af1"
+    },
+    {
+      "number": 174,
+      "file": "Patches/Guitar/Song/OneLastBreath-Creed-RhythmGtr.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4896,
+      "pages": 3,
+      "prst_sha256": "0a36b8fe0110de14870b908f2af13f098ed574b816f64109f185a2e09a7d64ea",
+      "pdf_sha256": "98d164358c13c37494072f8ea5965ba0a83f99a37da802eebb2fbff3e2fa1d24",
+      "md_sha256": "195d319ead748bd9cfd2481efcdbc53d97aff37fa0d0ceee9dd6d2c2c316d1b4"
+    },
+    {
+      "number": 175,
+      "file": "Patches/Guitar/Song/OnlyInAmerica-BrooksDunn-RhythmGtr.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4711,
+      "pages": 3,
+      "prst_sha256": "7b5db9f907343e4ad5fcf7f67332e939a66ff35e318146258a09894a186e9ef5",
+      "pdf_sha256": "b0b5c5af9725e40d3ef2d343aa9c1aa7c049116f89e224e9e26b2bf6b5c28e4b",
+      "md_sha256": "cbb8416154110f79c45b451c8639e925cf2ed1fccd3e00d0cdfacdc41d304fb6"
+    },
+    {
+      "number": 176,
+      "file": "Patches/Guitar/Song/PapaWasARollinStone-Temptations-RhythmGtr.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 7079,
+      "pages": 5,
+      "prst_sha256": "ca695445e029ceef7a81b687907d9b68bd44e5ecc5070a5feb270c59d3f22709",
+      "pdf_sha256": "67b8605c472a15fc6b895c0ce3005f43555254c4414f8bea56a305639c6fa863",
+      "md_sha256": "68bf50af6ab1fa88ac5622622d54a5944d0e59a3403d44fc69f46ba295c91fb4"
+    },
+    {
+      "number": 177,
+      "file": "Patches/Guitar/Song/Praise-EW-RhythmGtr.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 5898,
+      "pages": 4,
+      "prst_sha256": "965aed271dfe19eb96d08681cb4be6bcd4d5568b2711937163fe4d0b8f16b63c",
+      "pdf_sha256": "6e3e039800f3cbfb01b30a6ea214fbf3f4f099dadcb47daaaa0b4fe55d1bfd28",
+      "md_sha256": "c7e4b44f9361a9ae8cdb27426600ee6f1fb408ea06abeb2cf5d8f62b3995655b"
+    },
+    {
+      "number": 178,
+      "file": "Patches/Guitar/Song/PuffTheMagicDragon-PPM-RhythmGtr.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4668,
+      "pages": 3,
+      "prst_sha256": "8791e819465da0fc1e3e46d6dcdda833aee9090d9cd96e2c6162054b03405cae",
+      "pdf_sha256": "c55c20afc5737a32c3113a6d6d91615448ad4a250ead5d7c1379b22f4c2c5ee9",
+      "md_sha256": "9f58a05fe068d0bb1c60ac8947559a218fedaaf0d0d16a019136d9a4598d8486"
+    },
+    {
+      "number": 179,
+      "file": "Patches/Guitar/Song/RainbowConnection-KennyLoggins-RhythmGtr.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4911,
+      "pages": 3,
+      "prst_sha256": "24833c43b7ae5d695343eb66c23f54f48bc7c17418017c0d0f72d4fcc115481d",
+      "pdf_sha256": "23b54a96f05bae7f018c64c321f4d5bffba39cbf671e0aa6dfa02b078bce7aae",
+      "md_sha256": "b4e0b0d2357c79e3a83e69418606f1f79bf622df908ae2bc4660793158832d2a"
+    },
+    {
+      "number": 180,
+      "file": "Patches/Guitar/Song/RedDirtRoad-BrooksDunn-RhythmGtr.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4709,
+      "pages": 3,
+      "prst_sha256": "8f39fc1765d45bf5dfb131cb6434628460bad13fa41d8f70d6d2575740f5239e",
+      "pdf_sha256": "c6d11d11aae7d50e397f89a67a3d1a01de431e9867a368d022c68436a3cc863c",
+      "md_sha256": "48d47aa846b93b9732c97a781bdfe61cacc64ce373e1fc5720f943d8e30a40b4"
+    },
+    {
+      "number": 181,
+      "file": "Patches/Guitar/Song/SisterChristian-NR.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 7942,
+      "pages": 6,
+      "prst_sha256": "b3f6853c0f7e5805f2c2cbb5f71fce5ba50c742b86f567a317cfe2a6a05b4ae4",
+      "pdf_sha256": "a8938502d5646ed6fd9894191244affe006a8f90c1eafe3ffc6616e45d594760",
+      "md_sha256": "c223dafc740e282d1539f28e5fdbf194c8c58aaf2823060452b8b5e0d33fcbff"
+    },
+    {
+      "number": 182,
+      "file": "Patches/Guitar/Song/SomebodyLikeYou-KeithUrban-RhythmGtr.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 7169,
+      "pages": 5,
+      "prst_sha256": "fcc57ceb37f308259eb39d528e7b69e713d8f227779d37285f0476ae4dc29f12",
+      "pdf_sha256": "2d2ead0ca4436e09085b9514215eab37284025d1b33b5766ac594a90eddc0b57",
+      "md_sha256": "901145fbce9962251f9d410604fb84b6865bc84f7d222948c7fd588d3e197a1e"
+    },
+    {
+      "number": 183,
+      "file": "Patches/Guitar/Song/SpiderManTheme1967-RhythmGtr.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4897,
+      "pages": 3,
+      "prst_sha256": "f341a096c9c781106ab2d0abbb94f616435c5338a6671115745b2b0f245fa91f",
+      "pdf_sha256": "3dbc53a3b58c830d42eabda5b7fd4944b263d07ff6b89524ecff80c7954e075a",
+      "md_sha256": "d257f7651228bd5419685bf9e56f144b5ca5912d238396e9e3df7892895f82fb"
+    },
+    {
+      "number": 184,
+      "file": "Patches/Guitar/Song/SpiderManTheme1994-RhythmGtr.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4971,
+      "pages": 3,
+      "prst_sha256": "f3a5074c2d5d4f056e7eaa5c03a15859d20c9966d11838c8a016cf18bbf0e3ad",
+      "pdf_sha256": "1bc50046295854ddb4267f4d1a7962c87a9f19599eef048d7befd7c36dd53f54",
+      "md_sha256": "eb0e63561c3491a69ecd0929b3be079e64f8cb9d7f9ec0625dfe2864227bac6a"
+    },
+    {
+      "number": 185,
+      "file": "Patches/Guitar/Song/SpideyFriendsTheme-RhythmGtr.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 7066,
+      "pages": 5,
+      "prst_sha256": "d1caf611cacdbedd5e01dd65b4fed8bd846b911b86ca57626994176a0bfb8b78",
+      "pdf_sha256": "345f5c30843ef9d8b5015de807f52a345b9323527a40e280d5b25d711a219f78",
+      "md_sha256": "c3f05291d8c2f486452a718996ef13fafc4607ee6f33f914aad47f3121b5e5b8"
+    },
+    {
+      "number": 186,
+      "file": "Patches/Guitar/Song/SurfinUSA-BeachBoys-RhythmGtr.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 7168,
+      "pages": 5,
+      "prst_sha256": "c387e78cefd75c92b8d5dcf3af87c39f78fc8a13860ebba6dc03cc8d01554f2e",
+      "pdf_sha256": "569ceef2a3f46d02cde4782844ea828b25772e41997aecee9b8ea4e107ad1a03",
+      "md_sha256": "a821e9f845bf4e5db2132add15a4543f52303a70a3c78263865bce7f9d4f8756"
+    },
+    {
+      "number": 187,
+      "file": "Patches/Guitar/Song/SweetLeaf-BlackSabbath-RhythmGtr.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4931,
+      "pages": 3,
+      "prst_sha256": "b8484d95609913d9c8a1427525abcb8454a6b4de4817d0c8d3bb24d07cab6601",
+      "pdf_sha256": "59a1e37ae41b58de9110594a2f9cf742cfe5d74245d682c64cdc4e2de854d7c6",
+      "md_sha256": "7058fa200835876aebfc86607d3cf497e8652eaa3afd0e8abb3cd4f4ab1856af"
+    },
+    {
+      "number": 188,
+      "file": "Patches/Guitar/Song/TimeOfMyLife-DirtyDancing-RhythmGtr.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 5655,
+      "pages": 4,
+      "prst_sha256": "3f6fc558bd6ebd609d09caef8de0d2e6f9d9e90a4654200cf23be7e51e65dbfe",
+      "pdf_sha256": "a7c457ed3426ebf988e813949fda615db9498aa76d23cf7fdcb17950dcb878ca",
+      "md_sha256": "420c688117c2a5190c6dc40b982342c18bf1e517a5a76201dd988a8977f7723f"
+    },
+    {
+      "number": 189,
+      "file": "Patches/Guitar/Song/WaitingOnTheWorld-JohnMayer-RhythmGtr.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4884,
+      "pages": 3,
+      "prst_sha256": "26cf2eead795e583dd4624fefdd917fcce3a3265dd16bf6d7d884be8080e9fd5",
+      "pdf_sha256": "0735595b7cd6c1385eb0b4a0f5da82ea1a5d5d7e12efeccf01fa1155b2ada907",
+      "md_sha256": "2f8475080aed61f962d4b18dfdd75a6a2fa1591c19f7b8339c88824a6667ab04"
+    },
+    {
+      "number": 190,
+      "file": "Patches/Guitar/Song/WeGotUsedToUs-Riverside-LeadGtr.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4962,
+      "pages": 3,
+      "prst_sha256": "df038c31db0689d82a3b259a578863605f9785de709e649a43c27fe54e779786",
+      "pdf_sha256": "b74bf7daaaa050d7ea1d68e1d52cf1b919ac553d802f8191ac372fcb31544e92",
+      "md_sha256": "8b59876b8faae4c642ff35c40c0878b3875103df20a5b082e6086a4c0beef3af"
+    },
+    {
+      "number": 191,
+      "file": "Patches/Guitar/Song/WerewolvesOfLondon-Zevon-RhythmGtr.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4576,
+      "pages": 3,
+      "prst_sha256": "d58b7b52e2d1196cdf615bff898510d73d7ff9a4d1abbf4cb57d0c8aad87c843",
+      "pdf_sha256": "f8dddc3276dfb1a2d157bf6ed1411deed5c50ef532ec0593a149da120f659e00",
+      "md_sha256": "246257cc6a768ec33a9bacb5bba001558de5fc49573b94b35420bdd55c17c35e"
+    },
+    {
+      "number": 192,
+      "file": "Patches/Guitar/Song/WhatAboutNow-Daughtry-RhythmGtr.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4983,
+      "pages": 3,
+      "prst_sha256": "0d504feebaea8c9797c92c51a0e9230428803a03ec2c13b0665928fed68a3f96",
+      "pdf_sha256": "d869b987c2e01dbd9a602c23db8e25b276a808f7c68e8b4731e46c7e9018fe95",
+      "md_sha256": "1b20add535ca4b099f1c1149d01a5b1b15c10c11f1816827c457909a4de6e708"
+    },
+    {
+      "number": 193,
+      "file": "Patches/Guitar/Song/WhenWindMeetsFire-EW-RhythmGtr.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 5882,
+      "pages": 4,
+      "prst_sha256": "d7fac80f9800deeaef7f001a8f08c9ef4c450c169ba84867ce1bc467bba132e8",
+      "pdf_sha256": "33c5228d8dd65593a80fa22bdd8c0baf67c590a9147cfdb98311fc42aea8be75",
+      "md_sha256": "e3890b9e45b9edc12ad41e754a4272f7811ccc8f3344ef6ddd0c1d32075d0f49"
+    },
+    {
+      "number": 194,
+      "file": "Patches/Guitar/Song/Wonderland-JM.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4734,
+      "pages": 3,
+      "prst_sha256": "c69bcd8038cfcbc3c094c5d51f5c1daf99397b9e430912f3d129145289347f3a",
+      "pdf_sha256": "4d9f1fba9ad1b0b017b12866f75b7886a1c9236e8b439b79c4cd315f900ecb22",
+      "md_sha256": "c191a646edaccc249e0ad3d710da86721cbd4fd9f2b53f49c534be2350a1d736"
+    },
+    {
+      "number": 195,
+      "file": "Patches/Guitar/Song/YouDontKnowHowItFeels-TomPetty-RhythmGtr.json",
+      "prst_bytes": 507,
+      "pdf_bytes": 4737,
+      "pages": 3,
+      "prst_sha256": "0c355dede683110d4cb5f294d1e9aac3ff30a96eca436674a51673a83ce4c7c9",
+      "pdf_sha256": "5bad8988ee69a00c70fd8617d90a3062a27c4215fcb12446aec8f086319700d6",
+      "md_sha256": "f10ca124eae42afb44be2c4b2fd65cd0c1535e8d2f6f9a801892cce515d7e4d7"
+    }
+  ]
+}

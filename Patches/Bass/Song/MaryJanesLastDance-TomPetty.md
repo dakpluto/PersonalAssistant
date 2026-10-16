@@ -1,46 +1,93 @@
 # Mary Jane's Last Dance — Tom Petty
 
+Revised 2026-10-16 following the approved library audit.
+Type: Song. Instrument: Harley Benton passive 5-string P/J.
+GP-5 only.
+Patch screen name: B-MaryJane. Patch VOL: 52.
+Preset tempo: 84 BPM.
+
 Tom Petty and the Heartbreakers, 1993, from *Greatest Hits*. About 84 BPM, est.
 Bass: Harley Benton P/J, 5-string, passive. GP-5 only.
 The bass locks to the kick under the A minor riff. Steady eighths and quarters, with a lot of weight on the root. It's a heartland rock tone: punchy and mid-forward, with no hi-fi sparkle.
 Pick or fingers both work. A pick gets closer to the driving attack. Blend both pickups with the P slightly louder. Tone knob around 60%.
 
-## Module chain
+## Revision intent
 
-**NR — Gate**, always on.
-THRE: 15. Catches hum when you stop. Gain is low, so it doesn't need to work hard.
+Keep the musical role of the original patch while reducing redundant gain, excessive space and unclear switching where identified in audit entry 78.
+The module settings and section map below are the active revision.
+Audited capture volumes and Michael’s explicit patch-level adjustments are preserved.
+No hardware audition or measured level match has been performed.
 
-**PRE — COMP (Ross)**, always on.
-Sustain: 40, VOL: 58.
-Keeps the eighth-note drive even across the bar so the groove doesn't lurch.
+## GP-5 settings
 
-**DST — Bass OD**, on CTL.
-Gain: 25, Blend: 30, VOL: 55, Bass: 50, Treble: 50.
-A light hair on top for the choruses and outro. Blend 30 keeps the clean low end intact and adds grit only in the mids.
+Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB.
+The encoded N->S block sits between DST and AMP when a SnapTone is used.
 
-**AMP/CAB — NAM SnapTone, slot 54: FullB15** (always on)
-- Built from the `Ampeg B18 - Head DI - Bass Chan - Vol 5 (B-18N)` NAM and the Apg115410 IR, combined into one snaptone.
-- Real Ampeg B-18N at volume 5, warmer and fuller than the clean capture, into the Apg115410 (1x15 + 4x10) IR.
-- Heartbreakers bass is warm and round, a little pushed. The fuller B-15 does that.
-- Gain: 52, VOL: 80, Bass: 55, Middle: 55, Treble: 48
-- Gain 52: a little over default. This part wants more push than the other FullB15 patches.
-- Bass 55: a touch more low end.
-- Middle 55: a touch more midrange.
-- Treble 48: top end pulled back a little.
-- VOL 80: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
-- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 54 directly.
+AMP/CAB replacement: SnapTone FullB15 (slot 54): Ampeg B18 - Head DI - Bass Chan - Vol 5 (B-18N) + Apg115410.
+Slot: 54. Always on.
+Gain: 52, VOL: 80, Bass: 55, Middle: 55, Treble: 48.
+AMP and CAB are both off; the capture already includes its cab/DI character.
+The capture voice is fixed across CTL states. Audited VOL is preserved for this slot.
 
-**EQ — Bass EQ 2**, always on.
-50Hz: 0, 120Hz: +2, 400Hz: -1, 800Hz: +2, 4.5kHz: -2, VOL: 52.
-Punch at 120Hz, a small scoop at 400Hz to clear mud, and +2 at 800Hz for attack definition. The top is trimmed.
+## NR - Gate
 
-**MOD — off.** **DLY — off.** **RVB — off.** Dry and tight like the record's rhythm section.
+THRE: 15.
+Fixed on. Not on CTL.
+Use the lowest threshold that keeps rests quiet. Check soft notes and held-note decay. This gate is before the drives and amp; it does not directly gate noise generated after it.
 
-## CTL footswitch
+## PRE - COMP
 
-On CTL: DST (Bass OD).
+Sustain: 40.
+VOL: 58.
+Fixed on. Not on CTL.
+Controls the source dynamics or adds the specified push/filter before distortion and amp processing. The settings stay fixed; only its on/off state can change.
 
-- **CTL off** — Verses and the main riff. Warm, punchy B-15. This is the resting state.
-- **CTL on** — Choruses ("Last dance with Mary Jane") and the outro. A light Bass OD grit pushes the bass forward with the fuller band.
+## DST - Module off
 
-Engage it at the choruses and for the outro jam. Step off for the verses.
+Not used.
+
+## AMP - Module off
+
+Not used.
+
+## CAB - Module off
+
+Not used.
+
+## EQ - Bass EQ 2
+
+50Hz: 0.
+120Hz: 2.
+400Hz: -1.
+800Hz: 2.
+4.5kHz: -2.
+VOL: 52.
+Fixed on. Not on CTL.
+Shapes note body and cut after the amp/capture. Where assigned to CTL, its output adds the specified lift after the gain stages. Numbers are GP-5 control values, not a calibrated loudness guarantee.
+
+## MOD - Module off
+
+Not used.
+
+## DLY - Module off
+
+Not used.
+
+## RVB - Module off
+
+Not used.
+
+## Switching and section map
+
+CTL blocks: None.
+- CTL off / loaded state: Verses and the main riff. GP-5 active: NR, PRE, EQ, N->S.
+- No GP-5 CTL change. One consistent GP-5 voice serves this bass part.
+
+## Revision record
+
+Approved audit entry 78.
+- Pedal display name: MaryJane-TP -> B-MaryJane. Filenames stay unchanged.
+- DST: Bass OD -> off.
+- DST: removed from CTL.
+Pre-revision JSON, Markdown and original file hashes are preserved in Documents/patch-audit-2026-10-16/inventory.json and implementation-manifest.json.
+The site piece title and on-disk filenames stay stable; only the short pedal display name may change.

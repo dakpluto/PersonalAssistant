@@ -1,17 +1,63 @@
 {
-  "patch_name": "MaryJane-TP",
+  "patch_name": "B-MaryJane",
   "patch_vol": 52,
   "bpm": 84,
-  "nam": {"name": "FullB15 (slot 54): Ampeg B18 - Head DI - Bass Chan - Vol 5 (B-18N) + Apg115410", "slot": 54, "settings": {"Gain": 52, "VOL": 80, "Bass": 55, "Middle": 55, "Treble": 48}},
+  "nam": {
+    "name": "FullB15 (slot 54): Ampeg B18 - Head DI - Bass Chan - Vol 5 (B-18N) + Apg115410",
+    "slot": 54,
+    "settings": {
+      "Gain": 52,
+      "VOL": 80,
+      "Bass": 55,
+      "Middle": 55,
+      "Treble": 48
+    }
+  },
   "modules": {
-    "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 15}},
-    "PRE": {"model": "COMP", "always_on": true, "settings": {"Sustain": 40, "VOL": 58}},
-    "DST": {"model": "Bass OD", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Gain": 25, "Blend": 30, "VOL": 55, "Bass": 50, "Treble": 50}},
-    "AMP": {"model": null},
-    "CAB": {"model": null},
-    "EQ": {"model": "Bass EQ 2", "always_on": true, "settings": {"50Hz": 0, "120Hz": 2, "400Hz": -1, "800Hz": 2, "4.5kHz": -2, "VOL": 52}},
-    "MOD": {"model": null},
-    "DLY": {"model": null},
-    "RVB": {"model": null}
+    "NR": {
+      "model": "Gate",
+      "always_on": true,
+      "settings": {
+        "THRE": 15
+      }
+    },
+    "PRE": {
+      "model": "COMP",
+      "always_on": true,
+      "settings": {
+        "Sustain": 40,
+        "VOL": 58
+      }
+    },
+    "DST": {
+      "model": null
+    },
+    "AMP": {
+      "model": null
+    },
+    "CAB": {
+      "model": null
+    },
+    "EQ": {
+      "model": "Bass EQ 2",
+      "always_on": true,
+      "settings": {
+        "50Hz": 0,
+        "120Hz": 2,
+        "400Hz": -1,
+        "800Hz": 2,
+        "4.5kHz": -2,
+        "VOL": 52
+      }
+    },
+    "MOD": {
+      "model": null
+    },
+    "DLY": {
+      "model": null
+    },
+    "RVB": {
+      "model": null
+    }
   }
 }

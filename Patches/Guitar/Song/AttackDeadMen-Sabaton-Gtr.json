@@ -1,0 +1,80 @@
+{
+  "patch_name": "DeadMen",
+  "patch_vol": 50,
+  "bpm": 120,
+  "ir": {
+    "name": "V30112 (confirmed User IR 10)"
+  },
+  "modules": {
+    "NR": {
+      "model": "Gate",
+      "always_on": true,
+      "settings": {
+        "THRE": 26
+      }
+    },
+    "PRE": {
+      "model": null
+    },
+    "DST": {
+      "model": null
+    },
+    "AMP": {
+      "model": "Eagle 120",
+      "always_on": true,
+      "settings": {
+        "Gain": 55,
+        "PRES": 50,
+        "VOL": 50,
+        "Bass": 43,
+        "Middle": 57,
+        "Treble": 55
+      }
+    },
+    "CAB": {
+      "model": "User IR 10",
+      "always_on": true,
+      "settings": {
+        "VOL": 50
+      }
+    },
+    "EQ": {
+      "model": "Guitar EQ 1",
+      "ctl": true,
+      "ctl_off_state": "off",
+      "ctl_on_state": "on",
+      "settings": {
+        "125Hz": -2,
+        "400Hz": 0,
+        "800Hz": 2,
+        "1.6kHz": 2,
+        "4kHz": -1,
+        "VOL": 54
+      }
+    },
+    "MOD": {
+      "model": null
+    },
+    "DLY": {
+      "model": "Analog",
+      "ctl": true,
+      "ctl_off_state": "off",
+      "ctl_on_state": "on",
+      "settings": {
+        "Mix": 15,
+        "Time": 375,
+        "Feedback": 21,
+        "Trail": true
+      }
+    },
+    "RVB": {
+      "model": "Room",
+      "always_on": true,
+      "settings": {
+        "Mix": 6,
+        "Decay": 20,
+        "Trail": true
+      }
+    }
+  }
+}

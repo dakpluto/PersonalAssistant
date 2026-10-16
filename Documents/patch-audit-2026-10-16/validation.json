@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-16",
+  "patches": 195,
+  "counts": {
+    "High": 55,
+    "Low": 63,
+    "Medium": 76,
+    "Critical": 1
+  },
+  "issues": [
+    {
+      "file": "Patches/Guitar/Song/EverydayBlues-JM.json",
+      "issues": [
+        "DLY.Time outside catalog range"
+      ]
+    }
+  ],
+  "omitted": [
+    {
+      "file": "Patches/Bass/Song/Metropolis1-DT.json",
+      "omitted": [
+        "EQ: VOL"
+      ]
+    }
+  ],
+  "recommendations": 195
+}

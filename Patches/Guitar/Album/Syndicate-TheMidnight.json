@@ -2,16 +2,98 @@
   "patch_name": "Syndicate",
   "patch_vol": 50,
   "bpm": 104,
-  "nam": {"name": "MayerDumble (slot 66): SLAMMIN_DUMBLE_FORD_CLN_BALANCED_S (Dumble ODS) + Bogner 2x12 EVM12L - SM57 1 - Cap Edge", "slot": 66, "settings": {"Gain": 45, "VOL": 70, "Bass": 48, "Middle": 50, "Treble": 58}},
+  "nam": {
+    "name": "MayerDumble (slot 66): SLAMMIN_DUMBLE_FORD_CLN_BALANCED_S (Dumble ODS) + Bogner 2x12 EVM12L - SM57 1 - Cap Edge",
+    "slot": 66,
+    "settings": {
+      "Gain": 45,
+      "VOL": 70,
+      "Bass": 48,
+      "Middle": 50,
+      "Treble": 58
+    }
+  },
   "modules": {
-    "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 25}},
-    "PRE": {"model": "Boost", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Gain": 50, "+3dB": true, "Bright": false}, "midi": true},
-    "DST": {"model": "Darktale", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Gain": 62, "Filter": 40, "VOL": 58}, "midi": true},
-    "AMP": {"model": null},
-    "CAB": {"model": null},
-    "EQ": {"model": "Guitar EQ 2", "always_on": true, "settings": {"100Hz": -2, "500Hz": -1, "1kHz": 1, "3kHz": 2, "6kHz": 1, "VOL": 50}},
-    "MOD": {"model": "A-Chorus", "settings": {"Depth": 45, "Rate": 0.8, "Tone": 60}, "midi": true, "start_state": "on"},
-    "DLY": {"model": "Pure", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Mix": 26, "Time": 433, "F.Back": 32, "Trail": true}, "midi": true},
-    "RVB": {"model": "Hall", "always_on": true, "settings": {"Mix": 20, "Decay": 45, "Trail": true}}
+    "NR": {
+      "model": "Gate",
+      "always_on": true,
+      "settings": {
+        "THRE": 25
+      }
+    },
+    "PRE": {
+      "model": "Boost",
+      "ctl": true,
+      "ctl_off_state": "off",
+      "ctl_on_state": "on",
+      "settings": {
+        "Gain": 25,
+        "+3dB": false,
+        "Bright": false
+      },
+      "midi": true
+    },
+    "DST": {
+      "model": "Darktale",
+      "ctl": true,
+      "ctl_off_state": "off",
+      "ctl_on_state": "on",
+      "settings": {
+        "Gain": 62,
+        "Filter": 40,
+        "VOL": 58
+      },
+      "midi": true
+    },
+    "AMP": {
+      "model": null
+    },
+    "CAB": {
+      "model": null
+    },
+    "EQ": {
+      "model": "Guitar EQ 2",
+      "always_on": true,
+      "settings": {
+        "100Hz": -2,
+        "500Hz": -1,
+        "1kHz": 1,
+        "3kHz": 2,
+        "6kHz": 1,
+        "VOL": 50
+      }
+    },
+    "MOD": {
+      "model": "A-Chorus",
+      "settings": {
+        "Depth": 30,
+        "Rate": 0.8,
+        "Tone": 60
+      },
+      "midi": true,
+      "start_state": "on"
+    },
+    "DLY": {
+      "model": "Pure",
+      "ctl": true,
+      "ctl_off_state": "off",
+      "ctl_on_state": "on",
+      "settings": {
+        "Mix": 26,
+        "Time": 433,
+        "F.Back": 32,
+        "Trail": true
+      },
+      "midi": true
+    },
+    "RVB": {
+      "model": "Hall",
+      "always_on": true,
+      "settings": {
+        "Mix": 12,
+        "Decay": 45,
+        "Trail": true
+      }
+    }
   }
 }

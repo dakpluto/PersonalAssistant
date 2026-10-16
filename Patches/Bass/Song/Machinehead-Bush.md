@@ -1,51 +1,98 @@
 # Machinehead — Bush
 
+Revised 2026-10-16 following the approved library audit.
+Type: Song. Instrument: Harley Benton passive 5-string P/J.
+GP-5 only.
+Patch screen name: Machinehea. Patch VOL: 52.
+Preset tempo: 147 BPM.
+
 Sixteen Stone, 1994. 147 BPM, est.
 Dave Parsons' bass sits low, dark, and driving — this is the grunge/alt-rock era, not a bright modern rock tone.
 GP-5 only, P/J bass, no pedalboard.
 
-## Module chain
+## Revision intent
 
-**NR — Gate**, always on.
-THRE: 28. A driven NAM at this gain level picks up noise between notes — this keeps the low end tight without choking sustain on the riff.
+Keep the musical role of the original patch while reducing redundant gain, excessive space and unclear switching where identified in audit entry 76.
+The module settings and section map below are the active revision.
+Audited capture volumes and Michael’s explicit patch-level adjustments are preserved.
+No hardware audition or measured level match has been performed.
 
-**PRE — Micro Boost**, on CTL.
-Gain: 38 when engaged.
-Off for the verse groove, on for the chorus. Same amp tone throughout, just louder and a bit more shoved into the front end for the hook.
+## GP-5 settings
 
-**DST — off.**
-The amp's own grind carries the grit. Stacking a drive pedal on top would just mud out the riff instead of adding character.
+Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB.
+The encoded N->S block sits between DST and AMP when a SnapTone is used.
 
-**AMP/CAB — NAM SnapTone, slot 57: GrittySVT** (always on)
-- Built from the `SVT PUSHED (SVT-CL)` NAM and the Apg810 IR, combined into one snaptone.
-- Real Ampeg SVT-CL pushed into grit, into the Apg810 8x10 IR.
-- Grunge-era grit. Pushed SVT into an 8x10.
-- Gain: 52, VOL: 55, Bass: 60, Middle: 58, Treble: 42
-- Gain 52: a little over default. This part wants more push than the other GrittySVT patches.
-- Bass 60: The low end that carries the riff.
-- Middle 58: Pushed for grind and to cut through the guitars, not scooped.
-- Treble 42: Kept dark on purpose. Bush's mix isn't a bright, clanky bass tone.
-- VOL 55: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
-- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 57 directly.
+AMP/CAB replacement: SnapTone GrittySVT (slot 57): SVT PUSHED (SVT-CL) + Apg810.
+Slot: 57. Always on.
+Gain: 52, VOL: 55, Bass: 60, Middle: 58, Treble: 42.
+AMP and CAB are both off; the capture already includes its cab/DI character.
+The capture voice is fixed across CTL states. Audited VOL is preserved for this slot.
 
-**EQ — Bass EQ 2**, always on.
-50Hz: +4, 120Hz: +2, 400Hz: -4, 800Hz: -2, 4.5kHz: +5, VOL: 55.
-Small low-end reinforcement, a cut around 400Hz-800Hz to keep the V4B from getting boxy under the guitars, and a push at 4.5kHz for pick/finger attack so the riff reads as a note, not just low-end mush.
+## NR - Gate
 
-**MOD — off.** No modulation on this one — chorus/vibe would soften a riff that's supposed to hit like a hammer.
+THRE: 15.
+Fixed on. Not on CTL.
+Use the lowest threshold that keeps rests quiet. Check soft notes and held-note decay. This gate is before the drives and amp; it does not directly gate noise generated after it.
 
-**DLY — off.** Straight, driving part. No delay.
+## PRE - Micro Boost
 
-**RVB — Room**, on CTL.
-Mix: 24, Decay: 38, Trail: true.
-Off for the verse — dry and tight, right on top of the beat.
-On for the chorus, alongside the boost — gives the hook a little more size without turning it into a wash.
+Gain: 38.
+CTL assigned. Loads off; first CTL press switches it on.
+Controls the source dynamics or adds the specified push/filter before distortion and amp processing. The settings stay fixed; only its on/off state can change.
 
-## CTL footswitch
+## DST - Module off
 
-Two modules on CTL: PRE (Micro Boost) and RVB (Room).
+Not used.
 
-- **CTL off** — main verse/groove sound. Dry, tight, driving. This is the resting state the patch loads into.
-- **CTL on** — chorus sound. Boosted front end plus a touch of room reverb, same amp tone, bigger and pushier for the hook.
+## AMP - Module off
 
-Engage CTL going into each chorus, back off for the verses. Simple two-state song patch — no need for a third CTL'd module here.
+Not used.
+
+## CAB - Module off
+
+Not used.
+
+## EQ - Bass EQ 2
+
+50Hz: 4.
+120Hz: 2.
+400Hz: -1.
+800Hz: 1.
+4.5kHz: 2.
+VOL: 55.
+Fixed on. Not on CTL.
+Shapes note body and cut after the amp/capture. Where assigned to CTL, its output adds the specified lift after the gain stages. Numbers are GP-5 control values, not a calibrated loudness guarantee.
+
+## MOD - Module off
+
+Not used.
+
+## DLY - Module off
+
+Not used.
+
+## RVB - Room
+
+Mix: 6.
+Decay: 38.
+Trail: on.
+CTL assigned. Loads off; first CTL press switches it on.
+Adds the specified room or ambient tail. The revised mix keeps the initial note audible. Trail behavior follows the saved setting.
+
+## Switching and section map
+
+CTL blocks: PRE, RVB.
+- CTL off / loaded state: main verse/groove sound. GP-5 active: NR, EQ, N->S.
+- First CTL press: chorus sound. GP-5 active: NR, PRE, EQ, RVB, N->S.
+- Press CTL again to return to the loaded block pattern, provided no shared MIDI block has been changed.
+
+## Revision record
+
+Approved audit entry 76.
+- NR THRE: 28 -> 15.
+- EQ 400Hz: -4 -> -1.
+- EQ 800Hz: -2 -> 1.
+- EQ 4.5kHz: 5 -> 2.
+- RVB Mix: 24 -> 6.
+Pre-revision JSON, Markdown and original file hashes are preserved in Documents/patch-audit-2026-10-16/inventory.json and implementation-manifest.json.
+The site piece title and on-disk filenames stay stable; only the short pedal display name may change.

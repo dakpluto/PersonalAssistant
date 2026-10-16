@@ -1,87 +1,176 @@
 # Hair — Graham Central Station
 
+Revised 2026-10-16 following the approved library audit.
+Type: Song. Instrument: Harley Benton passive 5-string P/J.
+Full board. Board Option: American Sound (bypassed; retained for legacy full-board builds).
+Patch screen name: Hair-GCS. Patch VOL: 56.
+Preset tempo: 104 BPM.
+
 Bass: Harley Benton P/J, 5-string, passive. Full board.
 From Graham Central Station's mid-70s catalog. ~104 BPM, est.
 Larry Graham didn't just play bass in this band — he invented slap bass, and everything about this patch is built around that vocabulary: a deep, thumping thumb attack and a bright, snapping pop, both needing real headroom and control. This is a driving, groove-consistent funk jam start to finish — no huge dynamic swing to chase, just a thick, percussive pocket that stays locked in the whole way through.
-
 No CTL — one tone, doing the slap thing all the way through.
+
+## Revision intent
+
+Keep the musical role of the original patch while reducing redundant gain, excessive space and unclear switching where identified in audit entry 44.
+The module settings and section map below are the active revision.
+Audited capture volumes and Michael’s explicit patch-level adjustments are preserved.
+No hardware audition or measured level match has been performed.
 
 ## GP-5 settings
 
-Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
+Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB.
+The encoded N->S block sits between DST and AMP when a SnapTone is used.
 
-**NR — Gate**
-- THRE: 20
-- Always on. Moderate threshold — slap bass generates a lot of transient noise and string buzz between hits, needs real cleanup to stay tight.
+AMP/CAB replacement: SnapTone FullB15 (slot 54): Ampeg B18 - Head DI - Bass Chan - Vol 5 (B-18N) + Apg115410.
+Slot: 54. Always on.
+Gain: 52, VOL: 80, Bass: 56, Middle: 48, Treble: 58.
+AMP and CAB are both off; the capture already includes its cab/DI character.
+The capture voice is fixed across CTL states. Audited VOL is preserved for this slot.
 
-**PRE — COMP4 (Keeley C4)**
-- Sustain: 70, Attack: 40, Clip: 15, VOL: 60
-- Always on. This is the most important block in the patch — slap technique creates huge dynamic swings between thumb thumps and finger pops, and heavy compression is what keeps that consistent and controlled rather than spiky and unpredictable. Attack at 40 lets enough of the initial thump/pop transient through to stay percussive before the compressor clamps down.
+## NR - Gate
 
-**DST — Off**
-- No drive. Classic 70s funk slap tone is clean and punchy, not distorted.
+THRE: 20.
+Fixed on. Not on CTL.
+Use the lowest threshold that keeps rests quiet. Check soft notes and held-note decay. This gate is before the drives and amp; it does not directly gate noise generated after it.
 
-**AMP/CAB — NAM SnapTone, slot 54: FullB15** (always on)
-- Built from the `Ampeg B18 - Head DI - Bass Chan - Vol 5 (B-18N)` NAM and the Apg115410 IR, combined into one snaptone.
-- Real Ampeg B-18N at volume 5, warmer and fuller than the clean capture, into the Apg115410 (1x15 + 4x10) IR.
-- Larry Graham's tone is tube funk. The fuller B-15 keeps it round, and the 4x10 in the IR helps the pops snap.
-- Moved off the SoulB18 snaptone (slot 60) 2026-10-02. Michael dropped that combo in the bass VOL audit.
-- Gain: 52, VOL: 80, Bass: 62, Middle: 48, Treble: 58
-- Gain 52: a little over default. This part wants more push than the other FullB15 patches.
-- Bass 62: more low end.
-- Middle 48: midrange pulled back a little.
-- Treble 58: more top end.
-- VOL 80: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
-- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 54 directly.
+## PRE - COMP4
 
-**EQ — Bass EQ 1**
-- 33Hz: +5, 150Hz: -2, 600Hz: -4, 2kHz: +3, 8kHz: +5, VOL: 56
-- Always on. A classic slap "smiley face" curve — big boosts at the extremes (33Hz for thumb thump, 8kHz for pop snap) with a real scoop at 600Hz to clear out the boxy midrange that would otherwise mask both ends. This is the EQ shape that makes slap technique actually cut through a mix.
+Sustain: 35.
+Attack: 40.
+Clip: 40.
+VOL: 60.
+Fixed on. Not on CTL.
+Controls the source dynamics or adds the specified push/filter before distortion and amp processing. The settings stay fixed; only its on/off state can change.
 
-**MOD — Off**
-- No modulation. Direct, punchy funk tone.
+## DST - Module off
 
-**DLY — Off**
-- Not used.
+Not used.
 
-**RVB — Room**
-- Mix: 12, Decay: 22, Trail: On
-- Always on. Just a touch of natural space — enough to feel like a real room/band, not enough to soften the percussive attack this tone depends on.
+## AMP - Module off
 
-## Why no CTL
+Not used.
 
-This isn't a quiet-verse/big-chorus song — it's a groove-consistent funk jam that stays locked into the same thick, percussive pocket from start to finish. Forcing a CTL split here would just be adding complexity the song doesn't call for; the one tone above is built to carry the whole track.
+## CAB - Module off
 
-## Full pedalboard (signal chain order)
+Not used.
 
-**1. Flamma FS-08 Octave — Bypassed**
-- Footswitch off. Slap technique already generates plenty of low-end thump on its own — an octave stack would clutter fast thumb/pop patterns.
+## EQ - Bass EQ 1
 
-**2. Donner Ultimate Comp — Engaged**
-- COMP: 45
-- TONE: 62
-- LEVEL: 58
-- Mode: TREBLE
-- A second compression stage, ahead of the GP-5's own COMP4 — stacking two compressors this way is a common trick for taming slap dynamics further. TREBLE mode is essential here — it keeps the pop/snap articulate and audible even under all that squash.
+33Hz: 0.
+150Hz: -2.
+600Hz: -4.
+2kHz: 3.
+8kHz: 2.
+VOL: 56.
+Fixed on. Not on CTL.
+Shapes note body and cut after the amp/capture. Where assigned to CTL, its output adds the specified lift after the gain stages. Numbers are GP-5 control values, not a calibrated loudness guarantee.
 
-**3. Donner Stylish Fuzz — Bypassed**
-- Footswitch off. No fuzz anywhere in this patch — classic funk slap stays clean.
+## MOD - Module off
 
-**4. Joyo Tidal Wave — Engaged**
-- Drive: 10
-- Blend: 20
-- Presence: 60
-- Level: 58
-- Treble: 58
-- Middle: 50
-- Bass: 58
-- Mid-Frequency: 500Hz
-- Bass-Shift: 80Hz
-- Cab-Sim (DI out): On
-- Ground Lift: On
-- Used as a clean tone shaper and DI stage, not an overdrive — Drive stays low. Bass-Shift at 80Hz keeps things tight and articulate, critical for fast slap patterns to stay defined instead of turning to mud.
+Not used.
 
-**5. Joyo Narcissus — Bypassed**
-- Footswitch off. No chorus — matches the MOD-off call on the GP-5. Clean, direct funk tone throughout.
+## DLY - Module off
 
-**6. Valeton GP-5** — see settings above.
+Not used.
+
+## RVB - Room
+
+Mix: 12.
+Decay: 22.
+Trail: on.
+Fixed on. Not on CTL.
+Adds the specified room or ambient tail. The revised mix keeps the initial note audible. Trail behavior follows the saved setting.
+
+## Switching and section map
+
+CTL blocks: None.
+- CTL off / loaded state: Main rhythm / intro / supporting part. GP-5 active: NR, PRE, EQ, RVB, N->S.
+- No GP-5 CTL change. Use the board stomps listed below when the arrangement needs another sound.
+
+## Full pedalboard
+
+Flamma FS-08 Octave -> Donner Ultimate Comp -> Donner Stylish Fuzz -> Joyo Tidal Wave -> Joyo American Sound -> Joyo Narcissus -> Valeton GP-5.
+Board settings are set by hand and are not encoded in the .prst.
+All numeric pedal positions use the existing 0–100 position shorthand unless a clock position is specified.
+
+## Flamma FS-08 Octave
+
+Bypassed throughout.
+-2OCT: 0.
+-OCT: 0.
++OCT: 0.
++2OCT: 0.
+Dry: 100.
+
+## Donner Ultimate Comp
+
+On throughout.
+COMP: 45.
+TONE: 62.
+LEVEL: 58.
+Mode: TREBLE.
+
+## Donner Stylish Fuzz
+
+Bypassed throughout.
+Sustain: 25.
+Treble: 50.
+Bass: 50.
+Volume: 50.
+
+## Joyo Tidal Wave
+
+On throughout.
+Drive: 10.
+Blend: 20.
+Presence: 60.
+Level: 58.
+Treble: 58.
+Middle: 50.
+Bass: 58.
+Mid-Frequency: 500Hz.
+Bass-Shift: 80Hz.
+Cab-Sim (DI out): On.
+Ground Lift: On.
+The footswitch toggles drive only. Preamp EQ and Level stay active in both states. Cab-Sim/Ground Lift affect the DI path; main instrument output is unchanged.
+
+## Joyo American Sound
+
+Bypassed throughout.
+Level: 50.
+Drive: 10.
+Voice: 50.
+Low: 50.
+Mid: 50.
+High: 50.
+
+## Joyo Narcissus
+
+Bypassed throughout.
+Width: 30.
+Depth: 20.
+Rate: 20.
+Mode: Vintage.
+
+## Board choreography
+
+- Flamma FS-08 Octave: Bypassed throughout.
+- Donner Ultimate Comp: On throughout.
+- Donner Stylish Fuzz: Bypassed throughout.
+- Joyo Tidal Wave: On throughout.
+- Joyo American Sound: Bypassed throughout.
+- Joyo Narcissus: Bypassed throughout.
+Set the board switches for the section you are entering. Intro-only or clean-only effects may need to start on. Return each pedal to its documented state at the next section. Board pedals are independent of CTL.
+
+## Revision record
+
+Approved audit entry 44.
+- SnapTone Bass: 62 -> 56.
+- PRE Sustain: 70 -> 35.
+- PRE Clip: 15 -> 40.
+- EQ 33Hz: 5 -> 0.
+- EQ 8kHz: 5 -> 2.
+Pre-revision JSON, Markdown and original file hashes are preserved in Documents/patch-audit-2026-10-16/inventory.json and implementation-manifest.json.
+The site piece title and on-disk filenames stay stable; only the short pedal display name may change.

@@ -1,0 +1,10 @@
+const fs=require('fs'),path=require('path');
+const root=path.resolve(__dirname,'../..');
+const catalog=Object.values(JSON.parse(fs.readFileSync(path.join(root,'Tools/fxid_ring_gp5.json'),'utf8')));
+const dlyPath=path.join(root,'Modules/DLY.md');let text=fs.readFileSync(dlyPath,'utf8');
+let model='';text=text.split(/\r?\n/).map(line=>{if(line.startsWith('## '))model=line.slice(3).split(' - ')[0];if(line.startsWith('- Time:')){const p=catalog.find(e=>e.module==='DLY'&&e.name===model)?.params.find(p=>p.name==='Time');if(p)return '- Time: Controls the delay time ('+p.min+'ms - '+p.max+'ms), per the vendored catalog.';}return line;}).join('\n');
+fs.writeFileSync(dlyPath,text);
+const modPath=path.join(root,'Modules/MOD.md');text=fs.readFileSync(modPath,'utf8').replace('Based on Boss CEB-3 for Bass Guitar','Bass chorus (catalog origin: Boss CE-2B; earlier notes called it CEB-3)');fs.writeFileSync(modPath,text);
+const eqPath=path.join(root,'Modules/EQ.md');text=fs.readFileSync(eqPath,'utf8').replaceAll('-50db - +50db','-50 to +50 (GP-5 control values; acoustic gain calibration not verified)');fs.writeFileSync(eqPath,text);
+const fmt=path.join(root,'Documents/gp5-prst-format.md');text=fs.readFileSync(fmt,'utf8').replace('real dB for EQ bands (`-50.0..50.0`)','EQ control values (`-50.0..50.0`; acoustic dB calibration is not verified)').replace('the real\n  catalog range is **20ms – 4000ms** for every DLY model checked.','the catalog ranges vary by algorithm. Slapback is **20–300ms**, Analog **20–4000ms**, Ping Pong **20–500ms**, Rev Echo **20–780ms**, and the remaining listed delays **20–1000ms**.');fs.writeFileSync(fmt,text);
+console.log('Updated delay ranges, EQ unit wording and the chorus provenance conflict.');

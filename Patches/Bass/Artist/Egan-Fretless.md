@@ -1,96 +1,192 @@
 # Egan-Fretless
 
-**Type:** Artist — Mark Egan
-**Instrument:** Sire V7 2nd Gen 5-String Fretless (flatwound), run **Active**
-**Full Board:** True
+Revised 2026-10-16 following the approved library audit.
+Type: Artist. Instrument: Sire V7 2nd Generation 5-string fretless, flatwounds; run active.
+Full board. Board Option: American Sound (bypassed; retained for legacy full-board builds).
+Patch screen name: EganFretls. Patch VOL: 55.
+Preset tempo: 92 BPM.
 
-## The signature sound
+Mark Egan-inspired melodic fretless voice. Active Sire V7 with flatwounds. Keep the preamp close to flat and avoid clipping the GP-5 input. Lush chorus is intentional; the revised compression and low-frequency EQ keep the fundamental present. Offramp features Steve Rodby, so it is not an Egan personnel reference.
 
-Egan built his voice on the Pat Metheny Group records and his own fusion output (*American Garage*, *Offramp*, *Beyond Words*) around three things: heavy compression that turns a plucked note into a sustained, vocal-like line; a wide, lush chorus that's mixed loud enough to be a texture, not a sheen; and a clean, hi-fi amp tone with real top-end presence so the fretless mwah and harmonics cut through a dense fusion mix instead of getting buried. No grit, no fuzz, no drive — the "aggression" in his playing comes from touch and legato phrasing, not the signal chain. This patch chases that: a squashed, singing low end, a bright EQ push instead of a mid-scoop, and chorus/delay/reverb stacked to build the same wide, ECM-ish space his tone lives in.
+## Revision intent
 
-Active electronics on the Sire — the flatwounds already round off the attack, so the extra headroom and lower noise floor from the active preamp matters more than passive warmth here, especially feeding two compression stages downstream.
+Keep the musical role of the original patch while reducing redundant gain, excessive space and unclear switching where identified in audit entry 1.
+The module settings and section map below are the active revision.
+Audited capture volumes and Michael’s explicit patch-level adjustments are preserved.
+No hardware audition or measured level match has been performed.
 
-## Module order & settings
+## GP-5 settings
 
-**NR — Gate** (always on)
-THRE: 28. Just enough to clean up hiss from stacking two compressors (this one and the Ultimate Comp pedal) without choking sustain — Egan's whole thing is long decay, so this gate stays loose.
+Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB.
+The encoded N->S block sits between DST and AMP when a SnapTone is used.
 
-**PRE — COMP4 (Keeley C4)** (always on)
-Sustain: 65, Attack: 45, Clip: 50, VOL: 60.
-This is the single most important block in the patch. Medium attack lets enough pluck through to keep the note readable, then the compressor takes over and holds it — that's the "singing" quality Egan's known for. Not on CTL: it's not a sound he turns off, it's the foundation.
+AMP/CAB replacement: SnapTone AvalonAD2022 (slot 52): Avalon - 38 dB - Chan 1 (Avalon AD2022) + none (studio DI).
+Slot: 52. Always on.
+Gain: 58, VOL: 75, Bass: 55, Middle: 55, Treble: 68.
+AMP and CAB are both off; the capture already includes its cab/DI character.
+The capture voice is fixed across CTL states. Audited VOL is preserved for this slot.
 
-**DST — off.**
-No drive anywhere in this signal path. Egan's tone is clean top to bottom; distortion would kill the sustain-driven phrasing this patch is built around.
+## NR - Gate
 
-**AMP/CAB — NAM SnapTone, slot 52: AvalonAD2022** (always on)
-- Built from the `Avalon - 38 dB - Chan 1 (Avalon AD2022)` NAM and no cab IR (straight DI), combined into one snaptone.
-- Avalon AD2022 Class A preamp at 38 dB. A studio DI, not an amp: no speaker coloration.
-- Mark Egan's fretless is a hi-fi, studio-DI sound. The Avalon gives the fretless growl with no cab smear.
-- Gain: 58, VOL: 75, Bass: 55, Middle: 55, Treble: 68
-- Gain 58: noticeably over default. This part wants more push than the other AvalonAD2022 patches.
-- Bass 55: a touch more low end.
-- Middle 55: a touch more midrange.
-- Treble 68: more top end.
-- VOL 75: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
-- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 52 directly.
+THRE: 10.
+Fixed on. Not on CTL.
+Use the lowest threshold that keeps rests quiet. Check soft notes and held-note decay. This gate is before the drives and amp; it does not directly gate noise generated after it.
 
-**EQ — Bass EQ 1** (always on)
-33Hz: +6, 150Hz: 0, 600Hz: -8, 2kHz: +5, 8kHz: +10, VOL: 58.
-The 8kHz band is why this EQ over Bass EQ 2 — that's where fretless mwah and chorus shimmer actually sit. Cut 600Hz to clear out the boxy mud flatwounds tend to build up, small sub push at 33Hz to keep the low end felt under all that top-end lift.
+## PRE - COMP4
 
-**MOD — B-Chorus (Boss CEB-3)** — **on CTL**
-Depth: 70, Rate: 0.6Hz, VOL: 100.
-This is the deliberate exception to the usual light-touch MOD rule — Egan is a textbook case of an artist known for a drenched, obvious chorus, so it gets pushed instead of held back. It's on CTL because the Joyo Narcissus pedal downstream is already running as the baseline chorus voice at all times — this module is the second layer that gets stacked on top for the full wash.
-- **CTL Off:** Narcissus only. Grounded, present tone — for rhythmic/supporting lines, or any passage where you want the note fundamental clearly audible.
-- **CTL On:** Narcissus + B-Chorus stacked. Full drenched, wide swirl — the "floating on top of the mix" Egan lead voice, for melodic statements and solos.
+Sustain: 45.
+Attack: 45.
+Clip: 50.
+VOL: 60.
+Fixed on. Not on CTL.
+Controls the source dynamics or adds the specified push/filter before distortion and amp processing. The settings stay fixed; only its on/off state can change.
 
-**DLY — Analog** (loads on; MIDI toggle, see MIDI toggles)
-Mix: 18, Time: 450ms, Feedback: 12, Trail: On.
-Low in the mix on purpose — this isn't a rhythmic delay, it's there to thicken the tail of the chorus and reverb into one continuous wash, the way Egan's tone always sounds like it's decaying into a room rather than stopping dead. Trail on so the tail doesn't get cut off if you kill the patch mid-note.
+## DST - Module off
 
-**RVB — Hall** (always on)
-Mix: 25, Decay: 45, Trail: On.
-Hall over Plate/Room for the bigger, more spacious ECM-label ambiance that's all over the Metheny Group records this tone comes from.
+Not used.
 
-## CTL summary
+## AMP - Module off
 
-- **CTL Off:** Supporting/rhythm voice. Compressed, bright, chorused (Narcissus only), spacious — but the fundamental stays clear enough to sit under a band.
-- **CTL On:** Lead/solo voice. Adds the GP-5's own B-Chorus on top of the Narcissus for the full drenched, singing wash Egan uses when the bass steps forward melodically.
+Not used.
 
-## MIDI toggles
+## CAB - Module off
 
-MIDI = True (added 2026-10-12). With no MIDI controller connected, the patch loads and plays exactly as before: CTL and the board work the same. MIDI adds single-block toggles on top.
+Not used.
 
-On MIDI: DLY (Analog), MIDI-only, loads on.
+## EQ - Bass EQ 1
 
-Sounds:
-- **Signature glide** (default). Delay on, chorus per CTL.
-- **Dry session.** MIDI DLY off. Busy, tight grooves and R&B/pop sessions where the delay tail clutters the pocket. Still chorus-capable from CTL.
+33Hz: 0.
+150Hz: 0.
+600Hz: -2.
+2kHz: 5.
+8kHz: 3.
+VOL: 58.
+Fixed on. Not on CTL.
+Shapes note body and cut after the amp/capture. Where assigned to CTL, its output adds the specified lift after the gain stages. Numbers are GP-5 control values, not a calibrated loudness guarantee.
 
-## Full pedalboard (signal chain order)
+## MOD - B-Chorus
 
-**1. Flamma FS-08 Octave** — bypassed (footswitch off) for the core patch.
--2OCT: 0, -OCT: 0, +OCT: 15, +2OCT: 0, Dry: 100.
-Not part of Egan's actual sound — he doesn't run synth-bass layers — but the +OCT knob is parked at a light setting in case you want to kick in a subtle high-octave shimmer on a sustained note for a highlight moment. Leave it off otherwise.
+Depth: 70.
+Rate: 0.6.
+VOL: 50.
+CTL assigned. Loads off; first CTL press switches it on.
+Adds the specified movement. Keep it underneath the note except for intentionally wet artist or ambient voices.
 
-**2. Donner Ultimate Comp** — engaged (footswitch on).
-COMP: 40, TONE: 60, LEVEL: 55, Mode: TREBLE.
-Second compression stage, ahead of the GP-5's own COMP4. TREBLE mode is the key call here — stacking two compressors this hard can dull pick/finger attack fast, and flatwounds are already dark, so TREBLE mode keeps articulation alive under all that squash.
+## DLY - Analog
 
-**3. Donner Stylish Fuzz** — bypassed, off.
-Doesn't belong in this patch at all. No fuzz texture anywhere in Egan's tone — leave this one out of the chain mentally.
+Mix: 18.
+Time: 450.
+Feedback: 12.
+Trail: on.
+MIDI-only. Loads on.
+Adds repeats only in the listed states. Trail preserves the remaining repeats when this block is bypassed; it does not change delay time or mix.
 
-**4. Joyo Tidal Wave** — engaged (footswitch on), used as a clean-leaning tone shaper, not an overdrive.
-Drive: 10, Blend: 20, Presence: 55, Level: 55, Treble: 60, Middle: 50, Bass: 55.
-Toggles: Mid-Frequency 500Hz (bass body, not attack-focused — matches Egan's smooth fingerstyle over a percussive slap approach), Bass-Shift 40Hz (fuller low end — this patch wants body, not extra tightness), Cab-Sim (DI) On, Ground Lift On.
-Drive stays low — this pedal's job here is a touch of preamp warmth and DI routing, not grit. Blend at 20 keeps it mostly clean signal.
+## RVB - Hall
 
-**5. Joyo Narcissus** — engaged (footswitch on), Vintage mode.
-Width: 65, Depth: 55, Rate: 35.
-This is the baseline, always-on chorus voice for the patch — the thing that's "always there" in Egan's tone, with the GP-5's B-Chorus (on CTL) as the extra layer for lead passages. Vintage mode for the warmer, more analog swirl over the more synthetic Modern mode.
+Mix: 15.
+Decay: 45.
+Trail: on.
+Fixed on. Not on CTL.
+Adds the specified room or ambient tail. The revised mix keeps the initial note audible. Trail behavior follows the saved setting.
 
-**6. Valeton GP-5** — as documented above.
+## Switching and section map
 
-## Note on the full board vs. the `.prst`
+CTL blocks: MOD.
+- CTL off / loaded state: Narcissus only. GP-5 active: NR, PRE, EQ, DLY, RVB, N->S.
+- First CTL press: Narcissus + B-Chorus stacked. GP-5 active: NR, PRE, EQ, MOD, DLY, RVB, N->S.
+- Press CTL again to return to the loaded block pattern, provided no shared MIDI block has been changed.
 
-The `.prst` file only encodes the GP-5's own 9 modules (NR through RVB). The Flamma octave, Donner Ultimate Comp, Donner Stylish Fuzz, and Joyo Tidal Wave/Narcissus settings above are not and cannot be part of that file — they're pedals you set by hand on the board, documented here so the full patch is reproducible.
+MIDI toggles: DLY.
+MIDI mapping lives on the controller/device, not in the .prst.
+- DLY Analog: loads on; toggle to remove this block independently.
+- DLY-only alternative from loaded state: CTL off, MIDI DLY off; other MIDI blocks at their load states. GP-5 active: NR, PRE, EQ, RVB, N->S. Board switches unchanged.
+
+## Full pedalboard
+
+Flamma FS-08 Octave -> Donner Ultimate Comp -> Donner Stylish Fuzz -> Joyo Tidal Wave -> Joyo American Sound -> Joyo Narcissus -> Valeton GP-5.
+Board settings are set by hand and are not encoded in the .prst.
+All numeric pedal positions use the existing 0–100 position shorthand unless a clock position is specified.
+
+## Flamma FS-08 Octave
+
+Bypassed throughout.
+-2OCT: 0.
+-OCT: 0.
++OCT: 15.
++2OCT: 0.
+Dry: 100.
+
+## Donner Ultimate Comp
+
+On throughout.
+COMP: 40.
+TONE: 60.
+LEVEL: 55.
+Mode: TREBLE.
+
+## Donner Stylish Fuzz
+
+Bypassed throughout.
+Sustain: 25.
+Treble: 50.
+Bass: 50.
+Volume: 50.
+
+## Joyo Tidal Wave
+
+On throughout.
+Drive: 10.
+Blend: 20.
+Presence: 55.
+Level: 55.
+Treble: 60.
+Middle: 50.
+Bass: 55.
+Mid-Frequency: 500Hz.
+Bass-Shift: 40Hz.
+Cab-Sim (DI out): On.
+Ground Lift: On.
+The footswitch toggles drive only. Preamp EQ and Level stay active in both states. Cab-Sim/Ground Lift affect the DI path; main instrument output is unchanged.
+
+## Joyo American Sound
+
+Bypassed throughout.
+Level: 50.
+Drive: 10.
+Voice: 50.
+Low: 50.
+Mid: 50.
+High: 50.
+
+## Joyo Narcissus
+
+On throughout.
+Width: 65.
+Depth: 30.
+Rate: 35.
+Mode: Vintage.
+
+## Board choreography
+
+- Flamma FS-08 Octave: Bypassed throughout.
+- Donner Ultimate Comp: On throughout.
+- Donner Stylish Fuzz: Bypassed throughout.
+- Joyo Tidal Wave: On throughout.
+- Joyo American Sound: Bypassed throughout.
+- Joyo Narcissus: On throughout.
+Set the board switches for the section you are entering. Intro-only or clean-only effects may need to start on. Return each pedal to its documented state at the next section. Board pedals are independent of CTL.
+
+## Revision record
+
+Approved audit entry 1.
+- NR THRE: 28 -> 10.
+- PRE Sustain: 65 -> 45.
+- EQ 33Hz: 6 -> 0.
+- EQ 600Hz: -8 -> -2.
+- EQ 8kHz: 10 -> 3.
+- MOD VOL: 100 -> 50.
+- RVB Mix: 25 -> 15.
+- Board Narcissus: Depth 30.
+Pre-revision JSON, Markdown and original file hashes are preserved in Documents/patch-audit-2026-10-16/inventory.json and implementation-manifest.json.
+The site piece title and on-disk filenames stay stable; only the short pedal display name may change.
+Source check: https://www.patmetheny.com/music/detail.cfm?id=39

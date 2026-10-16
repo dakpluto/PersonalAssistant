@@ -2,16 +2,65 @@
   "patch_name": "LoveShack-B52",
   "patch_vol": 55,
   "bpm": 134,
-  "nam": {"name": "AvalonAD2022 (slot 52): Avalon - 38 dB - Chan 1 (Avalon AD2022) + none (studio DI)", "slot": 52, "settings": {"Gain": 58, "VOL": 75, "Bass": 62, "Middle": 60, "Treble": 60}},
+  "nam": {
+    "name": "AvalonAD2022 (slot 52): Avalon - 38 dB - Chan 1 (Avalon AD2022) + none (studio DI)",
+    "slot": 52,
+    "settings": {
+      "Gain": 50,
+      "VOL": 75,
+      "Bass": 55,
+      "Middle": 60,
+      "Treble": 60
+    }
+  },
   "modules": {
-    "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 15}},
-    "PRE": {"model": "Boost", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Gain": 60, "+3dB": true, "Bright": true}},
-    "DST": {"model": "Bass OD", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Gain": 45, "Blend": 40, "VOL": 70, "Bass": 55, "Treble": 65}},
-    "AMP": {"model": null},
-    "CAB": {"model": null},
-    "EQ": {"model": "Bass EQ 2", "always_on": true, "settings": {"50Hz": 4, "120Hz": 2, "400Hz": -5, "800Hz": 6, "4.5kHz": 6, "VOL": 55}},
-    "MOD": {"model": null},
-    "DLY": {"model": null},
-    "RVB": {"model": null}
+    "NR": {
+      "model": "Gate",
+      "always_on": true,
+      "settings": {
+        "THRE": 15
+      }
+    },
+    "PRE": {
+      "model": "Boost",
+      "ctl": true,
+      "ctl_off_state": "off",
+      "ctl_on_state": "on",
+      "settings": {
+        "Gain": 20,
+        "+3dB": false,
+        "Bright": true
+      }
+    },
+    "DST": {
+      "model": null
+    },
+    "AMP": {
+      "model": null
+    },
+    "CAB": {
+      "model": null
+    },
+    "EQ": {
+      "model": "Bass EQ 2",
+      "always_on": true,
+      "settings": {
+        "50Hz": 1,
+        "120Hz": 2,
+        "400Hz": -2,
+        "800Hz": 2,
+        "4.5kHz": 2,
+        "VOL": 55
+      }
+    },
+    "MOD": {
+      "model": null
+    },
+    "DLY": {
+      "model": null
+    },
+    "RVB": {
+      "model": null
+    }
   }
 }

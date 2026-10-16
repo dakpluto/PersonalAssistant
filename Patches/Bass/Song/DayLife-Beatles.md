@@ -1,106 +1,170 @@
 # A Day in the Life — The Beatles (Bass)
 
-## Song context
+Revised 2026-10-16 following the approved library audit.
+Type: Song. Instrument: Harley Benton passive 5-string P/J.
+Full board. Board Option: American Sound (bypassed; retained for legacy full-board builds).
+Patch screen name: DayLife-Be. Patch VOL: 54.
+Preset tempo: 85 BPM.
 
-Sgt. Pepper's closer, 1967.
-McCartney played it on his Rickenbacker 4001S.
-DI'd straight into the desk, not mic'd off an amp — that's why the tone is so clean and hi-fi.
-No cab coloring the top end, just direct signal with all the finger detail intact.
+A Day in the Life: clean, melodic bass interpreted through Avalon studio-DI character. The modern capture is a tonal substitute; the exact historical recording chain and playing details are not asserted. Less presence boost and a smaller Room preserve note identity.
 
-Two distinct bass parts live in this song.
-Lennon's verses ("I read the news today...") are dreamy and spacious — McCartney plays long, melodic, ascending/descending lines that carry as much melodic weight as the vocal.
-His own bridge ("Woke up, fell out of bed...") is a completely different animal — tight, driving 8th notes, forward and percussive, pushing the song instead of floating under it.
+## Revision intent
 
-That's a real CTL split, not a stretch.
-CTL off = the Lennon-verse melodic sound.
-CTL on = the McCartney-bridge driving sound.
-
-Tempo isn't metronomic — Ringo drags and pushes through the song on purpose.
-BPM set to 85 as the verse pulse; don't treat it as a click track.
-
-## Why the Avalon DI snaptone
-
-This song needs a vintage, DI'd, hi-fi clean sound with almost no amp coloration.
-The AvalonAD2022 snaptone is a studio DI capture with no cab, so it's the closest match in the set.
+Keep the musical role of the original patch while reducing redundant gain, excessive space and unclear switching where identified in audit entry 33.
+The module settings and section map below are the active revision.
+Audited capture volumes and Michael’s explicit patch-level adjustments are preserved.
+No hardware audition or measured level match has been performed.
 
 ## GP-5 settings
 
-Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
+Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB.
+The encoded N->S block sits between DST and AMP when a SnapTone is used.
 
-**NR — Gate**
-- THRE: 18
-- Always on, low threshold.
-- This is a clean, low-gain patch — barely any noise to gate, just keeping the signal path quiet.
+AMP/CAB replacement: SnapTone AvalonAD2022 (slot 52): Avalon - 38 dB - Chan 1 (Avalon AD2022) + none (studio DI).
+Slot: 52. Always on.
+Gain: 50, VOL: 75, Bass: 50, Middle: 62, Treble: 55.
+AMP and CAB are both off; the capture already includes its cab/DI character.
+The capture voice is fixed across CTL states. Audited VOL is preserved for this slot.
 
-**PRE — Micro Boost — On CTL**
-- Gain: 55
-- CTL off: bypassed. CTL on: engaged.
-- Off state (Lennon verses) needs no push — the part carries itself melodically, don't crowd it.
-- On state (McCartney bridge) gets a clean gain bump for extra push and presence on the driving 8th-note line.
+## NR - Gate
 
-**DST — Off**
-- Not used. No grit anywhere in this bass part — stays clean start to finish.
+THRE: 18.
+Fixed on. Not on CTL.
+Use the lowest threshold that keeps rests quiet. Check soft notes and held-note decay. This gate is before the drives and amp; it does not directly gate noise generated after it.
 
-**AMP/CAB — NAM SnapTone, slot 52: AvalonAD2022** (always on)
-- Built from the `Avalon - 38 dB - Chan 1 (Avalon AD2022)` NAM and no cab IR (straight DI), combined into one snaptone.
-- Avalon AD2022 Class A preamp at 38 dB. A studio DI, not an amp: no speaker coloration.
-- McCartney's Rickenbacker on this record has a DI'd, hi-fi clean sound with almost no amp coloration. The Avalon DI is exactly that.
-- Gain: 50, VOL: 75, Bass: 50, Middle: 62, Treble: 62
-- Gain 50: the capture as built.
-- Bass 50: flat.
-- Middle 62: more midrange.
-- Treble 62: more top end.
-- VOL 75: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
-- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 52 directly.
+## PRE - Micro Boost
 
-**EQ — Bass EQ 1**
-- 33Hz: +3
-- 150Hz: +2
-- 600Hz: -3
-- 2kHz: +5
-- 8kHz: +3
-- VOL: 55
-- Always on, same for both CTL states.
-- 600Hz cut clears out boxiness. 2kHz and 8kHz boosts add the note definition and top-end sparkle a DI'd Rickenbacker naturally has that a flat DI doesn't add on its own.
+Gain: 25.
+CTL assigned. Loads off; first CTL press switches it on.
+Controls the source dynamics or adds the specified push/filter before distortion and amp processing. The settings stay fixed; only its on/off state can change.
 
-**MOD — Off**
-- No modulation. This bass tone is bone dry on the record — a chorus or vibe here would just smear the melodic lines. Skipping the usual light-touch default on purpose.
+## DST - Module off
 
-**DLY — Off**
-- Not used. No delay on the bass anywhere in this song.
+Not used.
 
-**RVB — Room — On CTL**
-- Mix: 18, Decay: 32, Trail: On
-- CTL off: engaged. CTL on: bypassed.
-- Off state (Lennon verses) gets a light room to add space and match the dreamy, floating feel of that section.
-- On state (McCartney bridge) drops the reverb entirely — tighter and drier to match the driving, forward feel.
+## AMP - Module off
 
-## CTL summary
+Not used.
 
-- **CTL Off — Lennon verse sound.** No boost, light room reverb. Melodic, spacious, sits under the vocal.
-- **CTL On — McCartney bridge sound.** Clean boost engaged, reverb off. Tighter, punchier, pushes the song.
-- Engage CTL right at "Woke up, fell out of bed" and disengage back into the next Lennon verse.
+## CAB - Module off
 
-## Full pedalboard (signal chain order)
+Not used.
 
-**1. Flamma FS-08 Octave — Bypassed**
-- Footswitch off. No octave layering on this part — McCartney's line is melodic and single-note-focused; an octave stack would clutter it.
+## EQ - Bass EQ 1
 
-**2. Donner Ultimate Comp — Engaged**
-- COMP: 40
-- TONE: 60
-- LEVEL: 60
-- Mode: NORMAL
-- Light-moderate compression evens out finger dynamics without squashing the melodic phrasing — keeps the DI'd tone consistent the way the original recording's chain would have.
-- TONE pushed toward bright to keep finger attack audible before it hits the snaptone/EQ stage.
+33Hz: 3.
+150Hz: 2.
+600Hz: -3.
+2kHz: 2.
+8kHz: 3.
+VOL: 55.
+Fixed on. Not on CTL.
+Shapes note body and cut after the amp/capture. Where assigned to CTL, its output adds the specified lift after the gain stages. Numbers are GP-5 control values, not a calibrated loudness guarantee.
 
-**3. Donner Stylish Fuzz — Bypassed**
-- Footswitch off. No fuzz anywhere in this song's bass part.
+## MOD - Module off
 
-**4. Joyo Tidal Wave — Bypassed**
-- Footswitch off, Drive/Blend not engaged. This patch stays clean through the whole song — no reason to add a driven preamp stage here.
+Not used.
 
-**5. Joyo Narcissus — Bypassed**
-- Footswitch off. No chorus on this part — matches the MOD-off call on the GP-5. One dry, articulate voice, not a modulated one.
+## DLY - Module off
 
-**6. Valeton GP-5** — see settings above.
+Not used.
+
+## RVB - Room
+
+Mix: 6.
+Decay: 32.
+Trail: on.
+CTL assigned. Loads on; first CTL press switches it off.
+Adds the specified room or ambient tail. The revised mix keeps the initial note audible. Trail behavior follows the saved setting.
+
+## Switching and section map
+
+CTL blocks: PRE, RVB.
+- CTL off / loaded state: the Lennon-verse melodic sound. GP-5 active: NR, EQ, RVB, N->S.
+- First CTL press: the McCartney-bridge driving sound. GP-5 active: NR, PRE, EQ, N->S.
+- Press CTL again to return to the loaded block pattern, provided no shared MIDI block has been changed.
+
+## Full pedalboard
+
+Flamma FS-08 Octave -> Donner Ultimate Comp -> Donner Stylish Fuzz -> Joyo Tidal Wave -> Joyo American Sound -> Joyo Narcissus -> Valeton GP-5.
+Board settings are set by hand and are not encoded in the .prst.
+All numeric pedal positions use the existing 0–100 position shorthand unless a clock position is specified.
+
+## Flamma FS-08 Octave
+
+Bypassed throughout.
+-2OCT: 0.
+-OCT: 0.
++OCT: 0.
++2OCT: 0.
+Dry: 100.
+
+## Donner Ultimate Comp
+
+On throughout.
+COMP: 40.
+TONE: 60.
+LEVEL: 60.
+Mode: NORMAL.
+
+## Donner Stylish Fuzz
+
+Bypassed throughout.
+Sustain: 25.
+Treble: 50.
+Bass: 50.
+Volume: 50.
+
+## Joyo Tidal Wave
+
+Drive off throughout; preamp/EQ/Level remain active.
+Drive: 15.
+Blend: 20.
+Presence: 50.
+Level: 50.
+Treble: 50.
+Middle: 50.
+Bass: 50.
+Mid-Frequency: 500Hz.
+Bass-Shift: 80Hz.
+Cab-Sim (DI out): Off.
+Ground Lift: Off.
+The footswitch toggles drive only. Preamp EQ and Level stay active in both states. Cab-Sim/Ground Lift affect the DI path; main instrument output is unchanged.
+
+## Joyo American Sound
+
+Bypassed throughout.
+Level: 50.
+Drive: 10.
+Voice: 50.
+Low: 50.
+Mid: 50.
+High: 50.
+
+## Joyo Narcissus
+
+Bypassed throughout.
+Width: 30.
+Depth: 20.
+Rate: 20.
+Mode: Vintage.
+
+## Board choreography
+
+- Flamma FS-08 Octave: Bypassed throughout.
+- Donner Ultimate Comp: On throughout.
+- Donner Stylish Fuzz: Bypassed throughout.
+- Joyo Tidal Wave: Drive off throughout; preamp/EQ/Level remain active.
+- Joyo American Sound: Bypassed throughout.
+- Joyo Narcissus: Bypassed throughout.
+Set the board switches for the section you are entering. Intro-only or clean-only effects may need to start on. Return each pedal to its documented state at the next section. Board pedals are independent of CTL.
+
+## Revision record
+
+Approved audit entry 33.
+- SnapTone Treble: 62 -> 55.
+- PRE Gain: 55 -> 25.
+- EQ 2kHz: 5 -> 2.
+- RVB Mix: 18 -> 6.
+Pre-revision JSON, Markdown and original file hashes are preserved in Documents/patch-audit-2026-10-16/inventory.json and implementation-manifest.json.
+The site piece title and on-disk filenames stay stable; only the short pedal display name may change.

@@ -1,54 +1,106 @@
 # It's Not My Time — 3 Doors Down
 
+Revised 2026-10-16 following the approved library audit.
+Type: Song. Instrument: Harley Benton passive 5-string P/J.
+GP-5 only.
+Patch screen name: B-NotMyTim. Patch VOL: 50.
+Preset tempo: 100 BPM.
+
 From *3 Doors Down* (2008). About 100 BPM, est.
 Bass: Harley Benton P/J, 5-string, passive. GP-5 only.
 Driving post-grunge eighths that lock to the palm-muted guitars, then open up in the chorus.
 Built from the song's overall sound. I haven't verified the exact rig on this track.
 A pick suits this. Both pickups up. Tone knob around 70%.
 
-## Module chain
+## Revision intent
 
-**NR — Gate**, always on.
+Keep the musical role of the original patch while reducing redundant gain, excessive space and unclear switching where identified in audit entry 65.
+The module settings and section map below are the active revision.
+Audited capture volumes and Michael’s explicit patch-level adjustments are preserved.
+No hardware audition or measured level match has been performed.
+
+## GP-5 settings
+
+Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB.
+The encoded N->S block sits between DST and AMP when a SnapTone is used.
+
+AMP/CAB replacement: SnapTone GrittySVT (slot 57): SVT PUSHED (SVT-CL) + Apg810.
+Slot: 57. Always on.
+Gain: 50, VOL: 55, Bass: 55, Middle: 58, Treble: 58.
+AMP and CAB are both off; the capture already includes its cab/DI character.
+The capture voice is fixed across CTL states. Audited VOL is preserved for this slot.
+
+## NR - Gate
+
 THRE: 22.
-The always-on drive needs cleanup between the muted notes.
+Fixed on. Not on CTL.
+Use the lowest threshold that keeps rests quiet. Check soft notes and held-note decay. This gate is before the drives and amp; it does not directly gate noise generated after it.
 
-**PRE — Micro Boost**, on CTL.
-Gain: 55.
-A clean level push for the chorus.
+## PRE - Module off
 
-**DST — Bass OD**, always on.
-Gain: 45, Blend: 60, VOL: 58, Bass: 55, Treble: 56.
-Grit is part of the core sound here, the same as the guitars. Blend 60 keeps a clean low end under it.
+Not used.
 
-**AMP/CAB — NAM SnapTone, slot 57: GrittySVT** (always on)
-- Built from the `SVT PUSHED` NAM (SVT-CL) and the Apg810 IR, combined into one snaptone.
-- Real Ampeg SVT-CL pushed into grit, into an SVT 8x10.
-- Gritty SVT rock. Same family as the Higher patch.
-- Gain: 50, VOL: 55, Bass: 55, Middle: 58, Treble: 58
-- Gain 50: the capture as built.
-- Bass 55: a touch more low end.
-- Middle 58: more midrange, so it cuts through the guitars.
-- Treble 58: more top end for pick attack.
-- VOL 55: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
-- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 57 directly.
+## DST - Bass OD
 
-**EQ — Bass EQ 1**, always on.
-33Hz: +2, 150Hz: 0, 600Hz: -2, 2kHz: +4, 8kHz: +2, VOL: 54.
-+4 at 2kHz gives the growl against loud guitars. -2 at 600Hz keeps it from going boxy.
+Gain: 25.
+Blend: 30.
+VOL: 58.
+Bass: 55.
+Treble: 56.
+CTL assigned. Loads off; first CTL press switches it on.
+Supplies the selected additional drive voice. Use its level and gain as separate controls. A pre-amp boost may add compression instead of a proportional solo-volume increase.
 
-**MOD — off.**
+## AMP - Module off
 
-**DLY — off.**
+Not used.
 
-**RVB — Room**, on CTL.
-Mix: 14, Decay: 30, Trail: on.
-A small room for the chorus.
+## CAB - Module off
 
-## CTL footswitch
+Not used.
 
-On CTL: PRE (Micro Boost), RVB (Room).
+## EQ - Bass EQ 1
 
-- **CTL off** — Verses. Tight, gritty, driving. This is the resting state the patch loads into.
-- **CTL on** — Choruses. A level push and a small room.
+33Hz: 2.
+150Hz: 0.
+600Hz: -2.
+2kHz: 4.
+8kHz: 2.
+VOL: 54.
+Fixed on. Not on CTL.
+Shapes note body and cut after the amp/capture. Where assigned to CTL, its output adds the specified lift after the gain stages. Numbers are GP-5 control values, not a calibrated loudness guarantee.
 
-Engage at the chorus. Off for the verses.
+## MOD - Module off
+
+Not used.
+
+## DLY - Module off
+
+Not used.
+
+## RVB - Room
+
+Mix: 5.
+Decay: 30.
+Trail: on.
+CTL assigned. Loads off; first CTL press switches it on.
+Adds the specified room or ambient tail. The revised mix keeps the initial note audible. Trail behavior follows the saved setting.
+
+## Switching and section map
+
+CTL blocks: DST, RVB.
+- CTL off / loaded state: Verses. GP-5 active: NR, EQ, N->S.
+- First CTL press: Choruses. GP-5 active: NR, DST, EQ, RVB, N->S.
+- Press CTL again to return to the loaded block pattern, provided no shared MIDI block has been changed.
+
+## Revision record
+
+Approved audit entry 65.
+- Pedal display name: NotMyTime -> B-NotMyTim. Filenames stay unchanged.
+- PRE: Micro Boost -> off.
+- PRE: removed from CTL.
+- DST Gain: 45 -> 25.
+- DST Blend: 60 -> 30.
+- DST: assigned to CTL.
+- RVB Mix: 14 -> 5.
+Pre-revision JSON, Markdown and original file hashes are preserved in Documents/patch-audit-2026-10-16/inventory.json and implementation-manifest.json.
+The site piece title and on-disk filenames stay stable; only the short pedal display name may change.

@@ -1,54 +1,103 @@
 # Adrift-LS — Adrift by Lunatic Soul
 
-Lunatic Soul (Mariusz Duda's solo project, outside Riverside) — atmospheric, spacious, post-rock-adjacent prog. Not metal, not a riff-driven tone. This patch is built for feel and space, not attack.
-GP-5 only, Sire fretless, no pedalboard.
+Revised 2026-10-16 following the approved library audit.
+Type: Song. Instrument: Sire V7 2nd Generation 5-string fretless, flatwounds; run active.
+GP-5 only.
+Patch screen name: Adrift - L. Patch VOL: 50.
+Preset tempo: 100 BPM.
 
-## Instrument: Sire V7 2nd Gen Fretless — Active
+Atmospheric fretless bass for Adrift. Sire V7 in active mode, flatwounds. Set its onboard EQ near flat and check the actual input peaks. Active mode is a voicing option, not a guarantee of more downstream headroom. Avalon supports the clean line; CTL adds restrained delay and Hall for the spacious passages.
 
-Active electronics for this one. The patch leans on chorus/delay/reverb to build atmosphere, and active output gives cleaner headroom feeding into that chain instead of the passive pickup's softer top end getting buried under the effects.
+## Revision intent
 
-## Module chain
+Keep the musical role of the original patch while reducing redundant gain, excessive space and unclear switching where identified in audit entry 8.
+The module settings and section map below are the active revision.
+Audited capture volumes and Michael’s explicit patch-level adjustments are preserved.
+No hardware audition or measured level match has been performed.
 
-**NR — Gate**, always on.
-THRE: 20. Low threshold — clean, low-gain tone doesn't need much gating, just enough to kill hum in the space between notes.
+## GP-5 settings
 
-**PRE — off.** No boost. This patch never needs to get louder or pushier, just wider.
+Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB.
+The encoded N->S block sits between DST and AMP when a SnapTone is used.
 
-**DST — off.** No drive anywhere in this one.
+AMP/CAB replacement: SnapTone AvalonAD2022 (slot 52): Avalon - 38 dB - Chan 1 (Avalon AD2022) + none (studio DI).
+Slot: 52. Always on.
+Gain: 50, VOL: 75, Bass: 55, Middle: 45, Treble: 50.
+AMP and CAB are both off; the capture already includes its cab/DI character.
+The capture voice is fixed across CTL states. Audited VOL is preserved for this slot.
 
-**AMP/CAB — NAM SnapTone, slot 52: AvalonAD2022** (always on)
-- Built from the `Avalon - 38 dB - Chan 1 (Avalon AD2022)` NAM and no cab IR (straight DI), combined into one snaptone.
-- Avalon AD2022 Class A preamp at 38 dB. A studio DI, not an amp: no speaker coloration.
-- Mariusz Duda's fretless on Lunatic Soul is intimate and studio-clean. A DI fits better than any cab.
-- Gain: 50, VOL: 75, Bass: 60, Middle: 45, Treble: 50
-- Gain 50: the capture as built.
-- Bass 60: Full low end, this needs to feel like it's under everything.
-- Middle 45: Kept out of the way so the fretless glide reads clearly.
-- Treble 50: Present but not clanky.
-- VOL 75: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
-- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 52 directly.
+## NR - Gate
 
-**EQ — Bass EQ 2**, always on.
-50Hz: +3, 120Hz: +2, 400Hz: -3, 800Hz: -2, 4.5kHz: +2, VOL: 52.
-Light low-end reinforcement, a shallow scoop through the low-mids so the tone stays open instead of boxy, and a small lift up top to keep fretless glide/finger noise present without harshness.
+THRE: 8.
+Fixed on. Not on CTL.
+Use the lowest threshold that keeps rests quiet. Check soft notes and held-note decay. This gate is before the drives and amp; it does not directly gate noise generated after it.
 
-**MOD — B-Chorus**, always on.
-Depth: 22, Rate: 0.35Hz, VOL: 52.
-Kept light per the "light hand" rule — this isn't a drenched chorus tone, just enough motion to widen the sound and stop a clean fretless bass from sitting flat and static.
+## PRE - Module off
 
-**DLY — Analog**, on CTL.
-Mix: 30, Time: 450ms, Feedback: 25, Trail: true.
-Off for the closer, more intimate sections. On for the more expansive, spacious sections — the repeats give the line room to breathe and trail into the next phrase, which fits this album's whole aesthetic.
+Not used.
 
-**RVB — Hall**, on CTL (same switch as DLY).
-Mix: 35, Decay: 55, Trail: true.
-Off in the resting state — dry and close. On alongside the delay for the big, open sections — the two together are what turn "clean bass" into "atmosphere."
+## DST - Module off
 
-## CTL footswitch
+Not used.
 
-Two modules on CTL: DLY (Analog) and RVB (Hall).
+## AMP - Module off
 
-- **CTL off** — resting state the patch loads into. Dry, close, intimate — chorus is still there giving it width, but no delay or reverb tail.
-- **CTL on** — DLY and RVB both engage together. Big, spacious, trailing — for the more expansive, atmospheric passages this album is built around.
+Not used.
 
-Engage CTL for the wide-open sections, back off when the part needs to sit close and dry. One footswitch move gets both effects at once, which is the point — this patch is designed around exactly two states, not constant tweaking.
+## CAB - Module off
+
+Not used.
+
+## EQ - Bass EQ 2
+
+50Hz: 1.
+120Hz: 2.
+400Hz: -3.
+800Hz: -2.
+4.5kHz: 2.
+VOL: 52.
+Fixed on. Not on CTL.
+Shapes note body and cut after the amp/capture. Where assigned to CTL, its output adds the specified lift after the gain stages. Numbers are GP-5 control values, not a calibrated loudness guarantee.
+
+## MOD - B-Chorus
+
+Depth: 22.
+Rate: 0.35.
+VOL: 52.
+Fixed on. Not on CTL.
+Adds the specified movement. Keep it underneath the note except for intentionally wet artist or ambient voices.
+
+## DLY - Analog
+
+Mix: 18.
+Time: 450.
+Feedback: 25.
+Trail: on.
+CTL assigned. Loads off; first CTL press switches it on.
+Adds repeats only in the listed states. Trail preserves the remaining repeats when this block is bypassed; it does not change delay time or mix.
+
+## RVB - Hall
+
+Mix: 18.
+Decay: 55.
+Trail: on.
+CTL assigned. Loads off; first CTL press switches it on.
+Adds the specified room or ambient tail. The revised mix keeps the initial note audible. Trail behavior follows the saved setting.
+
+## Switching and section map
+
+CTL blocks: DLY, RVB.
+- CTL off / loaded state: Clean fretless support. GP-5 active: NR, EQ, MOD, N->S.
+- First CTL press: Ambient delay/Hall voice. GP-5 active: NR, EQ, MOD, DLY, RVB, N->S.
+- Press CTL again to return to the loaded block pattern, provided no shared MIDI block has been changed.
+
+## Revision record
+
+Approved audit entry 8.
+- SnapTone Bass: 60 -> 55.
+- NR THRE: 20 -> 8.
+- EQ 50Hz: 3 -> 1.
+- DLY Mix: 30 -> 18.
+- RVB Mix: 35 -> 18.
+Pre-revision JSON, Markdown and original file hashes are preserved in Documents/patch-audit-2026-10-16/inventory.json and implementation-manifest.json.
+The site piece title and on-disk filenames stay stable; only the short pedal display name may change.

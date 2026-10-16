@@ -1,9 +1,12 @@
-# Tim Henson / Polyphia (Bass) — Signature Sound
+# Polyphia — Clay Gober Signature Bass Sound
+
+Revised 2026-10-16 following the approved library audit.
+Type: Artist. Instrument: Harley Benton passive 5-string P/J.
+Full board. Board Option: American Sound (bypassed; retained for legacy full-board builds).
+Patch screen name: Polyphia-B. Patch VOL: 55.
+Preset tempo: 120 BPM.
 
 Artist patch. Bass: Harley Benton P/J, 5-string, passive. Full board.
-
-## The signature sound
-
 Polyphia's bassist is Clay Gober. The bass in the band works like the low end of a modern pop/trap record, not a rock band.
 - **The base tone.** Hi-fi, tight, bright. Lots of slap and fingerstyle, with every pop and ghost note clear. It sounds DI'd and produced, not like a miked cab in a room.
 - **The heavy sections.** A grindy, upper-mid drive blended under a clean low end, in the modern parallel-drive style. The fundamental stays solid while the grit cuts through the guitars.
@@ -11,115 +14,168 @@ Polyphia's bassist is Clay Gober. The bass in the band works like the low end of
 How this patch models it:
 - B2 AvalonAD2022, a studio-DI snaptone, is the hi-fi base for the whole patch.
 - The heavy-section grind comes from the Joyo Tidal Wave's drive, stomped on and off. Blend at 40 keeps it parallel, so the clean low end stays under the dirt.
-- The Flamma -1 octave is the 808-style sub, stomped only for those sections.
 
-No GP-5 CTL. The two sounds are the Tidal Wave drive footswitch, which already does exactly what a CTL drive would. Per the board rules, dirt comes from the Tidal Wave, not the GP-5's Bass OD.
+## Revision intent
 
-Pickups: both up, bridge (J) at 100%, neck (P) at about 85%, tone at about 80%. The J-forward blend gives slap and pops their snap. Fingers or slap for the clean parts. Hard fingerstyle or a pick for the heavy riffs.
+Keep the musical role of the original patch while reducing redundant gain, excessive space and unclear switching where identified in audit entry 2.
+The module settings and section map below are the active revision.
+Audited capture volumes and Michael’s explicit patch-level adjustments are preserved.
+No hardware audition or measured level match has been performed.
 
 ## GP-5 settings
 
-Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
+Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB.
+The encoded N->S block sits between DST and AMP when a SnapTone is used.
 
-**NR — Gate**, always on.
+AMP/CAB replacement: SnapTone AvalonAD2022 (slot 52): Avalon - 38 dB - Chan 1 (Avalon AD2022 studio DI).
+Slot: 52. Always on.
+Gain: 50, VOL: 75, Bass: 55, Middle: 48, Treble: 60.
+AMP and CAB are both off; the capture already includes its cab/DI character.
+The capture voice is fixed across CTL states. Audited VOL is preserved for this slot.
+
+## NR - Gate
+
 THRE: 18.
-Polyphia riffs have hard stops. A light gate keeps the rests clean when the Tidal Wave drive is on, without choking ghost notes.
+Fixed on. Not on CTL.
+Use the lowest threshold that keeps rests quiet. Check soft notes and held-note decay. This gate is before the drives and amp; it does not directly gate noise generated after it.
 
-**PRE — COMP4 (Keeley C4), MIDI-only, loads bypassed.**
-- Sustain: 55, Attack: 35, Clip: 40, VOL: 55
-- Off by default: the Donner Ultimate Comp does the compression on the board.
-- On MIDI for slap sections. A second, faster compressor evens out thumb hits against pops, the same two-comp slap trick as the Hair (Graham Central Station) patch.
+## PRE - COMP4
 
-**DST — Off.**
-Drive comes from the Tidal Wave. Bass OD is too harsh.
+Sustain: 35.
+Attack: 35.
+Clip: 40.
+VOL: 55.
+MIDI-only. Loads off.
+Controls the source dynamics or adds the specified push/filter before distortion and amp processing. The settings stay fixed; only its on/off state can change.
 
-**AMP/CAB — NAM SnapTone, slot 52: AvalonAD2022** (always on)
-- The `Avalon - 38 dB - Chan 1` NAM: an Avalon AD2022 studio preamp. A DI capture with no cab. That's the snaptone's role: polished studio DI.
-- Modern produced bass is DI-first, which makes this the right base. It's also a finished, DI-style tone for the live rig.
-- Gain: 50, VOL: 75, Bass: 55, Middle: 48, Treble: 60
-- Gain 50: as captured, clean.
-- Bass 55: a little extra weight under the slap.
-- Middle 48: a slight scoop, for the hi-fi slap curve.
-- Treble 60: pops and string snap on top.
-- VOL 75: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level.
-- AMP and CAB are off in the `.prst`. The N->S block calls slot 52 directly.
+## DST - Module off
 
-**EQ — Bass EQ 1**, always on.
-33Hz: +1, 150Hz: +1, 600Hz: -2, 2kHz: +2, 8kHz: +2, VOL: 50.
-The modern slap curve.
-+1 at 33Hz: extended low end for the 5-string's low B.
--2 at 600Hz: takes out honk.
-+2 at 2kHz: where the Tidal Wave grind and finger attack cut through the guitars.
-+2 at 8kHz: string zing on pops.
+Not used.
 
-**MOD — Off.** Not used.
+## AMP - Module off
 
-**DLY — Off.** Not used.
+Not used.
 
-**RVB — Room**, always on.
-Mix: 6, Decay: 20, Trail: on.
-Barely there. Modern produced bass is close to dry, and this just keeps the DI from sounding sterile.
+## CAB - Module off
 
-## CTL summary
+Not used.
 
-- No CTL assignment. Allowed on bass.
-- The clean-vs-heavy switch is the Tidal Wave drive footswitch. See below.
+## EQ - Bass EQ 1
 
-## MIDI toggles
+33Hz: 1.
+150Hz: 1.
+600Hz: -2.
+2kHz: 2.
+8kHz: 2.
+VOL: 50.
+Fixed on. Not on CTL.
+Shapes note body and cut after the amp/capture. Where assigned to CTL, its output adds the specified lift after the gain stages. Numbers are GP-5 control values, not a calibrated loudness guarantee.
 
-MIDI = True (added 2026-10-12). With no MIDI controller connected, the patch loads and plays exactly as before: CTL and the board work the same. MIDI adds single-block toggles on top.
+## MOD - Module off
 
-On MIDI: PRE (COMP4), MIDI-only, loads bypassed.
+Not used.
 
-Sounds:
-- **Base tone** (default). Hi-fi DI, fingerstyle.
-- **Slap.** MIDI PRE on. Second compressor for even thumb-and-pop slap features.
-- The board stomps (Tidal Wave drive for heavy sections, Flamma -OCT for the 808 layer) still work the same on top.
+## DLY - Module off
 
-## Full pedalboard (signal chain order)
+Not used.
 
-**1. Flamma FS-08 Octave — Bypassed by default, stomp for 808-style sections**
-- -2OCT: 0
-- -OCT: 35
-- +OCT: 0
-- +2OCT: 0
-- Dry: 100
-- Stomp it on for the trap-style sections where the track wants a sub layer. Dry 100 keeps your real bass on top. -OCT 35 makes it a layer, not a second bass.
-- Keep it off for slap and fast runs. Polyphonic tracking gets glitchy on fast, percussive playing.
+## RVB - Room
 
-**2. Donner Ultimate Comp — Engaged all the time**
-- COMP: 55
-- TONE: 60
-- LEVEL: 55
-- Mode: TREBLE
-- Slap needs it. COMP 55 brings thumbs and pops to one level. TREBLE mode keeps the pop attack audible.
+Mix: 6.
+Decay: 20.
+Trail: on.
+Fixed on. Not on CTL.
+Adds the specified room or ambient tail. The revised mix keeps the initial note audible. Trail behavior follows the saved setting.
 
-**3. Donner Stylish Fuzz — Bypassed**
-- Footswitch off. No fuzz.
+## Switching and section map
 
-**4. Joyo Tidal Wave — Engaged (preamp/EQ). Drive stomped for heavy sections**
-- Drive: 50
-- Blend: 40
-- Presence: 62
-- Level: 55
-- Treble: 58
-- Middle: 55
-- Bass: 55
-- Mid-Frequency: 1000Hz
-- Bass-Shift: 80Hz
-- Cab-Sim (DI out): Off
-- Ground Lift: Off
-- Drive footswitch: off for clean, slap and fingerstyle parts. On for heavy riffs and breakdowns.
-- Blend 40 is the key setting. The dry signal keeps the low end solid, and the drive adds grind on top. That's the parallel-drive sound.
-- Presence 62 and Mid-Frequency 1000Hz put the grit in the upper mids, where it cuts through the guitars.
-- Bass-Shift 80Hz keeps the drive tight on fast palm-muted riffs and the low B.
-- The preamp and EQ stay active either way.
+CTL blocks: None.
+- CTL off / loaded state: Main rhythm / intro / supporting part. GP-5 active: NR, EQ, RVB, N->S.
+- No GP-5 CTL change. Use the board stomps listed below when the arrangement needs another sound.
 
-**5. Joyo Narcissus — Bypassed**
-- Footswitch off. No chorus.
+MIDI toggles: PRE.
+MIDI mapping lives on the controller/device, not in the .prst.
+- PRE COMP4: loads off; toggle to add this block independently.
+- PRE-only alternative from loaded state: CTL off, MIDI PRE on; other MIDI blocks at their load states. GP-5 active: NR, PRE, EQ, RVB, N->S. Board switches unchanged.
 
-**6. Valeton GP-5** — see settings above.
+## Full pedalboard
 
-## Note on the full board vs. the `.prst`
+Flamma FS-08 Octave -> Donner Ultimate Comp -> Donner Stylish Fuzz -> Joyo Tidal Wave -> Joyo American Sound -> Joyo Narcissus -> Valeton GP-5.
+Board settings are set by hand and are not encoded in the .prst.
+All numeric pedal positions use the existing 0–100 position shorthand unless a clock position is specified.
 
-The `.prst` file only encodes the GP-5's own 9 modules. The Flamma, Donner Ultimate Comp, Donner Stylish Fuzz, Joyo Tidal Wave and Joyo Narcissus settings above are not and cannot be part of that file. They're set by hand on the board, and documented here so the full patch can be rebuilt. The Tidal Wave drive stomp is this patch's second sound, so don't skip it.
+## Flamma FS-08 Octave
+
+Off for base/slap; on for optional 808-style sections.
+-2OCT: 0.
+-OCT: 35.
++OCT: 0.
++2OCT: 0.
+Dry: 100.
+
+## Donner Ultimate Comp
+
+On throughout.
+COMP: 55.
+TONE: 60.
+LEVEL: 55.
+Mode: TREBLE.
+
+## Donner Stylish Fuzz
+
+Bypassed throughout.
+Sustain: 25.
+Treble: 50.
+Bass: 50.
+Volume: 50.
+
+## Joyo Tidal Wave
+
+Drive off for clean/slap; on for heavy riffs and breakdowns; preamp active.
+Drive: 50.
+Blend: 40.
+Presence: 62.
+Level: 55.
+Treble: 58.
+Middle: 55.
+Bass: 55.
+Mid-Frequency: 1000Hz.
+Bass-Shift: 80Hz.
+Cab-Sim (DI out): Off.
+Ground Lift: Off.
+The footswitch toggles drive only. Preamp EQ and Level stay active in both states. Cab-Sim/Ground Lift affect the DI path; main instrument output is unchanged.
+
+## Joyo American Sound
+
+Bypassed throughout.
+Level: 50.
+Drive: 10.
+Voice: 50.
+Low: 50.
+Mid: 50.
+High: 50.
+
+## Joyo Narcissus
+
+Bypassed throughout.
+Width: 30.
+Depth: 20.
+Rate: 20.
+Mode: Vintage.
+
+## Board choreography
+
+- Flamma FS-08 Octave: Off for base/slap; on for optional 808-style sections.
+- Donner Ultimate Comp: On throughout.
+- Donner Stylish Fuzz: Bypassed throughout.
+- Joyo Tidal Wave: Drive off for clean/slap; on for heavy riffs and breakdowns; preamp active.
+- Joyo American Sound: Bypassed throughout.
+- Joyo Narcissus: Bypassed throughout.
+Set the board switches for the section you are entering. Intro-only or clean-only effects may need to start on. Return each pedal to its documented state at the next section. Board pedals are independent of CTL.
+
+## Revision record
+
+Approved audit entry 2.
+- PRE Sustain: 55 -> 35.
+Pre-revision JSON, Markdown and original file hashes are preserved in Documents/patch-audit-2026-10-16/inventory.json and implementation-manifest.json.
+The site piece title and on-disk filenames stay stable; only the short pedal display name may change.

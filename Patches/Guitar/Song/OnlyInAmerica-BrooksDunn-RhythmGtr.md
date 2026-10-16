@@ -1,54 +1,107 @@
 # Only in America (Rhythm Guitar) — Brooks & Dunn
 
+Revised 2026-10-16 following the approved library audit.
+Type: Song. Instrument: HSS Stratocaster.
+GP-5 only.
+Patch screen name: OnlyInAm-G. Patch VOL: 50.
+Preset tempo: 120 BPM.
+
 From *Steers & Stripes* (2001). About 120 BPM, est.
 An arena anthem. It's closer to heartland rock than honky-tonk, with big open-chord crunch and a soaring chorus.
 Built from the song's overall sound. I haven't verified the exact guitars and amps on the record.
 Instrument: Stratocaster (HSS). Bridge humbucker for the crunch rhythm and the lead.
 GP-5 only, Stratocaster (HSS), no pedalboard.
 
-## Module chain
+## Revision intent
 
-**NR — Gate**, always on.
+Keep the musical role of the original patch while reducing redundant gain, excessive space and unclear switching where identified in audit entry 175.
+The module settings and section map below are the active revision.
+Audited capture volumes and Michael’s explicit patch-level adjustments are preserved.
+No hardware audition or measured level match has been performed.
+
+## GP-5 settings
+
+Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB.
+The encoded N->S block sits between DST and AMP when a SnapTone is used.
+
+AMP/CAB replacement: SnapTone BritishCrunch (slot 69): Marshall JTM45 I Crunch BAL DI + Origin Effects British Straight 4x12 Medium Mix.
+Slot: 69. Always on.
+Gain: 46, VOL: 67, Bass: 50, Middle: 58, Treble: 56.
+AMP and CAB are both off; the capture already includes its cab/DI character.
+The capture voice is fixed across CTL states. Audited VOL is preserved for this slot.
+
+## NR - Gate
+
 THRE: 28.
-The JTM45 at gain 48 hisses between chords. 28 stops that without cutting ringing chords short.
+Fixed on. Not on CTL.
+Use the lowest threshold that keeps rests quiet. Check soft notes and held-note decay. This gate is before the drives and amp; it does not directly gate noise generated after it.
 
-**PRE — Boost (EP Booster)**, on CTL.
-Gain: 45, +3dB: on, Bright: off.
-Pushes the JTM45 into lead saturation and adds level for the solo.
+## PRE - Boost
 
-**DST — off.** No pedal drive. The amp handles the crunch.
+Gain: 25.
++3dB: off.
+Bright: off.
+CTL assigned. Loads off; first CTL press switches it on.
+Controls the source dynamics or adds the specified push/filter before distortion and amp processing. The settings stay fixed; only its on/off state can change.
 
-**AMP/CAB — NAM SnapTone, slot 69: BritishCrunch** (always on)
-- Built from the `Marshall JTM45 I Crunch BAL DI` NAM and the Origin Effects British Straight 4x12 Medium Mix IR, combined into one snaptone.
-- Real Marshall JTM45 crunch, into the Origin Effects British Straight 4x12.
-- Arena-country crunch. JTM45, the same amp family as the old UK 45 model, but a real capture.
-- Gain: 46, VOL: 67, Bass: 50, Middle: 58, Treble: 56
-- Gain 46: a little under default. This part wants less push than the other BritishCrunch patches.
-- Bass 50: flat.
-- Middle 58: more midrange.
-- Treble 56: more top end.
-- VOL 67: the level Michael set for this snaptone in the 2026-10-01 VOL audit. Trim here if the patch jumps in level against your others.
-- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 69 directly.
+## DST - Module off
 
-**EQ — Guitar EQ 2**, always on.
-100Hz: -3, 500Hz: 0, 1kHz: +1, 3kHz: +1, 6kHz: -2, VOL: 50.
-Low cut tightens the chords. A slight mid-presence lift. The top is trimmed.
+Not used.
 
-**MOD — off.**
+## AMP - Module off
 
-**DLY — Analog**, on CTL.
-Mix: 15, Time: 375ms, F.Back: 22, Trail: on.
-An eighth note at 120 BPM. It thickens the solo.
+Not used.
 
-**RVB — Hall**, always on.
-Mix: 14, Decay: 35, Trail: on.
-A small hall for an arena-sized sense of space. Mix 14 keeps the rhythm tight.
+## CAB - Module off
 
-## CTL footswitch
+Not used.
 
-On CTL: PRE (Boost), DLY (Analog).
+## EQ - Guitar EQ 2
 
-- **CTL off** — Rhythm. JTM45 crunch for the verses and the big chorus chords. This is the resting state the patch loads into.
-- **CTL on** — Lead. Boosted JTM45 plus analog repeats for the solo and the melodic fills.
+100Hz: -3.
+500Hz: 0.
+1kHz: 1.
+3kHz: 1.
+6kHz: -2.
+VOL: 53.
+CTL assigned. Loads off; first CTL press switches it on.
+Shapes note body and cut after the amp/capture. Where assigned to CTL, its output adds the specified lift after the gain stages. Numbers are GP-5 control values, not a calibrated loudness guarantee.
 
-Engage CTL for the solo. Stay off for the chord work.
+## MOD - Module off
+
+Not used.
+
+## DLY - Analog
+
+Mix: 15.
+Time: 375.
+Feedback: 22.
+Trail: on.
+CTL assigned. Loads off; first CTL press switches it on.
+Adds repeats only in the listed states. Trail preserves the remaining repeats when this block is bypassed; it does not change delay time or mix.
+
+## RVB - Hall
+
+Mix: 10.
+Decay: 35.
+Trail: on.
+Fixed on. Not on CTL.
+Adds the specified room or ambient tail. The revised mix keeps the initial note audible. Trail behavior follows the saved setting.
+
+## Switching and section map
+
+CTL blocks: PRE, EQ, DLY.
+- CTL off / loaded state: Rhythm. GP-5 active: NR, RVB, N->S.
+- First CTL press: Lead. GP-5 active: NR, PRE, EQ, DLY, RVB, N->S.
+- Press CTL again to return to the loaded block pattern, provided no shared MIDI block has been changed.
+
+## Revision record
+
+Approved audit entry 175.
+- PRE Gain: 45 -> 25.
+- PRE +3dB: true -> off.
+- EQ VOL: 50 -> 53.
+- EQ: assigned to CTL.
+- RVB Mix: 14 -> 10.
+Pre-revision JSON, Markdown and original file hashes are preserved in Documents/patch-audit-2026-10-16/inventory.json and implementation-manifest.json.
+The site piece title and on-disk filenames stay stable; only the short pedal display name may change.

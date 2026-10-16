@@ -1,54 +1,104 @@
 # Bright Size Life (Guitar) — Pat Metheny
 
+Revised 2026-10-16 following the approved library audit.
+Type: Song. Instrument: HSS Stratocaster.
+GP-5 only.
+Patch screen name: G-BrightSi. Patch VOL: 50.
+Preset tempo: 170 BPM.
+
 Pat Metheny, 1976. BPM est., brisk swing. Metheny is known for a warm, round, dark clean tone on a hollowbody, neck pickup, with a fluid, slightly compressed legato feel on the head and solos. The exact amp and studio chain on this record are not verified, so this is built from his general sound.
 Instrument: Stratocaster (HSS). A Strat is much brighter and snappier than a hollowbody, so the patch pulls the highs down hard. Use the neck pickup, tone knob around 4-5, and pick with the fleshy part of the pick or thumb-side to soften the attack.
 GP-5 only, Stratocaster (HSS), no pedalboard.
 
-## Module chain
+## Revision intent
 
-**NR — Gate**, always on.
+Keep the musical role of the original patch while reducing redundant gain, excessive space and unclear switching where identified in audit entry 144.
+The module settings and section map below are the active revision.
+Audited capture volumes and Michael’s explicit patch-level adjustments are preserved.
+No hardware audition or measured level match has been performed.
+
+## GP-5 settings
+
+Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB.
+The encoded N->S block sits between DST and AMP when a SnapTone is used.
+
+AMP/CAB replacement: SnapTone BrightTwin (slot 64): CLEANEST - Fender Deluxe Reverb 1965 [Hyper Accuracy] + TWIN REVERB __ BALANCED (vulturized Twin).
+Slot: 64. Always on.
+Gain: 50, VOL: 75, Bass: 55, Middle: 50, Treble: 42.
+AMP and CAB are both off; the capture already includes its cab/DI character.
+The capture voice is fixed across CTL states. Audited VOL is preserved for this slot.
+
+## NR - Gate
+
 THRE: 10.
-Clean tone with single-coil hum risk. 10 is gentle and will not cut note decay.
+Fixed on. Not on CTL.
+Use the lowest threshold that keeps rests quiet. Check soft notes and held-note decay. This gate is before the drives and amp; it does not directly gate noise generated after it.
 
-**PRE — COMP**, always on.
-Sustain: 30, VOL: 55.
-Light Ross-style leveling. 30 evens the chord and single-note attack and adds a little sustain, but keeps the dynamics.
+## PRE - COMP
 
-**DST — Green OD**, on CTL.
-Gain: 12, Tone: 40, VOL: 65.
-On CTL. Gain 12 is a warm push, not overdrive. Tone 40 keeps it dark. VOL 65 gives a small lead lift.
+Sustain: 30.
+VOL: 55.
+Fixed on. Not on CTL.
+Controls the source dynamics or adds the specified push/filter before distortion and amp processing. The settings stay fixed; only its on/off state can change.
 
-**AMP/CAB — NAM SnapTone, slot 64: BrightTwin** (always on)
-- Built from the `CLEANEST - Fender Deluxe Reverb 1965 [Hyper Accuracy]` NAM and the TWIN REVERB __ BALANCED (vulturized Twin) IR, combined into one snaptone.
-- 1965 blackface Deluxe Reverb at its cleanest setting. It shares the Twin's blackface preamp circuit, so here it's the amp half of a Twin clean, into a real Twin 2x12 (JBL D120F) IR. Rebuilt 2026-09-26: the original BrightTwin used the Tim R Twin Vibrato-channel capture, which was dropped for being too quiet. Balanced IR blend.
-- Warm, round jazz clean. The balanced IR has more low end than TwinClean's.
-- Gain: 50, VOL: 75, Bass: 55, Middle: 50, Treble: 35
-- Gain 50: the capture as built.
-- Bass 55: a touch more low end.
-- Middle 50: flat.
-- Treble 35: top end pulled back noticeably.
-- VOL 75: the level Michael set for this snaptone in the 2026-10-01 VOL audit. Trim here if the patch jumps in level against your others.
-- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 64 directly.
+## DST - Module off
 
-**EQ — Guitar EQ 1**, always on.
-125Hz: 0, 400Hz: +2, 800Hz: 0, 1.6kHz: -2, 4kHz: -5, VOL: +50.
-Hollowbody voicing. +2 at 400Hz for woody warmth, -2 at 1.6kHz and -5 at 4kHz to remove the Strat's bite and quack.
+Not used.
 
-**MOD — off.** No modulation. The record is dry and natural.
+## AMP - Module off
 
-**DLY — Tape**, on CTL.
-Mix: 14, Time: 320, F.Back: 22, Trail: on.
-On CTL. Soft, dark repeats for lead lines. Mix 14 and F.Back 22 keep it in the background. Trail on so repeats ring out when CTL turns off.
+Not used.
 
-**RVB — Room**, always on.
-Mix: 12, Decay: 25, Trail: off.
-Always on. A small natural room. Mix 12 gives some space without washing out chords.
+## CAB - Module off
 
-## CTL footswitch
+Not used.
 
-On CTL: DST (Green OD), DLY (Tape).
+## EQ - Guitar EQ 1
 
-- **CTL off** — Comping and chordal parts. Warm, dark, clean, close to dry with a small room. This is the resting state. This is the resting state the patch loads into.
-- **CTL on** — Head melody and solos. A mild push adds sustain and a little bloom, and a tape delay adds a soft trailing ambience.
+125Hz: 0.
+400Hz: 2.
+800Hz: 0.
+1.6kHz: -2.
+4kHz: -5.
+VOL: 50.
+Fixed on. Not on CTL.
+Shapes note body and cut after the amp/capture. Where assigned to CTL, its output adds the specified lift after the gain stages. Numbers are GP-5 control values, not a calibrated loudness guarantee.
 
-Engage CTL for the melodic head and solos. Back off for chords and comping.
+## MOD - Module off
+
+Not used.
+
+## DLY - Tape
+
+Mix: 14.
+Time: 320.
+F.Back: 22.
+Trail: on.
+CTL assigned. Loads off; first CTL press switches it on.
+Adds repeats only in the listed states. Trail preserves the remaining repeats when this block is bypassed; it does not change delay time or mix.
+
+## RVB - Room
+
+Mix: 8.
+Decay: 25.
+Trail: off.
+Fixed on. Not on CTL.
+Adds the specified room or ambient tail. The revised mix keeps the initial note audible. Trail behavior follows the saved setting.
+
+## Switching and section map
+
+CTL blocks: DLY.
+- CTL off / loaded state: Warm clean comping/head. GP-5 active: NR, PRE, EQ, RVB, N->S.
+- First CTL press: Clean melodic lead with Tape. GP-5 active: NR, PRE, EQ, DLY, RVB, N->S.
+- Press CTL again to return to the loaded block pattern, provided no shared MIDI block has been changed.
+
+## Revision record
+
+Approved audit entry 144.
+- Pedal display name: BrightSizeLife-Metheny-Gtr -> G-BrightSi. Filenames stay unchanged.
+- SnapTone Treble: 35 -> 42.
+- DST: Green OD -> off.
+- DST: removed from CTL.
+- RVB Mix: 12 -> 8.
+Pre-revision JSON, Markdown and original file hashes are preserved in Documents/patch-audit-2026-10-16/inventory.json and implementation-manifest.json.
+The site piece title and on-disk filenames stay stable; only the short pedal display name may change.

@@ -25,7 +25,7 @@
       "model": "COMP4",
       "always_on": true,
       "settings": {
-        "Sustain": 42,
+        "Sustain": 30,
         "Attack": 40,
         "VOL": 56,
         "Clip": 35

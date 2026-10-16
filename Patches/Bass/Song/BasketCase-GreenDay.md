@@ -1,93 +1,168 @@
 # Basket Case — Green Day
 
+Revised 2026-10-16 following the approved library audit.
+Type: Song. Instrument: Harley Benton passive 5-string P/J.
+Full board. Board Option: American Sound (bypassed; retained for legacy full-board builds).
+Patch screen name: BasketCase. Patch VOL: 55.
+Preset tempo: 171 BPM.
+
 Bass: Harley Benton P/J, 5-string, passive. Full board.
 From *Dookie* (1994), ~171 BPM.
 Mike Dirnt's tone here is bright, punchy pop-punk bass — famously built on blending a clean signal with a grittier, driven layer rather than going full fuzz. The song runs at high energy throughout; the chorus ("I went to a shrink...") pushes a bit harder with the vocal harmonies.
 
-CTL off = the driving verse. CTL on = the chorus push.
+## Revision intent
+
+Keep the musical role of the original patch while reducing redundant gain, excessive space and unclear switching where identified in audit entry 15.
+The module settings and section map below are the active revision.
+Audited capture volumes and Michael’s explicit patch-level adjustments are preserved.
+No hardware audition or measured level match has been performed.
 
 ## GP-5 settings
 
-Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
+Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB.
+The encoded N->S block sits between DST and AMP when a SnapTone is used.
 
-**NR — Gate**
-- THRE: 22
-- Always on. Moderate threshold — there's real grit in this chain from the Bass OD, needs some cleanup between the fast eighth-note picking.
+AMP/CAB replacement: SnapTone BrightSVT (slot 55): SVT SANS BRIGHT DRIVE (SVT-CL) + Hartke410.
+Slot: 55. Always on.
+Gain: 50, VOL: 60, Bass: 55, Middle: 58, Treble: 62.
+AMP and CAB are both off; the capture already includes its cab/DI character.
+The capture voice is fixed across CTL states. Audited VOL is preserved for this slot.
 
-**PRE — Micro Boost — On CTL**
-- Gain: 50
-- CTL off: bypassed (verse). CTL on: engaged (chorus).
-- Verse already drives hard on its own. Chorus gets a clean push to sit level with the vocal harmonies.
+## NR - Gate
 
-**DST — Bass OD**
-- Gain: 55, Blend: 65, VOL: 60, Bass: 55, Treble: 60
-- Always on, same for both CTL states.
-- This is the "blended dirty" layer Dirnt's tone is known for — Blend at 65 keeps enough clean fundamental mixed in that the tone stays punchy and defined rather than turning into a wash, while Treble pushed to 60 keeps real edge and bite on top.
+THRE: 22.
+Fixed on. Not on CTL.
+Use the lowest threshold that keeps rests quiet. Check soft notes and held-note decay. This gate is before the drives and amp; it does not directly gate noise generated after it.
 
-**AMP/CAB — NAM SnapTone, slot 55: BrightSVT** (always on)
-- Built from the `SVT SANS BRIGHT DRIVE (SVT-CL)` NAM and the Hartke410 IR, combined into one snaptone.
-- Real Ampeg SVT-CL with the bright drive setting, into the aluminum-cone Hartke410 IR.
-- Mike Dirnt's tone is bright, picked, and driven. Bright SVT drive into aluminum cones nails the clank.
-- Gain: 50, VOL: 60, Bass: 55, Middle: 58, Treble: 62
-- Gain 50: the capture as built.
-- Bass 55: a touch more low end.
-- Middle 58: more midrange.
-- Treble 62: more top end.
-- VOL 60: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
-- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 55 directly.
+## PRE - Micro Boost
 
-**EQ — Bass EQ 1**
-- 33Hz: +2, 150Hz: -2, 600Hz: +2, 2kHz: +5, 8kHz: +4, VOL: 55
-- Always on, same for both CTL states.
-- Big +5 at 2kHz and +4 at 8kHz — this needs to be bright and present to cut through a fast, driving punk mix. -2 at 150Hz keeps it from getting boxy under all that upper-mid push.
+Gain: 25.
+CTL assigned. Loads off; first CTL press switches it on.
+Controls the source dynamics or adds the specified push/filter before distortion and amp processing. The settings stay fixed; only its on/off state can change.
 
-**MOD — Off**
-- No modulation. Straightforward, driving pop-punk tone.
+## DST - Module off
 
-**DLY — Off**
-- Not used.
+Not used.
 
-**RVB — Room — On CTL**
-- Mix: 18, Decay: 28, Trail: On
-- CTL off: bypassed (verse — tight and dry). CTL on: engaged (chorus).
-- A light touch of room for the chorus, matching the slightly bigger, more anthemic feel of the vocal harmonies — kept subtle since 90s pop-punk production stays fairly dry overall.
+## AMP - Module off
 
-## CTL summary
+Not used.
 
-- **CTL Off — Verse.** Driving, bright, punchy pop-punk tone.
-- **CTL On — Chorus.** Boost and room reverb engage together, matching the bigger feel of the vocal harmonies on "I went to a shrink..."
-- Engage CTL right as the chorus hits, back off returning to the verse.
+## CAB - Module off
 
-## Full pedalboard (signal chain order)
+Not used.
 
-**1. Flamma FS-08 Octave — Bypassed**
-- Footswitch off. This driving punk line doesn't need octave layering.
+## EQ - Bass EQ 1
 
-**2. Donner Ultimate Comp — Engaged**
-- COMP: 50
-- TONE: 60
-- LEVEL: 60
-- Mode: TREBLE
-- Keeps the fast eighth-note picking even and consistent. TREBLE mode keeps pick attack bright and present ahead of the Tidal Wave and the GP-5's own Bass OD.
+33Hz: 2.
+150Hz: -2.
+600Hz: 2.
+2kHz: 5.
+8kHz: 4.
+VOL: 55.
+Fixed on. Not on CTL.
+Shapes note body and cut after the amp/capture. Where assigned to CTL, its output adds the specified lift after the gain stages. Numbers are GP-5 control values, not a calibrated loudness guarantee.
 
-**3. Donner Stylish Fuzz — Bypassed**
-- Footswitch off. Dirnt's dirty layer is a blended overdrive, not a fuzz — the GP-5's own Bass OD already covers that job with more clarity than a fuzz would give at this tempo.
+## MOD - Module off
 
-**4. Joyo Tidal Wave — Engaged**
-- Drive: 30
-- Blend: 55
-- Presence: 65
-- Level: 60
-- Treble: 60
-- Middle: 55
-- Bass: 52
-- Mid-Frequency: 1000Hz
-- Bass-Shift: 80Hz
-- Cab-Sim (DI out): Off
-- Ground Lift: Off
-- Adds baseline drive and presence. Mid-Frequency at 1000Hz and Bass-Shift at 80Hz both push toward attack and articulation over body, matching this song's fast, punchy energy.
+Not used.
 
-**5. Joyo Narcissus — Bypassed**
-- Footswitch off. No chorus — matches the MOD-off call on the GP-5. Bright, direct pop-punk tone throughout.
+## DLY - Module off
 
-**6. Valeton GP-5** — see settings above.
+Not used.
+
+## RVB - Module off
+
+Not used.
+
+## Switching and section map
+
+CTL blocks: PRE.
+- CTL off / loaded state: the driving verse. GP-5 active: NR, EQ, N->S.
+- First CTL press: Chorus. GP-5 active: NR, PRE, EQ, N->S.
+- Press CTL again to return to the loaded block pattern, provided no shared MIDI block has been changed.
+
+## Full pedalboard
+
+Flamma FS-08 Octave -> Donner Ultimate Comp -> Donner Stylish Fuzz -> Joyo Tidal Wave -> Joyo American Sound -> Joyo Narcissus -> Valeton GP-5.
+Board settings are set by hand and are not encoded in the .prst.
+All numeric pedal positions use the existing 0–100 position shorthand unless a clock position is specified.
+
+## Flamma FS-08 Octave
+
+Bypassed throughout.
+-2OCT: 0.
+-OCT: 0.
++OCT: 0.
++2OCT: 0.
+Dry: 100.
+
+## Donner Ultimate Comp
+
+On throughout.
+COMP: 50.
+TONE: 60.
+LEVEL: 60.
+Mode: TREBLE.
+
+## Donner Stylish Fuzz
+
+Bypassed throughout.
+Sustain: 25.
+Treble: 50.
+Bass: 50.
+Volume: 50.
+
+## Joyo Tidal Wave
+
+On throughout.
+Drive: 30.
+Blend: 55.
+Presence: 65.
+Level: 60.
+Treble: 60.
+Middle: 55.
+Bass: 52.
+Mid-Frequency: 1000Hz.
+Bass-Shift: 80Hz.
+Cab-Sim (DI out): Off.
+Ground Lift: Off.
+The footswitch toggles drive only. Preamp EQ and Level stay active in both states. Cab-Sim/Ground Lift affect the DI path; main instrument output is unchanged.
+
+## Joyo American Sound
+
+Bypassed throughout.
+Level: 50.
+Drive: 10.
+Voice: 50.
+Low: 50.
+Mid: 50.
+High: 50.
+
+## Joyo Narcissus
+
+Bypassed throughout.
+Width: 30.
+Depth: 20.
+Rate: 20.
+Mode: Vintage.
+
+## Board choreography
+
+- Flamma FS-08 Octave: Bypassed throughout.
+- Donner Ultimate Comp: On throughout.
+- Donner Stylish Fuzz: Bypassed throughout.
+- Joyo Tidal Wave: On throughout.
+- Joyo American Sound: Bypassed throughout.
+- Joyo Narcissus: Bypassed throughout.
+Set the board switches for the section you are entering. Intro-only or clean-only effects may need to start on. Return each pedal to its documented state at the next section. Board pedals are independent of CTL.
+
+## Revision record
+
+Approved audit entry 15.
+- PRE Gain: 50 -> 25.
+- DST: Bass OD -> off.
+- RVB: Room -> off.
+- RVB: removed from CTL.
+Pre-revision JSON, Markdown and original file hashes are preserved in Documents/patch-audit-2026-10-16/inventory.json and implementation-manifest.json.
+The site piece title and on-disk filenames stay stable; only the short pedal display name may change.

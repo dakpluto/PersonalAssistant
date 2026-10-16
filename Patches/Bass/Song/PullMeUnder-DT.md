@@ -1,53 +1,106 @@
 # Pull Me Under — Dream Theater
 
+Revised 2026-10-16 following the approved library audit.
+Type: Song. Instrument: Harley Benton passive 5-string P/J.
+GP-5 only.
+Patch screen name: Pull Me Un. Patch VOL: 55.
+Preset tempo: 116 BPM.
+
 *Images and Words*, 1992. ~116 BPM, est.
 DT's biggest radio hit — driving verse groove, big anthemic chorus, and a heavier mid-song instrumental break before the final chorus. John Myung's part underneath all of it is full, modern, and precise — not a vintage tone.
 GP-5 only, P/J bass, no pedalboard.
 
-## AMP: Mess Bass (Mesa/Boogie Bass 400) + CAB: Mesa215 IR (User IR 7)
+## Revision intent
 
-Rebuilt 2026-09-18 on the GP-5's own AMP + a loaded IR. Kept that way in the 2026-09-25 snaptone pass: Mess Bass is a direct model of the Mesa bass rig Myung used, and the ProgSVT snaptone is only an SVT stand-in. The old NAM was a Mesa M-Pulse Big Block 750 clean channel into a Peavey 2x15 — a modern, full-range clean bass tone with real headroom. Mess Bass is the GP-5's own Mesa/Boogie bass sim, and Mesa215 (Mesa Boogie Road Ready 2x15) keeps the same 2x15 footprint and modern character as the original Peavey 215 cab, just in-family with the amp this time. It stays composed under the driving verse and still has room to take a push in the instrumental section without breaking up on its own; that push comes from DST instead (see below), not from overdriving the amp.
+Keep the musical role of the original patch while reducing redundant gain, excessive space and unclear switching where identified in audit entry 94.
+The module settings and section map below are the active revision.
+Audited capture volumes and Michael’s explicit patch-level adjustments are preserved.
+No hardware audition or measured level match has been performed.
 
-- Gain: 42 — clean and controlled, not edge-of-breakup. This amp isn't the drive source in this patch.
-- VOL: 68
-- Bass: 62 — full low end to anchor the driving 8th-note verse groove.
-- Middle: 55 — enough to cut through the guitar layers without honking.
-- Treble: 50 — present pick/finger attack, not brittle.
-- CAB VOL: 62.
+## GP-5 settings
 
-## Module chain
+Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB.
+The encoded N->S block sits between DST and AMP when a SnapTone is used.
 
-**NR — Gate**, always on.
-THRE: 30. Keeps the low end tight between phrases at this level of clarity — nothing sustains longer than the part calls for.
+Cab IR: Mesa215. Encoded as User IR 7.
 
-**PRE — off.**
-No boost stage. The Mesa capture already has the headroom this patch needs; a boost here would just push the amp into territory it's not voiced for.
+## NR - Gate
 
-**DST — Bass OD**, on CTL.
-Gain: 55, Blend: 70, VOL: 65, Bass: 60, Treble: 50 when engaged.
-Off for the main verse/chorus groove. On for the heavier instrumental section — adds real grit and push without needing to touch the amp's own gain staging, and blends back to keep the note fundamental intact under the grind.
+THRE: 30.
+Fixed on. Not on CTL.
+Use the lowest threshold that keeps rests quiet. Check soft notes and held-note decay. This gate is before the drives and amp; it does not directly gate noise generated after it.
 
-**AMP — Mess Bass**, always on. Gain 42, VOL 68, Bass 62, Middle 55, Treble 50.
+## PRE - Module off
 
-**CAB — User IR 7 (Mesa215)**, always on. VOL 62.
+Not used.
 
-**EQ — Bass EQ 2**, always on.
-50Hz: +3, 120Hz: +2, 400Hz: -3, 800Hz: -2, 4.5kHz: +4, VOL: 55.
-Small low-end reinforcement, a cut through the low-mids to stop the Mesa capture from getting boxy against the guitars, and a lift at 4.5kHz so fast picked/finger passages read clearly instead of blurring together.
+## DST - Bass OD
 
-**MOD — off.** Straight, driving part — no modulation.
+Gain: 25.
+Blend: 35.
+VOL: 65.
+Bass: 60.
+Treble: 50.
+CTL assigned. Loads off; first CTL press switches it on.
+Supplies the selected additional drive voice. Use its level and gain as separate controls. A pre-amp boost may add compression instead of a proportional solo-volume increase.
 
-**DLY — off.** No delay. This part needs to sit tight in the pocket, not trail behind itself.
+## AMP - Mess Bass
 
-**RVB — Room**, on CTL.
-Mix: 22, Decay: 35, Trail: true.
-Off for the main groove — dry and direct. On with the DST for the instrumental section — a touch of room widens the sound to match the bigger, heavier arrangement without turning it into a wash.
+Gain: 42.
+VOL: 68.
+Bass: 55.
+Middle: 55.
+Treble: 50.
+Fixed on. Not on CTL.
+Provides one fixed amp voice for the complete preset. CTL does not change its knobs or select another amp channel.
 
-## CTL footswitch
+## CAB - User IR 7
 
-Two modules on CTL: DST (Bass OD) and RVB (Room).
+VOL: 62.
+Fixed on. Not on CTL.
+Keeps the required speaker response in the exported preset. Use the documented loaded IR slot; no extra cab goes after a SnapTone.
 
-- **CTL off** — main verse/chorus groove. Clean Mesa tone, dry and tight, driving the song forward. This is the resting state the patch loads into.
-- **CTL on** — heavier instrumental section. Adds grit from the Bass OD and a touch of room, same core amp tone, bigger and pushier for the breakdown before the final chorus.
+## EQ - Bass EQ 2
 
-Engage CTL going into the instrumental section, back off once the final chorus/outro settles back into the main groove.
+50Hz: 3.
+120Hz: 2.
+400Hz: -3.
+800Hz: 1.
+4.5kHz: 4.
+VOL: 55.
+Fixed on. Not on CTL.
+Shapes note body and cut after the amp/capture. Where assigned to CTL, its output adds the specified lift after the gain stages. Numbers are GP-5 control values, not a calibrated loudness guarantee.
+
+## MOD - Module off
+
+Not used.
+
+## DLY - Module off
+
+Not used.
+
+## RVB - Room
+
+Mix: 5.
+Decay: 35.
+Trail: on.
+CTL assigned. Loads off; first CTL press switches it on.
+Adds the specified room or ambient tail. The revised mix keeps the initial note audible. Trail behavior follows the saved setting.
+
+## Switching and section map
+
+CTL blocks: DST, RVB.
+- CTL off / loaded state: main verse/chorus groove. GP-5 active: NR, AMP, CAB, EQ.
+- First CTL press: heavier instrumental section. GP-5 active: NR, DST, AMP, CAB, EQ, RVB.
+- Press CTL again to return to the loaded block pattern, provided no shared MIDI block has been changed.
+
+## Revision record
+
+Approved audit entry 94.
+- DST Gain: 55 -> 25.
+- DST Blend: 70 -> 35.
+- AMP Bass: 62 -> 55.
+- EQ 800Hz: -2 -> 1.
+- RVB Mix: 22 -> 5.
+Pre-revision JSON, Markdown and original file hashes are preserved in Documents/patch-audit-2026-10-16/inventory.json and implementation-manifest.json.
+The site piece title and on-disk filenames stay stable; only the short pedal display name may change.

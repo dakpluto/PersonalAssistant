@@ -2,16 +2,80 @@
   "patch_name": "RiverDownBelow-Riverside",
   "patch_vol": 50,
   "bpm": 100,
-  "nam": {"name": "ProgSVT (slot 56): SVT CLEAN PUSHED (SVT-CL) + Mesa215", "slot": 56, "settings": {"Gain": 47, "VOL": 60, "Bass": 60, "Middle": 55, "Treble": 45}},
+  "nam": {
+    "name": "ProgSVT (slot 56): SVT CLEAN PUSHED (SVT-CL) + Mesa215",
+    "slot": 56,
+    "settings": {
+      "Gain": 47,
+      "VOL": 60,
+      "Bass": 55,
+      "Middle": 55,
+      "Treble": 45
+    }
+  },
   "modules": {
-    "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 18}},
-    "PRE": {"model": "COMP", "always_on": true, "settings": {"Sustain": 48, "VOL": 58}},
-    "DST": {"model": "Bass OD", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Gain": 35, "Blend": 45, "VOL": 60, "Bass": 52, "Treble": 48}},
-    "AMP": {"model": null},
-    "CAB": {"model": null},
-    "EQ": {"model": "Bass EQ 1", "always_on": true, "settings": {"33Hz": 2, "150Hz": 2, "600Hz": -1, "2kHz": 2, "8kHz": 0, "VOL": 50}},
-    "MOD": {"model": null},
-    "DLY": {"model": null},
-    "RVB": {"model": "Hall", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Mix": 18, "Decay": 40, "Trail": false}}
+    "NR": {
+      "model": "Gate",
+      "always_on": true,
+      "settings": {
+        "THRE": 18
+      }
+    },
+    "PRE": {
+      "model": "COMP",
+      "always_on": true,
+      "settings": {
+        "Sustain": 48,
+        "VOL": 58
+      }
+    },
+    "DST": {
+      "model": "Bass OD",
+      "ctl": true,
+      "ctl_off_state": "off",
+      "ctl_on_state": "on",
+      "settings": {
+        "Gain": 20,
+        "Blend": 30,
+        "VOL": 60,
+        "Bass": 52,
+        "Treble": 48
+      }
+    },
+    "AMP": {
+      "model": null
+    },
+    "CAB": {
+      "model": null
+    },
+    "EQ": {
+      "model": "Bass EQ 1",
+      "always_on": true,
+      "settings": {
+        "33Hz": 2,
+        "150Hz": 2,
+        "600Hz": -1,
+        "2kHz": 2,
+        "8kHz": 0,
+        "VOL": 50
+      }
+    },
+    "MOD": {
+      "model": null
+    },
+    "DLY": {
+      "model": null
+    },
+    "RVB": {
+      "model": "Hall",
+      "ctl": true,
+      "ctl_off_state": "off",
+      "ctl_on_state": "on",
+      "settings": {
+        "Mix": 8,
+        "Decay": 40,
+        "Trail": true
+      }
+    }
   }
 }

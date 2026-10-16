@@ -1,5 +1,11 @@
 # Mary Jane's Last Dance (Rhythm Guitar) — Tom Petty
 
+Revised 2026-10-16 following the approved library audit.
+Type: Song. Instrument: HSS Stratocaster.
+GP-5 only.
+Patch screen name: G-MaryJane. Patch VOL: 50.
+Preset tempo: 84 BPM.
+
 Tom Petty and the Heartbreakers, 1993. It was the new track on *Greatest Hits*. About 84 BPM, est.
 The main riff is a minor-key groove in A minor. Harmonica rides over the top.
 The Heartbreakers' guitar sound is built on small combos pushed just into breakup. It's crunchy but never saturated.
@@ -7,52 +13,99 @@ Built from the band's general sound. I haven't verified the exact guitars and am
 Instrument: Stratocaster (HSS). Position 2 (bridge+middle) for the riff, bridge humbucker for the solo.
 GP-5 only, Stratocaster (HSS), no pedalboard.
 
-## Module chain
+## Revision intent
 
-**NR — Gate**, always on.
+Keep the musical role of the original patch while reducing redundant gain, excessive space and unclear switching where identified in audit entry 170.
+The module settings and section map below are the active revision.
+Audited capture volumes and Michael’s explicit patch-level adjustments are preserved.
+No hardware audition or measured level match has been performed.
+
+## GP-5 settings
+
+Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB.
+The encoded N->S block sits between DST and AMP when a SnapTone is used.
+
+Cab IR: EVM112. Encoded as User IR 5.
+
+## NR - Gate
+
 THRE: 20.
-The AC30 at gain 38 plus a hot pickup hums between riff phrases. 20 cleans that up without chopping the ring-out on the Am chord.
+Fixed on. Not on CTL.
+Use the lowest threshold that keeps rests quiet. Check soft notes and held-note decay. This gate is before the drives and amp; it does not directly gate noise generated after it.
 
-**PRE — off.** The amp already has enough grit for the rhythm.
+## PRE - Module off
 
-**DST — Green OD**, on CTL.
-Gain: 35, Tone: 55, VOL: 68.
-Pushes the already-edgy AC30 into a singing lead. The Tube Screamer mid-hump helps the solo cut through the band. VOL 68 gives about +3dB for the lead.
+Not used.
 
-**AMP — Foxy 30TB** (always on)
-- Gain: 38, Tone Cut: 45, VOL: 60, Bass: 50, Treble: 58, Char: Cool
-- The GP-5's model of the Vox AC30HW Top Boost channel. Mike Campbell's pushed AC30 crunch.
-- Gain 38: edgy rhythm crunch that still cleans up with the guitar volume.
-- Tone Cut 45, Treble 58: bright enough to jangle, not fizzy.
-- Bass 50: flat.
-- Char Cool: Hot would add gain the Green OD already covers for the lead.
-- Moved off the PushedAC30 snaptone 2026-10-01. Michael dropped the AC30 NAMs until a better one turns up, so this uses the GP-5's own AC30 model.
-- Same in both CTL states.
+## DST - Green OD
 
-**CAB — User IR 5: EVM112** (always on)
-- VOL: 60
-- Electro-Voice EVM12L 1x12 IR from the loaded set. Big and clean-sounding, so the crunch stays clear.
-- Same in both CTL states.
+Gain: 25.
+Tone: 55.
+VOL: 68.
+CTL assigned. Loads off; first CTL press switches it on.
+Supplies the selected additional drive voice. Use its level and gain as separate controls. A pre-amp boost may add compression instead of a proportional solo-volume increase.
 
-**EQ — Guitar EQ 2**, always on.
-100Hz: -3, 500Hz: 0, 1kHz: +1, 3kHz: +1, 6kHz: -2, VOL: 50.
-Low cut keeps the riff out of the bass's A string. The 1kHz and 3kHz lift adds mid bite. -2 at 6kHz takes off AC30 fizz.
+## AMP - Foxy 30TB
 
-**MOD — off.** No modulation on the riff.
+Gain: 38.
+Tone Cut: 45.
+VOL: 60.
+Bass: 50.
+Treble: 58.
+Char: 0.
+Fixed on. Not on CTL.
+Provides one fixed amp voice for the complete preset. CTL does not change its knobs or select another amp channel.
 
-**DLY — Analog**, on CTL.
-Mix: 14, Time: 360ms, F.Back: 18, Trail: on.
-About an eighth note at 84 BPM. A short, dark tail that thickens the solo without being obvious.
+## CAB - User IR 5
 
-**RVB — Room**, always on.
-Mix: 14, Decay: 30, Trail: on.
-A small room. Early-90s rock production kept guitars fairly dry. This just stops it from sounding direct-in.
+VOL: 60.
+Fixed on. Not on CTL.
+Keeps the required speaker response in the exported preset. Use the documented loaded IR slot; no extra cab goes after a SnapTone.
 
-## CTL footswitch
+## EQ - Guitar EQ 2
 
-On CTL: DST (Green OD), DLY (Analog).
+100Hz: -3.
+500Hz: 0.
+1kHz: 1.
+3kHz: 1.
+6kHz: -2.
+VOL: 50.
+Fixed on. Not on CTL.
+Shapes note body and cut after the amp/capture. Where assigned to CTL, its output adds the specified lift after the gain stages. Numbers are GP-5 control values, not a calibrated loudness guarantee.
 
-- **CTL off** — Rhythm. The edge-of-breakup AC30 for the Am riff, verses, and choruses. This is the resting state the patch loads into.
-- **CTL on** — Lead. Green OD into the AC30 plus eighth-note analog repeats. For the solo and outro lead lines.
+## MOD - Module off
 
-Engage CTL for the solo and the outro. Step off when the riff comes back.
+Not used.
+
+## DLY - Analog
+
+Mix: 14.
+Time: 360.
+Feedback: 18.
+Trail: on.
+CTL assigned. Loads off; first CTL press switches it on.
+Adds repeats only in the listed states. Trail preserves the remaining repeats when this block is bypassed; it does not change delay time or mix.
+
+## RVB - Room
+
+Mix: 10.
+Decay: 30.
+Trail: on.
+Fixed on. Not on CTL.
+Adds the specified room or ambient tail. The revised mix keeps the initial note audible. Trail behavior follows the saved setting.
+
+## Switching and section map
+
+CTL blocks: DST, DLY.
+- CTL off / loaded state: Rhythm. GP-5 active: NR, AMP, CAB, EQ, RVB.
+- First CTL press: Lead. GP-5 active: NR, DST, AMP, CAB, EQ, DLY, RVB.
+- Press CTL again to return to the loaded block pattern, provided no shared MIDI block has been changed.
+
+## Revision record
+
+Approved audit entry 170.
+- Pedal display name: MaryJane-TP-Gtr -> G-MaryJane. Filenames stay unchanged.
+- DST Gain: 35 -> 25.
+- RVB Mix: 14 -> 10.
+Pre-revision JSON, Markdown and original file hashes are preserved in Documents/patch-audit-2026-10-16/inventory.json and implementation-manifest.json.
+The site piece title and on-disk filenames stay stable; only the short pedal display name may change.

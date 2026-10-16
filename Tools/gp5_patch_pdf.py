@@ -30,6 +30,13 @@ from fpdf import FPDF
 LIST_RE = re.compile(r"^(\s*)([-*]|\d+\.)\s+(.*)$")
 BOLD_RE = re.compile(r"\*\*(.+?)\*\*")
 
+
+class PatchPDF(FPDF):
+    def footer(self) -> None:
+        self.set_y(-11)
+        self.set_font("Helvetica", size=8)
+        self.cell(0, 5, f"GP-5 patch record | Page {self.page_no()}", align="C")
+
 # Core PDF fonts (Helvetica) are latin-1 only. Sanitize the handful of
 # non-latin-1 characters these write-ups actually use rather than pulling in
 # a TTF font just for an arrow and some dashes.
@@ -64,12 +71,13 @@ def _write_runs(pdf: FPDF, text: str, line_height: float, bold_by_default: bool 
 
 
 def render_markdown_to_pdf(md_text: str, out_path: str) -> str:
-    pdf = FPDF(format="Letter")
+    pdf = PatchPDF(format="Letter")
     pdf.set_auto_page_break(auto=True, margin=15)
     pdf.set_font("Helvetica", size=11)
     pdf.add_page()
 
     body_h = 6.0
+    body_size = 11
 
     for raw_line in md_text.splitlines():
         line = raw_line.rstrip()
@@ -80,16 +88,24 @@ def render_markdown_to_pdf(md_text: str, out_path: str) -> str:
 
         if line.startswith("# "):
             pdf.set_font("Helvetica", "B", 18)
-            pdf.multi_cell(0, 10, _sanitize(line[2:]))
+            pdf.multi_cell(0, 10, _sanitize(line[2:]), new_x="LMARGIN", new_y="NEXT")
             pdf.set_font("Helvetica", size=11)
             pdf.ln(2)
             continue
 
         if line.startswith("## "):
+            if line == "## Revision record":
+                # The historical diff is secondary to the playing instructions.
+                # Compact it so a few archive lines do not spill to a new page.
+                body_h = 4.2
+                body_size = 9
+            # Keep a heading with at least two body lines.
+            if pdf.will_page_break(29):
+                pdf.add_page()
             pdf.ln(3)
             pdf.set_font("Helvetica", "B", 13)
-            pdf.multi_cell(0, 8, _sanitize(line[3:]))
-            pdf.set_font("Helvetica", size=11)
+            pdf.multi_cell(0, 8, _sanitize(line[3:]), new_x="LMARGIN", new_y="NEXT")
+            pdf.set_font("Helvetica", size=body_size)
             pdf.ln(1)
             continue
 
@@ -101,14 +117,14 @@ def render_markdown_to_pdf(md_text: str, out_path: str) -> str:
             pdf.set_left_margin(left)
             pdf.set_x(left)
             bullet = marker if marker[0].isdigit() else "-"
-            pdf.set_font("Helvetica", size=11)
+            pdf.set_font("Helvetica", size=body_size)
             pdf.write(body_h, f"{bullet} ")
             _write_runs(pdf, rest, body_h)
             pdf.set_left_margin(10)
             continue
 
         pdf.set_x(pdf.l_margin)
-        pdf.set_font("Helvetica", size=11)
+        pdf.set_font("Helvetica", size=body_size)
         _write_runs(pdf, line, body_h)
 
     pdf.output(out_path)

@@ -1,0 +1,82 @@
+{
+  "patch_name": "BeSmClean",
+  "patch_vol": 50,
+  "bpm": 94,
+  "nam": {
+    "name": "NashClean: CLEANEST - Fender Deluxe Reverb 1965 [Hyper Accuracy] + Brown Deluxe 1x12 Medium Mix",
+    "slot": 62,
+    "settings": {
+      "Gain": 50,
+      "VOL": 75,
+      "Bass": 48,
+      "Middle": 50,
+      "Treble": 51
+    }
+  },
+  "modules": {
+    "NR": {
+      "model": "Gate",
+      "always_on": true,
+      "settings": {
+        "THRE": 8
+      }
+    },
+    "PRE": {
+      "model": "COMP4",
+      "always_on": true,
+      "settings": {
+        "Sustain": 18,
+        "Attack": 65,
+        "VOL": 50,
+        "Clip": 10
+      }
+    },
+    "DST": {
+      "model": null
+    },
+    "AMP": {
+      "model": null
+    },
+    "CAB": {
+      "model": null
+    },
+    "EQ": {
+      "model": "Guitar EQ 1",
+      "ctl": true,
+      "ctl_off_state": "off",
+      "ctl_on_state": "on",
+      "settings": {
+        "125Hz": -2,
+        "400Hz": 0,
+        "800Hz": 2,
+        "1.6kHz": 2,
+        "4kHz": -1,
+        "VOL": 52
+      }
+    },
+    "MOD": {
+      "model": null
+    },
+    "DLY": {
+      "model": "Analog",
+      "ctl": true,
+      "ctl_off_state": "off",
+      "ctl_on_state": "on",
+      "settings": {
+        "Mix": 15,
+        "Time": 430,
+        "Feedback": 20,
+        "Trail": true
+      }
+    },
+    "RVB": {
+      "model": "Room",
+      "always_on": true,
+      "settings": {
+        "Mix": 12,
+        "Decay": 28,
+        "Trail": true
+      }
+    }
+  }
+}

@@ -1,54 +1,93 @@
 # Waiting on the World to Change — John Mayer
 
-From *Continuum* (2006). About 88 BPM, est.
-Instrument: Sire V7 2nd Gen 5-string fretless, flatwound. Run Passive. GP-5 only.
-A deep, muted soul pocket. As far as I know, Pino Palladino played on much of *Continuum*, and his signature is a short, thumpy, flatwound note that sits behind the beat.
-The Sire's flatwounds give that thump for real. No EQ trickery needed to fake it.
-Passive, not Active. Pino's sound is a vintage passive thump. The passive tone knob rolled back gets there naturally. Active's extra headroom and hi-fi top pull away from it.
-Neck pickup soloed or strongly favored. Passive tone knob around 35%. Fingers over the neck, with light palm-muting for short notes.
-Fretless mwah should stay subtle. Plucking over the neck keeps it down. An occasional slide into a note is a nice, vocal soul touch. Watch intonation on the sustained roots.
+Revised 2026-10-16 following the approved library audit.
+Type: Song. Instrument: Sire V7 2nd Generation 5-string fretless, flatwounds; run passive.
+GP-5 only.
+Patch screen name: WaitWorld. Patch VOL: 52.
+Preset tempo: 88 BPM.
 
-## Module chain
+Waiting on the World to Change: passive Sire V7 fretless with flatwounds. Neck pickup favored, soft fingers and short muted notes for the soul pocket. FullB15 supplies the warm foundation. Passive mode is the selected feel/voicing; active mode does not inherently guarantee more downstream headroom.
 
-**NR — Gate**, always on.
+## Revision intent
+
+Keep the musical role of the original patch while reducing redundant gain, excessive space and unclear switching where identified in audit entry 123.
+The module settings and section map below are the active revision.
+Audited capture volumes and Michael’s explicit patch-level adjustments are preserved.
+No hardware audition or measured level match has been performed.
+
+## GP-5 settings
+
+Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB.
+The encoded N->S block sits between DST and AMP when a SnapTone is used.
+
+AMP/CAB replacement: SnapTone FullB15 (slot 54): Ampeg B18 - Head DI - Bass Chan - Vol 5 (B-18N) + Apg115410.
+Slot: 54. Always on.
+Gain: 47, VOL: 80, Bass: 58, Middle: 52, Treble: 35.
+AMP and CAB are both off; the capture already includes its cab/DI character.
+The capture voice is fixed across CTL states. Audited VOL is preserved for this slot.
+
+## NR - Gate
+
 THRE: 10.
-Low. Fretless notes and slides need to decay naturally.
+Fixed on. Not on CTL.
+Use the lowest threshold that keeps rests quiet. Check soft notes and held-note decay. This gate is before the drives and amp; it does not directly gate noise generated after it.
 
-**PRE — COMP (Ross)**, always on.
-Sustain: 38, VOL: 58.
-Even, thumpy notes. It also evens out level jumps from fretless slides.
+## PRE - COMP
 
-**DST — off.** No grit.
+Sustain: 38.
+VOL: 58.
+Fixed on. Not on CTL.
+Controls the source dynamics or adds the specified push/filter before distortion and amp processing. The settings stay fixed; only its on/off state can change.
 
-**AMP/CAB — NAM SnapTone, slot 54: FullB15** (always on)
-- Built from the `Ampeg B18 - Head DI - Bass Chan - Vol 5 (B-18N)` NAM and the Apg115410 IR, combined into one snaptone.
-- Real Ampeg B-18N at volume 5, warmer and fuller than the clean capture, into the Apg115410 (1x15 + 4x10) IR.
-- Pino Palladino-style warmth. The fuller B-15 is the closest thing to his vintage-P sound here.
-- Gain: 47, VOL: 80, Bass: 58, Middle: 52, Treble: 35
-- Gain 47: a little under default. This part wants less push than the other FullB15 patches.
-- Bass 58: more low end.
-- Middle 52: a touch more midrange.
-- Treble 35: top end pulled back noticeably.
-- VOL 80: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
-- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 54 directly.
+## DST - Module off
 
-**EQ — Bass EQ 2**, always on.
-50Hz: 0, 120Hz: +2, 400Hz: +1, 800Hz: 0, 4.5kHz: -3, VOL: 52.
-120Hz thump and 400Hz wood. 800Hz stays flat so the fretless mwah isn't accented. -3 at 4.5kHz is a gentle trim. The flats do the rest.
+Not used.
 
-**MOD — off.** No chorus. Fretless plus chorus is a different, more Egan-like sound. This one stays dry soul.
+## AMP - Module off
 
-**DLY — off.**
+Not used.
 
-**RVB — Room**, on CTL.
-Mix: 10, Decay: 25, Trail: on.
-A tiny room for the choruses.
+## CAB - Module off
 
-## CTL footswitch
+Not used.
 
-On CTL: RVB (Room).
+## EQ - Bass EQ 2
 
-- **CTL off** — Verses. A dead, deep, muted soul pocket. This is the resting state the patch loads into.
-- **CTL on** — Choruses. A small room so the thump blooms slightly.
+50Hz: 0.
+120Hz: 2.
+400Hz: 1.
+800Hz: 0.
+4.5kHz: -3.
+VOL: 52.
+Fixed on. Not on CTL.
+Shapes note body and cut after the amp/capture. Where assigned to CTL, its output adds the specified lift after the gain stages. Numbers are GP-5 control values, not a calibrated loudness guarantee.
 
-Engage at the choruses. Mostly this patch lives in CTL off.
+## MOD - Module off
+
+Not used.
+
+## DLY - Module off
+
+Not used.
+
+## RVB - Room
+
+Mix: 5.
+Decay: 25.
+Trail: on.
+CTL assigned. Loads off; first CTL press switches it on.
+Adds the specified room or ambient tail. The revised mix keeps the initial note audible. Trail behavior follows the saved setting.
+
+## Switching and section map
+
+CTL blocks: RVB.
+- CTL off / loaded state: Verses. GP-5 active: NR, PRE, EQ, N->S.
+- First CTL press: Choruses. GP-5 active: NR, PRE, EQ, RVB, N->S.
+- Press CTL again to return to the loaded block pattern, provided no shared MIDI block has been changed.
+
+## Revision record
+
+Approved audit entry 123.
+- RVB Mix: 10 -> 5.
+Pre-revision JSON, Markdown and original file hashes are preserved in Documents/patch-audit-2026-10-16/inventory.json and implementation-manifest.json.
+The site piece title and on-disk filenames stay stable; only the short pedal display name may change.

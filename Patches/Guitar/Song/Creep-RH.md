@@ -1,44 +1,180 @@
 # Creep - Radiohead
 
+Revised 2026-10-16 following the approved library audit.
+Type: Song. Instrument: HSS Stratocaster.
+Full board. Board Option: American Sound (bypassed; retained for legacy full-board builds).
+Patch screen name: Creep - Ra. Patch VOL: 50.
+Preset tempo: 92 BPM.
+
 Stratocaster (HSS), Full Board. Two sounds in this song: the clean, chorused verse arpeggios, and the famous distorted "chunk" hits that slam in right before each chorus line. Tempo: 92 BPM.
 
-## GP-5 Settings
+## Revision intent
 
-Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB
+Keep the musical role of the original patch while reducing redundant gain, excessive space and unclear switching where identified in audit entry 150.
+The module settings and section map below are the active revision.
+Audited capture volumes and Michael’s explicit patch-level adjustments are preserved.
+Keep the loaded Foxy cab so the patch remains self-contained; British Alnico remains a manual audition alternative.
+No hardware audition or measured level match has been performed.
 
-- **NR — Gate.** THRE 25. Light gate, just enough to keep the clean verse quiet. Always on.
-- **PRE — Boost.** Gain 55, +3dB on, Bright on. Off for the clean verse. On for the loud hits — the treble kick that pushes into the DST and the AC30 for that sudden slam. On CTL.
-- **DST — SM Dist (Boss DS-1).** Gain 65, Tone 55, VOL 80. Off for the verse — stays clean. On for the loud hits — hard clipping gives that blown-out "chunk" character. On CTL.
-**AMP — Foxy 30N** (always on)
-- Gain: 45, Tone Cut: 40, VOL: 50, Bright: On
-- The GP-5's model of the Vox AC30HW Normal channel. The verse tone is a glassy AC30 clean, and the CTL distortion slams it for the chorus.
-- Gain 45: clean, but with enough push to bloom when the Boost and DS-1 hit it.
-- Tone Cut 40, Bright on: glassy top end for the arpeggios.
-- Moved off the GlassyAC30 snaptone 2026-10-01. Michael dropped the AC30 NAMs until a better one turns up, so this uses the GP-5's own AC30 model.
-- Same in both CTL states.
+## GP-5 settings
 
-**CAB — Foxy 2x12** (always on)
-- VOL: 50
-- The GP-5's own Vox AC30 2x12 cab, matched to the amp model.
-- Same in both CTL states.
+Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB.
+The encoded N->S block sits between DST and AMP when a SnapTone is used.
 
-- **EQ — Guitar EQ 1.** 125Hz 0, 400Hz -3, 800Hz 0, 1.6kHz +6, 4kHz +10. Slight mid scoop, treble lift — the glassy, slightly icy clean tone Creep's verse is known for. Always on.
-- **MOD — Off.** Chorus duty is handled upstream by the Joyo Narcissus on the full board.
-- **DLY — Off.** Creep is a dry-ish song; no repeating delay in either section.
-- **RVB — Room.** Mix 18, Decay 30, Trail on. Small amount of room air, nothing washy. Always on.
+## NR - Gate
 
-## CTL Switch
+THRE: 25.
+Fixed on. Not on CTL.
+Use the lowest threshold that keeps rests quiet. Check soft notes and held-note decay. This gate is before the drives and amp; it does not directly gate noise generated after it.
 
-- **CTL Off** = clean verse sound.
-- **CTL On** = loud "chunk" hits.
-- Modules on CTL: PRE, DST. Both flip together on the same footswitch press.
-- Use CTL Off through the verses. Switch to CTL On right at each loud chord blast, then back to CTL Off for the next verse.
+## PRE - Module off
 
-## Full Pedalboard
+Not used.
 
-1. **Flamma FS-08 Octave** — Off. No octave content in this song.
-2. **Donner Ultimate Comp** — On, all song. COMP ~3/10, TONE: Normal, LEVEL unity. Keeps the clean arpeggios even without squashing pick dynamics.
-3. **Donner Stylish Fuzz** — Bypassed for the verse, footswitch engaged only for the loud hits. Sustain ~7/10, Treble ~6/10, Bass ~5/10, Volume matched to unity. Treble kept hotter than Bass so the fuzz stays cutting rather than adding low-end mud on top of what the GP-5's DST and the AC30 are already providing. Stacks with the GP-5's PRE Boost and DST for the blown-out chord slam.
-4. **Joyo King of Kings** — Both channels bypassed all song. The Stylish Fuzz plus the GP-5's own PRE/DST already cover the loud section; stacking a third gain stage would mush the chord definition.
-5. **Joyo Narcissus** — On, all song, Vintage mode. Depth ~4/10, Rate ~4/10, Width ~6/10 (moderately wide — helps give the clean tone its spacious, glassy quality). Stays on under the loud hits too, just buried under the crunch.
-6. **Valeton GP-5** — as programmed above.
+## DST - SM Dist
+
+Gain: 65.
+Tone: 55.
+VOL: 80.
+CTL assigned. Loads off; first CTL press switches it on.
+Supplies the selected additional drive voice. Use its level and gain as separate controls. A pre-amp boost may add compression instead of a proportional solo-volume increase.
+
+## AMP - Foxy 30N
+
+Gain: 45.
+Tone Cut: 40.
+VOL: 50.
+Bright: on.
+Fixed on. Not on CTL.
+Provides one fixed amp voice for the complete preset. CTL does not change its knobs or select another amp channel.
+
+## CAB - Foxy 2x12
+
+VOL: 50.
+Fixed on. Not on CTL.
+Keeps the required speaker response in the exported preset. Use the documented loaded IR slot; no extra cab goes after a SnapTone.
+
+## EQ - Guitar EQ 1
+
+125Hz: 0.
+400Hz: -3.
+800Hz: 0.
+1.6kHz: 2.
+4kHz: 3.
+VOL: 50.
+Fixed on. Not on CTL.
+Shapes note body and cut after the amp/capture. Where assigned to CTL, its output adds the specified lift after the gain stages. Numbers are GP-5 control values, not a calibrated loudness guarantee.
+
+## MOD - Module off
+
+Not used.
+
+## DLY - Module off
+
+Not used.
+
+## RVB - Room
+
+Mix: 10.
+Decay: 30.
+Trail: on.
+Fixed on. Not on CTL.
+Adds the specified room or ambient tail. The revised mix keeps the initial note audible. Trail behavior follows the saved setting.
+
+## Switching and section map
+
+CTL blocks: DST.
+- CTL off / loaded state: Clean verses. GP-5 active: NR, AMP, CAB, EQ, RVB.
+- First CTL press: Distorted pre-chorus hits and chorus chords. GP-5 active: NR, DST, AMP, CAB, EQ, RVB.
+- Press CTL again to return to the loaded block pattern, provided no shared MIDI block has been changed.
+
+## Full pedalboard
+
+Flamma FS-08 Octave -> Donner Ultimate Comp -> Donner Stylish Fuzz -> Joyo King of Kings -> Joyo American Sound -> Joyo Narcissus -> Valeton GP-5.
+Board settings are set by hand and are not encoded in the .prst.
+All numeric pedal positions use the existing 0–100 position shorthand unless a clock position is specified.
+
+## Flamma FS-08 Octave
+
+Bypassed throughout.
+-2OCT: 0.
+-OCT: 0.
++OCT: 0.
++2OCT: 0.
+Dry: 100.
+
+## Donner Ultimate Comp
+
+On throughout.
+COMP: 30.
+TONE: 50.
+LEVEL: unity.
+Mode: NORMAL.
+
+## Donner Stylish Fuzz
+
+Bypassed throughout.
+Sustain: 70.
+Treble: 60.
+Bass: 50.
+Volume: 50.
+
+## King of Kings Left
+
+Bypassed throughout.
+Volume: 50.
+Gain: 20.
+Tone: 50.
+Clipping toggle: Softer position.
+Feedback toggle: Standard position.
+
+## King of Kings Right
+
+Bypassed throughout.
+Volume: 50.
+Gain: 20.
+Tone: 50.
+Clipping toggle: Softer position.
+Feedback toggle: Standard position.
+
+## Joyo American Sound
+
+Bypassed throughout.
+Level: 50.
+Drive: 10.
+Voice: 50.
+Low: 50.
+Mid: 50.
+High: 50.
+
+## Joyo Narcissus
+
+On throughout.
+Width: 60.
+Depth: 40.
+Rate: 40.
+Mode: Vintage.
+
+## Board choreography
+
+- Flamma FS-08 Octave: Bypassed throughout.
+- Donner Ultimate Comp: On throughout.
+- Donner Stylish Fuzz: Bypassed throughout.
+- King of Kings Left: Bypassed throughout.
+- King of Kings Right: Bypassed throughout.
+- Joyo American Sound: Bypassed throughout.
+- Joyo Narcissus: On throughout.
+Set the board switches for the section you are entering. Intro-only or clean-only effects may need to start on. Return each pedal to its documented state at the next section. Board pedals are independent of CTL.
+
+## Revision record
+
+Approved audit entry 150.
+- PRE: Boost -> off.
+- PRE: removed from CTL.
+- EQ 1.6kHz: 6 -> 2.
+- EQ 4kHz: 10 -> 3.
+- EQ VOL: 60 -> 50.
+- RVB Mix: 18 -> 10.
+- Board Stylish Fuzz: ; Bypassed throughout.
+Pre-revision JSON, Markdown and original file hashes are preserved in Documents/patch-audit-2026-10-16/inventory.json and implementation-manifest.json.
+The site piece title and on-disk filenames stay stable; only the short pedal display name may change.

@@ -1,89 +1,172 @@
 # You — Candlebox
 
+Revised 2026-10-16 following the approved library audit.
+Type: Song. Instrument: Harley Benton passive 5-string P/J.
+Full board. Board Option: American Sound (bypassed; retained for legacy full-board builds).
+Patch screen name: You - Cand. Patch VOL: 54.
+Preset tempo: 78 BPM.
+
 Bass: Harley Benton P/J, 5-string, passive. Full board.
 1993 (self-titled *Candlebox*). ~78 BPM (estimate — no hard chart reference, tempo isn't load-bearing for the tone choices below). Classic early-90s grunge-era dynamic: quiet, clean, restrained verses building into a big, driven, anthemic chorus. The bass job tracks that build directly — warm and supportive at rest, pushed and present once the chorus hits.
 
-CTL Off = verse. CTL On = chorus.
+## Revision intent
 
-## GP-5 Settings
+Keep the musical role of the original patch while reducing redundant gain, excessive space and unclear switching where identified in audit entry 130.
+The module settings and section map below are the active revision.
+Audited capture volumes and Michael’s explicit patch-level adjustments are preserved.
+No hardware audition or measured level match has been performed.
 
-Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB
+## GP-5 settings
 
-**NR — Gate**
-- THRE: 24
-- Always on. Moderate — enough to clean up idle noise once the boost pushes the snaptone into grit, without choking sustained notes.
+Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB.
+The encoded N->S block sits between DST and AMP when a SnapTone is used.
 
-**PRE — Micro Boost** (MXR M133 Micro Amp)
-- Gain: 55
-- **CTL switch.** Off = bypassed, On = engaged.
-- Off (verse) keeps the part warm and restrained, sitting under the clean guitars. On (chorus) pushes it forward to match the big, driven payoff — a clean lift, not a tone change.
+AMP/CAB replacement: SnapTone CleanSVT (slot 53): SVT CLEAN (SVT-CL) + Apg810.
+Slot: 53. Always on.
+Gain: 54, VOL: 65, Bass: 55, Middle: 58, Treble: 55.
+AMP and CAB are both off; the capture already includes its cab/DI character.
+The capture voice is fixed across CTL states. Audited VOL is preserved for this slot.
 
-**DST — Off**
-Not used. The amp's own moderate gain carries this patch's drive character — a separate drive pedal on top would just muddy it.
+## NR - Gate
 
-**AMP/CAB — NAM SnapTone, slot 53: CleanSVT** (always on)
-- Built from the `SVT CLEAN (SVT-CL)` NAM and the Apg810 IR, combined into one snaptone.
-- Real Ampeg SVT-CL preamp on its clean setting, into the Apg810 8x10 IR.
-- 90s alt-rock. Clean SVT for the verses. DST handles the heavy parts.
-- Gain: 54, VOL: 65, Bass: 55, Middle: 58, Treble: 55
-- Gain 54: a little over default. This part wants more push than the other CleanSVT patches.
-- Bass 55: a touch more low end.
-- Middle 58: more midrange.
-- Treble 55: a touch more top end.
-- VOL 65: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
-- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 53 directly.
+THRE: 12.
+Fixed on. Not on CTL.
+Use the lowest threshold that keeps rests quiet. Check soft notes and held-note decay. This gate is before the drives and amp; it does not directly gate noise generated after it.
 
-**EQ — Bass EQ 1**
-- 33Hz: +2, 150Hz: +1, 600Hz: -3, 2kHz: +6, 8kHz: +2, VOL: 54
-- Always on, both CTL states. Modest low-end weight, a 600Hz dip to avoid grunge-mix mud, and a real 2kHz push so the bass cuts through the chorus's wall of guitars instead of disappearing under it.
+## PRE - Micro Boost
 
-**MOD — B-Chorus** (Boss CE-2B for Bass)
-- Depth: 12, Rate: 0.4Hz, VOL: 50
-- Always on, both states. Standard light touch — just enough shimmer underneath, not an obvious effect. This song isn't specifically known for a drenched chorus tone, so no exception to the usual light-modulation rule.
+Gain: 25.
+CTL assigned. Loads off; first CTL press switches it on.
+Controls the source dynamics or adds the specified push/filter before distortion and amp processing. The settings stay fixed; only its on/off state can change.
 
-**DLY — Off**
-Not used. No delay anywhere on this part.
+## DST - Module off
 
-**RVB — Hall**
-- Mix: 28, Decay: 45, Trail: On
-- **CTL switch.** Off = bypassed, On = engaged.
-- Off (verse) stays dry and close, matching the clean, intimate verses. On (chorus) opens up with a genuine swell to match the song's big anthemic payoff.
+Not used.
 
-### CTL Summary (GP-5)
-- **CTL Off — Verse (default load state):** Micro Boost and Hall both bypassed. Warm, restrained, sits under the clean guitars.
-- **CTL On — Chorus:** Micro Boost and Hall both engaged. A real push plus a reverb swell for the big, driven hook.
+## AMP - Module off
 
-## Full Pedalboard
+Not used.
 
-Signal chain order: Flamma FS-08 Octave → Donner Ultimate Comp → Donner Stylish Fuzz → Joyo Tidal Wave → Joyo Narcissus → Valeton GP-5.
+## CAB - Module off
 
-**Flamma FS-08 Octave — bypassed**
-- All octave knobs (-2OCT, -OCT, +OCT, +2OCT) at 0, Dry at 100
-- No octave texture anywhere in this song.
+Not used.
 
-**Donner Ultimate Comp — engaged**
-- COMP: 42, TONE: 52, LEVEL: 55, Mode: NORMAL
-- Evens out dynamics across a song with a genuinely big quiet-to-loud swing — keeps the verse controlled and the chorus from spiking unevenly. NORMAL mode — nothing extra to brighten, the SVT snaptone's own voicing already has enough character.
+## EQ - Bass EQ 1
 
-**Donner Stylish Fuzz — bypassed**
-No separate fuzz texture — the Micro Boost pushing the SVT snaptone already supplies this patch's drive; stacking a fuzz pedal on top would be redundant and muddy the tone.
+33Hz: 2.
+150Hz: 1.
+600Hz: -3.
+2kHz: 3.
+8kHz: 2.
+VOL: 54.
+Fixed on. Not on CTL.
+Shapes note body and cut after the amp/capture. Where assigned to CTL, its output adds the specified lift after the gain stages. Numbers are GP-5 control values, not a calibrated loudness guarantee.
 
-**Joyo Tidal Wave — engaged**
-- Drive: 20, Blend: 30, Presence: 52, Level: 55
-- Treble: 52, Middle: 55, Bass: 55
-- Mid-Frequency toggle: 500Hz (body and warmth, fits the vintage-drive character)
-- Bass-Shift toggle: 40Hz (fuller low end)
-- Cab-Sim (DI out): On
-- Ground Lift: Off (only flip on if a specific room throws hum)
-- Drive kept light — foundational glue and a consistent DI feed, not a second tone-shaping gain stage. The boosted snaptone carries the actual drive.
+## MOD - Module off
 
-**Joyo Narcissus — bypassed**
-Modulation is handled by the GP-5's own MOD module (B-Chorus, light, always on). Stacking this pedal on top would fight with that.
+Not used.
 
-**Valeton GP-5**
-See GP-5 settings above.
+## DLY - Module off
 
-## Footswitch Choreography
+Not used.
 
-- **Verse:** GP-5 CTL off. Comp and Tidal Wave running underneath, unchanged.
-- **Chorus:** GP-5 CTL on. Step on it going into the big hook, off again coming back down to the next verse.
+## RVB - Hall
+
+Mix: 8.
+Decay: 45.
+Trail: on.
+CTL assigned. Loads off; first CTL press switches it on.
+Adds the specified room or ambient tail. The revised mix keeps the initial note audible. Trail behavior follows the saved setting.
+
+## Switching and section map
+
+CTL blocks: PRE, RVB.
+- CTL off / loaded state: Restrained verse. GP-5 active: NR, EQ, N->S.
+- First CTL press: Chorus lift. GP-5 active: NR, PRE, EQ, RVB, N->S.
+- Press CTL again to return to the loaded block pattern, provided no shared MIDI block has been changed.
+
+## Full pedalboard
+
+Flamma FS-08 Octave -> Donner Ultimate Comp -> Donner Stylish Fuzz -> Joyo Tidal Wave -> Joyo American Sound -> Joyo Narcissus -> Valeton GP-5.
+Board settings are set by hand and are not encoded in the .prst.
+All numeric pedal positions use the existing 0–100 position shorthand unless a clock position is specified.
+
+## Flamma FS-08 Octave
+
+Bypassed throughout.
+-2OCT: 0.
+-OCT: 0.
++OCT: 0.
++2OCT: 0.
+Dry: 100.
+
+## Donner Ultimate Comp
+
+On throughout.
+COMP: 42.
+TONE: 52.
+LEVEL: 55.
+Mode: NORMAL.
+
+## Donner Stylish Fuzz
+
+Bypassed throughout.
+Sustain: 25.
+Treble: 50.
+Bass: 50.
+Volume: 50.
+
+## Joyo Tidal Wave
+
+On throughout.
+Drive: 20.
+Blend: 30.
+Presence: 52.
+Level: 55.
+Treble: 52.
+Middle: 55.
+Bass: 55.
+Mid-Frequency: 500Hz.
+Bass-Shift: 40Hz.
+Cab-Sim (DI out): On.
+Ground Lift: Off.
+The footswitch toggles drive only. Preamp EQ and Level stay active in both states. Cab-Sim/Ground Lift affect the DI path; main instrument output is unchanged.
+
+## Joyo American Sound
+
+Bypassed throughout.
+Level: 50.
+Drive: 10.
+Voice: 50.
+Low: 50.
+Mid: 50.
+High: 50.
+
+## Joyo Narcissus
+
+Bypassed throughout.
+Width: 30.
+Depth: 20.
+Rate: 20.
+Mode: Vintage.
+
+## Board choreography
+
+- Flamma FS-08 Octave: Bypassed throughout.
+- Donner Ultimate Comp: On throughout.
+- Donner Stylish Fuzz: Bypassed throughout.
+- Joyo Tidal Wave: On throughout.
+- Joyo American Sound: Bypassed throughout.
+- Joyo Narcissus: Bypassed throughout.
+Set the board switches for the section you are entering. Intro-only or clean-only effects may need to start on. Return each pedal to its documented state at the next section. Board pedals are independent of CTL.
+
+## Revision record
+
+Approved audit entry 130.
+- NR THRE: 24 -> 12.
+- PRE Gain: 55 -> 25.
+- EQ 2kHz: 6 -> 3.
+- MOD: B-Chorus -> off.
+- RVB Mix: 28 -> 8.
+Pre-revision JSON, Markdown and original file hashes are preserved in Documents/patch-audit-2026-10-16/inventory.json and implementation-manifest.json.
+The site piece title and on-disk filenames stay stable; only the short pedal display name may change.

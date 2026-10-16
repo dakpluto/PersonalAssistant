@@ -1,58 +1,114 @@
 # What About Now (Rhythm Guitar) — Daughtry
 
+Revised 2026-10-16 following the approved library audit.
+Type: Song. Instrument: HSS Stratocaster.
+GP-5 only.
+Patch screen name: WhatAbt-Gt. Patch VOL: 50.
+Preset tempo: 74 BPM.
+
 From *Daughtry* (2006). About 74 BPM, est.
 A modern-rock power ballad. Clean, open arpeggios under the verses, then a big driven chorus and a melodic solo.
 Built from the song's overall sound. I haven't verified the exact guitars and amps on the record.
 Instrument: Stratocaster (HSS). Neck or position 2 for the clean verses. Bridge humbucker for the chorus and solo.
 GP-5 only, Stratocaster (HSS), no pedalboard.
 
-## Module chain
+## Revision intent
 
-**NR — Gate**, always on.
+Keep the musical role of the original patch while reducing redundant gain, excessive space and unclear switching where identified in audit entry 192.
+The module settings and section map below are the active revision.
+Audited capture volumes and Michael’s explicit patch-level adjustments are preserved.
+No hardware audition or measured level match has been performed.
+
+## GP-5 settings
+
+Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB.
+The encoded N->S block sits between DST and AMP when a SnapTone is used.
+
+AMP/CAB replacement: SnapTone MayerDumble (slot 66): SLAMMIN_DUMBLE_FORD_CLN_BALANCED_S (Dumble ODS #102) + Bogner 2x12 EVM12L - SM57 1 - Cap Edge.
+Slot: 66. Always on.
+Gain: 45, VOL: 70, Bass: 48, Middle: 52, Treble: 55.
+AMP and CAB are both off; the capture already includes its cab/DI character.
+The capture voice is fixed across CTL states. Audited VOL is preserved for this slot.
+
+## NR - Gate
+
 THRE: 20.
-Light. It only has to catch hiss when the crunch box is on. The clean arpeggios ring out untouched.
+Fixed on. Not on CTL.
+Use the lowest threshold that keeps rests quiet. Check soft notes and held-note decay. This gate is before the drives and amp; it does not directly gate noise generated after it.
 
-**PRE — COMP4 (Keeley C4)**, always on.
-Sustain: 40, Attack: 50, Clip: 35, VOL: 55.
-Evens out the verse arpeggios so every note of the pattern speaks. Attack 50 keeps the pick edge.
+## PRE - COMP4
 
-**DST — La Charger (Crunch Box)**, on CTL.
-Gain: 50, Tone: 55, VOL: 64.
-The chorus wall. A crunch box into a clean amp gives a tight, modern ballad crunch without the mud of a cranked amp. Gain 50 keeps chords defined.
+Sustain: 40.
+Attack: 50.
+Clip: 35.
+VOL: 55.
+Fixed on. Not on CTL.
+Controls the source dynamics or adds the specified push/filter before distortion and amp processing. The settings stay fixed; only its on/off state can change.
 
-**AMP/CAB — NAM SnapTone, slot 66: MayerDumble** (always on)
-- Built from the `SLAMMIN_DUMBLE_FORD_CLN_BALANCED_S` NAM (Dumble ODS #102) and the Bogner 2x12 EVM12L (SM57, cap edge) IR, combined into one snaptone.
-- Real Dumble ODS clean channel, into a closed-back 2x12 with EVM12Ls.
-- Big, clean headroom for the verses. It takes the crunch box well for the chorus.
-- Gain: 45, VOL: 70, Bass: 48, Middle: 52, Treble: 55
-- Gain 45: a little under the capture, so the clean verses stay clean with a humbucker.
-- Bass 48: low end pulled back a little so the driven chorus stays tight.
-- Middle 52: a small lift.
-- Treble 55: a touch more sparkle on the arpeggios.
-- VOL 70: the level Michael set for this snaptone in the 2026-10-01 VOL audit. Trim here if the patch jumps in level against your others.
-- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 66 directly.
+## DST - La Charger
 
-**EQ — Guitar EQ 2**, always on.
-100Hz: -2, 500Hz: -1, 1kHz: +1, 3kHz: +2, 6kHz: -1, VOL: 50.
-Low cut and a 3kHz lift so the guitar sits around the vocal. -1 at 6kHz takes the fizz off the crunch box.
+Gain: 40.
+Tone: 55.
+VOL: 64.
+CTL assigned. Loads off; first CTL press switches it on.
+Supplies the selected additional drive voice. Use its level and gain as separate controls. A pre-amp boost may add compression instead of a proportional solo-volume increase.
 
-**MOD — A-Chorus**, always on.
-Depth: 15, Rate: 0.6, Tone: 55.
-Light hand. A bit of width on the clean arpeggios. It disappears under the distortion.
+## AMP - Module off
 
-**DLY — Pure**, on CTL.
-Mix: 18, Time: 608ms, F.Back: 25, Trail: on.
-A dotted eighth at 74 BPM. Spreads the big chorus and the solo. Trail on lets it ring out when you drop back.
+Not used.
 
-**RVB — Hall**, always on.
-Mix: 18, Decay: 40, Trail: on.
-Ballad space. Enough to float the verse, not enough to wash the chorus.
+## CAB - Module off
 
-## CTL footswitch
+Not used.
 
-On CTL: DST (La Charger), DLY (Pure).
+## EQ - Guitar EQ 2
 
-- **CTL off** — Rhythm. Clean, compressed arpeggios with light chorus and hall. This is the resting state the patch loads into.
-- **CTL on** — Lead. Crunch-box chorus wall plus dotted-eighth delay. Use it for the choruses and the solo.
+100Hz: -2.
+500Hz: -1.
+1kHz: 1.
+3kHz: 2.
+6kHz: -1.
+VOL: 50.
+Fixed on. Not on CTL.
+Shapes note body and cut after the amp/capture. Where assigned to CTL, its output adds the specified lift after the gain stages. Numbers are GP-5 control values, not a calibrated loudness guarantee.
 
-Engage CTL at the chorus. Drop back for the verses.
+## MOD - A-Chorus
+
+Depth: 15.
+Rate: 0.6.
+Tone: 55.
+Fixed on. Not on CTL.
+Adds the specified movement. Keep it underneath the note except for intentionally wet artist or ambient voices.
+
+## DLY - Pure
+
+Mix: 14.
+Time: 608.
+F.Back: 25.
+Trail: on.
+CTL assigned. Loads off; first CTL press switches it on.
+Adds repeats only in the listed states. Trail preserves the remaining repeats when this block is bypassed; it does not change delay time or mix.
+
+## RVB - Hall
+
+Mix: 12.
+Decay: 40.
+Trail: on.
+Fixed on. Not on CTL.
+Adds the specified room or ambient tail. The revised mix keeps the initial note audible. Trail behavior follows the saved setting.
+
+## Switching and section map
+
+CTL blocks: DST, DLY.
+- CTL off / loaded state: Rhythm. GP-5 active: NR, PRE, EQ, MOD, RVB, N->S.
+- First CTL press: Lead. GP-5 active: NR, PRE, DST, EQ, MOD, DLY, RVB, N->S.
+- Press CTL again to return to the loaded block pattern, provided no shared MIDI block has been changed.
+
+## Revision record
+
+Approved audit entry 192.
+- DST Gain: 50 -> 40.
+- DLY Mix: 18 -> 14.
+- RVB Mix: 18 -> 12.
+Pre-revision JSON, Markdown and original file hashes are preserved in Documents/patch-audit-2026-10-16/inventory.json and implementation-manifest.json.
+The site piece title and on-disk filenames stay stable; only the short pedal display name may change.

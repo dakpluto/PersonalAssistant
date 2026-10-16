@@ -1,58 +1,113 @@
 # Bring Me to Life (Rhythm Guitar) — Evanescence
 
+Revised 2026-10-16 following the approved library audit.
+Type: Song. Instrument: HSS Stratocaster.
+GP-5 only.
+Patch screen name: BMTL-Gtr. Patch VOL: 50.
+Preset tempo: 95 BPM.
+
 From *Fallen* (2003). About 95 BPM, est.
 Nu-metal meets gothic rock. The verses are piano and vocal. The guitars slam in with low, heavy chugs for the choruses, and the bridge builds to a big riffing climax.
 Built from the song's overall sound. I haven't verified the exact guitars, amps or tuning on the record. It's tuned low. Check yours against the record.
 Instrument: Stratocaster (HSS). Bridge humbucker throughout.
 GP-5 only, Stratocaster (HSS), no pedalboard.
 
-## AMP: Mess DualM + CAB: V30112 IR (User IR 10)
+## Revision intent
 
-High gain the whole way, so this stays on the GP-5's own amp, per the high-gain rule. No snaptone is a near-perfect match for an unverified rig.
-Mess DualM is the Rectifier in Modern mode. Tight, saturated low end is the early-2000s nu-metal sound, and a low tuning needs it. V30112 is the V30 cab it was built to drive.
-The ModernRect snaptone (slot 76) was the closest NAM. It's only a stand-in for an unverified rig, so the GP-5 amp wins.
+Keep the musical role of the original patch while reducing redundant gain, excessive space and unclear switching where identified in audit entry 145.
+The module settings and section map below are the active revision.
+Audited capture volumes and Michael’s explicit patch-level adjustments are preserved.
+No hardware audition or measured level match has been performed.
 
-## Module chain
+## GP-5 settings
 
-**NR — Gate**, always on.
+Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB.
+The encoded N->S block sits between DST and AMP when a SnapTone is used.
+
+Cab IR: V30112. Encoded as User IR 10.
+
+## NR - Gate
+
 THRE: 42.
-Low-tuned, high-gain stop-start riffs need hard stops. 42 keeps the gaps silent without chopping sustained chords.
+Fixed on. Not on CTL.
+Use the lowest threshold that keeps rests quiet. Check soft notes and held-note decay. This gate is before the drives and amp; it does not directly gate noise generated after it.
 
-**PRE — Boost (EP Booster)**, on CTL.
-Gain: 45, +3dB: on, Bright: off.
-The bridge push. More level and sustain for the climax and the lead lines. Bright off keeps it thick.
+## PRE - Module off
 
-**DST — Green OD (TS-808)**, always on.
-Gain: 8, Tone: 55, VOL: 72.
-The tightening trick. Almost no gain, high level. It trims the Rectifier's flub so low-tuned chugs stay defined.
+Not used.
 
-**AMP — Mess DualM**, always on.
-Gain: 60, PRES: 55, VOL: 60, Bass: 56, Middle: 46, Treble: 56.
-Gain 60 is plenty with the TS in front. Middle 46 gives a slight nu-metal scoop without hollowing the guitar out under the vocal.
+## DST - Green OD
 
-**CAB — User IR 10 (V30112)**, always on.
+Gain: 8.
+Tone: 55.
+VOL: 72.
+Fixed on. Not on CTL.
+Supplies the selected additional drive voice. Use its level and gain as separate controls. A pre-amp boost may add compression instead of a proportional solo-volume increase.
+
+## AMP - Mess DualM
+
+Gain: 60.
+PRES: 55.
 VOL: 60.
+Bass: 50.
+Middle: 46.
+Treble: 56.
+Fixed on. Not on CTL.
+Provides one fixed amp voice for the complete preset. CTL does not change its knobs or select another amp channel.
 
-**EQ — Guitar EQ 2**, always on.
-100Hz: 0, 500Hz: -3, 1kHz: +1, 3kHz: +2, 6kHz: -2, VOL: 50.
--3 at 500Hz clears the boxiness of low-tuned chords. +2 at 3kHz for attack. -2 at 6kHz takes off the fizz.
+## CAB - User IR 10
 
-**MOD — off.**
+VOL: 60.
+Fixed on. Not on CTL.
+Keeps the required speaker response in the exported preset. Use the documented loaded IR slot; no extra cab goes after a SnapTone.
 
-**DLY — Analog**, on CTL.
-Mix: 18, Time: 474ms, Feedback: 25, Trail: on.
-A dotted eighth at 95 BPM. Fills behind the bridge's lead lines and the climax.
+## EQ - Guitar EQ 2
 
-**RVB — Room**, always on.
-Mix: 12, Decay: 30, Trail: on.
-A small room. Heavy chugs don't want much space.
+100Hz: 0.
+500Hz: -3.
+1kHz: 1.
+3kHz: 2.
+6kHz: -2.
+VOL: 53.
+CTL assigned. Loads off; first CTL press switches it on.
+Shapes note body and cut after the amp/capture. Where assigned to CTL, its output adds the specified lift after the gain stages. Numbers are GP-5 control values, not a calibrated loudness guarantee.
 
-## CTL footswitch
+## MOD - Module off
 
-On CTL: PRE (Boost), DLY (Analog).
+Not used.
 
-- **CTL off** — Rhythm. Tight, low, saturated Rectifier chug for the choruses and riffs. This is the resting state the patch loads into.
-- **CTL on** — Lead. Boost plus dotted-eighth delay for the bridge build and the lead lines.
+## DLY - Analog
 
-The verses are piano-led. Lay out, or play light palm mutes with the guitar volume rolled back.
-Engage CTL for the bridge climax. Drop back for the final chorus if it's too loud against the band.
+Mix: 12.
+Time: 474.
+Feedback: 25.
+Trail: on.
+CTL assigned. Loads off; first CTL press switches it on.
+Adds repeats only in the listed states. Trail preserves the remaining repeats when this block is bypassed; it does not change delay time or mix.
+
+## RVB - Room
+
+Mix: 12.
+Decay: 30.
+Trail: on.
+Fixed on. Not on CTL.
+Adds the specified room or ambient tail. The revised mix keeps the initial note audible. Trail behavior follows the saved setting.
+
+## Switching and section map
+
+CTL blocks: EQ, DLY.
+- CTL off / loaded state: Rhythm. GP-5 active: NR, DST, AMP, CAB, RVB.
+- First CTL press: Lead. GP-5 active: NR, DST, AMP, CAB, EQ, DLY, RVB.
+- Press CTL again to return to the loaded block pattern, provided no shared MIDI block has been changed.
+
+## Revision record
+
+Approved audit entry 145.
+- PRE: Boost -> off.
+- PRE: removed from CTL.
+- AMP Bass: 56 -> 50.
+- EQ VOL: 50 -> 53.
+- EQ: assigned to CTL.
+- DLY Mix: 18 -> 12.
+Pre-revision JSON, Markdown and original file hashes are preserved in Documents/patch-audit-2026-10-16/inventory.json and implementation-manifest.json.
+The site piece title and on-disk filenames stay stable; only the short pedal display name may change.

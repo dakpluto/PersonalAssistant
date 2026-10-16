@@ -1,92 +1,126 @@
 # Tim Henson / Polyphia (Guitar) — Signature Sound
 
-Artist patch. Instrument: Stratocaster (HSS). GP-5 only, no pedalboard.
+Revised 2026-10-16 following the approved library audit.
+Type: Artist. Instrument: HSS Stratocaster.
+GP-5 only.
+Patch screen name: Polyphia-G. Patch VOL: 50.
+Preset tempo: 120 BPM.
 
-## The signature sound
+Polyphia-inspired HSS Strat palette: compressed, articulate clean rhythm and a controlled high-gain lead. Playing God’s nylon/acoustic attack is an adaptation target, not something the electric guitar’s amp EQ reproduces exactly.
 
-Polyphia is instrumental guitar music built like modern pop and trap production. Tim Henson's playing is the center of it: hybrid picking, tapping, legato runs, and percussive, almost slap-style right-hand work.
-Two tones carry most of the catalog.
-- **The clean.** Glassy, compressed, hi-fi. Every note of a tapped or hybrid-picked line comes out at the same level. A light shimmer of chorus, clean digital delay, and a polished plate. Think the clean runs in "G.O.A.T." and "Playing God" (where the original is nylon-string; this is the electric stand-in).
-- **The drive.** A tight, mid-forward modern drive for riffs and leads. It's not a wall of saturation. The low end is cut so fast palm-muted figures stay articulate.
-The band is known for going direct to digital rigs rather than miking amps in a room. The sound is clean, close and produced. I haven't verified the exact amp profiles behind specific records, so this patch builds to the sound, not to a specific rig.
+## Revision intent
 
-How this patch models it:
-- A hi-fi Mesa Lone Star clean into a V30 IR, with a C4 compressor always on, for the clean.
-- CTL swaps three things at once: Crunch Box-style drive on, a tightening EQ on, and the chorus **off**. That gives you the dry, focused drive tone without chorus smearing fast lines.
+Keep the musical role of the original patch while reducing redundant gain, excessive space and unclear switching where identified in audit entry 138.
+The module settings and section map below are the active revision.
+Audited capture volumes and Michael’s explicit patch-level adjustments are preserved.
+No hardware audition or measured level match has been performed.
 
-Pickups: position 2 or 4 for the cleans (the glassiest, quackiest voices on an HSS). Bridge humbucker for CTL on.
+## GP-5 settings
 
-## Module chain
+Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB.
+The encoded N->S block sits between DST and AMP when a SnapTone is used.
 
-Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
+Cab IR: V30112 (User IR 10). Encoded as User IR 10.
 
-**NR — Gate**, always on.
-THRE: 32.
-Higher than a clean patch needs. The CTL-on drive has stop-start riffs, and the gate has to slam shut on the rests. The compressed clean sits well above it.
+## NR - Gate
 
-**PRE — COMP4 (Keeley C4)**, always on.
-Sustain: 58, Attack: 40, Clip: 45, VOL: 55.
-The core of the clean sound. Taps and hammer-ons come out as loud as picked notes.
-Attack 40 lets some pick and pluck transient through before the squeeze, so hybrid-picked lines keep their snap.
-It stays on in CTL-on too. Compression before a drive gives legato leads more sustain and evens them out.
+THRE: 15.
+Fixed on. Not on CTL.
+Use the lowest threshold that keeps rests quiet. Check soft notes and held-note decay. This gate is before the drives and amp; it does not directly gate noise generated after it.
 
-**DST — La Charger (MI Audio Crunch Box)**, on CTL.
-Gain: 72, Tone: 58, VOL: 62.
-The drive voice. The Crunch Box is a cranked-Marshall-in-a-box: tighter and more amp-like than a Rat into a clean amp.
-Gain 72 is enough for riffs and leads without turning to mush. Tone 58 keeps note definition.
-VOL 62 puts the drive a little above the compressed clean.
+## PRE - COMP4
 
-**AMP — L-Star CL (Mesa/Boogie Lone Star Ch. 1)**, always on.
-Gain: 38, PRES: 60, VOL: 60, Bass: 45, Middle: 50, Treble: 62.
-Hi-fi, tight, very clean at Gain 38. That's the polished clean, and a clean pedal platform for the La Charger.
-Bass 45 keeps the low end lean. Treble 62 and PRES 60 add the sparkle.
-No snaptone here. CTL off is a pristine clean, and none of the combos fit. The clean ones are Fender/Dumble voices, and everything else is a crunch capture.
+Sustain: 58.
+Attack: 40.
+Clip: 45.
+VOL: 55.
+Fixed on. Not on CTL.
+Controls the source dynamics or adds the specified push/filter before distortion and amp processing. The settings stay fixed; only its on/off state can change.
 
-**CAB — User IR 10 (V30112)**, always on.
+## DST - La Charger
+
+Gain: 55.
+Tone: 58.
+VOL: 62.
+CTL assigned. Loads off; first CTL press switches it on.
+Supplies the selected additional drive voice. Use its level and gain as separate controls. A pre-amp boost may add compression instead of a proportional solo-volume increase.
+
+## AMP - L-Star CL
+
+Gain: 38.
+PRES: 60.
 VOL: 60.
-A Celestion V30 with a sub mic blended in. It's the modern V30 voice behind most of this kind of drive tone, and it stays smooth on the clean with the Lone Star's top end.
+Bass: 45.
+Middle: 50.
+Treble: 62.
+Fixed on. Not on CTL.
+Provides one fixed amp voice for the complete preset. CTL does not change its knobs or select another amp channel.
 
-**EQ — Guitar EQ 2**, on CTL.
-100Hz: -4, 500Hz: -2, 1kHz: +3, 3kHz: +1, 6kHz: -4, VOL: 52.
-Only on with the drive.
--4 at 100Hz tightens palm mutes. +3 at 1kHz gives leads their cut. -4 at 6kHz files off the fizz you get from a drive pedal into a clean amp.
-Off in CTL-off so the clean keeps its full, open top end.
+## CAB - User IR 10
 
-**MOD — A-Chorus**, on CTL (inverted: on by default, CTL turns it **off**).
-Depth: 22, Rate: 0.8, Tone: 60.
-The shimmer on the clean. Light hand per the patch rules: it sits under the tone.
-CTL kills it for the drive. Chorus on fast distorted lines just smears them.
+VOL: 60.
+Fixed on. Not on CTL.
+Keeps the required speaker response in the exported preset. Use the documented loaded IR slot; no extra cab goes after a SnapTone.
 
-**DLY — Pure**, loads on. MIDI toggle (see MIDI toggles).
-Mix: 18, Time: 375ms, F.Back: 25, Trail: on.
-Clean digital repeats, no tape or analog darkening. That fits the produced sound.
-375ms is a dotted eighth at 120 BPM. This is an artist patch, not one song, so set Time to taste per tune (dotted eighth = 45000 / BPM).
-Mix 18 keeps fast runs readable. On for both sounds.
+## EQ - Guitar EQ 2
 
-**RVB — Plate**, always on.
-Mix: 20, Decay: 40, Damp: 45, Trail: on.
-A polished studio plate. Decay 40 keeps tapped lines from washing into each other. Damp 45 keeps the top smooth.
+100Hz: -4.
+500Hz: -2.
+1kHz: 3.
+3kHz: 1.
+6kHz: -4.
+VOL: 52.
+CTL assigned. Loads off; first CTL press switches it on.
+Shapes note body and cut after the amp/capture. Where assigned to CTL, its output adds the specified lift after the gain stages. Numbers are GP-5 control values, not a calibrated loudness guarantee.
 
-## CTL footswitch
+## MOD - A-Chorus
 
-On CTL: DST (La Charger), EQ (Guitar EQ 2), MOD (A-Chorus, inverted).
+Depth: 22.
+Rate: 0.8.
+Tone: 60.
+CTL assigned. Loads on; first CTL press switches it off.
+Also on an individual MIDI toggle.
+Adds the specified movement. Keep it underneath the note except for intentionally wet artist or ambient voices.
 
-- **CTL off** — The clean. Compressed, glassy Lone Star with chorus, delay and plate. Hybrid-picked lines, tapping, arpeggiated parts, intros. This is the resting state the patch loads into.
-- **CTL on** — The drive. La Charger into the Lone Star, low end and fizz trimmed by the EQ, chorus off, delay and plate still there. Riffs, heavier sections, leads.
+## DLY - Pure
 
-Stomp CTL when the tune goes heavy. Switch to the bridge humbucker at the same time.
+Mix: 12.
+Time: 375.
+F.Back: 25.
+Trail: on.
+MIDI-only. Loads on.
+Adds repeats only in the listed states. Trail preserves the remaining repeats when this block is bypassed; it does not change delay time or mix.
 
-## MIDI toggles
+## RVB - Plate
 
-MIDI = True (added 2026-10-12). With no MIDI controller connected, the patch loads and plays exactly as before: CTL and the board work the same. MIDI adds single-block toggles on top.
+Mix: 10.
+Decay: 40.
+Damp: 45.
+Trail: on.
+Fixed on. Not on CTL.
+Adds the specified room or ambient tail. The revised mix keeps the initial note audible. Trail behavior follows the saved setting.
 
-On MIDI: MOD (A-Chorus, also on CTL, inverted) and DLY (Pure, MIDI-only, loads on).
+## Switching and section map
 
-Sounds:
-- **Clean** (default). CTL off: chorus on, delay on.
-- **Dry percussive clean.** CTL off, MIDI DLY off. Tight slapped/tapped percussive parts where delay repeats blur the rhythm.
-- **Dry clean.** CTL off, MIDI MOD off. Straight hi-fi clean, no chorus, for the most pristine passages.
-- **Lead** (CTL on). Drive + EQ, chorus off.
-- **Wide lead.** CTL on, MIDI MOD on. Chorus back under the lead for melodic, singing lines.
-- **Dry lead.** CTL on, MIDI DLY off. Fast runs with no delay.
-- **Shared CTL/MIDI blocks:** CTL flips every block assigned to it, whatever state it's in (confirmed by Michael, 2026-10-12). A CTL block you switched by MIDI ends up the opposite of the designed CTL sound. So before pressing CTL, switch it back by MIDI. Changing a block by MIDI *after* pressing CTL is always safe.
+CTL blocks: DST, EQ, MOD.
+- CTL off / loaded state: The clean. GP-5 active: NR, PRE, AMP, CAB, MOD, DLY, RVB.
+- First CTL press: The drive. GP-5 active: NR, PRE, DST, AMP, CAB, EQ, DLY, RVB.
+- Press CTL again to return to the loaded block pattern, provided no shared MIDI block has been changed.
+
+MIDI toggles: MOD, DLY.
+MIDI mapping lives on the controller/device, not in the .prst.
+- MOD A-Chorus: loads on; toggle to remove this block independently.
+- DLY Pure: loads on; toggle to remove this block independently.
+Before CTL, undo MIDI changes to shared CTL blocks so they match the preceding CTL pattern. CTL flips current states, not a stored scene. After pressing CTL, apply individual MIDI changes.
+- MOD-only alternative from loaded state: CTL off, MIDI MOD off; other MIDI blocks at their load states. GP-5 active: NR, PRE, AMP, CAB, DLY, RVB. Board switches unchanged.
+- DLY-only alternative from loaded state: CTL off, MIDI DLY off; other MIDI blocks at their load states. GP-5 active: NR, PRE, AMP, CAB, MOD, RVB. Board switches unchanged.
+
+## Revision record
+
+Approved audit entry 138.
+- NR THRE: 32 -> 15.
+- DST Gain: 72 -> 55.
+- DLY Mix: 18 -> 12.
+- RVB Mix: 20 -> 10.
+Pre-revision JSON, Markdown and original file hashes are preserved in Documents/patch-audit-2026-10-16/inventory.json and implementation-manifest.json.
+The site piece title and on-disk filenames stay stable; only the short pedal display name may change.

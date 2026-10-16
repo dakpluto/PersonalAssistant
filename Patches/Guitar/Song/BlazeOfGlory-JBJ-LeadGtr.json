@@ -1,0 +1,21 @@
+{
+  "patch_name": "BlazeGlory",
+  "patch_vol": 50,
+  "bpm": 79,
+  "nam": {
+    "name": "ClassicMarshall: JCM800 2203 G4 MV5 + V7X_dc Marshall 1960AV",
+    "slot": 68,
+    "settings": {"Gain": 50, "VOL": 50, "Bass": 48, "Middle": 56, "Treble": 48}
+  },
+  "modules": {
+    "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 10}},
+    "PRE": {"model": null},
+    "DST": {"model": null},
+    "AMP": {"model": null},
+    "CAB": {"model": null},
+    "EQ": {"model": "Guitar EQ 1", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"125Hz": -2, "400Hz": 1, "800Hz": 3, "1.6kHz": 2, "4kHz": -1, "VOL": 54}},
+    "MOD": {"model": null},
+    "DLY": {"model": "Analog", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Mix": 16, "Time": 380, "Feedback": 20, "Trail": true}},
+    "RVB": {"model": "Plate", "always_on": true, "settings": {"Mix": 11, "Decay": 28, "Damp": 58, "Trail": true}}
+  }
+}

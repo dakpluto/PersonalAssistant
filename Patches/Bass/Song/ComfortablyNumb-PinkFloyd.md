@@ -1,55 +1,102 @@
 # Comfortably Numb — Pink Floyd
 
+Revised 2026-10-16 following the approved library audit.
+Type: Song. Instrument: Harley Benton passive 5-string P/J.
+GP-5 only.
+Patch screen name: CNumb-PF. Patch VOL: 52.
+Preset tempo: 64 BPM.
+
 The Wall, 1979. ~64 BPM.
 GP-5 only, P/J bass, no pedalboard.
 The bass part is slow, long, sustained notes under an orchestral verse and Gilmour's huge chorus/solo sections.
 It has to be deep, round, and smooth, and fill the floor under the whole arrangement without ever getting busy or bright.
 Verses sit in B minor with strings. The "I have become comfortably numb" choruses and both solos open up in D major.
 
-## Module chain
+## Revision intent
 
-**NR — Gate**, always on.
-THRE: 12. Very light. Long sustained notes must decay naturally, so the gate can't cut the tails.
+Keep the musical role of the original patch while reducing redundant gain, excessive space and unclear switching where identified in audit entry 26.
+The module settings and section map below are the active revision.
+Audited capture volumes and Michael’s explicit patch-level adjustments are preserved.
+No hardware audition or measured level match has been performed.
 
-**PRE — COMP (Ross)**, always on.
-Sustain: 40, VOL: 60.
-Light compression evens out the long notes so every root holds the same weight across the bar.
+## GP-5 settings
 
-**DST — Bass OD**, on CTL.
-Gain: 15, Blend: 30, VOL: 60, Bass: 55, Treble: 45.
-Very light. It doesn't really read as overdrive.
-It adds some harmonic density so the bass holds its ground under the chorus and the final solo wall.
+Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB.
+The encoded N->S block sits between DST and AMP when a SnapTone is used.
 
-**AMP/CAB — NAM SnapTone, slot 53: CleanSVT** (always on)
-- Built from the `SVT CLEAN (SVT-CL)` NAM and the Apg810 IR, combined into one snaptone.
-- Real Ampeg SVT-CL preamp on its clean setting, into the Apg810 8x10 IR.
-- Waters' tone here is clean and round. No Hiwatt capture on hand, and a clean SVT gets closer than anything else here.
-- Gain: 46, VOL: 65, Bass: 62, Middle: 48, Treble: 40
-- Gain 46: a little under default. This part wants less push than the other CleanSVT patches.
-- Bass 62: more low end.
-- Middle 48: midrange pulled back a little.
-- Treble 40: top end pulled back noticeably.
-- VOL 65: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
-- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 53 directly.
+AMP/CAB replacement: SnapTone CleanSVT (slot 53): SVT CLEAN (SVT-CL) + Apg810.
+Slot: 53. Always on.
+Gain: 46, VOL: 65, Bass: 56, Middle: 48, Treble: 40.
+AMP and CAB are both off; the capture already includes its cab/DI character.
+The capture voice is fixed across CTL states. Audited VOL is preserved for this slot.
 
-**EQ — Bass EQ 1**, always on.
-33Hz: +3, 150Hz: +2, 600Hz: -2, 2kHz: 0, 8kHz: -3, VOL: 52.
-Sub and low end reinforced, 600Hz cleared of boxiness, top rolled off.
-The result is a round, felt-more-than-heard bottom.
+## NR - Gate
 
-**MOD — off.**
+THRE: 12.
+Fixed on. Not on CTL.
+Use the lowest threshold that keeps rests quiet. Check soft notes and held-note decay. This gate is before the drives and amp; it does not directly gate noise generated after it.
 
-**DLY — off.** Gilmour has the delay. The bass doesn't need it.
+## PRE - COMP
 
-**RVB — Hall**, on CTL.
-Mix: 22, Decay: 50, Trail: on.
-Opens the bass into the same big space as the chorus and solos. Trail on lets the tail ring out when you drop back into a verse.
+Sustain: 40.
+VOL: 60.
+Fixed on. Not on CTL.
+Controls the source dynamics or adds the specified push/filter before distortion and amp processing. The settings stay fixed; only its on/off state can change.
 
-## CTL footswitch
+## DST - Module off
 
-Two modules on CTL: DST (Bass OD) and RVB (Hall).
+Not used.
 
-- **CTL off**: verses ("Hello, is there anybody in there?"). Dry, deep, and smooth under the strings. This is the resting state.
-- **CTL on**: choruses and both guitar solos. A little extra density plus hall space to match the band's lift.
+## AMP - Module off
 
-Engage at each "There is no pain, you are receding" chorus entry and leave it on through the solos. Back off for the verses.
+Not used.
+
+## CAB - Module off
+
+Not used.
+
+## EQ - Bass EQ 1
+
+33Hz: 0.
+150Hz: 2.
+600Hz: -2.
+2kHz: 0.
+8kHz: -3.
+VOL: 52.
+Fixed on. Not on CTL.
+Shapes note body and cut after the amp/capture. Where assigned to CTL, its output adds the specified lift after the gain stages. Numbers are GP-5 control values, not a calibrated loudness guarantee.
+
+## MOD - Module off
+
+Not used.
+
+## DLY - Module off
+
+Not used.
+
+## RVB - Hall
+
+Mix: 6.
+Decay: 30.
+Trail: on.
+CTL assigned. Loads off; first CTL press switches it on.
+Adds the specified room or ambient tail. The revised mix keeps the initial note audible. Trail behavior follows the saved setting.
+
+## Switching and section map
+
+CTL blocks: RVB.
+- CTL off / loaded state: verses ("Hello, is there anybody in there?"). GP-5 active: NR, PRE, EQ, N->S.
+- First CTL press: choruses and both guitar solos. GP-5 active: NR, PRE, EQ, RVB, N->S.
+- Press CTL again to return to the loaded block pattern, provided no shared MIDI block has been changed.
+
+## Revision record
+
+Approved audit entry 26.
+- SnapTone Bass: 62 -> 56.
+- DST: Bass OD -> off.
+- DST: removed from CTL.
+- EQ 33Hz: 3 -> 0.
+- RVB Mix: 22 -> 6.
+- RVB Decay: 50 -> 30.
+Pre-revision JSON, Markdown and original file hashes are preserved in Documents/patch-audit-2026-10-16/inventory.json and implementation-manifest.json.
+The site piece title and on-disk filenames stay stable; only the short pedal display name may change.

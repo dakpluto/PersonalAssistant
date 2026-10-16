@@ -1,56 +1,103 @@
 # SpiritCarriesOn-DT — The Spirit Carries On by Dream Theater
 
+Revised 2026-10-16 following the approved library audit.
+Type: Song. Instrument: Sire V7 2nd Generation 5-string fretless, flatwounds; run active.
+GP-5 only.
+Patch screen name: Spirit Car. Patch VOL: 50.
+Preset tempo: 76 BPM.
+
 Metropolis Pt. 2: Scenes from a Memory, 1999. ~76 BPM, est.
 This is DT's ballad, not the prog-metal aggression — restrained verses that build into a huge, gospel-choir-backed climax at the end. The bass part sits warm and supportive, not technical.
 GP-5 only, Sire fretless (Active), no pedalboard.
 
-## AMP: Mess Bass (Mesa/Boogie Bass 400) + CAB: EBS410 IR (User IR 4)
+## Revision intent
 
-Rebuilt 2026-09-18 on the GP-5's own AMP + a loaded IR. Kept that way in the 2026-09-25 snaptone pass: Mess Bass is a direct model of the Mesa bass rig Myung used, and the ProgSVT snaptone is only an SVT stand-in. Mess Bass at low gain gives the same clean, no-grind lift the Harmonic Booster capture provided; EBS410 is ir.md's own recommendation for clean bass tones, which suits a warm, emotional fretless ballad.
+Keep the musical role of the original patch while reducing redundant gain, excessive space and unclear switching where identified in audit entry 105.
+The module settings and section map below are the active revision.
+Audited capture volumes and Michael’s explicit patch-level adjustments are preserved.
+No hardware audition or measured level match has been performed.
 
-- Gain: 30 — kept low. This isn't a grind tone, it's a clean lift.
-- VOL: 62
-- Bass: 55 — solid low end without getting flabby, lets the fretless glide sit underneath the vocal.
-- Middle: 50 — flat, neutral, doesn't fight the piano/vocal in the mix.
-- Treble: 48 — soft top end so fret-noise and string squeak from the fretless don't poke through.
-- CAB VOL: 58.
+## GP-5 settings
 
-## Module chain
+Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB.
+The encoded N->S block sits between DST and AMP when a SnapTone is used.
 
-**NR — Gate**, always on.
-THRE: 25. Light setting — clean NAM at low gain doesn't need aggressive gating, just enough to kill hiss between phrases.
+Cab IR: EBS410. Encoded as User IR 4.
 
-**PRE — Micro Boost**, on CTL.
-Gain: 35 when engaged.
-Off for the restrained verses. On for the climax — a clean volume/harmonic push into the choir-backed ending, not a tone change.
+## NR - Gate
 
-**DST — off.**
-No drive anywhere in this patch. The song's power comes from dynamics and arrangement, not distortion.
+THRE: 8.
+Fixed on. Not on CTL.
+Use the lowest threshold that keeps rests quiet. Check soft notes and held-note decay. This gate is before the drives and amp; it does not directly gate noise generated after it.
 
-**AMP — Mess Bass**, always on. Gain 30, VOL 62, Bass 55, Middle 50, Treble 48.
+## PRE - Micro Boost
 
-**CAB — User IR 4 (EBS410)**, always on. VOL 58.
+Gain: 35.
+CTL assigned. Loads off; first CTL press switches it on.
+Controls the source dynamics or adds the specified push/filter before distortion and amp processing. The settings stay fixed; only its on/off state can change.
 
-**EQ — Bass EQ 2**, always on.
-50Hz: +3, 120Hz: +2, 400Hz: -3, 800Hz: -1, 4.5kHz: +3, VOL: 55.
-Small low-end reinforcement and a light 400Hz cut to keep the fretless from getting boxy, plus a gentle 4.5kHz lift so the note attack stays audible under the vocal and piano.
+## DST - Module off
 
-**MOD — B-Chorus**, always on.
-Depth: 18, Rate: 0.4Hz, VOL: 52.
-Very light — per the "light hand" rule, this sits under the tone rather than announcing itself. Just enough shimmer to give the fretless glide some width, a texture choice that stays the same in both CTL states.
+Not used.
 
-**DLY — off.** Kept out entirely — a delay trail would blur the dynamic contrast between the quiet verses and the climax, which is the whole point of this patch.
+## AMP - Mess Bass
 
-**RVB — Hall**, on CTL.
-Mix: 45, Decay: 65, Trail: true.
-Off for the verse — dry, close, intimate.
-On for the climax — a big hall swell alongside the boost, matching the gospel-choir scale of the ending.
+Gain: 30.
+VOL: 62.
+Bass: 55.
+Middle: 50.
+Treble: 48.
+Fixed on. Not on CTL.
+Provides one fixed amp voice for the complete preset. CTL does not change its knobs or select another amp channel.
 
-## CTL footswitch
+## CAB - User IR 4
 
-Two modules on CTL: PRE (Micro Boost) and RVB (Hall).
+VOL: 58.
+Fixed on. Not on CTL.
+Keeps the required speaker response in the exported preset. Use the documented loaded IR slot; no extra cab goes after a SnapTone.
 
-- **CTL off** — verse/build sound. Dry, close, restrained. This is the resting state the patch loads into.
-- **CTL on** — climax sound. Boosted and washed in hall reverb, matching the huge choir-backed ending.
+## EQ - Bass EQ 2
 
-Engage CTL only for the final climax section — everything before that stays in the off state, including the song's earlier dynamic swells, since the real "big" moment is reserved for the ending.
+50Hz: 3.
+120Hz: 2.
+400Hz: 0.
+800Hz: 1.
+4.5kHz: 3.
+VOL: 55.
+Fixed on. Not on CTL.
+Shapes note body and cut after the amp/capture. Where assigned to CTL, its output adds the specified lift after the gain stages. Numbers are GP-5 control values, not a calibrated loudness guarantee.
+
+## MOD - Module off
+
+Not used.
+
+## DLY - Module off
+
+Not used.
+
+## RVB - Hall
+
+Mix: 10.
+Decay: 35.
+Trail: on.
+CTL assigned. Loads off; first CTL press switches it on.
+Adds the specified room or ambient tail. The revised mix keeps the initial note audible. Trail behavior follows the saved setting.
+
+## Switching and section map
+
+CTL blocks: PRE, RVB.
+- CTL off / loaded state: verse/build sound. GP-5 active: NR, AMP, CAB, EQ.
+- First CTL press: climax sound. GP-5 active: NR, PRE, AMP, CAB, EQ, RVB.
+- Press CTL again to return to the loaded block pattern, provided no shared MIDI block has been changed.
+
+## Revision record
+
+Approved audit entry 105.
+- NR THRE: 25 -> 8.
+- EQ 400Hz: -3 -> 0.
+- EQ 800Hz: -1 -> 1.
+- MOD: B-Chorus -> off.
+- RVB Mix: 45 -> 10.
+- RVB Decay: 65 -> 35.
+Pre-revision JSON, Markdown and original file hashes are preserved in Documents/patch-audit-2026-10-16/inventory.json and implementation-manifest.json.
+The site piece title and on-disk filenames stay stable; only the short pedal display name may change.

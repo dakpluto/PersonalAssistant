@@ -2,16 +2,80 @@
   "patch_name": "RedDirt",
   "patch_vol": 52,
   "bpm": 96,
-  "nam": {"name": "CleanB15 (slot 51): Ampeg B18 - Head DI - Bass Chan - Vol 2.5 (B-18N) + Apg115", "slot": 51, "settings": {"Gain": 50, "VOL": 80, "Bass": 58, "Middle": 50, "Treble": 45}},
+  "nam": {
+    "name": "CleanB15 (slot 51): Ampeg B18 - Head DI - Bass Chan - Vol 2.5 (B-18N) + Apg115",
+    "slot": 51,
+    "settings": {
+      "Gain": 50,
+      "VOL": 80,
+      "Bass": 58,
+      "Middle": 50,
+      "Treble": 45
+    }
+  },
   "modules": {
-    "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 12}},
-    "PRE": {"model": "COMP", "always_on": true, "settings": {"Sustain": 40, "VOL": 58}},
-    "DST": {"model": "Bass OD", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Gain": 24, "Blend": 28, "VOL": 55, "Bass": 52, "Treble": 48}},
-    "AMP": {"model": null},
-    "CAB": {"model": null},
-    "EQ": {"model": "Bass EQ 2", "always_on": true, "settings": {"50Hz": 1, "120Hz": 2, "400Hz": -1, "800Hz": 1, "4.5kHz": -2, "VOL": 52}},
-    "MOD": {"model": null},
-    "DLY": {"model": null},
-    "RVB": {"model": "Room", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Mix": 12, "Decay": 30, "Trail": true}}
+    "NR": {
+      "model": "Gate",
+      "always_on": true,
+      "settings": {
+        "THRE": 12
+      }
+    },
+    "PRE": {
+      "model": "COMP",
+      "always_on": true,
+      "settings": {
+        "Sustain": 40,
+        "VOL": 58
+      }
+    },
+    "DST": {
+      "model": "Bass OD",
+      "ctl": true,
+      "ctl_off_state": "off",
+      "ctl_on_state": "on",
+      "settings": {
+        "Gain": 15,
+        "Blend": 20,
+        "VOL": 55,
+        "Bass": 52,
+        "Treble": 48
+      }
+    },
+    "AMP": {
+      "model": null
+    },
+    "CAB": {
+      "model": null
+    },
+    "EQ": {
+      "model": "Bass EQ 2",
+      "always_on": true,
+      "settings": {
+        "50Hz": 1,
+        "120Hz": 2,
+        "400Hz": -1,
+        "800Hz": 1,
+        "4.5kHz": -2,
+        "VOL": 52
+      }
+    },
+    "MOD": {
+      "model": null
+    },
+    "DLY": {
+      "model": null
+    },
+    "RVB": {
+      "model": "Room",
+      "ctl": true,
+      "ctl_off_state": "off",
+      "ctl_on_state": "on",
+      "settings": {
+        "Mix": 6,
+        "Decay": 30,
+        "Trail": true
+      }
+    }
   }
 }

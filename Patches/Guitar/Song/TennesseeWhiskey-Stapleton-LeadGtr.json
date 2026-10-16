@@ -1,0 +1,74 @@
+{
+  "patch_name": "TNWhiskey",
+  "patch_vol": 50,
+  "bpm": 68,
+  "nam": {
+    "name": "EdgyTwang: EDGY - Fender Deluxe Reverb 1965 [Hyper Accuracy] + Brown Deluxe 1x12 Medium Mix",
+    "slot": 63,
+    "settings": {
+      "Gain": 50,
+      "VOL": 70,
+      "Bass": 52,
+      "Middle": 54,
+      "Treble": 43
+    }
+  },
+  "modules": {
+    "NR": {
+      "model": "Gate",
+      "always_on": true,
+      "settings": {
+        "THRE": 8
+      }
+    },
+    "PRE": {
+      "model": null
+    },
+    "DST": {
+      "model": "Green OD",
+      "ctl": true,
+      "ctl_off_state": "off",
+      "ctl_on_state": "on",
+      "settings": {
+        "Gain": 10,
+        "Tone": 38,
+        "VOL": 53
+      }
+    },
+    "AMP": {
+      "model": null
+    },
+    "CAB": {
+      "model": null
+    },
+    "EQ": {
+      "model": "Guitar EQ 1",
+      "ctl": true,
+      "ctl_off_state": "off",
+      "ctl_on_state": "on",
+      "settings": {
+        "125Hz": -1,
+        "400Hz": 1,
+        "800Hz": 2,
+        "1.6kHz": 1,
+        "4kHz": -2,
+        "VOL": 53
+      }
+    },
+    "MOD": {
+      "model": null
+    },
+    "DLY": {
+      "model": null
+    },
+    "RVB": {
+      "model": "Spring",
+      "always_on": true,
+      "settings": {
+        "Mix": 13,
+        "Decay": 24,
+        "Trail": true
+      }
+    }
+  }
+}

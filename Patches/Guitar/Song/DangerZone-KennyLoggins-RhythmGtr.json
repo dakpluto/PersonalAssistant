@@ -19,8 +19,8 @@
       "ctl_off_state": "off",
       "ctl_on_state": "on",
       "settings": {
-        "Gain": 50,
-        "+3dB": true,
+        "Gain": 25,
+        "+3dB": false,
         "Bright": false
       }
     },
@@ -48,15 +48,17 @@
     },
     "EQ": {
       "model": "Guitar EQ 2",
-      "always_on": true,
       "settings": {
         "100Hz": -2,
         "500Hz": 0,
         "1kHz": 1,
         "3kHz": 1,
         "6kHz": -2,
-        "VOL": 50
-      }
+        "VOL": 53
+      },
+      "ctl": true,
+      "ctl_off_state": "off",
+      "ctl_on_state": "on"
     },
     "MOD": {
       "model": "A-Chorus",
@@ -73,7 +75,7 @@
       "ctl_off_state": "off",
       "ctl_on_state": "on",
       "settings": {
-        "Mix": 22,
+        "Mix": 16,
         "Time": 380,
         "Feedback": 30,
         "Trail": true

@@ -1,5 +1,11 @@
 # Spider-Man: The Animated Series Theme (1994) (Rhythm Guitar) — Joe Perry
 
+Revised 2026-10-16 following the approved library audit.
+Type: Song. Instrument: HSS Stratocaster.
+GP-5 only.
+Patch screen name: G-Spidey94. Patch VOL: 50.
+Preset tempo: 140 BPM.
+
 Main title theme from *Spider-Man: The Animated Series* (Fox Kids, 1994-1998). Driving hard-rock tempo, est.
 Performed by Joe Perry of Aerosmith. Songwriting credits vary by source: the Saban and Shuki Levy music team is credited, and Perry is credited on some lists. Treat the credit line as approximate.
 This is an instrumental hard-rock theme with a heavy riff and a screaming lead melody over it. The patch targets 90s Aerosmith-era Perry: a Marshall pushed to crunch, mid-forward, not modern-scooped.
@@ -7,49 +13,97 @@ I haven't verified the exact gear Perry used on this recording. The tone is buil
 Instrument: Stratocaster (HSS). Bridge humbucker for both sounds.
 GP-5 only, Stratocaster (HSS), no pedalboard.
 
-## Module chain
+## Revision intent
 
-**NR — Gate**, always on.
-THRE: 35.
-Tightens the stops in the riff. With gain 55 plus the Boost, the patch hisses without it.
+Keep the musical role of the original patch while reducing redundant gain, excessive space and unclear switching where identified in audit entry 184.
+The module settings and section map below are the active revision.
+Audited capture volumes and Michael’s explicit patch-level adjustments are preserved.
+No hardware audition or measured level match has been performed.
 
-**PRE — Boost (EP Booster)**, on CTL.
-Gain: 50, +3dB: on, Bright: off.
-Pushes the 800 into lead saturation and adds level so the melody jumps out over the band. Bright off keeps it from turning fizzy.
+## GP-5 settings
 
-**DST — off.** The 800 supplies the crunch. A pedal drive would push it past Perry's grittier, looser feel.
+Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB.
+The encoded N->S block sits between DST and AMP when a SnapTone is used.
 
-**AMP/CAB — NAM SnapTone, slot 69: BritishCrunch** (always on)
-- Built from the `Marshall JTM45 I Crunch BAL DI` NAM and the Origin Effects British Straight 4x12 Medium Mix IR, combined into one snaptone.
-- Real Marshall JTM45 crunch, into the Origin Effects British Straight 4x12.
-- Classic British hard-rock crunch. JTM45.
-- Gain: 50, VOL: 67, Bass: 50, Middle: 60, Treble: 58
-- Gain 50: the capture as built.
-- Bass 50: flat.
-- Middle 60: more midrange.
-- Treble 58: more top end.
-- VOL 67: the level Michael set for this snaptone in the 2026-10-01 VOL audit. Trim here if the patch jumps in level against your others.
-- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 69 directly.
+AMP/CAB replacement: SnapTone BritishCrunch (slot 69): Marshall JTM45 I Crunch BAL DI + Origin Effects British Straight 4x12 Medium Mix.
+Slot: 69. Always on.
+Gain: 50, VOL: 67, Bass: 50, Middle: 60, Treble: 58.
+AMP and CAB are both off; the capture already includes its cab/DI character.
+The capture voice is fixed across CTL states. Audited VOL is preserved for this slot.
 
-**EQ — Guitar EQ 2**, always on.
-100Hz: -2, 500Hz: 0, 1kHz: +1, 3kHz: +1, 6kHz: -2, VOL: 50.
-Keeps the palm-mutes tight, adds a slight mid-presence lift, and takes the top-end fizz off.
+## NR - Gate
 
-**MOD — off.**
+THRE: 20.
+Fixed on. Not on CTL.
+Use the lowest threshold that keeps rests quiet. Check soft notes and held-note decay. This gate is before the drives and amp; it does not directly gate noise generated after it.
 
-**DLY — Analog**, on CTL.
-Mix: 16, Time: 380ms, F.Back: 22, Trail: on.
-A dark, short tail behind the lead melody. It fills the space behind sustained notes without blurring fast runs.
+## PRE - Boost
 
-**RVB — Room**, always on.
-Mix: 12, Decay: 30, Trail: on.
-Just enough air to keep the riff from sounding direct-in.
+Gain: 25.
++3dB: off.
+Bright: off.
+CTL assigned. Loads off; first CTL press switches it on.
+Controls the source dynamics or adds the specified push/filter before distortion and amp processing. The settings stay fixed; only its on/off state can change.
 
-## CTL footswitch
+## DST - Module off
 
-On CTL: PRE (Boost), DLY (Analog).
+Not used.
 
-- **CTL off** — Rhythm. JCM800 crunch for the main riff and the power-chord hits. This is the resting state the patch loads into.
-- **CTL on** — Lead. Boosted 800 plus analog delay. Use it for the theme's lead melody and any bends and screams.
+## AMP - Module off
 
-Engage CTL for the melody. Drop back for the riff sections.
+Not used.
+
+## CAB - Module off
+
+Not used.
+
+## EQ - Guitar EQ 2
+
+100Hz: -2.
+500Hz: 0.
+1kHz: 1.
+3kHz: 1.
+6kHz: -2.
+VOL: 53.
+CTL assigned. Loads off; first CTL press switches it on.
+Shapes note body and cut after the amp/capture. Where assigned to CTL, its output adds the specified lift after the gain stages. Numbers are GP-5 control values, not a calibrated loudness guarantee.
+
+## MOD - Module off
+
+Not used.
+
+## DLY - Analog
+
+Mix: 16.
+Time: 380.
+Feedback: 22.
+Trail: on.
+CTL assigned. Loads off; first CTL press switches it on.
+Adds repeats only in the listed states. Trail preserves the remaining repeats when this block is bypassed; it does not change delay time or mix.
+
+## RVB - Room
+
+Mix: 12.
+Decay: 30.
+Trail: on.
+Fixed on. Not on CTL.
+Adds the specified room or ambient tail. The revised mix keeps the initial note audible. Trail behavior follows the saved setting.
+
+## Switching and section map
+
+CTL blocks: PRE, EQ, DLY.
+- CTL off / loaded state: Rhythm. GP-5 active: NR, RVB, N->S.
+- First CTL press: Lead. GP-5 active: NR, PRE, EQ, DLY, RVB, N->S.
+- Press CTL again to return to the loaded block pattern, provided no shared MIDI block has been changed.
+
+## Revision record
+
+Approved audit entry 184.
+- Pedal display name: SpiderMan94-Gtr -> G-Spidey94. Filenames stay unchanged.
+- NR THRE: 35 -> 20.
+- PRE Gain: 50 -> 25.
+- PRE +3dB: true -> off.
+- EQ VOL: 50 -> 53.
+- EQ: assigned to CTL.
+Pre-revision JSON, Markdown and original file hashes are preserved in Documents/patch-audit-2026-10-16/inventory.json and implementation-manifest.json.
+The site piece title and on-disk filenames stay stable; only the short pedal display name may change.

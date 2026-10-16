@@ -1,0 +1,4380 @@
+[
+  {
+    "number": 1,
+    "file": "Patches/Bass/Artist/Egan-Fretless.json",
+    "title": "Mark Egan Signature Fretless Bass Tone",
+    "pieceId": "19732f23-8be8-497d-b991-6cac24ef4823",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/19732f23-8be8-497d-b991-6cac24ef4823",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "Egan-Fretless.prst",
+        "id": "507a2b1c-44c2-4933-b76c-36050f8f87d3"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "Egan-Fretless.pdf",
+        "id": "bd0c93f4-c622-4acb-9175-4b25772b0222"
+      }
+    ],
+    "success": true,
+    "summary": "Full board American Sound (bypassed; retained for legacy full-board builds); SnapTone slot 52 AvalonAD2022; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 2,
+    "file": "Patches/Bass/Artist/Polyphia-Bass.json",
+    "title": "Tim Henson / Polyphia — Signature Sound",
+    "pieceId": "66eb4697-76af-4c0d-b188-5d4da7cac698",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/66eb4697-76af-4c0d-b188-5d4da7cac698",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "Polyphia-Bass.prst",
+        "id": "a249c406-46b2-4aa4-b16c-0f3df933a5f0"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "Polyphia-Bass.pdf",
+        "id": "432533a9-c17f-44b9-bc97-c2440e4512ec"
+      }
+    ],
+    "success": true,
+    "summary": "Full board American Sound (bypassed; retained for legacy full-board builds); SnapTone slot 52 AvalonAD2022; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 3,
+    "file": "Patches/Bass/Artist/SNTR-Bass.json",
+    "title": "Sixpence None the Richer Signature Bass Tone",
+    "pieceId": "e1dafd5b-d4ec-4010-8513-23b0b5aa141a",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/e1dafd5b-d4ec-4010-8513-23b0b5aa141a",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "SNTR-Bass.prst",
+        "id": "c1eb947d-a57e-4551-afe1-96bba5b7ca92"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "SNTR-Bass.pdf",
+        "id": "9bc899a2-2181-48c5-9089-87b93e41d513"
+      }
+    ],
+    "success": true,
+    "summary": "Full board American Sound (bypassed; retained for legacy full-board builds); SnapTone slot 53 CleanSVT; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 4,
+    "file": "Patches/Bass/Artist/Yes-Squire.json",
+    "title": "Chris Squire Signature Bass Tone",
+    "pieceId": "09cc2f4c-7f72-47fb-a7be-91b12dc95ed0",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/09cc2f4c-7f72-47fb-a7be-91b12dc95ed0",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "Yes-Squire.prst",
+        "id": "a5b13d7b-95f6-4568-addf-d2b0d0ca5eb6"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "Yes-Squire.pdf",
+        "id": "0ceef1c7-9344-4db1-843f-d67837275a80"
+      }
+    ],
+    "success": true,
+    "summary": "Full board American Sound (bypassed; retained for legacy full-board builds); SnapTone slot 55 BrightSVT; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 5,
+    "file": "Patches/Bass/Song/10000Reasons-MR.json",
+    "title": "10,000 Reasons — Matt Redman",
+    "pieceId": "cae6e362-6464-4740-be02-8e671bd7d5a6",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/cae6e362-6464-4740-be02-8e671bd7d5a6",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "10000Reasons-MR.prst",
+        "id": "ad4436ac-d77a-4273-935c-0c311a249fc6"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "10000Reasons-MR.pdf",
+        "id": "d16a1083-3061-4f8b-aa26-2a40a10f16b8"
+      }
+    ],
+    "success": true,
+    "summary": "Full board American Sound (bypassed; retained for legacy full-board builds); SnapTone slot 51 CleanB15; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 6,
+    "file": "Patches/Bass/Song/1234-Feist.json",
+    "title": "1234 - Feist",
+    "pieceId": "81dded2d-8033-4483-88c9-97858ff6ef7a",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/81dded2d-8033-4483-88c9-97858ff6ef7a",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "1234-Feist.prst",
+        "id": "21c6ab24-b1f8-48dc-a808-8b8083f95651"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "1234-Feist.pdf",
+        "id": "f332ffd5-e5f3-48d8-ab9b-dd1d63291e7f"
+      }
+    ],
+    "success": true,
+    "summary": "Full board American Sound (bypassed; retained for legacy full-board builds); SnapTone slot 54 FullB15; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 7,
+    "file": "Patches/Bass/Song/1979-SmashingPumpkins.json",
+    "title": "1979 - The Smashing Pumpkins",
+    "pieceId": "de35851d-f01f-42ee-8c79-2d0f9d8de3e8",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/de35851d-f01f-42ee-8c79-2d0f9d8de3e8",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "1979-SmashingPumpkins.prst",
+        "id": "58272a99-56ad-46da-8e14-bb88a2834dd3"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "1979-SmashingPumpkins.pdf",
+        "id": "6044551e-1b07-4c70-b89a-f0cac2b86270"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 53 CleanSVT; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 8,
+    "file": "Patches/Bass/Song/Adrift-LS.json",
+    "title": "Adrift",
+    "pieceId": "20fc8bd6-2577-4b96-9da8-185c5c4ff4cf",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/20fc8bd6-2577-4b96-9da8-185c5c4ff4cf",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "Adrift-LS.prst",
+        "id": "cede9e71-05a8-4767-bd75-706c98082ccc"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "Adrift-LS.pdf",
+        "id": "6c4ce2b3-69e1-43ea-8031-eca1c73f74da"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 52 AvalonAD2022; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 9,
+    "file": "Patches/Bass/Song/AfterTheLove-EWF.json",
+    "title": "After the Love Has Gone - Earth, Wind & Fire",
+    "pieceId": "abd61b01-2f6e-4802-960e-7bd33585da7a",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/abd61b01-2f6e-4802-960e-7bd33585da7a",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "AfterTheLove-EWF.prst",
+        "id": "60844b08-54d9-4aa6-87b3-c658e74b8ea4"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "AfterTheLove-EWF.pdf",
+        "id": "727d080b-edc0-42f1-bcad-88b96ab2ee88"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 52 AvalonAD2022; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 10,
+    "file": "Patches/Bass/Song/AintNothinBoutYou-BrooksDunn-GP5.json",
+    "title": "Ain't Nothing 'Bout You - Brooks & Dunn",
+    "pieceId": "560212a7-7895-4334-b24b-12219b0af2d8",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/560212a7-7895-4334-b24b-12219b0af2d8",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "AintNothinBoutYou-BrooksDunn-GP5.prst",
+        "id": "a2248758-1af0-43f1-b773-13abd3c304b5"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "AintNothinBoutYou-BrooksDunn-GP5.pdf",
+        "id": "a1195a7b-2de8-423b-9a6a-5022d42662bc"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 51 CleanB15; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 11,
+    "file": "Patches/Bass/Song/AintNothinBoutYou-BrooksDunn.json",
+    "title": "Ain't Nothing 'Bout You - Brooks & Dunn",
+    "pieceId": "560212a7-7895-4334-b24b-12219b0af2d8",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/560212a7-7895-4334-b24b-12219b0af2d8",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "AintNothinBoutYou-BrooksDunn.prst",
+        "id": "fad39c7a-9615-4393-964f-3f835d9844c8"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "AintNothinBoutYou-BrooksDunn.pdf",
+        "id": "1adb96d0-4fba-4446-8d4a-a8f16d9f2d61"
+      }
+    ],
+    "success": true,
+    "summary": "Full board American Sound (bypassed; retained for legacy full-board builds); SnapTone slot 51 CleanB15; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 12,
+    "file": "Patches/Bass/Song/AllForYou-SisterHazel.json",
+    "title": "All for You - Sister Hazel",
+    "pieceId": "d13de026-3934-4314-9c73-65e771b334b9",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/d13de026-3934-4314-9c73-65e771b334b9",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "AllForYou-SisterHazel.prst",
+        "id": "5bd10c56-d033-49c5-b9f6-deed7d4b2ce3"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "AllForYou-SisterHazel.pdf",
+        "id": "aecb33d8-3eb6-4a8d-93ee-7a5ceeec91be"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 53 CleanSVT; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 13,
+    "file": "Patches/Bass/Song/AmericanPie-DonMcLean.json",
+    "title": "American Pie — Don McLean",
+    "pieceId": "596f080c-aae0-43f9-a7db-95e1a05b6190",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/596f080c-aae0-43f9-a7db-95e1a05b6190",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "AmericanPie-DonMcLean.prst",
+        "id": "8202280c-aed9-49b0-87cc-78041f3581eb"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "AmericanPie-DonMcLean.pdf",
+        "id": "70c3eec1-aaf2-4e53-bfb4-190dd7828c6d"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 51 CleanB15; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 14,
+    "file": "Patches/Bass/Song/Anthem-GC.json",
+    "title": "The Anthem - Good Charlotte",
+    "pieceId": "7e42dafc-dba5-457a-9187-5b71103bf5da",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/7e42dafc-dba5-457a-9187-5b71103bf5da",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "Anthem-GC.prst",
+        "id": "7bb74833-7f6a-4c73-ada0-b1827015add4"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "Anthem-GC.pdf",
+        "id": "58fda64e-6f31-47fa-a2ea-56ad556b0ea3"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 55 BrightSVT; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 15,
+    "file": "Patches/Bass/Song/BasketCase-GreenDay.json",
+    "title": "Basket Case - Green Day",
+    "pieceId": "2c2d1751-9581-44fa-ac7b-765fd2acec7a",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/2c2d1751-9581-44fa-ac7b-765fd2acec7a",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "BasketCase-GreenDay.prst",
+        "id": "446591f5-eb23-4932-9349-004723bdb731"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "BasketCase-GreenDay.pdf",
+        "id": "f4e13286-5579-46d9-a465-7ecf18c12354"
+      }
+    ],
+    "success": true,
+    "summary": "Full board American Sound (bypassed; retained for legacy full-board builds); SnapTone slot 55 BrightSVT; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 16,
+    "file": "Patches/Bass/Song/BeatIt-MJ.json",
+    "title": "Beat It — Michael Jackson",
+    "pieceId": "2dc735d2-1888-40e1-be78-8347c621c2df",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/2dc735d2-1888-40e1-be78-8347c621c2df",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "BeatIt-MJ.prst",
+        "id": "6af7f3ea-6d7d-4756-acfd-a9da610d0af5"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "BeatIt-MJ.pdf",
+        "id": "80198d7e-38a8-4cef-b9ed-5e33f1aa12e9"
+      }
+    ],
+    "success": true,
+    "summary": "Full board American Sound (bypassed; retained for legacy full-board builds); SnapTone slot 52 AvalonAD2022; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 17,
+    "file": "Patches/Bass/Song/Believe-BrooksDunn.json",
+    "title": "Believe — Brooks & Dunn",
+    "pieceId": "180cdf3e-0990-4bae-9f25-27202560f229",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/180cdf3e-0990-4bae-9f25-27202560f229",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "Believe-BrooksDunn.prst",
+        "id": "f75b1177-37b3-47c3-9eab-d8ae24945b44"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "Believe-BrooksDunn.pdf",
+        "id": "69382975-4f5a-47b6-b8c4-7d098c05ee37"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 51 CleanB15; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 18,
+    "file": "Patches/Bass/Song/BillieJean-ChrisCornell.json",
+    "title": "Billie Jean — Chris Cornell",
+    "pieceId": "77fed663-02ce-4773-a61c-46e072373efa",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/77fed663-02ce-4773-a61c-46e072373efa",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "BillieJean-ChrisCornell.prst",
+        "id": "cc606429-5f2a-4a63-a260-f2324ce60f08"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "BillieJean-ChrisCornell.pdf",
+        "id": "4bc20601-45a2-4f91-b449-a5d85c4817bc"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 54 FullB15; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 19,
+    "file": "Patches/Bass/Song/Blessing-KJ.json",
+    "title": "The Blessing — Kari Jobe, Cody Carnes",
+    "pieceId": "d4b30607-7d2b-4612-8017-fe27a783b9de",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/d4b30607-7d2b-4612-8017-fe27a783b9de",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "Blessing-KJ.prst",
+        "id": "e13f9cf8-34b1-4e2c-abdc-98d4ecd78538"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "Blessing-KJ.pdf",
+        "id": "fca3c629-4ab0-44ae-be66-8beebeeac20f"
+      }
+    ],
+    "success": true,
+    "summary": "Full board American Sound (bypassed; retained for legacy full-board builds); SnapTone slot 59 WorshipSVT; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 20,
+    "file": "Patches/Bass/Song/BreadBroken-JD.json",
+    "title": "The Bread has Been Broken",
+    "pieceId": "1ad2cd5b-8884-425d-8045-6b2c29b64bc0",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/1ad2cd5b-8884-425d-8045-6b2c29b64bc0",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "BreadBroken-JD.prst",
+        "id": "6fa9f375-6d8c-4c8c-8bd3-58b9e09e6ac5"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "BreadBroken-JD.pdf",
+        "id": "1cf01fe9-ef67-453a-a8dd-3ef28a9771c5"
+      }
+    ],
+    "success": true,
+    "summary": "Full board American Sound (bypassed; retained for legacy full-board builds); SnapTone slot 59 WorshipSVT; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 21,
+    "file": "Patches/Bass/Song/BrightSizeLife-Metheny.json",
+    "title": "Bright Size Life — Pat Metheny",
+    "pieceId": "fcf9ea5c-311b-4965-908a-dac5ec84060c",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/fcf9ea5c-311b-4965-908a-dac5ec84060c",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "BrightSizeLife-Metheny.prst",
+        "id": "27802dd5-430e-421d-81e1-7af519007c20"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "BrightSizeLife-Metheny.pdf",
+        "id": "01a2cddf-a965-4a26-890b-1e12c165022b"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 52 AvalonAD2022; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 22,
+    "file": "Patches/Bass/Song/BringMeToLife-Evanescence.json",
+    "title": "Bring Me to Life — Evanescence",
+    "pieceId": "e004c0fa-442c-45c9-91e7-4f377742e4b5",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/e004c0fa-442c-45c9-91e7-4f377742e4b5",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "BringMeToLife-Evanescence.prst",
+        "id": "f7842a0e-dbac-4f58-84cb-a09791d4cedc"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "BringMeToLife-Evanescence.pdf",
+        "id": "b66ea12b-9f51-4a65-8b0e-e06b1db37a0a"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 57 GrittySVT; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 23,
+    "file": "Patches/Bass/Song/CivilWar-GNR.json",
+    "title": "Civil War — Guns N’ Roses",
+    "pieceId": "09745640-7696-4983-867f-cd7d0bb40fcb",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/09745640-7696-4983-867f-cd7d0bb40fcb",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "CivilWar-GNR.prst",
+        "id": "5cd1de30-9b20-4515-9838-3c8f3add93cd"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "CivilWar-GNR.pdf",
+        "id": "ab233837-71cc-4a4d-8141-381c8908bf89"
+      }
+    ],
+    "success": true,
+    "summary": "Full board American Sound (bypassed; retained for legacy full-board builds); SnapTone slot 57 GrittySVT; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 24,
+    "file": "Patches/Bass/Song/CliffsOfDover-EJ.json",
+    "title": "Cliffs of Dover - Eric Johnson",
+    "pieceId": "f4afac73-d96a-4453-9a86-a15b4c5f6b0b",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/f4afac73-d96a-4453-9a86-a15b4c5f6b0b",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "CliffsOfDover-EJ.prst",
+        "id": "e0322fcc-cb57-41b9-ad60-79047e1a1627"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "CliffsOfDover-EJ.pdf",
+        "id": "c79f415c-d133-4852-8a6d-636e7a3ed27a"
+      }
+    ],
+    "success": true,
+    "summary": "Full board American Sound (bypassed; retained for legacy full-board builds); SnapTone slot 52 AvalonAD2022; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 25,
+    "file": "Patches/Bass/Song/Comedown-Bush.json",
+    "title": "Comedown - Bush",
+    "pieceId": "b9347e1e-8929-4d4e-8c9b-63d866f5e764",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/b9347e1e-8929-4d4e-8c9b-63d866f5e764",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "Comedown-Bush.prst",
+        "id": "3b84f389-6589-41fc-8ca0-6b12616005cf"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "Comedown-Bush.pdf",
+        "id": "aec3b420-911b-4038-91db-55424845e547"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 58 HairySVT; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 26,
+    "file": "Patches/Bass/Song/ComfortablyNumb-PinkFloyd.json",
+    "title": "Comfortably Numb - Pink Floyd",
+    "pieceId": "5f0ce2a6-67c2-4296-b499-e9693b997ecf",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/5f0ce2a6-67c2-4296-b499-e9693b997ecf",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "ComfortablyNumb-PinkFloyd.prst",
+        "id": "6e653446-b3d1-4380-af00-a0221af493d5"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "ComfortablyNumb-PinkFloyd.pdf",
+        "id": "f4cc2f9d-77f3-44e0-a418-1d276e875cbd"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 53 CleanSVT; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 27,
+    "file": "Patches/Bass/Song/ConceivingYou-Riverside.json",
+    "title": "Conceiving You — Riverside",
+    "pieceId": "818260cd-63c9-44cf-b752-2f885ab2af61",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/818260cd-63c9-44cf-b752-2f885ab2af61",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "ConceivingYou-Riverside.prst",
+        "id": "94c48a5e-eb1c-44d8-99f1-ed7e608dbec5"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "ConceivingYou-Riverside.pdf",
+        "id": "24315a22-09ba-4c77-b833-62890f4a7f02"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 56 ProgSVT; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 28,
+    "file": "Patches/Bass/Song/CrashIntoMe-DMB.json",
+    "title": "Crash Into Me - Dave Matthews Band",
+    "pieceId": "00ff96e6-6baf-4913-97ee-c1a42f70a8f0",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/00ff96e6-6baf-4913-97ee-c1a42f70a8f0",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "CrashIntoMe-DMB.prst",
+        "id": "833f8a77-1d5d-49a5-bb74-f8576b2b028a"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "CrashIntoMe-DMB.pdf",
+        "id": "fdffc51e-c4cf-435a-b217-6b0c0b7f8378"
+      }
+    ],
+    "success": true,
+    "summary": "Full board American Sound (bypassed; retained for legacy full-board builds); SnapTone slot 53 CleanSVT; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 29,
+    "file": "Patches/Bass/Song/CreekMarysBlood-Nightwish.json",
+    "title": "Creek Mary's Blood — Nightwish",
+    "pieceId": "0caf9a44-a8c3-47cd-bda3-56c23088fcda",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/0caf9a44-a8c3-47cd-bda3-56c23088fcda",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "CreekMarysBlood-Nightwish.prst",
+        "id": "db41ef0c-9005-4629-856e-c483e705a779"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "CreekMarysBlood-Nightwish.pdf",
+        "id": "6a0aed44-46fd-4b9c-8630-20c3abe0c8c0"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 55 BrightSVT; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 30,
+    "file": "Patches/Bass/Song/DYFAM-SM.json",
+    "title": "Don't You Forget About Me - Simple Minds",
+    "pieceId": "222e97bd-6091-4813-83b7-b725fe6e5e42",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/222e97bd-6091-4813-83b7-b725fe6e5e42",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "DYFAM-SM.prst",
+        "id": "e95a7058-2b1a-4a1f-a7d3-b94bcd508361"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "DYFAM-SM.pdf",
+        "id": "4f7478a4-be89-45a2-9645-b16ea5ceb8e5"
+      }
+    ],
+    "success": true,
+    "summary": "Full board American Sound (bypassed; retained for legacy full-board builds); SnapTone slot 52 AvalonAD2022; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 31,
+    "file": "Patches/Bass/Song/DangerZone-KennyLoggins.json",
+    "title": "Danger Zone — Kenny Loggins",
+    "pieceId": "29a59c09-2372-4fcc-820e-2b3394a79813",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/29a59c09-2372-4fcc-820e-2b3394a79813",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "DangerZone-KennyLoggins.prst",
+        "id": "612e41e8-5272-46f9-8be8-3aa391c4e85d"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "DangerZone-KennyLoggins.pdf",
+        "id": "0a189467-77a4-4e2b-ae43-af3096fc41e1"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 52 AvalonAD2022; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 32,
+    "file": "Patches/Bass/Song/DawnOfVictory-Rhapsody.json",
+    "title": "Dawn of Victory — Rhapsody",
+    "pieceId": "a7db4eba-b02d-42c2-b7fc-a0c59c734a60",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/a7db4eba-b02d-42c2-b7fc-a0c59c734a60",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "DawnOfVictory-Rhapsody.prst",
+        "id": "ebd7e4cc-950d-4023-af26-0c5a62cf7a16"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "DawnOfVictory-Rhapsody.pdf",
+        "id": "6455f0ca-9d56-4bb1-a774-3dad70952625"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 55 BrightSVT; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 33,
+    "file": "Patches/Bass/Song/DayLife-Beatles.json",
+    "title": "A Day in the Life",
+    "pieceId": "a6b9092d-a846-4058-85c1-7212ed383702",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/a6b9092d-a846-4058-85c1-7212ed383702",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "DayLife-Beatles.prst",
+        "id": "6a79938a-3961-4918-a24e-9e523599509e"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "DayLife-Beatles.pdf",
+        "id": "c9b3748b-da05-4fdd-8ced-f9ebbaa4280b"
+      }
+    ],
+    "success": true,
+    "summary": "Full board American Sound (bypassed; retained for legacy full-board builds); SnapTone slot 52 AvalonAD2022; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 34,
+    "file": "Patches/Bass/Song/DigginYou-MN.json",
+    "title": "I'm Diggin' You (Like an Old Soul Record) — Meshell Ndegeocello",
+    "pieceId": "c0bf43b2-22b8-45df-b70a-d7e564f3bcc7",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/c0bf43b2-22b8-45df-b70a-d7e564f3bcc7",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "DigginYou-MN.prst",
+        "id": "f52c7752-f7a7-4ecb-8490-351bf4fcdb1c"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "DigginYou-MN.pdf",
+        "id": "ec42386d-ddf3-4289-8d38-f3a9cbd5e406"
+      }
+    ],
+    "success": true,
+    "summary": "Full board American Sound (bypassed; retained for legacy full-board builds); SnapTone slot 51 CleanB15; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 35,
+    "file": "Patches/Bass/Song/DirtRoadAnthem-JasonAldean.json",
+    "title": "Dirt Road Anthem — Jason Aldean",
+    "pieceId": "0b36306b-53b6-4838-a42c-db4947908b0b",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/0b36306b-53b6-4838-a42c-db4947908b0b",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "DirtRoadAnthem-JasonAldean.prst",
+        "id": "3967cdc0-349f-40f3-b56b-0a60344ee28c"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "DirtRoadAnthem-JasonAldean.pdf",
+        "id": "db921963-ae76-43f4-bd78-09990b94cf5a"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 54 FullB15; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 36,
+    "file": "Patches/Bass/Song/Dryad-PainOfSalvation.json",
+    "title": "Dryad of the Woods — Pain of Salvation",
+    "pieceId": "0e879be2-b1bc-4a21-a5f7-9c4332181157",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/0e879be2-b1bc-4a21-a5f7-9c4332181157",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "Dryad-PainOfSalvation.prst",
+        "id": "b8ecae1c-e308-44dd-8c61-f63eb1662a8e"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "Dryad-PainOfSalvation.pdf",
+        "id": "dd9b03a7-3257-4df8-a56f-b410a4d3984f"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 51 CleanB15; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 37,
+    "file": "Patches/Bass/Song/Ecstasy-RustedRoot.json",
+    "title": "Ecstasy - Rusted Root",
+    "pieceId": "8e9e8045-937a-4243-a8b5-c4329ecee4fc",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/8e9e8045-937a-4243-a8b5-c4329ecee4fc",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "Ecstasy-RustedRoot.prst",
+        "id": "e3144f4c-20a1-4945-b40b-4ddfa1f81936"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "Ecstasy-RustedRoot.pdf",
+        "id": "26b1a458-2c52-4083-8a74-c1b8b5e9af0f"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 54 FullB15; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 38,
+    "file": "Patches/Bass/Song/Everlong-FF.json",
+    "title": "Everlong",
+    "pieceId": "3a1240e9-8e50-4d71-9459-bddeb5350b92",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/3a1240e9-8e50-4d71-9459-bddeb5350b92",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "Everlong-FF.prst",
+        "id": "995916e6-c1e0-41ce-82f7-ca97f1dc3401"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "Everlong-FF.pdf",
+        "id": "de815fdb-d197-48f3-96c5-5481c1123bb8"
+      }
+    ],
+    "success": true,
+    "summary": "Full board American Sound (bypassed; retained for legacy full-board builds); SnapTone slot 57 GrittySVT; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 39,
+    "file": "Patches/Bass/Song/Fire-OP.json",
+    "title": "Fire (Ohio Players) - Bass Tone",
+    "pieceId": "46b18f60-75f5-4bb4-a780-bbd86a89afa3",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/46b18f60-75f5-4bb4-a780-bbd86a89afa3",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "Fire-OP.prst",
+        "id": "d15ce111-e733-4371-94cd-10231305f635"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "Fire-OP.pdf",
+        "id": "d73b4e9a-e311-4937-9d9e-82e671b5d429"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 53 CleanSVT; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 40,
+    "file": "Patches/Bass/Song/ForeverReign-HS.json",
+    "title": "Forever Reign — Hillsong Worship",
+    "pieceId": "e535fc33-5a26-4172-b7e8-2a78102223cc",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/e535fc33-5a26-4172-b7e8-2a78102223cc",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "ForeverReign-HS.prst",
+        "id": "83c0bea8-70df-47d1-a8ab-3bc2a9fc062e"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "ForeverReign-HS.pdf",
+        "id": "321099b8-8975-488a-9c17-030230b0b866"
+      }
+    ],
+    "success": true,
+    "summary": "Full board American Sound (bypassed; retained for legacy full-board builds); SnapTone slot 59 WorshipSVT; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 41,
+    "file": "Patches/Bass/Song/Found-Riverside.json",
+    "title": "Found (The Unexpected Flaw of Searching) — Riverside",
+    "pieceId": "8f429d16-4d11-4699-ae06-2cb51b1d1362",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/8f429d16-4d11-4699-ae06-2cb51b1d1362",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "Found-Riverside.prst",
+        "id": "15f00310-6bf8-4d0b-9157-ac88887b5418"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "Found-Riverside.pdf",
+        "id": "ee206ea4-c1f7-494f-a36f-3e3723834d75"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 56 ProgSVT; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 42,
+    "file": "Patches/Bass/Song/GivingAll-MG.json",
+    "title": "Giving It All",
+    "pieceId": "75d3c210-2555-45c4-ab38-51e64e3accc8",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/75d3c210-2555-45c4-ab38-51e64e3accc8",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "GivingAll-MG.prst",
+        "id": "7e307dcd-ea5d-45b4-be72-4b37c3c762c6"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "GivingAll-MG.pdf",
+        "id": "1a6b11a8-073d-4fb6-8a9b-5ccc5dedbe9d"
+      }
+    ],
+    "success": true,
+    "summary": "Full board American Sound (bypassed; retained for legacy full-board builds); SnapTone slot 54 FullB15; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 43,
+    "file": "Patches/Bass/Song/GonnaBeMyGirl-Jet.json",
+    "title": "Are You Gonna Be My Girl - Jet",
+    "pieceId": "bff7eed7-1a5c-4c6a-a846-cf1fa6d9f3f1",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/bff7eed7-1a5c-4c6a-a846-cf1fa6d9f3f1",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "GonnaBeMyGirl-Jet.prst",
+        "id": "9779a96c-8460-455a-9236-cf052a175225"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "GonnaBeMyGirl-Jet.pdf",
+        "id": "62d7611a-9f3e-4a02-8b2c-dcd209d81d0e"
+      }
+    ],
+    "success": true,
+    "summary": "Full board American Sound (bypassed; retained for legacy full-board builds); SnapTone slot 57 GrittySVT; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 44,
+    "file": "Patches/Bass/Song/Hair-GrahamCentralStation.json",
+    "title": "Hair - Graham Central Station",
+    "pieceId": "63f17f31-ecd3-4700-b75f-4e126dfbc401",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/63f17f31-ecd3-4700-b75f-4e126dfbc401",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "Hair-GrahamCentralStation.prst",
+        "id": "570bd5a8-8934-495b-8d5a-22fa3c8d3885"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "Hair-GrahamCentralStation.pdf",
+        "id": "fd18e877-b0ad-4f1c-b828-a0ca7d943b31"
+      }
+    ],
+    "success": true,
+    "summary": "Full board American Sound (bypassed; retained for legacy full-board builds); SnapTone slot 54 FullB15; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 45,
+    "file": "Patches/Bass/Song/HangingByAMoment-Lifehouse.json",
+    "title": "Hanging by a Moment — Lifehouse",
+    "pieceId": "7fb67a69-8e23-49df-b5e4-30a4377f4511",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/7fb67a69-8e23-49df-b5e4-30a4377f4511",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "HangingByAMoment-Lifehouse.prst",
+        "id": "d80a8c2e-61db-443b-9604-d0e5de27d1de"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "HangingByAMoment-Lifehouse.pdf",
+        "id": "34e920d4-d4d6-4bd9-a40a-6440d0ab3453"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 53 CleanSVT; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 46,
+    "file": "Patches/Bass/Song/HardWorkinMan-BrooksDunn.json",
+    "title": "Hard Workin' Man — Brooks & Dunn",
+    "pieceId": "9bcf599a-ae50-4e2d-b089-9574cf4aa04f",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/9bcf599a-ae50-4e2d-b089-9574cf4aa04f",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "HardWorkinMan-BrooksDunn.prst",
+        "id": "a51964d5-1bd9-4445-8544-9acc238da868"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "HardWorkinMan-BrooksDunn.pdf",
+        "id": "b3fa111c-699f-4bd9-8477-563843557f9f"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 51 CleanB15; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 47,
+    "file": "Patches/Bass/Song/HeadsCarolina-JDM.json",
+    "title": "Heads Carolina, Tails California - Jo Dee Messina",
+    "pieceId": "59dacbe5-67b3-4950-9ac0-c591f18f15f2",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/59dacbe5-67b3-4950-9ac0-c591f18f15f2",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "HeadsCarolina-JDM.prst",
+        "id": "9405c6db-6ad6-4fb9-ab22-099d437e9198"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "HeadsCarolina-JDM.pdf",
+        "id": "6664baf2-b784-4a97-8c05-06bdb910bb48"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 51 CleanB15; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 48,
+    "file": "Patches/Bass/Song/Heaven-LLB.json",
+    "title": "Heaven - Los Lonely Boys",
+    "pieceId": "f4759b7b-077f-4629-bfe3-77046513f1c2",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/f4759b7b-077f-4629-bfe3-77046513f1c2",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "Heaven-LLB.prst",
+        "id": "e4050e93-c5c0-4fdd-b02c-901790e9cd17"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "Heaven-LLB.pdf",
+        "id": "fab32cf8-015c-48bc-86a4-998991d92f4a"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 54 FullB15; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 49,
+    "file": "Patches/Bass/Song/HeyJealousy-GB.json",
+    "title": "Hey Jealousy",
+    "pieceId": "25aca5f8-5213-4ea9-b3f4-a0caa7b728ab",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/25aca5f8-5213-4ea9-b3f4-a0caa7b728ab",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "HeyJealousy-GB.prst",
+        "id": "9995c7c3-67d6-4ed1-ba34-95fb2a56aeab"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "HeyJealousy-GB.pdf",
+        "id": "e43771f9-f28f-4375-b6bc-53b13c4ca4a1"
+      }
+    ],
+    "success": true,
+    "summary": "Full board American Sound (bypassed; retained for legacy full-board builds); SnapTone slot 57 GrittySVT; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 50,
+    "file": "Patches/Bass/Song/Higher-Creed.json",
+    "title": "Higher - Creed",
+    "pieceId": "fae7dba0-d90d-46ac-8c23-116dd9abaa89",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/fae7dba0-d90d-46ac-8c23-116dd9abaa89",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "Higher-Creed.prst",
+        "id": "f37dcff3-0f7c-47cf-8e86-1ebbe23724c4"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "Higher-Creed.pdf",
+        "id": "7777361a-0972-47ec-b317-9d04dcec0d1a"
+      }
+    ],
+    "success": true,
+    "summary": "Full board American Sound (bypassed; retained for legacy full-board builds); SnapTone slot 57 GrittySVT; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 51,
+    "file": "Patches/Bass/Song/Hoedown-ELP.json",
+    "title": "Hoedown — Emerson, Lake & Palmer",
+    "pieceId": "2427cbe5-3927-4b55-af20-d12aeeb7031b",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/2427cbe5-3927-4b55-af20-d12aeeb7031b",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "Hoedown-ELP.prst",
+        "id": "e96634c2-e5d5-4398-92ca-e998207a0a53"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "Hoedown-ELP.pdf",
+        "id": "a9b8f6b9-dae6-40b1-96b5-8110d1310634"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 53 CleanSVT; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 52,
+    "file": "Patches/Bass/Song/Homegrown-ZBB.json",
+    "title": "Homegrown - Zac Brown Band",
+    "pieceId": "4ce02c39-72a7-41da-854d-700cc05a440f",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/4ce02c39-72a7-41da-854d-700cc05a440f",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "Homegrown-ZBB.prst",
+        "id": "426d2c01-5be5-432e-9185-a5b4f8656684"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "Homegrown-ZBB.pdf",
+        "id": "bbe3724e-d317-48da-9767-b3f520572b13"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 51 CleanB15; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 53,
+    "file": "Patches/Bass/Song/HonkyTonkTruth-BrooksDunn.json",
+    "title": "Honky Tonk Truth — Brooks & Dunn",
+    "pieceId": "eeb94df8-27c5-4cc9-94bb-0d7d37632a17",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/eeb94df8-27c5-4cc9-94bb-0d7d37632a17",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "HonkyTonkTruth-BrooksDunn.prst",
+        "id": "fd1ffd65-3d7f-4535-9e70-a927b469397f"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "HonkyTonkTruth-BrooksDunn.pdf",
+        "id": "fdc02829-9231-4e32-8d3d-231894be1d4e"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 51 CleanB15; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 54,
+    "file": "Patches/Bass/Song/HotelCalifornia-Eagles.json",
+    "title": "Hotel California - Eagles",
+    "pieceId": "954b2208-bb83-4a5f-be32-5210049f6df7",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/954b2208-bb83-4a5f-be32-5210049f6df7",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "HotelCalifornia-Eagles.prst",
+        "id": "2e251d10-367a-4c6d-a10b-d8e41bcc04dc"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "HotelCalifornia-Eagles.pdf",
+        "id": "de843065-1f33-4868-b49e-872aa8cd2d37"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 54 FullB15; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 55,
+    "file": "Patches/Bass/Song/Hysteria-Muse.json",
+    "title": "Hysteria - Muse",
+    "pieceId": "35ebc7ee-ddaf-4cc9-996f-1c511dd5dd75",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/35ebc7ee-ddaf-4cc9-996f-1c511dd5dd75",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "Hysteria-Muse.prst",
+        "id": "5b7553ff-6232-471e-96da-abc287bd184f"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "Hysteria-Muse.pdf",
+        "id": "54f317f3-5e5b-4df7-8295-0afb95aba469"
+      }
+    ],
+    "success": true,
+    "summary": "Full board American Sound (bypassed; retained for legacy full-board builds); SnapTone slot 58 HairySVT; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 56,
+    "file": "Patches/Bass/Song/IWantToKnow-Foreigner.json",
+    "title": "I Want to Know What Love Is - Foreigner",
+    "pieceId": "7a7dc420-da91-4ea1-9b73-8bf741ff8668",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/7a7dc420-da91-4ea1-9b73-8bf741ff8668",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "IWantToKnow-Foreigner.prst",
+        "id": "99c72396-c2a7-4752-9414-fca7c91aa32a"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "IWantToKnow-Foreigner.pdf",
+        "id": "5c4b85c3-0317-4a8d-9433-958bbdf8a684"
+      }
+    ],
+    "success": true,
+    "summary": "Full board American Sound (bypassed; retained for legacy full-board builds); SnapTone slot 52 AvalonAD2022; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 57,
+    "file": "Patches/Bass/Song/IWillAlwaysLoveYou-Dolly.json",
+    "title": "I Will Always Love You — Dolly Parton",
+    "pieceId": "0b826a63-0162-4d5c-92ca-a0274c7d4dc5",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/0b826a63-0162-4d5c-92ca-a0274c7d4dc5",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "IWillAlwaysLoveYou-Dolly.prst",
+        "id": "019c3a14-e7a1-46c5-b267-ddfd531f6dd0"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "IWillAlwaysLoveYou-Dolly.pdf",
+        "id": "6a0e89b4-1fc3-4d79-870f-045caddf491e"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 51 CleanB15; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 58,
+    "file": "Patches/Bass/Song/IfYouSeeHer-BrooksDunn.json",
+    "title": "If You See Her — Brooks & Dunn",
+    "pieceId": "281df0e1-e30b-4b60-990e-296b1c3ea0ed",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/281df0e1-e30b-4b60-990e-296b1c3ea0ed",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "IfYouSeeHer-BrooksDunn.prst",
+        "id": "6ccb4cfa-ef16-41d1-a485-060538ad7e34"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "IfYouSeeHer-BrooksDunn.pdf",
+        "id": "3657d91a-876b-41e9-a38c-ead5946a2b64"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 51 CleanB15; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 59,
+    "file": "Patches/Bass/Song/IllBeThereForYou-BonJovi.json",
+    "title": "I'll Be There for You — Bon Jovi",
+    "pieceId": "fb09bcde-0671-4820-b308-f3d8603412eb",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/fb09bcde-0671-4820-b308-f3d8603412eb",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "IllBeThereForYou-BonJovi.prst",
+        "id": "315ae30b-dda7-4048-8c88-87af9ae9e060"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "IllBeThereForYou-BonJovi.pdf",
+        "id": "0649b1c5-e931-4d5b-b3f7-b024600ca6d7"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 52 AvalonAD2022; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 60,
+    "file": "Patches/Bass/Song/ImSoSick-Flyleaf.json",
+    "title": "I'm So Sick - Flyleaf",
+    "pieceId": "74d39056-2e71-44e4-b28f-5bd5d87fbda1",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/74d39056-2e71-44e4-b28f-5bd5d87fbda1",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "ImSoSick-Flyleaf.prst",
+        "id": "f268ddcb-60f6-476a-83c1-eb2e274be971"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "ImSoSick-Flyleaf.pdf",
+        "id": "8d5abfbc-4f7d-4a7f-95ab-9d482894e3cc"
+      }
+    ],
+    "success": true,
+    "summary": "Full board American Sound (bypassed; retained for legacy full-board builds); SnapTone slot 58 HairySVT; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 61,
+    "file": "Patches/Bass/Song/InTwoMinds-Riverside.json",
+    "title": "In Two Minds — Riverside",
+    "pieceId": "24052a2b-98cf-4ef8-8374-34baef9a9c7e",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/24052a2b-98cf-4ef8-8374-34baef9a9c7e",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "InTwoMinds-Riverside.prst",
+        "id": "4bd9b2bf-ec7a-4d47-b2d7-161667ccaa37"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "InTwoMinds-Riverside.pdf",
+        "id": "180d797f-d8e4-4655-a01a-c4392415e73e"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 56 ProgSVT; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 62,
+    "file": "Patches/Bass/Song/IndependenceDay-MM.json",
+    "title": "Independence Day - Martina McBride",
+    "pieceId": "88bdf6a9-1a85-482c-ac2a-28fa837cfff4",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/88bdf6a9-1a85-482c-ac2a-28fa837cfff4",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "IndependenceDay-MM.prst",
+        "id": "14d2b406-14b6-42df-a932-acb2e3c7d5e7"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "IndependenceDay-MM.pdf",
+        "id": "acfb941a-6dd1-4f5e-9654-a6c2ce0926ca"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 51 CleanB15; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 63,
+    "file": "Patches/Bass/Song/Ironic-Alanis.json",
+    "title": "Ironic — Alanis Morissette",
+    "pieceId": "78aed3bd-eed6-4277-995b-a17b1f00b439",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/78aed3bd-eed6-4277-995b-a17b1f00b439",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "Ironic-Alanis.prst",
+        "id": "83308af3-6eb7-45ed-88ec-04d01566697f"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "Ironic-Alanis.pdf",
+        "id": "61dc19e7-a1ce-4d7a-bef3-e913f86a135a"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 53 CleanSVT; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 64,
+    "file": "Patches/Bass/Song/IslandsInStream-KR.json",
+    "title": "Islands in the Stream - Kenny Rogers",
+    "pieceId": "257fe772-9c0d-4e1a-9ade-799004e67f19",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/257fe772-9c0d-4e1a-9ade-799004e67f19",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "IslandsInStream-KR.prst",
+        "id": "2351a7a0-10a3-44a0-ad39-b9d98b947f51"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "IslandsInStream-KR.pdf",
+        "id": "a3ae225b-482f-4365-8599-3a2f6fbcc4c4"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 52 AvalonAD2022; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 65,
+    "file": "Patches/Bass/Song/ItsNotMyTime-3DoorsDown.json",
+    "title": "It's Not My Time — 3 Doors Down",
+    "pieceId": "bef80591-50cc-4657-89cb-545e07693596",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/bef80591-50cc-4657-89cb-545e07693596",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "ItsNotMyTime-3DoorsDown.prst",
+        "id": "feecee25-3723-4936-a3ed-114fcffd9691"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "ItsNotMyTime-3DoorsDown.pdf",
+        "id": "1432f1e1-bb71-4d03-8d2f-87dae53df727"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 57 GrittySVT; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 66,
+    "file": "Patches/Bass/Song/KneeDeep-ZBB.json",
+    "title": "Knee Deep - Zac Brown Band",
+    "pieceId": "1763efc9-81d7-41f8-829e-9f53928ac9d3",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/1763efc9-81d7-41f8-829e-9f53928ac9d3",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "KneeDeep-ZBB.prst",
+        "id": "b130cfd8-eb88-4695-8ae6-6db1fd586bfc"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "KneeDeep-ZBB.pdf",
+        "id": "77e7a05d-9329-4d2a-b6d6-f6f90905cf92"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 51 CleanB15; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 67,
+    "file": "Patches/Bass/Song/KnightsOfCydonia-Muse.json",
+    "title": "Knights of Cydonia - Muse",
+    "pieceId": "573019d6-1056-4d99-abd2-ffe31d9b2c7f",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/573019d6-1056-4d99-abd2-ffe31d9b2c7f",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "KnightsOfCydonia-Muse.prst",
+        "id": "3bb95a6d-2113-477d-a3ec-286856f645d1"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "KnightsOfCydonia-Muse.pdf",
+        "id": "0f48c0e4-6bc0-40ba-84ca-cad437138477"
+      }
+    ],
+    "success": true,
+    "summary": "Full board American Sound (bypassed; retained for legacy full-board builds); SnapTone slot 55 BrightSVT; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 68,
+    "file": "Patches/Bass/Song/Kokomo-BeachBoys.json",
+    "title": "Kokomo - The Beach Boys",
+    "pieceId": "959f3375-c7aa-448c-9259-1c9662e66c2d",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/959f3375-c7aa-448c-9259-1c9662e66c2d",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "Kokomo-BeachBoys.prst",
+        "id": "99bf232c-f5b8-4e57-b661-1e94be1dd78d"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "Kokomo-BeachBoys.pdf",
+        "id": "0ef3b7ed-cfe5-4a53-aa29-1f47d9b0b941"
+      }
+    ],
+    "success": true,
+    "summary": "Full board American Sound (bypassed; retained for legacy full-board builds); SnapTone slot 52 AvalonAD2022; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 69,
+    "file": "Patches/Bass/Song/LaGrange-ZZTop.json",
+    "title": "La Grange - ZZ Top",
+    "pieceId": "94dbf535-1e1d-4a79-9036-0f0008cff033",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/94dbf535-1e1d-4a79-9036-0f0008cff033",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "LaGrange-ZZTop.prst",
+        "id": "db6bb87e-51dc-4358-8309-0dea48c2fc9a"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "LaGrange-ZZTop.pdf",
+        "id": "5f2df11b-70bc-4709-98ce-dff47e881b56"
+      }
+    ],
+    "success": true,
+    "summary": "Full board American Sound (bypassed; retained for legacy full-board builds); SnapTone slot 57 GrittySVT; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 70,
+    "file": "Patches/Bass/Song/Lady-KR.json",
+    "title": "Lady - Kenny Rogers",
+    "pieceId": "5b271d65-2c36-4457-a2eb-9c453804edd5",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/5b271d65-2c36-4457-a2eb-9c453804edd5",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "Lady-KR.prst",
+        "id": "1337d7cc-c48c-45e9-952d-0e5ec56fb41c"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "Lady-KR.pdf",
+        "id": "e9b78bc2-9e74-4af4-82d4-4579a9dbb53a"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 52 AvalonAD2022; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 71,
+    "file": "Patches/Bass/Song/LikeTheWayIDo-Etheridge.json",
+    "title": "Like the Way I Do - Melissa Etheridge",
+    "pieceId": "bc65c73d-1095-47c8-9e59-cd049ab5e64b",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/bc65c73d-1095-47c8-9e59-cd049ab5e64b",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "LikeTheWayIDo-Etheridge.prst",
+        "id": "fb2665d0-2eaf-4356-bf25-4a564e2f8fe7"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "LikeTheWayIDo-Etheridge.pdf",
+        "id": "8509602e-a186-41e6-b432-d6aaed775d01"
+      }
+    ],
+    "success": true,
+    "summary": "Full board American Sound (bypassed; retained for legacy full-board builds); SnapTone slot 53 CleanSVT; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 72,
+    "file": "Patches/Bass/Song/LoveShack-B52.json",
+    "title": "Love Shack - The B-52's",
+    "pieceId": "80955426-3a03-48aa-93e8-1093161d412c",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/80955426-3a03-48aa-93e8-1093161d412c",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "LoveShack-B52.prst",
+        "id": "3df28906-6a02-4693-b42f-a856bcb5baab"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "LoveShack-B52.pdf",
+        "id": "1d6a4f96-aafb-4753-a024-6c317d0198b4"
+      }
+    ],
+    "success": true,
+    "summary": "Full board American Sound (bypassed; retained for legacy full-board builds); SnapTone slot 52 AvalonAD2022; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 73,
+    "file": "Patches/Bass/Song/LoveWillTurn-KR.json",
+    "title": "Love Will Turn You Around - Kenny Rogers",
+    "pieceId": "be0c7dca-751d-49bb-865c-95f0fe950b98",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/be0c7dca-751d-49bb-865c-95f0fe950b98",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "LoveWillTurn-KR.prst",
+        "id": "ea2c86b3-4f3b-48e4-808f-177b0b4ddd7a"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "LoveWillTurn-KR.pdf",
+        "id": "b15518bf-7682-4b9c-b5d8-483c18925499"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 52 AvalonAD2022; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 74,
+    "file": "Patches/Bass/Song/LowRider-War.json",
+    "title": "Low Rider (War) - Bass Tone",
+    "pieceId": "cf1c1891-ef67-4da7-b6d7-1a9bfd42f597",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/cf1c1891-ef67-4da7-b6d7-1a9bfd42f597",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "LowRider-War.prst",
+        "id": "336b5f3b-eefc-4e95-a6e6-887ef5823cb5"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "LowRider-War.pdf",
+        "id": "ca647b82-51a8-4d05-9493-9a1f76c9db04"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 54 FullB15; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 75,
+    "file": "Patches/Bass/Song/Lucille-KR.json",
+    "title": "Lucille - Kenny Rogers",
+    "pieceId": "df517259-19fe-436c-8a4b-0c2d77b45814",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/df517259-19fe-436c-8a4b-0c2d77b45814",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "Lucille-KR.prst",
+        "id": "3fd259d1-3dde-4600-af1e-1b5247310e72"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "Lucille-KR.pdf",
+        "id": "f6e9f03e-656a-4e1d-aaaf-f2f6d90fe364"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 51 CleanB15; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 76,
+    "file": "Patches/Bass/Song/Machinehead-Bush.json",
+    "title": "Machinehead",
+    "pieceId": "51a2c52e-494f-4fd2-af10-bf59fa17e9a8",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/51a2c52e-494f-4fd2-af10-bf59fa17e9a8",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "Machinehead-Bush.prst",
+        "id": "8f246a3a-722f-444a-a677-52447f240a13"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "Machinehead-Bush.pdf",
+        "id": "b27bfca3-8a39-4835-a5e5-563276bcea06"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 57 GrittySVT; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 77,
+    "file": "Patches/Bass/Song/ManInTheBox-AIC.json",
+    "title": "Man in the Box — Alice In Chains",
+    "pieceId": "78eaaa1f-9ecb-4378-a4ba-c46c2617648c",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/78eaaa1f-9ecb-4378-a4ba-c46c2617648c",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "ManInTheBox-AIC.prst",
+        "id": "7081975f-aa78-4841-8821-4d76e998af2a"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "ManInTheBox-AIC.pdf",
+        "id": "39647140-a83d-4cd5-a041-9fc20482f97c"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 58 HairySVT; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 78,
+    "file": "Patches/Bass/Song/MaryJanesLastDance-TomPetty.json",
+    "title": "Mary Jane's Last Dance — Tom Petty",
+    "pieceId": "fe264a4b-7fd1-41a9-a52c-a812a23e8412",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/fe264a4b-7fd1-41a9-a52c-a812a23e8412",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "MaryJanesLastDance-TomPetty.prst",
+        "id": "447af302-74ee-4efd-b062-5dcd110a5a92"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "MaryJanesLastDance-TomPetty.pdf",
+        "id": "b4480cbe-2fe7-47fd-9c41-62c7a36cd0f9"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 54 FullB15; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 79,
+    "file": "Patches/Bass/Song/Metropolis1-DT.json",
+    "title": "Metropolis Pt. 1, The Miracle and the Sleeper",
+    "pieceId": "0b2140b8-7009-48c0-85ed-b53c26baf178",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/0b2140b8-7009-48c0-85ed-b53c26baf178",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "Metropolis1-DT.prst",
+        "id": "37e0a65d-301c-4c3f-b93c-b78aa0d4de5f"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "Metropolis1-DT.pdf",
+        "id": "69783b5d-08d7-41de-a476-8cbeee203fb3"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; Mess Bass / Mesa215; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 80,
+    "file": "Patches/Bass/Song/MoneyForNothing-DireStraits.json",
+    "title": "Money for Nothing - Dire Straits",
+    "pieceId": "4d073b76-ab30-4af5-b87c-960eacf3625f",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/4d073b76-ab30-4af5-b87c-960eacf3625f",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "MoneyForNothing-DireStraits.prst",
+        "id": "1f735b24-062e-49da-92bb-4faccb9fd7be"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "MoneyForNothing-DireStraits.pdf",
+        "id": "0b372149-da43-4b9c-b29e-a1d24d389104"
+      }
+    ],
+    "success": true,
+    "summary": "Full board American Sound (bypassed; retained for legacy full-board builds); SnapTone slot 52 AvalonAD2022; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 81,
+    "file": "Patches/Bass/Song/MyMaria-BrooksDunn.json",
+    "title": "My Maria — Brooks & Dunn",
+    "pieceId": "836d1722-18c4-4bfd-a4c0-459a8b3c0202",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/836d1722-18c4-4bfd-a4c0-459a8b3c0202",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "MyMaria-BrooksDunn.prst",
+        "id": "d8bbb95a-8f9b-4b04-a949-09293960f11d"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "MyMaria-BrooksDunn.pdf",
+        "id": "5b89f2eb-8228-4998-ad74-733d925d1791"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 51 CleanB15; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 82,
+    "file": "Patches/Bass/Song/Neon-JohnMayer.json",
+    "title": "Neon — John Mayer",
+    "pieceId": "9b019fcf-9f53-47bc-9352-ba028ae147f2",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/9b019fcf-9f53-47bc-9352-ba028ae147f2",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "Neon-JohnMayer.prst",
+        "id": "3db09182-e539-4240-b440-77382a50225b"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "Neon-JohnMayer.pdf",
+        "id": "70cea92c-7e59-404a-882c-b185d8097367"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 54 FullB15; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 83,
+    "file": "Patches/Bass/Song/NeonMoon-BrooksDunn.json",
+    "title": "Neon Moon — Brooks & Dunn",
+    "pieceId": "b7a134cc-1fe1-4b15-9de5-96d4d532dff7",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/b7a134cc-1fe1-4b15-9de5-96d4d532dff7",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "NeonMoon-BrooksDunn.prst",
+        "id": "b2726257-7640-4154-8baa-685e33218456"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "NeonMoon-BrooksDunn.pdf",
+        "id": "2b4626ff-c213-4877-8698-29b2a6113be9"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 51 CleanB15; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 84,
+    "file": "Patches/Bass/Song/NothingAtAll-AK.json",
+    "title": "When You Say Nothing At All - Alison Krauss",
+    "pieceId": "39768bd3-bc17-4b24-b9a1-a0e80a346b31",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/39768bd3-bc17-4b24-b9a1-a0e80a346b31",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "NothingAtAll-AK.prst",
+        "id": "ed26c968-9134-47e1-bfca-77125e18a5f6"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "NothingAtAll-AK.pdf",
+        "id": "e0502ebe-96d9-4fcf-9e60-5da9959c434e"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 51 CleanB15; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 85,
+    "file": "Patches/Bass/Song/NovemberRain-GNR.json",
+    "title": "November Rain - Guns N' Roses",
+    "pieceId": "2e9316da-b1f4-4e4b-9b1a-7d2b0f41434c",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/2e9316da-b1f4-4e4b-9b1a-7d2b0f41434c",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "NovemberRain-GNR.prst",
+        "id": "0eef7eff-4de5-4567-8082-d081d95ecbd8"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "NovemberRain-GNR.pdf",
+        "id": "4155f6c4-f6cc-4471-b97b-e57066b3a1ce"
+      }
+    ],
+    "success": true,
+    "summary": "Full board American Sound (bypassed; retained for legacy full-board builds); SnapTone slot 53 CleanSVT; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 86,
+    "file": "Patches/Bass/Song/One-Metallica.json",
+    "title": "One - Metallica",
+    "pieceId": "d4faa142-310d-4711-9910-63b002f48e70",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/d4faa142-310d-4711-9910-63b002f48e70",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "One-Metallica.prst",
+        "id": "dc2decbe-0765-4a36-bbe1-a37d0468138b"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "One-Metallica.pdf",
+        "id": "aad371fc-8cf5-4c35-aacf-4edd16e25cfc"
+      }
+    ],
+    "success": true,
+    "summary": "Full board American Sound (bypassed; retained for legacy full-board builds); SnapTone slot 57 GrittySVT; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 87,
+    "file": "Patches/Bass/Song/OneLastBreath-Creed.json",
+    "title": "One Last Breath — Creed",
+    "pieceId": "e5b6f532-0940-483f-b79c-e539788a98e4",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/e5b6f532-0940-483f-b79c-e539788a98e4",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "OneLastBreath-Creed.prst",
+        "id": "07176eb9-666d-451e-ad13-726c3da2a8b0"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "OneLastBreath-Creed.pdf",
+        "id": "73d77577-3eab-4813-9822-da9023ac6aca"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 53 CleanSVT; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 88,
+    "file": "Patches/Bass/Song/OnlyInAmerica-BrooksDunn.json",
+    "title": "Only in America — Brooks & Dunn",
+    "pieceId": "d33cb7c7-1f6c-43c9-8cde-04a3350022b7",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/d33cb7c7-1f6c-43c9-8cde-04a3350022b7",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "OnlyInAmerica-BrooksDunn.prst",
+        "id": "2afdfc48-1ca7-403f-bed5-79922c495e02"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "OnlyInAmerica-BrooksDunn.pdf",
+        "id": "0dc58062-4e00-4e7c-8dd4-f4aa07b4c68c"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 53 CleanSVT; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 89,
+    "file": "Patches/Bass/Song/PapaWasARollinStone-Temptations.json",
+    "title": "Papa Was a Rollin' Stone — The Temptations",
+    "pieceId": "b5acadac-15a8-4516-a01c-4242915089e8",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/b5acadac-15a8-4516-a01c-4242915089e8",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "PapaWasARollinStone-Temptations.prst",
+        "id": "1597ea43-d6e5-4720-ba9d-1d7602280908"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "PapaWasARollinStone-Temptations.pdf",
+        "id": "de2ef901-f61b-4bf7-aea1-411b57c0d461"
+      }
+    ],
+    "success": true,
+    "summary": "Full board American Sound (bypassed; retained for legacy full-board builds); SnapTone slot 51 CleanB15; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 90,
+    "file": "Patches/Bass/Song/Parallels-Yes.json",
+    "title": "Parallels - Yes",
+    "pieceId": "726eb19c-aa41-4a0a-8a99-160fb4482e8a",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/726eb19c-aa41-4a0a-8a99-160fb4482e8a",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "Parallels-Yes.prst",
+        "id": "28c31dfb-db0d-4fe2-b215-65ed8abb27de"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "Parallels-Yes.pdf",
+        "id": "185f5ad1-2a8f-434a-84be-a28ef000f9d7"
+      }
+    ],
+    "success": true,
+    "summary": "Full board American Sound (bypassed; retained for legacy full-board builds); SnapTone slot 55 BrightSVT; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 91,
+    "file": "Patches/Bass/Song/Praise-EW.json",
+    "title": "Praise — Elevation Worship",
+    "pieceId": "05d4ab54-f5cb-4926-94e6-ae524bc11431",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/05d4ab54-f5cb-4926-94e6-ae524bc11431",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "Praise-EW.prst",
+        "id": "ee2d28ba-edaf-4860-b489-321e5b5a2fe6"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "Praise-EW.pdf",
+        "id": "b35b6ad7-d13d-4c13-ac81-bdd9e27bbe81"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 59 WorshipSVT; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 92,
+    "file": "Patches/Bass/Song/ProudMary-IkeTina.json",
+    "title": "Proud Mary - Ike & Tina Turner",
+    "pieceId": "053760e5-435f-4f96-ba81-13612baa76ef",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/053760e5-435f-4f96-ba81-13612baa76ef",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "ProudMary-IkeTina.prst",
+        "id": "94962325-c9bd-4385-a617-1de8d1625377"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "ProudMary-IkeTina.pdf",
+        "id": "30082d06-5e28-4f63-af2d-a2934c504d1f"
+      }
+    ],
+    "success": true,
+    "summary": "Full board American Sound (bypassed; retained for legacy full-board builds); SnapTone slot 54 FullB15; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 93,
+    "file": "Patches/Bass/Song/PuffTheMagicDragon-PPM.json",
+    "title": "Puff the Magic Dragon — Peter, Paul and Mary",
+    "pieceId": "0a6dec12-c752-471d-a3a4-fa11b1560e10",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/0a6dec12-c752-471d-a3a4-fa11b1560e10",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "PuffTheMagicDragon-PPM.prst",
+        "id": "13bebedd-ad9b-4d2b-93bf-66ba27dadd0a"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "PuffTheMagicDragon-PPM.pdf",
+        "id": "9384054b-f33c-4e8e-b3c8-48ca6048a6d6"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 51 CleanB15; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 94,
+    "file": "Patches/Bass/Song/PullMeUnder-DT.json",
+    "title": "Pull Me Under - Dream Theater",
+    "pieceId": "0102b8b3-de6a-46b6-b7c4-c56b0e6a1240",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/0102b8b3-de6a-46b6-b7c4-c56b0e6a1240",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "PullMeUnder-DT.prst",
+        "id": "9babfad8-f2ac-4c74-b1fa-25e94d533f59"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "PullMeUnder-DT.pdf",
+        "id": "bdaec583-4c71-4da9-80ac-b19fd3c3267f"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; Mess Bass / Mesa215; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 95,
+    "file": "Patches/Bass/Song/PurpleRain-Prince.json",
+    "title": "Purple Rain - Prince",
+    "pieceId": "acb33c13-e760-4e44-add6-53a9416961ce",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/acb33c13-e760-4e44-add6-53a9416961ce",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "PurpleRain-Prince.prst",
+        "id": "efeea462-c58f-418f-9da8-b6aa8b968e3f"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "PurpleRain-Prince.pdf",
+        "id": "fbedc1f8-2b7e-4d67-936f-4add0cb2bf07"
+      }
+    ],
+    "success": true,
+    "summary": "Full board American Sound (bypassed; retained for legacy full-board builds); SnapTone slot 53 CleanSVT; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 96,
+    "file": "Patches/Bass/Song/RainbowConnection-KennyLoggins.json",
+    "title": "Rainbow Connection — Kenny Loggins",
+    "pieceId": "3eb16d13-6fc8-4c86-a7da-efa01bd5fdc9",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/3eb16d13-6fc8-4c86-a7da-efa01bd5fdc9",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "RainbowConnection-KennyLoggins.prst",
+        "id": "f2e344d2-185e-48ac-aeca-363915fc7717"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "RainbowConnection-KennyLoggins.pdf",
+        "id": "1aa3d28d-09bd-45b0-af9d-2efd0fd424f8"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 51 CleanB15; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 97,
+    "file": "Patches/Bass/Song/RedDirtRoad-BrooksDunn.json",
+    "title": "Red Dirt Road — Brooks & Dunn",
+    "pieceId": "7e50c63c-7aec-4633-aefd-abc1a67cef28",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/7e50c63c-7aec-4633-aefd-abc1a67cef28",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "RedDirtRoad-BrooksDunn.prst",
+        "id": "88c67c49-bed8-46c3-92ee-36a0e13aefa7"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "RedDirtRoad-BrooksDunn.pdf",
+        "id": "1fb9c287-60d7-40c5-ad5d-7f45ad17543f"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 51 CleanB15; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 98,
+    "file": "Patches/Bass/Song/River-JF.json",
+    "title": "The River — Jordan Feliz",
+    "pieceId": "0fcef297-aa0c-45cf-98c8-26222d5166f6",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/0fcef297-aa0c-45cf-98c8-26222d5166f6",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "River-JF.prst",
+        "id": "84280a72-38fb-4aa2-b9bf-5c05da5e34e5"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "River-JF.pdf",
+        "id": "eaa71ab8-5766-4d45-964e-916f154063fb"
+      }
+    ],
+    "success": true,
+    "summary": "Full board American Sound (bypassed; retained for legacy full-board builds); SnapTone slot 52 AvalonAD2022; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 99,
+    "file": "Patches/Bass/Song/RiverDownBelow-Riverside.json",
+    "title": "River Down Below — Riverside",
+    "pieceId": "325cea0b-2bd5-4642-b80b-a6cb99aa5cfc",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/325cea0b-2bd5-4642-b80b-a6cb99aa5cfc",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "RiverDownBelow-Riverside.prst",
+        "id": "4760d804-3932-4b4a-bb11-266677f4e164"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "RiverDownBelow-Riverside.pdf",
+        "id": "fc3a5433-1475-4ef3-83dd-527fbca41c41"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 56 ProgSVT; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 100,
+    "file": "Patches/Bass/Song/SallysSong-NBC.json",
+    "title": "Sally's Song — The Nightmare Before Christmas",
+    "pieceId": "70a66967-b0d4-4190-a20f-663f1c362610",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/70a66967-b0d4-4190-a20f-663f1c362610",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "SallysSong-NBC.prst",
+        "id": "32e13335-8494-4d51-bf96-3d4c2693265c"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "SallysSong-NBC.pdf",
+        "id": "de390eae-bb07-4abd-ae5c-83dbe85cda55"
+      }
+    ],
+    "success": true,
+    "summary": "Full board American Sound (bypassed; retained for legacy full-board builds); SnapTone slot 51 CleanB15; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 101,
+    "file": "Patches/Bass/Song/SomebodyLikeYou-KeithUrban.json",
+    "title": "Somebody Like You — Keith Urban",
+    "pieceId": "82991522-a96b-4354-a431-6327a5d27744",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/82991522-a96b-4354-a431-6327a5d27744",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "SomebodyLikeYou-KeithUrban.prst",
+        "id": "d61cafdc-fa45-401d-bedf-9b79e9d91c16"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "SomebodyLikeYou-KeithUrban.pdf",
+        "id": "04ea8a49-77ca-4e8b-9181-63528ee65aac"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 51 CleanB15; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 102,
+    "file": "Patches/Bass/Song/SpiderManTheme1967.json",
+    "title": "Spider-Man Theme (1967 Cartoon) — Bob Harris & Paul Francis Webster",
+    "pieceId": "ae7b21e8-ced3-4e56-9f2b-ff449757165e",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/ae7b21e8-ced3-4e56-9f2b-ff449757165e",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "SpiderManTheme1967.prst",
+        "id": "f867de17-7e99-4c6f-9e6c-63ca6d39ecc7"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "SpiderManTheme1967.pdf",
+        "id": "d4a9bfd6-6bf7-4dfb-a66a-ec5fedb37b27"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 51 CleanB15; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 103,
+    "file": "Patches/Bass/Song/SpiderManTheme1994.json",
+    "title": "Spider-Man: The Animated Series Theme (1994) — Joe Perry",
+    "pieceId": "daba958f-831d-41a0-8bdf-c59c69d5cc30",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/daba958f-831d-41a0-8bdf-c59c69d5cc30",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "SpiderManTheme1994.prst",
+        "id": "c35b00c4-a6b4-42fc-ba71-9d4d050becb7"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "SpiderManTheme1994.pdf",
+        "id": "c1d68d2b-dbb3-4086-b9e8-79e390da9b6b"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 55 BrightSVT; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 104,
+    "file": "Patches/Bass/Song/SpideyFriendsTheme.json",
+    "title": "Spidey and His Amazing Friends Theme — Patrick Stump",
+    "pieceId": "3e238073-12dd-4e53-bad1-94f5a639643c",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/3e238073-12dd-4e53-bad1-94f5a639643c",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "SpideyFriendsTheme.prst",
+        "id": "4cce96f5-633b-4b75-9e8a-63e26fe954b6"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "SpideyFriendsTheme.pdf",
+        "id": "8d620a89-130c-42fb-9e88-0798d2f06a66"
+      }
+    ],
+    "success": true,
+    "summary": "Full board American Sound (bypassed; retained for legacy full-board builds); SnapTone slot 55 BrightSVT; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 105,
+    "file": "Patches/Bass/Song/SpiritCarriesOn-DT.json",
+    "title": "The Spirit Carries On",
+    "pieceId": "8cd9ba7e-1a72-49a9-afd3-d9c8d5c7908e",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/8cd9ba7e-1a72-49a9-afd3-d9c8d5c7908e",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "SpiritCarriesOn-DT.prst",
+        "id": "97e38624-4797-46d4-ba86-e31588ebfcba"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "SpiritCarriesOn-DT.pdf",
+        "id": "c948832a-1f7d-45ec-ae26-8f5bb40afc2e"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; Mess Bass / EBS410; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 106,
+    "file": "Patches/Bass/Song/Stairway-LedZeppelin.json",
+    "title": "Stairway to Heaven - Led Zeppelin",
+    "pieceId": "f54f114a-5aec-44c4-88ec-b295a20497ff",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/f54f114a-5aec-44c4-88ec-b295a20497ff",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "Stairway-LedZeppelin.prst",
+        "id": "48a65c59-8c0c-49d5-9d71-0b6d016d7f86"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "Stairway-LedZeppelin.pdf",
+        "id": "c65f3249-4d3e-4fab-888a-e00d64973869"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 52 AvalonAD2022; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 107,
+    "file": "Patches/Bass/Song/StillYTMO-ELP.json",
+    "title": "Still...You Turn Me On",
+    "pieceId": "93ce6d9e-6766-4615-a521-27b3db3bac99",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/93ce6d9e-6766-4615-a521-27b3db3bac99",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "StillYTMO-ELP.prst",
+        "id": "f605070c-7197-437f-87ba-70cf5bcc498a"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "StillYTMO-ELP.pdf",
+        "id": "32293316-d76b-4b8b-93f5-96af9626d334"
+      }
+    ],
+    "success": true,
+    "summary": "Full board American Sound (bypassed; retained for legacy full-board builds); SnapTone slot 53 CleanSVT; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 108,
+    "file": "Patches/Bass/Song/StormCorrosion-StormCorrosion.json",
+    "title": "Storm Corrosion — Storm Corrosion",
+    "pieceId": "501a967f-3464-49f6-a064-5bb8a8b1ee8a",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/501a967f-3464-49f6-a064-5bb8a8b1ee8a",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "StormCorrosion-StormCorrosion.prst",
+        "id": "fd53f0d8-8111-4854-9771-c4d3144f40e4"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "StormCorrosion-StormCorrosion.pdf",
+        "id": "a5c1f49b-35cc-45db-8498-f6b7ea6c43e3"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 54 FullB15; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 109,
+    "file": "Patches/Bass/Song/StreamCons-DT.json",
+    "title": "Stream of Consciousness - Dream Theater",
+    "pieceId": "925ec410-d1e5-4806-9ee8-5b3ff66d3b44",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/925ec410-d1e5-4806-9ee8-5b3ff66d3b44",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "StreamCons-DT.prst",
+        "id": "0661813a-ad62-4a73-9ae6-a28da08b9595"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "StreamCons-DT.pdf",
+        "id": "fcb431b0-bcf2-4518-9ce5-7d860e54aee4"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; Mess Bass / Mesa215; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 110,
+    "file": "Patches/Bass/Song/SultansOfSwing-DireStraits.json",
+    "title": "Sultans of Swing - Dire Straits",
+    "pieceId": "225390b3-dcce-4348-9ad9-cdbd85b3b882",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/225390b3-dcce-4348-9ad9-cdbd85b3b882",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "SultansOfSwing-DireStraits.prst",
+        "id": "ba7e3fd0-550f-4d66-9be2-3cbfc4db05e0"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "SultansOfSwing-DireStraits.pdf",
+        "id": "d8ec43fe-b764-4003-b2c4-acab5cdb97c6"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 54 FullB15; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 111,
+    "file": "Patches/Bass/Song/SurfinUSA-BeachBoys.json",
+    "title": "Surfin' U.S.A. — The Beach Boys",
+    "pieceId": "f6d3df66-f56c-4ab0-91f0-1bc34dd0a87b",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/f6d3df66-f56c-4ab0-91f0-1bc34dd0a87b",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "SurfinUSA-BeachBoys.prst",
+        "id": "2200f4a9-c9e1-41ac-a87b-abbe5dc6222f"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "SurfinUSA-BeachBoys.pdf",
+        "id": "623a0117-45f1-4953-84a6-d8801609d843"
+      }
+    ],
+    "success": true,
+    "summary": "Full board American Sound (bypassed; retained for legacy full-board builds); SnapTone slot 51 CleanB15; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 112,
+    "file": "Patches/Bass/Song/SweetChild-GNR.json",
+    "title": "Sweet Child O' Mine - Guns N' Roses",
+    "pieceId": "09aec33c-93f9-430c-beb4-dd6620c187d2",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/09aec33c-93f9-430c-beb4-dd6620c187d2",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "SweetChild-GNR.prst",
+        "id": "91f35598-a89e-4419-a8c7-cb204e4e35ce"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "SweetChild-GNR.pdf",
+        "id": "94bb7a52-6841-4a67-8ced-3e1eac23df8e"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 57 GrittySVT; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 113,
+    "file": "Patches/Bass/Song/SweetLeaf-BlackSabbath.json",
+    "title": "Sweet Leaf — Black Sabbath",
+    "pieceId": "dfbfa157-40b9-4952-827e-1cf7957bfc50",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/dfbfa157-40b9-4952-827e-1cf7957bfc50",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "SweetLeaf-BlackSabbath.prst",
+        "id": "23fc53b0-860b-4ebd-af38-b35fb1c52a46"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "SweetLeaf-BlackSabbath.pdf",
+        "id": "23449c20-aef8-4f57-88fa-305b0541af24"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 58 HairySVT; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 114,
+    "file": "Patches/Bass/Song/TennesseeWhiskey-Stapleton.json",
+    "title": "Tennessee Whiskey - Chris Stapleton",
+    "pieceId": "9b75d82d-232c-48ff-911f-90302567b6b7",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/9b75d82d-232c-48ff-911f-90302567b6b7",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "TennesseeWhiskey-Stapleton.prst",
+        "id": "e59a6429-3684-40b7-b677-9f9bdbccb6fd"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "TennesseeWhiskey-Stapleton.pdf",
+        "id": "ad5f64c7-f9e1-4dba-bcb5-e24963b23b22"
+      }
+    ],
+    "success": true,
+    "summary": "Full board American Sound (bypassed; retained for legacy full-board builds); SnapTone slot 51 CleanB15; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 115,
+    "file": "Patches/Bass/Song/TheGambler-KR.json",
+    "title": "The Gambler - Kenny Rogers",
+    "pieceId": "61df1c44-5eae-4813-94fa-c4d869b993e0",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/61df1c44-5eae-4813-94fa-c4d869b993e0",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "TheGambler-KR.prst",
+        "id": "22c6d4b6-30d2-4713-aa41-5604f2f0cbe9"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "TheGambler-KR.pdf",
+        "id": "206e5c22-7c37-471c-b685-3f479e2e2da8"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 51 CleanB15; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 116,
+    "file": "Patches/Bass/Song/ThisIsHalloween-NBC.json",
+    "title": "This Is Halloween — The Nightmare Before Christmas",
+    "pieceId": "871abbfd-f08d-4bff-8c0f-ddbe2525d258",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/871abbfd-f08d-4bff-8c0f-ddbe2525d258",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "ThisIsHalloween-NBC.prst",
+        "id": "8c77546b-655e-46e3-8ff2-029b746d0079"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "ThisIsHalloween-NBC.pdf",
+        "id": "3c068b6c-ee81-4ff8-9419-0af7d99802fa"
+      }
+    ],
+    "success": true,
+    "summary": "Full board American Sound (bypassed; retained for legacy full-board builds); SnapTone slot 54 FullB15; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 117,
+    "file": "Patches/Bass/Song/Thrive-CC.json",
+    "title": "Thrive",
+    "pieceId": "e17713d2-10de-4443-8143-8909fbe4df88",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/e17713d2-10de-4443-8143-8909fbe4df88",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "Thrive-CC.prst",
+        "id": "ce126a43-620e-436c-adf9-6c53668f3dec"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "Thrive-CC.pdf",
+        "id": "080c128f-3ecb-44ae-b4eb-e9bd59f971a3"
+      }
+    ],
+    "success": true,
+    "summary": "Full board American Sound (bypassed; retained for legacy full-board builds); SnapTone slot 59 WorshipSVT; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 118,
+    "file": "Patches/Bass/Song/TimeOfMyLife-DirtyDancing.json",
+    "title": "(I've Had) The Time of My Life — Bill Medley & Jennifer Warnes",
+    "pieceId": "2180894d-ffe8-41ce-a9b9-64d1255ab492",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/2180894d-ffe8-41ce-a9b9-64d1255ab492",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "TimeOfMyLife-DirtyDancing.prst",
+        "id": "df477da6-e340-4029-b1ac-e8e32eed399a"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "TimeOfMyLife-DirtyDancing.pdf",
+        "id": "f34a3e44-4f2c-40e8-903b-66128a2c956f"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 52 AvalonAD2022; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 119,
+    "file": "Patches/Bass/Song/TouchPeelStand-DaysOfTheNew.json",
+    "title": "Touch, Peel, and Stand - Days of the New",
+    "pieceId": "0c887682-c58d-45b0-97f1-cb5b09f5b421",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/0c887682-c58d-45b0-97f1-cb5b09f5b421",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "TouchPeelStand-DaysOfTheNew.prst",
+        "id": "e732b0c5-f047-4ca5-bbc2-7337f50cb784"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "TouchPeelStand-DaysOfTheNew.pdf",
+        "id": "76febf13-7bea-4ab8-9dd0-b95e3f961a6b"
+      }
+    ],
+    "success": true,
+    "summary": "Full board American Sound (bypassed; retained for legacy full-board builds); SnapTone slot 58 HairySVT; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 120,
+    "file": "Patches/Bass/Song/UnderTheBridge-RHCP.json",
+    "title": "Under the Bridge - Red Hot Chili Peppers",
+    "pieceId": "dbd2608d-4ef2-42bd-8122-c58e0d19d5df",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/dbd2608d-4ef2-42bd-8122-c58e0d19d5df",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "UnderTheBridge-RHCP.prst",
+        "id": "6701e97e-60ba-4b62-8408-e7b719adffb8"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "UnderTheBridge-RHCP.pdf",
+        "id": "0f826144-c2a5-4b15-8b94-3a82fe986866"
+      }
+    ],
+    "success": true,
+    "summary": "Full board American Sound (bypassed; retained for legacy full-board builds); SnapTone slot 53 CleanSVT; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 121,
+    "file": "Patches/Bass/Song/UnstopGod-EW.json",
+    "title": "Unstoppable God (in G)",
+    "pieceId": "5700d37f-16bc-4616-946c-f5165975f65d",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/5700d37f-16bc-4616-946c-f5165975f65d",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "UnstopGod-EW.prst",
+        "id": "a9a465db-de62-40ba-b03c-72d282fdd097"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "UnstopGod-EW.pdf",
+        "id": "e0402bcb-58cd-406b-bf63-da9974c8443f"
+      }
+    ],
+    "success": true,
+    "summary": "Full board American Sound (bypassed; retained for legacy full-board builds); SnapTone slot 59 WorshipSVT; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 122,
+    "file": "Patches/Bass/Song/Uprising-Muse.json",
+    "title": "Uprising - Muse",
+    "pieceId": "db8b1f75-813a-4248-a400-d67d48ebab07",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/db8b1f75-813a-4248-a400-d67d48ebab07",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "Uprising-Muse.prst",
+        "id": "723cb6b7-8259-427f-a62b-c26a3136a922"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "Uprising-Muse.pdf",
+        "id": "5860f74a-5bad-4eaf-9e5a-cb3c6da067a2"
+      }
+    ],
+    "success": true,
+    "summary": "Full board American Sound (bypassed; retained for legacy full-board builds); SnapTone slot 58 HairySVT; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 123,
+    "file": "Patches/Bass/Song/WaitingOnTheWorld-JohnMayer.json",
+    "title": "Waiting on the World to Change — John Mayer",
+    "pieceId": "291e92f2-c1dd-4ae8-ba3f-14cb458d9a37",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/291e92f2-c1dd-4ae8-ba3f-14cb458d9a37",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "WaitingOnTheWorld-JohnMayer.prst",
+        "id": "203f6333-3256-4a72-aa85-d6325c4079e4"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "WaitingOnTheWorld-JohnMayer.pdf",
+        "id": "85d6441f-8709-48f3-adf7-a29632b100f2"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 54 FullB15; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 124,
+    "file": "Patches/Bass/Song/WeGotUsedToUs-Riverside.json",
+    "title": "We Got Used to Us — Riverside",
+    "pieceId": "93a5f113-27a7-431b-88be-f2a3692c016a",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/93a5f113-27a7-431b-88be-f2a3692c016a",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "WeGotUsedToUs-Riverside.prst",
+        "id": "1ea20b5f-d52d-4262-b833-669a1d6b0af7"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "WeGotUsedToUs-Riverside.pdf",
+        "id": "6cee13fb-ebb6-418f-9145-29af6b47f78d"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 54 FullB15; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 125,
+    "file": "Patches/Bass/Song/WerewolvesOfLondon-Zevon.json",
+    "title": "Werewolves of London — Warren Zevon",
+    "pieceId": "14e0dcaa-4506-4993-8881-49cd130429dc",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/14e0dcaa-4506-4993-8881-49cd130429dc",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "WerewolvesOfLondon-Zevon.prst",
+        "id": "a4edb13a-2c2d-4a9c-9fc6-f0c7205774a7"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "WerewolvesOfLondon-Zevon.pdf",
+        "id": "895ca4fb-c43b-4725-8535-fd0e932354e9"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 52 AvalonAD2022; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 126,
+    "file": "Patches/Bass/Song/WhatAboutNow-Daughtry.json",
+    "title": "What About Now — Daughtry",
+    "pieceId": "e801ec07-6bc4-4add-aee6-8b1d775ce18c",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/e801ec07-6bc4-4add-aee6-8b1d775ce18c",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "WhatAboutNow-Daughtry.prst",
+        "id": "bc459e10-724e-48ac-a8da-3e20316077f6"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "WhatAboutNow-Daughtry.pdf",
+        "id": "65d51ba5-933d-4d6e-853f-42dcc0ecff71"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 53 CleanSVT; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 127,
+    "file": "Patches/Bass/Song/WhenIComeAround-GreenDay.json",
+    "title": "When I Come Around - Green Day",
+    "pieceId": "bb60f60a-6e43-4e1c-a8a8-c7a3b59b8acf",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/bb60f60a-6e43-4e1c-a8a8-c7a3b59b8acf",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "WhenIComeAround-GreenDay.prst",
+        "id": "ac634934-57d2-4d5d-ba9e-bb061a2f9854"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "WhenIComeAround-GreenDay.pdf",
+        "id": "523db762-6172-4462-a7fa-b23a00f1de0d"
+      }
+    ],
+    "success": true,
+    "summary": "Full board American Sound (bypassed; retained for legacy full-board builds); SnapTone slot 55 BrightSVT; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 128,
+    "file": "Patches/Bass/Song/WhenWindMeetsFire-EW.json",
+    "title": "When Wind Meets Fire — Elevation Worship",
+    "pieceId": "93fddf31-3919-42be-8108-499d1d7bf870",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/93fddf31-3919-42be-8108-499d1d7bf870",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "WhenWindMeetsFire-EW.prst",
+        "id": "e79bd39b-7e97-44b4-b7ff-d9f4ef7016c2"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "WhenWindMeetsFire-EW.pdf",
+        "id": "90a3731e-b135-43dd-bd9d-77afc20aa6a4"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 59 WorshipSVT; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 129,
+    "file": "Patches/Bass/Song/WontBackDown-TomPetty.json",
+    "title": "I Won't Back Down - Tom Petty",
+    "pieceId": "14de19a2-474f-4851-bdb5-3f63cea057e9",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/14de19a2-474f-4851-bdb5-3f63cea057e9",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "WontBackDown-TomPetty.prst",
+        "id": "a9590811-ef72-481c-a9c8-9c212952218a"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "WontBackDown-TomPetty.pdf",
+        "id": "97eecced-61cf-4271-a4b5-0e251bb15617"
+      }
+    ],
+    "success": true,
+    "summary": "Full board American Sound (bypassed; retained for legacy full-board builds); SnapTone slot 52 AvalonAD2022; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 130,
+    "file": "Patches/Bass/Song/You-Candlebox.json",
+    "title": "You - Candlebox",
+    "pieceId": "672489bf-fbd0-45a9-bf6b-bcf47d8d085f",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/672489bf-fbd0-45a9-bf6b-bcf47d8d085f",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "You-Candlebox.prst",
+        "id": "353246d8-9df7-45ec-a311-ec377036bec1"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "You-Candlebox.pdf",
+        "id": "d7b78b91-0099-4b54-80ee-dd2cf23597a2"
+      }
+    ],
+    "success": true,
+    "summary": "Full board American Sound (bypassed; retained for legacy full-board builds); SnapTone slot 53 CleanSVT; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 131,
+    "file": "Patches/Bass/Song/YouDontKnowHowItFeels-TomPetty.json",
+    "title": "You Don't Know How It Feels — Tom Petty",
+    "pieceId": "a5a29be2-89d0-4580-ad09-693bf6783de9",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/a5a29be2-89d0-4580-ad09-693bf6783de9",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "YouDontKnowHowItFeels-TomPetty.prst",
+        "id": "75946c3f-4f41-4582-90e0-7e75a0e37798"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "YouDontKnowHowItFeels-TomPetty.pdf",
+        "id": "448ee390-34fa-43dd-96c2-991eae5fe820"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 54 FullB15; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 132,
+    "file": "Patches/Bass/Song/YourLove-UP.json",
+    "title": "Your Love Changes Everything",
+    "pieceId": "cf973b2f-609e-4aca-a14b-f0ccb59435a5",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/cf973b2f-609e-4aca-a14b-f0ccb59435a5",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "YourLove-UP.prst",
+        "id": "8d6f8b74-d8bc-422f-a738-1a51009beb2e"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "YourLove-UP.pdf",
+        "id": "3e37756f-52d9-4a39-8043-e2fe7ce9950b"
+      }
+    ],
+    "success": true,
+    "summary": "Full board American Sound (bypassed; retained for legacy full-board builds); SnapTone slot 54 FullB15; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 133,
+    "file": "Patches/Bass/Song/YourWaysBetter-FF.json",
+    "title": "Your Ways Better - Forrest Frank",
+    "pieceId": "4b0e788f-4ffe-40b0-b6aa-ca12ea044232",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/4b0e788f-4ffe-40b0-b6aa-ca12ea044232",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "YourWaysBetter-FF.prst",
+        "id": "494978de-fc24-4e26-b279-2308048e42e8"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "YourWaysBetter-FF.pdf",
+        "id": "518499d2-c521-4d31-938c-3d99762d6e1f"
+      }
+    ],
+    "success": true,
+    "summary": "Full board American Sound (bypassed; retained for legacy full-board builds); SnapTone slot 52 AvalonAD2022; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 134,
+    "file": "Patches/Bass/Style/EWF-Funk.json",
+    "title": "Boogie Wonderland - Earth, Wind & Fire",
+    "pieceId": "752ca050-c9d4-4456-be27-7ac8e2775416",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/752ca050-c9d4-4456-be27-7ac8e2775416",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "EWF-Funk.prst",
+        "id": "2355f43e-b900-4fbd-a6b5-e55229018717"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "EWF-Funk.pdf",
+        "id": "74316652-090a-4beb-bff9-4c98acd0c5d5"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 52 AvalonAD2022; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 134,
+    "file": "Patches/Bass/Style/EWF-Funk.json",
+    "title": "Earth, Wind & Fire Style Funk Bass",
+    "pieceId": "468277f5-ea21-4a2e-932e-937cbb3f3f6a",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/468277f5-ea21-4a2e-932e-937cbb3f3f6a",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "EWF-Funk.prst",
+        "id": "fce5f049-14d6-4868-a98e-a14d38f6506c"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "EWF-Funk.pdf",
+        "id": "74b9c374-f082-41d3-9703-587e4dc83b55"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 52 AvalonAD2022; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 134,
+    "file": "Patches/Bass/Style/EWF-Funk.json",
+    "title": "Fantasy - Earth, Wind & Fire",
+    "pieceId": "7b6f82d9-7b73-4acb-8dba-be39761a9f95",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/7b6f82d9-7b73-4acb-8dba-be39761a9f95",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "EWF-Funk.prst",
+        "id": "61d121ac-2449-40d5-8eff-9012c61ddbff"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "EWF-Funk.pdf",
+        "id": "97715cdb-ee9c-4207-b49d-2e0274211a10"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 52 AvalonAD2022; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 134,
+    "file": "Patches/Bass/Style/EWF-Funk.json",
+    "title": "September - Earth, Wind & Fire",
+    "pieceId": "509dfbd9-f0db-4fe8-962f-f5ef266b0032",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/509dfbd9-f0db-4fe8-962f-f5ef266b0032",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "EWF-Funk.prst",
+        "id": "5a7c2113-132a-47e2-8ee3-0b102a594329"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "EWF-Funk.pdf",
+        "id": "7637aa29-ecee-4a10-b0bc-64511b64c822"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 52 AvalonAD2022; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 134,
+    "file": "Patches/Bass/Style/EWF-Funk.json",
+    "title": "Shining Star - Earth, Wind & Fire",
+    "pieceId": "1224d9c8-3459-47e3-9d0e-25e95584ec97",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/1224d9c8-3459-47e3-9d0e-25e95584ec97",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "EWF-Funk.prst",
+        "id": "24fb90b7-721e-40cf-9c87-3d6769f49567"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "EWF-Funk.pdf",
+        "id": "a21548f5-95f9-45cc-8e06-b858dc2730c1"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 52 AvalonAD2022; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 135,
+    "file": "Patches/Bass/Style/RammGrind.json",
+    "title": "Industrial Metal Bass (Rammstein Style)",
+    "pieceId": "57022255-6f12-4602-a6d6-39fa34400f8b",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/57022255-6f12-4602-a6d6-39fa34400f8b",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "RammGrind.prst",
+        "id": "7bc400c5-ec1d-41ae-a9fe-7063893a5bb9"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "RammGrind.pdf",
+        "id": "aa98a4f1-49e8-475a-a6f7-df6fdfb0d742"
+      }
+    ],
+    "success": true,
+    "summary": "Full board American Sound (bypassed; retained for legacy full-board builds); SnapTone slot 55 BrightSVT; audit revision 2026-10-16",
+    "instrument": "bass"
+  },
+  {
+    "number": 136,
+    "file": "Patches/Guitar/Album/Lion-EW.json",
+    "title": "Lion - Elevation Worship (CCM / Modern Worship)",
+    "pieceId": "dda0f510-c363-42c6-935d-335f6ba96e5c",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/dda0f510-c363-42c6-935d-335f6ba96e5c",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "Lion-EW.prst",
+        "id": "f0927d1d-701d-4e13-8cea-d0a49b0e4b01"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "Lion-EW.pdf",
+        "id": "5269ba8a-13cd-4895-ab6b-5eefb3bb8404"
+      }
+    ],
+    "success": true,
+    "summary": "Full board White Tape; Foxy 30TB / V30112; audit revision 2026-10-16",
+    "instrument": "guitar"
+  },
+  {
+    "number": 137,
+    "file": "Patches/Guitar/Album/Syndicate-TheMidnight.json",
+    "title": "Syndicate — The Midnight",
+    "pieceId": "6227d722-37b8-4b1e-96bf-aa10c8e480ff",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/6227d722-37b8-4b1e-96bf-aa10c8e480ff",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "Syndicate-TheMidnight.prst",
+        "id": "2d1ff3c3-0729-45a2-bd29-3db44b4a21fa"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "Syndicate-TheMidnight.pdf",
+        "id": "36c5c67e-a7ce-4011-9de3-2c66e9d8fa54"
+      }
+    ],
+    "success": true,
+    "summary": "Full board White Tape; SnapTone slot 66 MayerDumble; audit revision 2026-10-16",
+    "instrument": "guitar"
+  },
+  {
+    "number": 138,
+    "file": "Patches/Guitar/Artist/Polyphia-Gtr.json",
+    "title": "Tim Henson / Polyphia — Signature Sound",
+    "pieceId": "66eb4697-76af-4c0d-b188-5d4da7cac698",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/66eb4697-76af-4c0d-b188-5d4da7cac698",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "Polyphia-Gtr.prst",
+        "id": "ce2d9b52-59fe-414d-9ac2-db0758b047e9"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "Polyphia-Gtr.pdf",
+        "id": "fcd48862-4137-49f5-9453-18b39e5f3161"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; L-Star CL / V30112 (User IR 10); audit revision 2026-10-16",
+    "instrument": "guitar"
+  },
+  {
+    "number": 139,
+    "file": "Patches/Guitar/Song/AintNothinBoutYou-BrooksDunn-RhythmGtr.json",
+    "title": "Ain't Nothing 'Bout You - Brooks & Dunn",
+    "pieceId": "560212a7-7895-4334-b24b-12219b0af2d8",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/560212a7-7895-4334-b24b-12219b0af2d8",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "AintNothinBoutYou-BrooksDunn-RhythmGtr.prst",
+        "id": "a213157c-766d-491c-8e54-d39efe7b78f8"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "AintNothinBoutYou-BrooksDunn-RhythmGtr.pdf",
+        "id": "40bfe2ff-a03d-43a4-882f-e4979afd762b"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 63 EdgyTwang; audit revision 2026-10-16",
+    "instrument": "guitar"
+  },
+  {
+    "number": 140,
+    "file": "Patches/Guitar/Song/AmericanPie-DonMcLean-RhythmGtr.json",
+    "title": "American Pie — Don McLean",
+    "pieceId": "596f080c-aae0-43f9-a7db-95e1a05b6190",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/596f080c-aae0-43f9-a7db-95e1a05b6190",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "AmericanPie-DonMcLean-RhythmGtr.prst",
+        "id": "95b015b1-d5f7-48f0-b720-7d776cb40cf4"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "AmericanPie-DonMcLean-RhythmGtr.pdf",
+        "id": "0121f930-028a-413d-9f7d-0530da5c07be"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 62 NashClean; audit revision 2026-10-16",
+    "instrument": "guitar"
+  },
+  {
+    "number": 141,
+    "file": "Patches/Guitar/Song/BeatIt-MJ-RhythmGtr.json",
+    "title": "Beat It — Michael Jackson",
+    "pieceId": "2dc735d2-1888-40e1-be78-8347c621c2df",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/2dc735d2-1888-40e1-be78-8347c621c2df",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "BeatIt-MJ-RhythmGtr.prst",
+        "id": "ce89bc64-eae1-4034-aa77-f95150582c37"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "BeatIt-MJ-RhythmGtr.pdf",
+        "id": "8fed3ea9-649d-4234-bb2f-b9e6715c81d4"
+      }
+    ],
+    "success": true,
+    "summary": "Full board American Sound (bypassed; retained for legacy full-board builds); SnapTone slot 79 CrankedDeluxe; audit revision 2026-10-16",
+    "instrument": "guitar"
+  },
+  {
+    "number": 142,
+    "file": "Patches/Guitar/Song/Believe-BrooksDunn-RhythmGtr.json",
+    "title": "Believe — Brooks & Dunn",
+    "pieceId": "180cdf3e-0990-4bae-9f25-27202560f229",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/180cdf3e-0990-4bae-9f25-27202560f229",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "Believe-BrooksDunn-RhythmGtr.prst",
+        "id": "9f9ceaf0-79a6-4265-b3cb-518350ea06ae"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "Believe-BrooksDunn-RhythmGtr.pdf",
+        "id": "b577ce78-323a-44c6-929f-9f5029b0ef5e"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 62 NashClean; audit revision 2026-10-16",
+    "instrument": "guitar"
+  },
+  {
+    "number": 143,
+    "file": "Patches/Guitar/Song/BillieJean-ChrisCornell-RhythmGtr.json",
+    "title": "Billie Jean — Chris Cornell",
+    "pieceId": "77fed663-02ce-4773-a61c-46e072373efa",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/77fed663-02ce-4773-a61c-46e072373efa",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "BillieJean-ChrisCornell-RhythmGtr.prst",
+        "id": "952350ed-4ad4-4a7c-bdd2-7571a8be94a3"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "BillieJean-ChrisCornell-RhythmGtr.pdf",
+        "id": "152bea24-5b5b-4a25-85ef-9a7120d82511"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 78 Fen65DlxKl; audit revision 2026-10-16",
+    "instrument": "guitar"
+  },
+  {
+    "number": 144,
+    "file": "Patches/Guitar/Song/BrightSizeLife-Metheny-Gtr.json",
+    "title": "Bright Size Life — Pat Metheny",
+    "pieceId": "fcf9ea5c-311b-4965-908a-dac5ec84060c",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/fcf9ea5c-311b-4965-908a-dac5ec84060c",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "BrightSizeLife-Metheny-Gtr.prst",
+        "id": "2700701d-c716-4b8f-883f-953769c1dafd"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "BrightSizeLife-Metheny-Gtr.pdf",
+        "id": "d353727c-7926-456b-af99-b815d908d3d9"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 64 BrightTwin; audit revision 2026-10-16",
+    "instrument": "guitar"
+  },
+  {
+    "number": 145,
+    "file": "Patches/Guitar/Song/BringMeToLife-Evanescence-RhythmGtr.json",
+    "title": "Bring Me to Life — Evanescence",
+    "pieceId": "e004c0fa-442c-45c9-91e7-4f377742e4b5",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/e004c0fa-442c-45c9-91e7-4f377742e4b5",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "BringMeToLife-Evanescence-RhythmGtr.prst",
+        "id": "07ff8447-7a81-4db3-849f-1a32ca2781f1"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "BringMeToLife-Evanescence-RhythmGtr.pdf",
+        "id": "d38a54cf-0868-45a1-bbf7-efea6df36cc8"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; Mess DualM / V30112; audit revision 2026-10-16",
+    "instrument": "guitar"
+  },
+  {
+    "number": 146,
+    "file": "Patches/Guitar/Song/Cassie-Flyleaf.json",
+    "title": "Cassie - Flyleaf",
+    "pieceId": "d6037790-14ba-485d-8f9e-bc35ec9f127a",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/d6037790-14ba-485d-8f9e-bc35ec9f127a",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "Cassie-Flyleaf.prst",
+        "id": "59dc97fb-5d4d-44e9-8a11-f47a21427710"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "Cassie-Flyleaf.pdf",
+        "id": "7589af4e-931f-4e25-ab8f-afb8272b0470"
+      }
+    ],
+    "success": true,
+    "summary": "Full board American Sound (bypassed; retained for legacy full-board builds); Dark Twin / V30112; audit revision 2026-10-16",
+    "instrument": "guitar"
+  },
+  {
+    "number": 147,
+    "file": "Patches/Guitar/Song/ChalkOutlines-Ren.json",
+    "title": "Chalk Outlines — Ren & Chinchilla",
+    "pieceId": "4aa71ebe-3f7b-4992-aeca-211562984ad4",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/4aa71ebe-3f7b-4992-aeca-211562984ad4",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "ChalkOutlines-Ren.prst",
+        "id": "ba2f8645-76ee-413e-b233-79f02f19208a"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "ChalkOutlines-Ren.pdf",
+        "id": "8f6872cf-978f-49c9-9ffc-d9ad481d9816"
+      }
+    ],
+    "success": true,
+    "summary": "Full board American Sound (bypassed; retained for legacy full-board builds); SnapTone slot 78 Fen65DlxKl; audit revision 2026-10-16",
+    "instrument": "guitar"
+  },
+  {
+    "number": 148,
+    "file": "Patches/Guitar/Song/CivilWar-GNR-RhythmGtr.json",
+    "title": "Civil War — Guns N’ Roses",
+    "pieceId": "09745640-7696-4983-867f-cd7d0bb40fcb",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/09745640-7696-4983-867f-cd7d0bb40fcb",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "CivilWar-GNR-RhythmGtr.prst",
+        "id": "4a36b27d-0b06-43f8-8b21-2941c90a3ee6"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "CivilWar-GNR-RhythmGtr.pdf",
+        "id": "06c73373-f8c9-40c7-9e20-8a3355ab6dfd"
+      }
+    ],
+    "success": true,
+    "summary": "Full board American Sound (bypassed; retained for legacy full-board builds); SnapTone slot 80 JCM800Clean; audit revision 2026-10-16",
+    "instrument": "guitar"
+  },
+  {
+    "number": 149,
+    "file": "Patches/Guitar/Song/ClickClickBoom-Sal.json",
+    "title": "Click Click Boom - Saliva",
+    "pieceId": "3880d86f-114f-4ce5-816c-b213ef17fbbb",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/3880d86f-114f-4ce5-816c-b213ef17fbbb",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "ClickClickBoom-Sal.prst",
+        "id": "810fb4ca-814c-457a-9868-617876abdec3"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "ClickClickBoom-Sal.pdf",
+        "id": "5d9c3a77-bb05-46ad-99ab-ca54832c0950"
+      }
+    ],
+    "success": true,
+    "summary": "Full board White Tape; SnapTone slot 76 ModernRect; audit revision 2026-10-16",
+    "instrument": "guitar"
+  },
+  {
+    "number": 150,
+    "file": "Patches/Guitar/Song/Creep-RH.json",
+    "title": "Creep - Radiohead",
+    "pieceId": "f8186e41-e139-45e7-bc70-0591f86a491d",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/f8186e41-e139-45e7-bc70-0591f86a491d",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "Creep-RH.prst",
+        "id": "1ba13de4-bdfe-4116-97bb-c7f20c4ade5b"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "Creep-RH.pdf",
+        "id": "5cf4beca-9aab-4675-b107-c30ede5e4219"
+      }
+    ],
+    "success": true,
+    "summary": "Full board American Sound (bypassed; retained for legacy full-board builds); Foxy 30N / Foxy 2x12; audit revision 2026-10-16",
+    "instrument": "guitar"
+  },
+  {
+    "number": 151,
+    "file": "Patches/Guitar/Song/DangerZone-KennyLoggins-RhythmGtr.json",
+    "title": "Danger Zone — Kenny Loggins",
+    "pieceId": "29a59c09-2372-4fcc-820e-2b3394a79813",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/29a59c09-2372-4fcc-820e-2b3394a79813",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "DangerZone-KennyLoggins-RhythmGtr.prst",
+        "id": "4d3a9f13-7be9-411f-a2b6-faa18817bf48"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "DangerZone-KennyLoggins-RhythmGtr.pdf",
+        "id": "852bde14-3b38-43e3-b979-c9ddacbdcea3"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; Solo100 OD / V30112; audit revision 2026-10-16",
+    "instrument": "guitar"
+  },
+  {
+    "number": 152,
+    "file": "Patches/Guitar/Song/December-CS.json",
+    "title": "December - Collective Soul",
+    "pieceId": "3155a185-dbe3-4eaa-9474-91c1302aa132",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/3155a185-dbe3-4eaa-9474-91c1302aa132",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "December-CS.prst",
+        "id": "2618ab30-8c13-459d-a86b-6a0d91a018e4"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "December-CS.pdf",
+        "id": "09ced2e4-e373-4c8c-bf8b-c453a39bc85b"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 68 ClassicMarshall; audit revision 2026-10-16",
+    "instrument": "guitar"
+  },
+  {
+    "number": 153,
+    "file": "Patches/Guitar/Song/DigginYou-MN-RhythmGtr.json",
+    "title": "I'm Diggin' You (Like an Old Soul Record) — Meshell Ndegeocello",
+    "pieceId": "c0bf43b2-22b8-45df-b70a-d7e564f3bcc7",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/c0bf43b2-22b8-45df-b70a-d7e564f3bcc7",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "DigginYou-MN-RhythmGtr.prst",
+        "id": "70439c30-dadf-4d9e-a860-21d201e08e70"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "DigginYou-MN-RhythmGtr.pdf",
+        "id": "d55bd72e-9b57-4d4e-93b6-8e206a22f056"
+      }
+    ],
+    "success": true,
+    "summary": "Full board American Sound (bypassed; retained for legacy full-board builds); SnapTone slot 61 TwinClean; audit revision 2026-10-16",
+    "instrument": "guitar"
+  },
+  {
+    "number": 154,
+    "file": "Patches/Guitar/Song/DirtRoadAnthem-JasonAldean-RhythmGtr.json",
+    "title": "Dirt Road Anthem — Jason Aldean",
+    "pieceId": "0b36306b-53b6-4838-a42c-db4947908b0b",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/0b36306b-53b6-4838-a42c-db4947908b0b",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "DirtRoadAnthem-JasonAldean-RhythmGtr.prst",
+        "id": "91be3daf-6ce7-4524-ad8d-fe92d6bb7d46"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "DirtRoadAnthem-JasonAldean-RhythmGtr.pdf",
+        "id": "aec1b6c9-19bb-4b5b-9094-48636dab6217"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 65 RythymDeluxe; audit revision 2026-10-16",
+    "instrument": "guitar"
+  },
+  {
+    "number": 155,
+    "file": "Patches/Guitar/Song/EverydayBlues-JM.json",
+    "title": "Everyday I Have the Blues - John Mayer (Where the Light Is)",
+    "pieceId": "f85eddc5-0fbd-422f-8c63-7f60e74f5154",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/f85eddc5-0fbd-422f-8c63-7f60e74f5154",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "EverydayBlues-JM.prst",
+        "id": "1d333c08-76ba-49f4-801a-34fa7567a57a"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "EverydayBlues-JM.pdf",
+        "id": "e672a0ff-2987-4e3a-82be-a15dccbaef35"
+      }
+    ],
+    "success": true,
+    "summary": "Full board White Tape; SnapTone slot 66 MayerDumble; audit revision 2026-10-16",
+    "instrument": "guitar"
+  },
+  {
+    "number": 156,
+    "file": "Patches/Guitar/Song/Found-Riverside-RhythmGtr.json",
+    "title": "Found (The Unexpected Flaw of Searching) — Riverside",
+    "pieceId": "8f429d16-4d11-4699-ae06-2cb51b1d1362",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/8f429d16-4d11-4699-ae06-2cb51b1d1362",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "Found-Riverside-RhythmGtr.prst",
+        "id": "f632441d-3292-48c8-bd1f-93c6900943b3"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "Found-Riverside-RhythmGtr.pdf",
+        "id": "034537ec-be38-41af-904e-9615af0c89dd"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 80 JCM800Clean; audit revision 2026-10-16",
+    "instrument": "guitar"
+  },
+  {
+    "number": 157,
+    "file": "Patches/Guitar/Song/HangingByAMoment-Lifehouse-RhythmGtr.json",
+    "title": "Hanging by a Moment — Lifehouse",
+    "pieceId": "7fb67a69-8e23-49df-b5e4-30a4377f4511",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/7fb67a69-8e23-49df-b5e4-30a4377f4511",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "HangingByAMoment-Lifehouse-RhythmGtr.prst",
+        "id": "f3e40c78-7934-42ad-a6e3-c137b9b64eab"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "HangingByAMoment-Lifehouse-RhythmGtr.pdf",
+        "id": "039e21d4-e039-4cf8-a0bb-5c372db44dfd"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 68 ClassicMarshall; audit revision 2026-10-16",
+    "instrument": "guitar"
+  },
+  {
+    "number": 158,
+    "file": "Patches/Guitar/Song/HardWorkinMan-BrooksDunn-RhythmGtr.json",
+    "title": "Hard Workin' Man — Brooks & Dunn",
+    "pieceId": "9bcf599a-ae50-4e2d-b089-9574cf4aa04f",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/9bcf599a-ae50-4e2d-b089-9574cf4aa04f",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "HardWorkinMan-BrooksDunn-RhythmGtr.prst",
+        "id": "75ee9e06-8c1f-48c8-8197-d2b1dc47b8db"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "HardWorkinMan-BrooksDunn-RhythmGtr.pdf",
+        "id": "112aba8c-2b8c-49d0-b55d-f1001150ec2a"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 78 Fen65DlxKl; audit revision 2026-10-16",
+    "instrument": "guitar"
+  },
+  {
+    "number": 159,
+    "file": "Patches/Guitar/Song/HeadsCarolina-JDM-RhythmGtr.json",
+    "title": "Heads Carolina, Tails California - Jo Dee Messina",
+    "pieceId": "59dacbe5-67b3-4950-9ac0-c591f18f15f2",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/59dacbe5-67b3-4950-9ac0-c591f18f15f2",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "HeadsCarolina-JDM-RhythmGtr.prst",
+        "id": "d0035971-f411-4d36-a138-e21be543d895"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "HeadsCarolina-JDM-RhythmGtr.pdf",
+        "id": "6b8fd550-6b9c-4790-b6d5-90d9317b4f38"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 63 EdgyTwang; audit revision 2026-10-16",
+    "instrument": "guitar"
+  },
+  {
+    "number": 160,
+    "file": "Patches/Guitar/Song/Higher-Creed-Gtr.json",
+    "title": "Higher - Creed",
+    "pieceId": "fae7dba0-d90d-46ac-8c23-116dd9abaa89",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/fae7dba0-d90d-46ac-8c23-116dd9abaa89",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "Higher-Creed-Gtr.prst",
+        "id": "dc4b3d1c-f1bf-45b2-861f-0223b0970c3b"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "Higher-Creed-Gtr.pdf",
+        "id": "f19eade4-f5f5-4970-807b-3ba5216ab658"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; Match CL / V30112; audit revision 2026-10-16",
+    "instrument": "guitar"
+  },
+  {
+    "number": 161,
+    "file": "Patches/Guitar/Song/HonkyTonkTruth-BrooksDunn-RhythmGtr.json",
+    "title": "Honky Tonk Truth — Brooks & Dunn",
+    "pieceId": "eeb94df8-27c5-4cc9-94bb-0d7d37632a17",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/eeb94df8-27c5-4cc9-94bb-0d7d37632a17",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "HonkyTonkTruth-BrooksDunn-RhythmGtr.prst",
+        "id": "d40ebdc2-6104-4a94-96c2-d7a46dc228b4"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "HonkyTonkTruth-BrooksDunn-RhythmGtr.pdf",
+        "id": "17b41406-b281-4129-909f-2f5415370b1d"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 63 EdgyTwang; audit revision 2026-10-16",
+    "instrument": "guitar"
+  },
+  {
+    "number": 162,
+    "file": "Patches/Guitar/Song/IWillAlwaysLoveYou-Dolly-RhythmGtr.json",
+    "title": "I Will Always Love You — Dolly Parton",
+    "pieceId": "0b826a63-0162-4d5c-92ca-a0274c7d4dc5",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/0b826a63-0162-4d5c-92ca-a0274c7d4dc5",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "IWillAlwaysLoveYou-Dolly-RhythmGtr.prst",
+        "id": "cb63b258-835b-4e83-9555-e6cf13931ec6"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "IWillAlwaysLoveYou-Dolly-RhythmGtr.pdf",
+        "id": "75a6c906-7ed7-46b5-8c99-0a21a0e582ee"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 61 TwinClean; audit revision 2026-10-16",
+    "instrument": "guitar"
+  },
+  {
+    "number": 163,
+    "file": "Patches/Guitar/Song/IfYouSeeHer-BrooksDunn-RhythmGtr.json",
+    "title": "If You See Her — Brooks & Dunn",
+    "pieceId": "281df0e1-e30b-4b60-990e-296b1c3ea0ed",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/281df0e1-e30b-4b60-990e-296b1c3ea0ed",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "IfYouSeeHer-BrooksDunn-RhythmGtr.prst",
+        "id": "8fe14428-826b-470b-b186-be61d7dc6d48"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "IfYouSeeHer-BrooksDunn-RhythmGtr.pdf",
+        "id": "269530c2-0ec5-470b-a843-11b81e8ab396"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 62 NashClean; audit revision 2026-10-16",
+    "instrument": "guitar"
+  },
+  {
+    "number": 164,
+    "file": "Patches/Guitar/Song/IllBeThereForYou-BonJovi-RhythmGtr.json",
+    "title": "I'll Be There for You — Bon Jovi",
+    "pieceId": "fb09bcde-0671-4820-b308-f3d8603412eb",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/fb09bcde-0671-4820-b308-f3d8603412eb",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "IllBeThereForYou-BonJovi-RhythmGtr.prst",
+        "id": "7aebc003-e45b-46dc-a4fd-d193fd4fbd61"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "IllBeThereForYou-BonJovi-RhythmGtr.pdf",
+        "id": "f074c955-15d8-4415-b34d-03701d750225"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 80 JCM800Clean; audit revision 2026-10-16",
+    "instrument": "guitar"
+  },
+  {
+    "number": 165,
+    "file": "Patches/Guitar/Song/InTwoMinds-Riverside-LeadGtr.json",
+    "title": "In Two Minds — Riverside",
+    "pieceId": "24052a2b-98cf-4ef8-8374-34baef9a9c7e",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/24052a2b-98cf-4ef8-8374-34baef9a9c7e",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "InTwoMinds-Riverside-LeadGtr.prst",
+        "id": "54d12562-4120-41fb-98b5-b69e0e4b71b6"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "InTwoMinds-Riverside-LeadGtr.pdf",
+        "id": "e7628d82-006d-4a6a-b617-83d153d21613"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 73 ProgDumble; audit revision 2026-10-16",
+    "instrument": "guitar"
+  },
+  {
+    "number": 166,
+    "file": "Patches/Guitar/Song/Ironic-Alanis-RhythmGtr.json",
+    "title": "Ironic — Alanis Morissette",
+    "pieceId": "78aed3bd-eed6-4277-995b-a17b1f00b439",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/78aed3bd-eed6-4277-995b-a17b1f00b439",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "Ironic-Alanis-RhythmGtr.prst",
+        "id": "4247f958-0573-42a5-b8d6-9abd103aa8c7"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "Ironic-Alanis-RhythmGtr.pdf",
+        "id": "b5be7d96-3f76-470f-a6b3-61a2d7521314"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 61 TwinClean; audit revision 2026-10-16",
+    "instrument": "guitar"
+  },
+  {
+    "number": 167,
+    "file": "Patches/Guitar/Song/ItsNotMyTime-3DoorsDown-RhythmGtr.json",
+    "title": "It's Not My Time — 3 Doors Down",
+    "pieceId": "bef80591-50cc-4657-89cb-545e07693596",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/bef80591-50cc-4657-89cb-545e07693596",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "ItsNotMyTime-3DoorsDown-RhythmGtr.prst",
+        "id": "b0a1e095-0a21-4278-839e-98345afeca38"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "ItsNotMyTime-3DoorsDown-RhythmGtr.pdf",
+        "id": "c64108e6-3d21-4818-815d-e47bd6abe28b"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 72 RectifierCrunch; audit revision 2026-10-16",
+    "instrument": "guitar"
+  },
+  {
+    "number": 168,
+    "file": "Patches/Guitar/Song/KissMeSNTR.json",
+    "title": "Kiss Me - Sixpence None the Richer",
+    "pieceId": "55f9112d-39f7-48db-bf88-1dad5b42d0ea",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/55f9112d-39f7-48db-bf88-1dad5b42d0ea",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "KissMeSNTR.prst",
+        "id": "82a441ac-f1da-460b-a5f9-05a145bdb0ef"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "KissMeSNTR.pdf",
+        "id": "b5f1c857-0a27-4636-b849-b16c76e66c39"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 61 TwinClean; audit revision 2026-10-16",
+    "instrument": "guitar"
+  },
+  {
+    "number": 169,
+    "file": "Patches/Guitar/Song/ManInTheBox-AIC-RhythmGtr.json",
+    "title": "Man in the Box — Alice In Chains",
+    "pieceId": "78eaaa1f-9ecb-4378-a4ba-c46c2617648c",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/78eaaa1f-9ecb-4378-a4ba-c46c2617648c",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "ManInTheBox-AIC-RhythmGtr.prst",
+        "id": "8c91bd50-f4ca-4256-b899-85690eeead2d"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "ManInTheBox-AIC-RhythmGtr.pdf",
+        "id": "d0329dda-6906-4a88-91df-ae656865c1db"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 71 HotMarshall; audit revision 2026-10-16",
+    "instrument": "guitar"
+  },
+  {
+    "number": 170,
+    "file": "Patches/Guitar/Song/MaryJanesLastDance-TomPetty-RhythmGtr.json",
+    "title": "Mary Jane's Last Dance — Tom Petty",
+    "pieceId": "fe264a4b-7fd1-41a9-a52c-a812a23e8412",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/fe264a4b-7fd1-41a9-a52c-a812a23e8412",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "MaryJanesLastDance-TomPetty-RhythmGtr.prst",
+        "id": "284bd24a-6a65-4a4f-963b-0d019ddc7eaa"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "MaryJanesLastDance-TomPetty-RhythmGtr.pdf",
+        "id": "1122f0f1-74f8-4756-8a0d-dc6d01a365e5"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; Foxy 30TB / EVM112; audit revision 2026-10-16",
+    "instrument": "guitar"
+  },
+  {
+    "number": 171,
+    "file": "Patches/Guitar/Song/MyMaria-BrooksDunn-RhythmGtr.json",
+    "title": "My Maria — Brooks & Dunn",
+    "pieceId": "836d1722-18c4-4bfd-a4c0-459a8b3c0202",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/836d1722-18c4-4bfd-a4c0-459a8b3c0202",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "MyMaria-BrooksDunn-RhythmGtr.prst",
+        "id": "ae8848c3-bb99-4983-abac-1ace78f2a02b"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "MyMaria-BrooksDunn-RhythmGtr.pdf",
+        "id": "aab1c35f-91a7-4e90-9a82-c800931d87c0"
+      }
+    ],
+    "success": true,
+    "summary": "Full board White Tape; SnapTone slot 62 NashClean; audit revision 2026-10-16",
+    "instrument": "guitar"
+  },
+  {
+    "number": 172,
+    "file": "Patches/Guitar/Song/Neon-JohnMayer-RhythmGtr.json",
+    "title": "Neon — John Mayer",
+    "pieceId": "9b019fcf-9f53-47bc-9352-ba028ae147f2",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/9b019fcf-9f53-47bc-9352-ba028ae147f2",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "Neon-JohnMayer-RhythmGtr.prst",
+        "id": "bf002cf0-752e-479d-be6e-0584a7369ec1"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "Neon-JohnMayer-RhythmGtr.pdf",
+        "id": "221f3789-4c69-4014-911e-89ed47535c20"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 64 BrightTwin; audit revision 2026-10-16",
+    "instrument": "guitar"
+  },
+  {
+    "number": 173,
+    "file": "Patches/Guitar/Song/NeonMoon-BrooksDunn-RhythmGtr.json",
+    "title": "Neon Moon — Brooks & Dunn",
+    "pieceId": "b7a134cc-1fe1-4b15-9de5-96d4d532dff7",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/b7a134cc-1fe1-4b15-9de5-96d4d532dff7",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "NeonMoon-BrooksDunn-RhythmGtr.prst",
+        "id": "84a39d4a-759f-4ec8-bb98-fbadd6545743"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "NeonMoon-BrooksDunn-RhythmGtr.pdf",
+        "id": "42fbab8c-f9b4-4774-89e2-deec1316878d"
+      }
+    ],
+    "success": true,
+    "summary": "Full board White Tape; SnapTone slot 62 NashClean; audit revision 2026-10-16",
+    "instrument": "guitar"
+  },
+  {
+    "number": 174,
+    "file": "Patches/Guitar/Song/OneLastBreath-Creed-RhythmGtr.json",
+    "title": "One Last Breath — Creed",
+    "pieceId": "e5b6f532-0940-483f-b79c-e539788a98e4",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/e5b6f532-0940-483f-b79c-e539788a98e4",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "OneLastBreath-Creed-RhythmGtr.prst",
+        "id": "0ac62aa9-66c8-48ca-bece-eb68b16a9250"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "OneLastBreath-Creed-RhythmGtr.pdf",
+        "id": "b120e1f5-4bd4-41df-b5d8-3c1ce356566e"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; Match CL / V30112; audit revision 2026-10-16",
+    "instrument": "guitar"
+  },
+  {
+    "number": 175,
+    "file": "Patches/Guitar/Song/OnlyInAmerica-BrooksDunn-RhythmGtr.json",
+    "title": "Only in America — Brooks & Dunn",
+    "pieceId": "d33cb7c7-1f6c-43c9-8cde-04a3350022b7",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/d33cb7c7-1f6c-43c9-8cde-04a3350022b7",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "OnlyInAmerica-BrooksDunn-RhythmGtr.prst",
+        "id": "a650c7a7-5af1-4ea2-a3d3-c6bcd1fb6584"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "OnlyInAmerica-BrooksDunn-RhythmGtr.pdf",
+        "id": "935f178f-d3c6-43ed-adef-ea81b04a0ce6"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 69 BritishCrunch; audit revision 2026-10-16",
+    "instrument": "guitar"
+  },
+  {
+    "number": 176,
+    "file": "Patches/Guitar/Song/PapaWasARollinStone-Temptations-RhythmGtr.json",
+    "title": "Papa Was a Rollin' Stone — The Temptations",
+    "pieceId": "b5acadac-15a8-4516-a01c-4242915089e8",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/b5acadac-15a8-4516-a01c-4242915089e8",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "PapaWasARollinStone-Temptations-RhythmGtr.prst",
+        "id": "b355047a-0ca7-4216-87a1-e041c129a7d9"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "PapaWasARollinStone-Temptations-RhythmGtr.pdf",
+        "id": "c5c44a2b-fa4d-4731-9617-8c48bb18271d"
+      }
+    ],
+    "success": true,
+    "summary": "Full board American Sound (bypassed; retained for legacy full-board builds); SnapTone slot 61 TwinClean; audit revision 2026-10-16",
+    "instrument": "guitar"
+  },
+  {
+    "number": 177,
+    "file": "Patches/Guitar/Song/Praise-EW-RhythmGtr.json",
+    "title": "Praise — Elevation Worship",
+    "pieceId": "05d4ab54-f5cb-4926-94e6-ae524bc11431",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/05d4ab54-f5cb-4926-94e6-ae524bc11431",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "Praise-EW-RhythmGtr.prst",
+        "id": "0fcef07b-568d-45e8-a4a4-9b98efe67aa8"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "Praise-EW-RhythmGtr.pdf",
+        "id": "e1bc4d9d-861a-4f76-8ba2-3baae05da4ff"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; Foxy 30TB / V30112; audit revision 2026-10-16",
+    "instrument": "guitar"
+  },
+  {
+    "number": 178,
+    "file": "Patches/Guitar/Song/PuffTheMagicDragon-PPM-RhythmGtr.json",
+    "title": "Puff the Magic Dragon — Peter, Paul and Mary",
+    "pieceId": "0a6dec12-c752-471d-a3a4-fa11b1560e10",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/0a6dec12-c752-471d-a3a4-fa11b1560e10",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "PuffTheMagicDragon-PPM-RhythmGtr.prst",
+        "id": "631ec350-d391-4f05-a74c-1a66606962f2"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "PuffTheMagicDragon-PPM-RhythmGtr.pdf",
+        "id": "6f0bbe12-2e7c-4ccf-931b-815ceb1982ea"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 64 BrightTwin; audit revision 2026-10-16",
+    "instrument": "guitar"
+  },
+  {
+    "number": 179,
+    "file": "Patches/Guitar/Song/RainbowConnection-KennyLoggins-RhythmGtr.json",
+    "title": "Rainbow Connection — Kenny Loggins",
+    "pieceId": "3eb16d13-6fc8-4c86-a7da-efa01bd5fdc9",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/3eb16d13-6fc8-4c86-a7da-efa01bd5fdc9",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "RainbowConnection-KennyLoggins-RhythmGtr.prst",
+        "id": "639b7ca9-a743-423d-bd22-41b676d24ee5"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "RainbowConnection-KennyLoggins-RhythmGtr.pdf",
+        "id": "b4134a0a-0365-46ba-8a67-c37ef4886e44"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 64 BrightTwin; audit revision 2026-10-16",
+    "instrument": "guitar"
+  },
+  {
+    "number": 180,
+    "file": "Patches/Guitar/Song/RedDirtRoad-BrooksDunn-RhythmGtr.json",
+    "title": "Red Dirt Road — Brooks & Dunn",
+    "pieceId": "7e50c63c-7aec-4633-aefd-abc1a67cef28",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/7e50c63c-7aec-4633-aefd-abc1a67cef28",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "RedDirtRoad-BrooksDunn-RhythmGtr.prst",
+        "id": "3c462eab-c991-4a12-9bc1-3d5f771844b7"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "RedDirtRoad-BrooksDunn-RhythmGtr.pdf",
+        "id": "36b8392d-c76d-4a34-ae60-2b4d5244c2c4"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 78 Fen65DlxKl; audit revision 2026-10-16",
+    "instrument": "guitar"
+  },
+  {
+    "number": 181,
+    "file": "Patches/Guitar/Song/SisterChristian-NR.json",
+    "title": "Sister Christian - Night Ranger",
+    "pieceId": "21a69ee6-d7e2-43ea-8028-4a0081cc5a75",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/21a69ee6-d7e2-43ea-8028-4a0081cc5a75",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "SisterChristian-NR.prst",
+        "id": "cdda18ba-33be-4d27-b15b-2fcb38ea035b"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "SisterChristian-NR.pdf",
+        "id": "b4cf23bb-a2ba-4769-bf0f-a4dcca8d9f5f"
+      }
+    ],
+    "success": true,
+    "summary": "Full board American Sound (bypassed; retained for legacy full-board builds); SnapTone slot 80 JCM800Clean; audit revision 2026-10-16",
+    "instrument": "guitar"
+  },
+  {
+    "number": 182,
+    "file": "Patches/Guitar/Song/SomebodyLikeYou-KeithUrban-RhythmGtr.json",
+    "title": "Somebody Like You — Keith Urban",
+    "pieceId": "82991522-a96b-4354-a431-6327a5d27744",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/82991522-a96b-4354-a431-6327a5d27744",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "SomebodyLikeYou-KeithUrban-RhythmGtr.prst",
+        "id": "f9f53d05-f7e0-4495-bbe4-bfa6d3cdaa3b"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "SomebodyLikeYou-KeithUrban-RhythmGtr.pdf",
+        "id": "95dbef99-6b6a-45d0-bf67-8a7b0974eb29"
+      }
+    ],
+    "success": true,
+    "summary": "Full board White Tape; SnapTone slot 63 EdgyTwang; audit revision 2026-10-16",
+    "instrument": "guitar"
+  },
+  {
+    "number": 183,
+    "file": "Patches/Guitar/Song/SpiderManTheme1967-RhythmGtr.json",
+    "title": "Spider-Man Theme (1967 Cartoon) — Bob Harris & Paul Francis Webster",
+    "pieceId": "ae7b21e8-ced3-4e56-9f2b-ff449757165e",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/ae7b21e8-ced3-4e56-9f2b-ff449757165e",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "SpiderManTheme1967-RhythmGtr.prst",
+        "id": "47c8ee17-8a3c-4895-88f1-551bb23b0dca"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "SpiderManTheme1967-RhythmGtr.pdf",
+        "id": "fdeff644-366d-4c26-898e-87b0fce97f3c"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 61 TwinClean; audit revision 2026-10-16",
+    "instrument": "guitar"
+  },
+  {
+    "number": 184,
+    "file": "Patches/Guitar/Song/SpiderManTheme1994-RhythmGtr.json",
+    "title": "Spider-Man: The Animated Series Theme (1994) — Joe Perry",
+    "pieceId": "daba958f-831d-41a0-8bdf-c59c69d5cc30",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/daba958f-831d-41a0-8bdf-c59c69d5cc30",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "SpiderManTheme1994-RhythmGtr.prst",
+        "id": "ec253b9a-50c6-45d7-a8e0-ae42ddf65830"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "SpiderManTheme1994-RhythmGtr.pdf",
+        "id": "f7a0222d-e6e6-49cc-ac32-8fda4ad83166"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 69 BritishCrunch; audit revision 2026-10-16",
+    "instrument": "guitar"
+  },
+  {
+    "number": 185,
+    "file": "Patches/Guitar/Song/SpideyFriendsTheme-RhythmGtr.json",
+    "title": "Spidey and His Amazing Friends Theme — Patrick Stump",
+    "pieceId": "3e238073-12dd-4e53-bad1-94f5a639643c",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/3e238073-12dd-4e53-bad1-94f5a639643c",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "SpideyFriendsTheme-RhythmGtr.prst",
+        "id": "375468f9-630a-479a-9cf6-480536edc1c7"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "SpideyFriendsTheme-RhythmGtr.pdf",
+        "id": "90796114-b25f-4f29-bd91-ef524f7aa0e1"
+      }
+    ],
+    "success": true,
+    "summary": "Full board American Sound (bypassed; retained for legacy full-board builds); SnapTone slot 80 JCM800Clean; audit revision 2026-10-16",
+    "instrument": "guitar"
+  },
+  {
+    "number": 186,
+    "file": "Patches/Guitar/Song/SurfinUSA-BeachBoys-RhythmGtr.json",
+    "title": "Surfin' U.S.A. — The Beach Boys",
+    "pieceId": "f6d3df66-f56c-4ab0-91f0-1bc34dd0a87b",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/f6d3df66-f56c-4ab0-91f0-1bc34dd0a87b",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "SurfinUSA-BeachBoys-RhythmGtr.prst",
+        "id": "53e452d0-df2f-4db9-bb48-58c01319d11a"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "SurfinUSA-BeachBoys-RhythmGtr.pdf",
+        "id": "32567cff-6e03-4847-ba3b-4b400cf09406"
+      }
+    ],
+    "success": true,
+    "summary": "Full board American Sound (bypassed; retained for legacy full-board builds); SnapTone slot 61 TwinClean; audit revision 2026-10-16",
+    "instrument": "guitar"
+  },
+  {
+    "number": 187,
+    "file": "Patches/Guitar/Song/SweetLeaf-BlackSabbath-RhythmGtr.json",
+    "title": "Sweet Leaf — Black Sabbath",
+    "pieceId": "dfbfa157-40b9-4952-827e-1cf7957bfc50",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/dfbfa157-40b9-4952-827e-1cf7957bfc50",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "SweetLeaf-BlackSabbath-RhythmGtr.prst",
+        "id": "7694a4c6-f89c-46e8-8a2a-d4ce290b260f"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "SweetLeaf-BlackSabbath-RhythmGtr.pdf",
+        "id": "a51ddd58-dd0e-4ff6-af2b-786eee5dee17"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 74 CleanPlexi; audit revision 2026-10-16",
+    "instrument": "guitar"
+  },
+  {
+    "number": 188,
+    "file": "Patches/Guitar/Song/TimeOfMyLife-DirtyDancing-RhythmGtr.json",
+    "title": "(I've Had) The Time of My Life — Bill Medley & Jennifer Warnes",
+    "pieceId": "2180894d-ffe8-41ce-a9b9-64d1255ab492",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/2180894d-ffe8-41ce-a9b9-64d1255ab492",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "TimeOfMyLife-DirtyDancing-RhythmGtr.prst",
+        "id": "8fff1fdb-dc08-4084-a882-2cc67d9f515b"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "TimeOfMyLife-DirtyDancing-RhythmGtr.pdf",
+        "id": "ffe8fba7-ecba-40c0-94d1-3d298a6cd228"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; J-120 CL / EVM112; audit revision 2026-10-16",
+    "instrument": "guitar"
+  },
+  {
+    "number": 189,
+    "file": "Patches/Guitar/Song/WaitingOnTheWorld-JohnMayer-RhythmGtr.json",
+    "title": "Waiting on the World to Change — John Mayer",
+    "pieceId": "291e92f2-c1dd-4ae8-ba3f-14cb458d9a37",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/291e92f2-c1dd-4ae8-ba3f-14cb458d9a37",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "WaitingOnTheWorld-JohnMayer-RhythmGtr.prst",
+        "id": "d0a5b3f0-c60d-451e-bddf-f169d173d209"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "WaitingOnTheWorld-JohnMayer-RhythmGtr.pdf",
+        "id": "ea6d852e-cd80-4b4b-a3e2-e784e1de1314"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 66 MayerDumble; audit revision 2026-10-16",
+    "instrument": "guitar"
+  },
+  {
+    "number": 190,
+    "file": "Patches/Guitar/Song/WeGotUsedToUs-Riverside-LeadGtr.json",
+    "title": "We Got Used to Us — Riverside",
+    "pieceId": "93a5f113-27a7-431b-88be-f2a3692c016a",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/93a5f113-27a7-431b-88be-f2a3692c016a",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "WeGotUsedToUs-Riverside-LeadGtr.prst",
+        "id": "7b932196-e083-4dc3-b17e-8f0afb42501e"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "WeGotUsedToUs-Riverside-LeadGtr.pdf",
+        "id": "9084b782-27fc-43c4-9edf-bc2d1db1e72e"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 73 ProgDumble; audit revision 2026-10-16",
+    "instrument": "guitar"
+  },
+  {
+    "number": 191,
+    "file": "Patches/Guitar/Song/WerewolvesOfLondon-Zevon-RhythmGtr.json",
+    "title": "Werewolves of London — Warren Zevon",
+    "pieceId": "14e0dcaa-4506-4993-8881-49cd130429dc",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/14e0dcaa-4506-4993-8881-49cd130429dc",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "WerewolvesOfLondon-Zevon-RhythmGtr.prst",
+        "id": "36052d81-2474-424c-a83a-4a5e0d7be437"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "WerewolvesOfLondon-Zevon-RhythmGtr.pdf",
+        "id": "190be47b-f457-45e2-ae1a-f11655cccf6f"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; Bellman 59N / EVM112; audit revision 2026-10-16",
+    "instrument": "guitar"
+  },
+  {
+    "number": 192,
+    "file": "Patches/Guitar/Song/WhatAboutNow-Daughtry-RhythmGtr.json",
+    "title": "What About Now — Daughtry",
+    "pieceId": "e801ec07-6bc4-4add-aee6-8b1d775ce18c",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/e801ec07-6bc4-4add-aee6-8b1d775ce18c",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "WhatAboutNow-Daughtry-RhythmGtr.prst",
+        "id": "ce6c2f99-b506-4b92-a850-1e7e6a579091"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "WhatAboutNow-Daughtry-RhythmGtr.pdf",
+        "id": "f3f6d095-3879-4373-b72e-4139da779298"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 66 MayerDumble; audit revision 2026-10-16",
+    "instrument": "guitar"
+  },
+  {
+    "number": 193,
+    "file": "Patches/Guitar/Song/WhenWindMeetsFire-EW-RhythmGtr.json",
+    "title": "When Wind Meets Fire — Elevation Worship",
+    "pieceId": "93fddf31-3919-42be-8108-499d1d7bf870",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/93fddf31-3919-42be-8108-499d1d7bf870",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "WhenWindMeetsFire-EW-RhythmGtr.prst",
+        "id": "29716f61-9fcc-42e4-9759-17498c6cc0b4"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "WhenWindMeetsFire-EW-RhythmGtr.pdf",
+        "id": "b6a022c4-c067-4247-8d15-0e3a622e6837"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; Foxy 30TB / V30112; audit revision 2026-10-16",
+    "instrument": "guitar"
+  },
+  {
+    "number": 194,
+    "file": "Patches/Guitar/Song/Wonderland-JM.json",
+    "title": "Your Body is a Wonderland - John Mayer (Room for Squares)",
+    "pieceId": "b9ad64e8-7194-497e-ab3e-edd5b094e1f9",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/b9ad64e8-7194-497e-ab3e-edd5b094e1f9",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "Wonderland-JM.prst",
+        "id": "4a851d02-c521-436d-aae0-024448c9f7df"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "Wonderland-JM.pdf",
+        "id": "9cde2ab3-af98-45e3-9bb0-45285de35ea8"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; SnapTone slot 66 MayerDumble; audit revision 2026-10-16",
+    "instrument": "guitar"
+  },
+  {
+    "number": 195,
+    "file": "Patches/Guitar/Song/YouDontKnowHowItFeels-TomPetty-RhythmGtr.json",
+    "title": "You Don't Know How It Feels — Tom Petty",
+    "pieceId": "a5a29be2-89d0-4580-ad09-693bf6783de9",
+    "pieceUrl": "https://www.dakplutomusic.us/piece/a5a29be2-89d0-4580-ad09-693bf6783de9",
+    "files": [
+      {
+        "kind": "gp5_patch",
+        "filename": "YouDontKnowHowItFeels-TomPetty-RhythmGtr.prst",
+        "id": "7d1cde80-3028-4f0d-b359-5d92890cdbc6"
+      },
+      {
+        "kind": "patch_writeup",
+        "filename": "YouDontKnowHowItFeels-TomPetty-RhythmGtr.pdf",
+        "id": "9344f14d-075b-4975-a372-3a96cc937f95"
+      }
+    ],
+    "success": true,
+    "summary": "GP-5 only; Foxy 30N / EVM112; audit revision 2026-10-16",
+    "instrument": "guitar"
+  }
+]

@@ -1,54 +1,101 @@
 # One Last Breath — Creed
 
-From *Weathered* (2001). About 62 BPM, est.
-Bass: Harley Benton P/J, 5-string, passive. GP-5 only.
-Brian Marshall holds back under the clean verses, then the chorus drops in heavy and slow.
-Built from the band's general sound. I haven't verified the exact rig or tuning on this track. Check your tuning against the record. The low B covers any drop tuning.
-Fingers for the verses. A pick works for the heavy chorus if you want more attack.
+Revised 2026-10-16 following the approved library audit.
+Type: Song. Instrument: Harley Benton passive 5-string P/J.
+GP-5 only.
+Patch screen name: OneLast. Patch VOL: 50.
+Preset tempo: 62 BPM.
 
-## Module chain
+Warm clean bass for One Last Breath, with restrained blended drive for the heavy sections. The original Brian Marshall studio credit was unverified and has been removed pending track-specific credits.
 
-**NR — Gate**, always on.
+## Revision intent
+
+Keep the musical role of the original patch while reducing redundant gain, excessive space and unclear switching where identified in audit entry 87.
+The module settings and section map below are the active revision.
+Audited capture volumes and Michael’s explicit patch-level adjustments are preserved.
+No hardware audition or measured level match has been performed.
+
+## GP-5 settings
+
+Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB.
+The encoded N->S block sits between DST and AMP when a SnapTone is used.
+
+AMP/CAB replacement: SnapTone CleanSVT (slot 53): SVT CLEAN (SVT-CL) + Apg810.
+Slot: 53. Always on.
+Gain: 50, VOL: 65, Bass: 56, Middle: 54, Treble: 52.
+AMP and CAB are both off; the capture already includes its cab/DI character.
+The capture voice is fixed across CTL states. Audited VOL is preserved for this slot.
+
+## NR - Gate
+
 THRE: 16.
-A little higher than a clean patch. The Bass OD adds noise in the chorus.
+Fixed on. Not on CTL.
+Use the lowest threshold that keeps rests quiet. Check soft notes and held-note decay. This gate is before the drives and amp; it does not directly gate noise generated after it.
 
-**PRE — COMP (Ross)**, always on.
-Sustain: 45, VOL: 58.
-Keeps the slow whole notes even.
+## PRE - COMP
 
-**DST — Bass OD**, on CTL.
-Gain: 50, Blend: 55, VOL: 58, Bass: 55, Treble: 56.
-The heavy chorus. Blend 55 gives real grind but keeps the clean low end under it.
+Sustain: 45.
+VOL: 58.
+Fixed on. Not on CTL.
+Controls the source dynamics or adds the specified push/filter before distortion and amp processing. The settings stay fixed; only its on/off state can change.
 
-**AMP/CAB — NAM SnapTone, slot 53: CleanSVT** (always on)
-- Built from the `SVT CLEAN` NAM (SVT-CL) and the Apg810 IR, combined into one snaptone.
-- Real Ampeg SVT-CL clean, into an SVT 8x10.
-- A clean SVT for the restrained verses. The Bass OD does the heavy lifting in the chorus.
-- Gain: 50, VOL: 65, Bass: 56, Middle: 54, Treble: 52
-- Gain 50: the capture as built.
-- Bass 56: more low end for a slow, heavy song.
-- Middle 54: a small lift so the driven chorus cuts.
-- Treble 52: a touch more top end.
-- VOL 65: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
-- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 53 directly.
+## DST - Bass OD
 
-**EQ — Bass EQ 1**, always on.
-33Hz: +2, 150Hz: 0, 600Hz: -2, 2kHz: +3, 8kHz: +1, VOL: 54.
-Sub weight for the slow chorus. +3 at 2kHz gives the driven notes edge against the heavy guitars. -2 at 600Hz keeps it from going boxy.
+Gain: 30.
+Blend: 35.
+VOL: 58.
+Bass: 55.
+Treble: 56.
+CTL assigned. Loads off; first CTL press switches it on.
+Supplies the selected additional drive voice. Use its level and gain as separate controls. A pre-amp boost may add compression instead of a proportional solo-volume increase.
 
-**MOD — off.**
+## AMP - Module off
 
-**DLY — off.**
+Not used.
 
-**RVB — Room**, on CTL.
-Mix: 14, Decay: 34, Trail: on.
-A small room to make the chorus feel bigger.
+## CAB - Module off
 
-## CTL footswitch
+Not used.
 
-On CTL: DST (Bass OD), RVB (Room).
+## EQ - Bass EQ 1
 
-- **CTL off** — Verses. Clean, restrained SVT. This is the resting state the patch loads into.
-- **CTL on** — Choruses. Heavy grind plus a small room.
+33Hz: 2.
+150Hz: 0.
+600Hz: -2.
+2kHz: 3.
+8kHz: 1.
+VOL: 54.
+Fixed on. Not on CTL.
+Shapes note body and cut after the amp/capture. Where assigned to CTL, its output adds the specified lift after the gain stages. Numbers are GP-5 control values, not a calibrated loudness guarantee.
 
-Engage at the chorus. Off for the verses.
+## MOD - Module off
+
+Not used.
+
+## DLY - Module off
+
+Not used.
+
+## RVB - Room
+
+Mix: 6.
+Decay: 34.
+Trail: on.
+CTL assigned. Loads off; first CTL press switches it on.
+Adds the specified room or ambient tail. The revised mix keeps the initial note audible. Trail behavior follows the saved setting.
+
+## Switching and section map
+
+CTL blocks: DST, RVB.
+- CTL off / loaded state: Verses. GP-5 active: NR, PRE, EQ, N->S.
+- First CTL press: Choruses. GP-5 active: NR, PRE, DST, EQ, RVB, N->S.
+- Press CTL again to return to the loaded block pattern, provided no shared MIDI block has been changed.
+
+## Revision record
+
+Approved audit entry 87.
+- DST Gain: 50 -> 30.
+- DST Blend: 55 -> 35.
+- RVB Mix: 14 -> 6.
+Pre-revision JSON, Markdown and original file hashes are preserved in Documents/patch-audit-2026-10-16/inventory.json and implementation-manifest.json.
+The site piece title and on-disk filenames stay stable; only the short pedal display name may change.

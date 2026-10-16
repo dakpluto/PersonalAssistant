@@ -1,101 +1,170 @@
 # Beat It — Michael Jackson
 
+Revised 2026-10-16 following the approved library audit.
+Type: Song. Instrument: Harley Benton passive 5-string P/J.
+Full board. Board Option: American Sound (bypassed; retained for legacy full-board builds).
+Patch screen name: B-BeatItMJ. Patch VOL: 55.
+Preset tempo: 139 BPM.
+
 Bass: Harley Benton P/J, 5-string, passive. Full board.
 From *Thriller* (1982). About 139 BPM, est. In Eb minor.
 The bass line is a driving, even eighth-note pulse. On the record it's reportedly an electric bass, with Steve Lukather credited, layered with a Synergy digital synth bass. It's a tight, polished LA-session sound, DI'd and compressed, not an amp in a room.
 This patch gets that hybrid from one bass: a studio DI tone, plus a quiet sub-octave from the Flamma for the synth layer.
 Pick for the even eighths. Neck (P) forward, bridge (J) at about 70%, tone at about 60%. I haven't verified whether the record was picked or fingered. A pick gets the attack the mix needs.
-
 One sound for the whole song. The bass part doesn't change between sections, so no CTL. That's allowed on bass per the patch rules.
+
+## Revision intent
+
+Keep the musical role of the original patch while reducing redundant gain, excessive space and unclear switching where identified in audit entry 16.
+The module settings and section map below are the active revision.
+Audited capture volumes and Michael’s explicit patch-level adjustments are preserved.
+No hardware audition or measured level match has been performed.
 
 ## GP-5 settings
 
-Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
+Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB.
+The encoded N->S block sits between DST and AMP when a SnapTone is used.
 
-**NR — Gate**
-- THRE: 15
-- Always on. The line has short, clipped gaps. Light gating keeps them clean without chopping the notes.
+AMP/CAB replacement: SnapTone AvalonAD2022 (slot 52): Avalon - 38 dB - Chan 1 (Avalon AD2022 studio DI).
+Slot: 52. Always on.
+Gain: 50, VOL: 75, Bass: 55, Middle: 52, Treble: 56.
+AMP and CAB are both off; the capture already includes its cab/DI character.
+The capture voice is fixed across CTL states. Audited VOL is preserved for this slot.
 
-**PRE — Off**
-- The Donner Ultimate Comp handles compression on the board.
+## NR - Gate
 
-**DST — Off**
-- No drive. The record's bass is clean and tight.
+THRE: 15.
+Fixed on. Not on CTL.
+Use the lowest threshold that keeps rests quiet. Check soft notes and held-note decay. This gate is before the drives and amp; it does not directly gate noise generated after it.
 
-**AMP/CAB — NAM SnapTone, slot 52: AvalonAD2022** (always on)
-- The `Avalon - 38 dB - Chan 1` NAM: an Avalon AD2022 studio preamp. A DI capture, no cab. That's the snaptone's role: polished 80s pop, LA sessions.
-- This record was cut DI in LA by session players. That's exactly the sound.
-- Gain: 50, VOL: 75, Bass: 55, Middle: 52, Treble: 56
-- Gain 50: as captured. Clean.
-- Bass 55: more weight to stand in for the synth layer's low end.
-- Middle 52: near flat.
-- Treble 56: keeps the pick attack sharp, so the eighths read as separate notes.
-- VOL 75: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level.
-- AMP and CAB are off in the `.prst`. The N->S block calls slot 52 directly.
+## PRE - Module off
 
-**EQ — Bass EQ 2**
-- 50Hz: +1, 120Hz: +2, 400Hz: -1, 800Hz: +1, 4.5kHz: +2, VOL: 52
-- Always on.
-- +2 at 120Hz: the thump of the eighth-note pulse.
-- -1 at 400Hz: takes out boxiness. A synth-layered bass is scooped there.
-- +2 at 4.5kHz: pick click, which helps the line sit with the drum machine and real drums.
+Not used.
 
-**MOD — Off**
-- Not used.
+## DST - Module off
 
-**DLY — Off**
-- Not used.
+Not used.
 
-**RVB — Room**
-- Mix: 6, Decay: 20, Trail: On
-- Always on. Barely there: 80s pop bass is close to dry. It just keeps the DI tone from sounding sterile.
+## AMP - Module off
 
-## CTL summary
+Not used.
 
-- No CTL assignment. One fixed sound for the whole song.
-- If you want a lift for the guitar solo, the place to add one later is DST Bass OD on CTL at low Blend. It isn't on the record, so it's left out here.
+## CAB - Module off
 
-## Full pedalboard (signal chain order)
+Not used.
 
-**1. Flamma FS-08 Octave — Engaged all song**
-- -2OCT: 0
-- -OCT: 30
-- +OCT: 0
-- +2OCT: 0
-- Dry: 100
-- The synth-bass layer. A quiet -1 octave under the bass gives it the smooth, synthetic sub weight of the Synergy part. Dry at 100 keeps your real bass on top. -OCT at 30 keeps it a layer, not a second bass.
-- The line is single notes, so polyphonic tracking isn't an issue. If it glitches on fast runs, drop -OCT to 20.
+## EQ - Bass EQ 2
 
-**2. Donner Ultimate Comp — Engaged**
-- COMP: 55
-- TONE: 55
-- LEVEL: 58
-- Mode: NORMAL
-- 80s session bass was compressed hard. COMP 55 makes every eighth note the same level, like the record. NORMAL mode, since the snaptone's Treble and the EQ already add the pick click.
+50Hz: 1.
+120Hz: 2.
+400Hz: -1.
+800Hz: 1.
+4.5kHz: 2.
+VOL: 52.
+Fixed on. Not on CTL.
+Shapes note body and cut after the amp/capture. Where assigned to CTL, its output adds the specified lift after the gain stages. Numbers are GP-5 control values, not a calibrated loudness guarantee.
 
-**3. Donner Stylish Fuzz — Bypassed**
-- Footswitch off. No fuzz.
+## MOD - Module off
 
-**4. Joyo Tidal Wave — Engaged (preamp/EQ), Drive off**
-- Drive: 15
-- Blend: 25
-- Presence: 55
-- Level: 58
-- Treble: 55
-- Middle: 50
-- Bass: 55
-- Mid-Frequency: 1000Hz
-- Bass-Shift: 80Hz
-- Cab-Sim (DI out): Off
-- Ground Lift: Off
-- Drive footswitch: off all song. The record is clean.
-- The preamp and EQ stay active regardless of the footswitch. Bass-Shift 80Hz keeps the low end tight, so the octave layer doesn't turn to mud. Mid-Frequency 1000Hz for attack.
+Not used.
 
-**5. Joyo Narcissus — Bypassed**
-- Footswitch off. No chorus.
+## DLY - Module off
 
-**6. Valeton GP-5** — see settings above.
+Not used.
 
-## Note on the full board vs. the `.prst`
+## RVB - Room
 
-The `.prst` file only encodes the GP-5's own 9 modules. The Flamma, Donner Ultimate Comp, Donner Stylish Fuzz, Joyo Tidal Wave and Joyo Narcissus settings above are not and cannot be part of that file. They're set by hand on the board, and documented here so the full patch can be rebuilt. The Flamma octave is a real part of this bass sound, so don't skip it.
+Mix: 6.
+Decay: 20.
+Trail: on.
+Fixed on. Not on CTL.
+Adds the specified room or ambient tail. The revised mix keeps the initial note audible. Trail behavior follows the saved setting.
+
+## Switching and section map
+
+CTL blocks: None.
+- CTL off / loaded state: Main rhythm / intro / supporting part. GP-5 active: NR, EQ, RVB, N->S.
+- No GP-5 CTL change. Use the board stomps listed below when the arrangement needs another sound.
+
+## Full pedalboard
+
+Flamma FS-08 Octave -> Donner Ultimate Comp -> Donner Stylish Fuzz -> Joyo Tidal Wave -> Joyo American Sound -> Joyo Narcissus -> Valeton GP-5.
+Board settings are set by hand and are not encoded in the .prst.
+All numeric pedal positions use the existing 0–100 position shorthand unless a clock position is specified.
+
+## Flamma FS-08 Octave
+
+Off by default; optional synth layer for higher-register notes only.
+-2OCT: 0.
+-OCT: 30.
++OCT: 0.
++2OCT: 0.
+Dry: 100.
+
+## Donner Ultimate Comp
+
+On throughout.
+COMP: 55.
+TONE: 55.
+LEVEL: 58.
+Mode: NORMAL.
+
+## Donner Stylish Fuzz
+
+Bypassed throughout.
+Sustain: 25.
+Treble: 50.
+Bass: 50.
+Volume: 50.
+
+## Joyo Tidal Wave
+
+Drive off throughout; preamp/EQ/Level remain active.
+Drive: 15.
+Blend: 25.
+Presence: 55.
+Level: 58.
+Treble: 55.
+Middle: 50.
+Bass: 55.
+Mid-Frequency: 1000Hz.
+Bass-Shift: 80Hz.
+Cab-Sim (DI out): Off.
+Ground Lift: Off.
+The footswitch toggles drive only. Preamp EQ and Level stay active in both states. Cab-Sim/Ground Lift affect the DI path; main instrument output is unchanged.
+
+## Joyo American Sound
+
+Bypassed throughout.
+Level: 50.
+Drive: 10.
+Voice: 50.
+Low: 50.
+Mid: 50.
+High: 50.
+
+## Joyo Narcissus
+
+Bypassed throughout.
+Width: 30.
+Depth: 20.
+Rate: 20.
+Mode: Vintage.
+
+## Board choreography
+
+- Flamma FS-08 Octave: Off by default; optional synth layer for higher-register notes only.
+- Donner Ultimate Comp: On throughout.
+- Donner Stylish Fuzz: Bypassed throughout.
+- Joyo Tidal Wave: Drive off throughout; preamp/EQ/Level remain active.
+- Joyo American Sound: Bypassed throughout.
+- Joyo Narcissus: Bypassed throughout.
+Set the board switches for the section you are entering. Intro-only or clean-only effects may need to start on. Return each pedal to its documented state at the next section. Board pedals are independent of CTL.
+
+## Revision record
+
+Approved audit entry 16.
+- Pedal display name: BeatIt-MJ -> B-BeatItMJ. Filenames stay unchanged.
+- Board Flamma: ; Off by default; optional synth layer for higher-register notes only.
+Pre-revision JSON, Markdown and original file hashes are preserved in Documents/patch-audit-2026-10-16/inventory.json and implementation-manifest.json.
+The site piece title and on-disk filenames stay stable; only the short pedal display name may change.

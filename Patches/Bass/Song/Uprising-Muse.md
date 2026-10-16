@@ -1,103 +1,175 @@
 # Uprising — Muse
 
+Revised 2026-10-16 following the approved library audit.
+Type: Song. Instrument: Harley Benton passive 5-string P/J.
+Full board. Board Option: American Sound (bypassed; retained for legacy full-board builds).
+Patch screen name: Uprising-M. Patch VOL: 55.
+Preset tempo: 128 BPM.
+
 Bass: Harley Benton P/J, 5-string, passive. Full board.
 From *The Resistance* (2009), ~128 BPM.
 The record's iconic intro riff is a real synthesizer, not a bass — but Chris Wolstenholme's whole live rig is built around making a bass guitar sound like a synth (heavy fuzz, octave layering, envelope filtering). This patch leans into that same trick: verse = the pulsing "synth bass" texture, chorus = the tone opens up into a bigger, more straightforward rock push for "they will not force us..."
 
-CTL off = the synth-bass verse pulse. CTL on = the big chorus.
+## Revision intent
+
+Keep the musical role of the original patch while reducing redundant gain, excessive space and unclear switching where identified in audit entry 122.
+The module settings and section map below are the active revision.
+Audited capture volumes and Michael’s explicit patch-level adjustments are preserved.
+No hardware audition or measured level match has been performed.
 
 ## GP-5 settings
 
-Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
+Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB.
+The encoded N->S block sits between DST and AMP when a SnapTone is used.
 
-**NR — Gate**
-- THRE: 25
-- Always on. Higher threshold — fuzz, octave, and filter all stack noise floor on top of each other, needs real cleanup between notes.
+AMP/CAB replacement: SnapTone HairySVT (slot 58): SVT SANS HAIRY DRIVE (SVT-CL) + Sunn215.
+Slot: 58. Always on.
+Gain: 54, VOL: 55, Bass: 55, Middle: 55, Treble: 55.
+AMP and CAB are both off; the capture already includes its cab/DI character.
+The capture voice is fixed across CTL states. Audited VOL is preserved for this slot.
 
-**PRE — Toucher — On CTL (inverted)**
-- Sense: 60, Range: 55, Q: 50, Mix: 70, Mode: Bass
-- CTL off: engaged (verse). CTL on: bypassed (chorus).
-- This is the envelope filter doing the "synth wobble" work — following pick dynamics to push the filter around, the closest thing to that looping filtered-synth quality using a real bass signal. Turned off for the chorus, where the song drops the synth-pulse texture for a straight-ahead rock push.
+## NR - Gate
 
-**DST — Bass OD — On CTL**
-- Gain: 55, Blend: 65, VOL: 60, Bass: 58, Treble: 52
-- CTL off: bypassed (verse — the Toucher and fuzz pedal already carry the texture). CTL on: engaged (chorus — extra push and grit for the bigger hook).
+THRE: 25.
+Fixed on. Not on CTL.
+Use the lowest threshold that keeps rests quiet. Check soft notes and held-note decay. This gate is before the drives and amp; it does not directly gate noise generated after it.
 
-**AMP/CAB — NAM SnapTone, slot 58: HairySVT** (always on)
-- Built from the `SVT SANS HAIRY DRIVE (SVT-CL)` NAM and the Sunn215 IR, combined into one snaptone.
-- Real Ampeg SVT-CL with the hairy drive setting, into the Sunn215 2x15 IR.
-- Fuzzed, synth-like bass. Hairy SVT drive into the Sunn 2x15.
-- Gain: 54, VOL: 55, Bass: 55, Middle: 55, Treble: 55
-- Gain 54: a little over default. This part wants more push than the other HairySVT patches.
-- Bass 55: a touch more low end.
-- Middle 55: a touch more midrange.
-- Treble 55: a touch more top end.
-- VOL 55: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
-- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 58 directly.
+## PRE - Toucher
 
-**EQ — Bass EQ 2**
-- 50Hz: +4, 120Hz: +1, 400Hz: -3, 800Hz: +3, 4.5kHz: +3, VOL: 55
-- Always on, same for both CTL states.
-- +4 at 50Hz keeps real low-end weight under all the processing. -3 at 400Hz cuts the mud the octave/fuzz stack can add. +3 at 800Hz/4.5kHz keeps the synth-wobble movement audible and present instead of getting swallowed.
+Sense: 60.
+Range: 55.
+Q: 50.
+Mix: 45.
+Mode: 1.
+CTL assigned. Loads on; first CTL press switches it off.
+Controls the source dynamics or adds the specified push/filter before distortion and amp processing. The settings stay fixed; only its on/off state can change.
 
-**MOD — O-Phase (MXR Phase 90)**
-- Rate: 0.35Hz
-- Always on, same for both CTL states.
-- Slow, subtle phase movement underneath everything — a light touch of synth-like shimmer, not an obvious "phaser" sound. Stays under the radar the way the prompt's light-MOD-touch rule calls for.
+## DST - Module off
 
-**DLY — Off**
-- Not used. Between the filter, fuzz, and phaser there's already enough movement in this tone — a delay would clutter the picture.
+Not used.
 
-**RVB — Room — On CTL**
-- Mix: 22, Decay: 32, Trail: On
-- CTL off: bypassed (verse — tight and dry, letting the filter/fuzz texture read clearly). CTL on: engaged (chorus).
-- Opens the space up for the bigger chorus hook, matching the arena-rock scale that section is going for.
+## AMP - Module off
 
-## CTL summary
+Not used.
 
-- **CTL Off — Verse.** The synth-bass pulse: Toucher engine engaged, fuzz and octave doing their thing from the board, dry and tight.
-- **CTL On — Chorus.** Toucher drops out, Bass OD and Room reverb engage instead — bigger, more straightforward, more open, matching the song's anthemic hook.
-- Engage CTL right as the chorus hits, back off returning to the verse's synth-bass texture.
+## CAB - Module off
 
-## Full pedalboard (signal chain order)
+Not used.
 
-**1. Flamma FS-08 Octave — Engaged**
-- -OCT: 40
-- +OCT: 35
-- -2OCT: 0
-- +2OCT: 0
-- Dry: 70
-- This is central to the whole concept — layering a sub-octave and an upper octave on top of the dry signal is exactly the trick that makes a bass guitar start to sound like a synthesizer. Both octave knobs kept moderate so it thickens the tone without turning to mush or tracking badly on faster passages.
+## EQ - Bass EQ 2
 
-**2. Donner Ultimate Comp — Engaged**
-- COMP: 55
-- TONE: 55
-- LEVEL: 60
-- Mode: TREBLE
-- Keeps all the layered/processed signal (octave + fuzz + filter) even and controlled. TREBLE mode keeps attack defined going into all that processing instead of getting swallowed by it.
+50Hz: 1.
+120Hz: 1.
+400Hz: -3.
+800Hz: 3.
+4.5kHz: 3.
+VOL: 55.
+Fixed on. Not on CTL.
+Shapes note body and cut after the amp/capture. Where assigned to CTL, its output adds the specified lift after the gain stages. Numbers are GP-5 control values, not a calibrated loudness guarantee.
 
-**3. Donner Stylish Fuzz — Engaged**
-- Sustain: 65
-- Treble: 55
-- Bass: 60
-- Volume: 60
-- The other half of the "fuzz bass" synth trick — a fairly compressed, thick fuzz setting gives this a squared-off, synth-like edge rather than a loose, open fuzz-face wall of noise.
+## MOD - Module off
 
-**4. Joyo Tidal Wave — Engaged**
-- Drive: 25
-- Blend: 50
-- Presence: 60
-- Level: 60
-- Treble: 55
-- Middle: 55
-- Bass: 55
-- Mid-Frequency: 1000Hz
-- Bass-Shift: 80Hz
-- Cab-Sim (DI out): Off
-- Ground Lift: Off
-- Kept light here — Drive at 25 mostly for its 3-band EQ shaping rather than another gain stage, since fuzz and the GP-5's own OD already cover the drive duties. Bass-Shift at 80Hz keeps the low end from ballooning with the octave pedal already adding sub content.
+Not used.
 
-**5. Joyo Narcissus — Bypassed**
-- Footswitch off. The GP-5's own O-Phase already carries the modulation duties — running a chorus alongside a phaser on top of all this fuzz/octave/filter processing would get muddy fast.
+## DLY - Module off
 
-**6. Valeton GP-5** — see settings above.
+Not used.
+
+## RVB - Module off
+
+Not used.
+
+## Switching and section map
+
+CTL blocks: PRE.
+- CTL off / loaded state: Filtered synth-style pulse. GP-5 active: NR, PRE, EQ, N->S.
+- First CTL press: Open heavy chorus voice. GP-5 active: NR, EQ, N->S.
+- Press CTL again to return to the loaded block pattern, provided no shared MIDI block has been changed.
+
+## Full pedalboard
+
+Flamma FS-08 Octave -> Donner Ultimate Comp -> Donner Stylish Fuzz -> Joyo Tidal Wave -> Joyo American Sound -> Joyo Narcissus -> Valeton GP-5.
+Board settings are set by hand and are not encoded in the .prst.
+All numeric pedal positions use the existing 0–100 position shorthand unless a clock position is specified.
+
+## Flamma FS-08 Octave
+
+On throughout.
+-2OCT: 0.
+-OCT: 40.
++OCT: 35.
++2OCT: 0.
+Dry: 70.
+
+## Donner Ultimate Comp
+
+On throughout.
+COMP: 55.
+TONE: 55.
+LEVEL: 60.
+Mode: TREBLE.
+
+## Donner Stylish Fuzz
+
+On throughout.
+Sustain: 65.
+Treble: 55.
+Bass: 60.
+Volume: 60.
+
+## Joyo Tidal Wave
+
+On throughout.
+Drive: 25.
+Blend: 50.
+Presence: 60.
+Level: 60.
+Treble: 55.
+Middle: 55.
+Bass: 55.
+Mid-Frequency: 1000Hz.
+Bass-Shift: 80Hz.
+Cab-Sim (DI out): Off.
+Ground Lift: Off.
+The footswitch toggles drive only. Preamp EQ and Level stay active in both states. Cab-Sim/Ground Lift affect the DI path; main instrument output is unchanged.
+
+## Joyo American Sound
+
+Bypassed throughout.
+Level: 50.
+Drive: 10.
+Voice: 50.
+Low: 50.
+Mid: 50.
+High: 50.
+
+## Joyo Narcissus
+
+Bypassed throughout.
+Width: 30.
+Depth: 20.
+Rate: 20.
+Mode: Vintage.
+
+## Board choreography
+
+- Flamma FS-08 Octave: On throughout.
+- Donner Ultimate Comp: On throughout.
+- Donner Stylish Fuzz: On throughout.
+- Joyo Tidal Wave: On throughout.
+- Joyo American Sound: Bypassed throughout.
+- Joyo Narcissus: Bypassed throughout.
+Set the board switches for the section you are entering. Intro-only or clean-only effects may need to start on. Return each pedal to its documented state at the next section. Board pedals are independent of CTL.
+
+## Revision record
+
+Approved audit entry 122.
+- PRE Mix: 70 -> 45.
+- DST: Bass OD -> off.
+- DST: removed from CTL.
+- EQ 50Hz: 4 -> 1.
+- MOD: O-Phase -> off.
+- RVB: Room -> off.
+- RVB: removed from CTL.
+Pre-revision JSON, Markdown and original file hashes are preserved in Documents/patch-audit-2026-10-16/inventory.json and implementation-manifest.json.
+The site piece title and on-disk filenames stay stable; only the short pedal display name may change.

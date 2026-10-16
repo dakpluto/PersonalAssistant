@@ -51,6 +51,7 @@ bit, so a block that's only ever kicked in by MIDI can load bypassed.
 from __future__ import annotations
 
 import json
+import math
 import struct
 import sys
 from dataclasses import dataclass
@@ -269,7 +270,9 @@ def _resolve_nam_slot(catalog: dict, slot: int) -> dict:
 
 def _settings_to_params(block: str, model_name: str, entry: dict, settings: dict) -> dict:
     param_by_name = {p["name"].strip(): p for p in entry["params"]}
-    params = {}
+    # A missing control must use the catalog default, not a silent zero in
+    # the serialized float array (notably EQ VOL, whose default is 50).
+    params = {p["algId"]: float(p["default"]) for p in entry["params"]}
     for setting_name, value in settings.items():
         p = param_by_name.get(setting_name.strip())
         if p is None:
@@ -278,6 +281,11 @@ def _settings_to_params(block: str, model_name: str, entry: dict, settings: dict
                 f"Valid params: {[p['name'].strip() for p in entry['params']]}"
             )
         v = 1.0 if value is True else 0.0 if value is False else float(value)
+        if not math.isfinite(v) or not float(p["min"]) <= v <= float(p["max"]):
+            raise ValidationError(
+                f"{block}/{model_name} param {setting_name!r} value {value!r} "
+                f"is outside catalog range {p['min']}..{p['max']}"
+            )
         params[p["algId"]] = v
     return params
 

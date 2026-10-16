@@ -1,88 +1,170 @@
 # Giving It All to You — Michael Gungor
 
+Revised 2026-10-16 following the approved library audit.
+Type: Song. Instrument: Harley Benton passive 5-string P/J.
+Full board. Board Option: American Sound (bypassed; retained for legacy full-board builds).
+Patch screen name: GivingAll. Patch VOL: 52.
+Preset tempo: 100 BPM.
+
 Bass: Harley Benton P/J, 5-string, passive. Full board.
 Part of a 5-song worship set. The board ahead of the GP-5 is fixed across all 5 songs — see "Full Pedalboard" below. Only this GP-5 patch changes song to song.
-
 Early Michael Gungor Band — organic, indie-folk worship, warm and a little lo-fi, nothing hi-fi or aggressive about it. 100 BPM in C, mid-tempo and steady. This is a one-sound patch: the part sits in a supportive pocket the whole song, so there's no CTL split here — just a warm, rounded tone that stays out of the vocal's way.
 
-## GP-5 Settings
+## Revision intent
 
-Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB
+Keep the musical role of the original patch while reducing redundant gain, excessive space and unclear switching where identified in audit entry 42.
+The module settings and section map below are the active revision.
+Audited capture volumes and Michael’s explicit patch-level adjustments are preserved.
+No hardware audition or measured level match has been performed.
 
-**NR — Gate**
-- THRE: 20
-- Always on. Light gate — low-gain patch, barely needs it, just cleans up idle noise.
+## GP-5 settings
 
-**PRE — COMP** (Ross Compressor)
-- Sustain: 45, VOL: 55
-- Always on. Gentle glue and sustain for a fingerstyle folk part — not squashing anything, just evening it out.
+Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB.
+The encoded N->S block sits between DST and AMP when a SnapTone is used.
 
-**DST — Off**
-Not used. No drive anywhere in this tone.
+AMP/CAB replacement: SnapTone FullB15 (slot 54): Ampeg B18 - Head DI - Bass Chan - Vol 5 (B-18N) + Apg115410.
+Slot: 54. Always on.
+Gain: 54, VOL: 80, Bass: 55, Middle: 50, Treble: 50.
+AMP and CAB are both off; the capture already includes its cab/DI character.
+The capture voice is fixed across CTL states. Audited VOL is preserved for this slot.
 
-**AMP/CAB — NAM SnapTone, slot 54: FullB15** (always on)
-- Built from the `Ampeg B18 - Head DI - Bass Chan - Vol 5 (B-18N)` NAM and the Apg115410 IR, combined into one snaptone.
-- Real Ampeg B-18N at volume 5, warmer and fuller than the clean capture, into the Apg115410 (1x15 + 4x10) IR.
-- Warm, organic worship-folk. The fuller B-15 gives body without grit.
-- Gain: 54, VOL: 80, Bass: 55, Middle: 50, Treble: 50
-- Gain 54: a little over default. This part wants more push than the other FullB15 patches.
-- Bass 55: a touch more low end.
-- Middle 50: flat.
-- Treble 50: flat.
-- VOL 80: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
-- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 54 directly.
+## NR - Gate
 
-**EQ — Bass EQ 1**
-- 33Hz: +4, 150Hz: +2, 600Hz: 0, 2kHz: -2, 8kHz: -3, VOL: 52
-- Always on. Small low-end lift for foundation, top end rolled back slightly so it stays warm instead of glassy — no aggressive presence boost here.
+THRE: 20.
+Fixed on. Not on CTL.
+Use the lowest threshold that keeps rests quiet. Check soft notes and held-note decay. This gate is before the drives and amp; it does not directly gate noise generated after it.
 
-**MOD — A-Chorus** (Arion SCH-1)
-- Depth: 15, Rate: 0.5Hz, Tone: 40
-- Always on. Very light touch, per the usual rule — this isn't a drenched chorus tone, just enough shimmer underneath to give the part that organic, slightly wobbly indie-folk character instead of a dead-flat DI tone.
+## PRE - Module off
 
-**DLY — Off**
 Not used.
 
-**RVB — Room**
-- Mix: 12, Decay: 30, Trail: On
-- Always on. Just a whisper of space — keeps the tone from feeling too dry and dead in an intimate arrangement, without turning it into a wash.
+## DST - Module off
 
-No CTL on this patch — one steady, supportive tone for the whole song.
+Not used.
 
-## Full Pedalboard — Fixed For This Set
+## AMP - Module off
 
-This patch is one of 5 built for one worship set (Unstoppable God, Giving It All to You, Your Love Changes Everything, The Bread Has Been Broken, Thrive). Every pedal ahead of the GP-5 is dialed in once and left untouched for the whole set — only the GP-5 patch changes between songs. Don't touch these knobs between songs; that's the point.
+Not used.
 
-**1. Flamma FS-08 Octave — Bypassed, entire set.**
-All four octave knobs at 0, Dry at 100, so nothing surprises you if the footswitch gets bumped. None of these five songs call for octave layering.
+## CAB - Module off
 
-**2. Donner Ultimate Comp — Engaged, entire set.**
-- COMP: 42
-- TONE: 50
-- LEVEL: 55
-- Mode: NORMAL
-First in the chain — evens out finger-attack dynamics before anything else touches the signal. Moderate COMP glues the sound together across a set that spans near-silence (Bread) to full push (Unstoppable God, Thrive) without squashing quiet sections. NORMAL mode stays neutral — voicing is handled per-song downstream.
+Not used.
 
-**3. Donner Stylish Fuzz — Bypassed, entire set.**
-No fuzz texture anywhere in this set. True bypass throughout.
+## EQ - Bass EQ 1
 
-**4. Joyo Tidal Wave — Engaged, entire set.**
-- Drive: 25
-- Blend: 35
-- Presence: 55
-- Level: 55
-- Treble: 55, Middle: 58, Bass: 55
-- Mid-Frequency toggle: 500Hz
-- Bass-Shift toggle: 80Hz (tight, keeps a full band mix from turning to mud)
-- Cab-Sim (DI out): On
-- Ground Lift: Off (only flip on if a specific room throws hum)
-The constant foundation stage for the whole set. Drive is low and Blend under half — this adds harmonic warmth and preamp glue, not an audible overdrive. Also feeds a consistent DI signal to FOH all night, cab-sim engaged. Actual tone character per song comes from the GP-5 patch downstream, not from this pedal.
+33Hz: 0.
+150Hz: 2.
+600Hz: 0.
+2kHz: -2.
+8kHz: -3.
+VOL: 52.
+Fixed on. Not on CTL.
+Shapes note body and cut after the amp/capture. Where assigned to CTL, its output adds the specified lift after the gain stages. Numbers are GP-5 control values, not a calibrated loudness guarantee.
 
-**5. Joyo Narcissus — Bypassed, entire set.**
-Modulation is handled per-song by each GP-5 patch's own MOD module instead (this song: A-Chorus, light, always on). Stacking this pedal on top would fight with that. True bypass throughout.
+## MOD - Module off
 
-**6. Valeton GP-5 — as detailed above.**
+Not used.
 
-## Footswitch Choreography
+## DLY - Module off
 
-None needed for this song. GP-5 loads its one patch state and stays there — no CTL, no changes on the rest of the board.
+Not used.
+
+## RVB - Room
+
+Mix: 6.
+Decay: 30.
+Trail: on.
+Fixed on. Not on CTL.
+Adds the specified room or ambient tail. The revised mix keeps the initial note audible. Trail behavior follows the saved setting.
+
+## Switching and section map
+
+CTL blocks: None.
+- CTL off / loaded state: Main rhythm / intro / supporting part. GP-5 active: NR, EQ, RVB, N->S.
+- No GP-5 CTL change. Use the board stomps listed below when the arrangement needs another sound.
+
+## Full pedalboard
+
+Flamma FS-08 Octave -> Donner Ultimate Comp -> Donner Stylish Fuzz -> Joyo Tidal Wave -> Joyo American Sound -> Joyo Narcissus -> Valeton GP-5.
+Five-song worship set: Bread / Giving It All / Thrive / Unstoppable God / Your Love. Knob settings stay fixed for this entire set; footswitches may change.
+Board settings are set by hand and are not encoded in the .prst.
+All numeric pedal positions use the existing 0–100 position shorthand unless a clock position is specified.
+
+## Flamma FS-08 Octave
+
+Bypassed throughout.
+-2OCT: 0.
+-OCT: 0.
++OCT: 0.
++2OCT: 0.
+Dry: 100.
+
+## Donner Ultimate Comp
+
+On throughout the set.
+COMP: 42.
+TONE: 50.
+LEVEL: 55.
+Mode: NORMAL.
+
+## Donner Stylish Fuzz
+
+Bypassed throughout.
+Sustain: 25.
+Treble: 50.
+Bass: 50.
+Volume: 50.
+
+## Joyo Tidal Wave
+
+Drive on throughout the set; preamp active throughout.
+Drive: 25.
+Blend: 35.
+Presence: 55.
+Level: 55.
+Treble: 55.
+Middle: 58.
+Bass: 55.
+Mid-Frequency: 500Hz.
+Bass-Shift: 80Hz.
+Cab-Sim (DI out): On.
+Ground Lift: Off.
+The footswitch toggles drive only. Preamp EQ and Level stay active in both states. Cab-Sim/Ground Lift affect the DI path; main instrument output is unchanged.
+
+## Joyo American Sound
+
+Bypassed throughout.
+Level: 50.
+Drive: 10.
+Voice: 50.
+Low: 50.
+Mid: 50.
+High: 50.
+
+## Joyo Narcissus
+
+Bypassed throughout the set.
+Width: 30.
+Depth: 25.
+Rate: 20.
+Mode: Vintage.
+
+## Board choreography
+
+- Flamma FS-08 Octave: Bypassed throughout.
+- Donner Ultimate Comp: On throughout the set.
+- Donner Stylish Fuzz: Bypassed throughout.
+- Joyo Tidal Wave: Drive on throughout the set; preamp active throughout.
+- Joyo American Sound: Bypassed throughout.
+- Joyo Narcissus: Bypassed throughout the set.
+Set the board switches for the section you are entering. Intro-only or clean-only effects may need to start on. Return each pedal to its documented state at the next section. Board pedals are independent of CTL.
+
+## Revision record
+
+Approved audit entry 42.
+- PRE: COMP -> off.
+- EQ 33Hz: 4 -> 0.
+- MOD: A-Chorus -> off.
+- RVB Mix: 12 -> 6.
+Pre-revision JSON, Markdown and original file hashes are preserved in Documents/patch-audit-2026-10-16/inventory.json and implementation-manifest.json.
+The site piece title and on-disk filenames stay stable; only the short pedal display name may change.

@@ -1,59 +1,108 @@
 # Your Body is a Wonderland — John Mayer (Room for Squares)
 
+Revised 2026-10-16 following the approved library audit.
+Type: Song. Instrument: HSS Stratocaster.
+GP-5 only.
+Patch screen name: Wonderland. Patch VOL: 55.
+Preset tempo: 82 BPM.
+
 GP-5 only build, no pedalboard. HSS Stratocaster.
 Mid-tempo, around 82 BPM.
 The whole song lives on one tone: warm, clean, compressed, lightly chorused.
 No hard lead break — the chorus/outro sections just get a little bigger, not dirtier.
 This patch uses a NAM capture for the amp/cab instead of the GP-5's built-in AMP/CAB modules — see below.
 
-## GP-5 Settings
+## Revision intent
 
-Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB
+Keep the musical role of the original patch while reducing redundant gain, excessive space and unclear switching where identified in audit entry 194.
+The module settings and section map below are the active revision.
+Audited capture volumes and Michael’s explicit patch-level adjustments are preserved.
+No hardware audition or measured level match has been performed.
 
-**AMP/CAB — NAM SnapTone, slot 66: MayerDumble** (always on)
-- Built from the `SLAMMIN_DUMBLE_FORD_CLN_BALANCED_S (Dumble ODS #102)` NAM and the Bogner 2x12 EVM12L - SM57 1 - Cap Edge IR, combined into one snaptone.
-- Dumble ODS #102 (the Robben Ford amp) clean channel, into a Bogner 2x12 with EVM12L speakers.
-- Warm, clean, Dumble-style Mayer tone. Replaces the old Two-Rock NAM, which is no longer loaded.
-- Gain: 50, VOL: 70, Bass: 50, Middle: 50, Treble: 50
-- Gain 50: the capture as built.
-- Bass 50: flat.
-- Middle 50: flat.
-- Treble 50: flat.
-- VOL 70: the level Michael set for this snaptone in the 2026-10-01 VOL audit. Trim here if the patch jumps in level against your others.
-- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 66 directly.
+## GP-5 settings
 
-**NR — Gate**
-- THRE: 20
-- Always on. Single coils plus a boost stage need a floor, but 20 is light enough not to chop the fingerstyle note decay.
+Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB.
+The encoded N->S block sits between DST and AMP when a SnapTone is used.
 
-**PRE — COMP** (Ross Compressor)
-- Sustain: 35, VOL: 55
-- Always on, both CTL states. This is the backbone of the tone — evens out pick/finger attack for the smooth, consistent clean dynamic the record is built on.
+AMP/CAB replacement: SnapTone MayerDumble (slot 66): SLAMMIN_DUMBLE_FORD_CLN_BALANCED_S (Dumble ODS #102) + Bogner 2x12 EVM12L - SM57 1 - Cap Edge.
+Slot: 66. Always on.
+Gain: 50, VOL: 70, Bass: 50, Middle: 50, Treble: 50.
+AMP and CAB are both off; the capture already includes its cab/DI character.
+The capture voice is fixed across CTL states. Audited VOL is preserved for this slot.
 
-**DST — Green OD** (Tube Screamer / TS-808), very light
-- Gain: 25, Tone: 55, VOL: 60
-- **CTL switch.** Off = bypassed, On = engaged.
-- Not distortion at Gain 25 — a gentle push that lifts presence for the fuller chorus/outro sections without ever crossing into dirty.
+## NR - Gate
 
-**EQ — Guitar EQ 2**
-- 100Hz: 0, 500Hz: +2, 1kHz: +1, 3kHz: +3, 6kHz: +2, VOL: 50
-- Always on. Modest lift through the upper-mids and treble for single-coil sparkle/quack on top of the warm Dumble-style low end.
+THRE: 20.
+Fixed on. Not on CTL.
+Use the lowest threshold that keeps rests quiet. Check soft notes and held-note decay. This gate is before the drives and amp; it does not directly gate noise generated after it.
 
-**MOD — A-Chorus** (Arion SCH-1)
-- Depth: 30, Rate: 1.0Hz, Tone: 55
-- Always on, both CTL states. This song's clean tone has a subtle chorus shimmer baked into its identity throughout, not just one section — light enough to sit underneath, present enough to be felt.
+## PRE - COMP
 
-**DLY — Off**
-Not used. The record's rhythm tone is close and dry; delay isn't part of the signature sound here.
+Sustain: 35.
+VOL: 55.
+Fixed on. Not on CTL.
+Controls the source dynamics or adds the specified push/filter before distortion and amp processing. The settings stay fixed; only its on/off state can change.
 
-**RVB — Room**
-- Mix: 30, Decay: 40, Trail: On
-- **CTL switch.** Off = bypassed (dry, tight verses), On = engaged (a touch of room air for the fuller chorus/outro swells).
+## DST - Module off
 
-### CTL Summary
-- **CTL Off — Verse/main tone:** Dry, compressed, chorused clean. This is the patch's default — reach for this most of the time.
-- **CTL On — Chorus/outro lift:** Same amp, same chorus, with the light Green OD push and Room reverb both kicked in for size. A subtle shift by design — this song doesn't have a hard guitar solo, so "lead" here means bigger, not dirtier.
+Not used.
 
-## Pedalboard
+## AMP - Module off
 
-None. Full Board = False — this patch is GP-5 only.
+Not used.
+
+## CAB - Module off
+
+Not used.
+
+## EQ - Guitar EQ 2
+
+100Hz: 0.
+500Hz: 2.
+1kHz: 1.
+3kHz: 1.
+6kHz: 2.
+VOL: 53.
+CTL assigned. Loads off; first CTL press switches it on.
+Shapes note body and cut after the amp/capture. Where assigned to CTL, its output adds the specified lift after the gain stages. Numbers are GP-5 control values, not a calibrated loudness guarantee.
+
+## MOD - A-Chorus
+
+Depth: 18.
+Rate: 0.5.
+Tone: 55.
+Fixed on. Not on CTL.
+Adds the specified movement. Keep it underneath the note except for intentionally wet artist or ambient voices.
+
+## DLY - Module off
+
+Not used.
+
+## RVB - Room
+
+Mix: 10.
+Decay: 40.
+Trail: on.
+CTL assigned. Loads off; first CTL press switches it on.
+Adds the specified room or ambient tail. The revised mix keeps the initial note audible. Trail behavior follows the saved setting.
+
+## Switching and section map
+
+CTL blocks: EQ, RVB.
+- CTL off / loaded state: Clean main groove. GP-5 active: NR, PRE, MOD, N->S.
+- First CTL press: Clean chorus/outro lift. GP-5 active: NR, PRE, EQ, MOD, RVB, N->S.
+- Press CTL again to return to the loaded block pattern, provided no shared MIDI block has been changed.
+
+## Revision record
+
+Approved audit entry 194.
+- DST: Green OD -> off.
+- DST: removed from CTL.
+- EQ 3kHz: 3 -> 1.
+- EQ VOL: 50 -> 53.
+- EQ: assigned to CTL.
+- MOD Depth: 30 -> 18.
+- MOD Rate: 1 -> 0.5.
+- RVB Mix: 30 -> 10.
+Pre-revision JSON, Markdown and original file hashes are preserved in Documents/patch-audit-2026-10-16/inventory.json and implementation-manifest.json.
+The site piece title and on-disk filenames stay stable; only the short pedal display name may change.

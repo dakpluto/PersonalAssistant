@@ -1,17 +1,72 @@
 {
-  "patch_name": "Higher-Creed",
+  "patch_name": "B-HigherCr",
   "patch_vol": 55,
   "bpm": 85,
-  "nam": {"name": "GrittySVT (slot 57): SVT PUSHED (SVT-CL) + Apg810", "slot": 57, "settings": {"Gain": 50, "VOL": 55, "Bass": 55, "Middle": 60, "Treble": 60}},
+  "nam": {
+    "name": "GrittySVT (slot 57): SVT PUSHED (SVT-CL) + Apg810",
+    "slot": 57,
+    "settings": {
+      "Gain": 50,
+      "VOL": 55,
+      "Bass": 55,
+      "Middle": 60,
+      "Treble": 60
+    }
+  },
   "modules": {
-    "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 24}},
-    "PRE": {"model": "Micro Boost", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Gain": 58}},
-    "DST": {"model": "Bass OD", "always_on": true, "settings": {"Gain": 63, "Blend": 75, "VOL": 62, "Bass": 55, "Treble": 58}},
-    "AMP": {"model": null},
-    "CAB": {"model": null},
-    "EQ": {"model": "Bass EQ 1", "always_on": true, "settings": {"33Hz": 3, "150Hz": 0, "600Hz": -2, "2kHz": 5, "8kHz": 3, "VOL": 56}},
-    "MOD": {"model": null},
-    "DLY": {"model": null},
-    "RVB": {"model": "Room", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Mix": 22, "Decay": 36, "Trail": true}}
+    "NR": {
+      "model": "Gate",
+      "always_on": true,
+      "settings": {
+        "THRE": 24
+      }
+    },
+    "PRE": {
+      "model": "Micro Boost",
+      "ctl": true,
+      "ctl_off_state": "off",
+      "ctl_on_state": "on",
+      "settings": {
+        "Gain": 25
+      }
+    },
+    "DST": {
+      "model": null
+    },
+    "AMP": {
+      "model": null
+    },
+    "CAB": {
+      "model": null
+    },
+    "EQ": {
+      "model": "Bass EQ 1",
+      "always_on": true,
+      "settings": {
+        "33Hz": 3,
+        "150Hz": 0,
+        "600Hz": -2,
+        "2kHz": 5,
+        "8kHz": 3,
+        "VOL": 56
+      }
+    },
+    "MOD": {
+      "model": null
+    },
+    "DLY": {
+      "model": null
+    },
+    "RVB": {
+      "model": "Room",
+      "ctl": true,
+      "ctl_off_state": "off",
+      "ctl_on_state": "on",
+      "settings": {
+        "Mix": 6,
+        "Decay": 36,
+        "Trail": true
+      }
+    }
   }
 }

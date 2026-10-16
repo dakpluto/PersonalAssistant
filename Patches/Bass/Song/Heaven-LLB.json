@@ -2,16 +2,71 @@
   "patch_name": "Heaven - Los Lonely Boys",
   "patch_vol": 50,
   "bpm": 76,
-  "nam": {"name": "FullB15 (slot 54): Ampeg B18 - Head DI - Bass Chan - Vol 5 (B-18N) + Apg115410", "slot": 54, "settings": {"Gain": 50, "VOL": 80, "Bass": 65, "Middle": 55, "Treble": 45}},
+  "nam": {
+    "name": "FullB15 (slot 54): Ampeg B18 - Head DI - Bass Chan - Vol 5 (B-18N) + Apg115410",
+    "slot": 54,
+    "settings": {
+      "Gain": 50,
+      "VOL": 80,
+      "Bass": 56,
+      "Middle": 55,
+      "Treble": 45
+    }
+  },
   "modules": {
-    "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 20}},
-    "PRE": {"model": "Micro Boost", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Gain": 35}},
-    "DST": {"model": null},
-    "AMP": {"model": null},
-    "CAB": {"model": null},
-    "EQ": {"model": "Bass EQ 2", "always_on": true, "settings": {"50Hz": 3, "120Hz": 2, "400Hz": -2, "800Hz": 0, "4.5kHz": 2, "VOL": 55}},
-    "MOD": {"model": null},
-    "DLY": {"model": null},
-    "RVB": {"model": "Hall", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Mix": 30, "Decay": 45, "Trail": true}}
+    "NR": {
+      "model": "Gate",
+      "always_on": true,
+      "settings": {
+        "THRE": 10
+      }
+    },
+    "PRE": {
+      "model": "Micro Boost",
+      "ctl": true,
+      "ctl_off_state": "off",
+      "ctl_on_state": "on",
+      "settings": {
+        "Gain": 35
+      }
+    },
+    "DST": {
+      "model": null
+    },
+    "AMP": {
+      "model": null
+    },
+    "CAB": {
+      "model": null
+    },
+    "EQ": {
+      "model": "Bass EQ 2",
+      "always_on": true,
+      "settings": {
+        "50Hz": 1,
+        "120Hz": 2,
+        "400Hz": -2,
+        "800Hz": 0,
+        "4.5kHz": 2,
+        "VOL": 55
+      }
+    },
+    "MOD": {
+      "model": null
+    },
+    "DLY": {
+      "model": null
+    },
+    "RVB": {
+      "model": "Hall",
+      "ctl": true,
+      "ctl_off_state": "off",
+      "ctl_on_state": "on",
+      "settings": {
+        "Mix": 8,
+        "Decay": 30,
+        "Trail": true
+      }
+    }
   }
 }

@@ -1,54 +1,105 @@
 # Werewolves of London (Rhythm Guitar) — Warren Zevon
 
-From *Excitable Boy* (1978). About 104 BPM, est.
-A piano-driven mid-tempo stomp. The D-C-G riff lives in the piano. On guitar, you double that riff with a warm, slightly gritty 70s tone and step out for the solo.
-Built from the song's overall sound. I haven't verified the exact guitars and amps on the record.
-Instrument: Stratocaster (HSS). Position 2 (bridge+middle) for the riff. Bridge humbucker for the solo.
-GP-5 only, Stratocaster (HSS), no pedalboard.
+Revised 2026-10-16 following the approved library audit.
+Type: Song. Instrument: HSS Stratocaster.
+GP-5 only.
+Patch screen name: Werewolf-G. Patch VOL: 50.
+Preset tempo: 104 BPM.
 
-## AMP: Bellman 59N (Bassman Normal) + CAB: EVM112 IR (User IR 5)
+Werewolves of London on HSS Strat. Bellman 59N and the loaded EVM112 IR provide a warm 70s rhythm platform. This amp is a tonal choice; the original session rig has not been verified.
 
-A '59 Bassman normal channel is warm and round with gentle breakup. That's 70s LA studio rock, and it sits under the piano instead of fighting it.
-EVM112 is the loaded guitar cab with a flat, hi-fi response. It keeps Nashville clean tones honest and doesn't add V30 honk.
+## Revision intent
 
-## Module chain
+Keep the musical role of the original patch while reducing redundant gain, excessive space and unclear switching where identified in audit entry 191.
+The module settings and section map below are the active revision.
+Audited capture volumes and Michael’s explicit patch-level adjustments are preserved.
+No hardware audition or measured level match has been performed.
 
-**NR — Gate**, always on.
+## GP-5 settings
+
+Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB.
+The encoded N->S block sits between DST and AMP when a SnapTone is used.
+
+Cab IR: EVM112. Encoded as User IR 5.
+
+## NR - Gate
+
 THRE: 18.
-Catches hum.
+Fixed on. Not on CTL.
+Use the lowest threshold that keeps rests quiet. Check soft notes and held-note decay. This gate is before the drives and amp; it does not directly gate noise generated after it.
 
-**PRE — off.** No compressor. 70s rock rhythm breathes.
+## PRE - Module off
 
-**DST — Green OD (TS-808)**, on CTL.
-Gain: 38, Tone: 55, VOL: 68.
-Pushes the Bassman into a singing 70s lead for the solo.
+Not used.
 
-**AMP — Bellman 59N**, always on.
-Gain: 42, PRES: 50, VOL: 62, Bass: 45, Middle: 58, Treble: 52.
-Gain 42 is warm, gentle grit. Middle 58 gives the riff body. Bass 45 stays out of the piano's left hand.
+## DST - Green OD
 
-**CAB — User IR 5 (EVM112)**, always on.
+Gain: 25.
+Tone: 55.
+VOL: 68.
+CTL assigned. Loads off; first CTL press switches it on.
+Supplies the selected additional drive voice. Use its level and gain as separate controls. A pre-amp boost may add compression instead of a proportional solo-volume increase.
+
+## AMP - Bellman 59N
+
+Gain: 42.
+PRES: 50.
+VOL: 62.
+Bass: 45.
+Middle: 58.
+Treble: 52.
+Fixed on. Not on CTL.
+Provides one fixed amp voice for the complete preset. CTL does not change its knobs or select another amp channel.
+
+## CAB - User IR 5
+
 VOL: 60.
+Fixed on. Not on CTL.
+Keeps the required speaker response in the exported preset. Use the documented loaded IR slot; no extra cab goes after a SnapTone.
 
-**EQ — Guitar EQ 2**, always on.
-100Hz: -3, 500Hz: 0, 1kHz: +1, 3kHz: 0, 6kHz: -2, VOL: 50.
-The low cut is essential with piano. The top is trimmed.
+## EQ - Guitar EQ 2
 
-**MOD — off.**
+100Hz: -3.
+500Hz: 0.
+1kHz: 1.
+3kHz: 0.
+6kHz: -2.
+VOL: 50.
+Fixed on. Not on CTL.
+Shapes note body and cut after the amp/capture. Where assigned to CTL, its output adds the specified lift after the gain stages. Numbers are GP-5 control values, not a calibrated loudness guarantee.
 
-**DLY — Analog**, on CTL.
-Mix: 14, Time: 290ms, F.Back: 18, Trail: on.
-A short 70s tail for the solo.
+## MOD - Module off
 
-**RVB — Room**, always on.
-Mix: 14, Decay: 30, Trail: on.
-A small studio room.
+Not used.
 
-## CTL footswitch
+## DLY - Analog
 
-On CTL: DST (Green OD), DLY (Analog).
+Mix: 14.
+Time: 290.
+Feedback: 18.
+Trail: on.
+CTL assigned. Loads off; first CTL press switches it on.
+Adds repeats only in the listed states. Trail preserves the remaining repeats when this block is bypassed; it does not change delay time or mix.
 
-- **CTL off** — Rhythm. A warm, gritty Bassman doubling the piano riff and the chord stabs. This is the resting state the patch loads into.
-- **CTL on** — Lead. Green OD plus a short analog tail for the solo.
+## RVB - Room
 
-Engage CTL for the solo. Off for the riff. Howl optional.
+Mix: 8.
+Decay: 30.
+Trail: on.
+Fixed on. Not on CTL.
+Adds the specified room or ambient tail. The revised mix keeps the initial note audible. Trail behavior follows the saved setting.
+
+## Switching and section map
+
+CTL blocks: DST, DLY.
+- CTL off / loaded state: Rhythm. GP-5 active: NR, AMP, CAB, EQ, RVB.
+- First CTL press: Lead. GP-5 active: NR, DST, AMP, CAB, EQ, DLY, RVB.
+- Press CTL again to return to the loaded block pattern, provided no shared MIDI block has been changed.
+
+## Revision record
+
+Approved audit entry 191.
+- DST Gain: 38 -> 25.
+- RVB Mix: 14 -> 8.
+Pre-revision JSON, Markdown and original file hashes are preserved in Documents/patch-audit-2026-10-16/inventory.json and implementation-manifest.json.
+The site piece title and on-disk filenames stay stable; only the short pedal display name may change.

@@ -1,0 +1,81 @@
+{
+  "patch_name": "XmasTruce",
+  "patch_vol": 50,
+  "bpm": 80,
+  "ir": {
+    "name": "V30112 (confirmed User IR 10)"
+  },
+  "modules": {
+    "NR": {
+      "model": "Gate",
+      "always_on": true,
+      "settings": {
+        "THRE": 21
+      }
+    },
+    "PRE": {
+      "model": null
+    },
+    "DST": {
+      "model": null
+    },
+    "AMP": {
+      "model": "Eagle 120",
+      "always_on": true,
+      "settings": {
+        "Gain": 48,
+        "PRES": 47,
+        "VOL": 50,
+        "Bass": 46,
+        "Middle": 60,
+        "Treble": 52
+      }
+    },
+    "CAB": {
+      "model": "User IR 10",
+      "always_on": true,
+      "settings": {
+        "VOL": 50
+      }
+    },
+    "EQ": {
+      "model": "Guitar EQ 1",
+      "ctl": true,
+      "ctl_off_state": "off",
+      "ctl_on_state": "on",
+      "settings": {
+        "125Hz": -2,
+        "400Hz": 0,
+        "800Hz": 2,
+        "1.6kHz": 2,
+        "4kHz": -1,
+        "VOL": 54
+      }
+    },
+    "MOD": {
+      "model": null
+    },
+    "DLY": {
+      "model": "Analog",
+      "ctl": true,
+      "ctl_off_state": "off",
+      "ctl_on_state": "on",
+      "settings": {
+        "Mix": 18,
+        "Time": 470,
+        "Feedback": 25,
+        "Trail": true
+      }
+    },
+    "RVB": {
+      "model": "Plate",
+      "always_on": true,
+      "settings": {
+        "Mix": 10,
+        "Decay": 33,
+        "Damp": 58,
+        "Trail": true
+      }
+    }
+  }
+}

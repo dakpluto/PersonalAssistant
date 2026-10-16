@@ -1,51 +1,98 @@
 # TheGambler-KR — The Gambler by Kenny Rogers
 
+Revised 2026-10-16 following the approved library audit.
+Type: Song. Instrument: Sire V7 2nd Generation 5-string fretless, flatwounds; run passive.
+GP-5 only.
+Patch screen name: The Gamble. Patch VOL: 50.
+Preset tempo: 104 BPM.
+
 *The Gambler*, 1978. ~104 BPM, est.
 This is a story-song, not a groove showcase — the bass job is to sit under Rogers' vocal and keep the train-track rhythm moving without drawing attention to itself. Warm, round, steady. No drive anywhere.
 GP-5 only, Sire fretless (Passive), no pedalboard.
 
-## Module chain
+## Revision intent
 
-**NR — Gate**, always on.
-THRE: 20. Light touch — just enough to clean up noise floor on a passive fretless, nothing aggressive since there's no gain stage generating hiss.
+Keep the musical role of the original patch while reducing redundant gain, excessive space and unclear switching where identified in audit entry 115.
+The module settings and section map below are the active revision.
+Audited capture volumes and Michael’s explicit patch-level adjustments are preserved.
+No hardware audition or measured level match has been performed.
 
-**PRE — Micro Boost**, on CTL.
-Gain: 35 when engaged.
-Off for the verse-groove storytelling sections, on for the "know when to hold 'em" chorus hook — same amp tone throughout, just a touch louder and more present for the hook line.
+## GP-5 settings
 
-**DST — off.**
-No drive on this patch. The song is warm and clean start to finish.
+Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB.
+The encoded N->S block sits between DST and AMP when a SnapTone is used.
 
-**AMP/CAB — NAM SnapTone, slot 51: CleanB15** (always on)
-- Built from the `Ampeg B18 - Head DI - Bass Chan - Vol 2.5 (B-18N)` NAM and the Apg115 IR, combined into one snaptone.
-- Real Ampeg B-18N fliptop (the B-15 preamp circuit), captured clean at volume 2.5, into the Apg115 B-15 cab IR.
-- 1978 Nashville storytelling song. Clean B-15, round and simple.
-- Gain: 50, VOL: 80, Bass: 60, Middle: 50, Treble: 45
-- Gain 50: the capture as built.
-- Bass 60: more low end.
-- Middle 50: flat.
-- Treble 45: top end pulled back a little.
-- VOL 80: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
-- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 51 directly.
+AMP/CAB replacement: SnapTone CleanB15 (slot 51): Ampeg B18 - Head DI - Bass Chan - Vol 2.5 (B-18N) + Apg115.
+Slot: 51. Always on.
+Gain: 50, VOL: 80, Bass: 60, Middle: 50, Treble: 45.
+AMP and CAB are both off; the capture already includes its cab/DI character.
+The capture voice is fixed across CTL states. Audited VOL is preserved for this slot.
 
-**EQ — Bass EQ 1**, always on.
-33Hz: +3, 150Hz: +4, 600Hz: -2, 2kHz: -3, 8kHz: +2, VOL: 50.
-Small low-end reinforcement at 33/150Hz for warmth and weight, a gentle scoop through 600Hz-2kHz to keep things from getting boxy/honky, and a small lift at 8kHz so fretless finger attack still reads clearly against the vocal.
+## NR - Gate
 
-**MOD — off.** No modulation — this tone stays simple and direct, not textural.
+THRE: 8.
+Fixed on. Not on CTL.
+Use the lowest threshold that keeps rests quiet. Check soft notes and held-note decay. This gate is before the drives and amp; it does not directly gate noise generated after it.
 
-**DLY — off.** Straight, steady part. No delay.
+## PRE - Micro Boost
 
-**RVB — Room**, on CTL.
-Mix: 20, Decay: 35, Trail: true.
-Off for the verses — dry, close, intimate storytelling tone.
-On for the chorus hook, alongside the boost — a little more air and size without turning into a wash.
+Gain: 35.
+CTL assigned. Loads off; first CTL press switches it on.
+Controls the source dynamics or adds the specified push/filter before distortion and amp processing. The settings stay fixed; only its on/off state can change.
 
-## CTL footswitch
+## DST - Module off
 
-Two modules on CTL: PRE (Micro Boost) and RVB (Room).
+Not used.
 
-- **CTL off** — verse/storytelling sound. Dry, warm, understated. This is the resting state the patch loads into.
-- **CTL on** — chorus hook sound ("know when to hold 'em"). Boosted front end plus a touch of room reverb, same amp tone, slightly bigger for the hook line.
+## AMP - Module off
 
-This song doesn't ask for a dramatic split — the whole point is restraint — so the CTL move here is small on purpose. Engage going into the chorus hook, back off for verses.
+Not used.
+
+## CAB - Module off
+
+Not used.
+
+## EQ - Bass EQ 1
+
+33Hz: 0.
+150Hz: 2.
+600Hz: -2.
+2kHz: 0.
+8kHz: 2.
+VOL: 50.
+Fixed on. Not on CTL.
+Shapes note body and cut after the amp/capture. Where assigned to CTL, its output adds the specified lift after the gain stages. Numbers are GP-5 control values, not a calibrated loudness guarantee.
+
+## MOD - Module off
+
+Not used.
+
+## DLY - Module off
+
+Not used.
+
+## RVB - Room
+
+Mix: 6.
+Decay: 35.
+Trail: on.
+CTL assigned. Loads off; first CTL press switches it on.
+Adds the specified room or ambient tail. The revised mix keeps the initial note audible. Trail behavior follows the saved setting.
+
+## Switching and section map
+
+CTL blocks: PRE, RVB.
+- CTL off / loaded state: verse/storytelling sound. GP-5 active: NR, EQ, N->S.
+- First CTL press: chorus hook sound ("know when to hold 'em"). GP-5 active: NR, PRE, EQ, RVB, N->S.
+- Press CTL again to return to the loaded block pattern, provided no shared MIDI block has been changed.
+
+## Revision record
+
+Approved audit entry 115.
+- NR THRE: 20 -> 8.
+- EQ 33Hz: 3 -> 0.
+- EQ 150Hz: 4 -> 2.
+- EQ 2kHz: -3 -> 0.
+- RVB Mix: 20 -> 6.
+Pre-revision JSON, Markdown and original file hashes are preserved in Documents/patch-audit-2026-10-16/inventory.json and implementation-manifest.json.
+The site piece title and on-disk filenames stay stable; only the short pedal display name may change.

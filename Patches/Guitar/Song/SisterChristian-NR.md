@@ -1,56 +1,203 @@
 # Sister Christian - Night Ranger
 
+Revised 2026-10-16 following the approved library audit.
+Type: Song. Instrument: HSS Stratocaster.
+Full board. Board Option: American Sound (bypassed; retained for legacy full-board builds).
+Patch screen name: Sister Chr. Patch VOL: 55.
+Preset tempo: 101 BPM.
+
 Stratocaster (HSS), Full Board. Brad Gillis played this on a Strat-style guitar with a Floyd Rose, so the HSS Strat is the right instrument for it. Rhythm sound is a clean-to-crunch Marshall push kept glossy with light chorus. Lead sound kicks in a boost and delay for the solo breaks. Tempo: 101 BPM.
 
-## GP-5 Settings
+## Revision intent
 
-Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB
+Keep the musical role of the original patch while reducing redundant gain, excessive space and unclear switching where identified in audit entry 181.
+The module settings and section map below are the active revision.
+Audited capture volumes and Michael’s explicit patch-level adjustments are preserved.
+No hardware audition or measured level match has been performed.
 
-- **NR — Gate.** THRE 30. Keeps the compressed, mid-gain chain quiet between chords. Always on.
-- **PRE — COMP4.** Sustain 45, Attack 55, VOL 100, Clip 40. Glassy 80s compression, evens out pick attack on the arpeggiated verse parts. Always on.
-- **DST — La Charger.** Gain 60, Tone 65, VOL 80. Off for rhythm — the amp's own breakup carries the verse/chorus. On for lead — pushes extra gain and volume to cut through for the solo. On CTL.
-**AMP/CAB — NAM SnapTone, slot 71: HotMarshall** (always on)
-- Built from the `JCM800 2203 - P5 B5 M5 T5 MV6 G7 - AZG - 700` NAM and the BlendOfAll_dc (Marshall 1960AV) IR, combined into one snaptone.
-- Real JCM800 2203 at Gain 7, Master 6: hot rhythm crunch. Into a 1960AV 4x12 mic blend.
-- 80s rock rhythm on a hot JCM800. The CTL drive pushes it into lead.
-- Gain: 43, VOL: 40, Bass: 55, Middle: 60, Treble: 62
-- Gain 43: noticeably under default. This part wants less push than the other HotMarshall patches.
-- Bass 55: a touch more low end.
-- Middle 60: more midrange.
-- Treble 62: more top end.
-- VOL 40: the level Michael set for this snaptone in the 2026-10-01 VOL audit. Trim here if the patch jumps in level against your others.
-- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 71 directly.
+## GP-5 settings
 
-- **EQ — Guitar EQ 2.** 100Hz 0, 500Hz +5, 1kHz +10, 3kHz +12, 6kHz +5, VOL 65. Off for rhythm — flat, don't fight the amp tone. On for lead — mid/presence push so the solo sits on top of the mix. On CTL.
-- **MOD — Off.** Chorus duty is handled upstream by the Joyo Narcissus, so the GP-5 doesn't double the chorus into mud.
-- **DLY — Analog.** Mix 25, Time 380ms, Feedback 20, Trail on. Off for rhythm — keep the verse dry and direct. On for lead — adds width and a slap of ambience behind the solo. On CTL.
-- **RVB — Room.** Mix 22, Decay 35, Trail on. Modest room, gives the ballad some air without getting swampy. Always on.
+Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB.
+The encoded N->S block sits between DST and AMP when a SnapTone is used.
 
-## CTL Switch
+AMP/CAB replacement: SnapTone JCM800Clean (slot 80): JCM800 2203 - P5 B5 M5 T5 MV5 G3 - AZG - 700 + BlendOfAll_dc (Marshall 1960AV).
+Slot: 80. Always on.
+Gain: 45, VOL: 60, Bass: 55, Middle: 60, Treble: 62.
+AMP and CAB are both off; the capture already includes its cab/DI character.
+The capture voice is fixed across CTL states. Audited VOL is preserved for this slot.
 
-- **CTL Off** = rhythm/verse sound.
-- **CTL On** = lead/solo sound.
-- Modules on CTL: DST, EQ, DLY. All three flip together on the same footswitch press.
-- Use CTL Off for the verses and the main rhythm chorus. Switch to CTL On for the guitar solo and any other lead break.
+## NR - Gate
 
-## MIDI toggles
+THRE: 30.
+Fixed on. Not on CTL.
+Use the lowest threshold that keeps rests quiet. Check soft notes and held-note decay. This gate is before the drives and amp; it does not directly gate noise generated after it.
 
-MIDI = True (added 2026-10-12). With no MIDI controller connected, the patch loads and plays exactly as before. MIDI adds single-block toggles on top of CTL.
+## PRE - Module off
 
-On MIDI: DST (La Charger), also on CTL.
+Not used.
 
-Sounds:
-- **Verse** (default). CTL off. The HotMarshall's own clean-to-crunch push, glossy and compressed under the piano.
-- **"Motoring" chorus.** CTL off, MIDI DST on. The crunch box pushes the power chords harder for the big chorus hits, without the solo EQ lift and delay.
-- **Solo** (CTL on). DST + EQ + delay. Stack the King of Kings Right channel on the board as before.
-- **Shared CTL/MIDI blocks:** CTL flips every block assigned to it, whatever state it's in (confirmed by Michael, 2026-10-12). A CTL block you switched by MIDI ends up the opposite of the designed CTL sound. So before pressing CTL, switch it back by MIDI. Changing a block by MIDI *after* pressing CTL is always safe.
+## DST - La Charger
 
+Gain: 40.
+Tone: 55.
+VOL: 60.
+CTL assigned. Loads off; first CTL press switches it on.
+Also on an individual MIDI toggle.
+Supplies the selected additional drive voice. Use its level and gain as separate controls. A pre-amp boost may add compression instead of a proportional solo-volume increase.
 
-## Full Pedalboard
+## AMP - Module off
 
-1. **Flamma FS-08 Octave** — Off. No octave content in this song.
-2. **Donner Ultimate Comp** — On, all song. COMP ~3/10 (light squeeze), TONE: Normal, LEVEL: unity (~12 o'clock). Adds a second layer of glassy compression ahead of everything else, evening out pick attack on the verse chords.
-3. **Donner Stylish Fuzz** — Off. Not a fuzz tone, don't need it.
-4. **Joyo King of Kings** — Left channel: bypassed all song, footswitch off. Right channel: bypassed during rhythm, footswitch engaged only for the lead/solo sections — Volume ~7/10, Gain ~5/10, Tone ~6/10, Clipping toggle in the brighter/harder position for extra edge, Feedback toggle in the higher-gain position for extra sustain. Acts as a boost in front of the GP-5's DST for the solo — stacks with CTL On.
-5. **Joyo Narcissus** — On, all song, Vintage mode. Depth ~2/10, Rate ~3/10 (slow, subtle), Width ~4/10 (narrow — keep it subtle, not stereo-huge). This is the song's chorus voice — that's why the GP-5's own MOD is off.
-6. **Valeton GP-5** — as programmed above.
+Not used.
+
+## CAB - Module off
+
+Not used.
+
+## EQ - Guitar EQ 2
+
+100Hz: 0.
+500Hz: 1.
+1kHz: 2.
+3kHz: 3.
+6kHz: 0.
+VOL: 53.
+CTL assigned. Loads off; first CTL press switches it on.
+Shapes note body and cut after the amp/capture. Where assigned to CTL, its output adds the specified lift after the gain stages. Numbers are GP-5 control values, not a calibrated loudness guarantee.
+
+## MOD - Module off
+
+Not used.
+
+## DLY - Analog
+
+Mix: 18.
+Time: 380.
+Feedback: 20.
+Trail: on.
+CTL assigned. Loads off; first CTL press switches it on.
+Adds repeats only in the listed states. Trail preserves the remaining repeats when this block is bypassed; it does not change delay time or mix.
+
+## RVB - Room
+
+Mix: 10.
+Decay: 35.
+Trail: on.
+Fixed on. Not on CTL.
+Adds the specified room or ambient tail. The revised mix keeps the initial note audible. Trail behavior follows the saved setting.
+
+## Switching and section map
+
+CTL blocks: DST, EQ, DLY.
+- CTL off / loaded state: Cleaner verse/rhythm. GP-5 active: NR, RVB, N->S.
+- First CTL press: Lead solo. GP-5 active: NR, DST, EQ, DLY, RVB, N->S.
+- Press CTL again to return to the loaded block pattern, provided no shared MIDI block has been changed.
+
+MIDI toggles: DST.
+MIDI mapping lives on the controller/device, not in the .prst.
+- DST La Charger: loads off; toggle to add this block independently.
+Before CTL, undo MIDI changes to shared CTL blocks so they match the preceding CTL pattern. CTL flips current states, not a stored scene. After pressing CTL, apply individual MIDI changes.
+- DST-only alternative from loaded state: CTL off, MIDI DST on; other MIDI blocks at their load states. GP-5 active: NR, DST, RVB, N->S. Board switches unchanged.
+
+Named sounds (from an unmodified baseline CTL/MIDI pattern):
+- Verse: CTL off; MIDI at the corresponding baseline pattern; Base board states as listed below. Active GP-5: NR, RVB, N->S.
+- Motoring chorus: CTL off; MIDI DST on; Both King of Kings channels off; Narcissus on. Active GP-5: NR, DST, RVB, N->S.
+- Solo: CTL on; MIDI at the corresponding baseline pattern; Both King of Kings channels off; Narcissus on. Active GP-5: NR, DST, EQ, DLY, RVB, N->S.
+
+## Full pedalboard
+
+Flamma FS-08 Octave -> Donner Ultimate Comp -> Donner Stylish Fuzz -> Joyo King of Kings -> Joyo American Sound -> Joyo Narcissus -> Valeton GP-5.
+Board settings are set by hand and are not encoded in the .prst.
+All numeric pedal positions use the existing 0–100 position shorthand unless a clock position is specified.
+
+## Flamma FS-08 Octave
+
+Bypassed throughout.
+-2OCT: 0.
+-OCT: 0.
++OCT: 0.
++2OCT: 0.
+Dry: 100.
+
+## Donner Ultimate Comp
+
+On throughout.
+COMP: 30.
+TONE: 50.
+LEVEL: unity.
+Mode: NORMAL.
+
+## Donner Stylish Fuzz
+
+Bypassed throughout.
+Sustain: 25.
+Treble: 50.
+Bass: 50.
+Volume: 50.
+
+## King of Kings Left
+
+Bypassed throughout.
+Volume: 50.
+Gain: 20.
+Tone: 50.
+Clipping toggle: Softer position.
+Feedback toggle: Standard position.
+
+## King of Kings Right
+
+Bypassed throughout.
+Volume: 70.
+Gain: 50.
+Tone: 60.
+Clipping toggle: Harder position.
+Feedback toggle: Higher-gain position.
+
+## Joyo American Sound
+
+Bypassed throughout.
+Level: 50.
+Drive: 10.
+Voice: 50.
+Low: 50.
+Mid: 50.
+High: 50.
+
+## Joyo Narcissus
+
+On throughout.
+Width: 40.
+Depth: 20.
+Rate: 30.
+Mode: Vintage.
+
+## Board choreography
+
+- Flamma FS-08 Octave: Bypassed throughout.
+- Donner Ultimate Comp: On throughout.
+- Donner Stylish Fuzz: Bypassed throughout.
+- King of Kings Left: Bypassed throughout.
+- King of Kings Right: Bypassed throughout.
+- Joyo American Sound: Bypassed throughout.
+- Joyo Narcissus: On throughout.
+Set the board switches for the section you are entering. Intro-only or clean-only effects may need to start on. Return each pedal to its documented state at the next section. Board pedals are independent of CTL.
+
+## Revision record
+
+Approved audit entry 181.
+- Amp/cab foundation: SnapTone 71 -> SnapTone 80.
+- SnapTone Gain: 43 -> 45.
+- SnapTone VOL: 40 -> 60.
+- PRE: COMP4 -> off.
+- DST Gain: 60 -> 40.
+- DST Tone: 65 -> 55.
+- DST VOL: 80 -> 60.
+- EQ 500Hz: 5 -> 1.
+- EQ 1kHz: 10 -> 2.
+- EQ 3kHz: 12 -> 3.
+- EQ 6kHz: 5 -> 0.
+- EQ VOL: 65 -> 53.
+- DLY Mix: 25 -> 18.
+- RVB Mix: 22 -> 10.
+- Board King of Kings Right: ; Bypassed throughout.
+Pre-revision JSON, Markdown and original file hashes are preserved in Documents/patch-audit-2026-10-16/inventory.json and implementation-manifest.json.
+The site piece title and on-disk filenames stay stable; only the short pedal display name may change.

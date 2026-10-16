@@ -1,56 +1,110 @@
 # Honky Tonk Truth (Rhythm Guitar) — Brooks & Dunn
 
+Revised 2026-10-16 following the approved library audit.
+Type: Song. Instrument: HSS Stratocaster.
+GP-5 only.
+Patch screen name: HTTruth-Gt. Patch VOL: 50.
+Preset tempo: 160 BPM.
+
 Released in 1997 as a single from *The Greatest Hits Collection*. About 160 BPM, est.
 A fast, rowdy dancehall number. Snappy twang rhythm, chicken-pickin', and a hot solo.
 Built from the song's overall sound. I haven't verified the exact guitars and amps on the record.
 Instrument: Stratocaster (HSS). Position 2 (bridge+middle) for the rhythm. Bridge humbucker for the solo.
 GP-5 only, Stratocaster (HSS), no pedalboard.
 
-## Module chain
+## Revision intent
 
-**NR — Gate**, always on.
+Keep the musical role of the original patch while reducing redundant gain, excessive space and unclear switching where identified in audit entry 161.
+The module settings and section map below are the active revision.
+Audited capture volumes and Michael’s explicit patch-level adjustments are preserved.
+No hardware audition or measured level match has been performed.
+
+## GP-5 settings
+
+Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB.
+The encoded N->S block sits between DST and AMP when a SnapTone is used.
+
+AMP/CAB replacement: SnapTone EdgyTwang (slot 63): EDGY - Fender Deluxe Reverb 1965 [Hyper Accuracy] + Origin Effects Brown Deluxe 1x12 Medium Mix.
+Slot: 63. Always on.
+Gain: 50, VOL: 70, Bass: 44, Middle: 55, Treble: 60.
+AMP and CAB are both off; the capture already includes its cab/DI character.
+The capture voice is fixed across CTL states. Audited VOL is preserved for this slot.
+
+## NR - Gate
+
 THRE: 22.
-Tight stops.
+Fixed on. Not on CTL.
+Use the lowest threshold that keeps rests quiet. Check soft notes and held-note decay. This gate is before the drives and amp; it does not directly gate noise generated after it.
 
-**PRE — COMP4 (Keeley C4)**, always on.
-Sustain: 52, Attack: 45, Clip: 40, VOL: 58.
-Heavy-ish compression for the chicken-pickin' snap. Attack 45 keeps the pick click.
+## PRE - COMP4
 
-**DST — Green OD (TS-808)**, on CTL.
-Gain: 35, Tone: 60, VOL: 68.
-A Green OD for the solo. It's mid-forward so the lead cuts over fiddle and steel. VOL 68 adds about +3dB.
+Sustain: 40.
+Attack: 45.
+Clip: 40.
+VOL: 58.
+Fixed on. Not on CTL.
+Controls the source dynamics or adds the specified push/filter before distortion and amp processing. The settings stay fixed; only its on/off state can change.
 
-**AMP/CAB — NAM SnapTone, slot 63: EdgyTwang** (always on)
-- Built from the `EDGY - Fender Deluxe Reverb 1965 [Hyper Accuracy]` NAM and the Origin Effects Brown Deluxe 1x12 Medium Mix IR, combined into one snaptone.
-- Real 1965 Deluxe Reverb at the "edgy" setting, just starting to break up, into the Brown Deluxe 1x12.
-- Honky-tonk twang with hair on it. Edgy Deluxe.
-- Gain: 50, VOL: 70, Bass: 44, Middle: 55, Treble: 60
-- Gain 50: the capture as built.
-- Bass 44: low end pulled back noticeably.
-- Middle 55: a touch more midrange.
-- Treble 60: more top end.
-- VOL 70: the level Michael set for this snaptone in the 2026-10-01 VOL audit. Trim here if the patch jumps in level against your others.
-- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 63 directly.
+## DST - Green OD
 
-**EQ — Guitar EQ 2**, always on.
-100Hz: -3, 500Hz: -1, 1kHz: +1, 3kHz: +2, 6kHz: -1, VOL: 50.
-Tight lows and a 3kHz snap.
+Gain: 25.
+Tone: 60.
+VOL: 68.
+CTL assigned. Loads off; first CTL press switches it on.
+Supplies the selected additional drive voice. Use its level and gain as separate controls. A pre-amp boost may add compression instead of a proportional solo-volume increase.
 
-**MOD — off.**
+## AMP - Module off
 
-**DLY — Slapback**, always on.
-Mix: 18, Time: 90ms, F.Back: 6, Trail: on.
-A 90ms slap for the classic country double.
+Not used.
 
-**RVB — Spring**, always on.
-Mix: 12, Decay: 30, Trail: on.
-A dash of spring.
+## CAB - Module off
 
-## CTL footswitch
+Not used.
 
-On CTL: DST (Green OD).
+## EQ - Guitar EQ 2
 
-- **CTL off** — Rhythm. Snappy, compressed Deluxe twang with slap for the chucking and fills. This is the resting state the patch loads into.
-- **CTL on** — Lead. Green OD into the Deluxe for the solos.
+100Hz: -3.
+500Hz: -1.
+1kHz: 1.
+3kHz: 2.
+6kHz: -1.
+VOL: 50.
+Fixed on. Not on CTL.
+Shapes note body and cut after the amp/capture. Where assigned to CTL, its output adds the specified lift after the gain stages. Numbers are GP-5 control values, not a calibrated loudness guarantee.
 
-Engage CTL for the solos. Stay off for the rhythm.
+## MOD - Module off
+
+Not used.
+
+## DLY - Slapback
+
+Mix: 12.
+Time: 90.
+F.Back: 6.
+Trail: on.
+Fixed on. Not on CTL.
+Adds repeats only in the listed states. Trail preserves the remaining repeats when this block is bypassed; it does not change delay time or mix.
+
+## RVB - Spring
+
+Mix: 12.
+Decay: 30.
+Trail: on.
+Fixed on. Not on CTL.
+Adds the specified room or ambient tail. The revised mix keeps the initial note audible. Trail behavior follows the saved setting.
+
+## Switching and section map
+
+CTL blocks: DST.
+- CTL off / loaded state: Rhythm. GP-5 active: NR, PRE, EQ, DLY, RVB, N->S.
+- First CTL press: Lead. GP-5 active: NR, PRE, DST, EQ, DLY, RVB, N->S.
+- Press CTL again to return to the loaded block pattern, provided no shared MIDI block has been changed.
+
+## Revision record
+
+Approved audit entry 161.
+- PRE Sustain: 52 -> 40.
+- DST Gain: 35 -> 25.
+- DLY Mix: 18 -> 12.
+Pre-revision JSON, Markdown and original file hashes are preserved in Documents/patch-audit-2026-10-16/inventory.json and implementation-manifest.json.
+The site piece title and on-disk filenames stay stable; only the short pedal display name may change.

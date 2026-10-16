@@ -1,54 +1,105 @@
 # Heads Carolina, Tails California (Rhythm Guitar) — Jo Dee Messina
 
+Revised 2026-10-16 following the approved library audit.
+Type: Song. Instrument: HSS Stratocaster.
+GP-5 only.
+Patch screen name: HeadsCarol. Patch VOL: 50.
+Preset tempo: 118 BPM.
+
 Jo Dee Messina, 90s country-pop. About 118 BPM, est. Bright, bouncy country-rock rhythm guitar: a crisp, slightly crunchy strum with a little twang, sitting on the groove. Built from the genre's general sound; the exact guitar and amp on the record are not verified.
 Instrument: Stratocaster (HSS). Use the bridge or bridge-and-middle position for the twang.
 GP-5 only, Stratocaster (HSS), no pedalboard.
 
-## Module chain
+## Revision intent
 
-**NR — Gate**, always on.
+Keep the musical role of the original patch while reducing redundant gain, excessive space and unclear switching where identified in audit entry 159.
+The module settings and section map below are the active revision.
+Audited capture volumes and Michael’s explicit patch-level adjustments are preserved.
+No hardware audition or measured level match has been performed.
+
+## GP-5 settings
+
+Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB.
+The encoded N->S block sits between DST and AMP when a SnapTone is used.
+
+AMP/CAB replacement: SnapTone EdgyTwang (slot 63): EDGY - Fender Deluxe Reverb 1965 [Hyper Accuracy] + Origin Effects Brown Deluxe 1x12 Medium Mix.
+Slot: 63. Always on.
+Gain: 51, VOL: 70, Bass: 45, Middle: 55, Treble: 58.
+AMP and CAB are both off; the capture already includes its cab/DI character.
+The capture voice is fixed across CTL states. Audited VOL is preserved for this slot.
+
+## NR - Gate
+
 THRE: 15.
-Bright, edge-of-breakup tone. 15 quiets single-coil noise between strums.
+Fixed on. Not on CTL.
+Use the lowest threshold that keeps rests quiet. Check soft notes and held-note decay. This gate is before the drives and amp; it does not directly gate noise generated after it.
 
-**PRE — COMP**, always on.
-Sustain: 40, VOL: 55.
-Country-style compression. 40 evens out the strums and adds snap.
+## PRE - COMP
 
-**DST — Green OD**, on CTL.
-Gain: 30, Tone: 60, VOL: 62.
-On CTL. Pushes the amp for a bigger chorus strum. Tone 60 keeps the twang.
+Sustain: 40.
+VOL: 55.
+Fixed on. Not on CTL.
+Controls the source dynamics or adds the specified push/filter before distortion and amp processing. The settings stay fixed; only its on/off state can change.
 
-**AMP/CAB — NAM SnapTone, slot 63: EdgyTwang** (always on)
-- Built from the `EDGY - Fender Deluxe Reverb 1965 [Hyper Accuracy]` NAM and the Origin Effects Brown Deluxe 1x12 Medium Mix IR, combined into one snaptone.
-- Real 1965 Deluxe Reverb at the "edgy" setting, just starting to break up, into the Brown Deluxe 1x12.
-- Country-pop twang with a bit of grit. Edgy Deluxe.
-- Gain: 51, VOL: 70, Bass: 45, Middle: 55, Treble: 58
-- Gain 51: a little over default. This part wants more push than the other EdgyTwang patches.
-- Bass 45: low end pulled back a little.
-- Middle 55: a touch more midrange.
-- Treble 58: more top end.
-- VOL 70: the level Michael set for this snaptone in the 2026-10-01 VOL audit. Trim here if the patch jumps in level against your others.
-- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 63 directly.
+## DST - Green OD
 
-**EQ — Guitar EQ 1**, always on.
-125Hz: -1, 400Hz: -1, 800Hz: 0, 1.6kHz: +2, 4kHz: +2, VOL: +50.
-Slight low cut for a tight strum. +2 at 1.6kHz and 4kHz adds the twang and pick snap.
+Gain: 20.
+Tone: 55.
+VOL: 62.
+CTL assigned. Loads off; first CTL press switches it on.
+Supplies the selected additional drive voice. Use its level and gain as separate controls. A pre-amp boost may add compression instead of a proportional solo-volume increase.
 
-**MOD — off.** No modulation. The strum stays direct.
+## AMP - Module off
 
-**DLY — Slapback**, always on.
-Mix: 12, Time: 110, F.Back: 8, Trail: off.
-Always on. A short slap gives that country strum some depth. Mix 12 and F.Back 8 keep it to a single quiet echo.
+Not used.
 
-**RVB — Spring**, always on.
-Mix: 15, Decay: 25, Trail: off.
-Always on. Spring reverb is the classic country pairing. Short decay keeps the strum tight.
+## CAB - Module off
 
-## CTL footswitch
+Not used.
 
-On CTL: DST (Green OD).
+## EQ - Guitar EQ 1
 
-- **CTL off** — Verse rhythm. Crisp, clean-crunch strum with a light slapback and spring reverb. This is the resting state the patch loads into.
-- **CTL on** — Chorus rhythm. Green OD pushes the amp for a bigger, fatter strum.
+125Hz: -1.
+400Hz: -1.
+800Hz: 0.
+1.6kHz: 2.
+4kHz: 2.
+VOL: 50.
+Fixed on. Not on CTL.
+Shapes note body and cut after the amp/capture. Where assigned to CTL, its output adds the specified lift after the gain stages. Numbers are GP-5 control values, not a calibrated loudness guarantee.
 
-Engage CTL for the chorus. Back off for the verse.
+## MOD - Module off
+
+Not used.
+
+## DLY - Slapback
+
+Mix: 12.
+Time: 110.
+F.Back: 8.
+Trail: off.
+Fixed on. Not on CTL.
+Adds repeats only in the listed states. Trail preserves the remaining repeats when this block is bypassed; it does not change delay time or mix.
+
+## RVB - Spring
+
+Mix: 15.
+Decay: 25.
+Trail: off.
+Fixed on. Not on CTL.
+Adds the specified room or ambient tail. The revised mix keeps the initial note audible. Trail behavior follows the saved setting.
+
+## Switching and section map
+
+CTL blocks: DST.
+- CTL off / loaded state: Verse rhythm. GP-5 active: NR, PRE, EQ, DLY, RVB, N->S.
+- First CTL press: Chorus rhythm. GP-5 active: NR, PRE, DST, EQ, DLY, RVB, N->S.
+- Press CTL again to return to the loaded block pattern, provided no shared MIDI block has been changed.
+
+## Revision record
+
+Approved audit entry 159.
+- DST Gain: 30 -> 20.
+- DST Tone: 60 -> 55.
+Pre-revision JSON, Markdown and original file hashes are preserved in Documents/patch-audit-2026-10-16/inventory.json and implementation-manifest.json.
+The site piece title and on-disk filenames stay stable; only the short pedal display name may change.

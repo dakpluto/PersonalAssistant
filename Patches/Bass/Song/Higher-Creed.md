@@ -1,78 +1,172 @@
 # Higher — Creed
 
+Revised 2026-10-16 following the approved library audit.
+Type: Song. Instrument: Harley Benton passive 5-string P/J.
+Full board. Board Option: American Sound (bypassed; retained for legacy full-board builds).
+Patch screen name: B-HigherCr. Patch VOL: 55.
+Preset tempo: 85 BPM.
+
 Bass: Harley Benton P/J, 5-string, passive. Full board.
 From *Human Clay* (1999), ~85 BPM.
 Brian Marshall's part here follows the classic late-90s post-grunge shape — moody, restrained verses building into a huge, driven "can you take me higher" chorus. Structurally this is close cousins with "Everlong" (same quiet-verse/huge-chorus alt-rock DNA), so this patch leans on the same AMP/DST/CAB recipe that build uses, rather than reinventing the wheel for a genuinely similar job.
 
-CTL off = the restrained verse. CTL on = the big chorus.
+## Revision intent
+
+Keep the musical role of the original patch while reducing redundant gain, excessive space and unclear switching where identified in audit entry 50.
+The module settings and section map below are the active revision.
+Audited capture volumes and Michael’s explicit patch-level adjustments are preserved.
+No hardware audition or measured level match has been performed.
 
 ## GP-5 settings
 
-Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
+Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB.
+The encoded N->S block sits between DST and AMP when a SnapTone is used.
 
-**NR — Gate**
-- THRE: 24
-- Always on. Moderate-high threshold — the NAM below carries real grind, needs cleanup between notes.
+AMP/CAB replacement: SnapTone GrittySVT (slot 57): SVT PUSHED (SVT-CL) + Apg810.
+Slot: 57. Always on.
+Gain: 50, VOL: 55, Bass: 55, Middle: 60, Treble: 60.
+AMP and CAB are both off; the capture already includes its cab/DI character.
+The capture voice is fixed across CTL states. Audited VOL is preserved for this slot.
 
-**PRE — Micro Boost — On CTL**
-- Gain: 58
-- CTL off: bypassed (verse). CTL on: engaged (chorus).
-- Verse stays restrained on its own. Chorus gets a clean push to match the song's own explosion in energy.
+## NR - Gate
 
-**DST — Bass OD**, always on. Gain 63, Blend 75, VOL 62, Bass 55, Treble 58.
-**AMP/CAB — NAM SnapTone, slot 57: GrittySVT** (always on)
-- Built from the `SVT PUSHED (SVT-CL)` NAM and the Apg810 IR, combined into one snaptone.
-- Real Ampeg SVT-CL pushed into grit, into the Apg810 8x10 IR.
-- Post-grunge: moody verses, huge driven choruses. The pushed SVT is the base. DST adds the chorus weight.
-- Gain: 50, VOL: 55, Bass: 55, Middle: 60, Treble: 60
-- Gain 50: the capture as built.
-- Bass 55: a touch more low end.
-- Middle 60: more midrange.
-- Treble 60: more top end.
-- VOL 55: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
-- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 57 directly.
+THRE: 24.
+Fixed on. Not on CTL.
+Use the lowest threshold that keeps rests quiet. Check soft notes and held-note decay. This gate is before the drives and amp; it does not directly gate noise generated after it.
 
-**EQ — Bass EQ 1**
-- 33Hz: +3, 150Hz: 0, 600Hz: -2, 2kHz: +5, 8kHz: +3, VOL: 56
-- Always on, same for both CTL states.
-- +5 at 2kHz and +3 at 8kHz keep this bright and present — post-grunge choruses like this one are guitar-heavy and loud, this part needs real cut to stay heard. -2 at 600Hz keeps it from getting boxy under all that upper-mid push.
+## PRE - Micro Boost
 
-**MOD — Off**
-- No modulation. Straight-ahead post-grunge rock tone.
+Gain: 25.
+CTL assigned. Loads off; first CTL press switches it on.
+Controls the source dynamics or adds the specified push/filter before distortion and amp processing. The settings stay fixed; only its on/off state can change.
 
-**DLY — Off**
-- Not used.
+## DST - Module off
 
-**RVB — Room — On CTL**
-- Mix: 22, Decay: 36, Trail: On
-- CTL off: bypassed (verse). CTL on: engaged (chorus).
-- Verse stays tight and close. Chorus opens up with a touch of room to match the bigger, more anthemic space that section lives in.
+Not used.
 
-## CTL summary
+## AMP - Module off
 
-- **CTL Off — Verse.** Restrained, moody, dry. Sitting back with the vocal.
-- **CTL On — Chorus.** Boost and room reverb engage together. Bigger, more open, matching the song's own explosion in energy.
-- Engage CTL right as the "can you take me higher" chorus hits, disengage back into the next verse.
+Not used.
 
-## Full pedalboard (signal chain order)
+## CAB - Module off
 
-**1. Flamma FS-08 Octave — Bypassed**
-- Footswitch off. No octave layering — this part tracks the song's dynamics directly, an octave stack would clutter that.
+Not used.
 
-**2. Donner Ultimate Comp — Engaged**
-- COMP: 52
-- TONE: 60
-- LEVEL: 58
-- Mode: TREBLE
-- Keeps the verse-to-chorus dynamics consistent within each section. TREBLE mode keeps pick/finger attack bright and audible before it hits the NAM's own drive stage.
+## EQ - Bass EQ 1
 
-**3. Donner Stylish Fuzz — Bypassed**
-- Footswitch off. The NAM's own drive already covers the grit this song needs — a fuzz stacked on top would just mud things out.
+33Hz: 3.
+150Hz: 0.
+600Hz: -2.
+2kHz: 5.
+8kHz: 3.
+VOL: 56.
+Fixed on. Not on CTL.
+Shapes note body and cut after the amp/capture. Where assigned to CTL, its output adds the specified lift after the gain stages. Numbers are GP-5 control values, not a calibrated loudness guarantee.
 
-**4. Joyo Tidal Wave — Bypassed**
-- Footswitch off, Drive/Blend not engaged. Same reasoning — one drive source (the NAM) is enough.
+## MOD - Module off
 
-**5. Joyo Narcissus — Bypassed**
-- Footswitch off. No chorus — matches the MOD-off call on the GP-5. Straight-ahead rock tone throughout.
+Not used.
 
-**6. Valeton GP-5** — see settings above.
+## DLY - Module off
+
+Not used.
+
+## RVB - Room
+
+Mix: 6.
+Decay: 36.
+Trail: on.
+CTL assigned. Loads off; first CTL press switches it on.
+Adds the specified room or ambient tail. The revised mix keeps the initial note audible. Trail behavior follows the saved setting.
+
+## Switching and section map
+
+CTL blocks: PRE, RVB.
+- CTL off / loaded state: the restrained verse. GP-5 active: NR, EQ, N->S.
+- First CTL press: Chorus. GP-5 active: NR, PRE, EQ, RVB, N->S.
+- Press CTL again to return to the loaded block pattern, provided no shared MIDI block has been changed.
+
+## Full pedalboard
+
+Flamma FS-08 Octave -> Donner Ultimate Comp -> Donner Stylish Fuzz -> Joyo Tidal Wave -> Joyo American Sound -> Joyo Narcissus -> Valeton GP-5.
+Board settings are set by hand and are not encoded in the .prst.
+All numeric pedal positions use the existing 0–100 position shorthand unless a clock position is specified.
+
+## Flamma FS-08 Octave
+
+Bypassed throughout.
+-2OCT: 0.
+-OCT: 0.
++OCT: 0.
++2OCT: 0.
+Dry: 100.
+
+## Donner Ultimate Comp
+
+On throughout.
+COMP: 52.
+TONE: 60.
+LEVEL: 58.
+Mode: TREBLE.
+
+## Donner Stylish Fuzz
+
+Bypassed throughout.
+Sustain: 25.
+Treble: 50.
+Bass: 50.
+Volume: 50.
+
+## Joyo Tidal Wave
+
+Drive off throughout; preamp/EQ/Level remain active.
+Drive: 15.
+Blend: 20.
+Presence: 50.
+Level: 50.
+Treble: 50.
+Middle: 50.
+Bass: 50.
+Mid-Frequency: 500Hz.
+Bass-Shift: 80Hz.
+Cab-Sim (DI out): Off.
+Ground Lift: Off.
+The footswitch toggles drive only. Preamp EQ and Level stay active in both states. Cab-Sim/Ground Lift affect the DI path; main instrument output is unchanged.
+
+## Joyo American Sound
+
+Bypassed throughout.
+Level: 50.
+Drive: 10.
+Voice: 50.
+Low: 50.
+Mid: 50.
+High: 50.
+
+## Joyo Narcissus
+
+Bypassed throughout.
+Width: 30.
+Depth: 20.
+Rate: 20.
+Mode: Vintage.
+
+## Board choreography
+
+- Flamma FS-08 Octave: Bypassed throughout.
+- Donner Ultimate Comp: On throughout.
+- Donner Stylish Fuzz: Bypassed throughout.
+- Joyo Tidal Wave: Drive off throughout; preamp/EQ/Level remain active.
+- Joyo American Sound: Bypassed throughout.
+- Joyo Narcissus: Bypassed throughout.
+Set the board switches for the section you are entering. Intro-only or clean-only effects may need to start on. Return each pedal to its documented state at the next section. Board pedals are independent of CTL.
+
+## Revision record
+
+Approved audit entry 50.
+- Pedal display name: Higher-Creed -> B-HigherCr. Filenames stay unchanged.
+- PRE Gain: 58 -> 25.
+- DST: Bass OD -> off.
+- RVB Mix: 22 -> 6.
+Pre-revision JSON, Markdown and original file hashes are preserved in Documents/patch-audit-2026-10-16/inventory.json and implementation-manifest.json.
+The site piece title and on-disk filenames stay stable; only the short pedal display name may change.

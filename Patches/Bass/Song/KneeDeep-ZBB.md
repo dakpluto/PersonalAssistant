@@ -1,50 +1,96 @@
 # Knee Deep — Zac Brown Band
 
+Revised 2026-10-16 following the approved library audit.
+Type: Song. Instrument: Sire V7 2nd Generation 5-string fretless, flatwounds; run passive.
+GP-5 only.
+Patch screen name: Knee Deep . Patch VOL: 50.
+Preset tempo: 82 BPM.
+
 You Get What You Give, 2010, feat. Jimmy Buffett. ~82 BPM, est.
 This is the beach-chair, toes-in-the-sand song — laid-back island groove, not a driving country tune.
 Sire V7 fretless (Passive) — the round, mellow fretless tone fits the chill vibe better than picked P/J attack.
 GP-5 only, no pedalboard.
 
-## Module chain
+## Revision intent
 
-**NR — Gate**, always on.
-THRE: 25. Light touch — just enough to clean up noise floor, fretless sustain shouldn't get clipped short.
+Keep the musical role of the original patch while reducing redundant gain, excessive space and unclear switching where identified in audit entry 66.
+The module settings and section map below are the active revision.
+Audited capture volumes and Michael’s explicit patch-level adjustments are preserved.
+Retain the light chorus, with its output level brought back to the library baseline.
+No hardware audition or measured level match has been performed.
 
-**PRE — Micro Boost**, on CTL.
-Gain: 35 when engaged.
-Off for the laid-back verse groove, on for a slightly fuller push through the choruses — subtle, this song never gets aggressive.
+## GP-5 settings
 
-**DST — off.** No drive anywhere. This is a warm, clean island tune from start to finish.
+Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB.
+The encoded N->S block sits between DST and AMP when a SnapTone is used.
 
-**AMP/CAB — NAM SnapTone, slot 51: CleanB15** (always on)
-- Built from the `Ampeg B18 - Head DI - Bass Chan - Vol 2.5 (B-18N)` NAM and the Apg115 IR, combined into one snaptone.
-- Real Ampeg B-18N fliptop (the B-15 preamp circuit), captured clean at volume 2.5, into the Apg115 B-15 cab IR.
-- Laid-back island groove. The clean B-15 gives it a soft, round bottom.
-- Gain: 50, VOL: 80, Bass: 60, Middle: 50, Treble: 40
-- Gain 50: the capture as built.
-- Bass 60: Round low end, not boomy
-- Middle 50: flat.
-- Treble 40: Kept soft, this amp only has VOL/Bass/Treble, no mids to worry about
-- VOL 80: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
-- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 51 directly.
+AMP/CAB replacement: SnapTone CleanB15 (slot 51): Ampeg B18 - Head DI - Bass Chan - Vol 2.5 (B-18N) + Apg115.
+Slot: 51. Always on.
+Gain: 50, VOL: 80, Bass: 60, Middle: 50, Treble: 40.
+AMP and CAB are both off; the capture already includes its cab/DI character.
+The capture voice is fixed across CTL states. Audited VOL is preserved for this slot.
 
-**EQ — off.** The snaptone's own Bass/Middle/Treble is enough — no need to sculpt further.
+## NR - Gate
 
-**MOD — B-Chorus**, always on, light hand.
-Depth: 20, Rate: 0.8Hz, VOL: 100.
-Just enough shimmer to give the fretless a little tropical movement without turning it into a chorus-drenched effect. Sits underneath the tone, not on top of it.
+THRE: 10.
+Fixed on. Not on CTL.
+Use the lowest threshold that keeps rests quiet. Check soft notes and held-note decay. This gate is before the drives and amp; it does not directly gate noise generated after it.
 
-**DLY — off.** Keep it simple — no need for delay on a groove this relaxed.
+## PRE - Micro Boost
 
-**RVB — Room**, on CTL.
-Mix: 30, Decay: 45, Trail: true.
-Off for the verse — close and dry. On for the choruses, alongside the boost — opens the tone up a touch for the bigger, more full-band sections without drowning the groove.
+Gain: 35.
+CTL assigned. Loads off; first CTL press switches it on.
+Controls the source dynamics or adds the specified push/filter before distortion and amp processing. The settings stay fixed; only its on/off state can change.
 
-## CTL footswitch
+## DST - Module off
 
-Two modules on CTL: PRE (Micro Boost) and RVB (Room).
+Not used.
 
-- **CTL off** — main laid-back verse groove. Dry, close, relaxed. This is the resting state the patch loads into.
-- **CTL on** — fuller chorus sound. Slight boost plus room reverb, same amp/cab tone underneath, just a little bigger and more open.
+## AMP - Module off
 
-Engage CTL going into the choruses, back off for the verses. No need for a third CTL'd module — this song doesn't ask for more than a subtle lift.
+Not used.
+
+## CAB - Module off
+
+Not used.
+
+## EQ - Module off
+
+Not used.
+
+## MOD - B-Chorus
+
+Depth: 20.
+Rate: 0.8.
+VOL: 50.
+Fixed on. Not on CTL.
+Adds the specified movement. Keep it underneath the note except for intentionally wet artist or ambient voices.
+
+## DLY - Module off
+
+Not used.
+
+## RVB - Room
+
+Mix: 8.
+Decay: 25.
+Trail: on.
+CTL assigned. Loads off; first CTL press switches it on.
+Adds the specified room or ambient tail. The revised mix keeps the initial note audible. Trail behavior follows the saved setting.
+
+## Switching and section map
+
+CTL blocks: PRE, RVB.
+- CTL off / loaded state: main laid-back verse groove. GP-5 active: NR, MOD, N->S.
+- First CTL press: fuller chorus sound. GP-5 active: NR, PRE, MOD, RVB, N->S.
+- Press CTL again to return to the loaded block pattern, provided no shared MIDI block has been changed.
+
+## Revision record
+
+Approved audit entry 66.
+- NR THRE: 25 -> 10.
+- MOD VOL: 100 -> 50.
+- RVB Mix: 30 -> 8.
+- RVB Decay: 45 -> 25.
+Pre-revision JSON, Markdown and original file hashes are preserved in Documents/patch-audit-2026-10-16/inventory.json and implementation-manifest.json.
+The site piece title and on-disk filenames stay stable; only the short pedal display name may change.

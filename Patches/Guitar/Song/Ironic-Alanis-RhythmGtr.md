@@ -1,5 +1,11 @@
 # Ironic (Rhythm Guitar) — Alanis Morissette
 
+Revised 2026-10-16 following the approved library audit.
+Type: Song. Instrument: HSS Stratocaster.
+GP-5 only.
+Patch screen name: Ironic-Gtr. Patch VOL: 50.
+Preset tempo: 116 BPM.
+
 From *Jagged Little Pill* (1995). About 116 BPM, est.
 Quiet, acoustic-led verses that slam into a big, distorted mid-90s alt-rock chorus.
 On a Strat, CTL off plays the verse role as a clean, compressed acoustic stand-in. CTL on is the featured electric sound: the distorted chorus wall and any lead lines.
@@ -7,49 +13,95 @@ Built from the song's overall sound. I haven't verified the exact guitars and am
 Instrument: Stratocaster (HSS). Neck or position 4 for the verses. Bridge humbucker for the chorus.
 GP-5 only, Stratocaster (HSS), no pedalboard.
 
-## Module chain
+## Revision intent
 
-**NR — Gate**, always on.
-THRE: 25.
-The Rat is noisy. 25 cleans up the chorus stops.
+Keep the musical role of the original patch while reducing redundant gain, excessive space and unclear switching where identified in audit entry 166.
+The module settings and section map below are the active revision.
+Audited capture volumes and Michael’s explicit patch-level adjustments are preserved.
+No hardware audition or measured level match has been performed.
 
-**PRE — COMP (Ross)**, always on.
-Sustain: 38, VOL: 55.
-Compression gives the verse strum an even, acoustic-like pop.
+## GP-5 settings
 
-**DST — Darktale (ProCo Rat)**, on CTL.
-Gain: 55, Filter: 45, VOL: 62.
-A ProCo Rat, the quintessential 90s alt-rock distortion. Gain 55 is thick and fuzzy-edged.
+Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB.
+The encoded N->S block sits between DST and AMP when a SnapTone is used.
 
-**AMP/CAB — NAM SnapTone, slot 68: ClassicMarshall** (always on)
-- Built from the `JCM800 2203 - P5 B5 M5 T5 MV5 G4 - AZG - 700` NAM and the V7X_dc (Marshall 1960AV) IR, combined into one snaptone.
-- Real JCM800 2203 at Gain 4, Master 5: classic edge-of-crunch Marshall. Into a 1960AV 4x12.
-- 90s radio rock. JCM800 at Gain 4 is barely breaking up and cleans up with the guitar volume.
-- Gain: 49, VOL: 50, Bass: 48, Middle: 50, Treble: 58
-- Gain 49: a little under default. This part wants less push than the other ClassicMarshall patches.
-- Bass 48: low end pulled back a little.
-- Middle 50: flat.
-- Treble 58: more top end.
-- VOL 50: the level Michael set for this snaptone in the 2026-10-01 VOL audit. Trim here if the patch jumps in level against your others.
-- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 68 directly.
+AMP/CAB replacement: SnapTone TwinClean (slot 61): CLEANEST - Fender Deluxe Reverb 1965 [Hyper Accuracy] + TWIN REVERB __ CLEAN (vulturized Twin).
+Slot: 61. Always on.
+Gain: 45, VOL: 75, Bass: 48, Middle: 50, Treble: 55.
+AMP and CAB are both off; the capture already includes its cab/DI character.
+The capture voice is fixed across CTL states. Audited VOL is preserved for this slot.
 
-**EQ — Guitar EQ 2**, always on.
-100Hz: -3, 500Hz: -1, 1kHz: 0, 3kHz: +2, 6kHz: 0, VOL: 50.
-A low cut, a slight 500Hz dip for less box, and 3kHz air for acoustic-like sparkle on the verses.
+## NR - Gate
 
-**MOD — off.**
+THRE: 12.
+Fixed on. Not on CTL.
+Use the lowest threshold that keeps rests quiet. Check soft notes and held-note decay. This gate is before the drives and amp; it does not directly gate noise generated after it.
 
-**DLY — off.**
+## PRE - COMP
 
-**RVB — Room**, on CTL.
-Mix: 14, Decay: 30, Trail: on.
-A small room fills out the chorus wall.
+Sustain: 38.
+VOL: 55.
+Fixed on. Not on CTL.
+Controls the source dynamics or adds the specified push/filter before distortion and amp processing. The settings stay fixed; only its on/off state can change.
 
-## CTL footswitch
+## DST - Darktale
 
-On CTL: DST (Darktale), RVB (Room).
+Gain: 40.
+Filter: 45.
+VOL: 62.
+CTL assigned. Loads off; first CTL press switches it on.
+Supplies the selected additional drive voice. Use its level and gain as separate controls. A pre-amp boost may add compression instead of a proportional solo-volume increase.
 
-- **CTL off** — Verses. A clean, compressed, chimey strum standing in for the acoustic. This is the resting state the patch loads into.
-- **CTL on** — Chorus and lead. The Rat distortion wall with a small room, for the choruses and any lead lines.
+## AMP - Module off
 
-Stomp CTL at each "It's like rain on your wedding day" chorus. Off for the verses.
+Not used.
+
+## CAB - Module off
+
+Not used.
+
+## EQ - Guitar EQ 2
+
+100Hz: -3.
+500Hz: -1.
+1kHz: 0.
+3kHz: 2.
+6kHz: 0.
+VOL: 50.
+Fixed on. Not on CTL.
+Shapes note body and cut after the amp/capture. Where assigned to CTL, its output adds the specified lift after the gain stages. Numbers are GP-5 control values, not a calibrated loudness guarantee.
+
+## MOD - Module off
+
+Not used.
+
+## DLY - Module off
+
+Not used.
+
+## RVB - Room
+
+Mix: 14.
+Decay: 30.
+Trail: on.
+CTL assigned. Loads off; first CTL press switches it on.
+Adds the specified room or ambient tail. The revised mix keeps the initial note audible. Trail behavior follows the saved setting.
+
+## Switching and section map
+
+CTL blocks: DST, RVB.
+- CTL off / loaded state: Acoustic-adjacent verse. GP-5 active: NR, PRE, EQ, N->S.
+- First CTL press: Electric chorus. GP-5 active: NR, PRE, DST, EQ, RVB, N->S.
+- Press CTL again to return to the loaded block pattern, provided no shared MIDI block has been changed.
+
+## Revision record
+
+Approved audit entry 166.
+- Amp/cab foundation: SnapTone 68 -> SnapTone 61.
+- SnapTone Gain: 49 -> 45.
+- SnapTone VOL: 50 -> 75.
+- SnapTone Treble: 58 -> 55.
+- NR THRE: 25 -> 12.
+- DST Gain: 55 -> 40.
+Pre-revision JSON, Markdown and original file hashes are preserved in Documents/patch-audit-2026-10-16/inventory.json and implementation-manifest.json.
+The site piece title and on-disk filenames stay stable; only the short pedal display name may change.

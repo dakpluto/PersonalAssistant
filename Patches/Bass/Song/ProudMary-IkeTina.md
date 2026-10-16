@@ -1,91 +1,169 @@
 # Proud Mary — Ike & Tina Turner
 
+Revised 2026-10-16 following the approved library audit.
+Type: Song. Instrument: Harley Benton passive 5-string P/J.
+Full board. Board Option: American Sound (bypassed; retained for legacy full-board builds).
+Patch screen name: ProudMary. Patch VOL: 55.
+Preset tempo: 117 BPM.
+
 Bass: Harley Benton P/J, 5-string, passive. Full board.
 From *Workin' Together* (1971). ~117 BPM for the main groove — but this arrangement is famous for something more dramatic than most patches in this set: it isn't just a dynamic swing, it's a genuine tempo and feel change. "We never do anything nice and easy" — a slow, sultry, spoken-intro section gives way to the full-speed "nice and rough" groove that carries the rest of the song.
 
-CTL off = the slow, sultry "nice and easy" intro. CTL on = the fast, driving "nice and rough" groove (most of the song).
+## Revision intent
+
+Keep the musical role of the original patch while reducing redundant gain, excessive space and unclear switching where identified in audit entry 92.
+The module settings and section map below are the active revision.
+Audited capture volumes and Michael’s explicit patch-level adjustments are preserved.
+No hardware audition or measured level match has been performed.
 
 ## GP-5 settings
 
-Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
+Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB.
+The encoded N->S block sits between DST and AMP when a SnapTone is used.
 
-**NR — Gate**
-- THRE: 15
-- Always on. Low-moderate threshold — clean, classic soul/funk tone, minimal grit.
+AMP/CAB replacement: SnapTone FullB15 (slot 54): Ampeg B18 - Head DI - Bass Chan - Vol 5 (B-18N) + Apg115410.
+Slot: 54. Always on.
+Gain: 50, VOL: 80, Bass: 58, Middle: 58, Treble: 54.
+AMP and CAB are both off; the capture already includes its cab/DI character.
+The capture voice is fixed across CTL states. Audited VOL is preserved for this slot.
 
-**PRE — Micro Boost — On CTL**
-- Gain: 50
-- CTL off: bypassed (slow intro). CTL on: engaged (fast groove).
-- The intro stays sultry and understated. Once the song kicks into full speed, the boost helps this part carry the same energy as the horns and the Ikettes.
+## NR - Gate
 
-**DST — Off**
-- No drive. Classic soul/funk bass tone — clean, warm, present, not distorted.
+THRE: 15.
+Fixed on. Not on CTL.
+Use the lowest threshold that keeps rests quiet. Check soft notes and held-note decay. This gate is before the drives and amp; it does not directly gate noise generated after it.
 
-**AMP/CAB — NAM SnapTone, slot 54: FullB15** (always on)
-- Built from the `Ampeg B18 - Head DI - Bass Chan - Vol 5 (B-18N)` NAM and the Apg115410 IR, combined into one snaptone.
-- Real Ampeg B-18N at volume 5, warmer and fuller than the clean capture, into the Apg115410 (1x15 + 4x10) IR.
-- Soul-funk with bite. The fuller B-15 is era-correct, and the Micro Boost pushes it harder in the fast section.
-- Moved off the SoulB18 snaptone (slot 60) 2026-10-02. Michael dropped that combo in the bass VOL audit.
-- Gain: 50, VOL: 80, Bass: 58, Middle: 58, Treble: 54
-- Gain 50: the capture as built.
-- Bass 58: more low end.
-- Middle 58: more midrange.
-- Treble 54: a touch more top end.
-- VOL 80: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
-- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 54 directly.
+## PRE - Micro Boost
 
-**EQ — Bass EQ 1**
-- 33Hz: +3, 150Hz: 0, 600Hz: +2, 2kHz: +4, 8kHz: +2, VOL: 55
-- Always on, same for both CTL states.
-- +4 at 2kHz is the key band here — this keeps the syncopated funk picking articulate and readable once the song hits full speed. +2 at 600Hz adds some classic soul snap.
+Gain: 25.
+CTL assigned. Loads off; first CTL press switches it on.
+Controls the source dynamics or adds the specified push/filter before distortion and amp processing. The settings stay fixed; only its on/off state can change.
 
-**MOD — Off**
-- No modulation. Clean, classic soul/funk tone throughout.
+## DST - Module off
 
-**DLY — Off**
-- Not used.
+Not used.
 
-**RVB — Room — On CTL (inverted)**
-- Mix: 20, Decay: 30, Trail: On
-- CTL off: engaged (slow intro). CTL on: bypassed (fast groove).
-- Inverted on purpose — the slow, sultry intro gets a touch of natural room to match its more spacious, held-back feel. The fast groove needs to lock in tight and dry with the drums and horns, so the reverb drops out the instant the song hits full speed.
+## AMP - Module off
 
-## CTL summary
+Not used.
 
-- **CTL Off — Slow intro.** Sultry, spacious, held back — "nice and easy."
-- **CTL On — Fast groove.** Boost engages, room drops out — tight, driving, present — "nice and rough," and where the song stays for the rest of its runtime.
-- Engage CTL right as the song explodes into full speed, and leave it on through to the end — there's no going back to the slow feel once this song commits to the groove.
+## CAB - Module off
 
-## Full pedalboard (signal chain order)
+Not used.
 
-**1. Flamma FS-08 Octave — Bypassed**
-- Footswitch off. No octave layering needed for this classic soul/funk part.
+## EQ - Bass EQ 1
 
-**2. Donner Ultimate Comp — Engaged**
-- COMP: 52
-- TONE: 55
-- LEVEL: 58
-- Mode: TREBLE
-- Firm compression keeps the funky, syncopated groove locked and consistent. TREBLE mode keeps the funk pop/attack alive and audible.
+33Hz: 3.
+150Hz: 0.
+600Hz: 2.
+2kHz: 4.
+8kHz: 2.
+VOL: 55.
+Fixed on. Not on CTL.
+Shapes note body and cut after the amp/capture. Where assigned to CTL, its output adds the specified lift after the gain stages. Numbers are GP-5 control values, not a calibrated loudness guarantee.
 
-**3. Donner Stylish Fuzz — Bypassed**
-- Footswitch off. No fuzz anywhere in this patch — classic soul/funk stays clean.
+## MOD - Module off
 
-**4. Joyo Tidal Wave — Engaged**
-- Drive: 15
-- Blend: 30
-- Presence: 58
-- Level: 58
-- Treble: 55
-- Middle: 56
-- Bass: 56
-- Mid-Frequency: 500Hz
-- Bass-Shift: 80Hz
-- Cab-Sim (DI out): Off
-- Ground Lift: Off
-- Adds presence and body feeding the amp. Bass-Shift at 80Hz favors the tight articulation the fast funk groove needs, at some cost to the slow intro's fullness — a worthwhile tradeoff since the fast section is where this song lives for the majority of its runtime.
+Not used.
 
-**5. Joyo Narcissus — Bypassed**
-- Footswitch off. No chorus — matches the MOD-off call on the GP-5. Clean, classic soul/funk tone throughout.
+## DLY - Module off
 
-**6. Valeton GP-5** — see settings above.
+Not used.
+
+## RVB - Room
+
+Mix: 6.
+Decay: 30.
+Trail: on.
+CTL assigned. Loads on; first CTL press switches it off.
+Adds the specified room or ambient tail. The revised mix keeps the initial note audible. Trail behavior follows the saved setting.
+
+## Switching and section map
+
+CTL blocks: PRE, RVB.
+- CTL off / loaded state: the slow, sultry "nice and easy" intro. GP-5 active: NR, EQ, RVB, N->S.
+- First CTL press: Fast groove. GP-5 active: NR, PRE, EQ, N->S.
+- Press CTL again to return to the loaded block pattern, provided no shared MIDI block has been changed.
+
+## Full pedalboard
+
+Flamma FS-08 Octave -> Donner Ultimate Comp -> Donner Stylish Fuzz -> Joyo Tidal Wave -> Joyo American Sound -> Joyo Narcissus -> Valeton GP-5.
+Board settings are set by hand and are not encoded in the .prst.
+All numeric pedal positions use the existing 0–100 position shorthand unless a clock position is specified.
+
+## Flamma FS-08 Octave
+
+Bypassed throughout.
+-2OCT: 0.
+-OCT: 0.
++OCT: 0.
++2OCT: 0.
+Dry: 100.
+
+## Donner Ultimate Comp
+
+On throughout.
+COMP: 52.
+TONE: 55.
+LEVEL: 58.
+Mode: TREBLE.
+
+## Donner Stylish Fuzz
+
+Bypassed throughout.
+Sustain: 25.
+Treble: 50.
+Bass: 50.
+Volume: 50.
+
+## Joyo Tidal Wave
+
+On throughout.
+Drive: 15.
+Blend: 30.
+Presence: 58.
+Level: 58.
+Treble: 55.
+Middle: 56.
+Bass: 56.
+Mid-Frequency: 500Hz.
+Bass-Shift: 80Hz.
+Cab-Sim (DI out): Off.
+Ground Lift: Off.
+The footswitch toggles drive only. Preamp EQ and Level stay active in both states. Cab-Sim/Ground Lift affect the DI path; main instrument output is unchanged.
+
+## Joyo American Sound
+
+Bypassed throughout.
+Level: 50.
+Drive: 10.
+Voice: 50.
+Low: 50.
+Mid: 50.
+High: 50.
+
+## Joyo Narcissus
+
+Bypassed throughout.
+Width: 30.
+Depth: 20.
+Rate: 20.
+Mode: Vintage.
+
+## Board choreography
+
+- Flamma FS-08 Octave: Bypassed throughout.
+- Donner Ultimate Comp: On throughout.
+- Donner Stylish Fuzz: Bypassed throughout.
+- Joyo Tidal Wave: On throughout.
+- Joyo American Sound: Bypassed throughout.
+- Joyo Narcissus: Bypassed throughout.
+Set the board switches for the section you are entering. Intro-only or clean-only effects may need to start on. Return each pedal to its documented state at the next section. Board pedals are independent of CTL.
+
+## Revision record
+
+Approved audit entry 92.
+- PRE Gain: 50 -> 25.
+- RVB Mix: 20 -> 6.
+Pre-revision JSON, Markdown and original file hashes are preserved in Documents/patch-audit-2026-10-16/inventory.json and implementation-manifest.json.
+The site piece title and on-disk filenames stay stable; only the short pedal display name may change.

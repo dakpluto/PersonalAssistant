@@ -5,7 +5,7 @@
 - Rate: Controls the chorus rate (0.10Hz-10.00Hz)
 - Tone: Controls the effect tone (1-100)
 
-## B-Chorus - Chorus - Based on Boss CEB-3 for Bass Guitar
+## B-Chorus - Chorus - Bass chorus (catalog origin: Boss CE-2B; earlier notes called it CEB-3)
 - Depth: Controls the chorus depth (1-100)
 - Rate: Controls the chorus rate (0.10Hz-10.00Hz)
 - VOL: Controls the output volume (1-100)

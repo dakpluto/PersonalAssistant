@@ -1,49 +1,97 @@
 # Heads Carolina, Tails California — Jo Dee Messina
 
-I'm Alright, 1996. ~118 BPM, est.
-Bright, bouncy 90s country-pop — road-trip energy, no edge to the tone anywhere. The bass just needs to sit clean and punchy under the groove, not compete for attention.
-GP-5 only, P/J bass, no pedalboard.
+Revised 2026-10-16 following the approved library audit.
+Type: Song. Instrument: Harley Benton passive 5-string P/J.
+GP-5 only.
+Patch screen name: Heads Caro. Patch VOL: 52.
+Preset tempo: 118 BPM.
 
-## Module chain
+Bright, bouncy country-pop support for Heads Carolina, Tails California. CleanB15 at its captured gain, with a smaller chorus lift. Exact session gear is unverified; the previous album attribution was removed.
 
-**NR — Gate**, always on.
-THRE: 25. Light touch — just keeping the noise floor down between notes, nothing aggressive needed on a clean amp.
+## Revision intent
 
-**PRE — Micro Boost**, on CTL.
-Gain: 45 when engaged.
-Off for the verse, on for the chorus — same clean tone throughout, just pushed a little harder and brighter for the hook.
+Keep the musical role of the original patch while reducing redundant gain, excessive space and unclear switching where identified in audit entry 47.
+The module settings and section map below are the active revision.
+Audited capture volumes and Michael’s explicit patch-level adjustments are preserved.
+No hardware audition or measured level match has been performed.
 
-**DST — off.** No drive anywhere in this one — the whole point is a clean, bright country-pop bass.
+## GP-5 settings
 
-**AMP/CAB — NAM SnapTone, slot 51: CleanB15** (always on)
-- Built from the `Ampeg B18 - Head DI - Bass Chan - Vol 2.5 (B-18N)` NAM and the Apg115 IR, combined into one snaptone.
-- Real Ampeg B-18N fliptop (the B-15 preamp circuit), captured clean at volume 2.5, into the Apg115 B-15 cab IR.
-- Mid-90s country radio bass: clean, round, locked to the kick. Clean B-15 is the right voice.
-- Gain: 60, VOL: 80, Bass: 55, Middle: 55, Treble: 65
-- Gain 60: noticeably over default. This part wants more push than the other CleanB15 patches.
-- Bass 55: a touch more low end.
-- Middle 55: a touch more midrange.
-- Treble 65: more top end.
-- VOL 80: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
-- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 51 directly.
+Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB.
+The encoded N->S block sits between DST and AMP when a SnapTone is used.
 
-**EQ — Bass EQ 2**, always on.
-50Hz: +2, 120Hz: +3, 400Hz: -3, 800Hz: 0, 4.5kHz: +6, VOL: 55.
-Small low-end support, a light cut around 400Hz to avoid boxiness, and a real push at 4.5kHz for that bright, present pick attack the genre wants.
+AMP/CAB replacement: SnapTone CleanB15 (slot 51): Ampeg B18 - Head DI - Bass Chan - Vol 2.5 (B-18N) + Apg115.
+Slot: 51. Always on.
+Gain: 50, VOL: 80, Bass: 55, Middle: 55, Treble: 56.
+AMP and CAB are both off; the capture already includes its cab/DI character.
+The capture voice is fixed across CTL states. Audited VOL is preserved for this slot.
 
-**MOD — off.** No modulation — straightforward part, no need to color it.
+## NR - Gate
 
-**DLY — off.** Dry and direct.
+THRE: 12.
+Fixed on. Not on CTL.
+Use the lowest threshold that keeps rests quiet. Check soft notes and held-note decay. This gate is before the drives and amp; it does not directly gate noise generated after it.
 
-**RVB — Room**, on CTL.
-Mix: 20, Decay: 35, Trail: true.
-Off for the verse — tight and dry. On for the chorus alongside the boost, giving the hook a touch more air without washing out the groove.
+## PRE - Micro Boost
 
-## CTL footswitch
+Gain: 25.
+CTL assigned. Loads off; first CTL press switches it on.
+Controls the source dynamics or adds the specified push/filter before distortion and amp processing. The settings stay fixed; only its on/off state can change.
 
-Two modules on CTL: PRE (Micro Boost) and RVB (Room).
+## DST - Module off
 
-- **CTL off** — verse groove. Dry, tight, clean. Resting state the patch loads into.
-- **CTL on** — chorus lift. Brighter push plus a touch of room reverb, same amp tone, bigger for the hook.
+Not used.
 
-Engage CTL going into each chorus, back off for the verses — same two-state approach as the rest of this batch.
+## AMP - Module off
+
+Not used.
+
+## CAB - Module off
+
+Not used.
+
+## EQ - Bass EQ 2
+
+50Hz: 2.
+120Hz: 3.
+400Hz: -3.
+800Hz: 0.
+4.5kHz: 2.
+VOL: 55.
+Fixed on. Not on CTL.
+Shapes note body and cut after the amp/capture. Where assigned to CTL, its output adds the specified lift after the gain stages. Numbers are GP-5 control values, not a calibrated loudness guarantee.
+
+## MOD - Module off
+
+Not used.
+
+## DLY - Module off
+
+Not used.
+
+## RVB - Room
+
+Mix: 6.
+Decay: 35.
+Trail: on.
+CTL assigned. Loads off; first CTL press switches it on.
+Adds the specified room or ambient tail. The revised mix keeps the initial note audible. Trail behavior follows the saved setting.
+
+## Switching and section map
+
+CTL blocks: PRE, RVB.
+- CTL off / loaded state: verse groove. GP-5 active: NR, EQ, N->S.
+- First CTL press: chorus lift. GP-5 active: NR, PRE, EQ, RVB, N->S.
+- Press CTL again to return to the loaded block pattern, provided no shared MIDI block has been changed.
+
+## Revision record
+
+Approved audit entry 47.
+- SnapTone Gain: 60 -> 50.
+- SnapTone Treble: 65 -> 56.
+- NR THRE: 25 -> 12.
+- PRE Gain: 45 -> 25.
+- EQ 4.5kHz: 6 -> 2.
+- RVB Mix: 20 -> 6.
+Pre-revision JSON, Markdown and original file hashes are preserved in Documents/patch-audit-2026-10-16/inventory.json and implementation-manifest.json.
+The site piece title and on-disk filenames stay stable; only the short pedal display name may change.

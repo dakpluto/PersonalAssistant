@@ -1,64 +1,106 @@
 # Ecstasy — Rusted Root
 
+Revised 2026-10-16 following the approved library audit.
+Type: Song. Instrument: Harley Benton passive 5-string P/J.
+GP-5 only.
+Patch screen name: Ecstasy-RR. Patch VOL: 55.
+Preset tempo: 102 BPM.
+
 Bass: Harley Benton P/J, 5-string, passive. GP-5 only.
 From *When I Woke* (1994). ~102 BPM, est. — the song's percussion-heavy, tribal-rock groove has a lot of syncopated energy that can feel faster than the underlying tempo suggests.
 Rusted Root's whole sound is built on layered hand percussion and a driving, world-fusion groove, with vocals and energy that build toward something genuinely cathartic — the title says it plainly. The bass needs to lock into that syncopated groove and stay tight through the verses, then help carry the song into its bigger, more intense climactic sections.
 
-CTL off = the grounded, syncopated groove. CTL on = the big, ecstatic climax.
+## Revision intent
+
+Keep the musical role of the original patch while reducing redundant gain, excessive space and unclear switching where identified in audit entry 37.
+The module settings and section map below are the active revision.
+Audited capture volumes and Michael’s explicit patch-level adjustments are preserved.
+No hardware audition or measured level match has been performed.
 
 ## GP-5 settings
 
-Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
+Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB.
+The encoded N->S block sits between DST and AMP when a SnapTone is used.
 
-**NR — Gate**
-- THRE: 20
-- Always on. Moderate threshold — there's real amp breakup and eventually real drive once the Green OD engages, needs cleanup between the syncopated hits.
+AMP/CAB replacement: SnapTone FullB15 (slot 54): Ampeg B18 - Head DI - Bass Chan - Vol 5 (B-18N) + Apg115410.
+Slot: 54. Always on.
+Gain: 52, VOL: 80, Bass: 56, Middle: 55, Treble: 55.
+AMP and CAB are both off; the capture already includes its cab/DI character.
+The capture voice is fixed across CTL states. Audited VOL is preserved for this slot.
 
-**PRE — Micro Boost — On CTL**
-- Gain: 52
-- CTL off: bypassed (groove). CTL on: engaged (climax).
-- Adds extra push on top of the Green OD engagement for the full-intensity climax.
+## NR - Gate
 
-**DST — Green OD (Ibanez TS808) — On CTL**
-- Gain: 60, Tone: 55, VOL: 62
-- CTL off: bypassed (groove — amp alone, warm and edge-of-breakup). CTL on: engaged (climax).
-- A Tube Screamer-style warm, mid-forward drive rather than a harsher distortion — fits this song's organic, tribal-rock intensity better than something colder or more aggressive.
+THRE: 20.
+Fixed on. Not on CTL.
+Use the lowest threshold that keeps rests quiet. Check soft notes and held-note decay. This gate is before the drives and amp; it does not directly gate noise generated after it.
 
-**AMP/CAB — NAM SnapTone, slot 54: FullB15** (always on)
-- Built from the `Ampeg B18 - Head DI - Bass Chan - Vol 5 (B-18N)` NAM and the Apg115410 IR, combined into one snaptone.
-- Real Ampeg B-18N at volume 5, warmer and fuller than the clean capture, into the Apg115410 (1x15 + 4x10) IR.
-- Organic, raw, percussion-heavy. The fuller B-15 has warmth and some tube push; the Green OD brings the real grit at the climax.
-- Moved off the SoulB18 snaptone (slot 60) 2026-10-02. Michael dropped that combo in the bass VOL audit.
-- Gain: 52, VOL: 80, Bass: 56, Middle: 55, Treble: 55
-- Gain 52: a little over default. This part wants more push than the other FullB15 patches.
-- Bass 56: more low end.
-- Middle 55: a touch more midrange.
-- Treble 55: a touch more top end.
-- VOL 80: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
-- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 54 directly.
+## PRE - Module off
 
-**EQ — Bass EQ 1**
-- 33Hz: +3, 150Hz: -1, 600Hz: +2, 2kHz: +4, 8kHz: +2, VOL: 55
-- Always on, same for both CTL states.
-- +4 at 2kHz is the important one — this keeps the syncopated groove articulate and readable against a wall of hand percussion, especially once the Green OD kicks in for the climax.
+Not used.
 
-**MOD — Off**
-- No modulation. This groove needs to stay tight and rhythmically clear — texture would work against the syncopation, not with it.
+## DST - Bass OD
 
-**DLY — Off**
-- Not used, for the same reason.
+Gain: 20.
+Blend: 25.
+VOL: 55.
+Bass: 50.
+Treble: 50.
+CTL assigned. Loads off; first CTL press switches it on.
+Supplies the selected additional drive voice. Use its level and gain as separate controls. A pre-amp boost may add compression instead of a proportional solo-volume increase.
 
-**RVB — Hall — On CTL**
-- Mix: 25, Decay: 38, Trail: On
-- CTL off: bypassed (groove — tight and dry, locked with the percussion). CTL on: engaged (climax).
-- Opens the space up for the song's big, cathartic climax — a genuine "ecstasy" moment deserves some real scale.
+## AMP - Module off
 
-## CTL summary
+Not used.
 
-- **CTL Off — Groove.** Tight, syncopated, warm edge-of-breakup tone locked in with the percussion.
-- **CTL On — Climax.** Green OD and Micro Boost engage, Hall opens up — bigger, more intense, matching the song's cathartic build.
-- Engage CTL as the song builds into its most intense sections, back off returning to the grounded groove.
+## CAB - Module off
 
-## Note on GP-5-only
+Not used.
 
-This patch is GP-5 only — no pedalboard beyond the Valeton GP-5 itself. All the tone (groove, drive, space) comes from the GP-5's own modules above.
+## EQ - Bass EQ 1
+
+33Hz: 3.
+150Hz: -1.
+600Hz: 2.
+2kHz: 4.
+8kHz: 2.
+VOL: 55.
+Fixed on. Not on CTL.
+Shapes note body and cut after the amp/capture. Where assigned to CTL, its output adds the specified lift after the gain stages. Numbers are GP-5 control values, not a calibrated loudness guarantee.
+
+## MOD - Module off
+
+Not used.
+
+## DLY - Module off
+
+Not used.
+
+## RVB - Hall
+
+Mix: 6.
+Decay: 38.
+Trail: on.
+CTL assigned. Loads off; first CTL press switches it on.
+Adds the specified room or ambient tail. The revised mix keeps the initial note audible. Trail behavior follows the saved setting.
+
+## Switching and section map
+
+CTL blocks: DST, RVB.
+- CTL off / loaded state: Grounded syncopated groove. GP-5 active: NR, EQ, N->S.
+- First CTL press: Climax with blended grit. GP-5 active: NR, DST, EQ, RVB, N->S.
+- Press CTL again to return to the loaded block pattern, provided no shared MIDI block has been changed.
+
+## Revision record
+
+Approved audit entry 37.
+- PRE: Micro Boost -> off.
+- PRE: removed from CTL.
+- DST: Green OD -> Bass OD.
+- DST Gain: 60 -> 20.
+- DST Blend: unset -> 25.
+- DST VOL: 62 -> 55.
+- DST Bass: unset -> 50.
+- DST Treble: unset -> 50.
+- RVB Mix: 25 -> 6.
+Pre-revision JSON, Markdown and original file hashes are preserved in Documents/patch-audit-2026-10-16/inventory.json and implementation-manifest.json.
+The site piece title and on-disk filenames stay stable; only the short pedal display name may change.

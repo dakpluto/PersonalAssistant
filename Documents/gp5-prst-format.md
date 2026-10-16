@@ -185,7 +185,7 @@ cannot derive slot position from those docs; it needs the catalog (or a
 hand-maintained equivalent) as the actual source of per-parameter slot numbers.
 
 Values are stored as plain engineering units matching what's in `Modules/*.md`
-almost exactly — raw 0–100 for most controls, real dB for EQ bands (`-50.0..50.0`),
+almost exactly — raw 0–100 for most controls, EQ control values (`-50.0..50.0`; acoustic dB calibration is not verified),
 real Hz for LFO rates, real ms for delay time, `0.0`/`1.0` for on/off toggles
 (`toggle: true` params like Trail). No normalization step is needed; a control's
 "visible" value in `Modules/*.md` units is exactly the float to write.
@@ -307,8 +307,7 @@ Not part of the encoder, but worth fixing since the encoder will consult these
 files as its human-facing reference:
 
 - `Modules/DST.md`: "Greed OD" should be **"Green OD"** (catalog name; likely a typo). Fixed.
-- `Modules/DLY.md`: all delay models list Time range as "20ms - 1000ms"; the real
-  catalog range is **20ms – 4000ms** for every DLY model checked.
+- `Modules/DLY.md`: all delay models list Time range as "20ms - 1000ms"; the catalog ranges vary by algorithm. Slapback is **20–300ms**, Analog **20–4000ms**, Ping Pong **20–500ms**, Rev Echo **20–780ms**, and the remaining listed delays **20–1000ms**.
 - `Modules/PRE.md`: missing the **"Detune"** pitch-shift model (catalog has
   PRE → Pitch → Detune, fxid `16777257`, alongside Octa and Pitch).
 - `Modules/PRE.md`: "MicroBoost" vs. catalog's "Micro Boost" (cosmetic, two words).

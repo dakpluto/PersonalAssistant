@@ -1,102 +1,185 @@
 # Somebody Like You (Rhythm Guitar) — Keith Urban
 
+Revised 2026-10-16 following the approved library audit.
+Type: Song. Instrument: HSS Stratocaster.
+Full board. Board Option: White Tape.
+Patch screen name: SLY-Gtr. Patch VOL: 50.
+Preset tempo: 120 BPM.
+
 From *Golden Road* (2002). About 120 BPM, est.
 Upbeat country-pop. A bright, driving, percussive rhythm, then Urban's hot, twangy lead breaks.
 The famous intro riff is Urban's ganjo, a six-string banjo. The GP-5 can't make a banjo. This patch gets the brightest, most percussive Strat version of it.
 Built from the song's overall sound. I haven't verified the exact amps on the record.
 Instrument: Stratocaster (HSS). Position 2 (bridge + middle) for the rhythm and the intro riff. Bridge humbucker for the leads.
-Full board, Stratocaster (HSS). Board Option: White Tape (rebuilt 2026-10-16).
 
-## Module chain
+## Revision intent
 
-**NR — Gate**, always on.
+Keep the musical role of the original patch while reducing redundant gain, excessive space and unclear switching where identified in audit entry 182.
+The module settings and section map below are the active revision.
+Audited capture volumes and Michael’s explicit patch-level adjustments are preserved.
+No hardware audition or measured level match has been performed.
+
+## GP-5 settings
+
+Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB.
+The encoded N->S block sits between DST and AMP when a SnapTone is used.
+
+AMP/CAB replacement: SnapTone EdgyTwang (slot 63): EDGY - Fender Deluxe Reverb 1965 [Hyper Accuracy] + Origin Effects Brown Deluxe 1x12 Medium Mix.
+Slot: 63. Always on.
+Gain: 48, VOL: 70, Bass: 46, Middle: 52, Treble: 58.
+AMP and CAB are both off; the capture already includes its cab/DI character.
+The capture voice is fixed across CTL states. Audited VOL is preserved for this slot.
+
+## NR - Gate
+
 THRE: 18.
-Light. Tight stops on the driving rhythm.
+Fixed on. Not on CTL.
+Use the lowest threshold that keeps rests quiet. Check soft notes and held-note decay. This gate is before the drives and amp; it does not directly gate noise generated after it.
 
-**PRE — COMP4 (Keeley C4)**, always on.
-Sustain: 55, Attack: 40, Clip: 40, VOL: 56.
-Country-pop needs squash. It makes the fast picked figures snap and evens out the banjo-style intro on a Strat.
+## PRE - COMP4
 
-**DST — Green OD (TS-808)**, on CTL.
-Gain: 35, Tone: 60, VOL: 66.
-The lead push. A TS into an edge-of-breakup Deluxe gives the hot, mid-forward twang of a modern country solo. Tone 60 keeps it bright.
+Sustain: 40.
+Attack: 40.
+Clip: 40.
+VOL: 56.
+Fixed on. Not on CTL.
+Controls the source dynamics or adds the specified push/filter before distortion and amp processing. The settings stay fixed; only its on/off state can change.
 
-**AMP/CAB — NAM SnapTone, slot 63: EdgyTwang** (always on)
-- Built from the `EDGY - Fender Deluxe Reverb 1965 [Hyper Accuracy]` NAM and the Origin Effects Brown Deluxe 1x12 Medium Mix IR, combined into one snaptone.
-- Real 1965 Deluxe Reverb at the edge of breakup, into the Brown Deluxe 1x12.
-- Twang with a little hair. Exactly the country-pop rhythm voice.
-- Gain: 48, VOL: 70, Bass: 46, Middle: 52, Treble: 58
-- Gain 48: just under the capture, so the rhythm stays crisp.
-- Bass 46: tighter lows for a fast song.
-- Middle 52: a small lift.
-- Treble 58: more snap and sparkle.
-- VOL 70: the level Michael set for this snaptone in the 2026-10-01 VOL audit. Trim here if the patch jumps in level against your others.
-- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 63 directly.
+## DST - Green OD
 
-**EQ — Guitar EQ 2**, always on.
-100Hz: -3, 500Hz: -1, 1kHz: +1, 3kHz: +2, 6kHz: 0, VOL: 50.
-Tight lows and a 3kHz lift for pick attack.
+Gain: 35.
+Tone: 60.
+VOL: 66.
+CTL assigned. Loads off; first CTL press switches it on.
+Supplies the selected additional drive voice. Use its level and gain as separate controls. A pre-amp boost may add compression instead of a proportional solo-volume increase.
 
-**MOD — off.**
+## AMP - Module off
 
-**DLY — Analog**, on CTL.
-Mix: 18, Time: 375ms, Feedback: 20, Trail: on.
-A dotted eighth at 120 BPM. Fills the space around the lead breaks.
+Not used.
 
-**RVB — Spring**, always on.
-Mix: 12, Decay: 30, Trail: on.
-A dash of Fender spring.
+## CAB - Module off
 
-## CTL footswitch
+Not used.
 
-On CTL: DST (Green OD), DLY (Analog).
+## EQ - Guitar EQ 2
 
-- **CTL off** — Rhythm. Bright, compressed, edge-of-breakup Deluxe for the driving rhythm and the intro riff. This is the resting state the patch loads into.
-- **CTL on** — Lead. TS-pushed Deluxe plus dotted-eighth delay for the solos.
+100Hz: -3.
+500Hz: -1.
+1kHz: 1.
+3kHz: 2.
+6kHz: 0.
+VOL: 50.
+Fixed on. Not on CTL.
+Shapes note body and cut after the amp/capture. Where assigned to CTL, its output adds the specified lift after the gain stages. Numbers are GP-5 control values, not a calibrated loudness guarantee.
 
-Engage CTL for the lead breaks. Drop back for the rhythm.
+## MOD - Module off
 
-## Sounds
-- **Rhythm** (default). CTL off, White Tape off. The driving strum.
-- **Ganjo riff and picked fills.** CTL off, White Tape on. The slap doubles each picked note, filling in the rolling density of the banjo figure that a single Strat line lacks. Same for the picked fills between vocal lines.
-- **Lead break.** CTL on, White Tape off. Green OD plus the GP-5's dotted-eighth delay.
-- **Hot break.** CTL on, White Tape on. Slap plus dotted eighth for the fastest, most percussive breaks. Busy, so use it for one break, not all of them.
-- Section map: White Tape on for the intro riff, off when the strum starts. Back on for the riff's returns and picked fills. CTL on for each lead break.
+Not used.
 
-## Full pedalboard (signal chain order)
-Flamma FS-08 Octave → Donner Ultimate Comp → Donner Stylish Fuzz → Joyo King of Kings → Joyo Narcissus → Valeton GP-5 → Donner White Tape.
-Board Option = White Tape, so the Joyo American Sound is off the board for this build.
-Rebuilt from GP-5-only on 2026-10-16. The GP-5 settings didn't change, and every pedal except the White Tape stays bypassed. Played without the board, the patch sounds exactly as before.
+## DLY - Analog
 
-**1. Flamma FS-08 Octave — bypassed**
-- -2OCT: 0, -OCT: 0, +OCT: 0, +2OCT: 0, Dry: 100
-- Footswitch off all song.
+Mix: 12.
+Time: 375.
+Feedback: 20.
+Trail: on.
+CTL assigned. Loads off; first CTL press switches it on.
+Adds repeats only in the listed states. Trail preserves the remaining repeats when this block is bypassed; it does not change delay time or mix.
 
-**2. Donner Ultimate Comp — bypassed**
-- Footswitch off all song. The GP-5's PRE compressor already does this job.
+## RVB - Spring
 
-**3. Donner Stylish Fuzz — bypassed**
-- Footswitch off all song.
+Mix: 12.
+Decay: 30.
+Trail: on.
+Fixed on. Not on CTL.
+Adds the specified room or ambient tail. The revised mix keeps the initial note audible. Trail behavior follows the saved setting.
 
-**4. Joyo King of Kings — both channels bypassed**
-- Left: off. Right: off.
-- The GP-5's Green OD on CTL is all the push this song wants.
+## Switching and section map
 
-**5. Joyo Narcissus — bypassed**
-- Footswitch off all song. Matches the MOD-off call.
+CTL blocks: DST, DLY.
+- CTL off / loaded state: Rhythm. GP-5 active: NR, PRE, EQ, RVB, N->S.
+- First CTL press: Lead. GP-5 active: NR, PRE, DST, EQ, DLY, RVB, N->S.
+- Press CTL again to return to the loaded block pattern, provided no shared MIDI block has been changed.
 
-**6. Valeton GP-5** — see settings above.
+## Full pedalboard
 
-**7. Donner White Tape — tape slap, for the intro riff and picked fills.**
-- Top row (left channel) only. Mono rig, bottom row unused.
-- Level: ~10:30. A clearly audible single echo, still behind the dry note.
-- Time: ~120ms target, just past 8 o'clock. Slapback range.
-- Feedback: fully counterclockwise. One repeat.
-- This is the shared slap setting (same as Syndicate, Click Click Boom, Everyday Blues, My Maria, Somebody Like You, Neon Moon). Any of these can share a set without touching the knobs.
-- Footswitch: on for the ganjo-style intro riff and the picked fills (CTL off). Off for the strum. Optional on top of CTL for a hot break.
-- Why: the riff and fills are fast, percussive picking. The GP-5's dotted eighth would smear them. A single short slap thickens them and keeps every note clear.
-- It sits after the GP-5's Spring, so the slap repeats a little spring with it.
-- The clock positions assume the Time knob sweeps 25-1000ms evenly. Set the slap by ear: it should thicken the note, not answer it.
+Flamma FS-08 Octave -> Donner Ultimate Comp -> Donner Stylish Fuzz -> Joyo King of Kings -> Joyo Narcissus -> Valeton GP-5 -> Donner White Tape.
+Board settings are set by hand and are not encoded in the .prst.
+All numeric pedal positions use the existing 0–100 position shorthand unless a clock position is specified.
 
-## Note on the full board vs. the `.prst`
-The `.prst` file only encodes the GP-5's own 9 modules. The board settings above are not and cannot be part of that file. They're set by hand on the board, and documented here so the full patch can be rebuilt.
+## Flamma FS-08 Octave
+
+Bypassed throughout.
+-2OCT: 0.
+-OCT: 0.
++OCT: 0.
++2OCT: 0.
+Dry: 100.
+
+## Donner Ultimate Comp
+
+Bypassed throughout.
+COMP: 30.
+TONE: 50.
+LEVEL: 50.
+Mode: NORMAL.
+
+## Donner Stylish Fuzz
+
+Bypassed throughout.
+Sustain: 25.
+Treble: 50.
+Bass: 50.
+Volume: 50.
+
+## King of Kings Left
+
+Bypassed throughout.
+Volume: 50.
+Gain: 20.
+Tone: 50.
+Clipping toggle: Softer position.
+Feedback toggle: Standard position.
+
+## King of Kings Right
+
+Bypassed throughout.
+Volume: 50.
+Gain: 20.
+Tone: 50.
+Clipping toggle: Softer position.
+Feedback toggle: Standard position.
+
+## Joyo Narcissus
+
+Bypassed throughout.
+Width: 30.
+Depth: 20.
+Rate: 20.
+Mode: Vintage.
+
+## Donner White Tape
+
+Off for strum; on for intro riff and picked fills at CTL off.
+Level: ~10:30.
+Time: 120ms (free-time slap; no beat subdivision).
+Feedback: Fully counterclockwise (one repeat).
+Mono rig: use the top row/left channel; bottom row unused. Set Time against the track by ear. No tap tempo. Its repeats include the GP-5 reverb. Keep this fixed across the shared slap set.
+
+## Board choreography
+
+- Flamma FS-08 Octave: Bypassed throughout.
+- Donner Ultimate Comp: Bypassed throughout.
+- Donner Stylish Fuzz: Bypassed throughout.
+- King of Kings Left: Bypassed throughout.
+- King of Kings Right: Bypassed throughout.
+- Joyo Narcissus: Bypassed throughout.
+- Donner White Tape: Off for strum; on for intro riff and picked fills at CTL off.
+Set the board switches for the section you are entering. Intro-only or clean-only effects may need to start on. Return each pedal to its documented state at the next section. Board pedals are independent of CTL.
+
+## Revision record
+
+Approved audit entry 182.
+- PRE Sustain: 55 -> 40.
+- DLY Mix: 18 -> 12.
+Pre-revision JSON, Markdown and original file hashes are preserved in Documents/patch-audit-2026-10-16/inventory.json and implementation-manifest.json.
+The site piece title and on-disk filenames stay stable; only the short pedal display name may change.

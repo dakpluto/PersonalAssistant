@@ -1,54 +1,103 @@
 # Puff the Magic Dragon (Rhythm Guitar) — Peter, Paul and Mary
 
+Revised 2026-10-16 following the approved library audit.
+Type: Song. Instrument: HSS Stratocaster.
+GP-5 only.
+Patch screen name: Puff-Gtr. Patch VOL: 50.
+Preset tempo: 110 BPM.
+
 From *Moving* (1963). About 110 BPM, est.
 An acoustic folk record: interlocking fingerpicked and strummed acoustic guitars under three-part harmony.
 There's no electric part, so the Strat plays the acoustic role: bright, compressed, and dry-ish, with a Travis-picked or light-strum feel. CTL is for playing the melody.
 Instrument: Stratocaster (HSS). Position 4 (neck+middle) for a hollow, acoustic-ish quack. Neck for the melody.
 GP-5 only, Stratocaster (HSS), no pedalboard.
 
-## Module chain
+## Revision intent
 
-**NR — Gate**, always on.
+Keep the musical role of the original patch while reducing redundant gain, excessive space and unclear switching where identified in audit entry 178.
+The module settings and section map below are the active revision.
+Audited capture volumes and Michael’s explicit patch-level adjustments are preserved.
+No hardware audition or measured level match has been performed.
+
+## GP-5 settings
+
+Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB.
+The encoded N->S block sits between DST and AMP when a SnapTone is used.
+
+AMP/CAB replacement: SnapTone BrightTwin (slot 64): CLEANEST - Fender Deluxe Reverb 1965 [Hyper Accuracy] + TWIN REVERB __ BALANCED (vulturized Twin).
+Slot: 64. Always on.
+Gain: 50, VOL: 75, Bass: 50, Middle: 48, Treble: 55.
+AMP and CAB are both off; the capture already includes its cab/DI character.
+The capture voice is fixed across CTL states. Audited VOL is preserved for this slot.
+
+## NR - Gate
+
 THRE: 10.
-Minimal.
+Fixed on. Not on CTL.
+Use the lowest threshold that keeps rests quiet. Check soft notes and held-note decay. This gate is before the drives and amp; it does not directly gate noise generated after it.
 
-**PRE — COMP (Ross)**, always on.
-Sustain: 45, VOL: 55.
-Sustain 45 flattens the pick attack into an acoustic-like even pluck.
+## PRE - COMP
 
-**DST — Green OD (TS-808)**, on CTL.
-Gain: 10, Tone: 52, VOL: 68.
-A level lift at Gain 10, with no real drive, so the melody sits over the picking.
+Sustain: 30.
+VOL: 55.
+Fixed on. Not on CTL.
+Controls the source dynamics or adds the specified push/filter before distortion and amp processing. The settings stay fixed; only its on/off state can change.
 
-**AMP/CAB — NAM SnapTone, slot 64: BrightTwin** (always on)
-- Built from the `CLEANEST - Fender Deluxe Reverb 1965 [Hyper Accuracy]` NAM and the TWIN REVERB __ BALANCED (vulturized Twin) IR, combined into one snaptone.
-- 1965 blackface Deluxe Reverb at its cleanest setting. It shares the Twin's blackface preamp circuit, so here it's the amp half of a Twin clean, into a real Twin 2x12 (JBL D120F) IR. Rebuilt 2026-09-26: the original BrightTwin used the Tim R Twin Vibrato-channel capture, which was dropped for being too quiet. Balanced IR blend.
-- Acoustic stand-in: a warm, round, clean Twin keeps the strum soft.
-- Gain: 50, VOL: 75, Bass: 50, Middle: 42, Treble: 55
-- Gain 50: the capture as built.
-- Bass 50: flat.
-- Middle 42: midrange pulled back noticeably.
-- Treble 55: a touch more top end.
-- VOL 75: the level Michael set for this snaptone in the 2026-10-01 VOL audit. Trim here if the patch jumps in level against your others.
-- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 64 directly.
+## DST - Module off
 
-**EQ — Guitar EQ 2**, always on.
-100Hz: 0, 500Hz: -3, 1kHz: -1, 3kHz: +2, 6kHz: +2, VOL: 50.
-The 500Hz cut removes electric box. The 3kHz and 6kHz lift adds string air. The lows stay flat, since an acoustic has body.
+Not used.
 
-**MOD — off.** No modulation. Folk stays pure.
+## AMP - Module off
 
-**DLY — off.** No delay.
+Not used.
 
-**RVB — Room**, always on.
-Mix: 16, Decay: 30, Trail: on.
-A natural room, like 60s folk in a studio.
+## CAB - Module off
 
-## CTL footswitch
+Not used.
 
-On CTL: DST (Green OD, level lift).
+## EQ - Guitar EQ 2
 
-- **CTL off** — Rhythm. Bright, compressed, acoustic-ish fingerpicking and strum. This is the resting state the patch loads into.
-- **CTL on** — Lead. A level lift for picking out the melody.
+100Hz: 0.
+500Hz: -3.
+1kHz: -1.
+3kHz: 2.
+6kHz: 2.
+VOL: 53.
+CTL assigned. Loads off; first CTL press switches it on.
+Shapes note body and cut after the amp/capture. Where assigned to CTL, its output adds the specified lift after the gain stages. Numbers are GP-5 control values, not a calibrated loudness guarantee.
 
-Engage CTL to play the melody line. Off to accompany.
+## MOD - Module off
+
+Not used.
+
+## DLY - Module off
+
+Not used.
+
+## RVB - Room
+
+Mix: 10.
+Decay: 30.
+Trail: on.
+Fixed on. Not on CTL.
+Adds the specified room or ambient tail. The revised mix keeps the initial note audible. Trail behavior follows the saved setting.
+
+## Switching and section map
+
+CTL blocks: EQ.
+- CTL off / loaded state: Acoustic-adjacent rhythm. GP-5 active: NR, PRE, RVB, N->S.
+- First CTL press: Clean melody lift. GP-5 active: NR, PRE, EQ, RVB, N->S.
+- Press CTL again to return to the loaded block pattern, provided no shared MIDI block has been changed.
+
+## Revision record
+
+Approved audit entry 178.
+- SnapTone Middle: 42 -> 48.
+- PRE Sustain: 45 -> 30.
+- DST: Green OD -> off.
+- DST: removed from CTL.
+- EQ VOL: 50 -> 53.
+- EQ: assigned to CTL.
+- RVB Mix: 16 -> 10.
+Pre-revision JSON, Markdown and original file hashes are preserved in Documents/patch-audit-2026-10-16/inventory.json and implementation-manifest.json.
+The site piece title and on-disk filenames stay stable; only the short pedal display name may change.

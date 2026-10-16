@@ -1,54 +1,98 @@
 # Low Rider — War
 
+Revised 2026-10-16 following the approved library audit.
+Type: Song. Instrument: Harley Benton passive 5-string P/J.
+GP-5 only.
+Patch screen name: LowRider-W. Patch VOL: 50.
+Preset tempo: 106 BPM.
+
 Why Can't We Be Friends?, 1975. 106 BPM, est.
 B.B. Dickerson's bass line is the entire song — that descending riff has to sit warm, round, and laid-back, not punchy or aggressive. This is a muted, almost palm-muted P-bass sound, not a bright modern tone.
 GP-5 only, P/J bass, no pedalboard.
 
-## Module chain
+## Revision intent
 
-**NR — Gate**, always on.
-THRE: 15. Very light — clean, low-gain tone doesn't pick up much noise, just enough to tidy up the rests between phrases of the riff.
+Keep the musical role of the original patch while reducing redundant gain, excessive space and unclear switching where identified in audit entry 74.
+The module settings and section map below are the active revision.
+Audited capture volumes and Michael’s explicit patch-level adjustments are preserved.
+No hardware audition or measured level match has been performed.
 
-**PRE — COMP (Ross Compressor)**, always on.
-Sustain: 45, VOL: 60.
-Lighter squash than a percussive funk patch — Low Rider's feel is loose and behind-the-beat, not tightly gated. Just enough compression to even out the riff's repeats without killing the laid-back dynamics.
+## GP-5 settings
 
-**DST — Bass OD**, on CTL.
-Gain: 22, Blend: 45, VOL: 62, Bass: 50, Treble: 45.
-Off for the main groove — clean B-15 tone through the whole verse riff.
-On for the instrumental hook/outro breakdown section, where the band opens up — a light push adds a bit more weight and presence without turning the tone aggressive.
+Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB.
+The encoded N->S block sits between DST and AMP when a SnapTone is used.
 
-**AMP/CAB — NAM SnapTone, slot 54: FullB15** (always on)
-- Built from the `Ampeg B18 - Head DI - Bass Chan - Vol 5 (B-18N)` NAM and the Apg115410 IR, combined into one snaptone.
-- Real Ampeg B-18N at volume 5, warmer and fuller than the clean capture, into the Apg115410 (1x15 + 4x10) IR.
-- Warm, girthy 70s soul-funk. A B-15 is rounder and boxier than an 8x10, which is what the riff wants.
-- Moved off the SoulB18 snaptone (slot 60) 2026-10-02. Michael dropped that combo in the bass VOL audit.
-- Gain: 48, VOL: 80, Bass: 65, Middle: 45, Treble: 35
-- Gain 48: a little under default. This part wants less push than the other FullB15 patches.
-- Bass 65: Deep, full low end, the foundation of the riff.
-- Middle 45: Pulled back from a typical funk-snap 800Hz setting. Low Rider isn't a percussive pop tone, it's smooth and rounded.
-- Treble 35: Dark on purpose, close to a muted/flatwound feel even on the roundwound P/J.
-- VOL 80: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
-- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 54 directly.
+AMP/CAB replacement: SnapTone FullB15 (slot 54): Ampeg B18 - Head DI - Bass Chan - Vol 5 (B-18N) + Apg115410.
+Slot: 54. Always on.
+Gain: 48, VOL: 80, Bass: 55, Middle: 50, Treble: 35.
+AMP and CAB are both off; the capture already includes its cab/DI character.
+The capture voice is fixed across CTL states. Audited VOL is preserved for this slot.
 
-**EQ — Bass EQ 2**, always on.
-50Hz: +4, 120Hz: +3, 400Hz: +2, 800Hz: -3, 4.5kHz: -4, VOL: 50.
-Low end reinforced and warmed through 50Hz-400Hz, then rolled off through 800Hz and 4.5kHz — that's the muted, rounded top end this riff needs. No funk snap, no string zing.
+## NR - Gate
 
-**MOD — off.** No modulation — this tone is about weight and roundness, not movement.
+THRE: 15.
+Fixed on. Not on CTL.
+Use the lowest threshold that keeps rests quiet. Check soft notes and held-note decay. This gate is before the drives and amp; it does not directly gate noise generated after it.
 
-**DLY — off.** Straight through, no delay — the riff repeats on its own, doesn't need help.
+## PRE - COMP
 
-**RVB — Room**, on CTL.
-Mix: 15, Decay: 22, Trail: off.
-Off for the main groove — dry, right on top of the beat, same as the record's tight low end.
-On alongside the OD push for the instrumental hook — a touch of room air to open the tone up when the band stretches out.
+Sustain: 45.
+VOL: 60.
+Fixed on. Not on CTL.
+Controls the source dynamics or adds the specified push/filter before distortion and amp processing. The settings stay fixed; only its on/off state can change.
 
-## CTL footswitch
+## DST - Module off
 
-Two modules on CTL: DST (Bass OD) and RVB (Room).
+Not used.
 
-- **CTL off** — main verse/riff groove. Warm, dark B-15 tone, dry and laid-back. This is the resting state the patch loads into.
-- **CTL on** — instrumental hook/outro breakdown. Light OD push plus a touch of room, same amp tone underneath, a bit more weight and size for the open section.
+## AMP - Module off
 
-Engage CTL for the instrumental/outro stretch, back off for the main verse riff.
+Not used.
+
+## CAB - Module off
+
+Not used.
+
+## EQ - Bass EQ 2
+
+50Hz: 0.
+120Hz: 1.
+400Hz: 2.
+800Hz: 0.
+4.5kHz: -4.
+VOL: 50.
+Fixed on. Not on CTL.
+Shapes note body and cut after the amp/capture. Where assigned to CTL, its output adds the specified lift after the gain stages. Numbers are GP-5 control values, not a calibrated loudness guarantee.
+
+## MOD - Module off
+
+Not used.
+
+## DLY - Module off
+
+Not used.
+
+## RVB - Module off
+
+Not used.
+
+## Switching and section map
+
+CTL blocks: None.
+- CTL off / loaded state: Dry main riff. GP-5 active: NR, PRE, EQ, N->S.
+- No GP-5 CTL change. One consistent GP-5 voice serves this bass part.
+
+## Revision record
+
+Approved audit entry 74.
+- SnapTone Bass: 65 -> 55.
+- SnapTone Middle: 45 -> 50.
+- DST: Bass OD -> off.
+- DST: removed from CTL.
+- EQ 50Hz: 4 -> 0.
+- EQ 120Hz: 3 -> 1.
+- EQ 800Hz: -3 -> 0.
+- RVB: Room -> off.
+- RVB: removed from CTL.
+Pre-revision JSON, Markdown and original file hashes are preserved in Documents/patch-audit-2026-10-16/inventory.json and implementation-manifest.json.
+The site piece title and on-disk filenames stay stable; only the short pedal display name may change.

@@ -1,78 +1,173 @@
 # Cliffs of Dover — Eric Johnson
 
+Revised 2026-10-16 following the approved library audit.
+Type: Song. Instrument: Harley Benton passive 5-string P/J.
+Full board. Board Option: American Sound (bypassed; retained for legacy full-board builds).
+Patch screen name: Cliffs of . Patch VOL: 55.
+Preset tempo: 133 BPM.
+
 Bass: Harley Benton P/J, 5-string, passive. Full board.
 From *Ah Via Musicom* (1990), ~133 BPM.
 This is a guitar showcase, so the bass job is to stay tight, articulate, and out of the way of Eric Johnson's runs — hi-fi and clean, not dirty. Most of the tune is a driving, uptempo groove locked to the main riff and the fast unison lines. There's one exception: the mid-tune interlude, where the band drops back and the guitar goes into a more spacious, atmospheric passage before the reprise and outro shred.
 
-CTL off = the main driving groove (most of the song). CTL on = the interlude, where things open up.
+## Revision intent
+
+Keep the musical role of the original patch while reducing redundant gain, excessive space and unclear switching where identified in audit entry 24.
+The module settings and section map below are the active revision.
+Audited capture volumes and Michael’s explicit patch-level adjustments are preserved.
+No hardware audition or measured level match has been performed.
 
 ## GP-5 settings
 
-Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
+Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB.
+The encoded N->S block sits between DST and AMP when a SnapTone is used.
 
-**NR — Gate**
-- THRE: 15
-- Always on. Low threshold — this tone stays clean and hi-fi, nothing to gate out.
+AMP/CAB replacement: SnapTone AvalonAD2022 (slot 52): Avalon - 38 dB - Chan 1 (Avalon AD2022) + none (studio DI).
+Slot: 52. Always on.
+Gain: 55, VOL: 75, Bass: 55, Middle: 60, Treble: 58.
+AMP and CAB are both off; the capture already includes its cab/DI character.
+The capture voice is fixed across CTL states. Audited VOL is preserved for this slot.
 
-**PRE — Off**
-- Compression duties are handled by the Donner Ultimate Comp on the board (see below).
+## NR - Gate
 
-**DST — Off**
-**AMP/CAB — NAM SnapTone, slot 52: AvalonAD2022** (always on)
-- Built from the `Avalon - 38 dB - Chan 1 (Avalon AD2022)` NAM and no cab IR (straight DI), combined into one snaptone.
-- Avalon AD2022 Class A preamp at 38 dB. A studio DI, not an amp: no speaker coloration.
-- Hi-fi, clean support under a guitar showcase. A DI keeps the bass tight and out of the way.
-- Gain: 55, VOL: 75, Bass: 55, Middle: 60, Treble: 65
-- Gain 55: noticeably over default. This part wants more push than the other AvalonAD2022 patches.
-- Bass 55: a touch more low end.
-- Middle 60: more midrange.
-- Treble 65: more top end.
-- VOL 75: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
-- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 52 directly.
+THRE: 15.
+Fixed on. Not on CTL.
+Use the lowest threshold that keeps rests quiet. Check soft notes and held-note decay. This gate is before the drives and amp; it does not directly gate noise generated after it.
 
-**EQ — Bass EQ 2**
-- 50Hz: +2, 120Hz: 0, 400Hz: -3, 800Hz: +3, 4.5kHz: +4, VOL: 55
-- Always on, same for both CTL states.
-- -3 at 400Hz cuts the boxiness that would otherwise mud up fast passages. +3 at 800Hz and +4 at 4.5kHz push the pick/finger attack and top-end sparkle — this needs to sit crisp and present under Johnson's famously hi-fi guitar tone, not warm and rounded off.
+## PRE - Module off
 
-**MOD — B-Chorus — On CTL**
-- Depth: 25, Rate: 0.4Hz, VOL: 55
-- CTL off: bypassed (main groove — dry and direct). CTL on: engaged (interlude).
-- Light touch — just enough shimmer to match the more atmospheric character of the interlude section, not a drenched chorus effect.
+Not used.
 
-**DLY — Off**
-- Not used. Keeping this simple — one atmospheric element (the RVB below) is enough for the interlude without cluttering a section that's meant to feel like a held breath before the outro.
+## DST - Module off
 
-**RVB — Room — On CTL**
-- Mix: 25, Decay: 35, Trail: On
-- CTL off: bypassed (main groove — tight and dry, right in the pocket with the drums). CTL on: engaged (interlude).
-- Opens the space up for the interlude's more atmospheric feel, then closes right back down as the tune ramps back to full energy.
+Not used.
 
-## CTL summary
+## AMP - Module off
 
-- **CTL Off — Main groove.** The driving uptempo sections and fast unison lines that make up most of the song. Dry, tight, clean.
-- **CTL On — Interlude.** Chorus and Room reverb engage together, opening the tone up to match the more spacious, atmospheric passage before the reprise.
-- Engage CTL going into the interlude, disengage coming out of it back into the driving main groove.
+Not used.
 
-## Full pedalboard (signal chain order)
+## CAB - Module off
 
-**1. Flamma FS-08 Octave — Bypassed**
-- Footswitch off. This part needs a single, clean fundamental to stay articulate through fast passages — an octave stack would clutter it.
+Not used.
 
-**2. Donner Ultimate Comp — Engaged**
-- COMP: 55
-- TONE: 60
-- LEVEL: 60
-- Mode: TREBLE
-- Moderate compression keeps note-to-note consistency even through the tune's faster runs, without squashing the natural attack. TREBLE mode keeps that attack bright and audible ahead of the NAM.
+## EQ - Bass EQ 2
 
-**3. Donner Stylish Fuzz — Bypassed**
-- Footswitch off. No fuzz anywhere in this build — it would clash with the clean, hi-fi character the whole tune is built around.
+50Hz: 2.
+120Hz: 0.
+400Hz: -3.
+800Hz: 3.
+4.5kHz: 2.
+VOL: 55.
+Fixed on. Not on CTL.
+Shapes note body and cut after the amp/capture. Where assigned to CTL, its output adds the specified lift after the gain stages. Numbers are GP-5 control values, not a calibrated loudness guarantee.
 
-**4. Joyo Tidal Wave — Bypassed**
-- Footswitch off, Drive/Blend not engaged. The Avalon DI's clean, hi-fi character is the only "enhancement" this tone needs — stacking another gain stage would just soften the note definition this tune depends on.
+## MOD - B-Chorus
 
-**5. Joyo Narcissus — Bypassed**
-- Footswitch off. The GP-5's own B-Chorus already covers the interlude's chorus needs — running both at once would just get thick and washy where this section wants shimmer, not mud.
+Depth: 25.
+Rate: 0.4.
+VOL: 55.
+CTL assigned. Loads off; first CTL press switches it on.
+Adds the specified movement. Keep it underneath the note except for intentionally wet artist or ambient voices.
 
-**6. Valeton GP-5** — see settings above.
+## DLY - Module off
+
+Not used.
+
+## RVB - Room
+
+Mix: 8.
+Decay: 35.
+Trail: on.
+CTL assigned. Loads off; first CTL press switches it on.
+Adds the specified room or ambient tail. The revised mix keeps the initial note audible. Trail behavior follows the saved setting.
+
+## Switching and section map
+
+CTL blocks: MOD, RVB.
+- CTL off / loaded state: the main driving groove (most of the song). GP-5 active: NR, EQ, N->S.
+- First CTL press: Interlude. GP-5 active: NR, EQ, MOD, RVB, N->S.
+- Press CTL again to return to the loaded block pattern, provided no shared MIDI block has been changed.
+
+## Full pedalboard
+
+Flamma FS-08 Octave -> Donner Ultimate Comp -> Donner Stylish Fuzz -> Joyo Tidal Wave -> Joyo American Sound -> Joyo Narcissus -> Valeton GP-5.
+Board settings are set by hand and are not encoded in the .prst.
+All numeric pedal positions use the existing 0–100 position shorthand unless a clock position is specified.
+
+## Flamma FS-08 Octave
+
+Bypassed throughout.
+-2OCT: 0.
+-OCT: 0.
++OCT: 0.
++2OCT: 0.
+Dry: 100.
+
+## Donner Ultimate Comp
+
+On throughout.
+COMP: 55.
+TONE: 60.
+LEVEL: 60.
+Mode: TREBLE.
+
+## Donner Stylish Fuzz
+
+Bypassed throughout.
+Sustain: 25.
+Treble: 50.
+Bass: 50.
+Volume: 50.
+
+## Joyo Tidal Wave
+
+Drive off throughout; preamp/EQ/Level remain active.
+Drive: 15.
+Blend: 20.
+Presence: 50.
+Level: 50.
+Treble: 50.
+Middle: 50.
+Bass: 50.
+Mid-Frequency: 500Hz.
+Bass-Shift: 80Hz.
+Cab-Sim (DI out): Off.
+Ground Lift: Off.
+The footswitch toggles drive only. Preamp EQ and Level stay active in both states. Cab-Sim/Ground Lift affect the DI path; main instrument output is unchanged.
+
+## Joyo American Sound
+
+Bypassed throughout.
+Level: 50.
+Drive: 10.
+Voice: 50.
+Low: 50.
+Mid: 50.
+High: 50.
+
+## Joyo Narcissus
+
+Bypassed throughout.
+Width: 30.
+Depth: 20.
+Rate: 20.
+Mode: Vintage.
+
+## Board choreography
+
+- Flamma FS-08 Octave: Bypassed throughout.
+- Donner Ultimate Comp: On throughout.
+- Donner Stylish Fuzz: Bypassed throughout.
+- Joyo Tidal Wave: Drive off throughout; preamp/EQ/Level remain active.
+- Joyo American Sound: Bypassed throughout.
+- Joyo Narcissus: Bypassed throughout.
+Set the board switches for the section you are entering. Intro-only or clean-only effects may need to start on. Return each pedal to its documented state at the next section. Board pedals are independent of CTL.
+
+## Revision record
+
+Approved audit entry 24.
+- SnapTone Treble: 65 -> 58.
+- EQ 4.5kHz: 4 -> 2.
+- RVB Mix: 25 -> 8.
+Pre-revision JSON, Markdown and original file hashes are preserved in Documents/patch-audit-2026-10-16/inventory.json and implementation-manifest.json.
+The site piece title and on-disk filenames stay stable; only the short pedal display name may change.

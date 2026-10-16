@@ -1,68 +1,114 @@
 # One Last Breath (Rhythm Guitar) — Creed
 
-From *Weathered* (2001). About 62 BPM, est.
-A slow post-grunge ballad. Clean, ringing arpeggios under the verses, then a heavy, thick chorus and a melodic solo.
-Mark Tremonti is widely associated with Mesa Rectifiers in this era. A Rectifier can't give the clean verse, so this patch uses the same recipe as the Higher patch: a clean Matchless with a crunch box and boost stacked on CTL.
-Built from the band's general sound. I haven't verified the exact guitars, amps or tuning on this track. Tremonti uses a lot of alternate tunings, so check yours against the record.
-Instrument: Stratocaster (HSS). Neck or position 2 for the clean verses. Bridge humbucker for the chorus and solo.
-GP-5 only, Stratocaster (HSS), no pedalboard.
+Revised 2026-10-16 following the approved library audit.
+Type: Song. Instrument: HSS Stratocaster.
+GP-5 only.
+Patch screen name: OneLast-Gt. Patch VOL: 50.
+Preset tempo: 62 BPM.
 
-## AMP: Match CL + CAB: V30112 IR (User IR 10)
+One Last Breath on HSS Strat. Clean Match CL supports the verse and La Charger supplies the heavy voice. The constraint is one fixed GP-5 amp voice within this preset, not an inability of real Rectifiers to produce clean tones. Delay loads off and can be added by MIDI.
 
-V30112 is the loaded guitar cab with real weight for the heavy chorus, and it still works for the clean tone. Same pairing as Higher, so the two Creed patches sit at the same level and voice.
+## Revision intent
 
-## Module chain
+Keep the musical role of the original patch while reducing redundant gain, excessive space and unclear switching where identified in audit entry 174.
+The module settings and section map below are the active revision.
+Audited capture volumes and Michael’s explicit patch-level adjustments are preserved.
+No hardware audition or measured level match has been performed.
 
-**NR — Gate**, always on.
+## GP-5 settings
+
+Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB.
+The encoded N->S block sits between DST and AMP when a SnapTone is used.
+
+Cab IR: V30112. Encoded as User IR 10.
+
+## NR - Gate
+
 THRE: 25.
-The boost plus distortion stack hisses. 25 cleans up the gaps without choking the clean arpeggios' decay.
+Fixed on. Not on CTL.
+Use the lowest threshold that keeps rests quiet. Check soft notes and held-note decay. This gate is before the drives and amp; it does not directly gate noise generated after it.
 
-**PRE — Boost (EP Booster)**, on CTL.
-Gain: 45, +3dB: on, Bright: off.
-Pushes the distortion harder for the chorus and adds level. Bright off keeps it thick, not fizzy.
+## PRE - Module off
 
-**DST — La Charger (Crunch Box)**, on CTL.
-Gain: 58, Tone: 52, VOL: 62.
-The main heavy sound. A little more gain than Higher, because this chorus is heavier and slower. Tone 52 keeps it dark and thick.
+Not used.
 
-**AMP — Match CL**, always on.
-Gain: 30, PRES: 50, VOL: 62, Bass: 50, Middle: 52, Treble: 52.
-Matchless Chieftain clean. Chimey, high-headroom verses. Under the pedal stack it stays tight and doesn't add mud.
+## DST - La Charger
 
-**CAB — User IR 10 (V30112)**, always on.
+Gain: 45.
+Tone: 52.
+VOL: 62.
+CTL assigned. Loads off; first CTL press switches it on.
+Supplies the selected additional drive voice. Use its level and gain as separate controls. A pre-amp boost may add compression instead of a proportional solo-volume increase.
+
+## AMP - Match CL
+
+Gain: 30.
+PRES: 50.
+VOL: 62.
+Bass: 50.
+Middle: 52.
+Treble: 52.
+Fixed on. Not on CTL.
+Provides one fixed amp voice for the complete preset. CTL does not change its knobs or select another amp channel.
+
+## CAB - User IR 10
+
 VOL: 60.
+Fixed on. Not on CTL.
+Keeps the required speaker response in the exported preset. Use the documented loaded IR slot; no extra cab goes after a SnapTone.
 
-**EQ — Guitar EQ 2**, always on.
-100Hz: -2, 500Hz: 0, 1kHz: +1, 3kHz: +1, 6kHz: -1, VOL: 50.
-Low cut keeps the slow, heavy chords tight. A small presence lift for both tones. -1 at 6kHz trims distortion fizz.
+## EQ - Guitar EQ 2
 
-**MOD — off.** No modulation. The delay supplies the movement.
+100Hz: -2.
+500Hz: 0.
+1kHz: 1.
+3kHz: 1.
+6kHz: -1.
+VOL: 53.
+CTL assigned. Loads off; first CTL press switches it on.
+Shapes note body and cut after the amp/capture. Where assigned to CTL, its output adds the specified lift after the gain stages. Numbers are GP-5 control values, not a calibrated loudness guarantee.
 
-**DLY — Analog**, loads on. MIDI toggle (see MIDI toggles).
-Mix: 14, Time: 726ms, Feedback: 22, Trail: on.
-A dotted eighth at 62 BPM. It gives the clean arpeggios that ringing, cascading feel. Mix 14 keeps it under the heavy chorus.
+## MOD - Module off
 
-**RVB — Hall**, always on.
-Mix: 15, Decay: 40, Trail: on.
-Space for a slow ballad. It stays out of the way of the heavy chords.
+Not used.
 
-## CTL footswitch
+## DLY - Analog
 
-On CTL: PRE (Boost), DST (La Charger).
+Mix: 14.
+Time: 726.
+Feedback: 22.
+Trail: on.
+MIDI-only. Loads off.
+Adds repeats only in the listed states. Trail preserves the remaining repeats when this block is bypassed; it does not change delay time or mix.
 
-- **CTL off** — Rhythm. Clean, ringing arpeggios with dotted-eighth delay and hall. This is the resting state the patch loads into.
-- **CTL on** — Lead. Boost plus crunch box for the heavy chorus and the solo.
+## RVB - Hall
 
-Engage CTL at the chorus and the solo. Drop back for the verses.
+Mix: 15.
+Decay: 40.
+Trail: on.
+Fixed on. Not on CTL.
+Adds the specified room or ambient tail. The revised mix keeps the initial note audible. Trail behavior follows the saved setting.
 
-## MIDI toggles
+## Switching and section map
 
-MIDI = True (added 2026-10-12). With no MIDI controller connected, the patch loads and plays exactly as before. MIDI adds single-block toggles on top of CTL.
+CTL blocks: DST, EQ.
+- CTL off / loaded state: Clean verse arpeggios. GP-5 active: NR, AMP, CAB, RVB.
+- First CTL press: Heavy chorus/lead. GP-5 active: NR, DST, AMP, CAB, EQ, RVB.
+- Press CTL again to return to the loaded block pattern, provided no shared MIDI block has been changed.
 
-On MIDI: DLY (Analog), MIDI-only, loads on.
+MIDI toggles: DLY.
+MIDI mapping lives on the controller/device, not in the .prst.
+- DLY Analog: loads off; toggle to add this block independently.
+- DLY-only alternative from loaded state: CTL off, MIDI DLY on; other MIDI blocks at their load states. GP-5 active: NR, AMP, CAB, DLY, RVB. Board switches unchanged.
 
-Sounds:
-- **Clean arpeggios** (default). CTL off, delay on. The cascading dotted-eighth verse.
-- **Heavy chorus.** CTL on, MIDI DLY off. Boost + crunch box with no dotted-eighth repeats smearing the big chords. Tight and huge.
-- **Solo.** CTL on, delay on. The repeats come back to make the melodic solo sing.
-- Section map: verse (default) → chorus: CTL on, DLY off → back to verse: CTL off, DLY on → solo: CTL on, DLY on.
+## Revision record
+
+Approved audit entry 174.
+- PRE: Boost -> off.
+- PRE: removed from CTL.
+- DST Gain: 58 -> 45.
+- EQ VOL: 50 -> 53.
+- EQ: assigned to CTL.
+- DLY MIDI load state: off.
+Pre-revision JSON, Markdown and original file hashes are preserved in Documents/patch-audit-2026-10-16/inventory.json and implementation-manifest.json.
+The site piece title and on-disk filenames stay stable; only the short pedal display name may change.

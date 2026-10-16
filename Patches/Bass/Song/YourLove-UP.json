@@ -2,16 +2,71 @@
   "patch_name": "YourLove",
   "patch_vol": 50,
   "bpm": 71,
-  "nam": {"name": "FullB15 (slot 54): Ampeg B18 - Head DI - Bass Chan - Vol 5 (B-18N) + Apg115410", "slot": 54, "settings": {"Gain": 50, "VOL": 80, "Bass": 55, "Middle": 50, "Treble": 55}},
+  "nam": {
+    "name": "FullB15 (slot 54): Ampeg B18 - Head DI - Bass Chan - Vol 5 (B-18N) + Apg115410",
+    "slot": 54,
+    "settings": {
+      "Gain": 50,
+      "VOL": 80,
+      "Bass": 55,
+      "Middle": 50,
+      "Treble": 55
+    }
+  },
   "modules": {
-    "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 22}},
-    "PRE": {"model": "Micro Boost", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Gain": 50}},
-    "DST": {"model": null},
-    "AMP": {"model": null},
-    "CAB": {"model": null},
-    "EQ": {"model": "Bass EQ 1", "always_on": true, "settings": {"33Hz": 5, "150Hz": 0, "600Hz": -2, "2kHz": 2, "8kHz": 2, "VOL": 50}},
-    "MOD": {"model": "B-Chorus", "always_on": true, "settings": {"Depth": 15, "Rate": 0.4, "VOL": 50}},
-    "DLY": {"model": null},
-    "RVB": {"model": "Hall", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Mix": 30, "Decay": 55, "Trail": true}}
+    "NR": {
+      "model": "Gate",
+      "always_on": true,
+      "settings": {
+        "THRE": 10
+      }
+    },
+    "PRE": {
+      "model": "Micro Boost",
+      "ctl": true,
+      "ctl_off_state": "off",
+      "ctl_on_state": "on",
+      "settings": {
+        "Gain": 25
+      }
+    },
+    "DST": {
+      "model": null
+    },
+    "AMP": {
+      "model": null
+    },
+    "CAB": {
+      "model": null
+    },
+    "EQ": {
+      "model": "Bass EQ 1",
+      "always_on": true,
+      "settings": {
+        "33Hz": 0,
+        "150Hz": 0,
+        "600Hz": -2,
+        "2kHz": 2,
+        "8kHz": 2,
+        "VOL": 50
+      }
+    },
+    "MOD": {
+      "model": null
+    },
+    "DLY": {
+      "model": null
+    },
+    "RVB": {
+      "model": "Hall",
+      "ctl": true,
+      "ctl_off_state": "off",
+      "ctl_on_state": "on",
+      "settings": {
+        "Mix": 8,
+        "Decay": 35,
+        "Trail": true
+      }
+    }
   }
 }

@@ -1,94 +1,174 @@
 # Tennessee Whiskey — Chris Stapleton
 
+Revised 2026-10-16 following the approved library audit.
+Type: Song. Instrument: Sire V7 2nd Generation 5-string fretless, flatwounds; run passive.
+Full board. Board Option: American Sound (bypassed; retained for legacy full-board builds).
+Patch screen name: TN Whiskey. Patch VOL: 52.
+Preset tempo: 68 BPM.
+
 Bass: Sire V7 2nd Gen, 5-string fretless, flatwound, run **Passive**.
-Full board.
 Chris Stapleton's 2015 version (*Traveller*), ~68 BPM slow soul-blues shuffle.
 This is the opposite job from the last few Muse patches — no drive, no grit, no aggression. The whole point of pulling out the fretless here is the warmth: flatwounds plus no frets means a rounder, mwah-y, almost upright-bass character that sits perfectly under this song's smoky, soulful groove. Verses stay laid-back and intimate; the chorus and guitar solo open up just a touch more.
-
-CTL off = the laid-back verse groove. CTL on = the chorus and guitar solo, where it opens up slightly.
-
 **Passive, not active** — this is the one call that flips from the Egan fretless build. Egan's fusion tone wanted headroom and hi-fi clarity to punch through a dense mix and feed two compression stages. This song wants the opposite: the warmer, slightly softer passive voicing that leans into the fretless's natural roundness instead of fighting it with active clarity.
+
+## Revision intent
+
+Keep the musical role of the original patch while reducing redundant gain, excessive space and unclear switching where identified in audit entry 114.
+The module settings and section map below are the active revision.
+Audited capture volumes and Michael’s explicit patch-level adjustments are preserved.
+No hardware audition or measured level match has been performed.
 
 ## GP-5 settings
 
-Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
+Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB.
+The encoded N->S block sits between DST and AMP when a SnapTone is used.
 
-**NR — Gate**
-- THRE: 15
-- Always on. Low threshold — this is a clean, warm tone with minimal grit, nothing much to gate out.
+AMP/CAB replacement: SnapTone CleanB15 (slot 51): Ampeg B18 - Head DI - Bass Chan - Vol 2.5 (B-18N) + Apg115.
+Slot: 51. Always on.
+Gain: 53, VOL: 80, Bass: 56, Middle: 52, Treble: 45.
+AMP and CAB are both off; the capture already includes its cab/DI character.
+The capture voice is fixed across CTL states. Audited VOL is preserved for this slot.
 
-**PRE — Micro Boost — On CTL**
-- Gain: 45
-- CTL off: bypassed (verse). CTL on: engaged (chorus/solo).
-- Verse sits back in the pocket, no push needed. Chorus and guitar solo get a gentle clean lift to open the tone up slightly without ever getting aggressive — this song never wants to feel pushed hard.
+## NR - Gate
 
-**DST — Off**
-- No drive anywhere in this patch. This tone is built entirely around warmth and touch, not gain.
+THRE: 15.
+Fixed on. Not on CTL.
+Use the lowest threshold that keeps rests quiet. Check soft notes and held-note decay. This gate is before the drives and amp; it does not directly gate noise generated after it.
 
-**AMP/CAB — NAM SnapTone, slot 51: CleanB15** (always on)
-- Built from the `Ampeg B18 - Head DI - Bass Chan - Vol 2.5 (B-18N)` NAM and the Apg115 IR, combined into one snaptone.
-- Real Ampeg B-18N fliptop (the B-15 preamp circuit), captured clean at volume 2.5, into the Apg115 B-15 cab IR.
-- Slow soul-country. The warm, clean B-15 is the right bed for the vocal.
-- Gain: 53, VOL: 80, Bass: 62, Middle: 52, Treble: 45
-- Gain 53: a little over default. This part wants more push than the other CleanB15 patches.
-- Bass 62: more low end.
-- Middle 52: a touch more midrange.
-- Treble 45: top end pulled back a little.
-- VOL 80: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
-- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 51 directly.
+## PRE - Micro Boost
 
-**EQ — Bass EQ 1**
-- 33Hz: +4, 150Hz: +1, 600Hz: -3, 2kHz: +2, 8kHz: +4, VOL: 55
-- Always on, same for both CTL states.
-- Modest +4 at 8kHz brings out the fretless's natural mwah and finger noise without brightening the tone up past what this warm ballad wants (compare Egan's +10 at 8kHz for a hi-fi fusion voice — this is the same band pulled way back). -3 at 600Hz clears the boxiness flatwounds tend to build up. +4 at 33Hz keeps real low-end weight under it all.
+Gain: 25.
+CTL assigned. Loads off; first CTL press switches it on.
+Controls the source dynamics or adds the specified push/filter before distortion and amp processing. The settings stay fixed; only its on/off state can change.
 
-**MOD — Off**
-- No modulation. This tone stays dry and honest — the warmth comes from the instrument and the amp, not a chorus effect.
+## DST - Module off
 
-**DLY — Off**
-- Not used. A laid-back soul ballad like this doesn't need rhythmic or ambient delay cluttering the pocket.
+Not used.
 
-**RVB — Room — On CTL**
-- Mix: 18, Decay: 30, Trail: On
-- CTL off: bypassed (verse — tight and intimate). CTL on: engaged (chorus/solo).
-- A subtle touch of room opens the space up for the chorus and guitar solo, matching the slight lift in the song's energy without turning this into a wash.
+## AMP - Module off
 
-## CTL summary
+Not used.
 
-- **CTL Off — Verse.** Laid-back, warm, intimate. Dry, sitting right in the pocket.
-- **CTL On — Chorus/solo.** A gentle boost and a touch of room open the tone up slightly for the chorus hook and the guitar solo.
-- Engage CTL going into the first chorus, and again through the guitar solo section.
+## CAB - Module off
 
-## Full pedalboard (signal chain order)
+Not used.
 
-**1. Flamma FS-08 Octave — Bypassed**
-- Footswitch off. This song wants a single, warm, clean fundamental — no reason to layer octaves on a fretless part built around touch and warmth.
+## EQ - Bass EQ 1
 
-**2. Donner Ultimate Comp — Engaged**
-- COMP: 45
-- TONE: 45
-- LEVEL: 55
-- Mode: NORMAL
-- Gentle compression evens out the fingerstyle dynamics without squashing the natural touch this part relies on. NORMAL mode (not TREBLE) on purpose — this patch wants warmth, not extra brightness, and the fretless/flatwound combo already gives plenty of top-end control.
+33Hz: 0.
+150Hz: 1.
+600Hz: -3.
+2kHz: 2.
+8kHz: 0.
+VOL: 55.
+Fixed on. Not on CTL.
+Shapes note body and cut after the amp/capture. Where assigned to CTL, its output adds the specified lift after the gain stages. Numbers are GP-5 control values, not a calibrated loudness guarantee.
 
-**3. Donner Stylish Fuzz — Bypassed**
-- Footswitch off. No fuzz anywhere near this patch — it has no place in a warm soul-blues ballad.
+## MOD - Module off
 
-**4. Joyo Tidal Wave — Engaged**
-- Drive: 10
-- Blend: 20
-- Presence: 50
-- Level: 55
-- Treble: 50
-- Middle: 55
-- Bass: 60
-- Mid-Frequency: 500Hz
-- Bass-Shift: 40Hz
-- Cab-Sim (DI out): On
-- Ground Lift: On
-- Used purely as a clean-leaning tone shaper and DI stage here, not an overdrive — Drive stays low and Blend stays mostly clean. Bass-Shift at 40Hz keeps the low end full and round rather than tight, matching the warm, unhurried feel of the song. Mid-Frequency at 500Hz reinforces body over attack.
+Not used.
 
-**5. Joyo Narcissus — Bypassed**
-- Footswitch off. No chorus — matches the MOD-off call on the GP-5. Dry, warm tone throughout, letting the fretless's own natural mwah do the talking.
+## DLY - Module off
 
-**6. Valeton GP-5** — see settings above.
+Not used.
+
+## RVB - Room
+
+Mix: 6.
+Decay: 30.
+Trail: on.
+CTL assigned. Loads off; first CTL press switches it on.
+Adds the specified room or ambient tail. The revised mix keeps the initial note audible. Trail behavior follows the saved setting.
+
+## Switching and section map
+
+CTL blocks: PRE, RVB.
+- CTL off / loaded state: the laid-back verse groove. GP-5 active: NR, EQ, N->S.
+- First CTL press: Chorus/solo. GP-5 active: NR, PRE, EQ, RVB, N->S.
+- Press CTL again to return to the loaded block pattern, provided no shared MIDI block has been changed.
+
+## Full pedalboard
+
+Flamma FS-08 Octave -> Donner Ultimate Comp -> Donner Stylish Fuzz -> Joyo Tidal Wave -> Joyo American Sound -> Joyo Narcissus -> Valeton GP-5.
+Board settings are set by hand and are not encoded in the .prst.
+All numeric pedal positions use the existing 0–100 position shorthand unless a clock position is specified.
+
+## Flamma FS-08 Octave
+
+Bypassed throughout.
+-2OCT: 0.
+-OCT: 0.
++OCT: 0.
++2OCT: 0.
+Dry: 100.
+
+## Donner Ultimate Comp
+
+On throughout.
+COMP: 45.
+TONE: 45.
+LEVEL: 55.
+Mode: NORMAL.
+
+## Donner Stylish Fuzz
+
+Bypassed throughout.
+Sustain: 25.
+Treble: 50.
+Bass: 50.
+Volume: 50.
+
+## Joyo Tidal Wave
+
+On throughout.
+Drive: 10.
+Blend: 20.
+Presence: 50.
+Level: 55.
+Treble: 50.
+Middle: 55.
+Bass: 60.
+Mid-Frequency: 500Hz.
+Bass-Shift: 40Hz.
+Cab-Sim (DI out): On.
+Ground Lift: On.
+The footswitch toggles drive only. Preamp EQ and Level stay active in both states. Cab-Sim/Ground Lift affect the DI path; main instrument output is unchanged.
+
+## Joyo American Sound
+
+Bypassed throughout.
+Level: 50.
+Drive: 10.
+Voice: 50.
+Low: 50.
+Mid: 50.
+High: 50.
+
+## Joyo Narcissus
+
+Bypassed throughout.
+Width: 30.
+Depth: 20.
+Rate: 20.
+Mode: Vintage.
+
+## Board choreography
+
+- Flamma FS-08 Octave: Bypassed throughout.
+- Donner Ultimate Comp: On throughout.
+- Donner Stylish Fuzz: Bypassed throughout.
+- Joyo Tidal Wave: On throughout.
+- Joyo American Sound: Bypassed throughout.
+- Joyo Narcissus: Bypassed throughout.
+Set the board switches for the section you are entering. Intro-only or clean-only effects may need to start on. Return each pedal to its documented state at the next section. Board pedals are independent of CTL.
+
+## Revision record
+
+Approved audit entry 114.
+- SnapTone Bass: 62 -> 56.
+- PRE Gain: 45 -> 25.
+- EQ 33Hz: 4 -> 0.
+- EQ 8kHz: 4 -> 0.
+- RVB Mix: 18 -> 6.
+Pre-revision JSON, Markdown and original file hashes are preserved in Documents/patch-audit-2026-10-16/inventory.json and implementation-manifest.json.
+The site piece title and on-disk filenames stay stable; only the short pedal display name may change.

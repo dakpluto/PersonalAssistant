@@ -1,65 +1,101 @@
 # 1979 — The Smashing Pumpkins
 
+Revised 2026-10-16 following the approved library audit.
+Type: Song. Instrument: Harley Benton passive 5-string P/J.
+GP-5 only.
+Patch screen name: 1979-SP. Patch VOL: 53.
+Preset tempo: 126 BPM.
+
 Bass: Harley Benton P/J, 5-string, passive. GP-5 only.
 From *Mellon Collie and the Infinite Sadness* (1995), ~126 BPM.
 D'Arcy Wretzky's part here is simple and melodic, sitting inside a hazy, nostalgic, looped-and-textured production — shimmering guitars, a programmed-feeling drum groove, everything a little washed and dreamy. The song holds a pretty consistent mood throughout, with a small lift into the "and I don't even care to shake these zipper blues" hook.
 
-CTL off = the main hazy verse. CTL on = a gentle lift for the hook.
+## Revision intent
+
+Keep the musical role of the original patch while reducing redundant gain, excessive space and unclear switching where identified in audit entry 7.
+The module settings and section map below are the active revision.
+Audited capture volumes and Michael’s explicit patch-level adjustments are preserved.
+No hardware audition or measured level match has been performed.
 
 ## GP-5 settings
 
-Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
+Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB.
+The encoded N->S block sits between DST and AMP when a SnapTone is used.
 
-**NR — Gate**
-- THRE: 12
-- Always on. Very low threshold — clean, dreamy tone throughout, nothing to clean up.
+AMP/CAB replacement: SnapTone CleanSVT (slot 53): SVT CLEAN (SVT-CL) + Apg810.
+Slot: 53. Always on.
+Gain: 52, VOL: 65, Bass: 56, Middle: 50, Treble: 58.
+AMP and CAB are both off; the capture already includes its cab/DI character.
+The capture voice is fixed across CTL states. Audited VOL is preserved for this slot.
 
-**PRE — Micro Boost — On CTL**
-- Gain: 45
-- CTL off: bypassed (verse). CTL on: engaged (hook).
-- A gentle push for the hook, keeping the song's overall consistent, unhurried mood intact rather than a big dynamic swing.
+## NR - Gate
 
-**DST — Off**
-- No drive. This tone stays clean and hazy from top to bottom.
+THRE: 12.
+Fixed on. Not on CTL.
+Use the lowest threshold that keeps rests quiet. Check soft notes and held-note decay. This gate is before the drives and amp; it does not directly gate noise generated after it.
 
-**AMP/CAB — NAM SnapTone, slot 53: CleanSVT** (always on)
-- Built from the `SVT CLEAN (SVT-CL)` NAM and the Apg810 IR, combined into one snaptone.
-- Real Ampeg SVT-CL preamp on its clean setting, into the Apg810 8x10 IR.
-- D'arcy's part is a clean, pulsing eighth-note line. Clean SVT keeps it solid under the loops.
-- Gain: 52, VOL: 65, Bass: 56, Middle: 50, Treble: 58
-- Gain 52: a little over default. This part wants more push than the other CleanSVT patches.
-- Bass 56: more low end.
-- Middle 50: flat.
-- Treble 58: more top end.
-- VOL 65: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
-- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 53 directly.
+## PRE - Micro Boost
 
-**EQ — Bass EQ 2**
-- 50Hz: +3, 120Hz: +1, 400Hz: -1, 800Hz: +1, 4.5kHz: +3, VOL: 55
-- Always on, same for both CTL states.
-- +3 at 4.5kHz adds a touch of shimmer to match the song's dreamy top end, while +3 at 50Hz keeps real low-end weight underneath all that haze.
+Gain: 25.
+CTL assigned. Loads off; first CTL press switches it on.
+Controls the source dynamics or adds the specified push/filter before distortion and amp processing. The settings stay fixed; only its on/off state can change.
 
-**MOD — B-Chorus (Boss CEB-3)**
-- Depth: 35, Rate: 0.5Hz, VOL: 56
-- Always on, same for both CTL states.
-- Pushed a bit past the usual light-touch default — this song's whole atmosphere is built on shimmering, slightly phased textures, so a more present chorus is a deliberate call, not an oversight.
+## DST - Module off
 
-**DLY — Analog**
-- Mix: 15, Time: 380ms, Feedback: 15, Trail: On
-- Always on, same for both CTL states.
-- Kept low in the mix — this isn't a rhythmic delay, it's there to add a touch of the same spacious, echo-laden quality the guitars have, without cluttering the bass's own rhythmic role. Trail on so the tail doesn't cut off if the patch changes mid-note.
+Not used.
 
-**RVB — Room — On CTL**
-- Mix: 22, Decay: 35, Trail: On
-- CTL off: bypassed (verse). CTL on: engaged (hook).
-- A touch more openness for the hook, layering on top of the always-on chorus and delay for a slightly bigger moment without breaking the song's hazy, consistent mood.
+## AMP - Module off
 
-## CTL summary
+Not used.
 
-- **CTL Off — Verse.** Hazy, dreamy, consistent — the song's default mood throughout.
-- **CTL On — Hook.** A gentle boost and a touch more room lift the "shake these zipper blues" hook just slightly above the rest.
-- Engage CTL for the hook line, back off returning to the main verse feel.
+## CAB - Module off
 
-## Note on GP-5-only
+Not used.
 
-This patch is GP-5 only — no pedalboard beyond the Valeton GP-5 itself. All the tone (haze, shimmer, space) comes from the GP-5's own modules above.
+## EQ - Bass EQ 2
+
+50Hz: 3.
+120Hz: 1.
+400Hz: -1.
+800Hz: 1.
+4.5kHz: 3.
+VOL: 55.
+Fixed on. Not on CTL.
+Shapes note body and cut after the amp/capture. Where assigned to CTL, its output adds the specified lift after the gain stages. Numbers are GP-5 control values, not a calibrated loudness guarantee.
+
+## MOD - B-Chorus
+
+Depth: 18.
+Rate: 0.5.
+VOL: 56.
+Fixed on. Not on CTL.
+Adds the specified movement. Keep it underneath the note except for intentionally wet artist or ambient voices.
+
+## DLY - Module off
+
+Not used.
+
+## RVB - Room
+
+Mix: 8.
+Decay: 35.
+Trail: on.
+CTL assigned. Loads off; first CTL press switches it on.
+Adds the specified room or ambient tail. The revised mix keeps the initial note audible. Trail behavior follows the saved setting.
+
+## Switching and section map
+
+CTL blocks: PRE, RVB.
+- CTL off / loaded state: Main verse groove. GP-5 active: NR, EQ, MOD, N->S.
+- First CTL press: Hook lift. GP-5 active: NR, PRE, EQ, MOD, RVB, N->S.
+- Press CTL again to return to the loaded block pattern, provided no shared MIDI block has been changed.
+
+## Revision record
+
+Approved audit entry 7.
+- PRE Gain: 45 -> 25.
+- MOD Depth: 35 -> 18.
+- DLY: Analog -> off.
+- RVB Mix: 22 -> 8.
+Pre-revision JSON, Markdown and original file hashes are preserved in Documents/patch-audit-2026-10-16/inventory.json and implementation-manifest.json.
+The site piece title and on-disk filenames stay stable; only the short pedal display name may change.

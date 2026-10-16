@@ -1,34 +1,113 @@
 # Kiss Me - Sixpence None the Richer
 
+Revised 2026-10-16 following the approved library audit.
+Type: Song. Instrument: HSS Stratocaster.
+GP-5 only.
+Patch screen name: KissMeSNTR. Patch VOL: 50.
+Preset tempo: 145 BPM.
+
 Stratocaster (HSS), GP-5 only. "Kiss Me" is built on a bright, clean, twee strum — Fender Twin-clean rhythm guitar with light chorus running throughout — and a lifted, shimmering tone with slapback delay for the instrumental hook and bridge. Tempo: 145 BPM.
 
-## GP-5 Settings
+## Revision intent
 
-Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB
+Keep the musical role of the original patch while reducing redundant gain, excessive space and unclear switching where identified in audit entry 168.
+The module settings and section map below are the active revision.
+Audited capture volumes and Michael’s explicit patch-level adjustments are preserved.
+No hardware audition or measured level match has been performed.
 
-- **NR — Gate.** THRE 15. Light gate — this patch stays clean and dynamic, don't choke the strum. Always on.
-- **PRE — COMP4.** Sustain 30, Attack 70, Clip 20, VOL 55. Gentle compression, evens out strum dynamics without squashing the pick attack. Always on.
-- **DST — Yellow OD.** Gain 20, VOL 65. Off for the main verse strum — stays fully clean. On for the hook/bridge — a light boost that lifts the tone, not real distortion. On CTL.
-**AMP/CAB — NAM SnapTone, slot 61: TwinClean** (always on)
-- Built from the `CLEANEST - Fender Deluxe Reverb 1965 [Hyper Accuracy]` NAM and the TWIN REVERB __ CLEAN (vulturized Twin) IR, combined into one snaptone.
-- 1965 blackface Deluxe Reverb at its cleanest setting. It shares the Twin's blackface preamp circuit, so here it's the amp half of a Twin clean, into a real Twin 2x12 (JBL D120F) IR. Rebuilt 2026-09-26: the original TwinClean used the Tim R Twin Normal-channel capture, which was dropped for being too quiet.
-- Jangly, bright, clean pop.
-- Gain: 50, VOL: 75, Bass: 45, Middle: 45, Treble: 65
-- Gain 50: the capture as built.
-- Bass 45: low end pulled back a little.
-- Middle 45: midrange pulled back a little.
-- Treble 65: more top end.
-- VOL 75: the level Michael set for this snaptone in the 2026-10-01 VOL audit. Trim here if the patch jumps in level against your others.
-- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 61 directly.
+## GP-5 settings
 
-- **EQ — Guitar EQ 1.** 125Hz -5, 400Hz -8, 800Hz -3, 1.6kHz +8, 4kHz +10, VOL 55. Cuts low-mid mud, pushes highs for that bright, twee jangle. Always on.
-- **MOD — A-Chorus.** Depth 18, Rate 1.0Hz, Tone 55. Light chorus, both states — this is the song's signature shimmer, always present under the strum. Always on.
-- **DLY — Slapback.** Mix 22, Time 110ms, Feedback 15, Trail on. Off for the verse — keeps the main strum direct. On for the hook/bridge — the slapback is what makes the lifted sections bounce and shimmer. On CTL.
-- **RVB — Room.** Mix 28, Decay 40, Trail on. Off for the verse — stays tight and direct. On for the hook/bridge — adds air behind the lifted tone. On CTL.
+Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB.
+The encoded N->S block sits between DST and AMP when a SnapTone is used.
 
-## CTL Switch
+AMP/CAB replacement: SnapTone TwinClean (slot 61): CLEANEST - Fender Deluxe Reverb 1965 [Hyper Accuracy] + TWIN REVERB __ CLEAN (vulturized Twin).
+Slot: 61. Always on.
+Gain: 50, VOL: 75, Bass: 45, Middle: 45, Treble: 56.
+AMP and CAB are both off; the capture already includes its cab/DI character.
+The capture voice is fixed across CTL states. Audited VOL is preserved for this slot.
 
-- **CTL Off** = main verse strum. DST off, DLY off, RVB off — dry, bright, clean.
-- **CTL On** = lifted hook/bridge sound. DST on, DLY on, RVB on — same clean base tone, boosted and given room to breathe.
-- Modules on CTL: DST, DLY, RVB. All three flip together on the same footswitch press.
-- Use CTL Off for the verses. Switch to CTL On for the recognizable ascending hook and any bridge/instrumental section.
+## NR - Gate
+
+THRE: 15.
+Fixed on. Not on CTL.
+Use the lowest threshold that keeps rests quiet. Check soft notes and held-note decay. This gate is before the drives and amp; it does not directly gate noise generated after it.
+
+## PRE - COMP4
+
+Sustain: 30.
+Attack: 70.
+VOL: 55.
+Clip: 20.
+Fixed on. Not on CTL.
+Controls the source dynamics or adds the specified push/filter before distortion and amp processing. The settings stay fixed; only its on/off state can change.
+
+## DST - Module off
+
+Not used.
+
+## AMP - Module off
+
+Not used.
+
+## CAB - Module off
+
+Not used.
+
+## EQ - Guitar EQ 1
+
+125Hz: -5.
+400Hz: -2.
+800Hz: -3.
+1.6kHz: 2.
+4kHz: 3.
+VOL: 53.
+CTL assigned. Loads off; first CTL press switches it on.
+Shapes note body and cut after the amp/capture. Where assigned to CTL, its output adds the specified lift after the gain stages. Numbers are GP-5 control values, not a calibrated loudness guarantee.
+
+## MOD - A-Chorus
+
+Depth: 18.
+Rate: 1.
+Tone: 55.
+Fixed on. Not on CTL.
+Adds the specified movement. Keep it underneath the note except for intentionally wet artist or ambient voices.
+
+## DLY - Slapback
+
+Mix: 14.
+Time: 110.
+F.Back: 15.
+Trail: on.
+CTL assigned. Loads off; first CTL press switches it on.
+Adds repeats only in the listed states. Trail preserves the remaining repeats when this block is bypassed; it does not change delay time or mix.
+
+## RVB - Room
+
+Mix: 10.
+Decay: 40.
+Trail: on.
+CTL assigned. Loads off; first CTL press switches it on.
+Adds the specified room or ambient tail. The revised mix keeps the initial note audible. Trail behavior follows the saved setting.
+
+## Switching and section map
+
+CTL blocks: EQ, DLY, RVB.
+- CTL off / loaded state: Clean jangly rhythm. GP-5 active: NR, PRE, MOD, N->S.
+- First CTL press: Clean hook lift. GP-5 active: NR, PRE, EQ, MOD, DLY, RVB, N->S.
+- Press CTL again to return to the loaded block pattern, provided no shared MIDI block has been changed.
+
+## Revision record
+
+Approved audit entry 168.
+- SnapTone Treble: 65 -> 56.
+- DST: Yellow OD -> off.
+- DST: removed from CTL.
+- EQ 400Hz: -8 -> -2.
+- EQ 1.6kHz: 8 -> 2.
+- EQ 4kHz: 10 -> 3.
+- EQ VOL: 55 -> 53.
+- EQ: assigned to CTL.
+- DLY Mix: 22 -> 14.
+- RVB Mix: 28 -> 10.
+Pre-revision JSON, Markdown and original file hashes are preserved in Documents/patch-audit-2026-10-16/inventory.json and implementation-manifest.json.
+The site piece title and on-disk filenames stay stable; only the short pedal display name may change.

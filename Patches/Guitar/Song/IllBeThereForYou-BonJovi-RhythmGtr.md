@@ -1,56 +1,111 @@
 # I'll Be There for You (Rhythm Guitar) — Bon Jovi
 
+Revised 2026-10-16 following the approved library audit.
+Type: Song. Instrument: HSS Stratocaster.
+GP-5 only.
+Patch screen name: IBTFY-Gtr. Patch VOL: 50.
+Preset tempo: 68 BPM.
+
 From *New Jersey* (1988). About 68 BPM, est.
 A late-80s power ballad. Chorused, lightly crunchy chords and arpeggios under the verses, then Richie Sambora's big, singing solo.
 Sambora is widely associated with Marshalls in this era. I haven't verified the exact amp on this track.
 Instrument: Stratocaster (HSS). Position 2 or 4 for the verses. Bridge humbucker for the solo.
 GP-5 only, Stratocaster (HSS), no pedalboard.
 
-## Module chain
+## Revision intent
 
-**NR — Gate**, always on.
+Keep the musical role of the original patch while reducing redundant gain, excessive space and unclear switching where identified in audit entry 164.
+The module settings and section map below are the active revision.
+Audited capture volumes and Michael’s explicit patch-level adjustments are preserved.
+No hardware audition or measured level match has been performed.
+
+## GP-5 settings
+
+Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB.
+The encoded N->S block sits between DST and AMP when a SnapTone is used.
+
+AMP/CAB replacement: SnapTone JCM800Clean (slot 80): JCM800 2203 - P5 B5 M5 T5 MV5 G3 - AZG - 700 + BlendOfAll_dc (Marshall 1960AV).
+Slot: 80. Always on.
+Gain: 42, VOL: 60, Bass: 50, Middle: 55, Treble: 55.
+AMP and CAB are both off; the capture already includes its cab/DI character.
+The capture voice is fixed across CTL states. Audited VOL is preserved for this slot.
+
+## NR - Gate
+
 THRE: 22.
-Catches the Marshall's hiss between phrases. The solo's sustain gets well above it.
+Fixed on. Not on CTL.
+Use the lowest threshold that keeps rests quiet. Check soft notes and held-note decay. This gate is before the drives and amp; it does not directly gate noise generated after it.
 
-**PRE — off.** The amp's own compression is enough for a ballad.
+## PRE - Module off
 
-**DST — Super OD (SD-1)**, on CTL.
-Gain: 40, Tone: 55, VOL: 68.
-The solo push. An SD-1 into a light-crunch JCM800 gives the hot, singing 80s lead. VOL 68 lifts the solo over the band.
+Not used.
 
-**AMP/CAB — NAM SnapTone, slot 80: JCM800Clean** (always on)
-- Built from the `JCM800 2203 - P5 B5 M5 T5 MV5 G3 - AZG - 700` NAM and the BlendOfAll_dc (Marshall 1960AV) IR, combined into one snaptone.
-- Real JCM800 2203 at Gain 3, light crunch, into a Marshall 4x12.
-- Classic 80s Marshall rhythm. Light crunch for the verses. The SD-1 takes it to lead.
-- Gain: 42, VOL: 60, Bass: 50, Middle: 55, Treble: 55
-- Gain 42: under the capture. It keeps the verses at the edge of clean. Roll the guitar volume back a little for the cleanest arpeggios.
-- Bass 50: flat.
-- Middle 55: more midrange, for that 80s Marshall voice.
-- Treble 55: a touch more top end for the chorus shimmer.
-- VOL 60: the level Michael set for this snaptone in the 2026-10-01 VOL audit. Trim here if the patch jumps in level against your others.
-- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 80 directly.
+## DST - Super OD
 
-**EQ — Guitar EQ 2**, always on.
-100Hz: -2, 500Hz: 0, 1kHz: +2, 3kHz: +1, 6kHz: -1, VOL: 50.
-+2 at 1kHz puts the solo's singing midrange forward. Low cut keeps the ballad from getting woolly.
+Gain: 30.
+Tone: 55.
+VOL: 68.
+CTL assigned. Loads off; first CTL press switches it on.
+Supplies the selected additional drive voice. Use its level and gain as separate controls. A pre-amp boost may add compression instead of a proportional solo-volume increase.
 
-**MOD — A-Chorus**, always on.
-Depth: 20, Rate: 0.7, Tone: 55.
-The late-80s ballad sheen. Still a light hand: Depth 20 sits under the tone, not on top of it.
+## AMP - Module off
 
-**DLY — Analog**, on CTL.
-Mix: 22, Time: 662ms, Feedback: 28, Trail: on.
-A dotted eighth at 68 BPM. The long, smeared repeats behind the solo.
+Not used.
 
-**RVB — Plate**, always on.
-Mix: 18, Decay: 45, Damp: 40, Trail: on.
-A big 80s plate. Damp 40 keeps the top from getting splashy.
+## CAB - Module off
 
-## CTL footswitch
+Not used.
 
-On CTL: DST (Super OD), DLY (Analog).
+## EQ - Guitar EQ 2
 
-- **CTL off** — Rhythm. Chorused, lightly crunchy Marshall for the verses and choruses. This is the resting state the patch loads into.
-- **CTL on** — Lead. SD-1-boosted Marshall plus dotted-eighth analog delay for the solo.
+100Hz: -2.
+500Hz: 0.
+1kHz: 2.
+3kHz: 1.
+6kHz: -1.
+VOL: 50.
+Fixed on. Not on CTL.
+Shapes note body and cut after the amp/capture. Where assigned to CTL, its output adds the specified lift after the gain stages. Numbers are GP-5 control values, not a calibrated loudness guarantee.
 
-Engage CTL for the solo. Drop back after it.
+## MOD - A-Chorus
+
+Depth: 20.
+Rate: 0.7.
+Tone: 55.
+Fixed on. Not on CTL.
+Adds the specified movement. Keep it underneath the note except for intentionally wet artist or ambient voices.
+
+## DLY - Analog
+
+Mix: 16.
+Time: 662.
+Feedback: 22.
+Trail: on.
+CTL assigned. Loads off; first CTL press switches it on.
+Adds repeats only in the listed states. Trail preserves the remaining repeats when this block is bypassed; it does not change delay time or mix.
+
+## RVB - Plate
+
+Mix: 12.
+Decay: 45.
+Damp: 40.
+Trail: on.
+Fixed on. Not on CTL.
+Adds the specified room or ambient tail. The revised mix keeps the initial note audible. Trail behavior follows the saved setting.
+
+## Switching and section map
+
+CTL blocks: DST, DLY.
+- CTL off / loaded state: Rhythm. GP-5 active: NR, EQ, MOD, RVB, N->S.
+- First CTL press: Lead. GP-5 active: NR, DST, EQ, MOD, DLY, RVB, N->S.
+- Press CTL again to return to the loaded block pattern, provided no shared MIDI block has been changed.
+
+## Revision record
+
+Approved audit entry 164.
+- DST Gain: 40 -> 30.
+- DLY Mix: 22 -> 16.
+- DLY Feedback: 28 -> 22.
+- RVB Mix: 18 -> 12.
+Pre-revision JSON, Markdown and original file hashes are preserved in Documents/patch-audit-2026-10-16/inventory.json and implementation-manifest.json.
+The site piece title and on-disk filenames stay stable; only the short pedal display name may change.

@@ -1,52 +1,93 @@
 # My Maria — Brooks & Dunn
 
+Revised 2026-10-16 following the approved library audit.
+Type: Song. Instrument: Harley Benton passive 5-string P/J.
+GP-5 only.
+Patch screen name: MyMaria. Patch VOL: 52.
+Preset tempo: 96 BPM.
+
 From *Borderline* (1996). About 96 BPM, est.
 Bass: Harley Benton P/J, 5-string, passive. GP-5 only.
 A loping mid-tempo groove under the falsetto hook. The bass is round and locked to the kick, with some movement into the chorus.
 Built from the song's overall sound. I haven't verified the session bassist's exact rig.
 Fingers. P forward, a little J blended in for definition. Tone knob around 55%.
 
-## Module chain
+## Revision intent
 
-**NR — Gate**, always on.
+Keep the musical role of the original patch while reducing redundant gain, excessive space and unclear switching where identified in audit entry 81.
+The module settings and section map below are the active revision.
+Audited capture volumes and Michael’s explicit patch-level adjustments are preserved.
+No hardware audition or measured level match has been performed.
+
+## GP-5 settings
+
+Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB.
+The encoded N->S block sits between DST and AMP when a SnapTone is used.
+
+AMP/CAB replacement: SnapTone CleanB15 (slot 51): Ampeg B18 - Head DI - Bass Chan - Vol 2.5 (B-18N) + Apg115.
+Slot: 51. Always on.
+Gain: 50, VOL: 80, Bass: 56, Middle: 54, Treble: 48.
+AMP and CAB are both off; the capture already includes its cab/DI character.
+The capture voice is fixed across CTL states. Audited VOL is preserved for this slot.
+
+## NR - Gate
+
 THRE: 12.
-Low. Just catches hum.
+Fixed on. Not on CTL.
+Use the lowest threshold that keeps rests quiet. Check soft notes and held-note decay. This gate is before the drives and amp; it does not directly gate noise generated after it.
 
-**PRE — COMP (Ross)**, always on.
-Sustain: 40, VOL: 58.
-Evens out the groove so every note of the pattern sits at the same level.
+## PRE - COMP
 
-**DST — Bass OD**, on CTL.
-Gain: 20, Blend: 25, VOL: 55, Bass: 50, Treble: 50.
-Barely-there hair for the choruses. Blend 25 keeps it mostly clean.
+Sustain: 40.
+VOL: 58.
+Fixed on. Not on CTL.
+Controls the source dynamics or adds the specified push/filter before distortion and amp processing. The settings stay fixed; only its on/off state can change.
 
-**AMP/CAB — NAM SnapTone, slot 51: CleanB15** (always on)
-- Built from the `Ampeg B18 - Head DI - Bass Chan - Vol 2.5 (B-18N)` NAM and the Apg115 IR, combined into one snaptone.
-- Real Ampeg B-18N fliptop (the B-15 preamp circuit), captured clean at volume 2.5, into the Apg115 B-15 cab IR.
-- Mid-90s country-rock. Clean, round bass under a busy band. B-15 keeps it defined without bite.
-- Gain: 50, VOL: 80, Bass: 56, Middle: 54, Treble: 48
-- Gain 50: the capture as built.
-- Bass 56: more low end.
-- Middle 54: a touch more midrange.
-- Treble 48: top end pulled back a little.
-- VOL 80: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
-- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 51 directly.
+## DST - Module off
 
-**EQ — Bass EQ 2**, always on.
-50Hz: 0, 120Hz: +2, 400Hz: -1, 800Hz: +2, 4.5kHz: -2, VOL: 52.
-Punch at 120Hz, a small mud cut at 400Hz, and 800Hz for finger attack.
+Not used.
 
-**MOD — off.**
+## AMP - Module off
 
-**DLY — off.**
+Not used.
 
-**RVB — off.** Dry and tight.
+## CAB - Module off
 
-## CTL footswitch
+Not used.
 
-On CTL: DST (Bass OD).
+## EQ - Bass EQ 2
 
-- **CTL off** — Verses. Clean, round, locked groove. This is the resting state the patch loads into.
-- **CTL on** — Choruses. A light Bass OD adds grit so the bass pushes with the fuller band.
+50Hz: 0.
+120Hz: 2.
+400Hz: -1.
+800Hz: 2.
+4.5kHz: -2.
+VOL: 52.
+Fixed on. Not on CTL.
+Shapes note body and cut after the amp/capture. Where assigned to CTL, its output adds the specified lift after the gain stages. Numbers are GP-5 control values, not a calibrated loudness guarantee.
 
-Engage at the choruses. Step off for the verses.
+## MOD - Module off
+
+Not used.
+
+## DLY - Module off
+
+Not used.
+
+## RVB - Module off
+
+Not used.
+
+## Switching and section map
+
+CTL blocks: None.
+- CTL off / loaded state: Verses. GP-5 active: NR, PRE, EQ, N->S.
+- No GP-5 CTL change. One consistent GP-5 voice serves this bass part.
+
+## Revision record
+
+Approved audit entry 81.
+- DST: Bass OD -> off.
+- DST: removed from CTL.
+Pre-revision JSON, Markdown and original file hashes are preserved in Documents/patch-audit-2026-10-16/inventory.json and implementation-manifest.json.
+The site piece title and on-disk filenames stay stable; only the short pedal display name may change.

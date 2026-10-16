@@ -1,93 +1,172 @@
 # Like the Way I Do — Melissa Etheridge
 
+Revised 2026-10-16 following the approved library audit.
+Type: Song. Instrument: Harley Benton passive 5-string P/J.
+Full board. Board Option: American Sound (bypassed; retained for legacy full-board builds).
+Patch screen name: LikeWayIDo. Patch VOL: 55.
+Preset tempo: 80 BPM.
+
 Bass: Harley Benton P/J, 5-string, passive. Full board.
 From *Melissa Etheridge* (1988). ~80 BPM base pulse, though the song's intensity keeps climbing well past what that tempo alone suggests — a moody, harmonica-laced intro building through the verses into one of her most raw, unhinged vocal performances by the end.
 This is the same "quiet build to massive climax" shape as a few other patches in this set, but the character is different — raw, bluesy, rootsy rock rather than symphonic or gospel. The climax here isn't cathedral-scale, it's visceral: driving, gritty, right in-your-face rather than washed in reverb.
 
-CTL off = the moody, restrained intro/verse. CTL on = the raw, driving climax.
+## Revision intent
+
+Keep the musical role of the original patch while reducing redundant gain, excessive space and unclear switching where identified in audit entry 71.
+The module settings and section map below are the active revision.
+Audited capture volumes and Michael’s explicit patch-level adjustments are preserved.
+No hardware audition or measured level match has been performed.
 
 ## GP-5 settings
 
-Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
+Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB.
+The encoded N->S block sits between DST and AMP when a SnapTone is used.
 
-**NR — Gate**
-- THRE: 22
-- Always on. Moderate threshold — there's real distortion once the DST engages for the climax, needs cleanup between notes.
+AMP/CAB replacement: SnapTone CleanSVT (slot 53): SVT CLEAN (SVT-CL) + Apg810.
+Slot: 53. Always on.
+Gain: 50, VOL: 65, Bass: 58, Middle: 55, Treble: 52.
+AMP and CAB are both off; the capture already includes its cab/DI character.
+The capture voice is fixed across CTL states. Audited VOL is preserved for this slot.
 
-**PRE — Micro Boost — On CTL**
-- Gain: 55
-- CTL off: bypassed (intro/verse). CTL on: engaged (climax).
-- Adds extra push on top of the DST engagement for the full-intensity outro.
+## NR - Gate
 
-**DST — Darktale (ProCo Rat, LM308) — On CTL**
-- Gain: 65, Filter: 45, VOL: 62
-- CTL off: bypassed (intro/verse — amp alone, some natural grit but not distorted). CTL on: engaged (climax).
-- The Rat's raw, slightly fuzzy, mid-forward character is a better fit here than a cleaner, more polished distortion — this song's intensity is rootsy and unhinged, not slick.
+THRE: 22.
+Fixed on. Not on CTL.
+Use the lowest threshold that keeps rests quiet. Check soft notes and held-note decay. This gate is before the drives and amp; it does not directly gate noise generated after it.
 
-**AMP/CAB — NAM SnapTone, slot 53: CleanSVT** (always on)
-- Built from the `SVT CLEAN (SVT-CL)` NAM and the Apg810 IR, combined into one snaptone.
-- Real Ampeg SVT-CL preamp on its clean setting, into the Apg810 8x10 IR.
-- Driving 80s rock, but the bass stays clean. The DST stage adds any bite.
-- Gain: 50, VOL: 65, Bass: 58, Middle: 55, Treble: 52
-- Gain 50: the capture as built.
-- Bass 58: more low end.
-- Middle 55: a touch more midrange.
-- Treble 52: a touch more top end.
-- VOL 65: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
-- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 53 directly.
+## PRE - Module off
 
-**EQ — Bass EQ 1**
-- 33Hz: +3, 150Hz: 0, 600Hz: +3, 2kHz: +3, 8kHz: +1, VOL: 55
-- Always on, same for both CTL states.
-- +3 at 600Hz gives this a bluesy midrange growl that's present even before the distortion kicks in. +3 at 2kHz keeps it defined once the band and the DST both push harder for the climax.
+Not used.
 
-**MOD — Off**
-- No modulation. Raw and direct, matching the song's rootsy, unpolished character.
+## DST - Module off
 
-**DLY — Off**
-- Not used.
+Not used.
 
-**RVB — Room — On CTL (inverted)**
-- Mix: 20, Decay: 30, Trail: On
-- CTL off: engaged (intro/verse). CTL on: bypassed (climax).
-- Inverted on purpose — the moody intro gets a touch of room for atmosphere, but the climax needs to stay dry and in-your-face. This isn't a symphonic, reverb-washed payoff like "November Rain" or "Purple Rain" — it's raw and visceral, so the reverb drops out right when the intensity peaks.
+## AMP - Module off
 
-## CTL summary
+Not used.
 
-- **CTL Off — Intro/verse.** Moody, restrained, a touch of room ambience. Some natural amp edge but no real distortion.
-- **CTL On — Climax.** Darktale and Micro Boost engage, Room drops out — raw, dry, driving, matching the song's most intense, unhinged moment.
-- Engage CTL as the song builds into its final full-intensity section and leave it on through to the end.
+## CAB - Module off
 
-## Full pedalboard (signal chain order)
+Not used.
 
-**1. Flamma FS-08 Octave — Bypassed**
-- Footswitch off. No octave layering needed for this raw, direct rock tone.
+## EQ - Bass EQ 1
 
-**2. Donner Ultimate Comp — Engaged**
-- COMP: 48
-- TONE: 55
-- LEVEL: 58
-- Mode: TREBLE
-- Moderate compression keeps this consistent across both the restrained intro and the driven climax. TREBLE mode keeps attack alive once the Darktale kicks in.
+33Hz: 3.
+150Hz: 0.
+600Hz: 3.
+2kHz: 3.
+8kHz: 1.
+VOL: 55.
+Fixed on. Not on CTL.
+Shapes note body and cut after the amp/capture. Where assigned to CTL, its output adds the specified lift after the gain stages. Numbers are GP-5 control values, not a calibrated loudness guarantee.
 
-**3. Donner Stylish Fuzz — Bypassed**
-- Footswitch off. The GP-5's own Darktale gives a more controlled Rat-style crunch than a fuzz would — the right call for a bluesy, driving rock intensity rather than a wall of noise.
+## MOD - Module off
 
-**4. Joyo Tidal Wave — Engaged**
-- Drive: 25
-- Blend: 50
-- Presence: 58
-- Level: 58
-- Treble: 55
-- Middle: 55
-- Bass: 55
-- Mid-Frequency: 500Hz
-- Bass-Shift: 40Hz
-- Cab-Sim (DI out): Off
-- Ground Lift: Off
-- Adds body and presence feeding the amp. Bass-Shift at 40Hz keeps things fuller and warmer rather than tight — this is rootsy blues-rock, not punk or metal precision.
+Not used.
 
-**5. Joyo Narcissus — Bypassed**
-- Footswitch off. No chorus — matches the MOD-off call on the GP-5. Raw, direct tone throughout.
+## DLY - Module off
 
-**6. Valeton GP-5** — see settings above.
+Not used.
+
+## RVB - Room
+
+Mix: 6.
+Decay: 30.
+Trail: on.
+CTL assigned. Loads on; first CTL press switches it off.
+Adds the specified room or ambient tail. The revised mix keeps the initial note audible. Trail behavior follows the saved setting.
+
+## Switching and section map
+
+CTL blocks: RVB.
+- CTL off / loaded state: Restrained intro/verses. GP-5 active: NR, EQ, RVB, N->S.
+- First CTL press: Climax (Tidal Wave stomp). GP-5 active: NR, EQ, N->S.
+- Press CTL again to return to the loaded block pattern, provided no shared MIDI block has been changed.
+
+## Full pedalboard
+
+Flamma FS-08 Octave -> Donner Ultimate Comp -> Donner Stylish Fuzz -> Joyo Tidal Wave -> Joyo American Sound -> Joyo Narcissus -> Valeton GP-5.
+Board settings are set by hand and are not encoded in the .prst.
+All numeric pedal positions use the existing 0–100 position shorthand unless a clock position is specified.
+
+## Flamma FS-08 Octave
+
+Bypassed throughout.
+-2OCT: 0.
+-OCT: 0.
++OCT: 0.
++2OCT: 0.
+Dry: 100.
+
+## Donner Ultimate Comp
+
+On throughout.
+COMP: 48.
+TONE: 55.
+LEVEL: 58.
+Mode: TREBLE.
+
+## Donner Stylish Fuzz
+
+Bypassed throughout.
+Sustain: 25.
+Treble: 50.
+Bass: 50.
+Volume: 50.
+
+## Joyo Tidal Wave
+
+Drive off for restrained sections; on for the climax; preamp active throughout.
+Drive: 25.
+Blend: 35.
+Presence: 58.
+Level: 58.
+Treble: 55.
+Middle: 55.
+Bass: 55.
+Mid-Frequency: 500Hz.
+Bass-Shift: 40Hz.
+Cab-Sim (DI out): Off.
+Ground Lift: Off.
+The footswitch toggles drive only. Preamp EQ and Level stay active in both states. Cab-Sim/Ground Lift affect the DI path; main instrument output is unchanged.
+
+## Joyo American Sound
+
+Bypassed throughout.
+Level: 50.
+Drive: 10.
+Voice: 50.
+Low: 50.
+Mid: 50.
+High: 50.
+
+## Joyo Narcissus
+
+Bypassed throughout.
+Width: 30.
+Depth: 20.
+Rate: 20.
+Mode: Vintage.
+
+## Board choreography
+
+- Flamma FS-08 Octave: Bypassed throughout.
+- Donner Ultimate Comp: On throughout.
+- Donner Stylish Fuzz: Bypassed throughout.
+- Joyo Tidal Wave: Drive off for restrained sections; on for the climax; preamp active throughout.
+- Joyo American Sound: Bypassed throughout.
+- Joyo Narcissus: Bypassed throughout.
+Set the board switches for the section you are entering. Intro-only or clean-only effects may need to start on. Return each pedal to its documented state at the next section. Board pedals are independent of CTL.
+
+## Revision record
+
+Approved audit entry 71.
+- PRE: Micro Boost -> off.
+- PRE: removed from CTL.
+- DST: Darktale -> off.
+- DST: removed from CTL.
+- RVB Mix: 20 -> 6.
+- Board Tidal Wave: Drive 25, Blend 35; Drive off for restrained sections; on for the climax; preamp active throughout.
+Pre-revision JSON, Markdown and original file hashes are preserved in Documents/patch-audit-2026-10-16/inventory.json and implementation-manifest.json.
+The site piece title and on-disk filenames stay stable; only the short pedal display name may change.

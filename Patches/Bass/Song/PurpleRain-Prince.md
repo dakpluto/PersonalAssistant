@@ -1,93 +1,174 @@
 # Purple Rain — Prince
 
-Bass: Harley Benton P/J, 5-string, passive. Full board.
-From *Purple Rain* (1984), ~112 BPM.
-Worth knowing going in: the studio recording is widely reported to have little to no traditional bass guitar through most of the song — it's carried almost entirely by guitar, organ, and orchestration, with Prince and the Revolution deliberately leaving that space open. So this patch isn't chasing an existing bass part — it's a tasteful, supportive line built to fit the song's actual harmonic and dynamic arc, the way a full band would want to fill that role live or on a cover. Quiet and restrained through the verses, opening up into the huge, gospel-tinged climax behind the guitar solo.
+Revised 2026-10-16 following the approved library audit.
+Type: Song. Instrument: Harley Benton passive 5-string P/J.
+Full board. Board Option: American Sound (bypassed; retained for legacy full-board builds).
+Patch screen name: PurpleRain. Patch VOL: 53.
+Preset tempo: 112 BPM.
 
-CTL off = the quiet verse, sitting back. CTL on = the big climactic swell.
+Clean supportive bass for Purple Rain. The previous claim that the title track has little or no traditional bass was not established and is removed. Prince’s album credits list BrownMark on bass; this patch does not claim a verified track-by-track transcription or rig.
+
+## Revision intent
+
+Keep the musical role of the original patch while reducing redundant gain, excessive space and unclear switching where identified in audit entry 95.
+The module settings and section map below are the active revision.
+Audited capture volumes and Michael’s explicit patch-level adjustments are preserved.
+No hardware audition or measured level match has been performed.
 
 ## GP-5 settings
 
-Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
+Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB.
+The encoded N->S block sits between DST and AMP when a SnapTone is used.
 
-**NR — Gate**
-- THRE: 12
-- Always on. Very low threshold — clean, warm tone throughout, nothing to clean up.
+AMP/CAB replacement: SnapTone CleanSVT (slot 53): SVT CLEAN (SVT-CL) + Apg810.
+Slot: 53. Always on.
+Gain: 49, VOL: 65, Bass: 58, Middle: 52, Treble: 52.
+AMP and CAB are both off; the capture already includes its cab/DI character.
+The capture voice is fixed across CTL states. Audited VOL is preserved for this slot.
 
-**PRE — Micro Boost — On CTL**
-- Gain: 48
-- CTL off: bypassed (verse). CTL on: engaged (climax).
-- Verse stays understated, well back in the mix. Climax gets a gentle push to help the bass swell along with the guitar solo and the rest of the arrangement.
+## NR - Gate
 
-**DST — Off**
-- No drive. This part exists to support, not to draw attention to itself.
+THRE: 12.
+Fixed on. Not on CTL.
+Use the lowest threshold that keeps rests quiet. Check soft notes and held-note decay. This gate is before the drives and amp; it does not directly gate noise generated after it.
 
-**AMP/CAB — NAM SnapTone, slot 53: CleanSVT** (always on)
-- Built from the `SVT CLEAN (SVT-CL)` NAM and the Apg810 IR, combined into one snaptone.
-- Real Ampeg SVT-CL preamp on its clean setting, into the Apg810 8x10 IR.
-- Clean and huge. The SVT 8x10 supplies the size without grit.
-- Gain: 49, VOL: 65, Bass: 58, Middle: 52, Treble: 52
-- Gain 49: a little under default. This part wants less push than the other CleanSVT patches.
-- Bass 58: more low end.
-- Middle 52: a touch more midrange.
-- Treble 52: a touch more top end.
-- VOL 65: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
-- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 53 directly.
+## PRE - Micro Boost
 
-**EQ — Bass EQ 2**
-- 50Hz: +3, 120Hz: +1, 400Hz: 0, 800Hz: +1, 4.5kHz: +1, VOL: 54
-- Always on, same for both CTL states.
-- Nearly flat by design — this part isn't fighting for space against a wall of guitars, it's filling a gap left wide open in the arrangement. +3 at 50Hz keeps real low-end weight; everything else stays gentle.
+Gain: 25.
+CTL assigned. Loads off; first CTL press switches it on.
+Controls the source dynamics or adds the specified push/filter before distortion and amp processing. The settings stay fixed; only its on/off state can change.
 
-**MOD — B-Chorus (Boss CEB-3)**
-- Depth: 15, Rate: 0.3Hz, VOL: 54
-- Always on, same for both CTL states.
-- A very light touch of period-correct 80s chorus gloss — subtle enough to add sheen without ever reading as an obvious effect, in keeping with the record's polished mid-80s production.
+## DST - Module off
 
-**DLY — Off**
-- Not used.
+Not used.
 
-**RVB — Hall — On CTL**
-- Mix: 35, Decay: 55, Trail: On
-- CTL off: bypassed (verse — dry and restrained). CTL on: engaged (climax).
-- Pushed even further than the "Under the Bridge" build — this is one of the most epic, cathedral-scale climaxes in pop music, and the reverb needs real size to do that moment justice.
+## AMP - Module off
 
-## CTL summary
+Not used.
 
-- **CTL Off — Verse.** Quiet, restrained, sitting back in the space the arrangement leaves open.
-- **CTL On — Climax.** Boost and a big Hall reverb engage together for the huge, gospel-tinged swell behind the guitar solo.
-- Engage CTL as the song builds into its final climactic section, and leave it on through to the end.
+## CAB - Module off
 
-## Full pedalboard (signal chain order)
+Not used.
 
-**1. Flamma FS-08 Octave — Bypassed**
-- Footswitch off. This part needs to stay simple and supportive — no reason to layer octaves on it.
+## EQ - Bass EQ 2
 
-**2. Donner Ultimate Comp — Engaged**
-- COMP: 45
-- TONE: 50
-- LEVEL: 55
-- Mode: NORMAL
-- Light-to-moderate compression for even, sustained notes through the ballad's slower phrasing. NORMAL mode keeps this warm rather than pushing extra brightness.
+50Hz: 3.
+120Hz: 1.
+400Hz: 0.
+800Hz: 1.
+4.5kHz: 1.
+VOL: 54.
+Fixed on. Not on CTL.
+Shapes note body and cut after the amp/capture. Where assigned to CTL, its output adds the specified lift after the gain stages. Numbers are GP-5 control values, not a calibrated loudness guarantee.
 
-**3. Donner Stylish Fuzz — Bypassed**
-- Footswitch off. No fuzz anywhere in this patch.
+## MOD - B-Chorus
 
-**4. Joyo Tidal Wave — Engaged**
-- Drive: 10
-- Blend: 20
-- Presence: 50
-- Level: 55
-- Treble: 52
-- Middle: 55
-- Bass: 58
-- Mid-Frequency: 500Hz
-- Bass-Shift: 40Hz
-- Cab-Sim (DI out): On
-- Ground Lift: On
-- Used as a clean tone shaper and DI stage, not an overdrive — Drive stays low, Blend stays mostly clean. Bass-Shift at 40Hz keeps the low end full and warm, matching the song's unhurried, spacious feel.
+Depth: 15.
+Rate: 0.3.
+VOL: 54.
+Fixed on. Not on CTL.
+Adds the specified movement. Keep it underneath the note except for intentionally wet artist or ambient voices.
 
-**5. Joyo Narcissus — Bypassed**
-- Footswitch off. The GP-5's own light B-Chorus already covers the subtle 80s sheen this patch wants — running a second chorus source would push it past "gloss."
+## DLY - Module off
 
-**6. Valeton GP-5** — see settings above.
+Not used.
+
+## RVB - Hall
+
+Mix: 8.
+Decay: 35.
+Trail: on.
+CTL assigned. Loads off; first CTL press switches it on.
+Adds the specified room or ambient tail. The revised mix keeps the initial note audible. Trail behavior follows the saved setting.
+
+## Switching and section map
+
+CTL blocks: PRE, RVB.
+- CTL off / loaded state: the quiet verse, sitting back. GP-5 active: NR, EQ, MOD, N->S.
+- First CTL press: Climax. GP-5 active: NR, PRE, EQ, MOD, RVB, N->S.
+- Press CTL again to return to the loaded block pattern, provided no shared MIDI block has been changed.
+
+## Full pedalboard
+
+Flamma FS-08 Octave -> Donner Ultimate Comp -> Donner Stylish Fuzz -> Joyo Tidal Wave -> Joyo American Sound -> Joyo Narcissus -> Valeton GP-5.
+Board settings are set by hand and are not encoded in the .prst.
+All numeric pedal positions use the existing 0–100 position shorthand unless a clock position is specified.
+
+## Flamma FS-08 Octave
+
+Bypassed throughout.
+-2OCT: 0.
+-OCT: 0.
++OCT: 0.
++2OCT: 0.
+Dry: 100.
+
+## Donner Ultimate Comp
+
+On throughout.
+COMP: 45.
+TONE: 50.
+LEVEL: 55.
+Mode: NORMAL.
+
+## Donner Stylish Fuzz
+
+Bypassed throughout.
+Sustain: 25.
+Treble: 50.
+Bass: 50.
+Volume: 50.
+
+## Joyo Tidal Wave
+
+On throughout.
+Drive: 10.
+Blend: 20.
+Presence: 50.
+Level: 55.
+Treble: 52.
+Middle: 55.
+Bass: 58.
+Mid-Frequency: 500Hz.
+Bass-Shift: 40Hz.
+Cab-Sim (DI out): On.
+Ground Lift: On.
+The footswitch toggles drive only. Preamp EQ and Level stay active in both states. Cab-Sim/Ground Lift affect the DI path; main instrument output is unchanged.
+
+## Joyo American Sound
+
+Bypassed throughout.
+Level: 50.
+Drive: 10.
+Voice: 50.
+Low: 50.
+Mid: 50.
+High: 50.
+
+## Joyo Narcissus
+
+Bypassed throughout.
+Width: 30.
+Depth: 20.
+Rate: 20.
+Mode: Vintage.
+
+## Board choreography
+
+- Flamma FS-08 Octave: Bypassed throughout.
+- Donner Ultimate Comp: On throughout.
+- Donner Stylish Fuzz: Bypassed throughout.
+- Joyo Tidal Wave: On throughout.
+- Joyo American Sound: Bypassed throughout.
+- Joyo Narcissus: Bypassed throughout.
+Set the board switches for the section you are entering. Intro-only or clean-only effects may need to start on. Return each pedal to its documented state at the next section. Board pedals are independent of CTL.
+
+## Revision record
+
+Approved audit entry 95.
+- PRE Gain: 48 -> 25.
+- RVB Mix: 35 -> 8.
+- RVB Decay: 55 -> 35.
+Pre-revision JSON, Markdown and original file hashes are preserved in Documents/patch-audit-2026-10-16/inventory.json and implementation-manifest.json.
+The site piece title and on-disk filenames stay stable; only the short pedal display name may change.
+Source check: https://discography.prince.com/albums/purple-rain

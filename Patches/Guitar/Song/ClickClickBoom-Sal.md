@@ -1,113 +1,190 @@
 # Click Click Boom — Saliva
 
-**Type:** Song
+Revised 2026-10-16 following the approved library audit.
+Type: Song. Instrument: HSS Stratocaster.
+Full board. Board Option: White Tape.
+Patch screen name: Click Clic. Patch VOL: 55.
+Preset tempo: 100 BPM.
+
 **Instrument:** Stratocaster (HSS)
-**Full Board:** Yes
-**Board Option:** White Tape (rebuilt 2026-10-16)
-**BPM:** 100
-
-## The song
-
 "Click Click Boom" (*Every Six Seconds*, 2001).
 Post-grunge/nu-metal crossover, not full-on scoop-mid metal.
 Verse riff is tight, syncopated, palm-muted, low-string driven.
 Chorus and solo open up — more gain, more sustain, bigger and wetter.
 Two distinct jobs for this patch: choke the riff down tight, then let the lead breathe.
 
-CTL Off = verse/main rhythm riff.
-CTL On = chorus/solo lead tone.
+## Revision intent
+
+Keep the musical role of the original patch while reducing redundant gain, excessive space and unclear switching where identified in audit entry 149.
+The module settings and section map below are the active revision.
+Audited capture volumes and Michael’s explicit patch-level adjustments are preserved.
+No hardware audition or measured level match has been performed.
 
 ## GP-5 settings
 
-Module order: NR, PRE, DST, AMP, CAB, EQ, MOD, DLY, RVB.
+Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB.
+The encoded N->S block sits between DST and AMP when a SnapTone is used.
 
-**NR — Gate** (always on)
-- THRE: 38
-Palm-muted low-string riffing at this gain level needs a real gate or the noise floor gets ugly between hits. 38 is enough to snap the mutes silent without chopping sustain on held chords.
+AMP/CAB replacement: SnapTone ModernRect (slot 76): 4. MESA DUAL RECTIFIER 2025 | RHYTHM #4 + V30 LR 4FB 4x12 SM57 0.75in 0.0in 7603 (Mesa V30).
+Slot: 76. Always on.
+Gain: 50, VOL: 40, Bass: 55, Middle: 56, Treble: 55.
+AMP and CAB are both off; the capture already includes its cab/DI character.
+The capture voice is fixed across CTL states. Audited VOL is preserved for this slot.
 
-**PRE — off**
-Not used. The Donner Ultimate Comp on the board ahead of the GP-5 is already handling dynamics duty. Stacking a second compressor in the chain just squashes twice for no gain.
+## NR - Gate
 
-**DST — Super OD** (CTL)
-- Gain: 50, Tone: 62, VOL: 68
-- CTL Off = off, CTL On = on
-This is the lead kick. Boss SD-1-style asymmetrical clipping pushed into the Rectifier snaptone adds extra saturation and — more importantly — extra output volume, so the solo actually sits on top of the mix instead of getting buried under the rhythm section. Off for the verse riff so it stays tight and doesn't mush out the palm mutes.
+THRE: 38.
+Fixed on. Not on CTL.
+Use the lowest threshold that keeps rests quiet. Check soft notes and held-note decay. This gate is before the drives and amp; it does not directly gate noise generated after it.
 
-**AMP/CAB — NAM SnapTone, slot 76: ModernRect** (always on)
-- Built from the `4. MESA DUAL RECTIFIER 2025 | RHYTHM #4` NAM and the V30 LR 4FB 4x12 SM57 0.75in 0.0in 7603 (Mesa V30) IR, combined into one snaptone.
-- Real 2025 Mesa Dual Rectifier on a heavy rhythm setting, into a Mesa 4x12 V30 IR.
-- Heavy, tight, modern nu-metal. Rectifier rhythm into V30s.
-- Gain: 50, VOL: 40, Bass: 55, Middle: 68, Treble: 62
-- Gain 50: the capture as built.
-- Bass 55: a touch more low end.
-- Middle 68: more midrange.
-- Treble 62: more top end.
-- VOL 40: the level Michael set for this snaptone in the 2026-10-01 VOL audit. Trim here if the patch jumps in level against your others.
-- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 76 directly.
+## PRE - Module off
 
-**EQ — Guitar EQ 2** (always on)
-- 100Hz: 0, 500Hz: +5, 1kHz: +8, 3kHz: +3, 6kHz: -6, VOL: 52
-Boost at 500Hz/1kHz fattens the riff's mid-punch and keeps single-note lead lines from thinning out. -6 at 6kHz reins in fizz from the high-gain Rectifier snaptone without killing pick attack. Runs the same in both CTL states.
+Not used.
 
-**MOD — off**
-Not used on the GP-5. The Joyo Narcissus on the board is carrying the (very light) chorus duty for this patch — no reason to run two modulation sources and risk mud. See "Full Pedalboard" below.
+## DST - Super OD
 
-**DLY — off** (moved to the White Tape, 2026-10-16)
-The lead slap now lives on the Donner White Tape after the GP-5 (see Full Pedalboard). Before, the GP-5's Analog delay sat on CTL, so every chorus strum got the same 300ms echo as the solo. A slap at that mix smears big open chords. On its own footswitch, the delay goes on for the solo only. The chorus stays big and dry.
+Gain: 15.
+Tone: 55.
+VOL: 68.
+CTL assigned. Loads off; first CTL press switches it on.
+Supplies the selected additional drive voice. Use its level and gain as separate controls. A pre-amp boost may add compression instead of a proportional solo-volume increase.
 
-**RVB — Room** (CTL)
-- Mix: 25, Decay: 35, Trail: On
-- CTL Off = off, CTL On = on
-Small room wash opens the lead tone up just enough to feel bigger without going ambient/shoegaze on you. Off for rhythm — the riff needs to stay dry and in-your-face, reverb would just wash out the attack.
+## AMP - Module off
 
-### CTL summary
-- **CTL Off (verse/rhythm):** NR + ModernRect snaptone + EQ only. Dry, tight, mid-forward crunch built for palm-muted riffing.
-- **CTL On (chorus):** adds DST (Super OD boost) + RVB (Room wash). Louder, more sustain, more air — a bigger chorus strum over the same amp voicing, no repeats.
-- **Solo:** CTL On + White Tape on. The chorus sound plus a short tape slap behind the lead.
-- Modules on CTL: DST, RVB. One CTL slot is free.
+Not used.
 
-### Section map
-- **Verse:** CTL off, White Tape off.
-- **Chorus:** CTL on, White Tape off.
-- **Solo:** CTL on, stomp the White Tape on.
-- **Back to the verse:** CTL off, White Tape off. Hit both on the same beat.
+## CAB - Module off
 
-## Full Pedalboard
+Not used.
 
-Signal chain order: Flamma FS-08 Octave → Donner Ultimate Comp → Donner Stylish Fuzz → Joyo King of Kings → Joyo Narcissus → Valeton GP-5 → Donner White Tape.
-Board Option = White Tape, so the Joyo American Sound is off the board for this build.
+## EQ - Guitar EQ 2
 
-**Flamma FS-08 Octave — bypassed**
-- All octave knobs (-2OCT, -OCT, +OCT, +2OCT) at 0, Dry at 100
-- Footswitch: off, never engaged for this song
-No octave texture anywhere in "Click Click Boom" — this stays fully out of the signal path.
+100Hz: 0.
+500Hz: 1.
+1kHz: 2.
+3kHz: 3.
+6kHz: -6.
+VOL: 53.
+CTL assigned. Loads off; first CTL press switches it on.
+Shapes note body and cut after the amp/capture. Where assigned to CTL, its output adds the specified lift after the gain stages. Numbers are GP-5 control values, not a calibrated loudness guarantee.
 
-**Donner Ultimate Comp — engaged always**
-- COMP: 45, TONE: 55, LEVEL: 55, Mode: NORMAL
-Light-to-moderate squeeze evens out pick attack across the palm-muted riff before it hits the fuzz/OD/amp gain stages. NORMAL mode — the Rectifier snaptone downstream is already bright enough, don't need TREBLE mode stacking more top end on top of that.
+## MOD - Module off
 
-**Donner Stylish Fuzz — bypassed**
-No fuzz texture in this song. Leave off; footswitch never engaged for this patch.
+Not used.
 
-**Joyo King of Kings — Left channel engaged always, Right channel bypassed**
-- Left: Volume 55, Gain 35, Tone 55, Clipping toggle: softer/asymmetric position, Feedback toggle: standard position
-- Right: off, footswitch not engaged
-Left channel run low-gain as a subtle always-on push into the front of the Rectifier snaptone — classic "boost into a cranked amp" move, adds extra grind and touch-sensitivity to both CTL states without changing the amp's core voicing. Right channel stays in reserve — if you want the outro or final chorus even bigger live, stack it in manually (separate footswitch from GP-5 CTL), but it's not part of the baseline patch.
+## DLY - Module off
 
-**Joyo Narcissus — engaged always**
-- Mode: Vintage, Width: 30, Depth: 20, Rate: 25
-Light chorus sheen underneath the whole patch, vintage mode kept subtle per the general light-touch MOD rule — this is the patch's only modulation source since the GP-5's own MOD module is off. Runs the same in both CTL states; it's texture, not a rhythm/lead differentiator.
+Not used.
 
-**Valeton GP-5**
-See GP-5 settings above.
+## RVB - Room
 
-**Donner White Tape — tape slap, solo only**
-- Top row (left channel) only. Mono rig, bottom row unused.
-- Level: ~10:30. A clearly audible single echo, still behind the dry note.
-- Time: ~120ms target, just past 8 o'clock. Slapback range.
-- Feedback: fully counterclockwise. One repeat.
-- This is the shared slap setting (same as Syndicate, Click Click Boom, Everyday Blues, My Maria, Somebody Like You, Neon Moon). Any of these can share a set without touching the knobs.
-- Footswitch: on for the solo, off for everything else.
-- Changed from a 300ms eighth-note echo to the shared slap on 2026-10-16. A short slap gives the lead the same width without tying it to the tempo.
-- It sits after the GP-5's Room reverb, so the slap carries a little room with it. That's fine at this Level.
-- The clock positions assume the Time knob sweeps 25-1000ms evenly. Set the slap by ear: it should thicken the note, not answer it.
+Mix: 10.
+Decay: 35.
+Trail: on.
+CTL assigned. Loads off; first CTL press switches it on.
+Adds the specified room or ambient tail. The revised mix keeps the initial note audible. Trail behavior follows the saved setting.
+
+## Switching and section map
+
+CTL blocks: DST, EQ, RVB.
+- CTL off / loaded state: Tight verse riff. GP-5 active: NR, N->S.
+- First CTL press: Chorus lift; solo adds White Tape. GP-5 active: NR, DST, EQ, RVB, N->S.
+- Press CTL again to return to the loaded block pattern, provided no shared MIDI block has been changed.
+
+Named sounds (from an unmodified baseline CTL/MIDI pattern):
+- Verse: CTL off; MIDI at the corresponding baseline pattern; White Tape off, Narcissus off, both King of Kings channels off. Active GP-5: NR, N->S.
+- Chorus: CTL on; MIDI at the corresponding baseline pattern; White Tape off, Narcissus off, both King of Kings channels off. Active GP-5: NR, DST, EQ, RVB, N->S.
+- Solo: CTL on; MIDI at the corresponding baseline pattern; White Tape on, Narcissus off, both King of Kings channels off. Active GP-5: NR, DST, EQ, RVB, N->S.
+
+## Full pedalboard
+
+Flamma FS-08 Octave -> Donner Ultimate Comp -> Donner Stylish Fuzz -> Joyo King of Kings -> Joyo Narcissus -> Valeton GP-5 -> Donner White Tape.
+Board settings are set by hand and are not encoded in the .prst.
+All numeric pedal positions use the existing 0–100 position shorthand unless a clock position is specified.
+
+## Flamma FS-08 Octave
+
+Bypassed throughout.
+-2OCT: 0.
+-OCT: 0.
++OCT: 0.
++2OCT: 0.
+Dry: 100.
+
+## Donner Ultimate Comp
+
+On throughout.
+COMP: 45.
+TONE: 55.
+LEVEL: 55.
+Mode: NORMAL.
+
+## Donner Stylish Fuzz
+
+Bypassed throughout.
+Sustain: 25.
+Treble: 50.
+Bass: 50.
+Volume: 50.
+
+## King of Kings Left
+
+Bypassed throughout.
+Volume: 55.
+Gain: 35.
+Tone: 55.
+Clipping toggle: Softer position.
+Feedback toggle: Standard position.
+
+## King of Kings Right
+
+Bypassed throughout.
+Volume: 50.
+Gain: 20.
+Tone: 50.
+Clipping toggle: Softer position.
+Feedback toggle: Standard position.
+
+## Joyo Narcissus
+
+Bypassed throughout.
+Width: 30.
+Depth: 20.
+Rate: 25.
+Mode: Vintage.
+
+## Donner White Tape
+
+Off for verse/chorus; on for solo only.
+Level: ~10:30.
+Time: 120ms (free-time slap; no beat subdivision).
+Feedback: Fully counterclockwise (one repeat).
+Mono rig: use the top row/left channel; bottom row unused. Set Time against the track by ear. No tap tempo. Its repeats include the GP-5 reverb. Keep this fixed across the shared slap set.
+
+## Board choreography
+
+- Flamma FS-08 Octave: Bypassed throughout.
+- Donner Ultimate Comp: On throughout.
+- Donner Stylish Fuzz: Bypassed throughout.
+- King of Kings Left: Bypassed throughout.
+- King of Kings Right: Bypassed throughout.
+- Joyo Narcissus: Bypassed throughout.
+- Donner White Tape: Off for verse/chorus; on for solo only.
+Set the board switches for the section you are entering. Intro-only or clean-only effects may need to start on. Return each pedal to its documented state at the next section. Board pedals are independent of CTL.
+
+## Revision record
+
+Approved audit entry 149.
+- SnapTone Middle: 68 -> 56.
+- SnapTone Treble: 62 -> 55.
+- DST Gain: 50 -> 15.
+- DST Tone: 62 -> 55.
+- EQ 500Hz: 5 -> 1.
+- EQ 1kHz: 8 -> 2.
+- EQ VOL: 52 -> 53.
+- EQ: assigned to CTL.
+- RVB Mix: 25 -> 10.
+- Board King of Kings Left: ; Bypassed throughout.
+- Board Narcissus: ; Bypassed throughout.
+Pre-revision JSON, Markdown and original file hashes are preserved in Documents/patch-audit-2026-10-16/inventory.json and implementation-manifest.json.
+The site piece title and on-disk filenames stay stable; only the short pedal display name may change.

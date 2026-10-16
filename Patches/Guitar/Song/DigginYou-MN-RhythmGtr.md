@@ -1,5 +1,11 @@
 # I'm Diggin' You (Like an Old Soul Record) (Guitar) — Meshell Ndegeocello
 
+Revised 2026-10-16 following the approved library audit.
+Type: Song. Instrument: HSS Stratocaster.
+Full board. Board Option: American Sound (bypassed; retained for legacy full-board builds).
+Patch screen name: G-DigginYo. Patch VOL: 50.
+Preset tempo: 92 BPM.
+
 From *Plantation Lullabies* (1993), Meshell Ndegeocello's debut. Co-produced by David Gamson, André Betts and Bob Power.
 Wah Wah Watson is credited among the album's guitarists. I haven't confirmed he plays on this track.
 The track is a laid-back early-90s neo-soul groove, built around Meshell's bass. Guitar's job is support: clean, warm, funky comping, with soul fills on top.
@@ -7,97 +13,181 @@ Tempo: about 92 BPM, my estimate. Not measured. Retime the delay by ear if it's 
 Instrument: Stratocaster (HSS).
 - Rhythm: position 4 (neck+middle). Light, muted scratch chords and double-stops.
 - Fills: neck pickup, or the bridge humbucker if you want more quack out of the envelope filter.
-Full board.
 
-CTL off = clean soul comping. CTL on = fills and lead lines.
+## Revision intent
+
+Keep the musical role of the original patch while reducing redundant gain, excessive space and unclear switching where identified in audit entry 153.
+The module settings and section map below are the active revision.
+Audited capture volumes and Michael’s explicit patch-level adjustments are preserved.
+CTL remains an intentional filtered-lead effect voice; do not add MIDI to a non-MIDI song build.
+No hardware audition or measured level match has been performed.
 
 ## GP-5 settings
 
-Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
+Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB.
+The encoded N->S block sits between DST and AMP when a SnapTone is used.
 
-**NR — Gate**, always on.
-- THRE: 20
-- Funk comping has muted scratches between chords. 20 keeps the hiss down without eating ghost notes.
+AMP/CAB replacement: SnapTone TwinClean (slot 61): CLEANEST - Fender Deluxe Reverb 1965 [Hyper Accuracy] + TWIN REVERB __ CLEAN (vulturized Twin).
+Slot: 61. Always on.
+Gain: 50, VOL: 75, Bass: 50, Middle: 54, Treble: 52.
+AMP and CAB are both off; the capture already includes its cab/DI character.
+The capture voice is fixed across CTL states. Audited VOL is preserved for this slot.
 
-**PRE — Toucher (envelope filter)**, on CTL.
-- Sense: 55, Range: 50, Q: 55, Mix: 60, Mode: Guitar
-- A nod to the Wah Wah Watson credit. The filter follows your pick attack, so it acts like a played wah, not a pulsing auto-wah.
-- Mix 60 keeps some dry signal, so it stays soulful rather than synthy.
-- CTL off: bypassed. CTL on: engaged.
+## NR - Gate
 
-**DST — Green OD (TS-808)**, on CTL.
-- Gain: 20, Tone: 55, VOL: 60
-- Just a little hair and a mid push, so the fills sing over the bass. Not a rock lead.
-- CTL off: bypassed. CTL on: engaged.
+THRE: 20.
+Fixed on. Not on CTL.
+Use the lowest threshold that keeps rests quiet. Check soft notes and held-note decay. This gate is before the drives and amp; it does not directly gate noise generated after it.
 
-**AMP/CAB — NAM SnapTone, slot 61: TwinClean** (always on)
-- The `CLEANEST` blackface Deluxe capture into the vulturized `TWIN REVERB __ CLEAN` IR.
-- Its role is the glassy Fender clean: Motown, soul, pop. "Like an old soul record" is the brief.
-- Gain: 50, VOL: 75, Bass: 50, Middle: 54, Treble: 52
-- Gain 50: as captured. Clean with headroom.
-- Middle 54: a little body, so the comping doesn't go thin under the bass.
-- Treble 52: near flat. The EQ handles the top.
-- VOL 75: the level Michael set for this snaptone in the 2026-10-01 VOL audit.
-- Same in both CTL states. AMP and CAB are off in the `.prst`. The N->S block calls slot 61 directly.
+## PRE - Toucher
 
-**EQ — Guitar EQ 2**, always on.
-- 100Hz: -2, 500Hz: 0, 1kHz: +1, 3kHz: +1, 6kHz: -1, VOL: 50
-- -2 at 100Hz: hands the low end to Meshell's bass. In this song, the bass is the lead voice.
-- +1 at 1kHz and 3kHz: snap for the scratch chords.
-- -1 at 6kHz: keeps it warm, not glassy-sharp.
+Sense: 55.
+Range: 50.
+Q: 55.
+Mix: 40.
+Mode: 0.
+CTL assigned. Loads off; first CTL press switches it on.
+Controls the source dynamics or adds the specified push/filter before distortion and amp processing. The settings stay fixed; only its on/off state can change.
 
-**MOD — off.**
-- The Narcissus on the board supplies the chorus.
+## DST - Green OD
 
-**DLY — Analog**, on CTL.
-- Mix: 15, Time: 326ms, Feedback: 18, Trail: on
-- 326ms is an eighth note at 92 BPM (est.). Low mix, so it just thickens the fills.
-- Trail on, so a fill's last note rings into the comping.
+Gain: 20.
+Tone: 55.
+VOL: 60.
+CTL assigned. Loads off; first CTL press switches it on.
+Supplies the selected additional drive voice. Use its level and gain as separate controls. A pre-amp boost may add compression instead of a proportional solo-volume increase.
 
-**RVB — Spring**, always on.
-- Mix: 15, Decay: 30, Trail: on
-- The amp-spring sound of an old soul record. Moderate, so the comping stays tight.
+## AMP - Module off
 
-## CTL footswitch
+Not used.
 
-On CTL: PRE (Toucher), DST (Green OD), DLY (Analog). That uses all 3 CTL slots.
+## CAB - Module off
 
-- **CTL off — Rhythm.** Clean, chorused Fender comping. This is the resting state the patch loads into.
-- **CTL on — Fills and lead.** Envelope quack, a touch of TS hair, and an eighth-note echo.
-- I haven't mapped where the guitar fills land on the recording. Stomp CTL on for melodic fills between vocal lines, and off to go back to comping.
+Not used.
 
-## Full pedalboard (signal chain order)
+## EQ - Guitar EQ 2
 
-Flamma FS-08 Octave → Donner Ultimate Comp → Donner Stylish Fuzz → Joyo King of Kings → Joyo Narcissus → Valeton GP-5.
+100Hz: -2.
+500Hz: 0.
+1kHz: 1.
+3kHz: 1.
+6kHz: -1.
+VOL: 50.
+Fixed on. Not on CTL.
+Shapes note body and cut after the amp/capture. Where assigned to CTL, its output adds the specified lift after the gain stages. Numbers are GP-5 control values, not a calibrated loudness guarantee.
 
-**1. Flamma FS-08 Octave — bypassed**
-- -2OCT: 0, -OCT: 0, +OCT: 0, +2OCT: 0, Dry: 100
-- Footswitch off all song.
+## MOD - Module off
 
-**2. Donner Ultimate Comp — engaged all song**
-- COMP: 35
-- TONE: 55
-- LEVEL: 55
-- Mode: NORMAL
-- Soul and funk comping has been compressed on record since the 60s. COMP 35 evens out the scratches and adds a little sustain, without an obvious squash.
+Not used.
 
-**3. Donner Stylish Fuzz — bypassed**
-- Footswitch off all song.
+## DLY - Analog
 
-**4. Joyo King of Kings — both channels bypassed**
-- Left: off, footswitch not engaged.
-- Right: off, footswitch not engaged.
-- The Green OD on CTL is all the dirt this song wants. Board drive would cloud the clean comping.
+Mix: 15.
+Time: 326.
+Feedback: 18.
+Trail: on.
+CTL assigned. Loads off; first CTL press switches it on.
+Adds repeats only in the listed states. Trail preserves the remaining repeats when this block is bypassed; it does not change delay time or mix.
 
-**5. Joyo Narcissus — engaged all song**
-- Width: 40
-- Depth: 30
-- Rate: 25
-- Mode: Vintage
-- A light, slow chorus under the clean tone. That's the early-90s neo-soul guitar sheen. Low Depth keeps it underneath.
+## RVB - Spring
 
-**6. Valeton GP-5** — see settings above.
+Mix: 10.
+Decay: 30.
+Trail: on.
+Fixed on. Not on CTL.
+Adds the specified room or ambient tail. The revised mix keeps the initial note audible. Trail behavior follows the saved setting.
 
-## Note on the full board vs. the `.prst`
+## Switching and section map
 
-The `.prst` file only encodes the GP-5's own 9 modules. The Flamma, Donner Ultimate Comp, Donner Stylish Fuzz, Joyo King of Kings and Joyo Narcissus settings above are not and cannot be part of that file. They're set by hand on the board, and documented here so the full patch can be rebuilt. The Comp and Narcissus are part of the core clean sound, so don't skip them.
+CTL blocks: PRE, DST, DLY.
+- CTL off / loaded state: Clean soul comping. GP-5 active: NR, EQ, RVB, N->S.
+- First CTL press: Filtered lead color. GP-5 active: NR, PRE, DST, EQ, DLY, RVB, N->S.
+- Press CTL again to return to the loaded block pattern, provided no shared MIDI block has been changed.
+
+## Full pedalboard
+
+Flamma FS-08 Octave -> Donner Ultimate Comp -> Donner Stylish Fuzz -> Joyo King of Kings -> Joyo American Sound -> Joyo Narcissus -> Valeton GP-5.
+Board settings are set by hand and are not encoded in the .prst.
+All numeric pedal positions use the existing 0–100 position shorthand unless a clock position is specified.
+
+## Flamma FS-08 Octave
+
+Bypassed throughout.
+-2OCT: 0.
+-OCT: 0.
++OCT: 0.
++2OCT: 0.
+Dry: 100.
+
+## Donner Ultimate Comp
+
+On throughout.
+COMP: 35.
+TONE: 55.
+LEVEL: 55.
+Mode: NORMAL.
+
+## Donner Stylish Fuzz
+
+Bypassed throughout.
+Sustain: 25.
+Treble: 50.
+Bass: 50.
+Volume: 50.
+
+## King of Kings Left
+
+Bypassed throughout.
+Volume: 50.
+Gain: 20.
+Tone: 50.
+Clipping toggle: Softer position.
+Feedback toggle: Standard position.
+
+## King of Kings Right
+
+Bypassed throughout.
+Volume: 50.
+Gain: 20.
+Tone: 50.
+Clipping toggle: Softer position.
+Feedback toggle: Standard position.
+
+## Joyo American Sound
+
+Bypassed throughout.
+Level: 50.
+Drive: 10.
+Voice: 50.
+Low: 50.
+Mid: 50.
+High: 50.
+
+## Joyo Narcissus
+
+On throughout.
+Width: 40.
+Depth: 15.
+Rate: 25.
+Mode: Vintage.
+
+## Board choreography
+
+- Flamma FS-08 Octave: Bypassed throughout.
+- Donner Ultimate Comp: On throughout.
+- Donner Stylish Fuzz: Bypassed throughout.
+- King of Kings Left: Bypassed throughout.
+- King of Kings Right: Bypassed throughout.
+- Joyo American Sound: Bypassed throughout.
+- Joyo Narcissus: On throughout.
+Set the board switches for the section you are entering. Intro-only or clean-only effects may need to start on. Return each pedal to its documented state at the next section. Board pedals are independent of CTL.
+
+## Revision record
+
+Approved audit entry 153.
+- Pedal display name: DigginYou -> G-DigginYo. Filenames stay unchanged.
+- PRE Mix: 60 -> 40.
+- RVB Mix: 15 -> 10.
+- Board Narcissus: Depth 15.
+Pre-revision JSON, Markdown and original file hashes are preserved in Documents/patch-audit-2026-10-16/inventory.json and implementation-manifest.json.
+The site piece title and on-disk filenames stay stable; only the short pedal display name may change.

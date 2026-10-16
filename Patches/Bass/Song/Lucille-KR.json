@@ -2,16 +2,62 @@
   "patch_name": "Lucille - Kenny Rogers",
   "patch_vol": 50,
   "bpm": 100,
-  "nam": {"name": "CleanB15 (slot 51): Ampeg B18 - Head DI - Bass Chan - Vol 2.5 (B-18N) + Apg115", "slot": 51, "settings": {"Gain": 56, "VOL": 80, "Bass": 60, "Middle": 55, "Treble": 45}},
+  "nam": {
+    "name": "CleanB15 (slot 51): Ampeg B18 - Head DI - Bass Chan - Vol 2.5 (B-18N) + Apg115",
+    "slot": 51,
+    "settings": {
+      "Gain": 50,
+      "VOL": 80,
+      "Bass": 60,
+      "Middle": 55,
+      "Treble": 45
+    }
+  },
   "modules": {
-    "NR": {"model": "Gate", "always_on": true, "settings": {"THRE": 30}},
-    "PRE": {"model": "Micro Boost", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Gain": 30}},
-    "DST": {"model": null},
-    "AMP": {"model": null},
-    "CAB": {"model": null},
-    "EQ": {"model": null},
-    "MOD": {"model": null},
-    "DLY": {"model": null},
-    "RVB": {"model": "Room", "ctl": true, "ctl_off_state": "off", "ctl_on_state": "on", "settings": {"Mix": 25, "Decay": 30, "Trail": false}}
+    "NR": {
+      "model": "Gate",
+      "always_on": true,
+      "settings": {
+        "THRE": 8
+      }
+    },
+    "PRE": {
+      "model": "Micro Boost",
+      "ctl": true,
+      "ctl_off_state": "off",
+      "ctl_on_state": "on",
+      "settings": {
+        "Gain": 30
+      }
+    },
+    "DST": {
+      "model": null
+    },
+    "AMP": {
+      "model": null
+    },
+    "CAB": {
+      "model": null
+    },
+    "EQ": {
+      "model": null
+    },
+    "MOD": {
+      "model": null
+    },
+    "DLY": {
+      "model": null
+    },
+    "RVB": {
+      "model": "Room",
+      "ctl": true,
+      "ctl_off_state": "off",
+      "ctl_on_state": "on",
+      "settings": {
+        "Mix": 6,
+        "Decay": 30,
+        "Trail": false
+      }
+    }
   }
 }

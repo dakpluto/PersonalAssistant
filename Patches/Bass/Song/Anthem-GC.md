@@ -1,51 +1,99 @@
 # The Anthem — Good Charlotte
 
+Revised 2026-10-16 following the approved library audit.
+Type: Song. Instrument: Harley Benton passive 5-string P/J.
+GP-5 only.
+Patch screen name: The Anthem. Patch VOL: 52.
+Preset tempo: 176 BPM.
+
 *The Young and the Hopeless*, 2002. ~176 BPM, est.
 Pop-punk bass — tight low end, upfront pick attack, driving eighth notes under the verse riff, bigger and more open for the "I don't wanna be" hook.
 GP-5 only, P/J bass, no pedalboard.
 
-## Module chain
+## Revision intent
 
-**NR — Gate**, always on.
-THRE: 25. Light gate, just enough to clean up string noise between fast eighth-note runs.
+Keep the musical role of the original patch while reducing redundant gain, excessive space and unclear switching where identified in audit entry 14.
+The module settings and section map below are the active revision.
+Audited capture volumes and Michael’s explicit patch-level adjustments are preserved.
+No hardware audition or measured level match has been performed.
 
-**PRE — off.** Not needed — the NAM's own front end and the CTL'd Bass OD below cover the dynamic range this patch needs.
+## GP-5 settings
 
-**DST — Bass OD**, on CTL.
-Gain: 45, Blend: 60, VOL: 60, Bass: 55, Treble: 55.
-Off for the verse — clean punchy V4B tone, all pick and low end.
-On for the chorus — Bass OD stacked on top adds grit and push without burying the note, blended at 60% so it thickens rather than fuzzes out.
+Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB.
+The encoded N->S block sits between DST and AMP when a SnapTone is used.
 
-**AMP/CAB — NAM SnapTone, slot 55: BrightSVT** (always on)
-- Built from the `SVT SANS BRIGHT DRIVE (SVT-CL)` NAM and the Hartke410 IR, combined into one snaptone.
-- Real Ampeg SVT-CL with the bright drive setting, into the aluminum-cone Hartke410 IR.
-- Pop-punk bass: bright, driven, picked. The bright SVT drive plus Hartke clank.
-- Gain: 50, VOL: 60, Bass: 62, Middle: 55, Treble: 55
-- Gain 50: the capture as built.
-- Bass 62: Full low end to anchor the palm-muted verse riff.
-- Middle 55: Present, not scooped, so the bass cuts through two guitars.
-- Treble 55: Brighter than a grunge dial-in. Pick attack needs to read clearly at this tempo.
-- VOL 60: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
-- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 55 directly.
+AMP/CAB replacement: SnapTone BrightSVT (slot 55): SVT SANS BRIGHT DRIVE (SVT-CL) + Hartke410.
+Slot: 55. Always on.
+Gain: 50, VOL: 60, Bass: 56, Middle: 55, Treble: 55.
+AMP and CAB are both off; the capture already includes its cab/DI character.
+The capture voice is fixed across CTL states. Audited VOL is preserved for this slot.
 
-**EQ — Bass EQ 2**, always on.
-50Hz: +3, 120Hz: +2, 400Hz: -3, 800Hz: 0, 4.5kHz: +6, VOL: 55.
-Small low-end reinforcement, a scoop around 400Hz to stay out of the guitars' rhythm-chug range, and a solid push at 4.5kHz for that pick-attack snap pop-punk bass needs to sit up front in the mix.
+## NR - Gate
 
-**MOD — off.** No modulation — straight, driving pop-punk part.
+THRE: 25.
+Fixed on. Not on CTL.
+Use the lowest threshold that keeps rests quiet. Check soft notes and held-note decay. This gate is before the drives and amp; it does not directly gate noise generated after it.
 
-**DLY — off.** No delay. This is a tight, dry rhythm-section tone.
+## PRE - Module off
 
-**RVB — Room**, on CTL.
-Mix: 20, Decay: 30, Trail: true.
-Off for the verse — dry and right on the beat.
-On for the chorus, alongside the Bass OD — a touch of room size to match the bigger, more open chorus arrangement without smearing the part.
+Not used.
 
-## CTL footswitch
+## DST - Bass OD
 
-Two modules on CTL: DST (Bass OD) and RVB (Room).
+Gain: 25.
+Blend: 35.
+VOL: 60.
+Bass: 55.
+Treble: 55.
+CTL assigned. Loads off; first CTL press switches it on.
+Supplies the selected additional drive voice. Use its level and gain as separate controls. A pre-amp boost may add compression instead of a proportional solo-volume increase.
 
-- **CTL off** — verse/pre-chorus sound. Clean V4B punch, dry, tight, all pick attack. This is the resting state the patch loads into.
-- **CTL on** — chorus/hook sound. Bass OD grit plus a little room size, same core amp tone, bigger and pushier for the "I don't wanna be" hook.
+## AMP - Module off
 
-Engage CTL going into each chorus, back off for the verses. Simple two-state song patch.
+Not used.
+
+## CAB - Module off
+
+Not used.
+
+## EQ - Bass EQ 2
+
+50Hz: 3.
+120Hz: 2.
+400Hz: -3.
+800Hz: 0.
+4.5kHz: 3.
+VOL: 55.
+Fixed on. Not on CTL.
+Shapes note body and cut after the amp/capture. Where assigned to CTL, its output adds the specified lift after the gain stages. Numbers are GP-5 control values, not a calibrated loudness guarantee.
+
+## MOD - Module off
+
+Not used.
+
+## DLY - Module off
+
+Not used.
+
+## RVB - Module off
+
+Not used.
+
+## Switching and section map
+
+CTL blocks: DST.
+- CTL off / loaded state: verse/pre-chorus sound. GP-5 active: NR, EQ, N->S.
+- First CTL press: chorus/hook sound. GP-5 active: NR, DST, EQ, N->S.
+- Press CTL again to return to the loaded block pattern, provided no shared MIDI block has been changed.
+
+## Revision record
+
+Approved audit entry 14.
+- SnapTone Bass: 62 -> 56.
+- DST Gain: 45 -> 25.
+- DST Blend: 60 -> 35.
+- EQ 4.5kHz: 6 -> 3.
+- RVB: Room -> off.
+- RVB: removed from CTL.
+Pre-revision JSON, Markdown and original file hashes are preserved in Documents/patch-audit-2026-10-16/inventory.json and implementation-manifest.json.
+The site piece title and on-disk filenames stay stable; only the short pedal display name may change.

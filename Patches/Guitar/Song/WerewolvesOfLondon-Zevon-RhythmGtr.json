@@ -22,7 +22,7 @@
       "ctl_off_state": "off",
       "ctl_on_state": "on",
       "settings": {
-        "Gain": 38,
+        "Gain": 25,
         "Tone": 55,
         "VOL": 68
       }
@@ -77,7 +77,7 @@
       "model": "Room",
       "always_on": true,
       "settings": {
-        "Mix": 14,
+        "Mix": 8,
         "Decay": 30,
         "Trail": true
       }

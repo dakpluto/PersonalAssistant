@@ -1,121 +1,188 @@
 # Everyday I Have the Blues — John Mayer (Where the Light Is)
 
+Revised 2026-10-16 following the approved library audit.
+Type: Song. Instrument: HSS Stratocaster.
+Full board. Board Option: White Tape.
+Patch screen name: Everyday I. Patch VOL: 65.
+Preset tempo: 104 BPM.
+
 Full-band live cut, horns and rhythm section, mid-tempo shuffle around 104 BPM.
-Board Option: White Tape (rebuilt 2026-10-16).
 Mayer's rig for this set is boutique-clean-amp-into-a-Tube-Screamer-style-boost — never a channel switch, just the same amp pushed harder for the solo.
 This board copies that exact trick: one amp voicing, one boost that kicks it into gain for the lead break.
-
 No modulation anywhere in this build. This song doesn't call for chorus/vibe — it's a straight blues shuffle, and adding wobble would just muddy the horn-band mix.
 
-## GP-5 Settings
+## Revision intent
 
-**Patch VOL: 65.** Raised from 55 on 2026-10-01, Michael's setting.
+Keep the musical role of the original patch while reducing redundant gain, excessive space and unclear switching where identified in audit entry 155.
+The module settings and section map below are the active revision.
+Audited capture volumes and Michael’s explicit patch-level adjustments are preserved.
+No hardware audition or measured level match has been performed.
 
-Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB
+## GP-5 settings
 
-**NR — Gate**
-- THRE: 28
-- Always on. HSS Strat single coils plus a boost stage downstream need a floor; 28 is light enough to not chop note decay.
+Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB.
+The encoded N->S block sits between DST and AMP when a SnapTone is used.
 
-**PRE — COMP4** (Keeley C4)
-- Sustain: 30, Attack: 60, VOL: 55, Clip: 50
-- Always on, both CTL states. Light touch — evens out pick attack on the shuffle comping without squashing dynamics. Fast Attack (60) keeps transient snap so the rhythm still breathes.
+AMP/CAB replacement: SnapTone MayerDumble (slot 66): SLAMMIN_DUMBLE_FORD_CLN_BALANCED_S (Dumble ODS #102) + Bogner 2x12 EVM12L - SM57 1 - Cap Edge.
+Slot: 66. Always on.
+Gain: 55, VOL: 75, Bass: 55, Middle: 65, Treble: 60.
+AMP and CAB are both off; the capture already includes its cab/DI character.
+The capture voice is fixed across CTL states. Audited VOL is preserved for this slot.
 
-**DST — Green OD** (Tube Screamer / TS-808)
-- Gain: 45, Tone: 55, VOL: 65
-- **CTL switch.** Off = bypassed, On = engaged.
-- This is the whole trick of the patch. Off, the amp runs clean-to-edge-of-breakup on its own for rhythm. On, the TS's mid hump shoves the same amp into a warmer, more compressed, singing lead voice — the way Mayer actually does it live instead of switching amp channels.
+## NR - Gate
 
-**AMP/CAB — NAM SnapTone, slot 66: MayerDumble** (always on)
-- Built from the `SLAMMIN_DUMBLE_FORD_CLN_BALANCED_S (Dumble ODS #102)` NAM and the Bogner 2x12 EVM12L - SM57 1 - Cap Edge IR, combined into one snaptone.
-- Dumble ODS #102 (the Robben Ford amp) clean channel, into a Bogner 2x12 with EVM12L speakers.
-- Mayer's live blues tone is Dumble/Two-Rock clean. This is the Dumble half.
-- Gain: 55, VOL: 75, Bass: 55, Middle: 65, Treble: 60
-- Gain 55: noticeably over default. This part wants more push than the other MayerDumble patches.
-- Bass 55: a touch more low end.
-- Middle 65: more midrange.
-- Treble 60: more top end.
-- VOL 75: 5 over MayerDumble's audited 70. Michael bumped it for this patch on 2026-10-01.
-- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 66 directly.
+THRE: 15.
+Fixed on. Not on CTL.
+Use the lowest threshold that keeps rests quiet. Check soft notes and held-note decay. This gate is before the drives and amp; it does not directly gate noise generated after it.
 
-**EQ — Guitar EQ 2**
-- 100Hz: -2, 500Hz: +3, 1kHz: +2, 3kHz: 0, 6kHz: -3
-- VOL: 50
-- Always on. Small mid push (500Hz/1kHz) keeps the guitar cutting through the horn section without getting harsh; slight top-end trim (6kHz -3) tames fizz from the boost stage so the TS kick doesn't get brittle.
+## PRE - Module off
 
-**MOD — Off**
-- Not used. No modulation for this song, on the GP-5 or the Narcissus.
+Not used.
 
-**DLY — Slapback**
-- Mix: 30, Time: 320ms, F.Back: 20, Trail: On
-- **CTL switch.** Off = bypassed, On = engaged.
-- Rhythm stays dry and tight for the shuffle groove. Lead gets a short echo (320ms, low feedback) for width and sustain in a big room — not a wash, just dimension.
-- At 320ms this is an eighth-note echo more than a true slap. The real slap lives on the White Tape (see pedalboard).
+## DST - Green OD
 
-**RVB — Spring**
-- Mix: 20, Decay: 30, Trail: On
-- Always on, both states. A touch of spring keeps the amp from sounding dead-dry in a live mix without smearing the shuffle's rhythmic snap.
+Gain: 45.
+Tone: 55.
+VOL: 65.
+CTL assigned. Loads off; first CTL press switches it on.
+Supplies the selected additional drive voice. Use its level and gain as separate controls. A pre-amp boost may add compression instead of a proportional solo-volume increase.
 
-### CTL Summary (GP-5)
-- **CTL Off — Rhythm/Intro:** Clean-to-edge-of-breakup Dumble clean, dry (no slap delay), compressed shuffle comping. This is the main groove sound.
-- **CTL On — Lead/Solo:** Green OD kicks the same amp into a warmer, more sustained, vocal lead tone, with slapback delay added for width.
+## AMP - Module off
 
-## Full Pedalboard (signal chain order)
+Not used.
 
-**1. Flamma FS-08 Octave — Bypassed, whole song.**
-No octave layering here — this is a straight blues shuffle, not a texture piece. Footswitch stays off for the entire song. Knobs are irrelevant while bypassed; leave Dry at 100 and the four octave knobs at 0 so there's no surprise if it's accidentally engaged.
+## CAB - Module off
 
-**2. Donner Ultimate Comp — Engaged, whole song.**
-- COMP: 40
-- TONE: 55
-- LEVEL: 55
-- Mode: NORMAL
-Sits ahead of everything else and evens out pick dynamics before the boost/amp gain stages. NORMAL mode (not TREBLE) because the EQ module and boost stage already add top end downstream — don't stack brightness. This runs continuously through both rhythm and lead sections; it's gluing the touch dynamics, not shaping the lead/rhythm split.
+Not used.
 
-**3. Donner Stylish Fuzz — Bypassed, whole song.**
-Not a fuzz song. True bypass, footswitch off throughout.
+## EQ - Guitar EQ 2
 
-**4. Joyo King of Kings — Left channel engaged whole song, Right channel engaged only for solo sections.**
+100Hz: -2.
+500Hz: 3.
+1kHz: 2.
+3kHz: 0.
+6kHz: -3.
+VOL: 50.
+Fixed on. Not on CTL.
+Shapes note body and cut after the amp/capture. Where assigned to CTL, its output adds the specified lift after the gain stages. Numbers are GP-5 control values, not a calibrated loudness guarantee.
 
-*Left channel (always on — rhythm push):*
-- Volume: 55
-- Gain: 25
-- Tone: 50
-- Clipping toggle: softer setting (smoother, lower-gain breakup character)
-- Feedback toggle: standard setting (no added compression)
+## MOD - Module off
 
-Low-gain, always-on push that adds a little extra edge-of-breakup grit ahead of the Dumble snaptone. The clean-channel capture stays clean on its own, so this supplies the front-end grit a cranked boutique amp would.
+Not used.
 
-*Right channel (solo/lead only):*
-- Volume: 65
-- Gain: 60
-- Tone: 60
-- Clipping toggle: harder setting (more aggressive breakup)
-- Feedback toggle: higher setting (more compression/sustain for leads)
+## DLY - Slapback
 
-Stacks in series after the left channel (both engaged together) for the guitar solo — this is the extra push that, combined with the GP-5's Green OD + amp, gets the lead tone hot enough to cut over horns and a full rhythm section in a live room. Step on the right footswitch at the same moment you hit the GP-5's CTL switch for the solo; step off when you're back to rhythm.
+Mix: 15.
+Time: 288.
+F.Back: 20.
+Trail: on.
+CTL assigned. Loads off; first CTL press switches it on.
+Adds repeats only in the listed states. Trail preserves the remaining repeats when this block is bypassed; it does not change delay time or mix.
 
-**5. Joyo Narcissus — Bypassed, whole song.**
-No chorus anywhere in this patch, on the GP-5 or here. Keep it off to stay consistent with the dry, straight-blues character of the tune.
+## RVB - Spring
 
-**6. Valeton GP-5 — as detailed above.**
+Mix: 12.
+Decay: 30.
+Trail: on.
+Fixed on. Not on CTL.
+Adds the specified room or ambient tail. The revised mix keeps the initial note audible. Trail behavior follows the saved setting.
 
-**7. Donner White Tape — tape slap, for the clean fills between horn lines.**
-- Top row (left channel) only. Mono rig, bottom row unused.
-- Level: ~10:30. A clearly audible single echo, still behind the dry note.
-- Time: ~120ms target, just past 8 o'clock. Slapback range.
-- Feedback: fully counterclockwise. One repeat.
-- This is the shared slap setting (same as Syndicate, Click Click Boom, Everyday Blues, My Maria, Somebody Like You, Neon Moon). Any of these can share a set without touching the knobs.
-- Footswitch: on for the single-note fills you play between the horn lines in the rhythm sections (CTL off). Off for the shuffle comping.
-- Why: CTL off is dry, so the fills had no echo at all. A true slap is the classic live-blues fill sound. It thickens short licks without smearing the shuffle.
-- For the solo, leave it off: the GP-5's 320ms echo covers it. Stacking both works in a big, loud room, but it gets busy on fast licks.
-- It sits after the GP-5's Spring, so the slap repeats a little spring with it.
-- The clock positions assume the Time knob sweeps 25-1000ms evenly. Set the slap by ear: it should thicken the note, not answer it.
+## Switching and section map
 
-## Footswitch Choreography
+CTL blocks: DST, DLY.
+- CTL off / loaded state: Shuffle rhythm. GP-5 active: NR, EQ, RVB, N->S.
+- First CTL press: Green OD solo. GP-5 active: NR, DST, EQ, DLY, RVB, N->S.
+- Press CTL again to return to the loaded block pattern, provided no shared MIDI block has been changed.
 
-- **Rhythm / intro / horn-section trade-offs:** King of Kings left channel only, GP-5 CTL off. Comp always running underneath.
-- **Fills between horn lines:** same as rhythm, plus the White Tape on. Off again when you go back to comping.
-- **Guitar solo:** Step on King of Kings right channel (stacks with left) at the same time you hit GP-5 CTL on. Both come off together when the solo ends and you drop back to rhythm.
-- Board Option = White Tape, so the Joyo American Sound is off the board for this build.
-- Everything else (Octave, Fuzz, Narcissus) stays bypassed for the entire song — this patch is deliberately lean: comp, two gain stages, one amp, one delay-for-lead trick. No clutter.
+Named sounds (from an unmodified baseline CTL/MIDI pattern):
+- Shuffle comping: CTL off; MIDI at the corresponding baseline pattern; King of Kings Left on/Right off, White Tape off. Active GP-5: NR, EQ, RVB, N->S.
+- Clean fills: CTL off; MIDI at the corresponding baseline pattern; King of Kings Left on/Right off, White Tape on. Active GP-5: NR, EQ, RVB, N->S.
+- Solo: CTL on; MIDI at the corresponding baseline pattern; King of Kings Left on/Right off, White Tape off. Active GP-5: NR, DST, EQ, DLY, RVB, N->S.
+
+## Full pedalboard
+
+Flamma FS-08 Octave -> Donner Ultimate Comp -> Donner Stylish Fuzz -> Joyo King of Kings -> Joyo Narcissus -> Valeton GP-5 -> Donner White Tape.
+Board settings are set by hand and are not encoded in the .prst.
+All numeric pedal positions use the existing 0–100 position shorthand unless a clock position is specified.
+
+## Flamma FS-08 Octave
+
+Bypassed throughout.
+-2OCT: 0.
+-OCT: 0.
++OCT: 0.
++2OCT: 0.
+Dry: 100.
+
+## Donner Ultimate Comp
+
+On throughout.
+COMP: 40.
+TONE: 55.
+LEVEL: 55.
+Mode: NORMAL.
+
+## Donner Stylish Fuzz
+
+Bypassed throughout.
+Sustain: 25.
+Treble: 50.
+Bass: 50.
+Volume: 50.
+
+## King of Kings Left
+
+On throughout.
+Volume: 55.
+Gain: 25.
+Tone: 50.
+Clipping toggle: Softer position.
+Feedback toggle: Standard position.
+
+## King of Kings Right
+
+Bypassed throughout.
+Volume: 65.
+Gain: 60.
+Tone: 60.
+Clipping toggle: Harder position.
+Feedback toggle: Higher-gain position.
+
+## Joyo Narcissus
+
+Bypassed throughout.
+Width: 30.
+Depth: 20.
+Rate: 20.
+Mode: Vintage.
+
+## Donner White Tape
+
+Off for shuffle rhythm and CTL-on solo; on for fills between horn lines at CTL off.
+Level: ~10:30.
+Time: 120ms (free-time slap; no beat subdivision).
+Feedback: Fully counterclockwise (one repeat).
+Mono rig: use the top row/left channel; bottom row unused. Set Time against the track by ear. No tap tempo. Its repeats include the GP-5 reverb. Keep this fixed across the shared slap set.
+
+## Board choreography
+
+- Flamma FS-08 Octave: Bypassed throughout.
+- Donner Ultimate Comp: On throughout.
+- Donner Stylish Fuzz: Bypassed throughout.
+- King of Kings Left: On throughout.
+- King of Kings Right: Bypassed throughout.
+- Joyo Narcissus: Bypassed throughout.
+- Donner White Tape: Off for shuffle rhythm and CTL-on solo; on for fills between horn lines at CTL off.
+Set the board switches for the section you are entering. Intro-only or clean-only effects may need to start on. Return each pedal to its documented state at the next section. Board pedals are independent of CTL.
+
+## Revision record
+
+Approved audit entry 155.
+- NR THRE: 28 -> 15.
+- PRE: COMP4 -> off.
+- DLY Mix: 30 -> 15.
+- DLY Time: 320 -> 288.
+- RVB Mix: 20 -> 12.
+- Board King of Kings Right: ; Bypassed throughout.
+Pre-revision JSON, Markdown and original file hashes are preserved in Documents/patch-audit-2026-10-16/inventory.json and implementation-manifest.json.
+The site piece title and on-disk filenames stay stable; only the short pedal display name may change.

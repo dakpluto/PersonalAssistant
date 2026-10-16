@@ -1,69 +1,109 @@
 # Earth, Wind & Fire Style Funk Bass
 
+Revised 2026-10-16 following the approved library audit.
+Type: Style. Instrument: Harley Benton passive 5-string P/J.
+GP-5 only.
+Patch screen name: EWF-Funk. Patch VOL: 52.
+Preset tempo: 126 BPM.
+
 Style patch. ~126 BPM (September / Let's Groove territory).
 GP-5 only, P/J bass, no pedalboard.
-
-## The style
-
 Verdine White is the reference: a busy, syncopated fingerstyle funk part that stays locked with the drums and a big horn section.
 The tone is bright, punchy, and tightly compressed, with clear note definition. It has to cut through horns and a stacked rhythm section without getting boomy.
 Other players in the same lane: Louis Johnson (Brothers Johnson), Rocco Prestia (Tower of Power), and Larry Graham (Graham Central Station) on the slap side.
 This patch gives you two sounds: Verdine's fingerstyle pocket in the base state, and a scooped Louis Johnson-style thumb-and-pop tone on CTL.
 
-## Module chain
+## Revision intent
 
-**NR — Gate**, always on.
-THRE: 15. Tidies up the rests. Funk depends on silence between notes.
+Keep the musical role of the original patch while reducing redundant gain, excessive space and unclear switching where identified in audit entry 134.
+The module settings and section map below are the active revision.
+Audited capture volumes and Michael’s explicit patch-level adjustments are preserved.
+No hardware audition or measured level match has been performed.
 
-**PRE — COMP4 (Keeley C4)**, always on.
-Sustain: 55, Attack: 45, Clip: 30, VOL: 60.
-Fairly firm squash for the even, locked-in level funk needs.
-Attack at 45 lets the initial transient through first, so notes still pop.
+## GP-5 settings
 
-**DST — off.** Funk bass stays clean. No grit.
+Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB.
+The encoded N->S block sits between DST and AMP when a SnapTone is used.
 
-**AMP/CAB — NAM SnapTone, slot 52: AvalonAD2022** (always on)
-- Built from the `Avalon - 38 dB - Chan 1 (Avalon AD2022)` NAM and no cab IR (straight DI), combined into one snaptone.
-- Avalon AD2022 Class A preamp at 38 dB. A studio DI, not an amp: no speaker coloration.
-- Verdine White's tone is snappy and hi-fi. A DI keeps it that way, with no cab coloration.
-- Gain: 48, VOL: 75, Bass: 55, Middle: 55, Treble: 60
-- Gain 48: a little under default. This part wants less push than the other AvalonAD2022 patches.
-- Bass 55: a touch more low end.
-- Middle 55: a touch more midrange.
-- Treble 60: more top end.
-- VOL 75: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
-- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 52 directly.
+AMP/CAB replacement: SnapTone AvalonAD2022 (slot 52): Avalon - 38 dB - Chan 1 (Avalon AD2022) + none (studio DI).
+Slot: 52. Always on.
+Gain: 48, VOL: 75, Bass: 55, Middle: 55, Treble: 60.
+AMP and CAB are both off; the capture already includes its cab/DI character.
+The capture voice is fixed across CTL states. Audited VOL is preserved for this slot.
 
-**EQ — Bass EQ 2**, on CTL.
-50Hz: +4, 120Hz: +1, 400Hz: -5, 800Hz: -1, 4.5kHz: +5, VOL: 58.
-This is the slap scoop. Deep lows for the thumb, a 400Hz cut to remove the boxiness, and 4.5kHz up for the pop and string zing.
-VOL 58 makes up for the level lost to the scoop, so the slap sound doesn't drop in the mix.
+## NR - Gate
 
-**MOD — B-Chorus, MIDI-only, loads bypassed.**
-- Depth: 30, Rate: 0.7Hz, VOL: 50
-- Off by default: Verdine's groove tone is dry and direct.
-- On MIDI for the ballads ("After the Love Has Gone" territory). Light, slow chorus for the smooth late-70s ballad bass sheen. Light touch, per the MOD rule.
+THRE: 15.
+Fixed on. Not on CTL.
+Use the lowest threshold that keeps rests quiet. Check soft notes and held-note decay. This gate is before the drives and amp; it does not directly gate noise generated after it.
 
-**DLY — off.**
+## PRE - COMP4
 
-**RVB — off.** Funk bass wants to be dry and on top of the beat.
+Sustain: 40.
+Attack: 45.
+Clip: 30.
+VOL: 60.
+Fixed on. Not on CTL.
+Controls the source dynamics or adds the specified push/filter before distortion and amp processing. The settings stay fixed; only its on/off state can change.
 
-## CTL footswitch
+## DST - Module off
 
-One module on CTL: EQ (Bass EQ 2).
+Not used.
 
-- **CTL off**: fingerstyle pocket, the Verdine White sound. Mid-forward, bright, compressed. This is the resting state.
-- **CTL on**: slap/pop feature. The scooped EQ gives a Louis Johnson thumb-and-pop tone for breakdowns and bass features.
+## AMP - Module off
 
-Stomp it when you switch from fingers to thumb. Stomp it off when you go back to the pocket.
+Not used.
 
-## MIDI toggles
+## CAB - Module off
 
-MIDI = True (added 2026-10-12). With no MIDI controller connected, the patch loads and plays exactly as before: CTL and the board work the same. MIDI adds single-block toggles on top.
+Not used.
 
-On MIDI: MOD (B-Chorus), MIDI-only, loads bypassed.
+## EQ - Bass EQ 2
 
-Sounds:
-- **Pocket** (default). CTL off. Fingerstyle Verdine White groove.
-- **Ballad.** CTL off, MIDI MOD on. Light chorus for the smooth ballads.
-- **Slap feature** (CTL on). Scooped EQ for thumb-and-pop sections.
+50Hz: 1.
+120Hz: 1.
+400Hz: -2.
+800Hz: -1.
+4.5kHz: 2.
+VOL: 52.
+CTL assigned. Loads off; first CTL press switches it on.
+Shapes note body and cut after the amp/capture. Where assigned to CTL, its output adds the specified lift after the gain stages. Numbers are GP-5 control values, not a calibrated loudness guarantee.
+
+## MOD - B-Chorus
+
+Depth: 30.
+Rate: 0.7.
+VOL: 50.
+MIDI-only. Loads off.
+Adds the specified movement. Keep it underneath the note except for intentionally wet artist or ambient voices.
+
+## DLY - Module off
+
+Not used.
+
+## RVB - Module off
+
+Not used.
+
+## Switching and section map
+
+CTL blocks: EQ.
+- CTL off / loaded state: fingerstyle pocket, the Verdine White sound. GP-5 active: NR, PRE, N->S.
+- First CTL press: slap/pop feature. GP-5 active: NR, PRE, EQ, N->S.
+- Press CTL again to return to the loaded block pattern, provided no shared MIDI block has been changed.
+
+MIDI toggles: MOD.
+MIDI mapping lives on the controller/device, not in the .prst.
+- MOD B-Chorus: loads off; toggle to add this block independently.
+- MOD-only alternative from loaded state: CTL off, MIDI MOD on; other MIDI blocks at their load states. GP-5 active: NR, PRE, MOD, N->S. Board switches unchanged.
+
+## Revision record
+
+Approved audit entry 134.
+- PRE Sustain: 55 -> 40.
+- EQ 50Hz: 4 -> 1.
+- EQ 400Hz: -5 -> -2.
+- EQ 4.5kHz: 5 -> 2.
+- EQ VOL: 58 -> 52.
+Pre-revision JSON, Markdown and original file hashes are preserved in Documents/patch-audit-2026-10-16/inventory.json and implementation-manifest.json.
+The site piece title and on-disk filenames stay stable; only the short pedal display name may change.

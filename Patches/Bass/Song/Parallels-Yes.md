@@ -1,83 +1,172 @@
 # Parallels — Yes
 
-Bass: Harley Benton P/J, 5-string, passive. Full board.
-1978 (*Tormato*). ~132 BPM (estimate — no hard chart reference, tempo isn't load-bearing for the tone choices below). A relentless, full-throttle rocker almost start to finish — no big quiet-verse/loud-chorus contrast to build a CTL split around, so this patch is one steady, massive, driven tone throughout. Chris Squire famously tracked this song's bass through a church organ amplifier setup, not a conventional bass rig — the goal here is that huge, cathedral-scale, faintly swirling low end, not a typical Squire bright-and-driven Rickenbacker growl (that's what the existing `Yes-Squire` artist patch already covers).
+Revised 2026-10-16 following the approved library audit.
+Type: Song. Instrument: Harley Benton passive 5-string P/J.
+Full board. Board Option: American Sound (bypassed; retained for legacy full-board builds).
+Patch screen name: Parallels . Patch VOL: 58.
+Preset tempo: 132 BPM.
 
-No CTL on this one — the whole song sits at this level of size and drive.
+Parallels is on Going for the One (1977). Yes’s official credits distinguish Squire’s bass guitar from Wakeman’s church organ. The bass design therefore uses driven bass and focused mids without pretending the keyboard part is a vibrato bass effect.
 
-## GP-5 Settings
+## Revision intent
 
-Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB
+Keep the musical role of the original patch while reducing redundant gain, excessive space and unclear switching where identified in audit entry 90.
+The module settings and section map below are the active revision.
+Audited capture volumes and Michael’s explicit patch-level adjustments are preserved.
+No hardware audition or measured level match has been performed.
 
-**NR — Gate**
-- THRE: 35
-- Always on. A driven, high-gain patch like this needs a real gate to keep the noise floor in check between hits.
+## GP-5 settings
 
-**PRE — Off**
-Not used. No boost stage needed — this patch is already at full size and drive all the time; there's no "bigger" state to boost into.
+Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB.
+The encoded N->S block sits between DST and AMP when a SnapTone is used.
 
-**DST — Bass OD** (Boss ODB-3)
-- Gain: 75, Blend: 70, VOL: 60, Bass: 45, Treble: 65
-- Always on. This is the core of the driven, huge-amp character — high Gain for real grit, Blend at 70 keeps it mostly wet without fully drowning the fundamental (note definition survives under the drive). Bass rolled back to 45 on the pedal itself — low end comes from the snaptone and the note, not a flabby DST signal.
+AMP/CAB replacement: SnapTone BrightSVT (slot 55): SVT SANS BRIGHT DRIVE (SVT-CL) + Hartke410.
+Slot: 55. Always on.
+Gain: 50, VOL: 60, Bass: 55, Middle: 58, Treble: 60.
+AMP and CAB are both off; the capture already includes its cab/DI character.
+The capture voice is fixed across CTL states. Audited VOL is preserved for this slot.
 
-**AMP/CAB — NAM SnapTone, slot 55: BrightSVT** (always on)
-- Built from the `SVT SANS BRIGHT DRIVE (SVT-CL)` NAM and the Hartke410 IR, combined into one snaptone.
-- Real Ampeg SVT-CL with the bright drive setting, into the aluminum-cone Hartke410 IR.
-- Squire's driven Rickenbacker tone. Bright SVT drive plus aluminum cones.
-- Gain: 60, VOL: 60, Bass: 55, Middle: 70, Treble: 60
-- Gain 60: noticeably over default. This part wants more push than the other BrightSVT patches.
-- Bass 55: a touch more low end.
-- Middle 70: more midrange.
-- Treble 60: more top end.
-- VOL 60: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
-- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 55 directly.
+## NR - Gate
 
-**EQ — Bass EQ 1**
-- 33Hz: +4, 150Hz: +2, 600Hz: -2, 2kHz: +8, 8kHz: +4, VOL: 55
-- Always on. Unlike a mix-conscious rock/metal bass patch, this one actually wants real sub weight (33Hz/150Hz both pushed) — the "massive cathedral organ" character depends on genuine low-end power, not a scooped/tight tone. 600Hz trimmed to avoid boxy mud, 2kHz pushed hard for cut-through bite against the busy arrangement, 8kHz nudged up for edge on the driven amp grit.
+THRE: 18.
+Fixed on. Not on CTL.
+Use the lowest threshold that keeps rests quiet. Check soft notes and held-note decay. This gate is before the drives and amp; it does not directly gate noise generated after it.
 
-**MOD — V-Roto** (BBD Blue Vibrato)
-- Depth: 55, Rate: 1.0Hz
-- Always on. Heavier than the usual light-touch default, deliberately — this song is specifically known for an unusual, swirling texture (the rotating-speaker/Leslie-adjacent quality of the real recording), which is exactly the exception case for going past a subtle modulation setting. Rate kept slow (~1Hz) for a majestic, "chorale"-speed swirl rather than a fast tremolo-like wobble.
+## PRE - Module off
 
-**DLY — Off**
-Not used. This arrangement is dense and busy — delay repeats would blur the bass's attack and definition, which this patch can't afford to lose given how hard it's already pushing gain.
+Not used.
 
-**RVB — Hall**
-- Mix: 20, Decay: 40, Trail: On
-- Always on. A real nod to the recording's actual origin (a church organ amp) — a touch of cathedral-scale space, kept light enough not to wash out the attack this driven a tone still needs.
+## DST - Module off
 
-## Full Pedalboard
+Not used.
 
-Signal chain order: Flamma FS-08 Octave → Donner Ultimate Comp → Donner Stylish Fuzz → Joyo Tidal Wave → Joyo Narcissus → Valeton GP-5.
+## AMP - Module off
 
-**Flamma FS-08 Octave — bypassed**
-- All octave knobs (-2OCT, -OCT, +OCT, +2OCT) at 0, Dry at 100
-- No octave layering — the 5-string's low B plus this patch's already-massive low end covers the range this song needs.
+Not used.
 
-**Donner Ultimate Comp — engaged**
-- COMP: 55, TONE: 55, LEVEL: 55, Mode: TREBLE
-- Always on. Squashes pick/finger attack into a consistent, driving level — this is a relentless rock part, not a dynamic one. TREBLE mode keeps attack articulate before it hits two more gain stages downstream.
+## CAB - Module off
 
-**Donner Stylish Fuzz — engaged**
-- Sustain: 45, Treble: 55, Bass: 35, Volume: 55
-- Always on. A second layered gain stage ahead of the Tidal Wave and the GP-5's own Bass OD — this huge, driven tone benefits from stacked distortion the same way the RammGrind patch's approach does, though dialed to moderate (not maxed) so it thickens rather than turns to splatter. Bass rolled back on the pedal itself, same reasoning as always: keep the low end controlled at the source.
+Not used.
 
-**Joyo Tidal Wave — engaged**
-- Drive: 60, Blend: 55, Presence: 55, Level: 60
-- Treble: 55, Middle: 62, Bass: 50
-- Mid-Frequency toggle: 500Hz (body and weight, matches this song's massive-not-tight low end goal)
-- Bass-Shift toggle: 40Hz (fuller low end — this patch wants real size, not tightness)
-- Cab-Sim (DI out): On
-- Ground Lift: Off (only flip on if a specific room throws hum)
-- Another real gain/preamp stage, not just a glue stage — this patch's size comes from genuinely cascaded drive (fuzz, Tidal Wave, Bass OD, then a hot SVT), matching how big and relentless the actual recording is.
+## EQ - Bass EQ 1
 
-**Joyo Narcissus — bypassed**
-Modulation is handled entirely by the GP-5's own MOD module (V-Roto). Stacking a second modulation source here would fight with the vibrato's swirl instead of complementing it.
+33Hz: 4.
+150Hz: 2.
+600Hz: -2.
+2kHz: 3.
+8kHz: 4.
+VOL: 55.
+Fixed on. Not on CTL.
+Shapes note body and cut after the amp/capture. Where assigned to CTL, its output adds the specified lift after the gain stages. Numbers are GP-5 control values, not a calibrated loudness guarantee.
 
-**Valeton GP-5**
-See GP-5 settings above.
+## MOD - Module off
 
-## Notes
+Not used.
 
-No CTL choreography needed — this patch loads into its one, full-size, driven tone and stays there for the whole song.
+## DLY - Module off
+
+Not used.
+
+## RVB - Hall
+
+Mix: 6.
+Decay: 40.
+Trail: on.
+Fixed on. Not on CTL.
+Adds the specified room or ambient tail. The revised mix keeps the initial note audible. Trail behavior follows the saved setting.
+
+## Switching and section map
+
+CTL blocks: None.
+- CTL off / loaded state: Main Parallels rock voice. GP-5 active: NR, EQ, RVB, N->S.
+- No GP-5 CTL change. Use the board stomps listed below when the arrangement needs another sound.
+
+## Full pedalboard
+
+Flamma FS-08 Octave -> Donner Ultimate Comp -> Donner Stylish Fuzz -> Joyo Tidal Wave -> Joyo American Sound -> Joyo Narcissus -> Valeton GP-5.
+Board settings are set by hand and are not encoded in the .prst.
+All numeric pedal positions use the existing 0–100 position shorthand unless a clock position is specified.
+
+## Flamma FS-08 Octave
+
+Bypassed throughout.
+-2OCT: 0.
+-OCT: 0.
++OCT: 0.
++2OCT: 0.
+Dry: 100.
+
+## Donner Ultimate Comp
+
+On throughout.
+COMP: 55.
+TONE: 55.
+LEVEL: 55.
+Mode: TREBLE.
+
+## Donner Stylish Fuzz
+
+On throughout.
+Sustain: 45.
+Treble: 55.
+Bass: 35.
+Volume: 55.
+
+## Joyo Tidal Wave
+
+Drive on for the main rock voice; preamp active throughout.
+Drive: 30.
+Blend: 35.
+Presence: 55.
+Level: 60.
+Treble: 55.
+Middle: 62.
+Bass: 50.
+Mid-Frequency: 500Hz.
+Bass-Shift: 40Hz.
+Cab-Sim (DI out): On.
+Ground Lift: Off.
+The footswitch toggles drive only. Preamp EQ and Level stay active in both states. Cab-Sim/Ground Lift affect the DI path; main instrument output is unchanged.
+
+## Joyo American Sound
+
+Bypassed throughout.
+Level: 50.
+Drive: 10.
+Voice: 50.
+Low: 50.
+Mid: 50.
+High: 50.
+
+## Joyo Narcissus
+
+Bypassed throughout.
+Width: 30.
+Depth: 20.
+Rate: 20.
+Mode: Vintage.
+
+## Board choreography
+
+- Flamma FS-08 Octave: Bypassed throughout.
+- Donner Ultimate Comp: On throughout.
+- Donner Stylish Fuzz: On throughout.
+- Joyo Tidal Wave: Drive on for the main rock voice; preamp active throughout.
+- Joyo American Sound: Bypassed throughout.
+- Joyo Narcissus: Bypassed throughout.
+Set the board switches for the section you are entering. Intro-only or clean-only effects may need to start on. Return each pedal to its documented state at the next section. Board pedals are independent of CTL.
+
+## Revision record
+
+Approved audit entry 90.
+- SnapTone Gain: 60 -> 50.
+- SnapTone Middle: 70 -> 58.
+- NR THRE: 35 -> 18.
+- DST: Bass OD -> off.
+- EQ 2kHz: 8 -> 3.
+- MOD: V-Roto -> off.
+- RVB Mix: 20 -> 6.
+- Board Tidal Wave: Drive 30, Blend 35; Drive on for the main rock voice; preamp active throughout.
+Pre-revision JSON, Markdown and original file hashes are preserved in Documents/patch-audit-2026-10-16/inventory.json and implementation-manifest.json.
+The site piece title and on-disk filenames stay stable; only the short pedal display name may change.
+Source check: https://www.yesworld.com/discography/going-for-the-one/

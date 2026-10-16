@@ -1,52 +1,94 @@
 # Man in the Box — Alice In Chains
 
+Revised 2026-10-16 following the approved library audit.
+Type: Song. Instrument: Harley Benton passive 5-string P/J.
+GP-5 only.
+Patch screen name: ManInBox. Patch VOL: 52.
+Preset tempo: 108 BPM.
+
 From *Facelift* (1990). About 108 BPM, est. Eb tuning, matching the guitar. On the 5-string, stay in standard and read the riff down a half step.
 Bass: Harley Benton P/J, 5-string, passive. GP-5 only.
 Thick, gritty, and heavy. The bass doubles the grinding riff and fills out the sludge underneath the guitar.
 Built from the song's overall sound. I haven't verified the exact bass rig on the record.
 A pick for the grind. Both pickups up. Tone knob around 60%.
 
-## Module chain
+## Revision intent
 
-**NR — Gate**, always on.
+Keep the musical role of the original patch while reducing redundant gain, excessive space and unclear switching where identified in audit entry 77.
+The module settings and section map below are the active revision.
+Audited capture volumes and Michael’s explicit patch-level adjustments are preserved.
+No hardware audition or measured level match has been performed.
+
+## GP-5 settings
+
+Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB.
+The encoded N->S block sits between DST and AMP when a SnapTone is used.
+
+AMP/CAB replacement: SnapTone HairySVT (slot 58): SVT SANS HAIRY DRIVE (SVT-CL) + Sunn215.
+Slot: 58. Always on.
+Gain: 48, VOL: 55, Bass: 58, Middle: 58, Treble: 48.
+AMP and CAB are both off; the capture already includes its cab/DI character.
+The capture voice is fixed across CTL states. Audited VOL is preserved for this slot.
+
+## NR - Gate
+
 THRE: 25.
-The gain is up. 25 keeps the stops tight.
+Fixed on. Not on CTL.
+Use the lowest threshold that keeps rests quiet. Check soft notes and held-note decay. This gate is before the drives and amp; it does not directly gate noise generated after it.
 
-**PRE — COMP (Ross)**, always on.
-Sustain: 40, VOL: 58.
-Evens the picked grind.
+## PRE - COMP
 
-**DST — Bass OD**, always on.
-Gain: 50, Blend: 45, VOL: 55, Bass: 55, Treble: 50.
-Always-on grit is part of the core tone here. Blend 45 keeps the fundamental.
+Sustain: 40.
+VOL: 58.
+Fixed on. Not on CTL.
+Controls the source dynamics or adds the specified push/filter before distortion and amp processing. The settings stay fixed; only its on/off state can change.
 
-**AMP/CAB — NAM SnapTone, slot 58: HairySVT** (always on)
-- Built from the `SVT SANS HAIRY DRIVE (SVT-CL)` NAM and the Sunn215 IR, combined into one snaptone.
-- Real Ampeg SVT-CL with the hairy drive setting, into the Sunn215 2x15 IR.
-- Mike Starr's sludgy tone. Hairy SVT drive into the Sunn 2x15.
-- Gain: 48, VOL: 55, Bass: 58, Middle: 58, Treble: 48
-- Gain 48: a little under default. This part wants less push than the other HairySVT patches.
-- Bass 58: more low end.
-- Middle 58: more midrange.
-- Treble 48: top end pulled back a little.
-- VOL 55: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
-- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 58 directly.
+## DST - Module off
 
-**EQ — Bass EQ 2**, on CTL.
-50Hz: +1, 120Hz: +1, 400Hz: +2, 800Hz: +3, 4.5kHz: 0, VOL: 56.
-On CTL. It adds a 400Hz and 800Hz growl plus level for the choruses and the solo, so the bass cuts through the densest parts.
+Not used.
 
-**MOD — off.**
+## AMP - Module off
 
-**DLY — off.**
+Not used.
 
-**RVB — off.** Dry and heavy.
+## CAB - Module off
 
-## CTL footswitch
+Not used.
 
-On CTL: EQ (Bass EQ 2, growl boost).
+## EQ - Bass EQ 2
 
-- **CTL off** — Riff and verses. Thick, gritty, heavy. This is the resting state the patch loads into.
-- **CTL on** — Choruses and the solo. Extra midrange growl and level to cut through the wall.
+50Hz: 1.
+120Hz: 1.
+400Hz: 2.
+800Hz: 3.
+4.5kHz: 0.
+VOL: 52.
+CTL assigned. Loads off; first CTL press switches it on.
+Shapes note body and cut after the amp/capture. Where assigned to CTL, its output adds the specified lift after the gain stages. Numbers are GP-5 control values, not a calibrated loudness guarantee.
 
-Engage at the choruses and under the solo.
+## MOD - Module off
+
+Not used.
+
+## DLY - Module off
+
+Not used.
+
+## RVB - Module off
+
+Not used.
+
+## Switching and section map
+
+CTL blocks: EQ.
+- CTL off / loaded state: Riff and verses. GP-5 active: NR, PRE, N->S.
+- First CTL press: Choruses and the solo. GP-5 active: NR, PRE, EQ, N->S.
+- Press CTL again to return to the loaded block pattern, provided no shared MIDI block has been changed.
+
+## Revision record
+
+Approved audit entry 77.
+- DST: Bass OD -> off.
+- EQ VOL: 56 -> 52.
+Pre-revision JSON, Markdown and original file hashes are preserved in Documents/patch-audit-2026-10-16/inventory.json and implementation-manifest.json.
+The site piece title and on-disk filenames stay stable; only the short pedal display name may change.

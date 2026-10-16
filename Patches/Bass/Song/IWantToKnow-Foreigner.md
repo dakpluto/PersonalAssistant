@@ -1,87 +1,175 @@
 # I Want to Know What Love Is — Foreigner
 
+Revised 2026-10-16 following the approved library audit.
+Type: Song. Instrument: Harley Benton passive 5-string P/J.
+Full board. Board Option: American Sound (bypassed; retained for legacy full-board builds).
+Patch screen name: IWantToKno. Patch VOL: 52.
+Preset tempo: 67 BPM.
+
 Bass: Harley Benton P/J, 5-string, passive. Full board.
 1984 AOR power ballad (*Agent Provocateur*). ~67 BPM (estimate — no hard chart reference, tempo isn't load-bearing for the tone choices below). Textbook quiet-verse-to-massive-choir-chorus structure — piano and vocal carry the verses almost alone, and the chorus detonates into full band plus gospel choir. The bass job is to stay warm, simple, and out of the way in the verses, then lean in for the chorus lift without ever getting aggressive — this is a ballad, not a rock song, even at its biggest.
 
-## GP-5 Settings
+## Revision intent
 
-Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB
+Keep the musical role of the original patch while reducing redundant gain, excessive space and unclear switching where identified in audit entry 56.
+The module settings and section map below are the active revision.
+Audited capture volumes and Michael’s explicit patch-level adjustments are preserved.
+No hardware audition or measured level match has been performed.
 
-**NR — Gate**
-- THRE: 18
-- Always on. Low-gain, clean patch — just enough to clean up idle noise, nothing more aggressive needed.
+## GP-5 settings
 
-**PRE — Micro Boost** (MXR M133 Micro Amp)
-- Gain: 48
-- **CTL switch.** Off = bypassed, On = engaged.
-- Same mechanism as the site's other verse/chorus worship-ballad patches: a simple, clean volume/presence lift, no tone coloring. Off (verse) stays intimate, sitting under the piano. On (chorus) pushes the part forward enough to sit with the choir and full band, without turning into a different tone.
+Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB.
+The encoded N->S block sits between DST and AMP when a SnapTone is used.
 
-**DST — Off**
-Not used. No drive anywhere in this tone — the amp stays clean regardless of CTL state.
+AMP/CAB replacement: SnapTone AvalonAD2022 (slot 52): Avalon - 38 dB - Chan 1 (Avalon AD2022) + none (studio DI).
+Slot: 52. Always on.
+Gain: 49, VOL: 75, Bass: 58, Middle: 55, Treble: 55.
+AMP and CAB are both off; the capture already includes its cab/DI character.
+The capture voice is fixed across CTL states. Audited VOL is preserved for this slot.
 
-**AMP/CAB — NAM SnapTone, slot 52: AvalonAD2022** (always on)
-- Built from the `Avalon - 38 dB - Chan 1 (Avalon AD2022)` NAM and no cab IR (straight DI), combined into one snaptone.
-- Avalon AD2022 Class A preamp at 38 dB. A studio DI, not an amp: no speaker coloration.
-- Glossy 80s power ballad. Clean DI bass under the synths and choir.
-- Gain: 49, VOL: 75, Bass: 58, Middle: 55, Treble: 55
-- Gain 49: a little under default. This part wants less push than the other AvalonAD2022 patches.
-- Bass 58: Warmth and low-end weight this song's big chorus wants.
-- Middle 55: a touch more midrange.
-- Treble 55: a touch more top end.
-- VOL 75: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
-- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 52 directly.
+## NR - Gate
 
-**EQ — Bass EQ 1**
-- 33Hz: +4, 150Hz: +1, 600Hz: -2, 2kHz: +3, 8kHz: +1, VOL: 52
-- Always on, both CTL states. Gentle low-end weight for the ballad's foundation, a small 600Hz dip to avoid boxiness, a modest 2kHz push for note definition under the choir. Nothing aggressive — this whole patch stays warm and unforced.
+THRE: 18.
+Fixed on. Not on CTL.
+Use the lowest threshold that keeps rests quiet. Check soft notes and held-note decay. This gate is before the drives and amp; it does not directly gate noise generated after it.
 
-**MOD — B-Chorus** (Boss CE-2B for Bass)
-- Depth: 15, Rate: 0.4Hz, VOL: 50
-- Always on, both states. Light touch, per the usual rule — just enough shimmer to give it that 80s ballad width, not an obvious effect.
+## PRE - Micro Boost
 
-**DLY — Off**
-Not used. Space in this patch comes from the reverb, not repeats.
+Gain: 25.
+CTL assigned. Loads off; first CTL press switches it on.
+Controls the source dynamics or adds the specified push/filter before distortion and amp processing. The settings stay fixed; only its on/off state can change.
 
-**RVB — Hall**
-- Mix: 33, Decay: 58, Trail: On
-- **CTL switch.** Off = bypassed, On = engaged.
-- Off (verse) stays dry and close — the piano and vocal lead, bass stays out of the way. On (chorus) adds a big, lush hall swell to match the choir/full-band payoff — one of the biggest chorus moments in the genre deserves a genuinely big reverb lift, not a token one.
+## DST - Module off
 
-### CTL Summary (GP-5)
-- **CTL Off — Verse (default load state):** Micro Boost and Hall both bypassed. Warm, simple, intimate — supports the piano/vocal without competing.
-- **CTL On — Chorus:** Micro Boost and Hall both engaged. A gentle push plus a big reverb swell — opens the part up for the choir/full-band chorus without changing the fundamental tone.
+Not used.
 
-## Full Pedalboard
+## AMP - Module off
 
-Signal chain order: Flamma FS-08 Octave → Donner Ultimate Comp → Donner Stylish Fuzz → Joyo Tidal Wave → Joyo Narcissus → Valeton GP-5.
+Not used.
 
-**Flamma FS-08 Octave — bypassed**
-- All octave knobs (-2OCT, -OCT, +OCT, +2OCT) at 0, Dry at 100
-- No octave texture anywhere in this song.
+## CAB - Module off
 
-**Donner Ultimate Comp — engaged**
-- COMP: 40, TONE: 50, LEVEL: 55, Mode: NORMAL
-- Evens out finger-attack dynamics on a part that's mostly sustained notes and simple lines — keeps everything sitting at a consistent, controlled level across the song's big dynamic range (whisper-quiet verse to full chorus). NORMAL mode — nothing to brighten, the B7K's own voicing is already present enough.
+Not used.
 
-**Donner Stylish Fuzz — bypassed**
-No fuzz texture anywhere in this song.
+## EQ - Bass EQ 1
 
-**Joyo Tidal Wave — engaged**
-- Drive: 18, Blend: 25, Presence: 50, Level: 55
-- Treble: 52, Middle: 55, Bass: 55
-- Mid-Frequency toggle: 500Hz (body and warmth, fits the ballad better than pick-attack cut-through)
-- Bass-Shift toggle: 40Hz (fuller, warmer low end — this is a spacious ballad arrangement, not a busy mix that needs extra tightness)
-- Cab-Sim (DI out): On
-- Ground Lift: Off (only flip on if a specific room throws hum)
-- Drive kept very light — this pedal is doing foundational glue and a consistent DI feed only, not tone-shaping. The Avalon DI snaptone is carrying the actual tone.
+33Hz: 0.
+150Hz: 1.
+600Hz: -2.
+2kHz: 3.
+8kHz: 1.
+VOL: 52.
+Fixed on. Not on CTL.
+Shapes note body and cut after the amp/capture. Where assigned to CTL, its output adds the specified lift after the gain stages. Numbers are GP-5 control values, not a calibrated loudness guarantee.
 
-**Joyo Narcissus — bypassed**
-Modulation is handled by the GP-5's own MOD module (B-Chorus, light, always on). Stacking this pedal on top would fight with that.
+## MOD - B-Chorus
 
-**Valeton GP-5**
-See GP-5 settings above.
+Depth: 15.
+Rate: 0.4.
+VOL: 50.
+Fixed on. Not on CTL.
+Adds the specified movement. Keep it underneath the note except for intentionally wet artist or ambient voices.
 
-## Footswitch Choreography
+## DLY - Module off
 
-- **Verse:** GP-5 CTL off. Comp and Tidal Wave running underneath, unchanged.
-- **Chorus:** GP-5 CTL on. Step on it going into the choir/full-band lift, off again coming back down to the next verse.
+Not used.
+
+## RVB - Hall
+
+Mix: 8.
+Decay: 35.
+Trail: on.
+CTL assigned. Loads off; first CTL press switches it on.
+Adds the specified room or ambient tail. The revised mix keeps the initial note audible. Trail behavior follows the saved setting.
+
+## Switching and section map
+
+CTL blocks: PRE, RVB.
+- CTL off / loaded state: Warm verse support. GP-5 active: NR, EQ, MOD, N->S.
+- First CTL press: Chorus lift. GP-5 active: NR, PRE, EQ, MOD, RVB, N->S.
+- Press CTL again to return to the loaded block pattern, provided no shared MIDI block has been changed.
+
+## Full pedalboard
+
+Flamma FS-08 Octave -> Donner Ultimate Comp -> Donner Stylish Fuzz -> Joyo Tidal Wave -> Joyo American Sound -> Joyo Narcissus -> Valeton GP-5.
+Board settings are set by hand and are not encoded in the .prst.
+All numeric pedal positions use the existing 0–100 position shorthand unless a clock position is specified.
+
+## Flamma FS-08 Octave
+
+Bypassed throughout.
+-2OCT: 0.
+-OCT: 0.
++OCT: 0.
++2OCT: 0.
+Dry: 100.
+
+## Donner Ultimate Comp
+
+On throughout.
+COMP: 40.
+TONE: 50.
+LEVEL: 55.
+Mode: NORMAL.
+
+## Donner Stylish Fuzz
+
+Bypassed throughout.
+Sustain: 25.
+Treble: 50.
+Bass: 50.
+Volume: 50.
+
+## Joyo Tidal Wave
+
+On throughout.
+Drive: 18.
+Blend: 25.
+Presence: 50.
+Level: 55.
+Treble: 52.
+Middle: 55.
+Bass: 55.
+Mid-Frequency: 500Hz.
+Bass-Shift: 40Hz.
+Cab-Sim (DI out): On.
+Ground Lift: Off.
+The footswitch toggles drive only. Preamp EQ and Level stay active in both states. Cab-Sim/Ground Lift affect the DI path; main instrument output is unchanged.
+
+## Joyo American Sound
+
+Bypassed throughout.
+Level: 50.
+Drive: 10.
+Voice: 50.
+Low: 50.
+Mid: 50.
+High: 50.
+
+## Joyo Narcissus
+
+Bypassed throughout.
+Width: 30.
+Depth: 20.
+Rate: 20.
+Mode: Vintage.
+
+## Board choreography
+
+- Flamma FS-08 Octave: Bypassed throughout.
+- Donner Ultimate Comp: On throughout.
+- Donner Stylish Fuzz: Bypassed throughout.
+- Joyo Tidal Wave: On throughout.
+- Joyo American Sound: Bypassed throughout.
+- Joyo Narcissus: Bypassed throughout.
+Set the board switches for the section you are entering. Intro-only or clean-only effects may need to start on. Return each pedal to its documented state at the next section. Board pedals are independent of CTL.
+
+## Revision record
+
+Approved audit entry 56.
+- PRE Gain: 48 -> 25.
+- EQ 33Hz: 4 -> 0.
+- RVB Mix: 33 -> 8.
+- RVB Decay: 58 -> 35.
+Pre-revision JSON, Markdown and original file hashes are preserved in Documents/patch-audit-2026-10-16/inventory.json and implementation-manifest.json.
+The site piece title and on-disk filenames stay stable; only the short pedal display name may change.

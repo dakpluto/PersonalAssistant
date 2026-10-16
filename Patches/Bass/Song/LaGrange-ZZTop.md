@@ -1,89 +1,166 @@
 # La Grange — ZZ Top
 
+Revised 2026-10-16 following the approved library audit.
+Type: Song. Instrument: Harley Benton passive 5-string P/J.
+Full board. Board Option: American Sound (bypassed; retained for legacy full-board builds).
+Patch screen name: La Grange . Patch VOL: 55.
+Preset tempo: 144 BPM.
+
 Bass: Harley Benton P/J, 5-string, passive. Full board.
 From *Tres Hombres* (1973), ~144 BPM shuffle.
 Dusty Hill's part is a rolling boogie-shuffle riff that tracks Billy Gibbons' famous fuzz-guitar hook almost note for note. It stays in the pocket the whole song — no big dynamic swing like a verse/chorus song — the only real lift is the guitar solo and the extended outro vamp, where the band leans harder.
 
-CTL off = the main boogie groove. CTL on = the extra push for the solo and outro.
+## Revision intent
+
+Keep the musical role of the original patch while reducing redundant gain, excessive space and unclear switching where identified in audit entry 69.
+The module settings and section map below are the active revision.
+Audited capture volumes and Michael’s explicit patch-level adjustments are preserved.
+No hardware audition or measured level match has been performed.
 
 ## GP-5 settings
 
-Module order: NR → PRE → DST → AMP → CAB → EQ → MOD → DLY → RVB.
+Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB.
+The encoded N->S block sits between DST and AMP when a SnapTone is used.
 
-**NR — Gate**
-- THRE: 20
-- Always on. Low threshold — this tone stays close to clean, nothing to gate out except string noise between notes.
+AMP/CAB replacement: SnapTone GrittySVT (slot 57): SVT PUSHED (SVT-CL) + Apg810.
+Slot: 57. Always on.
+Gain: 55, VOL: 55, Bass: 55, Middle: 58, Treble: 50.
+AMP and CAB are both off; the capture already includes its cab/DI character.
+The capture voice is fixed across CTL states. Audited VOL is preserved for this slot.
 
-**PRE — Off**
-- Compression duties are handled by the Donner Ultimate Comp on the board (see below) — no need to stack a second comp stage here.
+## NR - Gate
 
-**DST — Bass OD — On CTL**
-- Gain: 55, Blend: 65, VOL: 62, Bass: 60, Treble: 50
-- CTL off: bypassed (main groove). CTL on: engaged (solo/outro).
-- Blend keeps 35% of the clean signal in the mix even with the OD engaged, so the fundamental doesn't disappear when this kicks in. This is the extra grind for when Gibbons opens up on the solo — the main groove doesn't need it, it already has enough bite from the amp and the Tidal Wave up front.
+THRE: 20.
+Fixed on. Not on CTL.
+Use the lowest threshold that keeps rests quiet. Check soft notes and held-note decay. This gate is before the drives and amp; it does not directly gate noise generated after it.
 
-**AMP/CAB — NAM SnapTone, slot 57: GrittySVT** (always on)
-- Built from the `SVT PUSHED (SVT-CL)` NAM and the Apg810 IR, combined into one snaptone.
-- Real Ampeg SVT-CL pushed into grit, into the Apg810 8x10 IR.
-- Dusty Hill's boogie growl. Pushed SVT gives the edge-of-breakup grit.
-- Gain: 55, VOL: 55, Bass: 60, Middle: 58, Treble: 50
-- Gain 55: noticeably over default. This part wants more push than the other GrittySVT patches.
-- Bass 60: more low end.
-- Middle 58: more midrange.
-- Treble 50: flat.
-- VOL 55: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
-- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 57 directly.
+## PRE - Module off
 
-**EQ — Bass EQ 1**
-- 33Hz: +4, 150Hz: -2, 600Hz: +3, 2kHz: +4, 8kHz: +2, VOL: 55
-- Always on, same for both CTL states.
-- +4 at 33Hz keeps real low-end weight under the shuffle. -2 at 150Hz trims the boxiness a pushed SVT stacks up there. +3 at 600Hz and +4 at 2kHz add the pick/finger attack and midrange snarl that lets this cut alongside a fuzz guitar without getting swallowed by it.
+Not used.
 
-**MOD — Off**
-- No modulation. This is a straight, dry blues-rock groove — nothing here calls for chorus or vibrato.
+## DST - Module off
 
-**DLY — Off**
-- Not used. Tres Hombres is a tight, dry-sounding record — no delay on this part.
+Not used.
 
-**RVB — Off**
-- Not used, for the same reason as DLY. Keeping this bone-dry matches the original record's tight, close-mic'd production.
+## AMP - Module off
 
-## CTL summary
+Not used.
 
-- **CTL Off — Main groove.** The boogie shuffle riff, all the way through verses and choruses. Warm, punchy SVT growl, no extra drive stage.
-- **CTL On — Solo / outro.** Bass OD kicks in for extra push and grind, matching the extra intensity when Gibbons takes the solo and through the extended outro vamp.
-- Engage CTL going into the guitar solo section, leave it on through the outro, back off for a quieter return to the main riff if the arrangement calls for it.
+## CAB - Module off
 
-## Full pedalboard (signal chain order)
+Not used.
 
-**1. Flamma FS-08 Octave — Bypassed**
-- Footswitch off. This riff needs to stay a single, clean fundamental — an octave stack would clutter the boogie pattern's picking.
+## EQ - Bass EQ 1
 
-**2. Donner Ultimate Comp — Engaged**
-- COMP: 50
-- TONE: 55
-- LEVEL: 60
-- Mode: TREBLE
-- Moderate compression evens out the shuffle's constant eighth-note picking without squashing the natural attack. TREBLE mode keeps that attack audible before it hits the Tidal Wave and the GP-5's own gain stages.
+33Hz: 0.
+150Hz: -2.
+600Hz: 3.
+2kHz: 4.
+8kHz: 2.
+VOL: 55.
+Fixed on. Not on CTL.
+Shapes note body and cut after the amp/capture. Where assigned to CTL, its output adds the specified lift after the gain stages. Numbers are GP-5 control values, not a calibrated loudness guarantee.
 
-**3. Donner Stylish Fuzz — Bypassed**
-- Footswitch off. The fuzz character in this song belongs to Gibbons' guitar — stacking a bass fuzz on top would clash with it instead of complementing it. The GP-5's own Bass OD (on CTL) covers the bass's own extra grind when it's needed.
+## MOD - Module off
 
-**4. Joyo Tidal Wave — Engaged**
-- Drive: 40
-- Blend: 60
-- Presence: 55
-- Level: 60
-- Treble: 55
-- Middle: 60
-- Bass: 55
-- Mid-Frequency: 500Hz
-- Bass-Shift: 80Hz
-- Cab-Sim (DI out): Off
-- Ground Lift: Off
-- This is the baseline grit for the main groove — moderate Drive with a 60% Blend keeps the clean fundamental intact while adding the edge-of-breakup growl the boogie riff wants. Bass-Shift at 80Hz keeps the low end tight enough to stay articulate against the drums; Mid-Frequency at 500Hz reinforces the "bass body" push, matching the AMP's own midrange character.
+Not used.
 
-**5. Joyo Narcissus — Bypassed**
-- Footswitch off. No chorus — matches the MOD-off call on the GP-5. Dry, direct blues-rock tone throughout.
+## DLY - Module off
 
-**6. Valeton GP-5** — see settings above.
+Not used.
+
+## RVB - Module off
+
+Not used.
+
+## Switching and section map
+
+CTL blocks: None.
+- CTL off / loaded state: the main boogie groove. GP-5 active: NR, EQ, N->S.
+- No GP-5 CTL change. Use the board stomps listed below when the arrangement needs another sound.
+
+## Full pedalboard
+
+Flamma FS-08 Octave -> Donner Ultimate Comp -> Donner Stylish Fuzz -> Joyo Tidal Wave -> Joyo American Sound -> Joyo Narcissus -> Valeton GP-5.
+Board settings are set by hand and are not encoded in the .prst.
+All numeric pedal positions use the existing 0–100 position shorthand unless a clock position is specified.
+
+## Flamma FS-08 Octave
+
+Bypassed throughout.
+-2OCT: 0.
+-OCT: 0.
++OCT: 0.
++2OCT: 0.
+Dry: 100.
+
+## Donner Ultimate Comp
+
+On throughout.
+COMP: 50.
+TONE: 55.
+LEVEL: 60.
+Mode: TREBLE.
+
+## Donner Stylish Fuzz
+
+Bypassed throughout.
+Sustain: 25.
+Treble: 50.
+Bass: 50.
+Volume: 50.
+
+## Joyo Tidal Wave
+
+Drive on for the main boogie groove; preamp active throughout.
+Drive: 25.
+Blend: 35.
+Presence: 55.
+Level: 60.
+Treble: 55.
+Middle: 60.
+Bass: 55.
+Mid-Frequency: 500Hz.
+Bass-Shift: 80Hz.
+Cab-Sim (DI out): Off.
+Ground Lift: Off.
+The footswitch toggles drive only. Preamp EQ and Level stay active in both states. Cab-Sim/Ground Lift affect the DI path; main instrument output is unchanged.
+
+## Joyo American Sound
+
+Bypassed throughout.
+Level: 50.
+Drive: 10.
+Voice: 50.
+Low: 50.
+Mid: 50.
+High: 50.
+
+## Joyo Narcissus
+
+Bypassed throughout.
+Width: 30.
+Depth: 20.
+Rate: 20.
+Mode: Vintage.
+
+## Board choreography
+
+- Flamma FS-08 Octave: Bypassed throughout.
+- Donner Ultimate Comp: On throughout.
+- Donner Stylish Fuzz: Bypassed throughout.
+- Joyo Tidal Wave: Drive on for the main boogie groove; preamp active throughout.
+- Joyo American Sound: Bypassed throughout.
+- Joyo Narcissus: Bypassed throughout.
+Set the board switches for the section you are entering. Intro-only or clean-only effects may need to start on. Return each pedal to its documented state at the next section. Board pedals are independent of CTL.
+
+## Revision record
+
+Approved audit entry 69.
+- SnapTone Bass: 60 -> 55.
+- DST: Bass OD -> off.
+- DST: removed from CTL.
+- EQ 33Hz: 4 -> 0.
+- Board Tidal Wave: Drive 25, Blend 35; Drive on for the main boogie groove; preamp active throughout.
+Pre-revision JSON, Markdown and original file hashes are preserved in Documents/patch-audit-2026-10-16/inventory.json and implementation-manifest.json.
+The site piece title and on-disk filenames stay stable; only the short pedal display name may change.

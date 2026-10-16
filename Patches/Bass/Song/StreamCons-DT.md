@@ -1,51 +1,116 @@
 # Stream of Consciousness — Dream Theater
 
+Revised 2026-10-16 following the approved library audit.
+Type: Song. Instrument: Harley Benton passive 5-string P/J.
+GP-5 only.
+Patch screen name: Stream of . Patch VOL: 50.
+Preset tempo: 160 BPM.
+
 Train of Thought, 2003. Instrumental. ~160 BPM, est. (double-time and meter shifts throughout).
 John Myung's part here is dense, fast, and technical — this is the instrumental centerpiece of the album, built around a long dynamic arc from a moody, restrained intro/mid-section into full-band unison blast sections.
 GP-5 only, P/J bass, no pedalboard.
 
-## Module chain
+## Revision intent
 
-**NR — Gate**, always on.
-THRE: 30. Fast technical picking at this gain level throws off noise between notes — keeps the low end tight.
+Keep the musical role of the original patch while reducing redundant gain, excessive space and unclear switching where identified in audit entry 109.
+The module settings and section map below are the active revision.
+Audited capture volumes and Michael’s explicit patch-level adjustments are preserved.
+No hardware audition or measured level match has been performed.
 
-**PRE — Micro Boost**, on CTL.
-Gain: 40 when engaged.
-Off for the intro/moody passages, on for the full-band blast sections — pushes harder into the NAM's front end for extra grit and volume when the whole band hits.
+## GP-5 settings
 
-**DST — Bass OD**, on CTL (same footswitch as PRE and RVB).
-Gain: 45, Blend: 60, VOL: 60, Bass: 55, Treble: 50.
-Off at rest. Stacked with the Micro Boost for the blast sections — adds real grind on top of the amp's own breakup, so the loud sections hit noticeably harder than just "louder," not just a volume bump.
+Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB.
+The encoded N->S block sits between DST and AMP when a SnapTone is used.
 
-**AMP/CAB — NAM SnapTone, slot 56: ProgSVT** (always on)
-- Built from the `SVT CLEAN PUSHED (SVT-CL)` NAM and the Mesa215 IR, combined into one snaptone.
-- Real Ampeg SVT-CL on the clean-pushed setting, into the Mesa215 2x15 IR.
-- Myung's Mesa tone again. Pushed SVT into a Mesa 2x15 is the closest combo.
-- Gain: 52, VOL: 60, Bass: 55, Middle: 62, Treble: 55
-- Gain 52: a little over default. This part wants more push than the other ProgSVT patches.
-- Bass 55: Enough low end to anchor the riff without getting flabby at speed.
-- Middle 62: Pushed hard. This is what lets the part cut through a wall of guitar.
-- Treble 55: Present enough for pick/finger attack to read clearly on fast runs.
-- VOL 60: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
-- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 56 directly.
+Cab IR: Mesa215. Encoded as User IR 7.
 
-**EQ — Bass EQ 2**, always on.
-50Hz: +3, 120Hz: +2, 400Hz: -3, 800Hz: 0, 4.5kHz: +5, VOL: 55.
-Small low-end reinforcement, a cut around 400Hz to keep the pushed SVT from getting boxy under the guitars, and a push at 4.5kHz so fast fingerstyle runs stay articulate instead of blurring together.
+## NR - Gate
 
-**MOD — off.** No modulation — this part needs to read as precise and dry, not smeared.
+THRE: 18.
+Fixed on. Not on CTL.
+Use the lowest threshold that keeps rests quiet. Check soft notes and held-note decay. This gate is before the drives and amp; it does not directly gate noise generated after it.
 
-**DLY — off.** Straight, driving part. No delay.
+## PRE - Module off
 
-**RVB — Room**, on CTL (same footswitch as PRE and DST).
-Mix: 22, Decay: 35, Trail: true.
-Off for the intro/moody sections — dry and upfront. On for the blast sections, alongside the boost and drive — gives the loud unison hits a little more size and glue without turning them into a wash.
+Not used.
 
-## CTL footswitch
+## DST - Bass OD
 
-Three modules on CTL: PRE (Micro Boost), DST (Bass OD), RVB (Room) — all tied to the same footswitch, at the 3-module max.
+Gain: 25.
+Blend: 35.
+VOL: 60.
+Bass: 55.
+Treble: 50.
+CTL assigned. Loads off; first CTL press switches it on.
+Supplies the selected additional drive voice. Use its level and gain as separate controls. A pre-amp boost may add compression instead of a proportional solo-volume increase.
 
-- **CTL off** — intro/moody-section sound. Dry, tight, just the NAM's own grit. This is the resting state the patch loads into.
-- **CTL on** — full-band blast-section sound. Boosted front end, extra drive stacked on, touch of room reverb — same core tone, hits considerably harder and bigger.
+## AMP - Mess Bass
 
-Engage CTL going into the unison blast sections, back off for the quieter/moody instrumental passages. One footswitch, one clean two-state split for a song that lives and dies on that dynamic contrast.
+Gain: 40.
+VOL: 62.
+Bass: 54.
+Middle: 58.
+Treble: 52.
+Fixed on. Not on CTL.
+Provides one fixed amp voice for the complete preset. CTL does not change its knobs or select another amp channel.
+
+## CAB - User IR 7
+
+VOL: 58.
+Fixed on. Not on CTL.
+Keeps the required speaker response in the exported preset. Use the documented loaded IR slot; no extra cab goes after a SnapTone.
+
+## EQ - Bass EQ 2
+
+50Hz: 3.
+120Hz: 2.
+400Hz: -3.
+800Hz: 0.
+4.5kHz: 5.
+VOL: 55.
+Fixed on. Not on CTL.
+Shapes note body and cut after the amp/capture. Where assigned to CTL, its output adds the specified lift after the gain stages. Numbers are GP-5 control values, not a calibrated loudness guarantee.
+
+## MOD - Module off
+
+Not used.
+
+## DLY - Module off
+
+Not used.
+
+## RVB - Room
+
+Mix: 5.
+Decay: 35.
+Trail: on.
+CTL assigned. Loads off; first CTL press switches it on.
+Adds the specified room or ambient tail. The revised mix keeps the initial note audible. Trail behavior follows the saved setting.
+
+## Switching and section map
+
+CTL blocks: DST, RVB.
+- CTL off / loaded state: intro/moody-section sound. GP-5 active: NR, AMP, CAB, EQ.
+- First CTL press: full-band blast-section sound. GP-5 active: NR, DST, AMP, CAB, EQ, RVB.
+- Press CTL again to return to the loaded block pattern, provided no shared MIDI block has been changed.
+
+## Revision record
+
+Approved audit entry 109.
+- Amp/cab foundation: SnapTone 56 -> Mess Bass / User IR 7.
+- NR THRE: 30 -> 18.
+- PRE: Micro Boost -> off.
+- PRE: removed from CTL.
+- DST Gain: 45 -> 25.
+- DST Blend: 60 -> 35.
+- AMP: off -> Mess Bass.
+- AMP Gain: unset -> 40.
+- AMP VOL: unset -> 62.
+- AMP Bass: unset -> 54.
+- AMP Middle: unset -> 58.
+- AMP Treble: unset -> 52.
+- CAB: off -> User IR 7.
+- CAB VOL: unset -> 58.
+- RVB Mix: 22 -> 5.
+Pre-revision JSON, Markdown and original file hashes are preserved in Documents/patch-audit-2026-10-16/inventory.json and implementation-manifest.json.
+The site piece title and on-disk filenames stay stable; only the short pedal display name may change.

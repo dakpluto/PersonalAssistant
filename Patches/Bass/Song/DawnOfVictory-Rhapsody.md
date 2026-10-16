@@ -1,49 +1,100 @@
 # Dawn of Victory — Rhapsody
 
+Revised 2026-10-16 following the approved library audit.
+Type: Song. Instrument: Harley Benton passive 5-string P/J.
+GP-5 only.
+Patch screen name: DawnOfVict. Patch VOL: 50.
+Preset tempo: 170 BPM.
+
 Rhapsody, symphonic power metal. BPM est., fast. Bass locks with double kick — tight, clear attack, upper-mid definition so the notes stay audible under a wall of guitars and orchestration. Built from the genre's general sound; exact rig on the recording not verified.
 GP-5 only, P/J bass, no pedalboard.
 
-## Module chain
+## Revision intent
 
-**NR — Gate**, always on.
+Keep the musical role of the original patch while reducing redundant gain, excessive space and unclear switching where identified in audit entry 32.
+The module settings and section map below are the active revision.
+Audited capture volumes and Michael’s explicit patch-level adjustments are preserved.
+No hardware audition or measured level match has been performed.
+
+## GP-5 settings
+
+Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB.
+The encoded N->S block sits between DST and AMP when a SnapTone is used.
+
+AMP/CAB replacement: SnapTone BrightSVT (slot 55): SVT SANS BRIGHT DRIVE (SVT-CL) + Hartke410.
+Slot: 55. Always on.
+Gain: 45, VOL: 60, Bass: 50, Middle: 55, Treble: 55.
+AMP and CAB are both off; the capture already includes its cab/DI character.
+The capture voice is fixed across CTL states. Audited VOL is preserved for this slot.
+
+## NR - Gate
+
 THRE: 25.
-Tight gate. Fast notes need clean gaps.
+Fixed on. Not on CTL.
+Use the lowest threshold that keeps rests quiet. Check soft notes and held-note decay. This gate is before the drives and amp; it does not directly gate noise generated after it.
 
-**PRE — COMP4**, always on.
-Sustain: 55, Attack: 45, Clip: 50, VOL: 58.
-COMP4 for attack control. Attack 45 lets the pick transient through, Sustain 55 evens out fast runs.
+## PRE - COMP4
 
-**DST — Bass OD**, on CTL.
-Gain: 30, Blend: 40, VOL: 60, Bass: 45, Treble: 55.
-Chorus edge. Blend 40 keeps the low end tight.
+Sustain: 40.
+Attack: 45.
+Clip: 50.
+VOL: 58.
+Fixed on. Not on CTL.
+Controls the source dynamics or adds the specified push/filter before distortion and amp processing. The settings stay fixed; only its on/off state can change.
 
-**AMP/CAB — NAM SnapTone, slot 55: BrightSVT** (always on)
-- Built from the `SVT SANS BRIGHT DRIVE (SVT-CL)` NAM and the Hartke410 IR, combined into one snaptone.
-- Real Ampeg SVT-CL with the bright drive setting, into the aluminum-cone Hartke410 IR.
-- Power-metal bass has to cut through wall-of-guitar. Bright drive and Hartke clank do that.
-- Gain: 45, VOL: 60, Bass: 50, Middle: 55, Treble: 55
-- Gain 45: noticeably under default. This part wants less push than the other BrightSVT patches.
-- Bass 50: flat.
-- Middle 55: a touch more midrange.
-- Treble 55: a touch more top end.
-- VOL 60: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
-- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 55 directly.
+## DST - Bass OD
 
-**EQ — Bass EQ 2**, always on.
-50Hz: +1, 120Hz: +1, 400Hz: -3, 800Hz: +3, 4.5kHz: +3, VOL: 50.
-400Hz cut clears mud. 800Hz and 4.5kHz up for cut against double kick and guitars.
+Gain: 20.
+Blend: 30.
+VOL: 60.
+Bass: 45.
+Treble: 55.
+CTL assigned. Loads off; first CTL press switches it on.
+Supplies the selected additional drive voice. Use its level and gain as separate controls. A pre-amp boost may add compression instead of a proportional solo-volume increase.
 
-**MOD — off.** No modulation.
+## AMP - Module off
 
-**DLY — off.** No delay. Fast tempo, delay smears.
+Not used.
 
-**RVB — off.** No reverb. Keeps it tight.
+## CAB - Module off
 
-## CTL footswitch
+Not used.
 
-On CTL: DST (Bass OD).
+## EQ - Bass EQ 2
 
-- **CTL off** — Verses and fast riffing. Bright, tight, compressed, no extra drive. This is the resting state the patch loads into.
-- **CTL on** — Choruses. Bass OD adds thickness and edge.
+50Hz: 1.
+120Hz: 1.
+400Hz: -3.
+800Hz: 3.
+4.5kHz: 3.
+VOL: 50.
+Fixed on. Not on CTL.
+Shapes note body and cut after the amp/capture. Where assigned to CTL, its output adds the specified lift after the gain stages. Numbers are GP-5 control values, not a calibrated loudness guarantee.
 
-Engage CTL for choruses. Back off for verses and fast passages needing clarity.
+## MOD - Module off
+
+Not used.
+
+## DLY - Module off
+
+Not used.
+
+## RVB - Module off
+
+Not used.
+
+## Switching and section map
+
+CTL blocks: DST.
+- CTL off / loaded state: Verses and fast riffing. GP-5 active: NR, PRE, EQ, N->S.
+- First CTL press: Choruses. GP-5 active: NR, PRE, DST, EQ, N->S.
+- Press CTL again to return to the loaded block pattern, provided no shared MIDI block has been changed.
+
+## Revision record
+
+Approved audit entry 32.
+- PRE Sustain: 55 -> 40.
+- DST Gain: 30 -> 20.
+- DST Blend: 40 -> 30.
+Pre-revision JSON, Markdown and original file hashes are preserved in Documents/patch-audit-2026-10-16/inventory.json and implementation-manifest.json.
+The site piece title and on-disk filenames stay stable; only the short pedal display name may change.

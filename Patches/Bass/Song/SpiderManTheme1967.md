@@ -1,51 +1,106 @@
 # Spider-Man Theme (1967 Cartoon) — Bob Harris & Paul Francis Webster
 
+Revised 2026-10-16 following the approved library audit.
+Type: Song. Instrument: Harley Benton passive 5-string P/J.
+GP-5 only.
+Patch screen name: B-Spidey67. Patch VOL: 52.
+Preset tempo: 150 BPM.
+
 Theme from the 1967 *Spider-Man* animated series. Music by Bob Harris, lyrics by Paul Francis Webster. Fast swing, est.
 Bass: Harley Benton P/J, 5-string, passive. GP-5 only.
 The original is a 60s big-band arrangement. I haven't verified whether the bass on it is upright or electric, but the part plays like a jazz line: swung, walking-leaning, locked with the brass hits.
 The tone target is a dark, short, thumpy 60s low end that sounds close to an upright. CTL gives you a second, driven sound for the rock-cover treatment.
 Play with your fingers over the neck. Solo the P pickup. Tone knob around 30% for the vintage thump. Palm-muting near the bridge gets you closer to upright-style decay.
 
-## Module chain
+## Revision intent
 
-**NR — Gate**, always on.
-THRE: 12. Low. Just catches hum between notes.
+Keep the musical role of the original patch while reducing redundant gain, excessive space and unclear switching where identified in audit entry 102.
+The module settings and section map below are the active revision.
+Audited capture volumes and Michael’s explicit patch-level adjustments are preserved.
+No hardware audition or measured level match has been performed.
 
-**PRE — COMP (Ross)**, always on.
-Sustain: 30, VOL: 58.
-Evens out the walking line lightly. Staccato notes keep their bounce.
+## GP-5 settings
 
-**DST — Bass OD**, on CTL.
-Gain: 35, Blend: 35, VOL: 55, Bass: 50, Treble: 55.
-Growl for the rock-cover version. Blend 35 keeps the clean fundamental. Treble 55 lets the grit cut through even with the dark amp settings.
+Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB.
+The encoded N->S block sits between DST and AMP when a SnapTone is used.
 
-**AMP/CAB — NAM SnapTone, slot 51: CleanB15** (always on)
-- Built from the `Ampeg B18 - Head DI - Bass Chan - Vol 2.5 (B-18N)` NAM and the Apg115 IR, combined into one snaptone.
-- Real Ampeg B-18N fliptop (the B-15 preamp circuit), captured clean at volume 2.5, into the Apg115 B-15 cab IR.
-- Mid-60s TV-orchestra bass. A B-15 is the studio amp of that era.
-- Gain: 48, VOL: 80, Bass: 60, Middle: 50, Treble: 30
-- Gain 48: a little under default. This part wants less push than the other CleanB15 patches.
-- Bass 60: more low end.
-- Middle 50: flat.
-- Treble 30: top end pulled back noticeably.
-- VOL 80: the level Michael set for this snaptone in the 2026-10-02 VOL audit. Trim here if the patch jumps in level against your others.
-- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 51 directly.
+AMP/CAB replacement: SnapTone CleanB15 (slot 51): Ampeg B18 - Head DI - Bass Chan - Vol 2.5 (B-18N) + Apg115.
+Slot: 51. Always on.
+Gain: 48, VOL: 80, Bass: 60, Middle: 50, Treble: 30.
+AMP and CAB are both off; the capture already includes its cab/DI character.
+The capture voice is fixed across CTL states. Audited VOL is preserved for this slot.
 
-**EQ — Bass EQ 2**, always on.
-50Hz: 0, 120Hz: +3, 400Hz: +1, 800Hz: -1, 4.5kHz: -5, VOL: 52.
-Weight at 120Hz, a touch of 400Hz wood, and the top cut hard for the vintage roll-off.
+## NR - Gate
 
-**MOD — off.** **DLY — off.**
+THRE: 12.
+Fixed on. Not on CTL.
+Use the lowest threshold that keeps rests quiet. Check soft notes and held-note decay. This gate is before the drives and amp; it does not directly gate noise generated after it.
 
-**RVB — Room**, always on.
-Mix: 10, Decay: 25, Trail: on.
-A tiny room so it sounds like a band in a studio, not DI. Small enough that it doesn't blur fast lines.
+## PRE - COMP
 
-## CTL footswitch
+Sustain: 30.
+VOL: 58.
+Fixed on. Not on CTL.
+Controls the source dynamics or adds the specified push/filter before distortion and amp processing. The settings stay fixed; only its on/off state can change.
 
-On CTL: DST (Bass OD).
+## DST - Bass OD
 
-- **CTL off** — The 1967 original. Dark, thumpy, swung. This is the resting state.
-- **CTL on** — Rock-cover push. Bass OD growl for a punk or garage take on the theme, or just to hit the final "Here comes the Spider-Man!" harder.
+Gain: 25.
+Blend: 25.
+VOL: 55.
+Bass: 50.
+Treble: 55.
+CTL assigned. Loads off; first CTL press switches it on.
+Supplies the selected additional drive voice. Use its level and gain as separate controls. A pre-amp boost may add compression instead of a proportional solo-volume increase.
 
-Stay on CTL off for the straight swing version. Stomp it for a rock arrangement or the big ending. For the rock take, open the tone knob to about 60%.
+## AMP - Module off
+
+Not used.
+
+## CAB - Module off
+
+Not used.
+
+## EQ - Bass EQ 2
+
+50Hz: 0.
+120Hz: 3.
+400Hz: 1.
+800Hz: -1.
+4.5kHz: -5.
+VOL: 52.
+Fixed on. Not on CTL.
+Shapes note body and cut after the amp/capture. Where assigned to CTL, its output adds the specified lift after the gain stages. Numbers are GP-5 control values, not a calibrated loudness guarantee.
+
+## MOD - Module off
+
+Not used.
+
+## DLY - Module off
+
+Not used.
+
+## RVB - Room
+
+Mix: 5.
+Decay: 25.
+Trail: on.
+Fixed on. Not on CTL.
+Adds the specified room or ambient tail. The revised mix keeps the initial note audible. Trail behavior follows the saved setting.
+
+## Switching and section map
+
+CTL blocks: DST.
+- CTL off / loaded state: The 1967 original. GP-5 active: NR, PRE, EQ, RVB, N->S.
+- First CTL press: Rock-cover push. GP-5 active: NR, PRE, DST, EQ, RVB, N->S.
+- Press CTL again to return to the loaded block pattern, provided no shared MIDI block has been changed.
+
+## Revision record
+
+Approved audit entry 102.
+- Pedal display name: SpiderMan67 -> B-Spidey67. Filenames stay unchanged.
+- DST Gain: 35 -> 25.
+- DST Blend: 35 -> 25.
+- RVB Mix: 10 -> 5.
+Pre-revision JSON, Markdown and original file hashes are preserved in Documents/patch-audit-2026-10-16/inventory.json and implementation-manifest.json.
+The site piece title and on-disk filenames stay stable; only the short pedal display name may change.

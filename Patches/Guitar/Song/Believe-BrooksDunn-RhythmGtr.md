@@ -1,5 +1,11 @@
 # Believe (Rhythm Guitar) — Brooks & Dunn
 
+Revised 2026-10-16 following the approved library audit.
+Type: Song. Instrument: HSS Stratocaster.
+GP-5 only.
+Patch screen name: Believe-Gt. Patch VOL: 70.
+Preset tempo: 66 BPM.
+
 From *Hillbilly Deluxe* (2005). About 66 BPM, est. It won CMA Single and Song of the Year in 2006.
 A slow gospel-tinged ballad. It starts intimate, with piano and vocal carrying it, and builds to a huge choir-backed climax.
 The guitar starts sparse with clean arpeggios and ends big with a sustained, singing lead.
@@ -7,66 +13,105 @@ Built from the song's overall sound. I haven't verified the exact guitars and am
 Instrument: Stratocaster (HSS). Neck pickup for the arpeggios. Bridge humbucker for the climax lead.
 GP-5 only, Stratocaster (HSS), no pedalboard.
 
-**Patch VOL: 70.** Raised from 50 on 2026-10-01, Michael's setting after the snaptone VOL pass.
+## Revision intent
 
-## Module chain
+Keep the musical role of the original patch while reducing redundant gain, excessive space and unclear switching where identified in audit entry 142.
+The module settings and section map below are the active revision.
+Audited capture volumes and Michael’s explicit patch-level adjustments are preserved.
+No hardware audition or measured level match has been performed.
 
-**NR — Gate**, always on.
+## GP-5 settings
+
+Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB.
+The encoded N->S block sits between DST and AMP when a SnapTone is used.
+
+AMP/CAB replacement: SnapTone NashClean (slot 62): CLEANEST - Fender Deluxe Reverb 1965 [Hyper Accuracy] + Origin Effects Brown Deluxe 1x12 Medium Mix.
+Slot: 62. Always on.
+Gain: 50, VOL: 75, Bass: 48, Middle: 52, Treble: 54.
+AMP and CAB are both off; the capture already includes its cab/DI character.
+The capture voice is fixed across CTL states. Audited VOL is preserved for this slot.
+
+## NR - Gate
+
 THRE: 14.
-Low. Long notes need to decay.
+Fixed on. Not on CTL.
+Use the lowest threshold that keeps rests quiet. Check soft notes and held-note decay. This gate is before the drives and amp; it does not directly gate noise generated after it.
 
-**PRE — Boost (EP Booster)**, on CTL.
-Gain: 42, +3dB: on, Bright: off.
-Stacks into the Green OD for the climax lead. Adds level so it soars over the choir.
+## PRE - Boost
 
-**DST — Green OD (TS-808)**, on CTL.
-Gain: 36, Tone: 55, VOL: 64.
-A singing, sustained lead tone. Gain 36 plus the Boost gives long sustain without fizz.
+Gain: 25.
++3dB: off.
+Bright: off.
+CTL assigned. Loads off; first CTL press switches it on.
+Controls the source dynamics or adds the specified push/filter before distortion and amp processing. The settings stay fixed; only its on/off state can change.
 
-**AMP/CAB — NAM SnapTone, slot 62: NashClean** (always on)
-- Built from the `CLEANEST - Fender Deluxe Reverb 1965 [Hyper Accuracy]` NAM and the Origin Effects Brown Deluxe 1x12 Medium Mix IR, combined into one snaptone.
-- Real 1965 Fender Deluxe Reverb at its cleanest setting, into the Origin Effects Brown Deluxe 1x12.
-- Clean Nashville ballad electric. The cleanest Deluxe setting.
-- Gain: 50, VOL: 75, Bass: 48, Middle: 52, Treble: 54
-- Gain 50: the capture as built.
-- Bass 48: low end pulled back a little.
-- Middle 52: a touch more midrange.
-- Treble 54: a touch more top end.
-- VOL 75: the level Michael set for this snaptone in the 2026-10-01 VOL audit. Trim here if the patch jumps in level against your others.
-- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 62 directly.
+## DST - Green OD
 
-**EQ — Guitar EQ 2**, always on.
-100Hz: -3, 500Hz: -1, 1kHz: 0, 3kHz: +1, 6kHz: -1, VOL: 50.
-The low cut keeps the ambience clear. The top is slightly trimmed.
+Gain: 36.
+Tone: 55.
+VOL: 64.
+CTL assigned. Loads off; first CTL press switches it on.
+Also on an individual MIDI toggle.
+Supplies the selected additional drive voice. Use its level and gain as separate controls. A pre-amp boost may add compression instead of a proportional solo-volume increase.
 
-**MOD — off.** No modulation. Tape and hall give enough movement.
+## AMP - Module off
 
-**DLY — Tape**, always on.
-Mix: 16, Time: 450ms, F.Back: 25, Trail: on.
-About an eighth note at 66 BPM. Warm tape repeats in both states.
+Not used.
 
-**RVB — Hall**, always on.
-Mix: 24, Decay: 50, Trail: on.
-A church-adjacent hall that fits the gospel theme. Mix 24.
+## CAB - Module off
 
-## CTL footswitch
+Not used.
 
-On CTL: PRE (Boost), DST (Green OD).
+## EQ - Guitar EQ 2
 
-- **CTL off** — Rhythm. Chimey clean arpeggios with tape echo and hall. Use it for the intimate verses. This is the resting state the patch loads into.
-- **CTL on** — Lead. Boost plus Green OD for the soaring climax lead and the melodic fills in the build.
+100Hz: -3.
+500Hz: -1.
+1kHz: 0.
+3kHz: 1.
+6kHz: -1.
+VOL: 50.
+Fixed on. Not on CTL.
+Shapes note body and cut after the amp/capture. Where assigned to CTL, its output adds the specified lift after the gain stages. Numbers are GP-5 control values, not a calibrated loudness guarantee.
 
-Stay off through the verses. Engage for the build and the final choir section.
+## MOD - Module off
 
-## MIDI toggles
+Not used.
 
-MIDI = True (added 2026-10-12). With no MIDI controller connected, the patch loads and plays exactly as before. MIDI adds single-block toggles on top of CTL.
+## DLY - Tape
 
-On MIDI: DST (Green OD), also on CTL.
+Mix: 16.
+Time: 450.
+F.Back: 25.
+Trail: on.
+Fixed on. Not on CTL.
+Adds repeats only in the listed states. Trail preserves the remaining repeats when this block is bypassed; it does not change delay time or mix.
 
-Sounds:
-- **Verse arpeggios** (default). CTL off. Chimey clean with tape echo and hall.
-- **Build.** CTL off, MIDI DST on. The Green OD alone, without the boost: fuller strummed rhythm as the band comes in and the song builds.
-- **Climax lead** (CTL on). Boost + Green OD for the soaring lead over the choir.
-- Section map: verses (default) → the build: MIDI DST on → choir climax: MIDI DST off, then CTL on (CTL brings the Green OD back with the boost).
-- **Shared CTL/MIDI blocks:** CTL flips every block assigned to it, whatever state it's in (confirmed by Michael, 2026-10-12). A CTL block you switched by MIDI ends up the opposite of the designed CTL sound. So before pressing CTL, switch it back by MIDI. Changing a block by MIDI *after* pressing CTL is always safe.
+## RVB - Hall
+
+Mix: 14.
+Decay: 50.
+Trail: on.
+Fixed on. Not on CTL.
+Adds the specified room or ambient tail. The revised mix keeps the initial note audible. Trail behavior follows the saved setting.
+
+## Switching and section map
+
+CTL blocks: PRE, DST.
+- CTL off / loaded state: Rhythm. GP-5 active: NR, EQ, DLY, RVB, N->S.
+- First CTL press: Lead. GP-5 active: NR, PRE, DST, EQ, DLY, RVB, N->S.
+- Press CTL again to return to the loaded block pattern, provided no shared MIDI block has been changed.
+
+MIDI toggles: DST.
+MIDI mapping lives on the controller/device, not in the .prst.
+- DST Green OD: loads off; toggle to add this block independently.
+Before CTL, undo MIDI changes to shared CTL blocks so they match the preceding CTL pattern. CTL flips current states, not a stored scene. After pressing CTL, apply individual MIDI changes.
+- DST-only alternative from loaded state: CTL off, MIDI DST on; other MIDI blocks at their load states. GP-5 active: NR, DST, EQ, DLY, RVB, N->S. Board switches unchanged.
+
+## Revision record
+
+Approved audit entry 142.
+- PRE Gain: 42 -> 25.
+- PRE +3dB: true -> off.
+- RVB Mix: 24 -> 14.
+Pre-revision JSON, Markdown and original file hashes are preserved in Documents/patch-audit-2026-10-16/inventory.json and implementation-manifest.json.
+The site piece title and on-disk filenames stay stable; only the short pedal display name may change.

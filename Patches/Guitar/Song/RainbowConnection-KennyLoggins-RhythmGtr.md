@@ -1,57 +1,108 @@
 # Rainbow Connection (Rhythm Guitar) — Kenny Loggins
 
+Revised 2026-10-16 following the approved library audit.
+Type: Song. Instrument: HSS Stratocaster.
+GP-5 only.
+Patch screen name: Rainbow-Gt. Patch VOL: 50.
+Preset tempo: 72 BPM.
+
 Kenny Loggins' version, from *Return to Pooh Corner* (1994). The song is by Paul Williams and Kenneth Ascher, and Kermit sang it first in 1979. About 72 BPM, est.
 A gentle, acoustic-leaning lullaby. There's no real electric guitar part to copy, so this patch gives the Strat an acoustic-adjacent role: soft, fingerpicked, warm, and lightly shimmering.
 Instrument: Stratocaster (HSS). Neck pickup, fingers, guitar tone knob around 6. Fingerpick the arpeggios. The patch is built to feel like a nylon or steel-string stand-in.
 GP-5 only, Stratocaster (HSS), no pedalboard.
 
-## Module chain
+## Revision intent
 
-**NR — Gate**, always on.
+Keep the musical role of the original patch while reducing redundant gain, excessive space and unclear switching where identified in audit entry 179.
+The module settings and section map below are the active revision.
+Audited capture volumes and Michael’s explicit patch-level adjustments are preserved.
+No hardware audition or measured level match has been performed.
+
+## GP-5 settings
+
+Module order: NR -> PRE -> DST -> AMP -> CAB -> EQ -> MOD -> DLY -> RVB.
+The encoded N->S block sits between DST and AMP when a SnapTone is used.
+
+AMP/CAB replacement: SnapTone BrightTwin (slot 64): CLEANEST - Fender Deluxe Reverb 1965 [Hyper Accuracy] + TWIN REVERB __ BALANCED (vulturized Twin).
+Slot: 64. Always on.
+Gain: 50, VOL: 75, Bass: 50, Middle: 45, Treble: 52.
+AMP and CAB are both off; the capture already includes its cab/DI character.
+The capture voice is fixed across CTL states. Audited VOL is preserved for this slot.
+
+## NR - Gate
+
 THRE: 10.
-Very low. Fingerpicked notes need to fade naturally.
+Fixed on. Not on CTL.
+Use the lowest threshold that keeps rests quiet. Check soft notes and held-note decay. This gate is before the drives and amp; it does not directly gate noise generated after it.
 
-**PRE — COMP (Ross)**, always on.
-Sustain: 42, VOL: 55.
-Compression evens out fingerpicking and adds an acoustic-like sustain bloom.
+## PRE - COMP
 
-**DST — Green OD (TS-808)**, on CTL.
-Gain: 12, Tone: 50, VOL: 68.
-Almost no drive at Gain 12. It's a level and warmth lift so the melody sings over the arpeggios.
+Sustain: 30.
+VOL: 55.
+Fixed on. Not on CTL.
+Controls the source dynamics or adds the specified push/filter before distortion and amp processing. The settings stay fixed; only its on/off state can change.
 
-**AMP/CAB — NAM SnapTone, slot 64: BrightTwin** (always on)
-- Built from the `CLEANEST - Fender Deluxe Reverb 1965 [Hyper Accuracy]` NAM and the TWIN REVERB __ BALANCED (vulturized Twin) IR, combined into one snaptone.
-- 1965 blackface Deluxe Reverb at its cleanest setting. It shares the Twin's blackface preamp circuit, so here it's the amp half of a Twin clean, into a real Twin 2x12 (JBL D120F) IR. Rebuilt 2026-09-26: the original BrightTwin used the Tim R Twin Vibrato-channel capture, which was dropped for being too quiet. Balanced IR blend.
-- Acoustic stand-in: warm, round, clean Twin.
-- Gain: 50, VOL: 75, Bass: 50, Middle: 45, Treble: 52
-- Gain 50: the capture as built.
-- Bass 50: flat.
-- Middle 45: midrange pulled back a little.
-- Treble 52: a touch more top end.
-- VOL 75: the level Michael set for this snaptone in the 2026-10-01 VOL audit. Trim here if the patch jumps in level against your others.
-- Same in both CTL states. AMP and CAB are off in the `.prst`, so nothing stacks on the capture. The N->S block calls slot 64 directly.
+## DST - Module off
 
-**EQ — Guitar EQ 2**, always on.
-100Hz: -1, 500Hz: -2, 1kHz: 0, 3kHz: +2, 6kHz: +1, VOL: 50.
-A 500Hz dip removes electric boxiness. The 3kHz and 6kHz lift adds acoustic-like air and string detail.
+Not used.
 
-**MOD — A-Chorus**, always on.
-Depth: 14, Rate: 0.5, Tone: 55.
-A light chorus, Depth 14. A soft shimmer that hints at a doubled acoustic.
+## AMP - Module off
 
-**DLY — Tape**, on CTL.
-Mix: 16, Time: 420ms, F.Back: 22, Trail: on.
-Soft tape echo behind the melody.
+Not used.
 
-**RVB — Hall**, always on.
-Mix: 24, Decay: 50, Trail: on.
-A warm hall for the dreamy lullaby space.
+## CAB - Module off
 
-## CTL footswitch
+Not used.
 
-On CTL: DST (Green OD, level lift), DLY (Tape).
+## EQ - Guitar EQ 2
 
-- **CTL off** — Rhythm. Soft fingerpicked arpeggios. Warm, airy, lightly shimmering. This is the resting state the patch loads into.
-- **CTL on** — Lead. A slight lift plus tape echo for playing the vocal melody on guitar.
+100Hz: -1.
+500Hz: -2.
+1kHz: 0.
+3kHz: 2.
+6kHz: 1.
+VOL: 53.
+CTL assigned. Loads off; first CTL press switches it on.
+Shapes note body and cut after the amp/capture. Where assigned to CTL, its output adds the specified lift after the gain stages. Numbers are GP-5 control values, not a calibrated loudness guarantee.
 
-Engage CTL to take the melody. Off to accompany.
+## MOD - Module off
+
+Not used.
+
+## DLY - Tape
+
+Mix: 16.
+Time: 420.
+F.Back: 22.
+Trail: on.
+CTL assigned. Loads off; first CTL press switches it on.
+Adds repeats only in the listed states. Trail preserves the remaining repeats when this block is bypassed; it does not change delay time or mix.
+
+## RVB - Hall
+
+Mix: 12.
+Decay: 35.
+Trail: on.
+Fixed on. Not on CTL.
+Adds the specified room or ambient tail. The revised mix keeps the initial note audible. Trail behavior follows the saved setting.
+
+## Switching and section map
+
+CTL blocks: EQ, DLY.
+- CTL off / loaded state: Gentle fingerpicking. GP-5 active: NR, PRE, RVB, N->S.
+- First CTL press: Clean melody and Tape. GP-5 active: NR, PRE, EQ, DLY, RVB, N->S.
+- Press CTL again to return to the loaded block pattern, provided no shared MIDI block has been changed.
+
+## Revision record
+
+Approved audit entry 179.
+- PRE Sustain: 42 -> 30.
+- DST: Green OD -> off.
+- DST: removed from CTL.
+- EQ VOL: 50 -> 53.
+- EQ: assigned to CTL.
+- MOD: A-Chorus -> off.
+- RVB Mix: 24 -> 12.
+- RVB Decay: 50 -> 35.
+Pre-revision JSON, Markdown and original file hashes are preserved in Documents/patch-audit-2026-10-16/inventory.json and implementation-manifest.json.
+The site piece title and on-disk filenames stay stable; only the short pedal display name may change.
